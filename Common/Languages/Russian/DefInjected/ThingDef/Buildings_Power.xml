@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Building_PowerPlant.label>электростанция</Building_PowerPlant.label>
+  <Building_PowerPlant.description>ЗАГОЛОВОК</Building_PowerPlant.description>
+
+  <APM_DynamoPoweredGenerator.label>Генератор на динамо</APM_DynamoPoweredGenerator.label>
+  <APM_DynamoPoweredGenerator.description>Производит энергию, потребляя химическое топливо. Требует периодической дозаправки вручную.</APM_DynamoPoweredGenerator.description>
+
+
+</LanguageData>

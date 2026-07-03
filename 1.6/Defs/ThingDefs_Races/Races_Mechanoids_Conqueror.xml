@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Abstract="True" Name="APM_Mech_ConquerorBase" ParentName="BaseMechanoidWalker">
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>APM_Conqueror</body>
+			<baseHealthScale>1</baseHealthScale>
+			<detritusLeavings>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>11</texOverrideIndex>
+					<spawnChance>0.1</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>12</texOverrideIndex>
+					<spawnChance>0.1</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+		</statBases>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_Unity">
+				<hediff>APM_Hediff_Unity</hediff>
+				<checkInterval>250</checkInterval>
+				<severityPerAlly>0.1</severityPerAlly>
+				<maxSeverity>1.0</maxSeverity>
+				<!-- 0 = mapwide; other positive integer numbers indicate the tile radius -->
+				<range>0</range>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Mech_ConquerorBase">
+		<defName>APM_Mech_Conqueror_DMR</defName>
+		<label>conqueror</label>
+		<description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a highly powered Charge Carbine.</description>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Conqueror_DMR</defName>
+		<label>conqueror</label>
+		<race>APM_Mech_Conqueror_DMR</race>
+		<combatPower>190</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/DMR/ConquerorDMR</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/DMR/Mech_ConquerorDMR</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/DMR/ConquerorDMRAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/DMR/Mech_ConquerorDMR</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>APM_WeaponConquerorDMR</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>APM_UltimateSacrifice</li>
+		</abilities>
+	</PawnKindDef>
+
+	<ThingDef ParentName="APM_Mech_ConquerorBase">
+		<defName>APM_Mech_Conqueror_AR</defName>
+		<label>conqueror</label>
+		<description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Blaster.</description>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Conqueror_AR</defName>
+		<label>conqueror</label>
+		<race>APM_Mech_Conqueror_AR</race>
+		<combatPower>190</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/AR/ConquerorAR</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/AR/Mech_ConquerorAuto</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/AR/ConquerorARAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/AR/Mech_ConquerorAuto</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>APM_WeaponConquerorAR</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>APM_UltimateSacrifice</li>
+		</abilities>
+	</PawnKindDef>
+
+	<ThingDef ParentName="APM_Mech_ConquerorBase">
+		<defName>APM_Mech_Conqueror_LMG</defName>
+		<label>conqueror</label>
+		<description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter.</description>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Conqueror_LMG</defName>
+		<label>conqueror</label>
+		<race>APM_Mech_Conqueror_LMG</race>
+		<combatPower>190</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/LMG/ConquerorLMG</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/LMG/Mech_ConquerorLMG</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/LMG/ConquerorLMGAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/LMG/Mech_ConquerorLMG</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>APM_WeaponConquerorLMG</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>APM_UltimateSacrifice</li>
+		</abilities>
+	</PawnKindDef>
+
+	<AbilityDef>
+		<defName>APM_UltimateSacrifice</defName>
+		<label>ultimate sacrifice</label>
+		<description>One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius</description>
+		<iconPath>UI/Sacrifice</iconPath>
+		<cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+		<targetRequired>false</targetRequired>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<warmupMote>APM_Mote_UltimateSacrifice_Pilar</warmupMote>
+		<warmupEffecter>APM_UltitmateSacrifice</warmupEffecter>
+		<statBases>
+			<Ability_EffectRadius>12</Ability_EffectRadius>
+			<Ability_Duration>150</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>12.9</range>
+			<drawAimPie>false</drawAimPie>
+			<soundCast>APM_UltimateSacrifice</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>APM_Hediff_UltimateSacrifice</hediffDef>
+				<applyToSelf>false</applyToSelf>
+				<ignoreSelf>true</ignoreSelf>
+			</li>
+			<li Class="ApexMechanoids.CompProperties_KillCaster">
+				<destroy>false</destroy>
+			</li>
+			<li Class="ApexMechanoids.CompProperties_AbilityWarmupMote">
+				<moteDef>APM_Mote_UltimateSacrifice_Wave</moteDef>
+				<rotation>3</rotation>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef>
+		<defName>APM_Hediff_UltimateSacrifice</defName>
+		<label>ultimate sacrifice</label>
+		<description>Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.7</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

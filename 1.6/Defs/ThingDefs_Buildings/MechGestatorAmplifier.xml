@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>APM_GestatorAmplifier</defName>
+		<label>mech gestator amplifier</label>
+		<description>Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to.</description>
+		<tickerType>Long</tickerType>
+		<graphicData>
+			<texPath>Things/Building/GestatorAmplifier/Amplifier</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<building>
+			<paintable>false</paintable>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<designationCategory>Biotech</designationCategory>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<!-- should this require a signal chip, like biotechs mech gestation processor implant? -->
+		</costList>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>AdvancedMechtech</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<APM_GestationFactor>0.2</APM_GestationFactor>	<!-- 0.2 = 20% faster, 1.0 = 100% faster = takes half the time  | multiple amplifier add to each other, the result gets multiplied with the mechanitors gestation speed -->
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>	<!-- 2 is adjacent  -->
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

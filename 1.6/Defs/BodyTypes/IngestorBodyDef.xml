@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Ingestor: Scavenger/centipede mech that refines organic matter. 3-directional textures.
+       HeadAttackTool (bite) only. No arms/hands. Centipede-like with an internal processor.
+       Has two texture variants (C=Closed, O=Open) suggesting a mouth that can open. -->
+	<BodyDef>
+		<defName>APM_Ingestor</defName>
+		<label>ingestor</label>
+		<corePart>
+			<def>APM_IngestorBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>APM_IngestorMaw</def>
+							<customLabel>maw</customLabel>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.05</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.05</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>APM_IngestorRefinery</def>
+					<customLabel>organic refinery</customLabel>
+					<coverage>0.15</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>front left foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>front right foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>rear left leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>rear left foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>rear right leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>rear right foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<BodyPartDef>
+		<defName>APM_IngestorBody</defName>
+		<label>body</label>
+		<hitPoints>120</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>APM_IngestorMaw</defName>
+		<label>maw</label>
+		<hitPoints>80</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>APM_IngestorRefinery</defName>
+		<label>organic refinery</label>
+		<hitPoints>50</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+</Defs>

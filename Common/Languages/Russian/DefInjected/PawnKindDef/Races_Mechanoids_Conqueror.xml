@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Conqueror_DMR.label>завоеватель</APM_Mech_Conqueror_DMR.label>
+  <APM_Mech_Conqueror_DMR.labelPlural>завоеватели</APM_Mech_Conqueror_DMR.labelPlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.label>завоеватель</APM_Mech_Conqueror_DMR.lifeStages.0.label>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.labelPlural>завоеватели</APM_Mech_Conqueror_DMR.lifeStages.0.labelPlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_DMR.lifeStages.0.labelMale>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_DMR.lifeStages.0.labelMalePlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_DMR.lifeStages.0.labelFemale>
+  <APM_Mech_Conqueror_DMR.lifeStages.0.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_DMR.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.label>завоеватель</APM_Mech_Conqueror_DMR.lifeStages.1.label>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.labelPlural>завоеватели</APM_Mech_Conqueror_DMR.lifeStages.1.labelPlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_DMR.lifeStages.1.labelMale>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_DMR.lifeStages.1.labelMalePlural>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_DMR.lifeStages.1.labelFemale>
+  <APM_Mech_Conqueror_DMR.lifeStages.1.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_DMR.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Conqueror_DMR.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_DMR.labelMale>
+  <APM_Mech_Conqueror_DMR.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_DMR.labelMalePlural>
+  <APM_Mech_Conqueror_DMR.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_DMR.labelFemale>
+  <APM_Mech_Conqueror_DMR.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_DMR.labelFemalePlural>
+
+  <APM_Mech_Conqueror_AR.label>завоеватель</APM_Mech_Conqueror_AR.label>
+  <APM_Mech_Conqueror_AR.labelPlural>завоеватели</APM_Mech_Conqueror_AR.labelPlural>
+  <APM_Mech_Conqueror_AR.lifeStages.0.label>завоеватель</APM_Mech_Conqueror_AR.lifeStages.0.label>
+  <APM_Mech_Conqueror_AR.lifeStages.0.labelPlural>завоеватели</APM_Mech_Conqueror_AR.lifeStages.0.labelPlural>
+  <APM_Mech_Conqueror_AR.lifeStages.0.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_AR.lifeStages.0.labelMale>
+  <APM_Mech_Conqueror_AR.lifeStages.0.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_AR.lifeStages.0.labelMalePlural>
+  <APM_Mech_Conqueror_AR.lifeStages.0.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_AR.lifeStages.0.labelFemale>
+  <APM_Mech_Conqueror_AR.lifeStages.0.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_AR.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Conqueror_AR.lifeStages.1.label>завоеватель</APM_Mech_Conqueror_AR.lifeStages.1.label>
+  <APM_Mech_Conqueror_AR.lifeStages.1.labelPlural>завоеватели</APM_Mech_Conqueror_AR.lifeStages.1.labelPlural>
+  <APM_Mech_Conqueror_AR.lifeStages.1.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_AR.lifeStages.1.labelMale>
+  <APM_Mech_Conqueror_AR.lifeStages.1.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_AR.lifeStages.1.labelMalePlural>
+  <APM_Mech_Conqueror_AR.lifeStages.1.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_AR.lifeStages.1.labelFemale>
+  <APM_Mech_Conqueror_AR.lifeStages.1.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_AR.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Conqueror_AR.labelMale>завоеватель-мужчина</APM_Mech_Conqueror_AR.labelMale>
+  <APM_Mech_Conqueror_AR.labelMalePlural>завоеватели-мужчины</APM_Mech_Conqueror_AR.labelMalePlural>
+  <APM_Mech_Conqueror_AR.labelFemale>завоеватель-женщина</APM_Mech_Conqueror_AR.labelFemale>
+  <APM_Mech_Conqueror_AR.labelFemalePlural>завоеватели-женщины</APM_Mech_Conqueror_AR.labelFemalePlural>
+
+
+</LanguageData>

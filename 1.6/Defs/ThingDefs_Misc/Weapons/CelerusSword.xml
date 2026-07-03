@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>APM_Weapon_CelerusVoltana</defName>
+		<label>celerus' voltana</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/Voltana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<equippedAngleOffset>225</equippedAngleOffset>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>APM_WeaponCelerusVoltana</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<relicChance>2</relicChance>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.40, 0.00, 0.30)</drawOffset>
+						<angleOffset>-120</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30, 0.00, 0.30)</drawOffset>
+						<angleOffset>-60</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25, 0.00, 0.30)</drawOffset>
+						<angleOffset>300</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30, 0.00, 0.30)</drawOffset>
+						<angleOffset>60</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>APM_Weapon_CelerusApexVoltana</defName>
+		<label>celerus' apex voltana</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/ApexVoltana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>APM_WeaponCelerusApexVoltana</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.40, 0.00, 0.30)</drawOffset>
+						<angleOffset>-120</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30, 0.00, 0.30)</drawOffset>
+						<angleOffset>-60</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25, 0.00, 0.30)</drawOffset>
+						<angleOffset>300</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30, 0.00, 0.30)</drawOffset>
+						<angleOffset>60</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

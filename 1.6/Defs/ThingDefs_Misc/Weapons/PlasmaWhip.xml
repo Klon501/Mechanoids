@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Weapon_PlasmaWhip</defName>
+		<label>plasma whip</label>
+		<description>Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Whip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>APM_WeaponPlasmaWhip</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<relicChance>2</relicChance>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>ApexMechanoids.Verb_Whip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>0</warmupTime>
+				<range>7.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<soundCast>APM_Whip</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>APM_Whip</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.10, 0.00, 0.10)</drawOffset>
+						<angleOffset>120</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.00, 0.00, 0.10)</drawOffset>
+						<angleOffset>-40</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.10, 0.00, 0.10)</drawOffset>
+						<angleOffset>-40</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0.00, 0.00, 0.10)</drawOffset>
+						<angleOffset>40</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

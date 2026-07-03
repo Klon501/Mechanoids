@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_PulseWaveEmitter</defName>
+    <thingClass>ApexMechanoids.Mote_PulseWaveEmitter</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>999999</solidTime>
+      <fadeOutTime>0</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Blank</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+      <drawSize>0.01</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>APM_PulseWaveBlindFlash</defName>
+    <label>pulse wave flash</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>PsychicEmitter</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <graphicData>
+      <graphicClass>Graphic_FadesInOut</graphicClass>
+      <texPath>Things/Mote/BrightFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(255, 252, 240, 120)</color>
+      <drawSize>1.85</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>18</glowRadius>
+        <glowColor>(255,252,240,0)</glowColor>
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>36</delayTicks>
+      </li>
+      <li Class="CompProperties_FadesInOut">
+        <fadeInSecs>0.02</fadeInSecs>
+        <fadeOutSecs>0.24</fadeOutSecs>
+        <solidTimeSecs>0.04</solidTimeSecs>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

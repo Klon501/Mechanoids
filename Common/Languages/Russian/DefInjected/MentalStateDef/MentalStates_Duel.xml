@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Duel.label>поединок</APM_Duel.label>
+  <APM_Duel.beginLetter>{0} вступает в поединок с {1}.</APM_Duel.beginLetter>
+  <APM_Duel.recoveryMessage>Поединок {0} завершён.</APM_Duel.recoveryMessage>
+  <APM_Duel.baseInspectLine>Состояние: Поединок</APM_Duel.baseInspectLine>
+
+
+</LanguageData>

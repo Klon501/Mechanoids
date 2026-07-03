@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Mech_Tinker.label>механик</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.labelPlural>механики</APM_Mech_Tinker.labelPlural>
+  <APM_Mech_Tinker.lifeStages.0.label>механик</APM_Mech_Tinker.lifeStages.0.label>
+  <APM_Mech_Tinker.lifeStages.0.labelPlural>механики</APM_Mech_Tinker.lifeStages.0.labelPlural>
+  <APM_Mech_Tinker.lifeStages.0.labelMale>механик-мужчина</APM_Mech_Tinker.lifeStages.0.labelMale>
+  <APM_Mech_Tinker.lifeStages.0.labelMalePlural>механики-мужчины</APM_Mech_Tinker.lifeStages.0.labelMalePlural>
+  <APM_Mech_Tinker.lifeStages.0.labelFemale>механик-женщина</APM_Mech_Tinker.lifeStages.0.labelFemale>
+  <APM_Mech_Tinker.lifeStages.0.labelFemalePlural>механики-женщины</APM_Mech_Tinker.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Tinker.lifeStages.1.label>механик</APM_Mech_Tinker.lifeStages.1.label>
+  <APM_Mech_Tinker.lifeStages.1.labelPlural>механики</APM_Mech_Tinker.lifeStages.1.labelPlural>
+  <APM_Mech_Tinker.lifeStages.1.labelMale>механик-мужчина</APM_Mech_Tinker.lifeStages.1.labelMale>
+  <APM_Mech_Tinker.lifeStages.1.labelMalePlural>механики-мужчины</APM_Mech_Tinker.lifeStages.1.labelMalePlural>
+  <APM_Mech_Tinker.lifeStages.1.labelFemale>механик-женщина</APM_Mech_Tinker.lifeStages.1.labelFemale>
+  <APM_Mech_Tinker.lifeStages.1.labelFemalePlural>механики-женщины</APM_Mech_Tinker.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Tinker.labelMale>механик-мужчина</APM_Mech_Tinker.labelMale>
+  <APM_Mech_Tinker.labelMalePlural>механики-мужчины</APM_Mech_Tinker.labelMalePlural>
+  <APM_Mech_Tinker.labelFemale>механик-женщина</APM_Mech_Tinker.labelFemale>
+  <APM_Mech_Tinker.labelFemalePlural>механики-женщины</APM_Mech_Tinker.labelFemalePlural>
+
+
+</LanguageData>

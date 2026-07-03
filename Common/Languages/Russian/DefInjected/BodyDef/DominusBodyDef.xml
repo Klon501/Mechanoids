@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Dominus.label>доминус</APM_Dominus.label>
+  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
+  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
+  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>левый акустический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
+  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правый акустический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
+  <APM_Dominus.corePart.parts.1.customLabel>левое механическое плечо</APM_Dominus.corePart.parts.1.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.customLabel>левая рука</APM_Dominus.corePart.parts.1.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <APM_Dominus.corePart.parts.2.customLabel>правое механическое плечо</APM_Dominus.corePart.parts.2.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.customLabel>правая рука</APM_Dominus.corePart.parts.2.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <APM_Dominus.corePart.parts.3.customLabel>левая нога</APM_Dominus.corePart.parts.3.customLabel>
+  <APM_Dominus.corePart.parts.3.parts.0.customLabel>левая стопа</APM_Dominus.corePart.parts.3.parts.0.customLabel>
+  <APM_Dominus.corePart.parts.4.customLabel>правая нога</APM_Dominus.corePart.parts.4.customLabel>
+  <APM_Dominus.corePart.parts.4.parts.0.customLabel>правая стопа</APM_Dominus.corePart.parts.4.parts.0.customLabel>
+
+
+</LanguageData>

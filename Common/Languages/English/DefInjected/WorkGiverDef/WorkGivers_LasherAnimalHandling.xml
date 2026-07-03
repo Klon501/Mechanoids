@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_LasherTakeRoamingAnimalsToPen.label>rope roaming animals</APM_LasherTakeRoamingAnimalsToPen.label>
+  <APM_LasherTakeRoamingAnimalsToPen.verb>rope</APM_LasherTakeRoamingAnimalsToPen.verb>
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>roping</APM_LasherTakeRoamingAnimalsToPen.gerund>
+
+  <APM_LasherFeedPatientAnimals.label>feed animals</APM_LasherFeedPatientAnimals.label>
+  <APM_LasherFeedPatientAnimals.verb>feed</APM_LasherFeedPatientAnimals.verb>
+  <APM_LasherFeedPatientAnimals.gerund>feeding</APM_LasherFeedPatientAnimals.gerund>
+
+  <APM_LasherTakeToPen.label>rope animals</APM_LasherTakeToPen.label>
+  <APM_LasherTakeToPen.verb>rope</APM_LasherTakeToPen.verb>
+  <APM_LasherTakeToPen.gerund>roping</APM_LasherTakeToPen.gerund>
+
+  <APM_LasherSlaughter.label>slaughter animals</APM_LasherSlaughter.label>
+  <APM_LasherSlaughter.verb>slaughter</APM_LasherSlaughter.verb>
+  <APM_LasherSlaughter.gerund>slaughtering</APM_LasherSlaughter.gerund>
+
+  <APM_LasherReleaseToWild.label>release to wild</APM_LasherReleaseToWild.label>
+  <APM_LasherReleaseToWild.verb>release</APM_LasherReleaseToWild.verb>
+  <APM_LasherReleaseToWild.gerund>releasing</APM_LasherReleaseToWild.gerund>
+
+  <APM_LasherMilk.label>milk animals</APM_LasherMilk.label>
+  <APM_LasherMilk.verb>milk</APM_LasherMilk.verb>
+  <APM_LasherMilk.gerund>milking</APM_LasherMilk.gerund>
+
+  <APM_LasherShear.label>shear animals</APM_LasherShear.label>
+  <APM_LasherShear.verb>shear</APM_LasherShear.verb>
+  <APM_LasherShear.gerund>shearing</APM_LasherShear.gerund>
+
+  <APM_LasherTame.label>tame animals</APM_LasherTame.label>
+  <APM_LasherTame.verb>tame</APM_LasherTame.verb>
+  <APM_LasherTame.gerund>taming</APM_LasherTame.gerund>
+
+  <APM_LasherTrain.label>train animals</APM_LasherTrain.label>
+  <APM_LasherTrain.verb>train</APM_LasherTrain.verb>
+  <APM_LasherTrain.gerund>training</APM_LasherTrain.gerund>
+
+  <APM_LasherRebalanceAnimalsInPens.label>rebalance penned animals</APM_LasherRebalanceAnimalsInPens.label>
+  <APM_LasherRebalanceAnimalsInPens.verb>rope</APM_LasherRebalanceAnimalsInPens.verb>
+  <APM_LasherRebalanceAnimalsInPens.gerund>roping</APM_LasherRebalanceAnimalsInPens.gerund>
+
+</LanguageData>

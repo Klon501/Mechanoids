@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Mech_Mantis.label>богомол</APM_Mech_Mantis.label>
+  <APM_Mech_Mantis.labelPlural>богомолы</APM_Mech_Mantis.labelPlural>
+  <APM_Mech_Mantis.lifeStages.0.label>богомол</APM_Mech_Mantis.lifeStages.0.label>
+  <APM_Mech_Mantis.lifeStages.0.labelPlural>богомолы</APM_Mech_Mantis.lifeStages.0.labelPlural>
+  <APM_Mech_Mantis.lifeStages.0.labelMale>богомол-мужчина</APM_Mech_Mantis.lifeStages.0.labelMale>
+  <APM_Mech_Mantis.lifeStages.0.labelMalePlural>богомолы-мужчины</APM_Mech_Mantis.lifeStages.0.labelMalePlural>
+  <APM_Mech_Mantis.lifeStages.0.labelFemale>богомол-женщина</APM_Mech_Mantis.lifeStages.0.labelFemale>
+  <APM_Mech_Mantis.lifeStages.0.labelFemalePlural>богомолы-женщины</APM_Mech_Mantis.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Mantis.lifeStages.1.label>богомол</APM_Mech_Mantis.lifeStages.1.label>
+  <APM_Mech_Mantis.lifeStages.1.labelPlural>богомолы</APM_Mech_Mantis.lifeStages.1.labelPlural>
+  <APM_Mech_Mantis.lifeStages.1.labelMale>богомол-мужчина</APM_Mech_Mantis.lifeStages.1.labelMale>
+  <APM_Mech_Mantis.lifeStages.1.labelMalePlural>богомолы-мужчины</APM_Mech_Mantis.lifeStages.1.labelMalePlural>
+  <APM_Mech_Mantis.lifeStages.1.labelFemale>богомол-женщина</APM_Mech_Mantis.lifeStages.1.labelFemale>
+  <APM_Mech_Mantis.lifeStages.1.labelFemalePlural>богомолы-женщины</APM_Mech_Mantis.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Mantis.labelMale>богомол-мужчина</APM_Mech_Mantis.labelMale>
+  <APM_Mech_Mantis.labelMalePlural>богомолы-мужчины</APM_Mech_Mantis.labelMalePlural>
+  <APM_Mech_Mantis.labelFemale>богомол-женщина</APM_Mech_Mantis.labelFemale>
+  <APM_Mech_Mantis.labelFemalePlural>богомолы-женщины</APM_Mech_Mantis.labelFemalePlural>
+
+
+</LanguageData>

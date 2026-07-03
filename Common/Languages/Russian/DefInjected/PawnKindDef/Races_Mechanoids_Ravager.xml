@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Mech_Ravager.label>опустошитель</APM_Mech_Ravager.label>
+  <APM_Mech_Ravager.labelPlural>опустошители</APM_Mech_Ravager.labelPlural>
+  <APM_Mech_Ravager.lifeStages.0.label>опустошитель</APM_Mech_Ravager.lifeStages.0.label>
+  <APM_Mech_Ravager.lifeStages.0.labelPlural>опустошители</APM_Mech_Ravager.lifeStages.0.labelPlural>
+  <APM_Mech_Ravager.lifeStages.0.labelMale>опустошитель-мужчина</APM_Mech_Ravager.lifeStages.0.labelMale>
+  <APM_Mech_Ravager.lifeStages.0.labelMalePlural>опустошители-мужчины</APM_Mech_Ravager.lifeStages.0.labelMalePlural>
+  <APM_Mech_Ravager.lifeStages.0.labelFemale>опустошитель-женщина</APM_Mech_Ravager.lifeStages.0.labelFemale>
+  <APM_Mech_Ravager.lifeStages.0.labelFemalePlural>опустошители-женщины</APM_Mech_Ravager.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Ravager.lifeStages.1.label>опустошитель</APM_Mech_Ravager.lifeStages.1.label>
+  <APM_Mech_Ravager.lifeStages.1.labelPlural>опустошители</APM_Mech_Ravager.lifeStages.1.labelPlural>
+  <APM_Mech_Ravager.lifeStages.1.labelMale>опустошитель-мужчина</APM_Mech_Ravager.lifeStages.1.labelMale>
+  <APM_Mech_Ravager.lifeStages.1.labelMalePlural>опустошители-мужчины</APM_Mech_Ravager.lifeStages.1.labelMalePlural>
+  <APM_Mech_Ravager.lifeStages.1.labelFemale>опустошитель-женщина</APM_Mech_Ravager.lifeStages.1.labelFemale>
+  <APM_Mech_Ravager.lifeStages.1.labelFemalePlural>опустошители-женщины</APM_Mech_Ravager.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Ravager.labelMale>опустошитель-мужчина</APM_Mech_Ravager.labelMale>
+  <APM_Mech_Ravager.labelMalePlural>опустошители-мужчины</APM_Mech_Ravager.labelMalePlural>
+  <APM_Mech_Ravager.labelFemale>опустошитель-женщина</APM_Mech_Ravager.labelFemale>
+  <APM_Mech_Ravager.labelFemalePlural>опустошители-женщины</APM_Mech_Ravager.labelFemalePlural>
+
+</LanguageData>

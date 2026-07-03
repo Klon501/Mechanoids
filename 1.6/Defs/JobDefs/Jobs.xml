@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>APM_BashDamage</defName>
+		<driverClass>ApexMechanoids.JobDriver_BashDamage</driverClass>
+		<reportString>Bashing into TargetA.</reportString>
+		<playerInterruptible>false</playerInterruptible>
+		<carryThingAfterJob>true</carryThingAfterJob>
+		<dropThingBeforeJob>false</dropThingBeforeJob>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+	<JobDef>
+		<defName>APM_HookPawn</defName>
+		<driverClass>ApexMechanoids.JobDriver_HookPawn</driverClass>
+		<reportString>retracting grappling hook towards TargetA.</reportString>
+		<abilityCasting>true</abilityCasting>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+	<JobDef>
+		<defName>APM_SirenLureChannel</defName>
+		<driverClass>ApexMechanoids.JobDriver_SirenLureChannel</driverClass>
+		<reportString>singing.</reportString>
+		<abilityCasting>true</abilityCasting>
+		<neverShowWeapon>true</neverShowWeapon>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
+	</JobDef>
+</Defs>

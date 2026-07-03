@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<APM_GazerHead.label>голова</APM_GazerHead.label>
+  <APM_GazerCoolingSystem.label>система охлаждения</APM_GazerCoolingSystem.label>
+  <APM_GazerLaserFocus.label>фокусировщик лазера</APM_GazerLaserFocus.label>
+  <APM_GazerThorax.label>торакс</APM_GazerThorax.label>
+  <APM_GazerPaw.label>лапа</APM_GazerPaw.label>
+
+</LanguageData>

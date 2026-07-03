@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Celerus.label>Целерус</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus.labelPlural>Целерусы</APM_Mech_Celerus.labelPlural>
+  <APM_Mech_Celerus.lifeStages.0.label>Целерус</APM_Mech_Celerus.lifeStages.0.label>
+  <APM_Mech_Celerus.lifeStages.0.labelPlural>Целерусы</APM_Mech_Celerus.lifeStages.0.labelPlural>
+  <APM_Mech_Celerus.lifeStages.0.labelMale>Целерус-мужчина</APM_Mech_Celerus.lifeStages.0.labelMale>
+  <APM_Mech_Celerus.lifeStages.0.labelMalePlural>Целерусы-мужчины</APM_Mech_Celerus.lifeStages.0.labelMalePlural>
+  <APM_Mech_Celerus.lifeStages.0.labelFemale>Целерус-женщина</APM_Mech_Celerus.lifeStages.0.labelFemale>
+  <APM_Mech_Celerus.lifeStages.0.labelFemalePlural>Целерусы-женщины</APM_Mech_Celerus.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Celerus.lifeStages.1.label>Целерус</APM_Mech_Celerus.lifeStages.1.label>
+  <APM_Mech_Celerus.lifeStages.1.labelPlural>Целерусы</APM_Mech_Celerus.lifeStages.1.labelPlural>
+  <APM_Mech_Celerus.lifeStages.1.labelMale>Целерус-мужчина</APM_Mech_Celerus.lifeStages.1.labelMale>
+  <APM_Mech_Celerus.lifeStages.1.labelMalePlural>Целерусы-мужчины</APM_Mech_Celerus.lifeStages.1.labelMalePlural>
+  <APM_Mech_Celerus.lifeStages.1.labelFemale>Целерус-женщина</APM_Mech_Celerus.lifeStages.1.labelFemale>
+  <APM_Mech_Celerus.lifeStages.1.labelFemalePlural>Целерусы-женщины</APM_Mech_Celerus.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Celerus.labelMale>Целерус-мужчина</APM_Mech_Celerus.labelMale>
+  <APM_Mech_Celerus.labelMalePlural>Целерусы-мужчины</APM_Mech_Celerus.labelMalePlural>
+  <APM_Mech_Celerus.labelFemale>Целерус-женщина</APM_Mech_Celerus.labelFemale>
+  <APM_Mech_Celerus.labelFemalePlural>Целерусы-женщины</APM_Mech_Celerus.labelFemalePlural>
+
+</LanguageData>

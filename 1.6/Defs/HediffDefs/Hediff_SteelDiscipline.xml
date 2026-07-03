@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+        Applied to allies by the "Steel Discipline" ability.
+        Grants a move speed boost and reduces mental break threshold.
+        Uses HediffComp_Disappears for automatic expiry.
+    -->
+	<HediffDef>
+		<defName>APM_Hediff_SteelDiscipline</defName>
+		<label>steel discipline</label>
+		<description>Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude.</description>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 0.75, 0.3)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3600</disappearsAfterTicks><!-- 1 minute -->
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.4</MoveSpeed>
+					<!-- Reduce mental break threshold by 25% -->
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="ApexMechanoids.PawnRenderNodeProperties_Animated">
+				<nodeClass>ApexMechanoids.PawnRenderNode_RandomAnimated</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<pawnType>Any</pawnType>
+				<color>(68, 150, 215)</color>
+				<texPath>Effects/PressTheAttack/Wings</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<texPaths>
+					<li>Effects/PressTheAttack/Wings/WingsA</li>
+					<li>Effects/PressTheAttack/Wings/WingsB</li>
+					<li>Effects/PressTheAttack/Wings/WingsC</li>
+				</texPaths>
+				<ticksPerTexture>3</ticksPerTexture>
+				<drawData>
+					<scale>2.3</scale>
+					<defaultData>
+						<layer>-6</layer>
+						<offset>(0,0,0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!--
+        Thought given to organic same-faction pawns with a mood need.
+    -->
+	<ThoughtDef>
+		<defName>APM_Thought_InspiredByDiscipline</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>inspired by discipline</label>
+				<description>The commanding presence of our mechanical ally fills me with discipline and purpose.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

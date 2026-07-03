@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffGiverSetDef>
+		<defName>APM_Mech_Floating</defName>
+		<hediffGivers>
+			<li Class="ApexMechanoids.HediffGiver_StartWithHediff">
+				<hediff>APM_ApexMechanoid_Floating</hediff>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+</Defs>

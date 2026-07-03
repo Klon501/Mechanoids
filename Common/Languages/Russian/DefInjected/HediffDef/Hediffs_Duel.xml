@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_InDuel.label>в дуэли</APM_InDuel.label>
+  <APM_InDuel.description>Испытание дуэлью — вызывает выбранную вражескую пешку на дуэль, вынуждая обоих противников на короткий промежуток времени вступить в ближний бой. Способности и дистанционные атаки деактивируются. Вокруг участников дуэли автоматически создаётся визуальная «арена» на время действия способности. Другие персонажи не могут выбрать в качестве цели участников дуэли. Если один из бойцов погибает в дуэли, победитель получает мощный временный бонус. Если дуэль не заканчивается смертью (истёкло время), оба участника получают значительный штраф. Участники дуэли получают периодический урон каждую секунду дуэли. Это стимулирует агрессию и гарантирует, что дуэль редко заканчивается ничьей. Любое восстановление здоровья участников во время дуэли блокируется (за исключением возможного восстановления жизни от атак).</APM_InDuel.description>
+
+  <APM_DuelWinner.label>победитель дуэли</APM_DuelWinner.label>
+  <APM_DuelWinner.description>ЗАГОЛОВОК.</APM_DuelWinner.description>
+  <APM_DuelWinner.stages.0.label>побед: 1</APM_DuelWinner.stages.0.label>
+  <APM_DuelWinner.stages.1.label>побед: 2</APM_DuelWinner.stages.1.label>
+  <APM_DuelWinner.stages.2.label>побед: 3</APM_DuelWinner.stages.2.label>
+  <APM_DuelWinner.stages.3.label>побед: 4</APM_DuelWinner.stages.3.label>
+  <APM_DuelWinner.stages.4.label>побед: 5</APM_DuelWinner.stages.4.label>
+  <APM_DuelWinner.stages.5.label>побед: 6</APM_DuelWinner.stages.5.label>
+  <APM_DuelWinner.stages.6.label>побед: 7</APM_DuelWinner.stages.6.label>
+
+  <APM_DuelDraw.label>ничья в дуэли</APM_DuelDraw.label>
+  <APM_DuelDraw.description>ЗАГОЛОВОК.</APM_DuelDraw.description>
+
+
+</LanguageData>

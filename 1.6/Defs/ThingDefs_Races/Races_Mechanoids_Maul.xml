@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="APM_Mech_Maul" ParentName="BaseMechanoidWalker">
+		<defName>APM_Mech_Maul</defName>
+		<label>Maul</label>
+		<description>TBD</description>
+		<statBases>
+			<MoveSpeed>4.2</MoveSpeed>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>APM_Maul</body>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHealthScale>3.5</baseHealthScale>
+			<detritusLeavings>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>11</texOverrideIndex>
+					<spawnChance>0.13</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>12</texOverrideIndex>
+					<spawnChance>0.3</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_StatFactorsFromHealth">
+				<statFactors>
+					<li>
+						<stat>RangedCooldownFactor</stat>
+						<curve>
+							<points>
+								<li>(0, 0.25)</li>
+								<li>(0.5, 0.5)</li>
+								<li>(1.0, 1)</li>
+								<li>(2.0, 2)</li>
+							</points>
+						</curve>
+					</li>
+					<li>
+						<stat>AimingDelayFactor</stat>
+						<curve>
+							<points>
+								<li>(0, 0.25)</li>
+								<li>(0.5, 0.5)</li>
+								<li>(1.0, 1)</li>
+								<li>(2.0, 2)</li>
+							</points>
+						</curve>
+					</li>
+				</statFactors>
+			</li>
+		</comps>
+		<butcherProducts>
+			<Steel>20</Steel>
+			<Plasteel>5</Plasteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Maul</defName>
+		<label>maul</label>
+		<race>APM_Mech_Maul</race>
+		<combatPower>190</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Maul/Maul</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Maul/Mech_Maul</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.8, 0.5)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Maul/MaulAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Maul/Mech_Maul</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.8, 0.5)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>APM_WeaponMaul</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
+		<abilities>
+
+		</abilities>
+	</PawnKindDef>
+</Defs>

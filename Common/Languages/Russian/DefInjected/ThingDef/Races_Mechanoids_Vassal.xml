@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Mech_Vassal.label>Вассал</APM_Mech_Vassal.label>
+  <APM_Mech_Vassal.description>Разум мехулья не является яростной бездной, ненавидящей органическую жизнь — он жесток и расчётлив. Он признаёт необходимость координации своих сил, и в этом заключается предназначение вассала. Он увеличивает скорость союзников вокруг себя. Для тех, кому удалось вырастить собственного вассала вне контроля улья, он также взаимодействует с местными системами связи, повышая настроение союзников и снижая порог психических срывов на 25%. Кроме того, мехамастеры могут расширять свой радиус командования вокруг этого меха.</APM_Mech_Vassal.description>
+  <APM_Mech_Vassal.tools.0.label>левая кисть</APM_Mech_Vassal.tools.0.label>
+  <APM_Mech_Vassal.tools.1.label>правая кисть</APM_Mech_Vassal.tools.1.label>
+  <APM_Mech_Vassal.tools.2.label>голова</APM_Mech_Vassal.tools.2.label>
+
+
+</LanguageData>

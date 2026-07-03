@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ===== Damage Def — no armorCategory means armor is bypassed entirely ===== -->
+	<DamageDef>
+		<defName>APM_SonicVibration</defName>
+		<label>sonic vibration</label>
+		<defaultDamage>14</defaultDamage>
+		<isRanged>true</isRanged>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<deathMessage>{0} has been killed by sonic vibration.</deathMessage>
+		<hediff>Bruise</hediff>
+	</DamageDef>
+
+	<!-- ===== Weapon Def ===== -->
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Siren_ChargeEmitter</defName>
+		<label>charge emitter</label>
+		<description>A wave emitting device that fires focused blasts of high frequency vibration at targets. It is capable of bypassing armor as with intense enough emissions, anything in this weapon's way inevitably becomes another medium of transmission.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SirenChargeEmitter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9999</MarketValue>
+			<Mass>6.0</Mass>
+			<AccuracyTouch>0.72</AccuracyTouch>
+			<AccuracyShort>0.86</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.68</AccuracyLong>
+			<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags Inherit="False">
+			<li>APM_WeaponSirenChargeEmitter</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>APM_Proj_SirenChargeEmitter</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>20.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>APM_SirenWeapon</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- ===== Projectile Def ===== -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_Proj_SirenChargeEmitter</defName>
+		<label>sonic pulse</label>
+		<graphicData>
+			<texPath>Things/Projectile/SirenChargeEmitter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>APM_SonicVibration</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>9999</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>52</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Terminus.label>терминус</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus.labelPlural>терминусы</APM_Mech_Terminus.labelPlural>
+  <APM_Mech_Terminus.lifeStages.0.label>терминус</APM_Mech_Terminus.lifeStages.0.label>
+  <APM_Mech_Terminus.lifeStages.0.labelPlural>терминусы</APM_Mech_Terminus.lifeStages.0.labelPlural>
+  <APM_Mech_Terminus.lifeStages.0.labelMale>терминус-мужчина</APM_Mech_Terminus.lifeStages.0.labelMale>
+  <APM_Mech_Terminus.lifeStages.0.labelMalePlural>терминусы-мужчины</APM_Mech_Terminus.lifeStages.0.labelMalePlural>
+  <APM_Mech_Terminus.lifeStages.0.labelFemale>терминус-женщина</APM_Mech_Terminus.lifeStages.0.labelFemale>
+  <APM_Mech_Terminus.lifeStages.0.labelFemalePlural>терминусы-женщины</APM_Mech_Terminus.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Terminus.lifeStages.1.label>терминус</APM_Mech_Terminus.lifeStages.1.label>
+  <APM_Mech_Terminus.lifeStages.1.labelPlural>терминусы</APM_Mech_Terminus.lifeStages.1.labelPlural>
+  <APM_Mech_Terminus.lifeStages.1.labelMale>терминус-мужчина</APM_Mech_Terminus.lifeStages.1.labelMale>
+  <APM_Mech_Terminus.lifeStages.1.labelMalePlural>терминусы-мужчины</APM_Mech_Terminus.lifeStages.1.labelMalePlural>
+  <APM_Mech_Terminus.lifeStages.1.labelFemale>терминус-женщина</APM_Mech_Terminus.lifeStages.1.labelFemale>
+  <APM_Mech_Terminus.lifeStages.1.labelFemalePlural>терминусы-женщины</APM_Mech_Terminus.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Terminus.labelMale>терминус-мужчина</APM_Mech_Terminus.labelMale>
+  <APM_Mech_Terminus.labelMalePlural>терминусы-мужчины</APM_Mech_Terminus.labelMalePlural>
+  <APM_Mech_Terminus.labelFemale>терминус-женщина</APM_Mech_Terminus.labelFemale>
+  <APM_Mech_Terminus.labelFemalePlural>терминусы-женщины</APM_Mech_Terminus.labelFemalePlural>
+
+</LanguageData>

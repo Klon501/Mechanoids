@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_WarmupPillar</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.14</solidTime>
+      <fadeOutTime>0.22</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/LightPillar</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.68, 2.52)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_WarmupRay</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.1</solidTime>
+      <fadeOutTime>0.16</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/LightRay_Upward</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.26, 1.82)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_Sparkle</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.08</solidTime>
+      <fadeOutTime>0.16</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/LightSparkle</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_Ring</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.11</solidTime>
+      <fadeOutTime>0.18</fadeOutTime>
+      <growthRate>1.2</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/EnergyRing</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.32, 1.32)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_StarA</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.12</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/EnergyStar_A</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.51, 1.51)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_StarB</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.12</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/EnergyStar_B</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.51, 1.51)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_DarkFragment_A</defName>
+    <thingClass>ApexMechanoids.Mote_BlinkDarkFragment</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.32</solidTime>
+      <fadeOutTime>1.25</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/DarkFragments/DarkFragment_a</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_DarkFragment_B</defName>
+    <thingClass>ApexMechanoids.Mote_BlinkDarkFragment</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.32</solidTime>
+      <fadeOutTime>1.25</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/DarkFragments/DarkFragment_b</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_DarkFragment_C</defName>
+    <thingClass>ApexMechanoids.Mote_BlinkDarkFragment</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.32</solidTime>
+      <fadeOutTime>1.25</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/DarkFragments/DarkFragment_c</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_Blink_DarkFragment_D</defName>
+    <thingClass>ApexMechanoids.Mote_BlinkDarkFragment</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.32</solidTime>
+      <fadeOutTime>1.25</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Blink_Effects/DarkFragments/DarkFragment_d</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

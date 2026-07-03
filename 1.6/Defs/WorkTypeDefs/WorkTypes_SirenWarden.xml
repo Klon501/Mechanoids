@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>APM_SirenWarden</defName>
+    <labelShort>warden</labelShort>
+    <pawnLabel>Warden</pawnLabel>
+    <gerundLabel>wardening</gerundLabel>
+    <description>Manage, feed, chat with, and recruit prisoners.</description>
+    <verb>Handle</verb>
+    <naturalPriority>1100</naturalPriority>
+    <relevantSkills>
+      <li>Social</li>
+    </relevantSkills>
+    <workTags>
+      <li>Social</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

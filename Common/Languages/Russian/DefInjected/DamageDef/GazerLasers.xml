@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <MegaBeam.label>мега-луч</MegaBeam.label>
+  <MegaBeam.deathMessage>{0} был уничтожен.</MegaBeam.deathMessage>
+
+
+</LanguageData>

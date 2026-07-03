@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Pulse.label>импульс</APM_Mech_Pulse.label>
+  <APM_Mech_Pulse.labelPlural>импульсы</APM_Mech_Pulse.labelPlural>
+  <APM_Mech_Pulse.lifeStages.0.label>импульс</APM_Mech_Pulse.lifeStages.0.label>
+  <APM_Mech_Pulse.lifeStages.0.labelPlural>импульсы</APM_Mech_Pulse.lifeStages.0.labelPlural>
+  <APM_Mech_Pulse.lifeStages.0.labelMale>импульс-мужчина</APM_Mech_Pulse.lifeStages.0.labelMale>
+  <APM_Mech_Pulse.lifeStages.0.labelMalePlural>импульсы-мужчины</APM_Mech_Pulse.lifeStages.0.labelMalePlural>
+  <APM_Mech_Pulse.lifeStages.0.labelFemale>импульс-женщина</APM_Mech_Pulse.lifeStages.0.labelFemale>
+  <APM_Mech_Pulse.lifeStages.0.labelFemalePlural>импульсы-женщины</APM_Mech_Pulse.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Pulse.lifeStages.1.label>импульс</APM_Mech_Pulse.lifeStages.1.label>
+  <APM_Mech_Pulse.lifeStages.1.labelPlural>импульсы</APM_Mech_Pulse.lifeStages.1.labelPlural>
+  <APM_Mech_Pulse.lifeStages.1.labelMale>импульс-мужчина</APM_Mech_Pulse.lifeStages.1.labelMale>
+  <APM_Mech_Pulse.lifeStages.1.labelMalePlural>импульсы-мужчины</APM_Mech_Pulse.lifeStages.1.labelMalePlural>
+  <APM_Mech_Pulse.lifeStages.1.labelFemale>импульс-женщина</APM_Mech_Pulse.lifeStages.1.labelFemale>
+  <APM_Mech_Pulse.lifeStages.1.labelFemalePlural>импульсы-женщины</APM_Mech_Pulse.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Pulse.labelMale>импульс-мужчина</APM_Mech_Pulse.labelMale>
+  <APM_Mech_Pulse.labelMalePlural>импульсы-мужчины</APM_Mech_Pulse.labelMalePlural>
+  <APM_Mech_Pulse.labelFemale>импульс-женщина</APM_Mech_Pulse.labelFemale>
+  <APM_Mech_Pulse.labelFemalePlural>импульсы-женщины</APM_Mech_Pulse.labelFemalePlural>
+
+
+</LanguageData>

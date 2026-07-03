@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>APM_IngestorProcessCorpses</defName>
+    <label>process corpses</label>
+    <giverClass>ApexMechanoids.WorkGiver_IngestorProcessCorpses</giverClass>
+    <workType>APM_IngestorCorpseProcessing</workType>
+    <verb>process</verb>
+    <gerund>processing</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Moving</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+</Defs>

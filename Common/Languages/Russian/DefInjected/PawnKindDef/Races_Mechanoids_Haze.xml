@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Mech_Haze.label>дымка</APM_Mech_Haze.label>
+  <APM_Mech_Haze.labelPlural>дымки</APM_Mech_Haze.labelPlural>
+  <APM_Mech_Haze.lifeStages.0.label>дымка</APM_Mech_Haze.lifeStages.0.label>
+  <APM_Mech_Haze.lifeStages.0.labelPlural>дымки</APM_Mech_Haze.lifeStages.0.labelPlural>
+  <APM_Mech_Haze.lifeStages.0.labelMale>дымка-мужчина</APM_Mech_Haze.lifeStages.0.labelMale>
+  <APM_Mech_Haze.lifeStages.0.labelMalePlural>дымки-мужчины</APM_Mech_Haze.lifeStages.0.labelMalePlural>
+  <APM_Mech_Haze.lifeStages.0.labelFemale>дымка-женщина</APM_Mech_Haze.lifeStages.0.labelFemale>
+  <APM_Mech_Haze.lifeStages.0.labelFemalePlural>дымки-женщины</APM_Mech_Haze.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Haze.lifeStages.1.label>дымка</APM_Mech_Haze.lifeStages.1.label>
+  <APM_Mech_Haze.lifeStages.1.labelPlural>дымки</APM_Mech_Haze.lifeStages.1.labelPlural>
+  <APM_Mech_Haze.lifeStages.1.labelMale>дымка-мужчина</APM_Mech_Haze.lifeStages.1.labelMale>
+  <APM_Mech_Haze.lifeStages.1.labelMalePlural>дымки-мужчины</APM_Mech_Haze.lifeStages.1.labelMalePlural>
+  <APM_Mech_Haze.lifeStages.1.labelFemale>дымка-женщина</APM_Mech_Haze.lifeStages.1.labelFemale>
+  <APM_Mech_Haze.lifeStages.1.labelFemalePlural>дымки-женщины</APM_Mech_Haze.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Haze.labelMale>дымка-мужчина</APM_Mech_Haze.labelMale>
+  <APM_Mech_Haze.labelMalePlural>дымки-мужчины</APM_Mech_Haze.labelMalePlural>
+  <APM_Mech_Haze.labelFemale>дымка-женщина</APM_Mech_Haze.labelFemale>
+  <APM_Mech_Haze.labelFemalePlural>дымки-женщины</APM_Mech_Haze.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APM.CommandCasket.Inspection>Remote control uplink is active for {PAWN}</APM.CommandCasket.Inspection>
+	<APM.CommandCasket.FailReason.NotMechanitor>not mechanitor</APM.CommandCasket.FailReason.NotMechanitor>
+
+	<APM.CommandCasket.Gizmo.CancelLink.Label>Cancel remote link</APM.CommandCasket.Gizmo.CancelLink.Label>
+	<APM.CommandCasket.Gizmo.CancelLink.Desc>Cancel the remote link for the current occupant. The occupant will be ejected.</APM.CommandCasket.Gizmo.CancelLink.Desc>
+
+		
+    <APM.CommandCasket.Gizmo.Shield.Label>remote shield</APM.CommandCasket.Gizmo.Shield.Label> 
+    <APM.CommandCasket.Gizmo.Shield.Desc>shield a friendly mechanoid, can target the whole map.\nPower scales with the remote shielder implant. </APM.CommandCasket.Gizmo.Shield.Desc>
+
+    <APM.CommandCasket.Gizmo.Repair.Label>remote repair</APM.CommandCasket.Gizmo.Repair.Label> 
+    <APM.CommandCasket.Gizmo.Repair.Desc>repair a friendly mechanoid until it is fully repaired or has no energy remaining. Can target the whole map.</APM.CommandCasket.Gizmo.Repair.Desc>
+			
+    <APM.CommandCasket.Gizmo.Disconnect.Label>remote disconnect</APM.CommandCasket.Gizmo.Disconnect.Label> 
+    <APM.CommandCasket.Gizmo.Disconnect.Desc>remotely disconnect from a controlled mech. Can target mechs on the same map.</APM.CommandCasket.Gizmo.Disconnect.Desc>
+
+    <APM.CommandCasket.Gizmo.Connect.Label>remote connect</APM.CommandCasket.Gizmo.Connect.Label> 
+    <APM.CommandCasket.Gizmo.Connect.Desc>remotely connect to a friendly mech. Can target mechs on the same map. Time depends on the targeted mechanoid.</APM.CommandCasket.Gizmo.Connect.Desc>
+
+	
+
+</LanguageData>

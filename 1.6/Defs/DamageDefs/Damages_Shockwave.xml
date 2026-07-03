@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="Bomb">
+    <defName>APM_Shockwave</defName>
+    <label>shockwave</label>
+    <deathMessage>{0} was annihilated by a shockwave.</deathMessage>
+    <defaultDamage>72</defaultDamage>
+  </DamageDef>
+</Defs>

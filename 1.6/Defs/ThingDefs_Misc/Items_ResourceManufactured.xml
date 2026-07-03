@@ -1,0 +1,129 @@
+<Defs>
+<ThingDef ParentName="MechResourceBase">
+    <defName>OcularChip</defName>
+    <label>ocular harmonizer chip</label>
+    <description>A stabilization matrix that synchronizes hellsphere turbulence into a coherent firing pattern. Without one, any ocular beam platform would tear itself apart. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+    <graphicData>
+      <texPath>Things/Item/Chips/Chip_GazerChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <requiresMechanitor>true</requiresMechanitor>
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the chip.</activateDescString>
+        <jobString>Analyze chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>PsionicChip</defName>
+    <label>psionic coordination chip</label>
+    <description>A psychic-command mechanoid micro-organ infused with an Archotech echo of martial authority. Generates localized command fields, amplifying allied effectiveness. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+    <graphicData>
+      <texPath>Things/Item/Chips/Chip_DominusChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <requiresMechanitor>true</requiresMechanitor>
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the chip.</activateDescString>
+        <jobString>Analyze chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>ExtraChip</defName>
+    <label>extrasensory amplification chip</label>
+    <description>A emotion weaving mechanoid micro-organ engineered to magnify and regulate extrasensory mental force. It artificially amplifies emotions and the resulting psychic energy while limiting damage to the mind. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+    <graphicData>
+      <texPath>Things/Item/Chips/Chip_TerminusChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5000</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <requiresMechanitor>true</requiresMechanitor>
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the chip.</activateDescString>
+        <jobString>Analyze chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MechResourceBase">
+    <defName>PsyfluxChip</defName>
+    <label>psyflux projection chip</label>
+    <description>A perception-warping mechanoid micro-organ that regulates rapid displacement, charged-particle emissions, and brief periods of psychic imperceptibility. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
+    <graphicData>
+      <texPath>Things/Item/Chips/Chip_CelerusChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10000</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <requiresMechanitor>true</requiresMechanitor>
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the chip.</activateDescString>
+        <jobString>Analyze chip</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

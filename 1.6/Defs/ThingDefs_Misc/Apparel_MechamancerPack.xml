@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>APM_Apparel_MechamancerPack</defName>
+		<label>Mechamancer Pack</label>
+		<description>A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously.</description>
+		<techLevel>Spacer</techLevel>
+		<mergeVerbGizmos>false</mergeVerbGizmos>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MechamancerPack/MechamancerPack_icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>2</maxCharges>
+				<ammoDef>Steel</ammoDef>
+				<ammoCountPerCharge>40</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>satellite</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>ApexMechanoids.Verb_SpawnMech</verbClass>
+				<label>summon satellite</label>
+				<warmupTime>1.0</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>
+				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+				<violent>false</violent>
+				<canGoWild>false</canGoWild>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_MechPack">
+				<maxNum>2</maxNum>
+				<spawnedKind>APM_Mech_Satellite</spawnedKind>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+			<!-- <recipeUsers> -->
+			<!-- <li>BioferriteShaper</li> -->
+			<!-- </recipeUsers> -->
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>ApexMechtech</researchPrerequisite>
+			<displayPriority>30</displayPriority>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<!-- <Bioferrite>30</Bioferrite> -->
+		</costList>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>7200</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechamancerPack/MechamancerPack</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<scale>(0.7,0.7)</scale>
+					<offset>(0,-0.15)</offset>
+				</north>
+				<south>
+					<scale>(0.7,0.7)</scale>
+					<offset>(0,-0.15)</offset>
+				</south>
+				<east>
+						<scale>(0.7,0.7)</scale>
+						<offset>(-0.40,-0.1)</offset>
+						<male>
+							<offset>(0,0)</offset>
+						</male>
+						<female>
+							<offset>(0.02,0)</offset>
+						</female>
+						<thin>
+							<offset>(0.05,0)</offset>
+						</thin>
+						<hulk>
+							<offset>(-0.12,0)</offset>
+						</hulk>
+						<fat>
+							<offset>(-0.08,0)</offset>
+						</fat>
+					</east>
+					<west>
+						<scale>(0.7,0.7)</scale>
+						<offset>(0.40,-0.1)</offset>
+						<male>
+							<offset>(0,0)</offset>
+						</male>
+						<female>
+							<offset>(-0.02,0)</offset>
+						</female>
+						<thin>
+							<offset>(-0.05,0)</offset>
+						</thin>
+						<hulk>
+							<offset>(0.12,0)</offset>
+						</hulk>
+						<fat>
+							<offset>(0.08,0)</offset>
+						</fat>
+					</west>
+			</wornGraphicData>
+		</apparel>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

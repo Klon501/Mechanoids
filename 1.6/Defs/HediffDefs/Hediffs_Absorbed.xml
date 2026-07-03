@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>APM_AbsorbedThing</defName>
+		<label>absorbed something</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Recycling the absorbed thing.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>12000</disappearsAfterTicks> <!--The same as duel mental state-->
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li>
+				<compClass>ApexMechanoids.CompSpawnThingOnRemove</compClass>
+			</li>
+			<!--<li Class="HediffCompProperties_DisappearsOnDeath"/>-->
+		</comps>
+	</HediffDef>
+
+</Defs>

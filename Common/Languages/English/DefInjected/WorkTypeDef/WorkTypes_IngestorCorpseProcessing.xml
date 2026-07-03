@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_IngestorCorpseProcessing.labelShort>ingest</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>Ingestor</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_IngestorCorpseProcessing.gerundLabel>ingesting corpses</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.description>Process organic corpses into chemfuel.</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>Ingest</APM_IngestorCorpseProcessing.verb>
+
+</LanguageData>

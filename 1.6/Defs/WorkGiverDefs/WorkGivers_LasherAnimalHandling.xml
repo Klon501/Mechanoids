@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>APM_LasherTakeRoamingAnimalsToPen</defName>
+    <label>rope roaming animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherTakeRoamingAnimalsToPen</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>rope</verb>
+    <gerund>roping</gerund>
+    <priorityInType>160</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherFeedPatientAnimals</defName>
+    <label>feed animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherFeedPatientAnimals</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>feed</verb>
+    <gerund>feeding</gerund>
+    <priorityInType>150</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <feedAnimalsOnly>true</feedAnimalsOnly>
+    <equivalenceGroup>FeedPatientAnimals</equivalenceGroup>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherTakeToPen</defName>
+    <label>rope animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherTakeToPen</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>rope</verb>
+    <gerund>roping</gerund>
+    <priorityInType>130</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherSlaughter</defName>
+    <label>slaughter animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherSlaughter</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>slaughter</verb>
+    <gerund>slaughtering</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherReleaseToWild</defName>
+    <label>release to wild</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherReleaseAnimalsToWild</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>release</verb>
+    <gerund>releasing</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherMilk</defName>
+    <label>milk animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherMilk</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>milk</verb>
+    <gerund>milking</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherShear</defName>
+    <label>shear animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherShear</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>shear</verb>
+    <gerund>shearing</gerund>
+    <priorityInType>85</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherTame</defName>
+    <label>tame animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherTame</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>tame</verb>
+    <gerund>taming</gerund>
+    <priorityInType>80</priorityInType>
+    <tagToGive>Fieldwork</tagToGive>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherTrain</defName>
+    <label>train animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherTrain</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>train</verb>
+    <gerund>training</gerund>
+    <priorityInType>70</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_LasherRebalanceAnimalsInPens</defName>
+    <label>rebalance penned animals</label>
+    <giverClass>ApexMechanoids.WorkGiver_LasherRebalanceAnimalsInPens</giverClass>
+    <workType>APM_LasherHandling</workType>
+    <verb>rope</verb>
+    <gerund>roping</gerund>
+    <priorityInType>60</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+</Defs>

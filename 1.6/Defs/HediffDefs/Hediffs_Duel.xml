@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>APM_InDuel</defName>
+		<label>in duel</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Locked in a duel. A shield arena has been conjured around both combatants, blocking all ranged attacks and abilities for the duration. Incoming damage is greatly increased to force decisive action — the duel is meant to end quickly and brutally. All healing is suppressed within the arena, save for what little may be drawn from striking the enemy. Should either combatant be downed or slain, the survivor claims victory. Should time expire with both still standing, the duel ends in a draw — and both pay the price.</description>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>1.75</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<!--The same as duel mental state-->
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>APM_DuelWinner</defName>
+		<label>duel winner</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This combatant has emerged victorious from the arena. Each duel won sharpens their edge — reflexes quicken, strikes land harder and the enemy's blows are turned aside with growing ease. The longer this warrior's unbroken winning streak the more formidable they become. The glory fades with time but the memory of victory lingers.</description>
+		<isBad>false</isBad>
+		<stages>
+			<!--1-->
+			<li>
+				<label>wins: 1</label>
+				<statFactors>
+					<MeleeCooldownFactor>0.95</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--2-->
+			<li>
+				<label>wins: 2</label>
+				<minSeverity>0.135</minSeverity>
+				<severityGainFactor>2</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.85</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--3-->
+			<li>
+				<label>wins: 3</label>
+				<minSeverity>0.250</minSeverity>
+				<severityGainFactor>3</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--4-->
+			<li>
+				<label>wins: 4</label>
+				<minSeverity>0.375</minSeverity>
+				<severityGainFactor>4</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.65</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.63</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--5-->
+			<li>
+				<label>wins: 5</label>
+				<minSeverity>0.500</minSeverity>
+				<severityGainFactor>5</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.50</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.50</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--6-->
+			<li>
+				<label>wins: 6</label>
+				<minSeverity>0.625</minSeverity>
+				<severityGainFactor>6</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.40</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.40</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<!--7-->
+			<li>
+				<label>wins: 7</label>
+				<minSeverity>0.750</minSeverity>
+				<severityGainFactor>7</severityGainFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.32</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.32</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.60</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>APM_DuelDraw</defName>
+		<label>duel draw</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The duel ended without a victor. Both combatants stood when the arena fell — a dishonor neither can easily shake. Movement is sluggish as though the shame of an unresolved contest weighs heavily on the body. The debuff will lift in time but the stigma of a draw is not quickly forgotten.</description>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+	</HediffDef>
+</Defs>

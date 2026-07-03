@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef ParentName="Beam">
+		<defName>APM_GazerBeam</defName>
+		<label>gazer beam</label>
+		<defaultDamage>12</defaultDamage>
+		<buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+		<plantDamageFactor>2</plantDamageFactor>
+	</DamageDef>
+	<DamageDef ParentName="Beam">
+		<defName>APM_SunRay</defName>
+		<label>sun ray</label>
+		<defaultDamage>30</defaultDamage>
+		<buildingDamageFactorImpassable>9</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4.5</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+	</DamageDef>
+	<DamageDef ParentName="BluntBase">
+		<defName>Push</defName>
+		<deathMessage>{0} has been ... to death.</deathMessage>
+		<label>push damage</label>
+		<workerClass>VEF.Weapons.DamageWorker_PushBackAttackMelee</workerClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.DamageExtension">
+				<pushBackDistance>3</pushBackDistance>
+				<soundOnDamage>DropPod_Open</soundOnDamage>
+			</li>
+		</modExtensions>
+	</DamageDef>
+</Defs>

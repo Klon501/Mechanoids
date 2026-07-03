@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_MechRepaired>{0} has been fully repaired.</APM_MechRepaired>
+  <APM_Repairing>Repairing {0}</APM_Repairing>
+  <APM_NotMechanoid>Only mechanoids can be repaired here.</APM_NotMechanoid>
+  <APM_NotPlayerFaction>Only friendly mechanoids can be repaired.</APM_NotPlayerFaction>
+  <APM_WrongSize>Mechanoid size must be {0} for this station.</APM_WrongSize>
+  <APM_AutoRepairOrdered>Repair station scanning found {0}. Repairs ordered.</APM_AutoRepairOrdered>
+
+  <APM_CryptoSwallow_Full>Internal cryo-chamber is full (max {0}).</APM_CryptoSwallow_Full>
+
+  <APM_Gizmo_AutoRepair>Auto-Repair</APM_Gizmo_AutoRepair>
+  <APM_Gizmo_AutoRepair_Desc>Automatically scan for damaged mechs and assign them to the station.</APM_Gizmo_AutoRepair_Desc>
+  <APM_Gizmo_SetInterval>Interval: {0}</APM_Gizmo_SetInterval>
+  <APM_FullHealth>This mechanoid is already at full health.</APM_FullHealth>
+  <APM_CommandCancelRepair>Cancel repair</APM_CommandCancelRepair>
+  <APM_CommandCancelRepairDesc>Stop repairing and eject the mechanoid.</APM_CommandCancelRepairDesc>
+  <APM_UnityTooltip_Current>Current stats (with unity uplink):</APM_UnityTooltip_Current>
+
+</LanguageData>

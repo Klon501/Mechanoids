@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
+  <APM_Mech_Dynamo.labelPlural>динамо</APM_Mech_Dynamo.labelPlural>
+  <APM_Mech_Dynamo.lifeStages.0.label>динамо</APM_Mech_Dynamo.lifeStages.0.label>
+  <APM_Mech_Dynamo.lifeStages.0.labelPlural>динамо</APM_Mech_Dynamo.lifeStages.0.labelPlural>
+  <APM_Mech_Dynamo.lifeStages.0.labelMale>динамо-мужчина</APM_Mech_Dynamo.lifeStages.0.labelMale>
+  <APM_Mech_Dynamo.lifeStages.0.labelMalePlural>динамо-мужчины</APM_Mech_Dynamo.lifeStages.0.labelMalePlural>
+  <APM_Mech_Dynamo.lifeStages.0.labelFemale>динамо-женщина</APM_Mech_Dynamo.lifeStages.0.labelFemale>
+  <APM_Mech_Dynamo.lifeStages.0.labelFemalePlural>динамо-женщины</APM_Mech_Dynamo.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Dynamo.lifeStages.1.label>динамо</APM_Mech_Dynamo.lifeStages.1.label>
+  <APM_Mech_Dynamo.lifeStages.1.labelPlural>динамо</APM_Mech_Dynamo.lifeStages.1.labelPlural>
+  <APM_Mech_Dynamo.lifeStages.1.labelMale>динамо-мужчина</APM_Mech_Dynamo.lifeStages.1.labelMale>
+  <APM_Mech_Dynamo.lifeStages.1.labelMalePlural>динамо-мужчины</APM_Mech_Dynamo.lifeStages.1.labelMalePlural>
+  <APM_Mech_Dynamo.lifeStages.1.labelFemale>динамо-женщина</APM_Mech_Dynamo.lifeStages.1.labelFemale>
+  <APM_Mech_Dynamo.lifeStages.1.labelFemalePlural>динамо-женщины</APM_Mech_Dynamo.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Dynamo.labelMale>динамо-мужчина</APM_Mech_Dynamo.labelMale>
+  <APM_Mech_Dynamo.labelMalePlural>динамо-мужчины</APM_Mech_Dynamo.labelMalePlural>
+  <APM_Mech_Dynamo.labelFemale>динамо-женщина</APM_Mech_Dynamo.labelFemale>
+  <APM_Mech_Dynamo.labelFemalePlural>динамо-женщины</APM_Mech_Dynamo.labelFemalePlural>
+
+
+</LanguageData>

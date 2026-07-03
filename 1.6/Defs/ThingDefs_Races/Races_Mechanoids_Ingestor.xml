@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="APM_Mech_Ingestor" ParentName="MechCentipede">
+		<defName>APM_Mech_Ingestor</defName>
+		<label>Ingestor</label>
+		<description>While mechtech devices typically rely on internal power cells, provided electricity and incendiary fuel are still needed. The ingestor scourers the remains of battlefields for survivors to finish off and organic material including corpses, to automatically refine into chemfuel within its chassis.</description>
+		<statBases>
+			<MoveSpeed>2.2</MoveSpeed>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
+		</statBases>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>APM_Ingestor</body>
+			<renderTree>APM_RenderTree_Ingestor</renderTree>
+			<baseHealthScale>3.0</baseHealthScale>
+			<mechEnabledWorkTypes>
+				<li>APM_IngestorCorpseProcessing</li>
+			</mechEnabledWorkTypes>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Ingestor</defName>
+		<label>ingestor</label>
+		<race>APM_Mech_Ingestor</race>
+		<combatPower>250</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Ingestor/Ingestor</texPath><!-- Only the Closed variant, what about Opened? -->
+					<maskPath>Things/Pawn/Mechanoid/Overlays/Ingestor_Overlay/Mech_Ingestor</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Ingestor/IngestorAncient</texPath><!-- Only the Closed variant, what about Opened? -->
+					<maskPath>Things/Pawn/Mechanoid/Overlays/Ingestor_Overlay/Mech_Ingestor</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags></weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
+		<abilities>
+			<li>APM_Absorb</li>
+		</abilities>
+	</PawnKindDef>
+</Defs>

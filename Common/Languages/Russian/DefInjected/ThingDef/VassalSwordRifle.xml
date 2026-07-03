@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Gun_Vassal_SwordRifle.label>заряженный меч-винтовка</APM_Gun_Vassal_SwordRifle.label>
+  <APM_Gun_Vassal_SwordRifle.description>Заряженная меч-винтовка. Слабее заряженной винтовки, но точнее и способна к ближнему бою.</APM_Gun_Vassal_SwordRifle.description>
+  <APM_Gun_Vassal_SwordRifle.tools.0.label>приклад</APM_Gun_Vassal_SwordRifle.tools.0.label>
+  <APM_Gun_Vassal_SwordRifle.tools.1.label>остриё</APM_Gun_Vassal_SwordRifle.tools.1.label>
+  <APM_Gun_Vassal_SwordRifle.tools.2.label>клинок</APM_Gun_Vassal_SwordRifle.tools.2.label>
+
+  <APM_Bullet_ChargeSwordRifle.label>заряженный выстрел</APM_Bullet_ChargeSwordRifle.label>
+
+
+</LanguageData>

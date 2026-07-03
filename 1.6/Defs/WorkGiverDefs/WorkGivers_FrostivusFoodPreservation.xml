@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>APM_FrostivusUnloadFood</defName>
+    <label>unload preserved food</label>
+    <giverClass>ApexMechanoids.WorkGiver_FrostivusUnloadFood</giverClass>
+    <workType>APM_FrostivusFoodPreservation</workType>
+    <verb>unload</verb>
+    <gerund>unloading</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Moving</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_FrostivusRescueFood</defName>
+    <label>rescue spoiling food</label>
+    <giverClass>ApexMechanoids.WorkGiver_FrostivusRescueFood</giverClass>
+    <workType>APM_FrostivusFoodPreservation</workType>
+    <verb>rescue</verb>
+    <gerund>rescuing</gerund>
+    <priorityInType>200</priorityInType>
+    <requiredCapacities>
+      <li>Moving</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+</Defs>

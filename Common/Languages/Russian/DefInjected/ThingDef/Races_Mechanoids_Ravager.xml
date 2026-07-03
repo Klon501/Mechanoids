@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<APM_Mech_Ravager.label>Опустошитель</APM_Mech_Ravager.label>
+  <APM_Mech_Ravager.description>Грозной автоматической мортиры было недостаточно, чтобы утолить жажду разрушения механоидов. Их решение? Опустошитель — мобильная артиллерийская установка. Способный заряжать избыточную энергию в своих резервных энергоэлементах, он может временно увеличить энергопотребление своей артиллерийской пушки, производя 3 выстрела в быстрой последовательности.</APM_Mech_Ravager.description>
+  <APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
+
+</LanguageData>

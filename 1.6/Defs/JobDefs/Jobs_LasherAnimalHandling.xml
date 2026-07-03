@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>APM_LasherTame</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherTame</driverClass>
+    <reportString>taming TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_LasherTrain</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherTrain</driverClass>
+    <reportString>training TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_LasherMilk</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherMilk</driverClass>
+    <reportString>milking TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_LasherShear</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherShear</driverClass>
+    <reportString>shearing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_LasherSlaughter</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherSlaughter</driverClass>
+    <reportString>slaughtering TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_LasherReleaseToWild</defName>
+    <driverClass>ApexMechanoids.JobDriver_LasherReleaseAnimalToWild</driverClass>
+    <reportString>releasing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

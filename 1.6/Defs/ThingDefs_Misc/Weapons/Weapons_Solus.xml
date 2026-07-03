@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Solus</defName>
+		<label>solus</label>
+		<description>A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Solus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<tradeability>Sellable</tradeability>
+		<smeltable>false</smeltable>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>9999</MarketValue>
+			<Mass>8.5</Mass>
+			<AccuracyTouch>1.0</AccuracyTouch>
+			<AccuracyShort>1.0</AccuracyShort>
+			<AccuracyMedium>1.0</AccuracyMedium>
+			<AccuracyLong>1.0</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>55</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>APM_WeaponSolus</li>
+		</weaponTags>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>ApexMechtech</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>APM_SolusOrb</defaultProjectile>
+				<warmupTime>5.2</warmupTime>
+				<range>29.9</range>
+				<minRange>3.9</minRange>
+				<forcedMissRadius>0</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>Shot_ChargeBlaster</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_SolusOrb</defName>
+		<label>solus orb</label>
+		<thingClass>ApexMechanoids.Projectile_Orb</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/BFG/BFG_Proj/BFG_Proj_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<speed>8</speed>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>0</stoppingPower>
+			<useGraphicClass>true</useGraphicClass>
+		</projectile>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_Orb">
+				<arcDamageDef>Burn</arcDamageDef>
+				<arcDamageAmount>8</arcDamageAmount>
+				<arcArmorPenetration>0.18</arcArmorPenetration>
+				<arcRadius>4.9</arcRadius>
+				<arcIntervalTicks>12</arcIntervalTicks>
+				<arcStartDistance>5.5</arcStartDistance>
+				<maxArcTargets>3</maxArcTargets>
+				<arcLightningMoteDefs>
+					<li>APM_Mote_SolusLightning_A</li>
+					<li>APM_Mote_SolusLightning_B</li>
+					<li>APM_Mote_SolusLightning_C</li>
+				</arcLightningMoteDefs>
+				<arcGlowSize>0.75</arcGlowSize>
+				<activationFlashScale>0.8</activationFlashScale>
+				<impactEffecterDef>APM_Effecter_Solus_End</impactEffecterDef>
+				<impactFlashScale>2.1</impactFlashScale>
+				<totalArcStrikeBudget>40</totalArcStrikeBudget>
+				<maxLifetimeTicks>500</maxLifetimeTicks>
+				<orbSpinDegreesPerTick>2.6</orbSpinDegreesPerTick>
+				<orbPulseAmplitude>0.15</orbPulseAmplitude>
+				<orbPulseTicks>22</orbPulseTicks>
+				<orbActivatedScaleMultiplier>1.16</orbActivatedScaleMultiplier>
+				<orbMinAlpha>0.7</orbMinAlpha>
+				<orbMaxAlpha>1.0</orbMaxAlpha>
+				<orbColor>(1.0,0.85,0.35,1.0)</orbColor>
+				<orbFramePaths>
+					<li>Things/Mote/BFG/BFG_Proj/BFG_Proj_a</li>
+					<li>Things/Mote/BFG/BFG_Proj/BFG_Proj_b</li>
+					<li>Things/Mote/BFG/BFG_Proj/BFG_Proj_c</li>
+				</orbFramePaths>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

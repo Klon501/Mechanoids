@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Aegis.label>тяжёлый мех с двойными щитами</APM_Aegis.label>
+  <APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>центральный оптический сенсор</APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>
+  <APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>левый акустический сенсор</APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>
+  <APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>правый акустический сенсор</APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>
+  <APM_Aegis.corePart.parts.1.customLabel>левое плечо</APM_Aegis.corePart.parts.1.customLabel>
+  <APM_Aegis.corePart.parts.1.parts.0.customLabel>левая рука</APM_Aegis.corePart.parts.1.parts.0.customLabel>
+  <APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>левый щит</APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>
+  <APM_Aegis.corePart.parts.2.customLabel>правое плечо</APM_Aegis.corePart.parts.2.customLabel>
+  <APM_Aegis.corePart.parts.2.parts.0.customLabel>правая рука</APM_Aegis.corePart.parts.2.parts.0.customLabel>
+  <APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>правый щит</APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>
+  <APM_Aegis.corePart.parts.3.customLabel>левая нога</APM_Aegis.corePart.parts.3.customLabel>
+  <APM_Aegis.corePart.parts.3.parts.0.customLabel>левая стопа</APM_Aegis.corePart.parts.3.parts.0.customLabel>
+  <APM_Aegis.corePart.parts.4.customLabel>правая нога</APM_Aegis.corePart.parts.4.customLabel>
+  <APM_Aegis.corePart.parts.4.parts.0.customLabel>правая стопа</APM_Aegis.corePart.parts.4.parts.0.customLabel>
+
+
+</LanguageData>

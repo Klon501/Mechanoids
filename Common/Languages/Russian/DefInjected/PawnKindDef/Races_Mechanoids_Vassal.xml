@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Mech_Vassal.label>вассал</APM_Mech_Vassal.label>
+  <APM_Mech_Vassal.labelPlural>вассалы</APM_Mech_Vassal.labelPlural>
+  <APM_Mech_Vassal.lifeStages.0.label>вассал</APM_Mech_Vassal.lifeStages.0.label>
+  <APM_Mech_Vassal.lifeStages.0.labelPlural>вассалы</APM_Mech_Vassal.lifeStages.0.labelPlural>
+  <APM_Mech_Vassal.lifeStages.0.labelMale>вассал-мужчина</APM_Mech_Vassal.lifeStages.0.labelMale>
+  <APM_Mech_Vassal.lifeStages.0.labelMalePlural>вассалы-мужчины</APM_Mech_Vassal.lifeStages.0.labelMalePlural>
+  <APM_Mech_Vassal.lifeStages.0.labelFemale>вассал-женщина</APM_Mech_Vassal.lifeStages.0.labelFemale>
+  <APM_Mech_Vassal.lifeStages.0.labelFemalePlural>вассалы-женщины</APM_Mech_Vassal.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Vassal.lifeStages.1.label>вассал</APM_Mech_Vassal.lifeStages.1.label>
+  <APM_Mech_Vassal.lifeStages.1.labelPlural>вассалы</APM_Mech_Vassal.lifeStages.1.labelPlural>
+  <APM_Mech_Vassal.lifeStages.1.labelMale>вассал-мужчина</APM_Mech_Vassal.lifeStages.1.labelMale>
+  <APM_Mech_Vassal.lifeStages.1.labelMalePlural>вассалы-мужчины</APM_Mech_Vassal.lifeStages.1.labelMalePlural>
+  <APM_Mech_Vassal.lifeStages.1.labelFemale>вассал-женщина</APM_Mech_Vassal.lifeStages.1.labelFemale>
+  <APM_Mech_Vassal.lifeStages.1.labelFemalePlural>вассалы-женщины</APM_Mech_Vassal.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Vassal.labelMale>вассал-мужчина</APM_Mech_Vassal.labelMale>
+  <APM_Mech_Vassal.labelMalePlural>вассалы-мужчины</APM_Mech_Vassal.labelMalePlural>
+  <APM_Mech_Vassal.labelFemale>вассал-женщина</APM_Mech_Vassal.labelFemale>
+  <APM_Mech_Vassal.labelFemalePlural>вассалы-женщины</APM_Mech_Vassal.labelFemalePlural>
+
+</LanguageData>

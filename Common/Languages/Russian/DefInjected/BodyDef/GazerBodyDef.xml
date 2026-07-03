@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_Gazer.label>наблюдатель</APM_Gazer.label>
+  <APM_Gazer.corePart.parts.0.parts.1.customLabel>левая система охлаждения</APM_Gazer.corePart.parts.0.parts.1.customLabel>
+  <APM_Gazer.corePart.parts.0.parts.2.customLabel>правая система охлаждения</APM_Gazer.corePart.parts.0.parts.2.customLabel>
+  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусировщик лазера</APM_Gazer.corePart.parts.0.parts.3.customLabel>
+  <APM_Gazer.corePart.parts.0.parts.4.customLabel>левый акустический сенсор</APM_Gazer.corePart.parts.0.parts.4.customLabel>
+  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правый акустический сенсор</APM_Gazer.corePart.parts.0.parts.5.customLabel>
+  <APM_Gazer.corePart.parts.3.customLabel>передняя левая нога</APM_Gazer.corePart.parts.3.customLabel>
+  <APM_Gazer.corePart.parts.3.parts.0.customLabel>передняя левая лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
+  <APM_Gazer.corePart.parts.4.customLabel>передняя правая нога</APM_Gazer.corePart.parts.4.customLabel>
+  <APM_Gazer.corePart.parts.4.parts.0.customLabel>передняя правая лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
+
+
+</LanguageData>

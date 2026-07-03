@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM.MechamancerPack.MaxSatellites>Этот набор уже поддерживает развернутых спутников: {0}.</APM.MechamancerPack.MaxSatellites>
+  <APM.MechamancerPack.NoValidSpawnCell>Не найдена подходящая клетка для развертывания спутника.</APM.MechamancerPack.NoValidSpawnCell>
+
+</LanguageData>

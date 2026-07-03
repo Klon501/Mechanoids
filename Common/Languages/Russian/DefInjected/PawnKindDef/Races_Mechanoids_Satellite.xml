@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Satellite.label>сателлит</APM_Mech_Satellite.label>
+  <APM_Mech_Satellite.labelPlural>сателлиты</APM_Mech_Satellite.labelPlural>
+  <APM_Mech_Satellite.lifeStages.0.label>сателлит</APM_Mech_Satellite.lifeStages.0.label>
+  <APM_Mech_Satellite.lifeStages.0.labelPlural>сателлиты</APM_Mech_Satellite.lifeStages.0.labelPlural>
+  <APM_Mech_Satellite.lifeStages.0.labelMale>сателлит-мужчина</APM_Mech_Satellite.lifeStages.0.labelMale>
+  <APM_Mech_Satellite.lifeStages.0.labelMalePlural>сателлиты-мужчины</APM_Mech_Satellite.lifeStages.0.labelMalePlural>
+  <APM_Mech_Satellite.lifeStages.0.labelFemale>сателлит-женщина</APM_Mech_Satellite.lifeStages.0.labelFemale>
+  <APM_Mech_Satellite.lifeStages.0.labelFemalePlural>сателлиты-женщины</APM_Mech_Satellite.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Satellite.lifeStages.1.label>сателлит</APM_Mech_Satellite.lifeStages.1.label>
+  <APM_Mech_Satellite.lifeStages.1.labelPlural>сателлиты</APM_Mech_Satellite.lifeStages.1.labelPlural>
+  <APM_Mech_Satellite.lifeStages.1.labelMale>сателлит-мужчина</APM_Mech_Satellite.lifeStages.1.labelMale>
+  <APM_Mech_Satellite.lifeStages.1.labelMalePlural>сателлиты-мужчины</APM_Mech_Satellite.lifeStages.1.labelMalePlural>
+  <APM_Mech_Satellite.lifeStages.1.labelFemale>сателлит-женщина</APM_Mech_Satellite.lifeStages.1.labelFemale>
+  <APM_Mech_Satellite.lifeStages.1.labelFemalePlural>сателлиты-женщины</APM_Mech_Satellite.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Satellite.labelMale>сателлит-мужчина</APM_Mech_Satellite.labelMale>
+  <APM_Mech_Satellite.labelMalePlural>сателлиты-мужчины</APM_Mech_Satellite.labelMalePlural>
+  <APM_Mech_Satellite.labelFemale>сателлит-женщина</APM_Mech_Satellite.labelFemale>
+  <APM_Mech_Satellite.labelFemalePlural>сателлиты-женщины</APM_Mech_Satellite.labelFemalePlural>
+
+</LanguageData>

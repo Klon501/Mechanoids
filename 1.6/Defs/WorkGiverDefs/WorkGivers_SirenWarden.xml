@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>APM_SirenReleasePrisoner</defName>
+    <label>release prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenReleasePrisoner</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>release</verb>
+    <gerund>releasing</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <equivalenceGroup>ReleasePrisoner</equivalenceGroup>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_SirenTakePrisonerToBed</defName>
+    <label>take prisoners to bed</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenTakeToBed</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>take to bed</verb>
+    <gerund>taking to bed</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_SirenFeedPrisoner</defName>
+    <label>feed prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenFeed</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>feed</verb>
+    <gerund>feeding</gerund>
+    <priorityInType>80</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_SirenDeliverFoodToPrisoner</defName>
+    <label>deliver food to prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenDeliverFood</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>deliver food for</verb>
+    <gerund>delivering food for</gerund>
+    <priorityInType>70</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_SirenChatWithPrisoner</defName>
+    <label>chat with prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenChat</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>chat with</verb>
+    <gerund>chatting with</gerund>
+    <priorityInType>60</priorityInType>
+    <requiredCapacities>
+      <li>Talking</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+</Defs>

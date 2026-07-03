@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Mantis: Heavy elite melee mech descended from Scyther. 3-directional textures.
+       HeadAttackTool only (no arm weapon groups — it has blade-arms, not hands).
+       Very high health scale (6.2). Custom bladed arms instead of hands. Quad-like heavy body. -->
+	<BodyDef>
+		<defName>APM_Mantis</defName>
+		<label>mantis</label>
+		<corePart>
+			<def>APM_MantisBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.08</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.06</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.06</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.06</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left blade mount</customLabel>
+					<coverage>0.13</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left blade arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>APM_MantisBlade</def>
+									<customLabel>left cutting claw</customLabel>
+									<coverage>0.5</coverage>
+									<height>Middle</height>
+									<groups>
+										<li>APM_LeftMantisBlade</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right blade mount</customLabel>
+					<coverage>0.13</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right blade arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>APM_MantisBlade</def>
+									<customLabel>right cutting claw</customLabel>
+									<coverage>0.5</coverage>
+									<height>Middle</height>
+									<groups>
+										<li>APM_RightMantisBlade</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>front left foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>front right foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>rear left leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>rear left foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>rear right leg</customLabel>
+					<coverage>0.12</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>rear right foot</customLabel>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<BodyPartGroupDef>
+		<defName>APM_LeftMantisBlade</defName>
+		<label>left cutting claw</label>
+		<labelShort>claw</labelShort>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>APM_RightMantisBlade</defName>
+		<label>right cutting claw</label>
+		<labelShort>claw</labelShort>
+	</BodyPartGroupDef>
+
+	<BodyPartDef>
+		<defName>APM_MantisBody</defName>
+		<label>body</label>
+		<hitPoints>150</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>APM_MantisBlade</defName>
+		<label>cutting claw</label>
+		<hitPoints>60</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+</Defs>

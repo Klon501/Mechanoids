@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Ravager_Artillery.label>артиллерия опустошителя</APM_Ravager_Artillery.label>
+  <APM_Ravager_Artillery.description>ЗАГОЛОВОК</APM_Ravager_Artillery.description>
+  <APM_Ravager_Artillery.verbs.0.label>запуск осколочной гранаты</APM_Ravager_Artillery.verbs.0.label>
+
+  <APM_ArtilleryProjectile.label>артиллерийский снаряд</APM_ArtilleryProjectile.label>
+
+
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.Label>Unload preserved food</APM.FrostivusFoodPreservation.ManualUnload.Label>
+  <APM.FrostivusFoodPreservation.ManualUnload.Desc>Choose a cell where Frostivus should unload all preserved food. Manually unloaded food will be forbidden.</APM.FrostivusFoodPreservation.ManualUnload.Desc>
+  <APM.FrostivusFoodPreservation.ManualUnload.NoFood>No preserved food carried.</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
+  <APM.FrostivusFoodPreservation.ManualUnload.NoPath>Frostivus cannot reach that cell.</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
+
+</LanguageData>

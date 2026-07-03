@@ -1,0 +1,59 @@
+<Defs>
+	<ThingDef ParentName="ApparelArmorPowerBase">
+		<defName>APM_Apparel_MechamancerSuit</defName>
+		<label>mechmancer suit</label>
+		<description>A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor.</description>
+		<recipeMaker>
+			<researchPrerequisite>ApexMechtech</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>510</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/MechamancerSuit/MechJuggernaut_icon</texPath><!-- make an icon -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.85, 0.85)</drawSize>
+		</graphicData>
+		<statBases>
+			<ArmorRating_Sharp>1.07</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.70</ArmorRating_Heat>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>30</Insulation_Heat>
+			<EquipDelay>25</EquipDelay>
+			<EnergyShieldRechargeRate MayRequire="Ludeon.RimWorld.Royalty">0.12</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax MayRequire="Ludeon.RimWorld.Royalty">1.2</EnergyShieldEnergyMax>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Shield" MayRequire="Ludeon.RimWorld.Royalty">
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
+		<equippedStatOffsets>
+			<MechBandwidth>26</MechBandwidth>
+			<MechControlGroups>2</MechControlGroups>
+			<ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+			<MeleeHitChance>-0.6</MeleeHitChance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.4</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<!--Terminus chips which havent been defined yet, this requires rebalancing anyway-->
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>9</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>60</Steel>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RoyalTier7</li>
+				<li>APM_Mechamancer</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechamancerSuit/MechJuggernaut</wornGraphicPath>
+		</apparel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>Clothing</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

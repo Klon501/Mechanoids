@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Frostivus.label>-//-</APM_Mech_Frostivus.label>
+  <APM_Mech_Frostivus.description>I don't know what should be here, the author of this code forgot to create a file but added this def name to the code!!!! FIX!!!</APM_Mech_Frostivus.description>
+  <APM_Mech_Frostivus.comps.0.useLabel>Use {0_label}</APM_Mech_Frostivus.comps.0.useLabel>
+
+
+</LanguageData>

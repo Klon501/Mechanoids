@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Mech_Celerus.label>Целерус</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus.description>Три мощных типа механоидов были созданы архотехным разумом в попытке создать центрального командующего всеми силами механоидов. Испытав влияние Японии Старой Земли периода Сэнгоку, быстрый и скрытный Целерус не становится слабее из-за своей скорости. Он способен мгновенно перемещаться на короткие расстояния вокруг себя, а также создавать дымовую завесу, чтобы затруднить врагам восприятие его и всего вокруг, дополнительно становясь психически невоспринимаемым в этой области. Помимо этих эффектов, враги будут получать периодические.</APM_Mech_Celerus.description>
+  <APM_Mech_Celerus.tools.0.label>левая кисть</APM_Mech_Celerus.tools.0.label>
+  <APM_Mech_Celerus.tools.1.label>правая кисть</APM_Mech_Celerus.tools.1.label>
+  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+
+
+</LanguageData>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>APM_Mech_Mantis</defName>
+		<label>Mantis</label>
+		<description>Descended from the well known and well feared scyther mechanoid, the mantis was built to rip apart foes in melee combat. Featuring a combination of mechanoid components and synthesized artificial muscles, flexible yet durable armor plates and a set of resonating plasteel cutting claws, this mechanoid well surpasses its predecessors.For targets that outrange this mechanoid, it is able to quickly dash forward in a burst of speed, unleashing a swift strike. If its physical capabilities were fearsome enough, it actively analyzes the battlefield around it, and chooses an opportune time to trigger its installed repair mechanite swarm to heal and supercharge its abilities after it has ended a sufficient amount of targets.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<MoveSpeed>3.5</MoveSpeed>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+			<ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.15</MechEnergyLossPerHP>
+			<WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+			<EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.35</EMPResistance>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.5</power>
+				<cooldownTime>2.9</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>APM_Mantis</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>6.2</baseHealthScale>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<intelligence>ToolUser</intelligence>
+			<mechWeightClass>Medium</mechWeightClass>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>2500~3500</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<Steel>50</Steel>
+			<Plasteel>20</Plasteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Mantis</defName>
+		<label>mantis</label>
+		<race>APM_Mech_Mantis</race>
+		<combatPower>550</combatPower>
+		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
+		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Mantis/Mantis</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mantis/Mech_Mantis</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Mantis/MantisAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mantis/Mech_Mantis</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<abilities>
+			<li>APM_Bladehopp</li>
+		</abilities>
+	</PawnKindDef>
+</Defs>

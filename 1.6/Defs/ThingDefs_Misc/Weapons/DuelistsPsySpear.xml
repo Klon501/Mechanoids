@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>APM_Weapon_DuelistsPsySpear</defName>
+		<label>duelist's psy-spear</label>
+		<description>A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/DuelistsPsySpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<equippedAngleOffset>-90</equippedAngleOffset>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>APM_WeaponDuelistsPsySpear</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<relicChance>2</relicChance>
+		<costList>
+			<Plasteel>45</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>ApexMechtech</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>APM_Mech_Duel</abilityDef>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.20, 0.00, 0.30)</drawOffset>
+						<angleOffset>0.00</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.20, 0.00, 0.30)</drawOffset>
+						<angleOffset>70</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25, 0.00, 0.30)</drawOffset>
+						<angleOffset>65</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.20, 0.00, 0.30)</drawOffset>
+						<angleOffset>-70</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_ShockwaveEmitter</defName>
+    <thingClass>ApexMechanoids.Mote_ShockwaveEmitter</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>999999</solidTime>
+      <fadeOutTime>0</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Blank</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+      <drawSize>0.01</drawSize>
+    </graphicData>
+  </ThingDef>
+  <ThingDef>
+    <defName>APM_ShockwaveFlash</defName>
+    <label>shockwave flash</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>PsychicEmitter</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <graphicData>
+      <graphicClass>Graphic_FadesInOut</graphicClass>
+      <texPath>Things/Mote/BrightFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(255,245,220,145)</color>
+      <drawSize>4.4</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>24</delayTicks>
+      </li>
+      <li Class="CompProperties_FadesInOut">
+        <fadeInSecs>0.01</fadeInSecs>
+        <fadeOutSecs>0.18</fadeOutSecs>
+        <solidTimeSecs>0.03</solidTimeSecs>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_ShockwaveCharge</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Sunray/APM_SunRay_ChargeMote</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Charge</shaderType>
+      <color>(255,235,180)</color>
+      <drawSize>(2.2, 2.2)</drawSize>
+      <shaderParameters>
+        <_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+        <_FlickerFrequency>0.55</_FlickerFrequency>
+        <_FlickerAmount>1.2</_FlickerAmount>
+        <_InnerCircleIntensity>0.18</_InnerCircleIntensity>
+        <_InnerCircleSize>1.2</_InnerCircleSize>
+        <_InnerCircleShimmerAmount>0.42</_InnerCircleShimmerAmount>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>APM_Mote_ShockwaveBlastWave</defName>
+    <thingClass>ApexMechanoids.Mote_ShockwaveBlastWave</thingClass>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>999999</solidTime>
+      <fadeOutTime>0</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Fleck/EMP_Blast</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(1.0, 1.0)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

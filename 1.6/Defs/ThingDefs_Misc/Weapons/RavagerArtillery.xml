@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Ravager_Artillery</defName>
+		<label>ravager artillery</label>
+		<description>A moveable auto-mortar with integrated hellsphere adjacent technology, this mechanoid siege weapon was intended to be emplaced on larger mechanoid frames. One can almost feel the mechhive’s hate in every blast of the cannon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RavagerArtillery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>9999</MarketValue>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.92</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>22</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>APM_WeaponRavagerArtillery</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<label>launch frag grenade</label>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>APM_ArtilleryProjectile</defaultProjectile>
+				<hasStandardCommand>true</hasStandardCommand>
+				<burstShotCount>1</burstShotCount>
+				<range>40</range>
+				<forcedMissRadius>8.9</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<drawHighlightWithLineOfSight>false</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>true</canTargetBuildings>
+				</targetParams>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0,1,0)</drawOffset>
+						<angleOffset>217</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0,0.0,0.55)</drawOffset>
+						<angleOffset>-90</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0,0,0)</drawOffset>
+						<angleOffset>37</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0,0.0,0.55)</drawOffset>
+						<angleOffset>90</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0,1,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.7,0.0,0.6)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0,0,1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0.7,0.0,0.6)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>APM_ArtilleryProjectile</defName>
+		<label>artillery projectile</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RavagerArtillery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+			<explosionRadius>2.85</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>APM_StarfallCarrier</defName>
+		<label>starfall carrier</label>
+		<thingClass>ApexMechanoids.Projectile_StarfallCarrier</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RavagerArtillery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<speed>32</speed>
+			<damageDef>Bomb</damageDef>
+		</projectile>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_StarfallCarrier">
+				<splitProjectileDef>APM_StarfallSplitProjectile</splitProjectileDef>
+				<splitAfterProgress>0.72</splitAfterProgress>
+				<splitSpreadDistance>2.8</splitSpreadDistance>
+				<splitTargetJitter>0.95</splitTargetJitter>
+				<splitSpreadJitter>1.25</splitSpreadJitter>
+				<splitForwardJitter>1.5</splitForwardJitter>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_StarfallSplitProjectile</defName>
+		<label>starfall split projectile</label>
+		<thingClass>ApexMechanoids.Projectile_StarfallFragment</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RavagerArtillery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.75, 0.75)</drawSize>
+		</graphicData>
+		<projectile>
+			<speed>64</speed>
+			<explosionRadius>2.85</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>ApexMechtech</defName>
+		<label>Apex Mechtech</label>
+		<description>The technology needed for your mechanitor to create and control Apex-tier mechanoids. You can get chips by using a mechanitor to summon a Three Lords threat. They can also be summoned separately.</description>
+		<!--TODO: Adjust base cost-->
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Main</tab>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+		<prerequisites>
+			<li>AdvancedMechtech</li>
+			<li>HighMechtech</li>
+		</prerequisites>
+		<requiredAnalyzed>
+      	 <li>PsionicChip</li>
+		 <li>ExtraChip</li>
+		 <li>PsyfluxChip</li>
+    	</requiredAnalyzed>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>AdvancedMechtech</defName>
+		<label>Advanced Mechtech</label>
+		<description>The technology needed for your mechanitor to create and control Advanced-tier mechanoids. You can get chips by using a mechanitor to summon a Gazer threat.</description>
+		<!--TODO: Adjust base cost-->
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Main</tab>
+		<researchViewX>14.0</researchViewX>
+		<researchViewY>5.15</researchViewY>
+		<prerequisites>
+			<li>StandardMechtech</li>
+		</prerequisites>
+		<requiredAnalyzed>
+         <li>OcularChip</li>
+    	</requiredAnalyzed>
+	</ResearchProjectDef>
+</Defs>

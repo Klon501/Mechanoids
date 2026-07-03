@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<APM_Mech_Haze.label>Дымка</APM_Mech_Haze.label>
+  <APM_Mech_Haze.description>Эксперимент механоидов в области органического контроля территории, Дымка может накачивать токсичный газ в окружающую область. Её атаки в ближнем бою особенно смертоносны, нанося токсичное накопление при попадании. Интеллект мехулья не знает границ, даже перепрофилируя свои отходы для достижения целей.</APM_Mech_Haze.description>
+  <APM_Mech_Haze.tools.0.label>голова</APM_Mech_Haze.tools.0.label>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>APM_SirenChatWithPrisoner</defName>
+    <driverClass>ApexMechanoids.JobDriver_SirenChatWithPrisoner</driverClass>
+    <reportString>singing to TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

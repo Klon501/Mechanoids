@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>APM_IngestorCorpseProcessing</defName>
+    <labelShort>ingest</labelShort>
+    <pawnLabel>Ingestor</pawnLabel>
+    <gerundLabel>ingesting corpses</gerundLabel>
+    <description>Process organic corpses into chemfuel.</description>
+    <verb>Ingest</verb>
+    <naturalPriority>940</naturalPriority>
+    <workTags>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

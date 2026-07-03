@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>APM_LasherHandling</defName>
+    <labelShort>handle</labelShort>
+    <pawnLabel>Handler</pawnLabel>
+    <gerundLabel>handling</gerundLabel>
+    <description>Tame, train, harvest resources from and slaughter animals.</description>
+    <verb>Handle</verb>
+    <naturalPriority>1050</naturalPriority>
+    <relevantSkills>
+      <li>Animals</li>
+    </relevantSkills>
+    <workTags>
+      <li>Animals</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

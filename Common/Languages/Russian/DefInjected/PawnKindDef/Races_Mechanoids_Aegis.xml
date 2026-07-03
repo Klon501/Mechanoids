@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Aegis.label>Эгида</APM_Mech_Aegis.label>
+  <APM_Mech_Aegis.labelPlural>Эгиды</APM_Mech_Aegis.labelPlural>
+  <APM_Mech_Aegis.lifeStages.0.label>Эгида</APM_Mech_Aegis.lifeStages.0.label>
+  <APM_Mech_Aegis.lifeStages.0.labelPlural>Эгиды</APM_Mech_Aegis.lifeStages.0.labelPlural>
+  <APM_Mech_Aegis.lifeStages.0.labelMale>Эгида-мужчина</APM_Mech_Aegis.lifeStages.0.labelMale>
+  <APM_Mech_Aegis.lifeStages.0.labelMalePlural>Эгиды-мужчины</APM_Mech_Aegis.lifeStages.0.labelMalePlural>
+  <APM_Mech_Aegis.lifeStages.0.labelFemale>Эгида-женщина</APM_Mech_Aegis.lifeStages.0.labelFemale>
+  <APM_Mech_Aegis.lifeStages.0.labelFemalePlural>Эгиды-женщины</APM_Mech_Aegis.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Aegis.lifeStages.1.label>Эгида</APM_Mech_Aegis.lifeStages.1.label>
+  <APM_Mech_Aegis.lifeStages.1.labelPlural>Эгиды</APM_Mech_Aegis.lifeStages.1.labelPlural>
+  <APM_Mech_Aegis.lifeStages.1.labelMale>Эгида-мужчина</APM_Mech_Aegis.lifeStages.1.labelMale>
+  <APM_Mech_Aegis.lifeStages.1.labelMalePlural>Эгиды-мужчины</APM_Mech_Aegis.lifeStages.1.labelMalePlural>
+  <APM_Mech_Aegis.lifeStages.1.labelFemale>Эгида-женщина</APM_Mech_Aegis.lifeStages.1.labelFemale>
+  <APM_Mech_Aegis.lifeStages.1.labelFemalePlural>Эгиды-женщины</APM_Mech_Aegis.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Aegis.labelMale>Эгида-мужчина</APM_Mech_Aegis.labelMale>
+  <APM_Mech_Aegis.labelMalePlural>Эгиды-мужчины</APM_Mech_Aegis.labelMalePlural>
+  <APM_Mech_Aegis.labelFemale>Эгида-женщина</APM_Mech_Aegis.labelFemale>
+  <APM_Mech_Aegis.labelFemalePlural>Эгиды-женщины</APM_Mech_Aegis.labelFemalePlural>
+
+
+</LanguageData>

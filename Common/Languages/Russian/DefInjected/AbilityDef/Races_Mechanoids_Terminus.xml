@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_TerminusOverdrive.label>Овердрайв</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>Терминус перенаправляет энергию внутрь корпуса и на короткое время входит в боевой овердрайв. Во время действия он сбрасывает плащ, наносит больше урона в ближнем бою, быстрее проводит атаки и заметно слабее реагирует на stagger.</APM_TerminusOverdrive.description>
+
+</LanguageData>

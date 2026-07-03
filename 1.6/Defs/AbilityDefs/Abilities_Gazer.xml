@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>APM_Shockwave</defName>
+    <label>Shockwave</label>
+    <description>PLASEHOLDER</description>
+    <iconPath>UI/Shockwave</iconPath>
+    <cooldownTicksRange>45000</cooldownTicksRange>
+    <targetRequired>false</targetRequired>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <hostile>false</hostile>
+    <aiCanUse>false</aiCanUse>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <showPsycastEffects>false</showPsycastEffects>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>3.0</warmupTime>
+      <range>0.48</range>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ApexMechanoids.CompProperties_ShockwaveWarmup">
+        <chargeFleckDefName></chargeFleckDefName>
+        <sparkIntervalTicks>0</sparkIntervalTicks>
+      </li>
+      <li Class="ApexMechanoids.CompProperties_Shockwave">
+        <damageDef>Bomb</damageDef>
+        <blastWaveDef>APM_Mote_ShockwaveBlastWave</blastWaveDef>
+        <throwFlyerDef>APM_PawnFlyer_ShockwaveThrown</throwFlyerDef>
+        <radius>8.9</radius>
+        <damageAmount>6</damageAmount>
+        <armorPenetration>0.12</armorPenetration>
+        <stunTicks>480</stunTicks>
+        <blastWaveStartScale>1.15</blastWaveStartScale>
+        <blastWaveEndScale>10.8</blastWaveEndScale>
+        <blastWaveLifetimeTicks>32</blastWaveLifetimeTicks>
+        <minThrowDistance>2</minThrowDistance>
+        <maxThrowDistance>6</maxThrowDistance>
+        <empDamageAmount>8</empDamageAmount>
+        <castSoundDefName>Explosion_EMP</castSoundDefName>
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>APM_PawnFlyer_ShockwaveThrown</defName>
+    <thingClass>ApexMechanoids.PawnFlyer_ShockwaveThrown</thingClass>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <pawnFlyer>
+      <flightDurationMin>0.3</flightDurationMin>
+      <flightSpeed>16</flightSpeed>
+      <workerClass>PawnFlyerWorker</workerClass>
+      <heightFactor>0.42</heightFactor>
+      <progressCurve>
+        <points>
+          <li>(0, 0)</li>
+          <li>(0.18, 0.2)</li>
+          <li>(0.5, 0.68)</li>
+          <li>(0.82, 0.94)</li>
+          <li>(1, 1)</li>
+        </points>
+      </progressCurve>
+    </pawnFlyer>
+  </ThingDef>
+</Defs>

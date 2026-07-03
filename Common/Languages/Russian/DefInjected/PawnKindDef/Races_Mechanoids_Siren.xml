@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+  <APM_Mech_Siren.labelPlural>сирены</APM_Mech_Siren.labelPlural>
+  <APM_Mech_Siren.lifeStages.0.label>сирена</APM_Mech_Siren.lifeStages.0.label>
+  <APM_Mech_Siren.lifeStages.0.labelPlural>сирены</APM_Mech_Siren.lifeStages.0.labelPlural>
+  <APM_Mech_Siren.lifeStages.0.labelMale>сирена-мужчина</APM_Mech_Siren.lifeStages.0.labelMale>
+  <APM_Mech_Siren.lifeStages.0.labelMalePlural>сирены-мужчины</APM_Mech_Siren.lifeStages.0.labelMalePlural>
+  <APM_Mech_Siren.lifeStages.0.labelFemale>сирена-женщина</APM_Mech_Siren.lifeStages.0.labelFemale>
+  <APM_Mech_Siren.lifeStages.0.labelFemalePlural>сирены-женщины</APM_Mech_Siren.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Siren.lifeStages.1.label>сирена</APM_Mech_Siren.lifeStages.1.label>
+  <APM_Mech_Siren.lifeStages.1.labelPlural>сирены</APM_Mech_Siren.lifeStages.1.labelPlural>
+  <APM_Mech_Siren.lifeStages.1.labelMale>сирена-мужчина</APM_Mech_Siren.lifeStages.1.labelMale>
+  <APM_Mech_Siren.lifeStages.1.labelMalePlural>сирены-мужчины</APM_Mech_Siren.lifeStages.1.labelMalePlural>
+  <APM_Mech_Siren.lifeStages.1.labelFemale>сирена-женщина</APM_Mech_Siren.lifeStages.1.labelFemale>
+  <APM_Mech_Siren.lifeStages.1.labelFemalePlural>сирены-женщины</APM_Mech_Siren.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Siren.labelMale>сирена-мужчина</APM_Mech_Siren.labelMale>
+  <APM_Mech_Siren.labelMalePlural>сирены-мужчины</APM_Mech_Siren.labelMalePlural>
+  <APM_Mech_Siren.labelFemale>сирена-женщина</APM_Mech_Siren.labelFemale>
+  <APM_Mech_Siren.labelFemalePlural>сирены-женщины</APM_Mech_Siren.labelFemalePlural>
+
+
+</LanguageData>

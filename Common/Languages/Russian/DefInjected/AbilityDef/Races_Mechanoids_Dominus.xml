@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <APM_PressTheAttack.label>Натиск</APM_PressTheAttack.label>
+  <APM_PressTheAttack.description>ЗАГОЛОВОК</APM_PressTheAttack.description>
+
+  <APM_Mech_Duel.label>Испытание поединком</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>ЗАГОЛОВОК</APM_Mech_Duel.description>
+
+</LanguageData>

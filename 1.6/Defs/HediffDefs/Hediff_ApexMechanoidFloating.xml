@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Apex Mechanoid Floating - Ignore Terrain Movement penalty -->
+	<HediffDef>
+		<defName>APM_ApexMechanoid_Floating</defName>
+		<label>Floating</label>
+		<labelNoun>Floating</labelNoun>
+		<description>This mechanoid hovers above the ground, ignoring all terrain movement penalties.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0, 0.7, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"></li>
+		</comps>
+	</HediffDef>
+</Defs>
