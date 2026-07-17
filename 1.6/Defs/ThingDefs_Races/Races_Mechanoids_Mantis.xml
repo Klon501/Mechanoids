@@ -104,5 +104,6 @@
 		<abilities>
 			<li>APM_Bladehopp</li>
 		</abilities>
+		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 	</PawnKindDef>
 </Defs>

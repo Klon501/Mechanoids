@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
+    <value>
+        <!-- Common -->
+      <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
+      <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
+      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Lasher>10</APM_Mech_Lasher>
+      <APM_Mech_Pulse>10</APM_Mech_Pulse>
+      <APM_Mech_Aegis>10</APM_Mech_Aegis>
+      <APM_Mech_Maul>10</APM_Mech_Maul>
+
+        <!-- Rare -->
+      <APM_Mech_Mantis>5</APM_Mech_Mantis>
+      <APM_Mech_Ingestor>5</APM_Mech_Ingestor>
+      <APM_Mech_Haze>5</APM_Mech_Haze>
+
+        <!-- Epic -->
+      <APM_Mech_Siren>2</APM_Mech_Siren>
+      <APM_Mech_Vassal>2</APM_Mech_Vassal>
+        <!-- Bosses -->
+      <APM_Mech_Dominus>1</APM_Mech_Dominus>
+      <APM_Mech_Terminus>1</APM_Mech_Terminus>
+      <APM_Mech_Celerus>1</APM_Mech_Celerus>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[2]/options</xpath>
+    <value>
+        <!-- Common -->
+      <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
+      <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
+      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Pulse>10</APM_Mech_Pulse>
+      <APM_Mech_Maul>10</APM_Mech_Maul>
+
+        <!-- Rare -->
+      <APM_Mech_Haze>5</APM_Mech_Haze>
+
+        <!-- Epic -->
+      <APM_Mech_Siren>2</APM_Mech_Siren>
+      <APM_Mech_Vassal>2</APM_Mech_Vassal>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[3]/options</xpath>
+    <value>
+        <!-- Common -->
+      <APM_Mech_Lasher>10</APM_Mech_Lasher>
+      <APM_Mech_Aegis>10</APM_Mech_Aegis>
+      <APM_Mech_Maul>10</APM_Mech_Maul>
+
+        <!-- Rare -->
+      <APM_Mech_Mantis>5</APM_Mech_Mantis>
+      <APM_Mech_Ingestor>5</APM_Mech_Ingestor>
+
+        <!-- Bosses -->
+      <APM_Mech_Dominus>1</APM_Mech_Dominus>
+      <APM_Mech_Terminus>1</APM_Mech_Terminus>
+      <APM_Mech_Celerus>1</APM_Mech_Celerus>
+    </value>
+  </Operation>
+
+      <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[6]/options</xpath>
+    <value>
+                <!-- Breach -->
+      <APM_Mech_Ravager>5</APM_Mech_Ravager>
+      <APM_Mech_Gazer>1</APM_Mech_Gazer>
+
+                <!-- Infantry -->
+      <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
+      <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
+      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Pulse>10</APM_Mech_Pulse>
+      <APM_Mech_Maul>10</APM_Mech_Maul>
+      <APM_Mech_Vassal>2</APM_Mech_Vassal>
+    </value>
+  </Operation>
+</Patch>

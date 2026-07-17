@@ -109,6 +109,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>9999~9999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags>
 			<li>APM_MechanoidWhip</li>
 		</weaponTags>

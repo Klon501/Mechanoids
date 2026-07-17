@@ -82,7 +82,11 @@
 		<defName>APM_Mech_Dominus</defName>
 		<label>dominus</label>
 		<race>APM_Mech_Dominus</race>
-		<combatPower>500</combatPower>
+		<combatPower>600</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
+	    <skipResistant>true</skipResistant>
 		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
 		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
 		<lifeStages>
@@ -114,6 +118,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponDominusMechlance</li>
 		</weaponTags>
@@ -127,7 +132,11 @@
 		<defName>APM_Mech_Dominus_Boss</defName>
 		<label>dominus</label>
 		<race>APM_Mech_DominusB</race>
-		<combatPower>500</combatPower>
+		<combatPower>600</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
+	    <skipResistant>true</skipResistant>
 		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
 		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
 		<lifeStages>
@@ -159,6 +168,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponDominusApexMechlance</li>
 		</weaponTags>

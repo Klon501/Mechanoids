@@ -139,6 +139,6 @@
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
-		<controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 	</PawnKindDef>
 </Defs>

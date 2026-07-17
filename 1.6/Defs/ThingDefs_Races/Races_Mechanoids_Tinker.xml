@@ -112,6 +112,7 @@
 		</lifeStages>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
 		<abilities>
 			<li>APM_DefenceMatrix</li>
 			<li>APM_BlindingLaser</li>

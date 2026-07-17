@@ -507,30 +507,30 @@
 		</subSounds>
 	</SoundDef>
 	<!-- Siren Charge Emitter Weapon Sound -->
-	<SoundDef>
-		<defName>APM_SirenWeapon</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<maxVoices>4</maxVoices>
-		<maxSimultaneous>2</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>ChargeEmitter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>55</min>
-					<max>62</max>
-				</volumeRange>
-				<pitchRange>
-					<min>0.95</min>
-					<max>1.05</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
+    <SoundDef>
+        <defName>APM_SirenWeapon</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxVoices>4</maxVoices>
+        <maxSimultaneous>2</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>SirenSoundGun</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>55</min>
+                    <max>62</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.65</min>
+                    <max>0.75</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
 	<!-- Blinding Laser Ability Sound -->
 	<SoundDef>
@@ -583,29 +583,54 @@
 		</subSounds>
 	</SoundDef>
 
-	<SoundDef>
-		<defName>APM_SirenSong_Cast</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<maxVoices>4</maxVoices>
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SongOfTheSiren</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>55</min>
-					<max>65</max>
-				</volumeRange>
-				<pitchRange>
-					<min>0.95</min>
-					<max>1.05</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
+<SoundDef>
+        <defName>APM_SirenSong_Cast</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxVoices>4</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>SirenPositiveSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>55</min>
+                    <max>65</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.85</min>
+                    <max>0.95</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<SoundDef>
+        <defName>APM_SirenLure_Cast</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxVoices>4</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>SirenNegativeSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>55</min>
+                    <max>65</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.85</min>
+                    <max>0.95</max>
+                </pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
 </Defs>

@@ -112,6 +112,7 @@
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 		<weaponTags>
 			<li>APM_WeaponSirenChargeEmitter</li>
 		</weaponTags>
@@ -175,6 +176,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef>
 		<defName>APM_Ability_SirenLure</defName>
 		<label>Aluring Song</label>
@@ -191,7 +193,7 @@
 			<range>29.9</range>
 			<warmupTime>0.5</warmupTime>
 			<requireLineOfSight>False</requireLineOfSight>
-			<soundCast>Pawn_Cat_Call</soundCast>
+			<soundCast>APM_SirenLure_Cast</soundCast>
 			<targetParams>
 				<canTargetSelf>False</canTargetSelf>
 				<canTargetBuildings>False</canTargetBuildings>

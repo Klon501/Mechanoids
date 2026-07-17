@@ -111,7 +111,11 @@
 		<defName>APM_Mech_Terminus</defName>
 		<label>terminus</label>
 		<race>APM_Mech_Terminus</race>
-		<combatPower>190</combatPower>
+		<combatPower>700</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
+	    <skipResistant>true</skipResistant>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -146,6 +150,7 @@
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 		<abilities>
 			<li>SeveringEdge</li>
 			<li>APM_TerminusOverdrive</li>
@@ -157,7 +162,11 @@
 		<defName>APM_Mech_Terminus_Boss</defName>
 		<label>terminus</label>
 		<race>APM_Mech_TerminusB</race>
-		<combatPower>190</combatPower>
+		<combatPower>700</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
+	    <skipResistant>true</skipResistant>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -192,6 +201,7 @@
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 		<abilities>
 			<li>SeveringEdge_Boss</li>
 			<li>APM_TerminusOverdrive_Boss</li>

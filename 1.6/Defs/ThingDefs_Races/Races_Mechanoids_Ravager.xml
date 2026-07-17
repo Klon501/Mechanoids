@@ -67,8 +67,10 @@
 		<defName>APM_Mech_Ravager</defName>
 		<label>ravager</label>
 		<race>APM_Mech_Ravager</race>
-		<combatPower>400</combatPower>
+		<combatPower>300</combatPower>
+		<isGoodBreacher>true</isGoodBreacher>
 		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>0.70</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponRavagerArtillery</li>
 		</weaponTags>

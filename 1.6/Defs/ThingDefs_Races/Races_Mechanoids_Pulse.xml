@@ -98,6 +98,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags>
 			<li>APM_WeaponPulseShotgun</li>
 		</weaponTags>

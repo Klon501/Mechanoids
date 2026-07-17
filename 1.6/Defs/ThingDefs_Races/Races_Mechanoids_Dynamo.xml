@@ -121,7 +121,7 @@
 		<defName>APM_Mech_Dynamo</defName>
 		<label>dynamo</label>
 		<race>APM_Mech_Dynamo</race>
-		<combatPower>380</combatPower>
+		<combatPower>300</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
@@ -155,7 +155,7 @@
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
-		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>0.85</controlGroupPortraitZoom>
 		<abilities>
 			<li>APM_SwitchToPowerPlantMode</li>
 		</abilities>

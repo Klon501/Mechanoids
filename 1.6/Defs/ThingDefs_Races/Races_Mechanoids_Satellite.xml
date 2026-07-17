@@ -122,5 +122,6 @@
 			<li>APM_WeaponSatellite</li>
 		</weaponTags>
 		<weaponMoney>9999~9999</weaponMoney>
+		<controlGroupPortraitZoom>1.3</controlGroupPortraitZoom>
 	</PawnKindDef>
 </Defs>

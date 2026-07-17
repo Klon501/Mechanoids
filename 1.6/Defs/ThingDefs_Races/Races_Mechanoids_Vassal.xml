@@ -122,6 +122,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>9999~9999</weaponMoney>
+		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
 		<weaponTags>
 			<li>APM_WeaponVassalSwordRifle</li>
 		</weaponTags>

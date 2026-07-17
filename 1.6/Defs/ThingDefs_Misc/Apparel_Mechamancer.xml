@@ -4,6 +4,9 @@
 		<label>mechmancer suit</label>
 		<description>A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor.</description>
 		<techLevel>Spacer</techLevel>
+		<thingCategories>
+      		<li>ApparelArmor</li>
+   		</thingCategories>
 		<tradeTags>
 	<li>ExoticMisc</li>
 	<li>Clothing</li>
@@ -115,6 +118,9 @@
 		<label>mechamancer helmet</label>
 		<description>A heavy plasteel-weave helmet integrated with mechanoid-coordination systems. Enhances the wearer’s general control over of allied mechanoids, increasing mechanitor bandwidth and command groups while providing moderate protection.</description>
 		<techLevel>Spacer</techLevel>
+		<thingCategories>
+      		<li>ArmorHeadgear</li>
+   		</thingCategories>
 		<tradeTags>
 	<li>ExoticMisc</li>
 	<li>Clothing</li>

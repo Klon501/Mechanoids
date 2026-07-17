@@ -113,6 +113,9 @@
 		<label>Celerus</label>
 		<race>APM_Mech_CelerusB</race>
 		<combatPower>550</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -147,6 +150,7 @@
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<abilities>
 			<li>APM_CelerusBlink</li>
 			<li>APM_Ability_SmokeScreen_Boss</li>
@@ -158,6 +162,9 @@
 		<label>Celerus</label>
 		<race>APM_Mech_Celerus</race>
 		<combatPower>550</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+    	<isBoss>true</isBoss>
+    	<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -187,6 +194,7 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>9999~9999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponCelerusVoltana</li>
 		</weaponTags>

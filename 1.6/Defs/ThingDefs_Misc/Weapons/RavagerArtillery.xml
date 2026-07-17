@@ -38,8 +38,8 @@
 				<defaultProjectile>APM_ArtilleryProjectile</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
 				<burstShotCount>1</burstShotCount>
-				<range>40</range>
-				<forcedMissRadius>8.9</forcedMissRadius>
+				<range>80</range>
+				<forcedMissRadius>3.9</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<noiseRadius>4</noiseRadius>
 				<requireLineOfSight>false</requireLineOfSight>
@@ -94,6 +94,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseFragGrenadeProjectile">
 		<defName>APM_ArtilleryProjectile</defName>
 		<label>artillery projectile</label>
@@ -106,10 +107,11 @@
 			<flyOverhead>true</flyOverhead>
 			<explosionRadius>2.85</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<!-- Use default damage from explosion def -->
+			<speed>32</speed>
 			<explosionDelay>0</explosionDelay>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseFragGrenadeProjectile">
 		<defName>APM_StarfallCarrier</defName>
 		<label>starfall carrier</label>
@@ -133,6 +135,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>APM_StarfallSplitProjectile</defName>
 		<label>starfall split projectile</label>

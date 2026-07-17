@@ -104,6 +104,7 @@
 		<label>frostivus</label>
 		<race>APM_Mech_Frostivus</race>
 		<combatPower>200</combatPower>
+    	<allowInMechClusters>false</allowInMechClusters>
 		<weaponTags>
 			<!--<li>APM_FrostivusWeapon</li>-->
 		</weaponTags>
@@ -138,7 +139,7 @@
 		</lifeStages>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
-		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>0.85</controlGroupPortraitZoom>
 		<abilities>
 			<li>APM_Ability_CryptoSwallow</li>
 		</abilities>

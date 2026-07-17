@@ -1,5 +1,4 @@
-﻿using ApexMechanoids.HarmonyPatches;
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -44,7 +43,7 @@ namespace ApexMechanoids
                 float sum = 0f;
                 foreach (BodyPartRecord part in ShieldParts())
                 {
-                    sum += MaxHealthGetter.GetMaxHealth(part, Pawn);
+                    sum += part.def.GetMaxHealth(Pawn);
                 }
                 return sum;
             }
@@ -57,7 +56,7 @@ namespace ApexMechanoids
                 float sum = 0f;
                 foreach (BodyPartRecord part in ShieldParts())
                 {
-                    sum += PartHealthGetter.GetPartHealth(part, Pawn);
+                    sum += Pawn.health.hediffSet.GetPartHealth(part);
                 }
                 return sum;
             }
@@ -163,7 +162,7 @@ namespace ApexMechanoids
                 Pawn.health.RemoveHediff(missing);
             }
 
-            float maxHP = MaxHealthGetter.GetMaxHealth(part, Pawn);
+            float maxHP = part.def.GetMaxHealth(Pawn);
             if (HediffMaker.MakeHediff(HediffDefOf.Cut, Pawn, part) is Hediff_Injury injury)
             {
                 injury.Severity = Mathf.Max(1f, maxHP - Ext.regenerationHPPerStep);

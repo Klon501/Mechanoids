@@ -99,6 +99,11 @@
     <label>gazer</label>
     <race>APM_Mech_Gazer</race>
     <combatPower>750</combatPower>
+    <isGoodBreacher>true</isGoodBreacher> 
+    <maxPerGroup>3</maxPerGroup>
+    <isBoss>true</isBoss>
+  	<allowInMechClusters>false</allowInMechClusters>
+    <skipResistant>true</skipResistant>
     <maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
     <controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
     <lifeStages>
@@ -130,6 +135,7 @@
       </li>
     </lifeStages>
     <weaponMoney>99999~99999</weaponMoney>
+    <controlGroupPortraitZoom>0.70</controlGroupPortraitZoom>
     <weaponTags Inherit="False">
       <li>APM_WeaponGazerLaser</li>
     </weaponTags>
