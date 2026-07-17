@@ -9,39 +9,6 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "LargeMechGestator"]/recipes</xpath>
-					<value>
-						<li>APM_Aegis</li>
-						<li>APM_Conqueror_AR</li>
-						<li>APM_Conqueror_DMR</li>
-						<li>APM_Conqueror_LMG</li>
-						<li>APM_Frostivus</li>
-						<li>APM_Lasher</li>
-						<li>APM_Maul</li>
-						<li>APM_Vassal</li>
-						<li>APM_Ravager</li>
-						<li>APM_Pulse</li>
-						<li>APM_Mantis</li>
-						<li>APM_Tinker</li>
-						<li>APM_Siren</li>
-						<li>APM_Ingestor</li>
-						<li>APM_Dynamo</li>
-						<li>APM_Frostivus</li>
-						<li>APM_Dominus</li>
-						<li>APM_Terminus</li>
-						<li>APM_Celerus</li>
-						<li>APM_Gazer</li>
-					</value>
-				</li>
-
-								<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "MechGestator"]/recipes</xpath>
-					<value>
-						<li>APM_Haze</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/RecipeDef[defName = "ResurrectUltraheavyMech"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>Corpse_APM_Mech_Ravager</li>
