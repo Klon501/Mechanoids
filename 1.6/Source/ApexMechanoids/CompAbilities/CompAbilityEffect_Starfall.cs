@@ -32,7 +32,7 @@ namespace ApexMechanoids
                 return;
             }
 
-            projectile.Launch(caster, caster.DrawPos, selectedTarget, selectedTarget, ProjectileHitFlags.NonTargetPawns, false);
+            projectile.Launch(caster, caster.DrawPos, selectedTarget, selectedTarget, ProjectileHitFlags.NonTargetPawns, false, caster.equipment?.Primary);
             if (!Props.launchSoundDefName.NullOrEmpty())
             {
                 SoundDef launchSound = DefDatabase<SoundDef>.GetNamedSilentFail(Props.launchSoundDefName);
@@ -174,7 +174,7 @@ namespace ApexMechanoids
             }
 
             LocalTargetInfo targetInfo = new LocalTargetInfo(targetCell);
-            projectile.Launch(launcher, origin, targetInfo, targetInfo, ProjectileHitFlags.NonTargetPawns, false);
+            projectile.Launch(launcher, origin, targetInfo, targetInfo, ProjectileHitFlags.NonTargetPawns, false, equipment);
         }
 
         private void VanishImmediately()
@@ -199,32 +199,7 @@ namespace ApexMechanoids
         }
     }
 
-    public class Projectile_StarfallFragment : Bullet
+    public class Projectile_StarfallFragment : Projectile_Explosive
     {
-        public override void Impact(Thing hitThing, bool blockedByShield = false)
-        {
-            Map map = Map;
-            IntVec3 cell = Position;
-            Thing launcherThing = launcher;
-            ThingDef equipment = equipmentDef;
-            Thing targetThing = intendedTarget.Thing;
-
-            base.Impact(hitThing, blockedByShield);
-
-            if (map == null)
-            {
-                return;
-            }
-
-            float radius = def.projectile.explosionRadius;
-            DamageDef damageDef = def.projectile.damageDef;
-            if (damageDef == null || radius <= 0f)
-            {
-                Destroy(DestroyMode.Vanish);
-                return;
-            }
-
-            GenExplosion.DoExplosion(cell, map, radius, damageDef, launcherThing, DamageAmount, ArmorPenetration, null, equipment, def);
-        }
     }
 }

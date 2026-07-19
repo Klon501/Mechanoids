@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
@@ -456,9 +456,10 @@
 
 	<AbilityDef>
 		<defName>APM_Starfall</defName>
+		<abilityClass>ApexMechanoids.Ability_Starfall</abilityClass>
 		<label>Starfall</label>
 		<description>Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight.</description>
-		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<jobDef>CastAbilityOnThing</jobDef>
 		<iconPath>UI/Starfall</iconPath>
 		<cooldownTicksRange>5000</cooldownTicksRange>
 		<hostile>true</hostile>
@@ -474,7 +475,7 @@
 		<verbProperties>
 			<verbClass>ApexMechanoids.Verb_CastStarfall</verbClass>
 			<warmupTime>4.8</warmupTime>
-			<range>40</range>
+			<range>80</range>
 			<drawAimPie>true</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>
 			<noiseRadius>4</noiseRadius>

@@ -10,12 +10,12 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 			<ArmorRating_Heat>2.0</ArmorRating_Heat>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
-			<ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+			<ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">30</ControlTakingTime>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
-			<WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
-			<EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.35</EMPResistance>
+			<MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.2</MechEnergyLossPerHP>
+			<WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">8</WastepacksPerRecharge>
+			<EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.35</EMPResistance>
 		</statBases>
 		<tools>
 			<li>
@@ -33,7 +33,7 @@
 			<body>APM_Ravager</body>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>1.82</baseHealthScale>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_RavagerMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>UltraHeavy</mechWeightClass>
 			<lifeStageAges>
@@ -57,6 +57,12 @@
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_RavagerArtilleryController">
+				<autoFireEnabledDefault>true</autoFireEnabledDefault>
+				<autoFireGizmoIconPath>UI/Ravager/AutoArtillery</autoFireGizmoIconPath>
+			</li>
+		</comps>
 		<butcherProducts>
 			<Steel>60</Steel>
 			<Plasteel>20</Plasteel>
@@ -68,14 +74,13 @@
 		<label>ravager</label>
 		<race>APM_Mech_Ravager</race>
 		<combatPower>300</combatPower>
-		<isGoodBreacher>true</isGoodBreacher>
 		<weaponMoney>99999~99999</weaponMoney>
 		<controlGroupPortraitZoom>0.70</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponRavagerArtillery</li>
 		</weaponTags>
-		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
-		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
+		<maxPerGroup MayRequire="Ludeon.RimWorld.Biotech">2</maxPerGroup>
+		<controlGroupPortraitZoom MayRequire="Ludeon.RimWorld.Biotech">0.48</controlGroupPortraitZoom>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

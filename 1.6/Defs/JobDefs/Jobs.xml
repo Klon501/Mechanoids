@@ -30,4 +30,12 @@
 		<suspendable>false</suspendable>
 		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
 	</JobDef>
+
+	<JobDef>
+		<defName>APM_RavagerArtilleryAttack</defName>
+		<driverClass>ApexMechanoids.JobDriver_RavagerArtilleryAttack</driverClass>
+		<reportString>firing artillery at TargetA.</reportString>
+		<playerInterruptible>true</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
 </Defs>

@@ -34,16 +34,19 @@
 		<verbs>
 			<li>
 				<label>launch frag grenade</label>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>ApexMechanoids.Verb_RavagerArtillery</verbClass>
 				<defaultProjectile>APM_ArtilleryProjectile</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
 				<burstShotCount>1</burstShotCount>
 				<range>80</range>
-				<forcedMissRadius>3.9</forcedMissRadius>
+				<forcedMissRadius>1.0</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<noiseRadius>4</noiseRadius>
+				<isMortar>true</isMortar>
 				<requireLineOfSight>false</requireLineOfSight>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+				<ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
 				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>

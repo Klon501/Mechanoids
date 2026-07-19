@@ -61,6 +61,7 @@ namespace ApexMechanoids
         public static JobDef APM_SirenChatWithPrisoner;
         public static JobDef APM_FrostivusUnloadFoodToStorage;
         public static JobDef APM_FrostivusManualUnloadFood;
+        public static JobDef APM_RavagerArtilleryAttack;
     }
     [DefOf]
     public static class ApexEffecterDefsOf
