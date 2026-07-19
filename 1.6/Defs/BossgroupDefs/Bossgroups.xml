@@ -111,7 +111,7 @@
 			</li>
 		</waves>
 		<leaderDescription>The {LEADERKIND_label} is a master of single combat. It will psychically lock a target into a 1v1 duel; avoid engaging it with your most valuable pawns during this phase, as the loser will be significantly weakened. Keep other fighters away to avoid its energy waves, and focus fire on it only when its will is exhausted to capitalize on its weakened state.</leaderDescription>
-		<rewardDef>PsionicChip</rewardDef>
+		<rewardDef>APM_PsionicChip</rewardDef>
 	</BossgroupDef>
 
 
@@ -229,7 +229,7 @@
 			</li>
 		</waves>
 		<leaderDescription>The {LEADERKIND_label} is an implacable juggernaut that punishes those who try to maintain distance. Its melee sweep can devastate clustered groups, and its grappling hook will forcibly drag your ranged units into its reach. Spread out your forces to minimize sweep damage and prepare high-durability melee blockers to intercept it before it can pull your gunners into its grasp.</leaderDescription>
-		<rewardDef>ExtraChip</rewardDef>
+		<rewardDef>APM_ExtraChip</rewardDef>
 	</BossgroupDef>
 
 
@@ -343,7 +343,7 @@
 			</li>
 		</waves>
 		<leaderDescription>The {LEADERKIND_label} is a master of evasion and disorientation. It uses short-range teleports and smoke to render itself imperceptible while delivering constant electrical shocks. Do not rely on precision targeting while it is obscured; use area-of-effect weapons to flush it out of the smoke and catch it between its teleports.</leaderDescription>
-		<rewardDef>PsyfluxChip</rewardDef>
+		<rewardDef>APM_PsyfluxChip</rewardDef>
 	</BossgroupDef>
 
 
@@ -461,7 +461,7 @@
 			</li>
 		</waves>
 		<leaderDescription>The {LEADERKIND_label} is a stationary threat of catastrophic potential. Its beam emitter requires a long stabilization time, providing a window to move out of its line of fire before it obliterates everything in its path. If it remains silent, it is likely charging a suicidal, world-ending blast—if it begins this final buildup, you must destroy it or retreat from the area immediately.</leaderDescription>
-		<rewardDef>OcularChip</rewardDef>
+		<rewardDef>APM_OcularChip</rewardDef>
 	</BossgroupDef>
 
 	<BossDef>
@@ -583,6 +583,6 @@
 			</li>
 		</waves>
 		<leaderDescription> Three mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.</leaderDescription>
-		<rewardDef>ExtraChip</rewardDef>
+		<rewardDef>APM_ExtraChip</rewardDef>
 	</BossgroupDef>
 </Defs>

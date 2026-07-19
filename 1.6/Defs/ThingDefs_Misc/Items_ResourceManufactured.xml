@@ -1,6 +1,6 @@
 <Defs>
 	<ThingDef ParentName="MechResourceBase">
-		<defName>OcularChip</defName>
+		<defName>APM_OcularChip</defName>
 		<label>ocular harmonizer chip</label>
 		<description>A stabilization matrix that synchronizes hellsphere turbulence into a coherent firing pattern. Without one, any ocular beam platform would tear itself apart. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
 		<graphicData>
@@ -33,7 +33,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MechResourceBase">
-		<defName>PsionicChip</defName>
+		<defName>APM_PsionicChip</defName>
 		<label>psionic coordination chip</label>
 		<description>A psychic-command mechanoid micro-organ infused with an Archotech echo of martial authority. Generates localized command fields, amplifying allied effectiveness. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
 		<graphicData>
@@ -66,7 +66,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MechResourceBase">
-		<defName>ExtraChip</defName>
+		<defName>APM_ExtraChip</defName>
 		<label>extrasensory amplification chip</label>
 		<description>A emotion weaving mechanoid micro-organ engineered to magnify and regulate extrasensory mental force. It artificially amplifies emotions and the resulting psychic energy while limiting damage to the mind. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
 		<graphicData>
@@ -99,7 +99,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MechResourceBase">
-		<defName>PsyfluxChip</defName>
+		<defName>APM_PsyfluxChip</defName>
 		<label>psyflux projection chip</label>
 		<description>A perception-warping mechanoid micro-organ that regulates rapid displacement, charged-particle emissions, and brief periods of psychic imperceptibility. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</description>
 		<graphicData>

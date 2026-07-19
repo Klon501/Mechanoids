@@ -226,7 +226,7 @@
 
 	<SoundDef>
 		<defName>APM_GazerBeamLoop</defName>
-		<sustain>true</sustain>
+		<sustain>false</sustain>
 		<priorityMode>PrioritizeExisting</priorityMode>
 		<context>MapOnly</context>
 		<maxVoices>4</maxVoices>

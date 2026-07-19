@@ -3,7 +3,7 @@
 	<DamageDef ParentName="Beam">
 		<defName>APM_GazerBeam</defName>
 		<label>gazer beam</label>
-		<defaultDamage>12</defaultDamage>
+		<defaultDamage>16</defaultDamage>
 		<buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
 		<plantDamageFactor>2</plantDamageFactor>
@@ -11,7 +11,7 @@
 	<DamageDef ParentName="Beam">
 		<defName>APM_SunRay</defName>
 		<label>sun ray</label>
-		<defaultDamage>30</defaultDamage>
+		<defaultDamage>35</defaultDamage>
 		<buildingDamageFactorImpassable>9</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>4.5</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>

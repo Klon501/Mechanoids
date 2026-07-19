@@ -50,7 +50,7 @@
       </li>
     </tools>
     <killedLeavingsPlayerHostile>
-      <OcularChip>1</OcularChip>
+      <APM_OcularChip>1</APM_OcularChip>
     </killedLeavingsPlayerHostile>
     <race>
       <body>APM_Gazer</body>

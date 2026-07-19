@@ -29,5 +29,9 @@ namespace ApexMechanoids
 
         public string labelShort = "Casket";
 
+        public HediffDef HediffToGive = null;
+
+        public int TicksToCheckForHediff = 60;
+
     }
 }

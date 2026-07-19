@@ -50,7 +50,7 @@
 					</li>
 				</tools>
 				<killedLeavingsPlayerHostile>
-					<PsyfluxChip>1</PsyfluxChip>
+					<APM_PsyfluxChip>1</APM_PsyfluxChip>
 				</killedLeavingsPlayerHostile>
 		<race>
 					<body>APM_Celerus</body>
@@ -312,7 +312,7 @@
 			<texPath>Things/Projectile/LauncherShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(68,150,215)</color>
+			<color>(160,60,230)</color>
 		</graphicData>
 		<projectile>
 			<speed>40</speed>

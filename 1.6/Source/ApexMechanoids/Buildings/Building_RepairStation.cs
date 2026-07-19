@@ -25,8 +25,9 @@ namespace ApexMechanoids
         private int selectedPawnClaimTick = -1;
         private Effecter progressBar;
         private Effecter mechRepairEffecter;
-        private float totalHpToHeal;
-        private float hpHealedSoFar;
+        private int totalHpToHeal;
+        private int hpHealedSoFar;
+        private float hpHealedFraction;
         private const int QueuedRepairGraceTicks = 120;
         private const int QueuedRepairTimeoutTicks = 15000;
         private static readonly int[] IntervalOptions = new int[] { 1500, 2500, 5000, 10000 };
@@ -138,7 +139,7 @@ namespace ApexMechanoids
                     MoteProgressBar mote = ((SubEffecter_ProgressBar)progressBar.children[0]).mote;
                     if (mote != null)
                     {
-                        mote.progress = totalHpToHeal > 0f ? hpHealedSoFar / totalHpToHeal : 1f;
+                        mote.progress = totalHpToHeal > 0 ? (float)hpHealedSoFar / totalHpToHeal : 1f;
                         mote.offsetZ = -0.8f;
                     }
                 }
@@ -392,7 +393,10 @@ namespace ApexMechanoids
                 if (hpBudget <= 0f) break;
                 float amount = Mathf.Min(injury.Severity, hpBudget);
                 injury.Heal(amount);
-                hpHealedSoFar += amount;
+                hpHealedFraction += amount;
+                int whole = (int)hpHealedFraction;
+                hpHealedSoFar += whole;
+                hpHealedFraction -= whole;
                 hpBudget -= amount;
             }
             if (hpHealedSoFar >= totalHpToHeal && !mech.health.hediffSet.GetMissingPartsCommonAncestors().Any())
@@ -433,8 +437,9 @@ namespace ApexMechanoids
                     startTick = Find.TickManager.TicksGame;
                     selectedPawnAutoRepair = false;
                     selectedPawnClaimTick = -1;
-                    totalHpToHeal = p.health.hediffSet.hediffs.Where(h => h is Hediff_Injury).Sum(h => h.Severity);
-                    hpHealedSoFar = 0f;
+                    totalHpToHeal = (int)p.health.hediffSet.hediffs.Where(h => h is Hediff_Injury).Sum(h => h.Severity);
+                    hpHealedSoFar = 0;
+                    hpHealedFraction = 0f;
                 }
 
                 if (deSpawned) Find.Selector.Select(p, false, false);
@@ -448,8 +453,9 @@ namespace ApexMechanoids
             selectedPawnAutoRepair = false;
             selectedPawnClaimTick = -1;
             startTick = -1;
-            totalHpToHeal = 0f;
-            hpHealedSoFar = 0f;
+            totalHpToHeal = 0;
+            hpHealedSoFar = 0;
+            hpHealedFraction = 0f;
             SoundDefOf.Building_Complete.PlayOneShot(SoundInfo.InMap(this));
         }
 
@@ -590,9 +596,10 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref autoRepairIntervalTicks, "autoRepairIntervalTicks", 2500);
             Scribe_Values.Look(ref autoRepairTimer, "autoRepairTimer", 0);
             Scribe_Values.Look(ref selectedPawnAutoRepair, "selectedPawnAutoRepair", false);
-            Scribe_Values.Look(ref selectedPawnClaimTick, "selectedPawnClaimTick", -1);
-            Scribe_Values.Look(ref totalHpToHeal, "totalHpToHeal", 0f);
-            Scribe_Values.Look(ref hpHealedSoFar, "hpHealedSoFar", 0f);
+            Scribe_Values.Look<int>(ref selectedPawnClaimTick, "selectedPawnClaimTick", -1);
+            Scribe_Values.Look<int>(ref totalHpToHeal, "totalHpToHeal", 0);
+            Scribe_Values.Look<int>(ref hpHealedSoFar, "hpHealedSoFar", 0);
+            Scribe_Values.Look(ref hpHealedFraction, "hpHealedFraction", 0f);
         }
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)

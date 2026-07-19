@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--
-        Severity is set directly by CompUnity (ThingComp on the Conqueror).
-        Formula: severity = allyCount * severityPerAlly (default 0.1 per ally)
-        So: 1 ally = 0.1 | 3 allies = 0.3 | 5 allies = 0.5 | 7+ allies = 0.7+ (capped at maxSeverity 1.0)
+        Severity задается напрямую через CompUnity на Завоевателе.
+        Формула: severity = allyCount * severityPerAlly (0.1 за союзника)
+        Теперь: 1 союзник = 0.1 | 10 союзников = 1.0 | 20 союзников = 2.0 (Capped at maxSeverity 2.0)
     -->
 	<HediffDef>
 		<defName>APM_Hediff_Unity</defName>
@@ -13,15 +13,16 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.35, 0.85, 1.0)</defaultLabelColor>
 		<initialSeverity>0.001</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
+		<maxSeverity>2.0</maxSeverity>
 		<stages>
-			<!-- 0 allies (severity < 0.1): no effect -->
+			<!-- 0 союзников (severity < 0.1): эффекта нет -->
 			<li>
 			</li>
-			<!-- 1 ally (severity >= 0.1) -->
+			
+			<!-- 1 союзник (severity >= 0.1) -->
 			<li>
 				<minSeverity>0.1</minSeverity>
-				<label>weak</label>
+				<label>calculation link (minimal)</label>
 				<statOffsets>
 					<MoveSpeed>0.05</MoveSpeed>
 				</statOffsets>
@@ -30,46 +31,104 @@
 					<ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
 				</statFactors>
 			</li>
-			<!-- 3 allies (severity >= 0.3) -->
+			
+			<!-- 3 союзника (severity >= 0.3) -->
 			<li>
 				<minSeverity>0.3</minSeverity>
-				<label>linked</label>
+				<label>calculation link (low sync)</label>
 				<statOffsets>
-					<MoveSpeed>0.12</MoveSpeed>
+					<MoveSpeed>0.10</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeDPS>1.07</MeleeDPS>
+					<MeleeDPS>1.08</MeleeDPS>
 					<ShootingAccuracyPawn>1.05</ShootingAccuracyPawn>
 					<ArmorRating_Sharp>1.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.04</ArmorRating_Blunt>
 				</statFactors>
 			</li>
-			<!-- 5 allies (severity >= 0.5) -->
+			
+			<!-- 5 союзников (severity >= 0.5) -->
 			<li>
 				<minSeverity>0.5</minSeverity>
-				<label>strong</label>
+				<label>calculation link (medium sync)</label>
 				<statOffsets>
-					<MoveSpeed>0.22</MoveSpeed>
+					<MoveSpeed>0.15</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeDPS>1.12</MeleeDPS>
-					<ShootingAccuracyPawn>1.09</ShootingAccuracyPawn>
+					<MeleeDPS>1.15</MeleeDPS>
+					<ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
 					<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
 					<ArmorRating_Blunt>1.08</ArmorRating_Blunt>
 				</statFactors>
 			</li>
-			<!-- 7+ allies (severity >= 0.7) -->
+			
+			<!-- 7 союзников (severity >= 0.7) -->
 			<li>
 				<minSeverity>0.7</minSeverity>
-				<label>peak</label>
+				<label>calculation link (distributed)</label>
+				<statOffsets>
+					<MoveSpeed>0.20</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeDPS>1.22</MeleeDPS>
+					<ShootingAccuracyPawn>1.15</ShootingAccuracyPawn>
+					<ArmorRating_Sharp>1.14</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.14</ArmorRating_Blunt>
+					<MeleeCooldownFactor>0.88</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+
+			<!-- 10 союзников (severity >= 1.0) -->
+			<li>
+				<minSeverity>1.0</minSeverity>
+				<label>calculation link (high sync)</label>
+				<statOffsets>
+					<MoveSpeed>0.25</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeDPS>1.30</MeleeDPS>
+					<ShootingAccuracyPawn>1.20</ShootingAccuracyPawn>
+					<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.20</ArmorRating_Blunt>
+					<MeleeCooldownFactor>0.82</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.90</RangedCooldownFactor> 
+					<AimingDelayFactor>0.90</AimingDelayFactor>   
+				</statFactors>
+			</li>
+
+			<!-- 15 союзников (severity >= 1.5) -->
+			<li>
+				<minSeverity>1.5</minSeverity>
+				<label>calculation link (optimized)</label>
+				<statOffsets>
+					<MoveSpeed>0.30</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeDPS>1.40</MeleeDPS>
+					<ShootingAccuracyPawn>1.28</ShootingAccuracyPawn>
+					<ArmorRating_Sharp>1.26</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.26</ArmorRating_Blunt>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.60</RangedCooldownFactor>
+					<AimingDelayFactor>0.60</AimingDelayFactor>   
+				</statFactors>
+			</li>
+
+			<!-- 20 союзников (severity >= 2.0) -->
+			<li>
+				<minSeverity>2.0</minSeverity>
+				<label>calculation link (peak efficiency)</label>
 				<statOffsets>
 					<MoveSpeed>0.35</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeDPS>1.18</MeleeDPS>
-					<ShootingAccuracyPawn>1.14</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.12</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.12</ArmorRating_Blunt>
-					<MeleeCooldownFactor>0.88</MeleeCooldownFactor>
+					<MeleeDPS>1.48</MeleeDPS>
+					<ShootingAccuracyPawn>1.34</ShootingAccuracyPawn>
+					<ArmorRating_Sharp>1.32</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.32</ArmorRating_Blunt>
+					<MeleeCooldownFactor>0.68</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.42</RangedCooldownFactor> 
+					<AimingDelayFactor>0.42</AimingDelayFactor>  
 				</statFactors>
 			</li>
 		</stages>

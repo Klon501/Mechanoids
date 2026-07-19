@@ -54,7 +54,7 @@
 			</li>
 		</comps>
 		<killedLeavingsPlayerHostile>
-			<ExtraChip>1</ExtraChip>
+			<APM_ExtraChip>1</APM_ExtraChip>
 		</killedLeavingsPlayerHostile>
 		<race>
 			<body>APM_Terminus</body>

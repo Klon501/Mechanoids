@@ -15,9 +15,9 @@
 			<li>HighMechtech</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>PsionicChip</li>
-			<li>ExtraChip</li>
-			<li>PsyfluxChip</li>
+			<li>APM_PsionicChip</li>
+			<li>APM_ExtraChip</li>
+			<li>APM_PsyfluxChip</li>
 		</requiredAnalyzed>
 	</ResearchProjectDef>
 	<ResearchProjectDef>
@@ -34,7 +34,7 @@
 			<li>StandardMechtech</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>OcularChip</li>
+			<li>APM_OcularChip</li>
 		</requiredAnalyzed>
 	</ResearchProjectDef>
 </Defs>

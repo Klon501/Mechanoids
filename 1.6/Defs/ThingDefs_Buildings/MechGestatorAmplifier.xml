@@ -38,7 +38,7 @@
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
-			<Mass>20</Mass>
+			<Mass>70</Mass>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<size>(2,1)</size>
@@ -46,7 +46,7 @@
 		<costList>
 			<Steel>250</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<OcularChip>1</OcularChip>
+			<APM_OcularChip>1</APM_OcularChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>

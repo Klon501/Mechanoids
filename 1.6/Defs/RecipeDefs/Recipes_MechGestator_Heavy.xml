@@ -91,7 +91,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ExtraChip</li>
+            <li>APM_ExtraChip</li>
           </thingDefs>
         </filter>
         <count>1</count>

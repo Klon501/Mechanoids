@@ -33,11 +33,11 @@
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<Mass>10</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.45</AccuracyMedium>
-			<AccuracyLong>0.30</AccuracyLong>
-			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.20</AccuracyTouch>
+			<AccuracyShort>0.40</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>6.2</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>APM_WeaponMaul</li>
@@ -51,7 +51,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>APM_Bullet_MaulBlaster</defaultProjectile>
 				<warmupTime>1.3</warmupTime>
-				<range>30.9</range>
+				<range>20.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>18</burstShotCount>
 				<soundCast>Shot_ChargeBlaster</soundCast>

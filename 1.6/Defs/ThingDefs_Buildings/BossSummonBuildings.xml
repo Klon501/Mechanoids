@@ -5,7 +5,7 @@
 		<label>Mechband Node</label>
 		<description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</description>
 		<graphicData>
-			<texPath>Things/Building/Antenas/Dominus</texPath>
+			<texPath>Things/Building/Antenas/Node</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<shadowData>
@@ -71,7 +71,7 @@
 		<label>Mechband Conduit</label>
 		<description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</description>
 		<graphicData>
-			<texPath>Things/Building/Antenas/Terminus</texPath>
+			<texPath>Things/Building/Antenas/Conduit</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<shadowData>
@@ -137,7 +137,7 @@
 		<label>Mechband Pylon</label>
 		<description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</description>
 		<graphicData>
-			<texPath>Things/Building/Antenas/Celerus</texPath>
+			<texPath>Things/Building/Antenas/Pylon</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<shadowData>
@@ -203,7 +203,7 @@
 		<label>Mechband Array</label>
 		<description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</description>
 		<graphicData>
-			<texPath>Things/Building/Antenas/Gazer</texPath>
+			<texPath>Things/Building/Antenas/Array</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
@@ -270,7 +270,7 @@
 		<label>Mechband Invoker</label>
 		<description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an 3-fold apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. This particular mechband device sends out 3 simultaneous signals, be warned.</description>
 		<graphicData>
-			<texPath>Things/Building/Antenas/United</texPath>
+			<texPath>Things/Building/Antenas/Invoker</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<shadowData>

@@ -138,7 +138,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>OcularChip</li>
+            <li>APM_OcularChip</li>
           </thingDefs>
         </filter>
         <count>1</count>

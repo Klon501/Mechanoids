@@ -34,7 +34,7 @@
 			</li>
 		</comps>
 		<killedLeavingsPlayerHostile>
-			<PsionicChip>1</PsionicChip>
+			<APM_PsionicChip>1</APM_PsionicChip>
 		</killedLeavingsPlayerHostile>
 		<race>
 			<body>APM_Dominus</body>

@@ -1,7 +1,7 @@
 <Defs>
 	<ThingDef ParentName="ApparelBase">
 		<defName>APM_Apparel_MechamancerSuit</defName>
-		<label>mechmancer suit</label>
+		<label>mechamancer suit</label>
 		<description>A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor.</description>
 		<techLevel>Spacer</techLevel>
 		<thingCategories>
@@ -40,8 +40,8 @@
       		<Plasteel>180</Plasteel>
 			<Steel>40</Steel>
       		<Uranium>20</Uranium>
-      		<PsionicChip>2</PsionicChip>
-      		<ExtraChip>2</ExtraChip>
+      		<APM_PsionicChip>2</APM_PsionicChip>
+      		<APM_ExtraChip>2</APM_ExtraChip>
     	</costList>
 		<comps>
 			<li Class="CompProperties_Shield" MayRequire="Ludeon.RimWorld.Royalty">
@@ -151,8 +151,8 @@
       		<Plasteel>120</Plasteel>
 			<Steel>20</Steel>
       		<Uranium>40</Uranium>
-      		<OcularChip>2</OcularChip>
-      		<PsyfluxChip>1</PsyfluxChip>
+      		<APM_OcularChip>2</APM_OcularChip>
+      		<APM_PsyfluxChip>1</APM_PsyfluxChip>
     	</costList>
 		<equippedStatOffsets>
 			<MechBandwidth>14</MechBandwidth>

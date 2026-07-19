@@ -38,7 +38,7 @@
   <statBases>
     <MaxHitPoints>300</MaxHitPoints>
     <WorkToBuild>15000</WorkToBuild>
-    <Mass>50</Mass>
+    <Mass>100</Mass>
   </statBases>
   <costList>
     <Steel>200</Steel>
@@ -130,7 +130,7 @@
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>25000</WorkToBuild>
-			<Mass>100</Mass>
+			<Mass>180</Mass>
 		</statBases>
 		<costList>
 			<Steel>300</Steel>

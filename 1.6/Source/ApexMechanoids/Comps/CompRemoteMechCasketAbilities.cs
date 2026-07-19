@@ -4,6 +4,8 @@ using Verse;
 using UnityEngine;
 using Verse.Sound;
 using System.Linq;
+using System.ComponentModel;
+using System.Xml.Linq;
 
 
 
@@ -175,6 +177,38 @@ namespace ApexMechanoids
             {
                 return;
             }
+            if(Props.HediffToGive != null)
+            {
+                if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
+                {
+                    Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
+
+                    if (hediff == null)
+                    {
+                        hediff = User.health.AddHediff(Props.HediffToGive, User.health.hediffSet.GetBrain());
+                        hediff.Severity = 1f;
+                        HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
+                        if (hediffComp_Link != null)
+                        {
+                            hediffComp_Link.drawConnection = false;
+                            hediffComp_Link.other = parent;
+                        }
+                    }
+
+
+                    HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
+                    if (hediffComp_Disappears != null)
+                    {
+                        hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
+                    }
+
+
+
+                }
+            }
+
+                
+
 
             // gizmo actions
 
@@ -735,7 +769,6 @@ namespace ApexMechanoids
             {
                 yield return g;
             }
-            
         }
     }
 

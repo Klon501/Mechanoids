@@ -20,6 +20,8 @@
     <APM.CommandCasket.Gizmo.Connect.Label>remote connect</APM.CommandCasket.Gizmo.Connect.Label> 
     <APM.CommandCasket.Gizmo.Connect.Desc>remotely connect to a friendly mech. Can target mechs on the same map. Time depends on the targeted mechanoid.</APM.CommandCasket.Gizmo.Connect.Desc>
 
+	<APM.CommandCasket.Inspection.Bandwidth>bandwidth used:</APM.CommandCasket.Inspection.Bandwidth>
+
 	
 
 </LanguageData>

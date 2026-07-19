@@ -51,7 +51,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>PsionicChip</li>
+            <li>APM_PsionicChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -99,7 +99,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>ExtraChip</li>
+            <li>APM_ExtraChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -147,7 +147,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>PsyfluxChip</li>
+            <li>APM_PsyfluxChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -247,7 +247,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>OcularChip</li>
+            <li>APM_OcularChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -319,7 +319,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>PsionicChip</li>
+            <li>APM_PsionicChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -327,7 +327,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>PsyfluxChip</li>
+            <li>APM_PsyfluxChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -384,7 +384,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>PsionicChip</li>
+            <li>APM_PsionicChip</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -392,7 +392,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ExtraChip</li>
+            <li>APM_ExtraChip</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -449,7 +449,7 @@
             <li>
         <filter>
           <thingDefs>
-            <li>OcularChip</li>
+            <li>APM_OcularChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -457,7 +457,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>PsyfluxChip</li>
+            <li>APM_PsyfluxChip</li>
           </thingDefs>
         </filter>
         <count>2</count>

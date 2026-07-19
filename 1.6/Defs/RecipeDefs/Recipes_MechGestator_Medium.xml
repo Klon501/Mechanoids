@@ -42,7 +42,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>PsyfluxChip</li>
+            <li>APM_PsyfluxChip</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -98,7 +98,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>PsionicChip</li>
+            <li>APM_PsionicChip</li>
           </thingDefs>
         </filter>
         <count>1</count>

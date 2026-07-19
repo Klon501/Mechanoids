@@ -65,6 +65,13 @@
 				</capacities>
 				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
+				<extraMeleeDamages>
+				<li>
+					<def>EMP</def>
+					<chance>10</chance>
+					<amount>15</amount>
+				</li>
+				</extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>

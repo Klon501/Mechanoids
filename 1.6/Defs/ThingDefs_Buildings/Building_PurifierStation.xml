@@ -38,14 +38,14 @@
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>30000</WorkToBuild>
-			<Mass>80</Mass>
+			<Mass>800</Mass>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<size>(5,5)</size>
 		<costList>
 			<Steel>450</Steel>
 			<Plasteel>100</Plasteel>
-			<OcularChip>1</OcularChip>
+			<APM_PsyfluxChip>1</APM_PsyfluxChip>
 		</costList>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<specialDisplayRadius>40</specialDisplayRadius>

@@ -244,7 +244,12 @@ namespace ApexMechanoids
             }
             if (pawn.health.hediffSet.HasHediff(HediffDefOf.BioStarvation))
             {
-                return "PawnBiostarving".Translate(pawn.Named("PAWN"));
+               pawn.health.hediffSet.TryGetHediff(HediffDefOf.BioStarvation, out Hediff starvation);
+
+                if(starvation != null && starvation.Severity > 0.25f)
+                {
+                    return "PawnBiostarving".Translate(pawn.Named("PAWN"));
+                }
             }
             if (!MechanitorUtility.IsMechanitor(pawn))
             {
@@ -448,6 +453,7 @@ namespace ApexMechanoids
                 if (selectedPawn != null && innerContainer.Contains(selectedPawn))
                 {
                     stringBuilder.AppendLineIfNotEmpty().Append(string.Format("{0}: {1}, {2}", "CasketContains".Translate().ToString(), selectedPawn.NameShortColored.Resolve(), selectedPawn.ageTracker.AgeBiologicalYears));
+                    stringBuilder.AppendLineIfNotEmpty().Append("APM.CommandCasket.Inspection.Bandwidth".Translate() + " " + selectedPawn.mechanitor.UsedBandwidth.ToString() + " / " + selectedPawn.mechanitor.TotalBandwidth);
                 }
 
                 float biostarvationSeverityPercent = BiostarvationSeverityPercent;

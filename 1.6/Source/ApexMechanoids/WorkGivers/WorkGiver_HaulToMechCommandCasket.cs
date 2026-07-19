@@ -2,6 +2,8 @@
 using UnityEngine;
 using Verse.AI;
 using Verse;
+using Verse.Noise;
+using System.Collections.Generic;
 
 namespace ApexMechanoids
 {
@@ -9,7 +11,7 @@ namespace ApexMechanoids
     {
         private const float NutritionBuffer = 1.0f;
 
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ApexDefsOf.APM_MechCommandCasket);
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
 
         public override PathEndMode PathEndMode => PathEndMode.Touch;
 
