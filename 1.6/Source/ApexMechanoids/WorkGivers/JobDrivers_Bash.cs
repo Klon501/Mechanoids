@@ -1,4 +1,4 @@
-﻿using RimWorld;
+using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -82,7 +82,12 @@ namespace ApexMechanoids
 
 		protected virtual void TryEnterNextPathCell(Pawn pawn, IntVec3 nextCell)
 		{
-			if(Mathf.DeltaAngle((Target.CenterVector3 - exactPos).AngleFlat(), direction.AngleFlat()) > 60f || Target.Cell.DistanceTo(pawn.Position) <= 1.1f)
+			if (nextCell.GetEdificeSafe(pawn.Map)?.def.Fillage == FillCategory.Full)
+			{
+				pawn.jobs.curDriver.ReadyForNextToil();
+				return;
+			}
+			if (Mathf.DeltaAngle((Target.CenterVector3 - exactPos).AngleFlat(), direction.AngleFlat()) > 60f || Target.Cell.DistanceTo(pawn.Position) <= 1.1f)
 			{
 				pawn.Position = TargetA.Cell;
 				pawn.jobs.curDriver.ReadyForNextToil();
@@ -129,10 +134,11 @@ namespace ApexMechanoids
 			{
 				foreach(Thing t in cell.GetThingList(pawn.Map).ToList())
 				{
-					if(t != pawn)
+					if (t == pawn || (t.Faction != null && !t.HostileTo(pawn) && t != TargetThingB))
 					{
-						t.TakeDamage(dinfo);
+						continue;
 					}
+					t.TakeDamage(dinfo);
 				}
 			}
 		}
