@@ -60,10 +60,15 @@ namespace ApexMechanoids
                     }
                 }
             }
+            else
+            {
+                foreach (Gizmo gizmo in templist)
+                {
+                    list.Add(gizmo);
+                }
+            }
 
-            
-
-            IEnumerable<Gizmo> enumerable = list;
+             IEnumerable<Gizmo> enumerable = list;
             __result = enumerable;
 
 

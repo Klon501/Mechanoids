@@ -142,11 +142,6 @@ namespace ApexMechanoids
         }
 
 
-
-
-
-
-
         public void TryChangeUser(Pawn pawn)
         {
             if(pawn == null)
@@ -159,6 +154,20 @@ namespace ApexMechanoids
             if(User != pawn)
             {  
                 User = pawn; 
+            }
+        }
+
+
+        public bool IsBoosted
+        {
+            get
+            {
+                if(parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth) > 0)
+                {
+                    return true;
+                }
+
+                return false;
             }
         }
 
@@ -177,33 +186,60 @@ namespace ApexMechanoids
             {
                 return;
             }
-            if(Props.HediffToGive != null)
+            if(Props.HediffToGive != null || IsBoosted)
             {
                 if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
                 {
-                    Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
-
-                    if (hediff == null)
+                    if (IsBoosted)
                     {
-                        hediff = User.health.AddHediff(Props.HediffToGive, User.health.hediffSet.GetBrain());
-                        hediff.Severity = 1f;
-                        HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
-                        if (hediffComp_Link != null)
+                        Hediff hediff = User.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_MechCommandCasketBoost);
+
+                        if (hediff == null)
                         {
-                            hediffComp_Link.drawConnection = false;
-                            hediffComp_Link.other = parent;
+                            hediff = User.health.AddHediff(ApexDefsOf.APM_MechCommandCasketBoost, User.health.hediffSet.GetBrain());
+                        }
+
+                        if(hediff is Hediff_CommandCasketBoost)
+                        {
+                            Hediff_CommandCasketBoost bandwidthHediff = (Hediff_CommandCasketBoost)hediff;
+
+                            bandwidthHediff.BandwidthOffset = (int)parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth);
+
+                            bandwidthHediff.UpdateStats();
+                        }
+
+                        HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
+                        if (hediffComp_Disappears != null)
+                        {
+                            hediffComp_Disappears.ticksToDisappear = 90;
+                        }
+                        
+                    }
+                    
+
+                    
+                    if (Props.HediffToGive != null)
+                    {
+                        Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
+
+                        if (hediff == null)
+                        {
+                            hediff = User.health.AddHediff(Props.HediffToGive, User.health.hediffSet.GetBrain());
+                            hediff.Severity = 1f;
+                            HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
+                            if (hediffComp_Link != null)
+                            {
+                                hediffComp_Link.drawConnection = false;
+                                hediffComp_Link.other = parent;
+                            }
+                        }
+
+                        HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
+                        if (hediffComp_Disappears != null)
+                        {
+                            hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
                         }
                     }
-
-
-                    HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
-                    if (hediffComp_Disappears != null)
-                    {
-                        hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
-                    }
-
-
-
                 }
             }
 
