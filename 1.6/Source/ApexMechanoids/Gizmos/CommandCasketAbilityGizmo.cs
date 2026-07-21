@@ -22,13 +22,11 @@ namespace ApexMechanoids
 
         private const float Spacing = 5f;
 
-
-
         private static readonly Texture2D BarTex = SolidColorMaterials.NewSolidColorTexture(new UnityEngine.Color(1f, 0.20f, 0.19f));
 
         private static readonly Texture2D EmptyBarTex = SolidColorMaterials.NewSolidColorTexture(new UnityEngine.Color(0.03f, 0.035f, 0.05f));
 
-        private static readonly Texture2D CancelLoadingIcon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel");
+        private static readonly Texture2D CancelLoadingIcon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_LeaveCasket");
 
         private Building_MechCommandCasket thingAsCasket => (Building_MechCommandCasket)thing;
 

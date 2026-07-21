@@ -142,11 +142,6 @@ namespace ApexMechanoids
         }
 
 
-
-
-
-
-
         public void TryChangeUser(Pawn pawn)
         {
             if(pawn == null)
@@ -163,6 +158,32 @@ namespace ApexMechanoids
         }
 
 
+        public bool IsBoosted
+        {
+            get
+            {
+                if(User.health.hediffSet.HasHediff(ApexDefsOf.APM_MechCommandCasketBoost))
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool ShouldBeBoosted
+        {
+            get 
+            {
+                if (parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth) >= 1)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+
+
         public override void CompTickInterval(int delta)
         {
             if (TicksForShieldcooldown > 0)
@@ -177,9 +198,35 @@ namespace ApexMechanoids
             {
                 return;
             }
-            if(Props.HediffToGive != null)
+            if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
             {
-                if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
+                if (IsBoosted || ShouldBeBoosted)
+                {
+                    Hediff hediff = User.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_MechCommandCasketBoost);
+
+                    if(!ShouldBeBoosted)
+                    {
+                        User.health.RemoveHediff(hediff);
+                    }
+                    else
+                    {
+                        if (hediff == null)
+                        {
+                            hediff = User.health.AddHediff(ApexDefsOf.APM_MechCommandCasketBoost, User.health.hediffSet.GetBrain());
+                        }
+
+                        if (hediff is Hediff_CommandCasketBoost)
+                        {
+                            Hediff_CommandCasketBoost bandwidthHediff = (Hediff_CommandCasketBoost)hediff;
+
+                            bandwidthHediff.BandwidthOffset = (int)parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth);
+
+                            bandwidthHediff.UpdateStats();
+                        }
+                    }
+                }
+
+                if (Props.HediffToGive != null)
                 {
                     Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
 
@@ -195,21 +242,15 @@ namespace ApexMechanoids
                         }
                     }
 
-
                     HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
                     if (hediffComp_Disappears != null)
                     {
                         hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
                     }
-
-
-
                 }
+
             }
-
-                
-
-
+        
             // gizmo actions
 
             if (actionTick != 0)
