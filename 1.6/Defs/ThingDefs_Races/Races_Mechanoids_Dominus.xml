@@ -412,6 +412,7 @@
 		<hostile>true</hostile>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
@@ -453,6 +454,7 @@
 		<hostile>true</hostile>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
