@@ -447,6 +447,9 @@
 					<li>YourDefName</li>
 				</ignoredThings>
 			</li>-->
+			<li Class="ApexMechanoids.CompProperties_AbilityAIRequiresOverpower">
+				<maximalMeleeDPSDifference>10</maximalMeleeDPSDifference> <!--Default-->
+			</li>
 		</comps>
 	</AbilityDef>
 
@@ -495,6 +498,9 @@
 					<li>YourDefName</li>
 				</ignoredThings>
 			</li>-->
+			<li Class="ApexMechanoids.CompProperties_AbilityAIRequiresOverpower">
+				<maximalMeleeDPSDifference>10</maximalMeleeDPSDifference> <!--Default-->
+			</li>
 		</comps>
 	</AbilityDef>
 </Defs>
