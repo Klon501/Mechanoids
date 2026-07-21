@@ -6,28 +6,28 @@
 		<randomGraphics>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/Duel/FireOrb_a</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/Duel/FireOrb_b</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/Duel/FireOrb_c</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/Duel/FireOrb_d</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
@@ -84,7 +84,7 @@
 		<randomGraphics>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(250, 147, 19)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/UltimateSacrifice/LightParticles</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
@@ -102,7 +102,7 @@
 		<randomGraphics>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(250, 147, 19)</color>
+				<color>(229, 211, 127)</color>
 				<texPath>Things/Mote/UltimateSacrifice/LightParticles</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>
@@ -120,7 +120,7 @@
 		<randomGraphics>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPath>Things/Mote/UltimateSacrifice/LightParticles</texPath>
 				<shaderType>MoteGlow</shaderType>
 				<renderInstanced>true</renderInstanced>

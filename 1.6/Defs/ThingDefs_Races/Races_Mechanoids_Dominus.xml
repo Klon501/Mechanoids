@@ -178,32 +178,33 @@
 		</abilities>
 	</PawnKindDef>
 
-	<AbilityDef>
+<AbilityDef>
 		<defName>APM_PressTheAttack</defName>
 		<label>Press The Attack</label>
 		<description>The Dominus emits a psychic pulse that influences nearby allies to ignore pain, move faster and stay in high spirits.</description>
 		<iconPath>UI/PressTheAttack</iconPath>
-		<cooldownTicksRange>180000</cooldownTicksRange>
+		<cooldownTicksRange>12000</cooldownTicksRange> 
 		<targetRequired>false</targetRequired>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<showCastingProgressBar>true</showCastingProgressBar>
+		<aiCanUse>true</aiCanUse>
 		<statBases>
-			<Ability_EffectRadius>12</Ability_EffectRadius>
-			<Ability_Duration>150</Ability_Duration>
+			<Ability_EffectRadius>14.9</Ability_EffectRadius> 
+			<Ability_Duration>1000</Ability_Duration> 
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
 			<soundCast>APM_PressTheAttack_Cast</soundCast>
-			<range>12.9</range>
+			<range>14.9</range>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_AbilitySteelDiscipline">
-				<radius>12</radius>
+				<radius>14.9</radius>
 				<buffHediff>APM_Hediff_PressTheAttack</buffHediff>
 				<buffHediffBoss>APM_Hediff_PressTheAttack_Boss</buffHediffBoss>
 			</li>
@@ -224,15 +225,19 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<painFactor>0.85</painFactor>
+				<painFactor>0.70</painFactor> 
+				<statOffsets>
+					<MoveSpeed>0.40</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeCooldownFactor>0.85</MeleeCooldownFactor> 
+					<AimingDelayFactor>0.85</AimingDelayFactor> 
+					<RangedCooldownFactor>0.85</RangedCooldownFactor> 
+				</statFactors>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>0.10</offset>
-					</li>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.15</offset>
 					</li>
 				</capMods>
 			</li>
@@ -243,7 +248,7 @@
 				<texPath>Things/Mote/PressTheAttack/Halo</texPath>
 				<parentTagDef>Head</parentTagDef>
 				<pawnType>HumanlikeOnly</pawnType>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<drawData>
 					<scale>0.7</scale>
 					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
@@ -257,7 +262,7 @@
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPath>Things/Mote/PressTheAttack/Halo</texPath>
 				<pawnType>NonHumanlikeOnly</pawnType>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<drawData>
 					<scale>0.7</scale>
 					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
@@ -273,7 +278,7 @@
 				<texPath>Things/Mote/PressTheAttack/Wings</texPath>
 				<parentTagDef>Body</parentTagDef>
 				<pawnType>Any</pawnType>
-				<color>(68, 150, 215)</color>
+				<color>(163, 180, 187)</color>
 				<texPaths>
 					<li>Things/Mote/PressTheAttack/Wings/WingsA</li>
 					<li>Things/Mote/PressTheAttack/Wings/WingsB</li>
@@ -305,15 +310,19 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<painFactor>0.85</painFactor>
+				<painFactor>0.70</painFactor>
+				<statOffsets>
+					<MoveSpeed>0.40</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+					<AimingDelayFactor>0.85</AimingDelayFactor>
+					<RangedCooldownFactor>0.85</RangedCooldownFactor>
+				</statFactors>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>0.10</offset>
-					</li>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.15</offset>
 					</li>
 				</capMods>
 			</li>
@@ -382,7 +391,7 @@
 			<li>
 				<label>Rush</label>
 				<description>I'm ready to Fight.</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -397,7 +406,7 @@
 			<li>
 				<label>Rush</label>
 				<description>I'm ready to Fight.</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -407,11 +416,12 @@
 		<label>the duel trial</label>
 		<description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</description>
 		<iconPath>UI/Duel</iconPath>
-		<cooldownTicksRange>1800</cooldownTicksRange>
+		<cooldownTicksRange>2800</cooldownTicksRange>
 		<targetRequired>true</targetRequired>
 		<hostile>true</hostile>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
@@ -448,11 +458,12 @@
 		<label>the duel trial</label>
 		<description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</description>
 		<iconPath>UI/Duel</iconPath>
-		<cooldownTicksRange>1800</cooldownTicksRange>
+		<cooldownTicksRange>2800</cooldownTicksRange>
 		<targetRequired>true</targetRequired>
 		<hostile>true</hostile>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>

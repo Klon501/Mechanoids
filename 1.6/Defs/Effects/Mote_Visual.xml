@@ -189,7 +189,7 @@
 		</mote>
 		<graphicData Class="VEF.Graphics.GraphicData_Animated">
 			<graphicClass>VEF.Graphics.Graphic_AnimatedMote</graphicClass>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 			<drawSize>(3.5, 2.5)</drawSize>
 			<!--<shaderType>MoteMultiplyAddScroll</shaderType>-->
 			<texPath>Things/Mote/SeveringEdge_Intro</texPath>
@@ -208,7 +208,7 @@
 		</mote>
 		<graphicData Class="VEF.Graphics.GraphicData_Animated">
 			<graphicClass>VEF.Graphics.Graphic_AnimatedMote</graphicClass>
-			<color>(229,211,127)</color>
+			<color>(229, 211, 127)</color>
 			<drawSize>(3.5, 2.5)</drawSize>
 			<texPath>Things/Mote/SeveringEdge_Intro</texPath>
 			<ticksPerFrame>5</ticksPerFrame>
@@ -227,7 +227,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/Duel/VS</texPath>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 			<drawSize>(3, 2)</drawSize>
 			<drawOffset>(0, 1.5, 3.7)</drawOffset>
 		</graphicData>
@@ -263,7 +263,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/Duel/Winner</texPath>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 			<drawSize>(3, 2)</drawSize>
 			<drawOffset>(0, 1.5, 3.7)</drawOffset>
 		</graphicData>
@@ -299,7 +299,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/Duel/Draw</texPath>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 			<drawSize>(3, 2)</drawSize>
 			<drawOffset>(0, 1.5, 3.7)</drawOffset>
 		</graphicData>
@@ -337,7 +337,7 @@
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/UltimateSacrifice/EnergyWave</texPath>
 			<drawSize>2.40</drawSize>
-			<color>(250, 147, 19)</color>
+			<color>(163, 180, 187)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
@@ -357,7 +357,7 @@
 			<texPath>Things/Mote/UltimateSacrifice/LightPillar</texPath>
 			<drawSize>(1, 2.40)</drawSize>
 			<drawOffset>(0, 1.5, 7.7)</drawOffset>
-			<color>(250, 147, 19)</color>
+			<color>(163, 180, 187)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
@@ -376,7 +376,7 @@
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/UltimateSacrifice/EnergyWave</texPath>
 			<drawSize>3.60</drawSize>
-			<color>(250, 147, 19)</color>
+			<color>(229, 211, 127)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
@@ -396,7 +396,7 @@
 			<texPath>Things/Mote/UltimateSacrifice/LightPillar</texPath>
 			<drawSize>(1.95, 5.10)</drawSize>
 			<drawOffset>(0, 1.5, 7.7)</drawOffset>
-			<color>(250, 147, 19)</color>
+			<color>(229, 211, 127)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
@@ -415,7 +415,7 @@
 			<graphicClass>Graphic_Mote</graphicClass>
 			<texPath>Things/Mote/UltimateSacrifice/EnergyWave</texPath>
 			<drawSize>3.60</drawSize>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">
@@ -435,7 +435,7 @@
 			<texPath>Things/Mote/UltimateSacrifice/LightPillar</texPath>
 			<drawSize>(1.95, 5.10)</drawSize>
 			<drawOffset>(0, 1.5, 7.7)</drawOffset>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="MoteBase">

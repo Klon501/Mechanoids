@@ -4,15 +4,16 @@
 	<packageId>Mortis.ApexMechanoids</packageId>
 	<authors>
 		<li>Mortis</li>
-		<li>MrHydralisk</li>
-		<li>Aqued</li>
-		<li>Airo</li>
 		<li>Aelflead Wayne</li>
-		<li>Xaro</li>
 		<li>Elseud</li>
+		<li>DemonRoka</li>
+		<li>MrHydralisk</li>
+		<li>BlackMarket420</li>
+		<li>Veltaris</li>
 		<li>B4ttl3m3d</li>
+		<li>GoGaTio</li>
 	</authors>
-	<url>https://github.com/aquiles-11/Mechanoids</url>
+	<url>https://github.com/Klon501/Mechanoids</url>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
@@ -33,10 +34,6 @@
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
-		<!-- <li> -->
-		<!-- <packageId>EBSG.Framework</packageId> -->
-		<!-- <displayName>EBSG Framework</displayName> -->
-		<!-- </li> -->
 	</modDependencies>
 	<loadAfter>
 		<li>brrainz.harmony</li>

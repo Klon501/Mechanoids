@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- Lasher: Animal-taming / EMP whip mech. 3-directional. LeftHand, RightHand, HeadAttackTool.
-       Bipedal humanoid body. Inherits from Lancer. Agile frame, fists + whip weapon.
-       Similar to standard humanoid mech but slightly lighter build. -->
 	<BodyDef>
 		<defName>APM_Lasher</defName>
 		<label>lasher</label>
@@ -72,21 +69,21 @@
 									<customLabel>left hand</customLabel>
 									<coverage>0.2</coverage>
 									<height>Bottom</height>
+									<!-- ВОТ ЗДЕСЬ ДОБАВЛЕНА ГРУППА LEFT HAND -->
+									<groups>
+										<li>LeftHand</li>
+									</groups>
 									<parts>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>left pinky</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>LeftHand</li>
-											</groups>
 										</li>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>left middle finger</customLabel>
 											<coverage>0.15</coverage>
 											<groups>
-												<li>LeftHand</li>
 												<li>MiddleFingers</li>
 											</groups>
 										</li>
@@ -94,17 +91,11 @@
 											<def>MechanicalFinger</def>
 											<customLabel>left index finger</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>LeftHand</li>
-											</groups>
 										</li>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>left thumb</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>LeftHand</li>
-											</groups>
 										</li>
 									</parts>
 								</li>
@@ -127,21 +118,21 @@
 									<customLabel>right hand</customLabel>
 									<coverage>0.2</coverage>
 									<height>Bottom</height>
+									<!-- ВОТ ЗДЕСЬ ДОБАВЛЕНА ГРУППА RIGHT HAND -->
+									<groups>
+										<li>RightHand</li>
+									</groups>
 									<parts>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>right pinky</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>RightHand</li>
-											</groups>
 										</li>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>right middle finger</customLabel>
 											<coverage>0.15</coverage>
 											<groups>
-												<li>RightHand</li>
 												<li>MiddleFingers</li>
 											</groups>
 										</li>
@@ -149,17 +140,11 @@
 											<def>MechanicalFinger</def>
 											<customLabel>right index finger</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>RightHand</li>
-											</groups>
 										</li>
 										<li>
 											<def>MechanicalFinger</def>
 											<customLabel>right thumb</customLabel>
 											<coverage>0.15</coverage>
-											<groups>
-												<li>RightHand</li>
-											</groups>
 										</li>
 									</parts>
 								</li>

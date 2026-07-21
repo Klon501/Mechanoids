@@ -230,6 +230,7 @@
 			<warmupTime>1.1</warmupTime>
 			<range>0.9</range>
 			<drawAimPie>false</drawAimPie>
+			<soundCast>APM_Overdrive</soundCast>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 				<canTargetPawns>false</canTargetPawns>
@@ -283,6 +284,7 @@
 			<warmupTime>1.1</warmupTime>
 			<range>0.9</range>
 			<drawAimPie>false</drawAimPie>
+			<soundCast>APM_Overdrive</soundCast>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 				<canTargetPawns>false</canTargetPawns>
@@ -386,7 +388,7 @@
 			<graphicClass>VEF.Graphics.Graphic_Animated</graphicClass>
 			<drawSize>3.7</drawSize>
 			<ticksPerFrame>5</ticksPerFrame>
-			<color>(68, 150, 215)</color>
+			<color>(163, 180, 187)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>RangedStab</damageDef>
@@ -438,7 +440,7 @@
 			<graphicClass>VEF.Graphics.Graphic_Animated</graphicClass>
 			<drawSize>3.7</drawSize>
 			<ticksPerFrame>5</ticksPerFrame>
-			<color>(229,211,127)</color>
+			<color>(229, 211, 127)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>RangedStab</damageDef>

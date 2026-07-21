@@ -6,8 +6,8 @@
 		<jobDef>APM_Absorb</jobDef>
 		<description>Grind up target corpse, and slowly process them into chem fuel.</description>
 		<iconPath>UI/Absorb</iconPath>
-		<cooldownTicksRange>90000</cooldownTicksRange>
-		<!-- 1.5 days -->
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<!-- 1 days -->
 		<targetRequired>true</targetRequired>
 		<hostile>false</hostile>
 		<showCastingProgressBar>true</showCastingProgressBar>
@@ -79,7 +79,6 @@
 		<description>The gazer blasts a devastating beam from itself, remaining stationary to keep the beam on target. Anything within reach of the beam takes heavy damage.</description>
 		<iconPath>UI/SunRay</iconPath>
 		<cooldownTicksRange>3500</cooldownTicksRange>
-		<aiCanUse>true</aiCanUse>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_SunRayAbility">
@@ -91,7 +90,7 @@
 			<verbClass>ApexMechanoids.Verb_ShootSunBeamAbility</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<warmupTime>9.5</warmupTime>
-			<range>34.9</range>
+			<range>30.9</range>
 			<minRange>3.9</minRange>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
@@ -223,6 +222,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<cooldownTicksRange>300</cooldownTicksRange>
 		<waitForJobEnd>true</waitForJobEnd>
+		<aiCanUse>true</aiCanUse>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -294,7 +294,7 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>9.9</range>
+			<range>5.9</range>
 			<warmupTime>0.5</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_ShieldCharge</soundCast>
@@ -310,7 +310,7 @@
 				<jobFactor>10</jobFactor>
 				<!--Stun damage amount-->
 				<job>APM_BashStun</job>
-				<moveSpeed>0.6</moveSpeed>
+				<moveSpeed>0.3</moveSpeed>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -336,7 +336,7 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>9.9</range>
+			<range>5.9</range>
 			<warmupTime>0.5</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_Bladehopp</soundCast>
@@ -349,9 +349,9 @@
 		</verbProperties>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_AbilityBash">
-				<jobFactor>10</jobFactor><!--Damage-->
+				<jobFactor>30</jobFactor><!--Damage-->
 				<job>APM_BashDamage</job>
-				<moveSpeed>0.6</moveSpeed>
+				<moveSpeed>0.3</moveSpeed>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -365,6 +365,7 @@
 		<cooldownTicksRange>850</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
 		<uiOrder>2</uiOrder>
 		<showWhenDrafted>true</showWhenDrafted>
 		<hostile>false</hostile>
@@ -474,7 +475,7 @@
 		<verbProperties>
 			<verbClass>ApexMechanoids.Verb_CastStarfall</verbClass>
 			<warmupTime>4.8</warmupTime>
-			<range>40</range>
+			<range>80</range>
 			<drawAimPie>true</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>
 			<noiseRadius>4</noiseRadius>
@@ -503,6 +504,7 @@
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<iconPath>UI/Matrix</iconPath>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<aiCanUse>true</aiCanUse>
 		<showPsycastEffects>False</showPsycastEffects>
 		<hotKey>Misc12</hotKey>
 		<uiOrder>3</uiOrder>
@@ -609,7 +611,7 @@
 		<targetRequired>false</targetRequired>
 		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
 		<hostile>false</hostile>
-		<aiCanUse>false</aiCanUse>
+		<aiCanUse>true</aiCanUse>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>

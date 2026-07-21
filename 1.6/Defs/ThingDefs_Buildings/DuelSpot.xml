@@ -53,21 +53,21 @@
 						<texPath>Things/Building/Duel/Ring_Layer1</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawOffset>(0,-0.03,0)</drawOffset>
-						<color>(68, 150, 215)</color>
+						<color>(163, 180, 187)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Ring_Layer2</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawOffset>(0,-0.02,0)</drawOffset>
-						<color>(68, 150, 215)</color>
+						<color>(163, 180, 187)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Ring_Layer3</texPath>
 						<drawOffset>(0,-0.01,0)</drawOffset>
 						<graphicClass>Graphic_Single</graphicClass>
-						<color>(68, 150, 215)</color>
+						<color>(163, 180, 187)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 				</graphics>
@@ -75,42 +75,48 @@
 			<li Class="CompProperties_DrawAdditionalGraphics">
 				<graphics>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-4,0,0)</drawOffset>
 						<color>(68, 150, 215)</color>
 					</li>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(4,0,0)</drawOffset>
 						<color>(68, 150, 215)</color>
 					</li>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-2.2,0,-3)</drawOffset>
 						<color>(68, 150, 215)</color>
 					</li>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(2.2,0,-3)</drawOffset>
 						<color>(68, 150, 215)</color>
 					</li>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-2.2,0,3)</drawOffset>
 						<color>(68, 150, 215)</color>
 					</li>
 					<li>
-						<texPath>Things/Building/Duel/Flag</texPath>
+						<texPath>Things/Building/Duel/Flag_Grayscale</texPath>
+						<maskPath>Things/Building/Duel/Flag_Grayscale_m</maskPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(2.2,0,3)</drawOffset>
@@ -174,21 +180,21 @@
 						<texPath>Things/Building/Duel/Ring_Layer1</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawOffset>(0,-0.03,0)</drawOffset>
-						<color>(220, 50, 50)</color>
+						<color>(230, 130, 40)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Ring_Layer2</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawOffset>(0,-0.02,0)</drawOffset>
-						<color>(220, 50, 50)</color>
+						<color>(230, 130, 40)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Ring_Layer3</texPath>
 						<drawOffset>(0,-0.01,0)</drawOffset>
 						<graphicClass>Graphic_Single</graphicClass>
-						<color>(220, 50, 50)</color>
+						<color>(230, 130, 40)</color>
 						<drawSize>5.7</drawSize>
 					</li>
 				</graphics>
@@ -200,42 +206,36 @@
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-4,0,0)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Flag</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(4,0,0)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Flag</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-2.2,0,-3)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Flag</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(2.2,0,-3)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Flag</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(-2.2,0,3)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 					<li>
 						<texPath>Things/Building/Duel/Flag</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 						<drawSize>1.5</drawSize>
 						<drawOffset>(2.2,0,3)</drawOffset>
-						<color>(220, 50, 50)</color>
 					</li>
 				</graphics>
 			</li>

@@ -354,32 +354,6 @@
 		</subSounds>
 	</SoundDef>
 
-	<!-- Targeting Ability Sound -->
-	<SoundDef>
-		<defName>APM_Targeting</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<maxVoices>4</maxVoices>
-		<maxSimultaneous>2</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Targeting</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>55</min>
-					<max>62</max>
-				</volumeRange>
-				<pitchRange>
-					<min>0.95</min>
-					<max>1.05</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
-
 	<!-- SteelDiscipline Ability Sound -->
 	<SoundDef>
 		<defName>APM_SteelDiscipline_Cast</defName>
