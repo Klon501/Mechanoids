@@ -119,17 +119,18 @@ namespace ApexMechanoids
         public override void Tick()
         {
             base.Tick();
+            Pawn containedMech = ContainedMech;
             if (PowerTrader != null)
             {
-                PowerTrader.PowerOutput = (base.Working && ContainedMech != null)
+                PowerTrader.PowerOutput = (base.Working && containedMech != null)
                     ? -Config.ActivePowerConsumption
                     : -PowerTrader.Props.basePowerConsumption;
             }
-            if (base.Working && ContainedMech != null)
+            if (base.Working && containedMech != null)
             {
                 if (PowerOn && !this.IsBrokenDown())
                 {
-                    DoRepairTick(ContainedMech);
+                    DoRepairTick(containedMech);
                     armsAnim?.Update(true);
                     platformAnim?.Update(true);
                     if (mechRepairEffecter == null) mechRepairEffecter = EffecterDefOf.MechRepairing.Spawn(this, Map, PawnDrawOffset);
@@ -378,19 +379,19 @@ namespace ApexMechanoids
 
         private void DoRepairTick(Pawn mech)
         {
-            if (mech.health.hediffSet.GetMissingPartsCommonAncestors().Any())
+            var hediffSet = mech.health.hediffSet;
+            var missingParts = hediffSet.GetMissingPartsCommonAncestors();
+            if (missingParts.Count > 0)
             {
-                var part = mech.health.hediffSet.GetMissingPartsCommonAncestors().First();
-                mech.health.RestorePart(part.Part);
+                mech.health.RestorePart(missingParts[0].Part);
             }
             float hpBudget = Config.HealHpPerTick;
-            List<Hediff> injuries = mech.health.hediffSet.hediffs
-                .Where(h => h is Hediff_Injury)
-                .ToList();
-
-            foreach (Hediff injury in injuries)
+            var hediffs = hediffSet.hediffs;
+            for (int i = hediffs.Count - 1; i >= 0; i--)
             {
                 if (hpBudget <= 0f) break;
+                Hediff_Injury injury = hediffs[i] as Hediff_Injury;
+                if (injury == null) continue;
                 float amount = Mathf.Min(injury.Severity, hpBudget);
                 injury.Heal(amount);
                 hpHealedFraction += amount;
@@ -399,10 +400,17 @@ namespace ApexMechanoids
                 hpHealedFraction -= whole;
                 hpBudget -= amount;
             }
-            if (hpHealedSoFar >= totalHpToHeal && !mech.health.hediffSet.GetMissingPartsCommonAncestors().Any())
+            if (hpHealedSoFar >= totalHpToHeal && hediffSet.GetMissingPartsCommonAncestors().Count == 0)
             {
-                Messages.Message("APM_MechRepaired".Translate(mech.LabelShort), mech, MessageTypeDefOf.PositiveEvent);
-                EjectContents();
+                if (MechRepairUtility.IsMissingWeapon(mech))
+                {
+                    MechRepairUtility.GenerateWeapon(mech);
+                }
+                else
+                {
+                    Messages.Message("APM_MechRepaired".Translate(mech.LabelShort), mech, MessageTypeDefOf.PositiveEvent);
+                    EjectContents();
+                }
             }
         }
 
@@ -419,7 +427,9 @@ namespace ApexMechanoids
             if (selectedPawn != null && selectedPawn != p) return "Occupied".Translate();
             if (!PowerOn) return "NoPower".Translate();
 
-            bool damaged = p.health.hediffSet.hediffs.Any(h => h is Hediff_Injury) || p.health.hediffSet.GetMissingPartsCommonAncestors().Any();
+            bool damaged = p.health.hediffSet.hediffs.Any(h => h is Hediff_Injury)
+                || p.health.hediffSet.GetMissingPartsCommonAncestors().Any()
+                || MechRepairUtility.IsMissingWeapon(p);
             if (!damaged) return "APM_FullHealth".Translate();
 
             return true;
@@ -627,7 +637,7 @@ namespace ApexMechanoids
                 () => Config.MechPositionOffsetEast, v => Config.Props.mechPositionOffsetEast = v,
                 () => Config.MechPositionOffsetSouth, v => Config.Props.mechPositionOffsetSouth = v,
                 () => Config.MechPositionOffsetWest, v => Config.Props.mechPositionOffsetWest = v));
-            
+
             if (Config.ArmsAnimation != null)
             {
                 for (int i = 0; i < Config.ArmsAnimation.arms.Count; i++)
@@ -652,7 +662,7 @@ namespace ApexMechanoids
                         arm.randomVerticalReach, -1f, 1f));
                 }
             }
-            
+
             return sections;
         }
 
@@ -701,4 +711,3 @@ namespace ApexMechanoids
         }
     }
 }
-
