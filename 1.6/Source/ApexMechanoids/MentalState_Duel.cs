@@ -97,7 +97,7 @@ namespace ApexMechanoids
                 Log.Error("No target. This should have been checked in this mental state's worker.");
                 return "";
             }
-            return this.def.beginLetter.Formatted(this.pawn.NameShortColored, this.causedByPawn.NameShortColored, this.pawn.Named("PAWN"), this.causedByPawn.Named("TARGET")).AdjustedFor(this.pawn, "PAWN", true).Resolve().CapitalizeFirst();
+            return this.def.beginLetter.Formatted(this.pawn.NameShortColored, this.causedByPawn.NameShortColored, this.duelStarter.Named("INITIATOR"), (duelStarter == this.pawn ? causedByPawn : pawn).Named("TARGET")).AdjustedFor(this.pawn, "PAWN", true).Resolve().CapitalizeFirst();
         }
         public override void ExposeData()
         {

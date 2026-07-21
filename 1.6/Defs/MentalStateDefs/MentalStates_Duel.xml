@@ -16,7 +16,7 @@
 		<blockRandomInteraction>true</blockRandomInteraction>
 		<blockNormalThoughts>true</blockNormalThoughts>
 		<nameColor>(0.90, 0.51, 0.16)</nameColor>
-		<beginLetter>{0} is dueling {1}.</beginLetter>
+		<beginLetter>{INITIATOR} is dueling {TARGET}.</beginLetter>
 		<beginLetterDef>ThreatSmall</beginLetterDef>
 		<recoveryMessage>{0}'s duel has come to an end.</recoveryMessage>
 		<baseInspectLine>Mental state: Duel</baseInspectLine>
@@ -41,7 +41,7 @@
 		<blockRandomInteraction>true</blockRandomInteraction>
 		<blockNormalThoughts>true</blockNormalThoughts>
 		<nameColor>(0.90, 0.51, 0.16)</nameColor>
-		<beginLetter>{0} is dueling {1}.</beginLetter>
+		<beginLetter>{INITIATOR} is dueling {TARGET}.</beginLetter>
 		<beginLetterDef>ThreatBig</beginLetterDef>
 		<recoveryMessage>{0}'s duel has come to an end.</recoveryMessage>
 		<baseInspectLine>Mental state: Duel</baseInspectLine>
