@@ -162,14 +162,26 @@ namespace ApexMechanoids
         {
             get
             {
-                if(parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth) > 0)
+                if(User.health.hediffSet.HasHediff(ApexDefsOf.APM_MechCommandCasketBoost))
                 {
                     return true;
                 }
-
                 return false;
             }
         }
+
+        public bool ShouldBeBoosted
+        {
+            get 
+            {
+                if (parent.GetStatValue(ApexDefsOf.APM_CasketBandwidth) >= 1)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
 
 
         public override void CompTickInterval(int delta)
@@ -186,20 +198,24 @@ namespace ApexMechanoids
             {
                 return;
             }
-            if(Props.HediffToGive != null || IsBoosted)
+            if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
             {
-                if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
+                if (IsBoosted || ShouldBeBoosted)
                 {
-                    if (IsBoosted)
-                    {
-                        Hediff hediff = User.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_MechCommandCasketBoost);
+                    Hediff hediff = User.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_MechCommandCasketBoost);
 
+                    if(!ShouldBeBoosted)
+                    {
+                        User.health.RemoveHediff(hediff);
+                    }
+                    else
+                    {
                         if (hediff == null)
                         {
                             hediff = User.health.AddHediff(ApexDefsOf.APM_MechCommandCasketBoost, User.health.hediffSet.GetBrain());
                         }
 
-                        if(hediff is Hediff_CommandCasketBoost)
+                        if (hediff is Hediff_CommandCasketBoost)
                         {
                             Hediff_CommandCasketBoost bandwidthHediff = (Hediff_CommandCasketBoost)hediff;
 
@@ -207,45 +223,34 @@ namespace ApexMechanoids
 
                             bandwidthHediff.UpdateStats();
                         }
-
-                        HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
-                        if (hediffComp_Disappears != null)
-                        {
-                            hediffComp_Disappears.ticksToDisappear = 90;
-                        }
-                        
-                    }
-                    
-
-                    
-                    if (Props.HediffToGive != null)
-                    {
-                        Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
-
-                        if (hediff == null)
-                        {
-                            hediff = User.health.AddHediff(Props.HediffToGive, User.health.hediffSet.GetBrain());
-                            hediff.Severity = 1f;
-                            HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
-                            if (hediffComp_Link != null)
-                            {
-                                hediffComp_Link.drawConnection = false;
-                                hediffComp_Link.other = parent;
-                            }
-                        }
-
-                        HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
-                        if (hediffComp_Disappears != null)
-                        {
-                            hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
-                        }
                     }
                 }
+
+                if (Props.HediffToGive != null)
+                {
+                    Hediff hediff = User.health.GetOrAddHediff(Props.HediffToGive);
+
+                    if (hediff == null)
+                    {
+                        hediff = User.health.AddHediff(Props.HediffToGive, User.health.hediffSet.GetBrain());
+                        hediff.Severity = 1f;
+                        HediffComp_Link hediffComp_Link = hediff.TryGetComp<HediffComp_Link>();
+                        if (hediffComp_Link != null)
+                        {
+                            hediffComp_Link.drawConnection = false;
+                            hediffComp_Link.other = parent;
+                        }
+                    }
+
+                    HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
+                    if (hediffComp_Disappears != null)
+                    {
+                        hediffComp_Disappears.ticksToDisappear = Props.TicksToCheckForHediff + 10;
+                    }
+                }
+
             }
-
-                
-
-
+        
             // gizmo actions
 
             if (actionTick != 0)

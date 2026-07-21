@@ -4,7 +4,7 @@
 	<APM.CommandCasket.Inspection>Remote control uplink is active for {PAWN}</APM.CommandCasket.Inspection>
 	<APM.CommandCasket.FailReason.NotMechanitor>not mechanitor</APM.CommandCasket.FailReason.NotMechanitor>
 
-	<APM.CommandCasket.Gizmo.CancelLink.Label>Cancel remote link</APM.CommandCasket.Gizmo.CancelLink.Label>
+	<APM.CommandCasket.Gizmo.CancelLink.Label>Eject mechanitor</APM.CommandCasket.Gizmo.CancelLink.Label>
 	<APM.CommandCasket.Gizmo.CancelLink.Desc>Cancel the remote link for the current occupant. The occupant will be ejected.</APM.CommandCasket.Gizmo.CancelLink.Desc>
 
 		
@@ -22,6 +22,10 @@
 
 	<APM.CommandCasket.Inspection.Bandwidth>bandwidth used:</APM.CommandCasket.Inspection.Bandwidth>
 
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Label>remote reconnect</APM.CommandCasket.Mech.Gizmo.Reconnect.Label>
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>remotely connect this mech to a mechanitor inside a mech command casket.</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
 	
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu> (missing bandwidth)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
+
 
 </LanguageData>

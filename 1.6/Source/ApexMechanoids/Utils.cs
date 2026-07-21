@@ -100,7 +100,7 @@ namespace ApexMechanoids
         public static bool IsUplinkActiveFor(Pawn mechanitor)
         {
 
-            if (mechanitor == null || mechanitor.Dead || mechanitor.mechanitor == null)
+            if (mechanitor == null || mechanitor.Dead || !MechanitorUtility.IsMechanitor(mechanitor))
             {
                 return false;
             }
@@ -120,7 +120,7 @@ namespace ApexMechanoids
         public static bool IsUplinkActiveFor(Pawn mechanitor, out Building_MechCommandCasket casket)
         {
 
-            if (mechanitor == null || mechanitor.Dead || mechanitor.mechanitor == null)
+            if (mechanitor == null || mechanitor.Dead || !MechanitorUtility.IsMechanitor(mechanitor))
             {
                 casket = null;
                 return false;
