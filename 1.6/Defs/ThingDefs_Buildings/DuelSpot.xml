@@ -26,7 +26,7 @@
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isEdifice>false</isEdifice>
-			<destroyEffecter MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Burnout</destroyEffecter>
+			<activeSound>DominusShield_Ambience</activeSound>
 			<!--Duel sound?-->
 		</building>
 		<comps>
@@ -39,7 +39,7 @@
 				<idlePulseSpeed>3</idlePulseSpeed>
 				<minIdleAlpha>0.05</minIdleAlpha>
 				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
-				<activeSound MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Ambience</activeSound>
+				<activeSound>DominusShield_Ambience</activeSound>
 				<!--Duel sound?-->
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
@@ -155,7 +155,7 @@
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isEdifice>false</isEdifice>
-			<destroyEffecter MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Burnout</destroyEffecter>
+			<activeSound>DominusShield_Ambience</activeSound>
 		</building>
 		<comps>
 			<li Class="CompProperties_ProjectileInterceptor">
@@ -167,7 +167,7 @@
 				<idlePulseSpeed>3</idlePulseSpeed>
 				<minIdleAlpha>0.05</minIdleAlpha>
 				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
-				<activeSound MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Ambience</activeSound>
+				<activeSound>DominusShield_Ambience</activeSound>
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
 				<delayTicks>1200</delayTicks>
