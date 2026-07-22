@@ -98,6 +98,104 @@
 	<ThingDef ParentName="APM_MechCommandCasket_Base">
 		<defName>APM_MechCommandCasket</defName>
 		<label>mech command casket</label>
+		<description>The mech command casket is a fusion of mechlink and biosculpter casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them.</description>
+		<graphicData>
+			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(2.70, 1, 1.70)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+			<SubcoreHigh>1</SubcoreHigh>
+		</costList>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+    </ThingDef>
+
+
+
+	<ThingDef ParentName="APM_MechCommandCasket_Base">
+		<defName>APM_MechCommandCasket</defName>
+		<label>mech command casket</label>
+		<description>The mech command casket is a fusion of mechlink and cryptosleep casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them.</description>
+		<graphicData>
+			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(2.70, 1, 1.70)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>2200</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+			<SubcoreHigh>1</SubcoreHigh>
+		</costList>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ApexMechtech</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>1000</basePowerConsumption>
+				<idlePowerDraw>80</idlePowerDraw>
+			</li>
+			<li Class="ApexMechanoids.CompProperties_RemoteMechCasketAbilities">
+				<actionspeed>1.0</actionspeed>
+				<repairExp>0.05</repairExp>		<!-- same as remote repair implant -->
+				<repairCostsEnergy>true</repairCostsEnergy>	<!-- same as remote repair implant -->
+				<Shieldcooldown>300</Shieldcooldown>	<!-- same as remote shield implant -->
+				<textpath_Connect>UI/Gizmos/APM_ConnectToMech</textpath_Connect>
+				<textpath_Disconnect>UI/Gizmos/APM_DisconnectFromMech</textpath_Disconnect>
+				<textpath_Repair>UI/Gizmos/APM_Repair</textpath_Repair>
+				<textpath_Shield>UI/Gizmos/APM_ShieldMech</textpath_Shield>
+				<textpath_ShieldCooldown>UI/Gizmos/APM_ShieldMechCooldown</textpath_ShieldCooldown>
+				<labelShort>Casket</labelShort>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+
+	<ThingDef ParentName="APM_MechCommandCasket_Base">
+		<defName>APM_MechCommandCasketUpgraded</defName>
+		<label>mech command casket with bandwidth</label>
 		<description>The mech command casket is a fusion of mechlink and cryptosleep casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them.</description>
 		<graphicData>
 			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
