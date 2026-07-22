@@ -57,6 +57,11 @@ namespace ApexMechanoids
                 return false;
             }
 
+            if (Building_RepairStation.IsPawnClaimedByAnyRepairStation(target))
+            {
+                return false;
+            }
+
             CompMechRepairable repairable = target.TryGetComp<CompMechRepairable>();
             if (repairable == null || !target.RaceProps.IsMechanoid)
             {

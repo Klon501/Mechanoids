@@ -16,6 +16,12 @@ namespace ApexMechanoids.HarmonyPatches
         {
             private static bool Prefix(Pawn mech, ref bool __result)
             {
+                if (Building_RepairStation.IsPawnClaimedByAnyRepairStation(mech))
+                {
+                    __result = false;
+                    return false;
+                }
+
                 CompAegis comp = mech?.TryGetComp<CompAegis>();
                 if (comp == null || comp.Ext == null)
                 {
