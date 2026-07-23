@@ -77,19 +77,22 @@ namespace ApexMechanoids
             var duelTarget = pawn == duelStarter ? causedByPawn : pawn;
             bool starterIsBoss = duelStarter != null && (duelStarter.kindDef?.defName?.EndsWith("_Boss") ?? false);
 
-            if (duelTarget.DeadOrDowned)
+            if (!pawn.DeadOrDowned)
             {
-                EffecterDef winEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelWin_Boss : ApexEffecterDefsOf.APM_DuelWin;
-                winEffecter.Spawn(pawn, pawn.Map).Cleanup();
-            }
-            else if (duelStarter != null && duelStarter.DeadOrDowned)
-            {
-                ApexEffecterDefsOf.APM_DuelLose.Spawn(pawn, pawn.Map).Cleanup();
-            }
-            else if (pawn == duelStarter)
-            {
-                EffecterDef drawEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelDraw_Boss : ApexEffecterDefsOf.APM_DuelDraw;
-                drawEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                if (duelTarget.DeadOrDowned)
+                {
+                    EffecterDef winEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelWin_Boss : ApexEffecterDefsOf.APM_DuelWin;
+                    winEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                }
+                else if (duelStarter != null && duelStarter.DeadOrDowned)
+                {
+                    ApexEffecterDefsOf.APM_DuelLose.Spawn(pawn, pawn.Map).Cleanup();
+                }
+                else if (pawn == duelStarter)
+                {
+                    EffecterDef drawEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelDraw_Boss : ApexEffecterDefsOf.APM_DuelDraw;
+                    drawEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                } 
             }
         }
 
