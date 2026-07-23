@@ -33,6 +33,9 @@
 				<li>Biotech</li>
 			</buildingTags>
 			<ai_chillDestination>false</ai_chillDestination>
+			<forcedCostLeavings>
+				<li>APM_PsyfluxChip</li>
+			</forcedCostLeavings>
 		</building>
 		<designationCategory>Biotech</designationCategory>
 		<statBases>

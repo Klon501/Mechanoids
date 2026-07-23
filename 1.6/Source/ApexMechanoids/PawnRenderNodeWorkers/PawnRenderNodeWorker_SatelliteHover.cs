@@ -32,6 +32,11 @@ namespace ApexMechanoids
 
     internal static class SatelliteHoverUtility
     {
+        public static bool CanHover(PawnDrawParms parms)
+        {
+            return !parms.Portrait && !parms.dead && parms.pawn != null && !parms.pawn.Dead;
+        }
+
         public static float HoverOffset(Pawn pawn, float amplitude, int periodTicks, float phaseOffset, bool seedPhaseByPawn)
         {
             int period = Mathf.Max(periodTicks, 1);
@@ -47,7 +52,7 @@ namespace ApexMechanoids
         {
             Vector3 offset = base.OffsetFor(node, parms, out pivot);
             PawnRenderNodeProperties_SatelliteHover props = node.Props as PawnRenderNodeProperties_SatelliteHover;
-            if (parms.Portrait || props == null)
+            if (!SatelliteHoverUtility.CanHover(parms) || props == null)
             {
                 return offset;
             }

@@ -13,6 +13,7 @@ namespace ApexMechanoids
         public float firingArcHalfAngle = 18f;
         public float firingPowerConsumption = 20000f;
         public int cooldownTicks = 2400;
+        public float minRange = 0f;
     }
 
     public class Building_GazerEmplacement : Building, IVerbOwner
@@ -141,7 +142,7 @@ namespace ApexMechanoids
         private int WarmupTicks => Mathf.Max(1, (BeamProps != null ? BeamProps.warmupTime : 9.5f).SecondsToTicks());
         private int BeamStepTicks => Mathf.Max(1, BeamProps != null ? BeamProps.ticksBetweenBurstShots : 14);
         private float Range => BeamProps != null ? BeamProps.range : 34.9f;
-        private float MinRange => BeamProps != null ? BeamProps.minRange : 3.9f;
+        private float MinRange => Props != null ? Props.minRange : (BeamProps != null ? BeamProps.minRange : 3.9f);
         private int MinRangeCells => Mathf.RoundToInt(MinRange);
 
         public Vector3 BeamOriginWorld
@@ -1158,7 +1159,7 @@ namespace ApexMechanoids
 
         private bool CanHitThing(Thing thing)
         {
-            if (thing == null || !thing.Spawned)
+            if (thing == null || thing == this || !thing.Spawned)
             {
                 return false;
             }
@@ -1169,7 +1170,7 @@ namespace ApexMechanoids
         private bool TryGetHitCell(IntVec3 source, IntVec3 targetCell, out IntVec3 hitCell)
         {
             IntVec3 lastPoint = GenSight.LastPointOnLineOfSight(source, targetCell, (IntVec3 c) => c.InBounds(Map) && c.CanBeSeenOverFast(Map), true);
-            if (BeamProps.beamCantHitWithinMinRange && lastPoint.DistanceTo(source) < BeamProps.minRange)
+            if (BeamProps.beamCantHitWithinMinRange && lastPoint.DistanceTo(source) < MinRange)
             {
                 hitCell = default;
                 return false;
@@ -1226,7 +1227,7 @@ namespace ApexMechanoids
                 impactCell = clippedCell;
             }
 
-            if (thing == null || BeamProps.beamDamageDef == null)
+            if (thing == null || thing == this || BeamProps.beamDamageDef == null)
             {
                 return;
             }

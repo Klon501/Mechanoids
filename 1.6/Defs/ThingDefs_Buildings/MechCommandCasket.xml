@@ -20,6 +20,9 @@
 		<building>
 			<paintable>false</paintable>
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+			<forcedCostLeavings>
+				<li>APM_PsionicChip</li>
+			</forcedCostLeavings>
 			<buildingTags>
 				<li>Biotech</li>
 			</buildingTags>
@@ -192,15 +195,6 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
-	<HediffDef>
-		<defName>APM_MechCommandCasketBoost</defName>
-		<label>mech command casket boost</label>
-		<description>PLACEHOLDER DESCRIPTION! This mechanitors bandwidth is increased while inside the command casket.</description>
-		<hediffClass>ApexMechanoids.Hediff_CommandCasketBoost</hediffClass>
-		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
-		<maxSeverity>100</maxSeverity>
-		<isBad>false</isBad>
-	</HediffDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>APM_CasketBandwidthAmplifier</defName>
 		<label>mech casket bandwidth amplifier</label>
@@ -266,4 +260,33 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 	</ThingDef>
+	<HediffDef>
+		<defName>APM_MechCommandCasketBoost</defName>
+		<label>mech command casket boost</label>
+		<description>This mechanitors bandwidth is increased while inside the command casket.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>90</disappearsAfterTicks>
+				<!-- so it gets removed when the pawn leaves -->
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MechBandwidth>6</MechBandwidth>
+					<!-- <WorkSpeedGlobalOffsetMech>0.3</WorkSpeedGlobalOffsetMech> -->
+					<!-- <MechRepairSpeed>0.3</MechRepairSpeed> -->
+					<!-- <MechFormingSpeed>0.45</MechFormingSpeed>  -->
+				</statOffsets>
+				<statFactors>
+					<!-- <MechBandwidth>1.3</MechBandwidth> -->
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
 </Defs>

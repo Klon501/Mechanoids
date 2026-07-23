@@ -76,6 +76,10 @@ namespace ApexMechanoids
 			{
 				return false;
 			}
+			if (Building_RepairStation.IsPawnClaimedByAnyRepairStation(pawn2))
+			{
+				return false;
+			}
 			if (!pawn.CanReserve(t, 1, -1, null))
 			{
 				return false;
