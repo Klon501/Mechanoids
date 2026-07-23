@@ -36,13 +36,16 @@ namespace ApexMechanoids
                     continue;
                 }
                 int chemfuelCount;
+                int duration;
                 if (target.Thing is Corpse corpse && corpse.InnerPawn != null)
                 {
                     chemfuelCount = Mathf.FloorToInt(corpse.InnerPawn.BodySize * Props.chemfuelPer1BodySizeOfCorpse);
+                    duration = (int)(Props.durationFromSize.Evaluate(corpse.InnerPawn.BodySize) * GenDate.TicksPerHour);
                 }
                 else if (target.Thing.def.ingestible != null)
                 {
                     chemfuelCount = Mathf.FloorToInt(target.Thing.def.ingestible.CachedNutrition * target.Thing.stackCount * Props.chemfuelPer1Nutrition);
+                    duration = (int)(Props.durationFromNutrition.Evaluate(target.Thing.def.ingestible.CachedNutrition * target.Thing.stackCount) * GenDate.TicksPerHour);
                 }
                 else
                 {
@@ -54,6 +57,7 @@ namespace ApexMechanoids
                 var hediffSpawner = hediff.TryGetComp<CompSpawnThingOnRemove>();
                 hediffSpawner.thing = ThingDefOf.Chemfuel;
                 hediffSpawner.count = chemfuelCount;
+                hediff.TryGetComp<HediffComp_Disappears>().SetDuration(duration);
             }
         }
     }
@@ -66,5 +70,9 @@ namespace ApexMechanoids
         public float chemfuelPer1BodySizeOfCorpse = 36f;
 
         public float chemfuelPer1Nutrition = 1f;
+
+        public SimpleCurve durationFromSize;
+
+        public SimpleCurve durationFromNutrition;
     }
 }

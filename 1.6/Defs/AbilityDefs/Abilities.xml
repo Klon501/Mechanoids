@@ -2,7 +2,7 @@
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
-		<label>Recycle Biomess</label>
+		<label>Recycle Biomass</label>
 		<jobDef>APM_Absorb</jobDef>
 		<description>Grind up target corpse, and slowly process them into chem fuel.</description>
 		<iconPath>UI/Absorb</iconPath>
@@ -15,7 +15,7 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
-			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<verbClass>ApexMechanoids.Verb_Ingest</verbClass>
 			<warmupTime>5</warmupTime>
 			<drawAimPie>false</drawAimPie>
 			<range>-1</range>
@@ -33,6 +33,22 @@
 			<li Class="ApexMechanoids.CompProperties_Absorb">
 				<chemfuelPer1BodySizeOfCorpse>36</chemfuelPer1BodySizeOfCorpse>
 				<chemfuelPer1Nutrition>10</chemfuelPer1Nutrition>
+				<durationFromSize> <!--body size and hours-->
+					<points>
+						<li>(0, 0.2)</li>
+						<li>(1, 12)</li>
+						<!--linear scale-->
+						<li>(100, 1200)</li>
+					</points>
+				</durationFromSize>
+				<durationFromNutrition> <!--amount of nutrition and hours-->
+					<points>
+						<li>(1, 0.5)</li>
+						<li>(10, 2)</li>
+						<li>(100, 6)</li>
+						<li>(500, 12)</li>
+					</points>
+				</durationFromNutrition>
 			</li>
 		</comps>
 	</AbilityDef>
