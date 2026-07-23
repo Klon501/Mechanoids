@@ -123,43 +123,6 @@
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<ComponentSpacer>6</ComponentSpacer>
 			<SubcoreHigh>1</SubcoreHigh>
-		</costList>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-	</ThingDef>
-	<ThingDef ParentName="APM_MechCommandCasket_Base">
-		<defName>APM_MechCommandCasket</defName>
-		<label>mech command casket</label>
-		<description>The mech command casket is a fusion of mechlink and biosculpter casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them.</description>
-		<graphicData>
-			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
-			<drawOffset>(0,0,0)</drawOffset>
-			<shadowData>
-				<volume>(2.70, 1, 1.70)</volume>
-				<offset>(0, 0, 0)</offset>
-			</shadowData>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>3200</WorkToBuild>
-			<Mass>100</Mass>
-			<Flammability>0.6</Flammability>
-		</statBases>
-		<size>(3,2)</size>
-		<costList>
-			<Steel>150</Steel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>6</ComponentSpacer>
-			<SubcoreHigh>1</SubcoreHigh>
 			<APM_PsionicChip>1</APM_PsionicChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>

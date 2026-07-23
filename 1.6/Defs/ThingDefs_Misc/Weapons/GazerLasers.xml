@@ -42,7 +42,7 @@
 				<beamDamageDef>MegaBeam</beamDamageDef>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<soundCast>APM_GazerWeapon</soundCast>
+				<soundCastBeam>APM_GazerWeapon</soundCastBeam>
 				<beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
 				<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
 				<beamMaxDeviation>1.5</beamMaxDeviation>

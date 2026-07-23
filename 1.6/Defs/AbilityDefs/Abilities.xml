@@ -6,8 +6,7 @@
 		<jobDef>APM_Absorb</jobDef>
 		<description>Grind up target corpse, and slowly process them into chem fuel.</description>
 		<iconPath>UI/Absorb</iconPath>
-		<cooldownTicksRange>60000</cooldownTicksRange>
-		<!-- 1 days -->
+		<cooldownTicksRange>20000</cooldownTicksRange>
 		<targetRequired>true</targetRequired>
 		<hostile>false</hostile>
 		<showCastingProgressBar>true</showCastingProgressBar>
@@ -43,8 +42,8 @@
 				</durationFromSize>
 				<durationFromNutrition> <!--amount of nutrition and hours-->
 					<points>
-						<li>(1, 0.5)</li>
-						<li>(10, 2)</li>
+						<li>(1, 1)</li>
+						<li>(10, 3)</li>
 						<li>(100, 6)</li>
 						<li>(500, 12)</li>
 					</points>
@@ -66,7 +65,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<warmupStartSound>DynamoPowerPlant_Warmup</warmupStartSound>
+		<warmupStartSound>APM_DynamoPowerPlant_Warmup</warmupStartSound>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -633,7 +632,7 @@
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<showPsycastEffects>false</showPsycastEffects>
-		<warmupStartSound>GazerEMP_Warmup</warmupStartSound>
+		<warmupStartSound>APM_GazerEMP_Warmup</warmupStartSound>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>3.0</warmupTime>

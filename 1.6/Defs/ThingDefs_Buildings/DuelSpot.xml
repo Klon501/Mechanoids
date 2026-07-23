@@ -39,7 +39,7 @@
 				<idlePulseSpeed>3</idlePulseSpeed>
 				<minIdleAlpha>0.05</minIdleAlpha>
 				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
-				<activeSound MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Ambience</activeSound>
+				<activeSound>APM_DominusShield_Ambience</activeSound>
 				<!--Duel sound?-->
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
@@ -167,7 +167,7 @@
 				<idlePulseSpeed>3</idlePulseSpeed>
 				<minIdleAlpha>0.05</minIdleAlpha>
 				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
-				<activeSound MayRequire="Ludeon.RimWorld.Royalty">Broadshield_Ambience</activeSound>
+				<activeSound>APM_DominusShield_Ambience</activeSound>
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
 				<delayTicks>1200</delayTicks>

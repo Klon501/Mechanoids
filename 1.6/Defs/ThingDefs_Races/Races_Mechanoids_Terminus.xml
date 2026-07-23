@@ -214,7 +214,7 @@
 		<label>overdrive</label>
 		<description>Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger.</description>
 		<iconPath>UI/Overdrive</iconPath>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+		<cooldownTicksRange>30000</cooldownTicksRange>
 		<targetRequired>false</targetRequired>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
@@ -268,7 +268,7 @@
 		<label>overdrive</label>
 		<description>Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger.</description>
 		<iconPath>UI/Overdrive</iconPath>
-		<cooldownTicksRange>90000</cooldownTicksRange>
+		<cooldownTicksRange>30000</cooldownTicksRange>
 		<targetRequired>false</targetRequired>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
@@ -343,6 +343,7 @@
 					<MeleeDamageFactor>1.4</MeleeDamageFactor>
 					<MeleeCooldownFactor>0.65</MeleeCooldownFactor>
 					<StaggerDurationFactor>0.35</StaggerDurationFactor>
+					<EMPResistance>0.95</EMPResistance>
 				</statFactors>
 			</li>
 		</stages>

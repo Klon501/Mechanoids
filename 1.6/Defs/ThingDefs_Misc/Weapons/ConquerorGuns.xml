@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="BaseGun" Name="APM_Gun_Conqueror_AR">
 		<defName>APM_Gun_Conqueror_AR</defName>
-		<label>charge blaster</label>
-		<description>A charged-shot assault rifle. Weaker than a charge rifle, but more accurate.</description>
+		<label>charge blaster rifle</label>
+		<description>A general-purpose pulse-charged assault rifle designed for mid-range engagements. Highly reliable in all combat scenarios with a balanced rate of fire and precision.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ConquerorAR</texPath>
@@ -15,12 +15,12 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
-			<Mass>4.6</Mass>
-			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.74</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
+			<Mass>4.2</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>APM_WeaponConquerorAR</li>
@@ -33,9 +33,9 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
-				<warmupTime>1.0</warmupTime>
-				<range>27.9</range>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<warmupTime>0.9</warmupTime>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -63,26 +63,43 @@
 		</tools>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_Bullet_ChargeCarbine</defName>
+		<label>charge carbine shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
 	<ThingDef ParentName="BaseGun" Name="APM_Gun_Conqueror_DMR">
 		<defName>APM_Gun_Conqueror_DMR</defName>
 		<label>charge carbine</label>
-		<description>A stronger, faster, but less accurate Charge Lance.</description>
+		<description>A designated marksman rifle utilizing pulse-charge technology. Deals less structural damage per shot than a full Charge Lance, but fires significantly faster and excels at medium-to-long range.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ConquerorDMR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Interact_ChargeLance</soundInteract>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<destroyOnDrop>true</destroyOnDrop>
 		<tradeability>None</tradeability>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
-			<Mass>8</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
-			<AccuracyLong>0.80</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<AccuracyMedium>0.82</AccuracyMedium>
+			<AccuracyLong>0.78</AccuracyLong>
+			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>APM_WeaponConquerorDMR</li>
@@ -94,11 +111,11 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_ChargeLance</defaultProjectile>
-				<warmupTime>1.7</warmupTime>
-				<range>32.9</range>
-				<soundCast>ChargeLance_Fire</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<defaultProjectile>APM_Bullet_ChargeCarbine</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>31.9</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -125,41 +142,36 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>13</damageAmountBase>
-			<speed>90</speed>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<speed>70</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGun" Name="APM_Gun_Conqueror_LMG">
 		<defName>APM_Gun_Conqueror_LMG</defName>
 		<label>charge spitter</label>
-		<description>A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate.</description>
+		<description>A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ConquerorLMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Interact_ChargeLance</soundInteract>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<destroyOnDrop>true</destroyOnDrop>
 		<tradeability>None</tradeability>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
-			<Mass>8</Mass>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.55</AccuracyShort>
-			<AccuracyMedium>0.4</AccuracyMedium>
-			<AccuracyLong>0.3</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.38</AccuracyMedium>
+			<AccuracyLong>0.12</AccuracyLong>
+			<RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>APM_WeaponConquerorLMG</li>
 		</weaponTags>
-		<tradeTags>
-			<li>WeaponRanged</li>
-		</tradeTags>
 		<weaponClasses>
 			<li>RangedLight</li>
 		</weaponClasses>
@@ -168,24 +180,23 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ChargeSpitter</defaultProjectile>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
-				<warmupTime>1.1</warmupTime>
-				<range>11.9</range>
-				<soundCast>Shot_ChargeBlaster</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>8</burstShotCount>
+				<warmupTime>0.6</warmupTime>
+				<range>15.9</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
 			<li>
-				<label>barrel</label>
+				<label>grip</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>Poke</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
+				<power>8</power>
+				<cooldownTime>1.8</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
