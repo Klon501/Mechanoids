@@ -48,13 +48,16 @@ namespace ApexMechanoids
         public override void PostEnd()
         {
             base.PostEnd();
-            if (causedByPawn.DeadOrDowned)
+            if (pawn.HostileTo(causedByPawn) || pawn.HostileTo(causedByPawn.Faction))
             {
-                HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, severityPerWin);
-            }
-            else if (!pawn.DeadOrDowned)
-            {
-                pawn.health.AddHediff(ApexDefsOf.APM_DuelDraw);
+                if (causedByPawn.DeadOrDowned)
+                {
+                    HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, severityPerWin);
+                }
+                else if (!pawn.DeadOrDowned)
+                {
+                    pawn.health.AddHediff(ApexDefsOf.APM_DuelDraw);
+                } 
             }
             Hediff inDuelHediff = pawn.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_InDuel);
             if (inDuelHediff != null)
