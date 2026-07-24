@@ -34,9 +34,9 @@
 				<li>Biotech</li>
 			</buildingTags>
 			<ai_chillDestination>false</ai_chillDestination>
-			<!--<forcedCostLeavings>
+			<forcedCostLeavings>
 				<li>APM_PsyfluxChip</li>
-			</forcedCostLeavings>    Works only if leaveResourcesWhenKilled is true   --> 
+			</forcedCostLeavings>
 		</building>
 		<designationCategory>Biotech</designationCategory>
 		<statBases>
@@ -51,9 +51,6 @@
 			<Plasteel>100</Plasteel>
 			<APM_PsyfluxChip>1</APM_PsyfluxChip>
 		</costList>
-    <killedLeavings>
-      <APM_PsyfluxChip>1</APM_PsyfluxChip>
-    </killedLeavings>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Power">
