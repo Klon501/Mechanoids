@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BaseWeapon">
 		<defName>APM_Weapon_DuelistsPsySpear</defName>
-		<label>duelist's psy-spear</label>
+		<label>dominion psy-spear</label>
 		<description>A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMechanoid" Name="APM_Mech_Dominus_Base" Abstract="True">
+	<!-- ==================== THING DEF ==================== -->
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>APM_Mech_Dominus</defName>
 		<label>Dominus</label>
 		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth nation of Rome, the Dominus provides considerable buffs to nearby allies and personally challenges perceived threats in 1v1 melee combat. The pure force of its determination manifests in a psychic maelstrom forming around those it challenges, summoning a shield generator and increasing damage taken until one stands victorious or it exhausts its will after a certain amount of time. If this occurs, both duelists will be significantly weakened for a period. If a victor emerges, the opposite will occur. It can alternatively channel its will into a temporary wave of energy for its allies. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
 		<statBases>
@@ -70,25 +72,24 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef ParentName="APM_Mech_Dominus_Base">
-		<defName>APM_Mech_Dominus</defName>
-	</ThingDef>
-
-	<ThingDef ParentName="APM_Mech_Dominus_Base">
-		<defName>APM_Mech_DominusB</defName>
-	</ThingDef>
-
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>APM_Mech_Dominus</defName>
+	<!-- ==================== PAWN KINDS ==================== -->
+	<PawnKindDef ParentName="BaseMechanoidKind" Name="APM_PawnKind_Dominus_Base" Abstract="True">
 		<label>dominus</label>
 		<race>APM_Mech_Dominus</race>
 		<combatPower>600</combatPower>
 		<maxPerGroup>3</maxPerGroup>
-    	<isBoss>true</isBoss>
-    	<allowInMechClusters>false</allowInMechClusters>
-	    <skipResistant>true</skipResistant>
+		<isBoss>true</isBoss>
+		<allowInMechClusters>false</allowInMechClusters>
+		<skipResistant>true</skipResistant>
 		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
 		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
+		<weaponMoney>99999~99999</weaponMoney>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
+	</PawnKindDef>
+
+	<!-- Player -->
+	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
+		<defName>APM_Mech_Dominus</defName>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -117,8 +118,6 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-		<weaponMoney>99999~99999</weaponMoney>
-		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponDominusMechlance</li>
 		</weaponTags>
@@ -127,18 +126,10 @@
 			<li>APM_Mech_Duel</li>
 		</abilities>
 	</PawnKindDef>
-	
-	<PawnKindDef ParentName="BaseMechanoidKind">
+
+	<!-- Boss -->
+	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
 		<defName>APM_Mech_Dominus_Boss</defName>
-		<label>dominus</label>
-		<race>APM_Mech_DominusB</race>
-		<combatPower>600</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-    	<isBoss>true</isBoss>
-    	<allowInMechClusters>false</allowInMechClusters>
-	    <skipResistant>true</skipResistant>
-		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
-		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -167,8 +158,6 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-		<weaponMoney>99999~99999</weaponMoney>
-		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponDominusApexMechlance</li>
 		</weaponTags>
@@ -178,7 +167,8 @@
 		</abilities>
 	</PawnKindDef>
 
-<AbilityDef>
+	<!-- ==================== ABILITIES & HEDIFFS ==================== -->
+	<AbilityDef>
 		<defName>APM_PressTheAttack</defName>
 		<label>Press The Attack</label>
 		<description>The Dominus emits a psychic pulse that influences nearby allies to ignore pain, move faster and stay in high spirits.</description>
@@ -211,8 +201,7 @@
 		</comps>
 	</AbilityDef>
 
-	<HediffDef>
-		<defName>APM_Hediff_PressTheAttack</defName>
+	<HediffDef Name="APM_Hediff_PressTheAttack_Base" Abstract="True">
 		<label>Psionic rush</label>
 		<description>A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -242,6 +231,11 @@
 				</capMods>
 			</li>
 		</stages>
+	</HediffDef>
+
+	<!-- Player -->
+	<HediffDef ParentName="APM_Hediff_PressTheAttack_Base">
+		<defName>APM_Hediff_PressTheAttack</defName>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -296,37 +290,9 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<HediffDef>
+	<!-- Boss -->
+	<HediffDef ParentName="APM_Hediff_PressTheAttack_Base">
 		<defName>APM_Hediff_PressTheAttack_Boss</defName>
-		<label>Psionic rush</label>
-		<description>A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<showRemainingTime>True</showRemainingTime>
-			</li>
-			<li Class="HediffCompProperties_DisappearsOnDeath" />
-		</comps>
-		<isBad>false</isBad>
-		<stages>
-			<li>
-				<painFactor>0.70</painFactor>
-				<statOffsets>
-					<MoveSpeed>0.40</MoveSpeed>
-				</statOffsets>
-				<statFactors>
-					<MeleeCooldownFactor>0.85</MeleeCooldownFactor>
-					<AimingDelayFactor>0.85</AimingDelayFactor>
-					<RangedCooldownFactor>0.85</RangedCooldownFactor>
-				</statFactors>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.10</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -381,38 +347,32 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<ThoughtDef>
+	<!-- ==================== THOUGHTS ==================== -->
+	<ThoughtDef Name="APM_Thought_PressTheAttack_Base" Abstract="True">
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Rush</label>
+				<description>I'm ready to Fight.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="APM_Thought_PressTheAttack_Base">
 		<defName>APM_Thought_PressTheAttack</defName>
-		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>APM_Hediff_PressTheAttack</hediff>
-		<validWhileDespawned>true</validWhileDespawned>
-		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-		<stages>
-			<li>
-				<label>Rush</label>
-				<description>I'm ready to Fight.</description>
-				<baseMoodEffect>12</baseMoodEffect>
-			</li>
-		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="APM_Thought_PressTheAttack_Base">
 		<defName>APM_Thought_PressTheAttack_Boss</defName>
-		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>APM_Hediff_PressTheAttack_Boss</hediff>
-		<validWhileDespawned>true</validWhileDespawned>
-		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-		<stages>
-			<li>
-				<label>Rush</label>
-				<description>I'm ready to Fight.</description>
-				<baseMoodEffect>12</baseMoodEffect>
-			</li>
-		</stages>
 	</ThoughtDef>
 
-	<AbilityDef>
-		<defName>APM_Mech_Duel</defName>
+	<!-- ==================== DUEL ABILITIES ==================== -->
+	<AbilityDef Name="APM_Mech_Duel_Base" Abstract="True">
 		<label>the duel trial</label>
 		<description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</description>
 		<iconPath>UI/Duel</iconPath>
@@ -422,23 +382,6 @@
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<aiCanUse>true</aiCanUse>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>1</warmupTime>
-			<drawAimPie>false</drawAimPie>
-			<range>5</range>
-			<targetParams>
-				<canTargetCorpses>false</canTargetCorpses>
-				<canTargetItems>false</canTargetItems>
-				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetPawns>true</canTargetPawns>
-				<neverTargetIncapacitated>true</neverTargetIncapacitated>
-				<canTargetAnimals>false</canTargetAnimals>
-				<canTargetBuildings>false</canTargetBuildings>
-				<thingCategory>None</thingCategory>
-			</targetParams>
-		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveMentalState">
 				<compClass>CompAbilityEffect_GiveMentalState</compClass>
@@ -447,23 +390,10 @@
 				<applyToSelf>false</applyToSelf>
 				<forced>true</forced>
 			</li>
-			<li Class="ApexMechanoids.CompProperties_SpawnThingDuelAttached">
-				<thing>APM_DuelSpot</thing>
+			<li Class="ApexMechanoids.CompProperties_AbilityAIRequiresOverpower">
+				<maximalMeleeDPSDifference>10</maximalMeleeDPSDifference>
 			</li>
 		</comps>
-	</AbilityDef>
-
-	<AbilityDef>
-		<defName>APM_Mech_Duel_Boss</defName>
-		<label>the duel trial</label>
-		<description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</description>
-		<iconPath>UI/Duel</iconPath>
-		<cooldownTicksRange>2800</cooldownTicksRange>
-		<targetRequired>true</targetRequired>
-		<hostile>true</hostile>
-		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
@@ -481,14 +411,20 @@
 				<thingCategory>None</thingCategory>
 			</targetParams>
 		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef ParentName="APM_Mech_Duel_Base">
+		<defName>APM_Mech_Duel</defName>
 		<comps>
-			<li Class="CompProperties_AbilityGiveMentalState">
-				<compClass>CompAbilityEffect_GiveMentalState</compClass>
-				<stateDef>APM_Duel_Boss</stateDef>
-				<stateDefForMechs>APM_Duel_Boss</stateDefForMechs>
-				<applyToSelf>false</applyToSelf>
-				<forced>true</forced>
+			<li Class="ApexMechanoids.CompProperties_SpawnThingDuelAttached">
+				<thing>APM_DuelSpot</thing>
 			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="APM_Mech_Duel_Base">
+		<defName>APM_Mech_Duel_Boss</defName>
+		<comps>
 			<li Class="ApexMechanoids.CompProperties_SpawnThingDuelAttached">
 				<thing>APM_DuelSpot_Boss</thing>
 			</li>

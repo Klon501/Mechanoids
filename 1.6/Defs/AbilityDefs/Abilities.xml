@@ -235,7 +235,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<cooldownTicksRange>300</cooldownTicksRange>
+		<cooldownTicksRange>3000</cooldownTicksRange>
 		<waitForJobEnd>true</waitForJobEnd>
 		<aiCanUse>true</aiCanUse>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
