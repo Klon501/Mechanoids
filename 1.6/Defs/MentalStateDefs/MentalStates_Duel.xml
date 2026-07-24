@@ -25,4 +25,5 @@
 		<minTicksBeforeRecovery>1200</minTicksBeforeRecovery> <!--20 seconds-->
 		<maxTicksBeforeRecovery>1200</maxTicksBeforeRecovery>
 	</MentalStateDef>
+
 </Defs>
