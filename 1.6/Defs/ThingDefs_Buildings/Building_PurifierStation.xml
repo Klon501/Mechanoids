@@ -7,11 +7,12 @@
 		<description>The pollution reclaimer is an imperfect solution to a disastrous problem. It cleans pollution from a large area around it in addition to vaporizing toxic wastepacks. Its function is imperfect due to the drastic rate it runs at and It has a constant chance to cause several severe ecological events such as the following: Releasing toxic waste into the air, causing a toxic downpour, generating a toxic smog in the local area up to several world tiles around where it is placed and spoiling relations over time with local neighboring factions. While it works well, ecologists and mechanitors alike still argue whether the side effects are worth the hassle.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<tickerType>Normal</tickerType>
+    <uiIconPath>Things/Building/APM_ToxicPurifier/APM_ToxicPurifier_MenuIcon</uiIconPath>
 		<graphicData>
-			<texPath>Things/Building/PowerPlant/PowerPlant</texPath>
+			<texPath>Things/Building/APM_ToxicPurifier/APM_ToxicPurifier</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(7,7)</drawSize>
-			<drawOffset>(0,0,1)</drawOffset>
+      <drawSize>(7.5,7.5)</drawSize>
+      <drawOffset>(0,0,1.25)</drawOffset>
 			<shadowData>
 				<volume>(4, 3, 4)</volume>
 				<offset>(0, 0, 0)</offset>
@@ -20,7 +21,6 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-		<uiIconPath>Things/Building/PowerPlant/PowerPlantUI</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -28,6 +28,7 @@
 		<pathCost>42</pathCost>
 		<blockWind>true</blockWind>
 		<fillPercent>0.5</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
 		<building>
 			<buildingTags>
 				<li>Biotech</li>
@@ -51,7 +52,6 @@
 			<APM_PsyfluxChip>1</APM_PsyfluxChip>
 		</costList>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-		<specialDisplayRadius>40</specialDisplayRadius>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -59,13 +59,14 @@
 			</li>
 			<li Class="ApexMechanoids.CompProperties_ToxicPurifier">
 				<toxicPerTileCleaned>0.005</toxicPerTileCleaned>
-				<interval>2500</interval>
-				<radius>40</radius>
-				<tileToUnpollutePerTrigger>10</tileToUnpollutePerTrigger>
-				<isCleanRandomTileInMap>true</isCleanRandomTileInMap>
+				<interval>250</interval>
+        <clearWholeMap>true</clearWholeMap>
 				<pumpEffecterDef>PollutionPumped</pumpEffecterDef>
-				<effecterOffset>(0,0,4)</effecterOffset>
-				<effecterVectorOffset>(0,0,2)</effecterVectorOffset>
+        <effecterOffsetDefault>(0,0,0)</effecterOffsetDefault>
+        <effecterOffsetNorth>(0,0,1.75)</effecterOffsetNorth>
+        <effecterOffsetEast>(-1.25,0,3)</effecterOffsetEast>
+        <effecterOffsetSouth>(0,0,4.35)</effecterOffsetSouth>
+        <effecterOffsetWest>(1.5,0,3.1)</effecterOffsetWest>
 				<conditionDef>APM_Toxicity</conditionDef>
 			</li>
 		</comps>
@@ -93,6 +94,7 @@
 				<pollutionChangeOnNeighborsTile>0.01</pollutionChangeOnNeighborsTile> <!-- 1% per day, per tiles -->
 				<tileRadius>10</tileRadius>
 				<chanceForToxicFallout>0.05</chanceForToxicFallout> <!-- 5% -->
+        <toxicFalloutTicksRange>120000~300000</toxicFalloutTicksRange>
 			</li>
 		</modExtensions>
 	</GameConditionDef>
