@@ -44,19 +44,6 @@
 					</subNodes>
 				</li>
 				<li Class="ThinkNode_ConditionalMentalState">
-					<state>APM_Duel_Boss</state>
-					<subNodes>
-						<li Class="ThinkNode_Priority">
-							<subNodes>
-								<li Class="ApexMechanoids.JobGiver_Duel" />
-								<li Class="JobGiver_WanderAnywhere">
-									<maxDanger>Deadly</maxDanger>
-								</li>
-							</subNodes>
-						</li>
-					</subNodes>
-				</li>
-				<li Class="ThinkNode_ConditionalMentalState">
 					<state>BerserkMechanoid</state>
 					<subNodes>
 						<li Class="ThinkNode_Priority">

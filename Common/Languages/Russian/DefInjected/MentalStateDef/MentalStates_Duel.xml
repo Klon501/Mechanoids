@@ -1,15 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Duel.label>поединок</APM_Duel.label>
-	<APM_Duel.beginLetter>{INITIATOR} вступает в поединок с {TARGET}.</APM_Duel.beginLetter>
-  <APM_Duel.recoveryMessage>Поединок {0} завершён.</APM_Duel.recoveryMessage>
-  <APM_Duel.baseInspectLine>Состояние: Поединок</APM_Duel.baseInspectLine>
 
-  <APM_Duel_Boss.label>поединок</APM_Duel_Boss.label>
-  <APM_Duel_Boss.beginLetter>{INITIATOR} вступает в поединок с {TARGET}.</APM_Duel_Boss.beginLetter>
-  <APM_Duel_Boss.recoveryMessage>Поединок {0} завершён.</APM_Duel_Boss.recoveryMessage>
-  <APM_Duel_Boss.baseInspectLine>Состояние: Поединок</APM_Duel_Boss.baseInspectLine>
 
 
 </LanguageData>

@@ -3,7 +3,6 @@
 	<SoundDef>
 		<defName>APM_Whip</defName>
 		<context>MapOnly</context>
-		<eventNames />
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -28,7 +27,6 @@
 	<SoundDef>
 		<defName>APM_SeveringEdge</defName>
 		<context>MapOnly</context>
-		<eventNames />
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -53,7 +51,7 @@
 	<SoundDef>
 		<defName>APM_ShieldCharge</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -78,7 +76,7 @@
 	<SoundDef>
 		<defName>APM_Bladehopp</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -103,7 +101,7 @@
 	<SoundDef>
 		<defName>APM_UltimateSacrifice</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -128,7 +126,7 @@
 	<SoundDef>
 		<defName>APM_DuelStarted</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -153,7 +151,7 @@
 	<SoundDef>
 		<defName>APM_DuelWin</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -178,7 +176,6 @@
 	<SoundDef>
 		<defName>APM_DuelLose</defName>
 		<context>MapOnly</context>
-		<eventNames />
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -225,38 +222,37 @@
 	</SoundDef>
 
 <!-- GAZER LASER WEAPON -->
-    <SoundDef>
-        <defName>APM_GazerWeapon</defName>
-		<sustain>true</sustain>
-        <context>MapOnly</context>
-        <eventNames />
-        <maxVoices>4</maxVoices>
-        <maxSimultaneous>2</maxSimultaneous>
-        <subSounds>
-            <li>
-			    <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
-                <grains>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>GazerPowerBeam</clipPath>
-                    </li>
-                </grains>
-                <volumeRange>
-                    <min>25</min>
-                    <max>32</max>
-                </volumeRange>
-                <pitchRange>
-                    <min>1</min>
-					<max>1.05</max>
-                </pitchRange>
-            </li>
-        </subSounds>
-    </SoundDef>
+<SoundDef>
+    <defName>APM_GazerWeapon</defName>
+    <context>MapOnly</context>
+	<sustain>true</sustain>
+    <maxVoices>4</maxVoices>
+	<priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+        <li>
+            <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+            <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>GazerPowerBeam</clipPath>
+                </li>
+            </grains>
+            <volumeRange>
+                <min>25</min>
+                <max>32</max>
+            </volumeRange>
+            <pitchRange>
+                <min>1</min>
+                <max>1.05</max>
+            </pitchRange>
+        </li>
+    </subSounds>
+</SoundDef>
 
 	<!-- Sun Ray Sounds -->
 	<SoundDef>
 		<defName>APM_SunRayStart</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -283,7 +279,7 @@
 		<sustain>true</sustain>
 		<priorityMode>PrioritizeExisting</priorityMode>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -308,7 +304,7 @@
 	<SoundDef>
 		<defName>APM_SunRayStop</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -334,7 +330,7 @@
 	<SoundDef>
 		<defName>APM_PulseWave</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
@@ -385,7 +381,7 @@
 	<SoundDef>
 		<defName>APM_Starfall</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
@@ -410,7 +406,7 @@
 	<SoundDef>
 		<defName>APM_CelerusBlink</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -436,7 +432,7 @@
 	<SoundDef>
 		<defName>APM_Hookshot</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -461,7 +457,7 @@
 	<SoundDef>
 		<defName>APM_SmokeScreen</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -486,7 +482,7 @@
     <SoundDef>
         <defName>APM_SirenWeapon</defName>
         <context>MapOnly</context>
-        <eventNames />
+        
         <maxVoices>4</maxVoices>
         <maxSimultaneous>2</maxSimultaneous>
         <subSounds>
@@ -512,7 +508,7 @@
 	<SoundDef>
 		<defName>APM_BlindingLaser</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
@@ -537,7 +533,7 @@
 	<SoundDef>
 		<defName>APM_PressTheAttack_Cast</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		
 		<maxVoices>4</maxVoices>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
@@ -562,7 +558,7 @@
 <SoundDef>
         <defName>APM_SirenSong_Cast</defName>
         <context>MapOnly</context>
-        <eventNames />
+        
         <maxVoices>4</maxVoices>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
@@ -587,7 +583,7 @@
 <SoundDef>
         <defName>APM_SirenLure_Cast</defName>
         <context>MapOnly</context>
-        <eventNames />
+        
         <maxVoices>4</maxVoices>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>

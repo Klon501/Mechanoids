@@ -26,29 +26,4 @@
 		<maxTicksBeforeRecovery>1200</maxTicksBeforeRecovery>
 	</MentalStateDef>
 
-	<MentalBreakDef>
-		<defName>APM_Duel_Boss</defName>
-		<mentalState>APM_Duel_Boss</mentalState>
-		<baseCommonality>0</baseCommonality>
-		<intensity>Extreme</intensity>
-	</MentalBreakDef>
-
-	<MentalStateDef ParentName="BaseMentalState">
-		<defName>APM_Duel_Boss</defName>
-		<stateClass>ApexMechanoids.MentalState_Duel</stateClass>
-		<label>dueling</label>
-		<category>Aggro</category>
-		<blockRandomInteraction>true</blockRandomInteraction>
-		<blockNormalThoughts>true</blockNormalThoughts>
-		<nameColor>(0.90, 0.51, 0.16)</nameColor>
-		<beginLetter>{INITIATOR} is dueling {TARGET}.</beginLetter>
-		<beginLetterDef>ThreatBig</beginLetterDef>
-		<recoveryMessage>{0}'s duel has come to an end.</recoveryMessage>
-		<baseInspectLine>Mental state: Duel</baseInspectLine>
-		<stateEffecter>Berserk</stateEffecter>
-		<inCaravanCanDo>true</inCaravanCanDo>
-		<minTicksBeforeRecovery>1200</minTicksBeforeRecovery> <!--20 seconds-->
-		<maxTicksBeforeRecovery>1200</maxTicksBeforeRecovery>
-	</MentalStateDef>
-
 </Defs>
