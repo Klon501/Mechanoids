@@ -450,6 +450,15 @@
 			<li Class="ApexMechanoids.CompProperties_SpawnThingDuelAttached">
 				<thing>APM_DuelSpot</thing>
 			</li>
+			<!--If you need to exclude specific target-->
+			<!--<li Class="ApexMechanoids.CompProperties_AbilityAIIngores">
+				<ignoredThings>
+					<li>YourDefName</li>
+				</ignoredThings>
+			</li>-->
+			<li Class="ApexMechanoids.CompProperties_AbilityAIRequiresOverpower">
+				<maximalMeleeDPSDifference>10</maximalMeleeDPSDifference> <!--Default-->
+			</li>
 		</comps>
 	</AbilityDef>
 
@@ -491,6 +500,15 @@
 			</li>
 			<li Class="ApexMechanoids.CompProperties_SpawnThingDuelAttached">
 				<thing>APM_DuelSpot_Boss</thing>
+			</li>
+			<!--If you need to exclude specific target-->
+			<!--<li Class="ApexMechanoids.CompProperties_AbilityAIIngores">
+				<ignoredThings>
+					<li>YourDefName</li>
+				</ignoredThings>
+			</li>-->
+			<li Class="ApexMechanoids.CompProperties_AbilityAIRequiresOverpower">
+				<maximalMeleeDPSDifference>10</maximalMeleeDPSDifference> <!--Default-->
 			</li>
 		</comps>
 	</AbilityDef>

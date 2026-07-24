@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThinkTreeDef[defName="Abilities_Aggressive"]/thinkRoot/subNodes/li[1]/subNodes</xpath>
+		<value>
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>APM_PressTheAttack</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>65</interval>
+						<subNodes>
+							<li Class="ApexMechanoids.JobGiver_AICastPressTheAttack">
+								<ability>APM_PressTheAttack</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/DutyDef[defName="Escort"]/thinkNode/subNodes/li[1]</xpath>
+		<value>
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>APM_PressTheAttack</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>65</interval>
+						<subNodes>
+							<li Class="ApexMechanoids.JobGiver_AICastPressTheAttack">
+								<ability>APM_PressTheAttack</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
