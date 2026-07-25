@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_RepairStation_Small.label>repair station</APM_RepairStation_Small.label>
+  <APM_RepairStation_Small.description>A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs.</APM_RepairStation_Small.description>
+
+  <APM_RepairStation_Advanced.label>advanced repair station</APM_RepairStation_Advanced.label>
+  <APM_RepairStation_Advanced.description>A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs.</APM_RepairStation_Advanced.description>
+
+
+</LanguageData>

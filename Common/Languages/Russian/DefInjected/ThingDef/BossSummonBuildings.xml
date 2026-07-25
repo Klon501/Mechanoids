@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_MechbandAntenna_Dominus.label>Mechband Node</APM_MechbandAntenna_Dominus.label>
+  <APM_MechbandAntenna_Dominus.description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Dominus.description>
+  <APM_MechbandAntenna_Dominus.comps.0.useLabel>Summon dominus threat</APM_MechbandAntenna_Dominus.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Terminus.label>Mechband Conduit</APM_MechbandAntenna_Terminus.label>
+  <APM_MechbandAntenna_Terminus.description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Terminus.description>
+  <APM_MechbandAntenna_Terminus.comps.0.useLabel>Summon dominus threat</APM_MechbandAntenna_Terminus.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Celerus.label>Mechband Pylon</APM_MechbandAntenna_Celerus.label>
+  <APM_MechbandAntenna_Celerus.description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Celerus.description>
+  <APM_MechbandAntenna_Celerus.comps.0.useLabel>Summon dominus threat</APM_MechbandAntenna_Celerus.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Gazer.label>Mechband Array</APM_MechbandAntenna_Gazer.label>
+  <APM_MechbandAntenna_Gazer.description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Gazer.description>
+  <APM_MechbandAntenna_Gazer.comps.0.useLabel>Summon dominus threat</APM_MechbandAntenna_Gazer.comps.0.useLabel>
+
+
+</LanguageData>

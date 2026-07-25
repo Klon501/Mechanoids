@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_PinpointCombatCommand.label>combat command</APM_PinpointCombatCommand.label>
+  <APM_PinpointCombatCommand.description>Pinpoint is projecting a tactical targeting aura over nearby allies.</APM_PinpointCombatCommand.description>
+
+  <APM_PinpointCombatCommandBuff.label>targeting uplink</APM_PinpointCombatCommandBuff.label>
+  <APM_PinpointCombatCommandBuff.description>This pawn is receiving targeting data from a nearby Pinpoint.</APM_PinpointCombatCommandBuff.description>
+
+
+</LanguageData>

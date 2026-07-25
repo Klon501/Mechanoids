@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Ingestor.label>ingestor</APM_Mech_Ingestor.label>
+  <APM_Mech_Ingestor.labelPlural>ingestors</APM_Mech_Ingestor.labelPlural>
+  <APM_Mech_Ingestor.lifeStages.0.label>ingestor</APM_Mech_Ingestor.lifeStages.0.label>
+  <APM_Mech_Ingestor.lifeStages.0.labelPlural>ingestor</APM_Mech_Ingestor.lifeStages.0.labelPlural>
+  <APM_Mech_Ingestor.lifeStages.0.labelMale>male ingestor</APM_Mech_Ingestor.lifeStages.0.labelMale>
+  <APM_Mech_Ingestor.lifeStages.0.labelMalePlural>male ingestors</APM_Mech_Ingestor.lifeStages.0.labelMalePlural>
+  <APM_Mech_Ingestor.lifeStages.0.labelFemale>female ingestor</APM_Mech_Ingestor.lifeStages.0.labelFemale>
+  <APM_Mech_Ingestor.lifeStages.0.labelFemalePlural>female ingestors</APM_Mech_Ingestor.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Ingestor.lifeStages.1.label>ingestor</APM_Mech_Ingestor.lifeStages.1.label>
+  <APM_Mech_Ingestor.lifeStages.1.labelPlural>ingestor</APM_Mech_Ingestor.lifeStages.1.labelPlural>
+  <APM_Mech_Ingestor.lifeStages.1.labelMale>male ingestor</APM_Mech_Ingestor.lifeStages.1.labelMale>
+  <APM_Mech_Ingestor.lifeStages.1.labelMalePlural>male ingestors</APM_Mech_Ingestor.lifeStages.1.labelMalePlural>
+  <APM_Mech_Ingestor.lifeStages.1.labelFemale>female ingestor</APM_Mech_Ingestor.lifeStages.1.labelFemale>
+  <APM_Mech_Ingestor.lifeStages.1.labelFemalePlural>female ingestors</APM_Mech_Ingestor.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Ingestor.labelMale>male ingestor</APM_Mech_Ingestor.labelMale>
+  <APM_Mech_Ingestor.labelMalePlural>male ingestors</APM_Mech_Ingestor.labelMalePlural>
+  <APM_Mech_Ingestor.labelFemale>female ingestor</APM_Mech_Ingestor.labelFemale>
+  <APM_Mech_Ingestor.labelFemalePlural>female ingestors</APM_Mech_Ingestor.labelFemalePlural>
+
+
+</LanguageData>

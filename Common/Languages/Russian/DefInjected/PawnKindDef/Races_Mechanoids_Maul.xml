@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Maul.label>maul</APM_Mech_Maul.label>
+  <APM_Mech_Maul.labelPlural>mauls</APM_Mech_Maul.labelPlural>
+  <APM_Mech_Maul.lifeStages.0.label>maul</APM_Mech_Maul.lifeStages.0.label>
+  <APM_Mech_Maul.lifeStages.0.labelPlural>maul</APM_Mech_Maul.lifeStages.0.labelPlural>
+  <APM_Mech_Maul.lifeStages.0.labelMale>male maul</APM_Mech_Maul.lifeStages.0.labelMale>
+  <APM_Mech_Maul.lifeStages.0.labelMalePlural>male mauls</APM_Mech_Maul.lifeStages.0.labelMalePlural>
+  <APM_Mech_Maul.lifeStages.0.labelFemale>female maul</APM_Mech_Maul.lifeStages.0.labelFemale>
+  <APM_Mech_Maul.lifeStages.0.labelFemalePlural>female mauls</APM_Mech_Maul.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Maul.lifeStages.1.label>maul</APM_Mech_Maul.lifeStages.1.label>
+  <APM_Mech_Maul.lifeStages.1.labelPlural>maul</APM_Mech_Maul.lifeStages.1.labelPlural>
+  <APM_Mech_Maul.lifeStages.1.labelMale>male maul</APM_Mech_Maul.lifeStages.1.labelMale>
+  <APM_Mech_Maul.lifeStages.1.labelMalePlural>male mauls</APM_Mech_Maul.lifeStages.1.labelMalePlural>
+  <APM_Mech_Maul.lifeStages.1.labelFemale>female maul</APM_Mech_Maul.lifeStages.1.labelFemale>
+  <APM_Mech_Maul.lifeStages.1.labelFemalePlural>female mauls</APM_Mech_Maul.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Maul.labelMale>male maul</APM_Mech_Maul.labelMale>
+  <APM_Mech_Maul.labelMalePlural>male mauls</APM_Mech_Maul.labelMalePlural>
+  <APM_Mech_Maul.labelFemale>female maul</APM_Mech_Maul.labelFemale>
+  <APM_Mech_Maul.labelFemalePlural>female mauls</APM_Mech_Maul.labelFemalePlural>
+
+
+</LanguageData>

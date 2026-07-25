@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Lasher.label>lasher</APM_Mech_Lasher.label>
+  <APM_Mech_Lasher.labelPlural>lashers</APM_Mech_Lasher.labelPlural>
+  <APM_Mech_Lasher.lifeStages.0.label>lasher</APM_Mech_Lasher.lifeStages.0.label>
+  <APM_Mech_Lasher.lifeStages.0.labelPlural>lasher</APM_Mech_Lasher.lifeStages.0.labelPlural>
+  <APM_Mech_Lasher.lifeStages.0.labelMale>male lasher</APM_Mech_Lasher.lifeStages.0.labelMale>
+  <APM_Mech_Lasher.lifeStages.0.labelMalePlural>male lashers</APM_Mech_Lasher.lifeStages.0.labelMalePlural>
+  <APM_Mech_Lasher.lifeStages.0.labelFemale>female lasher</APM_Mech_Lasher.lifeStages.0.labelFemale>
+  <APM_Mech_Lasher.lifeStages.0.labelFemalePlural>female lashers</APM_Mech_Lasher.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Lasher.lifeStages.1.label>lasher</APM_Mech_Lasher.lifeStages.1.label>
+  <APM_Mech_Lasher.lifeStages.1.labelPlural>lasher</APM_Mech_Lasher.lifeStages.1.labelPlural>
+  <APM_Mech_Lasher.lifeStages.1.labelMale>male lasher</APM_Mech_Lasher.lifeStages.1.labelMale>
+  <APM_Mech_Lasher.lifeStages.1.labelMalePlural>male lashers</APM_Mech_Lasher.lifeStages.1.labelMalePlural>
+  <APM_Mech_Lasher.lifeStages.1.labelFemale>female lasher</APM_Mech_Lasher.lifeStages.1.labelFemale>
+  <APM_Mech_Lasher.lifeStages.1.labelFemalePlural>female lashers</APM_Mech_Lasher.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Lasher.labelMale>male lasher</APM_Mech_Lasher.labelMale>
+  <APM_Mech_Lasher.labelMalePlural>male lashers</APM_Mech_Lasher.labelMalePlural>
+  <APM_Mech_Lasher.labelFemale>female lasher</APM_Mech_Lasher.labelFemale>
+  <APM_Mech_Lasher.labelFemalePlural>female lashers</APM_Mech_Lasher.labelFemalePlural>
+
+
+</LanguageData>

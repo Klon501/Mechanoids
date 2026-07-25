@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Test mechanoid with mechanitor range extension -->
+
+  <ApexMechanoids_Test_Mech_MechanitorRange.label>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.description>.</ApexMechanoids_Test_Mech_MechanitorRange.description>
+  <ApexMechanoids_Test_Mech_MechanitorRange.tools.0.label>left blade</ApexMechanoids_Test_Mech_MechanitorRange.tools.0.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.tools.1.label>right blade</ApexMechanoids_Test_Mech_MechanitorRange.tools.1.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.tools.2.label>head</ApexMechanoids_Test_Mech_MechanitorRange.tools.2.label>
+
+
+</LanguageData>

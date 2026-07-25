@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Mantis.label>mantis</APM_Mech_Mantis.label>
+  <APM_Mech_Mantis.labelPlural>mantiss</APM_Mech_Mantis.labelPlural>
+  <APM_Mech_Mantis.lifeStages.0.label>mantis</APM_Mech_Mantis.lifeStages.0.label>
+  <APM_Mech_Mantis.lifeStages.0.labelPlural>mantis</APM_Mech_Mantis.lifeStages.0.labelPlural>
+  <APM_Mech_Mantis.lifeStages.0.labelMale>male mantis</APM_Mech_Mantis.lifeStages.0.labelMale>
+  <APM_Mech_Mantis.lifeStages.0.labelMalePlural>male mantiss</APM_Mech_Mantis.lifeStages.0.labelMalePlural>
+  <APM_Mech_Mantis.lifeStages.0.labelFemale>female mantis</APM_Mech_Mantis.lifeStages.0.labelFemale>
+  <APM_Mech_Mantis.lifeStages.0.labelFemalePlural>female mantiss</APM_Mech_Mantis.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Mantis.lifeStages.1.label>mantis</APM_Mech_Mantis.lifeStages.1.label>
+  <APM_Mech_Mantis.lifeStages.1.labelPlural>mantis</APM_Mech_Mantis.lifeStages.1.labelPlural>
+  <APM_Mech_Mantis.lifeStages.1.labelMale>male mantis</APM_Mech_Mantis.lifeStages.1.labelMale>
+  <APM_Mech_Mantis.lifeStages.1.labelMalePlural>male mantiss</APM_Mech_Mantis.lifeStages.1.labelMalePlural>
+  <APM_Mech_Mantis.lifeStages.1.labelFemale>female mantis</APM_Mech_Mantis.lifeStages.1.labelFemale>
+  <APM_Mech_Mantis.lifeStages.1.labelFemalePlural>female mantiss</APM_Mech_Mantis.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Mantis.labelMale>male mantis</APM_Mech_Mantis.labelMale>
+  <APM_Mech_Mantis.labelMalePlural>male mantiss</APM_Mech_Mantis.labelMalePlural>
+  <APM_Mech_Mantis.labelFemale>female mantis</APM_Mech_Mantis.labelFemale>
+  <APM_Mech_Mantis.labelFemalePlural>female mantiss</APM_Mech_Mantis.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_DynamoPoweredGenerator.label>Dynamo powered generator</APM_DynamoPoweredGenerator.label>
+  <APM_DynamoPoweredGenerator.description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</APM_DynamoPoweredGenerator.description>
+
+  <APM_GazerBeam.label>Gazer Emplacement</APM_GazerBeam.label>
+  <APM_GazerBeam.description>The grazer emplacement is mainly composed of the primary ocular beam emitter of a Gazer mechanoid ripped off and attached to a reinforced metal base. While
+			extremely inefficient, it can emit a massive beam of energy in a single direction, destroying foe and fortification alike in its path. It is not capable of moving in
+			any direction.</APM_GazerBeam.description>
+
+
+</LanguageData>

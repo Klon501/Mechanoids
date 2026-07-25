@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Weapon_DominusSpear.label>Dominus' Spear</APM_Weapon_DominusSpear.label>
+  <APM_Weapon_DominusSpear.description>PLACEHOLDER</APM_Weapon_DominusSpear.description>
+  <APM_Weapon_DominusSpear.tools.0.label>handle</APM_Weapon_DominusSpear.tools.0.label>
+  <APM_Weapon_DominusSpear.tools.1.label>point</APM_Weapon_DominusSpear.tools.1.label>
+  <APM_Weapon_DominusSpear.tools.2.label>edge</APM_Weapon_DominusSpear.tools.2.label>
+
+  <APM_Weapon_DominusSpearBoss.label>Dominus' Spear (Boss)</APM_Weapon_DominusSpearBoss.label>
+  <APM_Weapon_DominusSpearBoss.description>PLACEHOLDER</APM_Weapon_DominusSpearBoss.description>
+  <APM_Weapon_DominusSpearBoss.tools.0.label>handle</APM_Weapon_DominusSpearBoss.tools.0.label>
+  <APM_Weapon_DominusSpearBoss.tools.1.label>point</APM_Weapon_DominusSpearBoss.tools.1.label>
+  <APM_Weapon_DominusSpearBoss.tools.2.label>edge</APM_Weapon_DominusSpearBoss.tools.2.label>
+
+
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Pinpoint.label>pinpoint</APM_Mech_Pinpoint.label>
+  <APM_Mech_Pinpoint.labelPlural>pinpoints</APM_Mech_Pinpoint.labelPlural>
+  <APM_Mech_Pinpoint.lifeStages.0.label>pinpoint</APM_Mech_Pinpoint.lifeStages.0.label>
+  <APM_Mech_Pinpoint.lifeStages.0.labelPlural>pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelPlural>
+  <APM_Mech_Pinpoint.lifeStages.0.labelMale>male pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelMale>
+  <APM_Mech_Pinpoint.lifeStages.0.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.lifeStages.0.labelMalePlural>
+  <APM_Mech_Pinpoint.lifeStages.0.labelFemale>female pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelFemale>
+  <APM_Mech_Pinpoint.lifeStages.0.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Pinpoint.lifeStages.1.label>pinpoint</APM_Mech_Pinpoint.lifeStages.1.label>
+  <APM_Mech_Pinpoint.lifeStages.1.labelPlural>pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelPlural>
+  <APM_Mech_Pinpoint.lifeStages.1.labelMale>male pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelMale>
+  <APM_Mech_Pinpoint.lifeStages.1.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.lifeStages.1.labelMalePlural>
+  <APM_Mech_Pinpoint.lifeStages.1.labelFemale>female pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelFemale>
+  <APM_Mech_Pinpoint.lifeStages.1.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Pinpoint.labelMale>male pinpoint</APM_Mech_Pinpoint.labelMale>
+  <APM_Mech_Pinpoint.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.labelMalePlural>
+  <APM_Mech_Pinpoint.labelFemale>female pinpoint</APM_Mech_Pinpoint.labelFemale>
+  <APM_Mech_Pinpoint.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.labelFemalePlural>
+
+
+</LanguageData>

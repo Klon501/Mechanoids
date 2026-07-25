@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ToDo.label>-//-</ToDo.label>
+  <ToDo.description>I don't know what should be here, the author of this code forgot to create a file but added this def name to the code!!!! FIX!!!</ToDo.description>
+  <ToDo.comps.0.useLabel>Use {0_label}</ToDo.comps.0.useLabel>
+
+
+</LanguageData>

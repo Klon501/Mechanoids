@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Gazer.label>gazer</APM_Mech_Gazer.label>
+  <APM_Mech_Gazer.labelPlural>gazers</APM_Mech_Gazer.labelPlural>
+  <APM_Mech_Gazer.lifeStages.0.label>gazer</APM_Mech_Gazer.lifeStages.0.label>
+  <APM_Mech_Gazer.lifeStages.0.labelPlural>gazer</APM_Mech_Gazer.lifeStages.0.labelPlural>
+  <APM_Mech_Gazer.lifeStages.0.labelMale>male gazer</APM_Mech_Gazer.lifeStages.0.labelMale>
+  <APM_Mech_Gazer.lifeStages.0.labelMalePlural>male gazers</APM_Mech_Gazer.lifeStages.0.labelMalePlural>
+  <APM_Mech_Gazer.lifeStages.0.labelFemale>female gazer</APM_Mech_Gazer.lifeStages.0.labelFemale>
+  <APM_Mech_Gazer.lifeStages.0.labelFemalePlural>female gazers</APM_Mech_Gazer.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Gazer.lifeStages.1.label>gazer</APM_Mech_Gazer.lifeStages.1.label>
+  <APM_Mech_Gazer.lifeStages.1.labelPlural>gazer</APM_Mech_Gazer.lifeStages.1.labelPlural>
+  <APM_Mech_Gazer.lifeStages.1.labelMale>male gazer</APM_Mech_Gazer.lifeStages.1.labelMale>
+  <APM_Mech_Gazer.lifeStages.1.labelMalePlural>male gazers</APM_Mech_Gazer.lifeStages.1.labelMalePlural>
+  <APM_Mech_Gazer.lifeStages.1.labelFemale>female gazer</APM_Mech_Gazer.lifeStages.1.labelFemale>
+  <APM_Mech_Gazer.lifeStages.1.labelFemalePlural>female gazers</APM_Mech_Gazer.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Gazer.labelMale>male gazer</APM_Mech_Gazer.labelMale>
+  <APM_Mech_Gazer.labelMalePlural>male gazers</APM_Mech_Gazer.labelMalePlural>
+  <APM_Mech_Gazer.labelFemale>female gazer</APM_Mech_Gazer.labelFemale>
+  <APM_Mech_Gazer.labelFemalePlural>female gazers</APM_Mech_Gazer.labelFemalePlural>
+
+
+</LanguageData>

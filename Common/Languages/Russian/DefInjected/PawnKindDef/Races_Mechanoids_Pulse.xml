@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Pulse.label>pulse</APM_Mech_Pulse.label>
+  <APM_Mech_Pulse.labelPlural>pulses</APM_Mech_Pulse.labelPlural>
+  <APM_Mech_Pulse.lifeStages.0.label>pulse</APM_Mech_Pulse.lifeStages.0.label>
+  <APM_Mech_Pulse.lifeStages.0.labelPlural>pulse</APM_Mech_Pulse.lifeStages.0.labelPlural>
+  <APM_Mech_Pulse.lifeStages.0.labelMale>male pulse</APM_Mech_Pulse.lifeStages.0.labelMale>
+  <APM_Mech_Pulse.lifeStages.0.labelMalePlural>male pulses</APM_Mech_Pulse.lifeStages.0.labelMalePlural>
+  <APM_Mech_Pulse.lifeStages.0.labelFemale>female pulse</APM_Mech_Pulse.lifeStages.0.labelFemale>
+  <APM_Mech_Pulse.lifeStages.0.labelFemalePlural>female pulses</APM_Mech_Pulse.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Pulse.lifeStages.1.label>pulse</APM_Mech_Pulse.lifeStages.1.label>
+  <APM_Mech_Pulse.lifeStages.1.labelPlural>pulse</APM_Mech_Pulse.lifeStages.1.labelPlural>
+  <APM_Mech_Pulse.lifeStages.1.labelMale>male pulse</APM_Mech_Pulse.lifeStages.1.labelMale>
+  <APM_Mech_Pulse.lifeStages.1.labelMalePlural>male pulses</APM_Mech_Pulse.lifeStages.1.labelMalePlural>
+  <APM_Mech_Pulse.lifeStages.1.labelFemale>female pulse</APM_Mech_Pulse.lifeStages.1.labelFemale>
+  <APM_Mech_Pulse.lifeStages.1.labelFemalePlural>female pulses</APM_Mech_Pulse.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Pulse.labelMale>male pulse</APM_Mech_Pulse.labelMale>
+  <APM_Mech_Pulse.labelMalePlural>male pulses</APM_Mech_Pulse.labelMalePlural>
+  <APM_Mech_Pulse.labelFemale>female pulse</APM_Mech_Pulse.labelFemale>
+  <APM_Mech_Pulse.labelFemalePlural>female pulses</APM_Mech_Pulse.labelFemalePlural>
+
+
+</LanguageData>

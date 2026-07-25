@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_TerminusOverdrive.label>overdrive</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger.</APM_TerminusOverdrive.description>
+
+  <SeveringEdge.label>severing edge</SeveringEdge.label>
+  <SeveringEdge.description>PLACEHOLDER.</SeveringEdge.description>
+
+
+</LanguageData>

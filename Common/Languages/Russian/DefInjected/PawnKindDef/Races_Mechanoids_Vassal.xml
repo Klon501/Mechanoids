@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Vassal.label>vassal</APM_Mech_Vassal.label>
+  <APM_Mech_Vassal.labelPlural>vassals</APM_Mech_Vassal.labelPlural>
+  <APM_Mech_Vassal.lifeStages.0.label>vassal</APM_Mech_Vassal.lifeStages.0.label>
+  <APM_Mech_Vassal.lifeStages.0.labelPlural>vassal</APM_Mech_Vassal.lifeStages.0.labelPlural>
+  <APM_Mech_Vassal.lifeStages.0.labelMale>male vassal</APM_Mech_Vassal.lifeStages.0.labelMale>
+  <APM_Mech_Vassal.lifeStages.0.labelMalePlural>male vassals</APM_Mech_Vassal.lifeStages.0.labelMalePlural>
+  <APM_Mech_Vassal.lifeStages.0.labelFemale>female vassal</APM_Mech_Vassal.lifeStages.0.labelFemale>
+  <APM_Mech_Vassal.lifeStages.0.labelFemalePlural>female vassals</APM_Mech_Vassal.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Vassal.lifeStages.1.label>vassal</APM_Mech_Vassal.lifeStages.1.label>
+  <APM_Mech_Vassal.lifeStages.1.labelPlural>vassal</APM_Mech_Vassal.lifeStages.1.labelPlural>
+  <APM_Mech_Vassal.lifeStages.1.labelMale>male vassal</APM_Mech_Vassal.lifeStages.1.labelMale>
+  <APM_Mech_Vassal.lifeStages.1.labelMalePlural>male vassals</APM_Mech_Vassal.lifeStages.1.labelMalePlural>
+  <APM_Mech_Vassal.lifeStages.1.labelFemale>female vassal</APM_Mech_Vassal.lifeStages.1.labelFemale>
+  <APM_Mech_Vassal.lifeStages.1.labelFemalePlural>female vassals</APM_Mech_Vassal.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Vassal.labelMale>male vassal</APM_Mech_Vassal.labelMale>
+  <APM_Mech_Vassal.labelMalePlural>male vassals</APM_Mech_Vassal.labelMalePlural>
+  <APM_Mech_Vassal.labelFemale>female vassal</APM_Mech_Vassal.labelFemale>
+  <APM_Mech_Vassal.labelFemalePlural>female vassals</APM_Mech_Vassal.labelFemalePlural>
+
+
+</LanguageData>

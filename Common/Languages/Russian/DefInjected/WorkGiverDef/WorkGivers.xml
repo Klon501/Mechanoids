@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_EnterRepairStation.label>enter repair station</APM_EnterRepairStation.label>
+  <APM_EnterRepairStation.verb>enter</APM_EnterRepairStation.verb>
+  <APM_EnterRepairStation.gerund>entering</APM_EnterRepairStation.gerund>
+
+  <APM_CarryToRepairStation.label>carry to repair station</APM_CarryToRepairStation.label>
+  <APM_CarryToRepairStation.verb>carry</APM_CarryToRepairStation.verb>
+  <APM_CarryToRepairStation.gerund>carrying</APM_CarryToRepairStation.gerund>
+
+
+</LanguageData>

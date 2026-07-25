@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Test mechanoid with mechanitor range extension -->
+
+  <ApexMechanoids_Test_Mech_MechanitorRange.label>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.labelPlural>test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.labelPlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.label>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelPlural>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelPlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelMale>male test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelMale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelMalePlural>male test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelMalePlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelFemale>female test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelFemale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelFemalePlural>female test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.0.labelFemalePlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.label>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.label>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelPlural>test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelPlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelMale>male test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelMale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelMalePlural>male test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelMalePlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelFemale>female test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelFemale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelFemalePlural>female test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.lifeStages.1.labelFemalePlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.labelMale>male test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.labelMale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.labelMalePlural>male test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.labelMalePlural>
+  <ApexMechanoids_Test_Mech_MechanitorRange.labelFemale>female test mechanitor range</ApexMechanoids_Test_Mech_MechanitorRange.labelFemale>
+  <ApexMechanoids_Test_Mech_MechanitorRange.labelFemalePlural>female test mechanitor ranges</ApexMechanoids_Test_Mech_MechanitorRange.labelFemalePlural>
+
+
+</LanguageData>

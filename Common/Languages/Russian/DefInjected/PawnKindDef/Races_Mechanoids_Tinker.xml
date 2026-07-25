@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Tinker.label>tinker</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.labelPlural>tinkers</APM_Mech_Tinker.labelPlural>
+  <APM_Mech_Tinker.lifeStages.0.label>tinker</APM_Mech_Tinker.lifeStages.0.label>
+  <APM_Mech_Tinker.lifeStages.0.labelPlural>tinker</APM_Mech_Tinker.lifeStages.0.labelPlural>
+  <APM_Mech_Tinker.lifeStages.0.labelMale>male tinker</APM_Mech_Tinker.lifeStages.0.labelMale>
+  <APM_Mech_Tinker.lifeStages.0.labelMalePlural>male tinkers</APM_Mech_Tinker.lifeStages.0.labelMalePlural>
+  <APM_Mech_Tinker.lifeStages.0.labelFemale>female tinker</APM_Mech_Tinker.lifeStages.0.labelFemale>
+  <APM_Mech_Tinker.lifeStages.0.labelFemalePlural>female tinkers</APM_Mech_Tinker.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Tinker.lifeStages.1.label>tinker</APM_Mech_Tinker.lifeStages.1.label>
+  <APM_Mech_Tinker.lifeStages.1.labelPlural>tinker</APM_Mech_Tinker.lifeStages.1.labelPlural>
+  <APM_Mech_Tinker.lifeStages.1.labelMale>male tinker</APM_Mech_Tinker.lifeStages.1.labelMale>
+  <APM_Mech_Tinker.lifeStages.1.labelMalePlural>male tinkers</APM_Mech_Tinker.lifeStages.1.labelMalePlural>
+  <APM_Mech_Tinker.lifeStages.1.labelFemale>female tinker</APM_Mech_Tinker.lifeStages.1.labelFemale>
+  <APM_Mech_Tinker.lifeStages.1.labelFemalePlural>female tinkers</APM_Mech_Tinker.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Tinker.labelMale>male tinker</APM_Mech_Tinker.labelMale>
+  <APM_Mech_Tinker.labelMalePlural>male tinkers</APM_Mech_Tinker.labelMalePlural>
+  <APM_Mech_Tinker.labelFemale>female tinker</APM_Mech_Tinker.labelFemale>
+  <APM_Mech_Tinker.labelFemalePlural>female tinkers</APM_Mech_Tinker.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Terminus.label>Terminus</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus.description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</APM_Mech_Terminus.description>
+  <APM_Mech_Terminus.tools.0.label>left fist</APM_Mech_Terminus.tools.0.label>
+  <APM_Mech_Terminus.tools.1.label>right fist</APM_Mech_Terminus.tools.1.label>
+  <APM_Mech_Terminus.tools.2.label>head</APM_Mech_Terminus.tools.2.label>
+
+  <SeveringEdge.label>severing edge</SeveringEdge.label>
+
+
+</LanguageData>

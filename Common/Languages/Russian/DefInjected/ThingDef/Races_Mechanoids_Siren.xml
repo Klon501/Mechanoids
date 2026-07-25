@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Siren.label>Siren</APM_Mech_Siren.label>
+  <APM_Mech_Siren.description>Taking advantage of the fact that mechanoids have a psychic presence, the siren mechanoid has the ability to lure colonists toward itself, exposing them to the heat of battle. When controlled via a mechanitor, this mech can provide a mood and recreation boost to those nearby.</APM_Mech_Siren.description>
+  <APM_Mech_Siren.tools.0.label>left fist</APM_Mech_Siren.tools.0.label>
+  <APM_Mech_Siren.tools.1.label>right fist</APM_Mech_Siren.tools.1.label>
+  <APM_Mech_Siren.tools.2.label>head</APM_Mech_Siren.tools.2.label>
+
+
+</LanguageData>

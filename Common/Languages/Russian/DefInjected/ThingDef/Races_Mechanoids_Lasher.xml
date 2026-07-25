@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Lasher.label>Lasher</APM_Mech_Lasher.label>
+  <APM_Mech_Lasher.description>Wielding a plasma charged whip, this mechanoid was designed to handle, tame and train animals. Its more unique role in a mechanoid task force has this lasher’s whip also function in short range combat, with it being able to strike out at foes, dealing EMP damage.\n\nThis mechanoid can strike out with its whip, dealing damage and electrifying anything within a short area around the whip.</APM_Mech_Lasher.description>
+  <APM_Mech_Lasher.tools.0.label>left fist</APM_Mech_Lasher.tools.0.label>
+  <APM_Mech_Lasher.tools.1.label>right fist</APM_Mech_Lasher.tools.1.label>
+  <APM_Mech_Lasher.tools.2.label>head</APM_Mech_Lasher.tools.2.label>
+
+
+</LanguageData>

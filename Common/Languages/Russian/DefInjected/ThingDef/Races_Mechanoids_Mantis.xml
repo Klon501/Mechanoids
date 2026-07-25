@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Mantis.label>Mantis</APM_Mech_Mantis.label>
+  <APM_Mech_Mantis.description>Descended from the well known and well feared scyther mechanoid, the mantis was built to rip apart foes in melee combat. Featuring a combination of mechanoid components and synthesized artificial muscles, flexible yet durable armor plates and a set of resonating plasteel cutting claws, this mechanoid well surpasses its predecessors.For targets that outrange this mechanoid, it is able to quickly dash forward in a burst of speed, unleashing a swift strike. If its physical capabilities were fearsome enough, it actively analyzes the battlefield around it, and chooses an opportune time to trigger its installed repair mechanite swarm to heal and supercharge its abilities after it has ended a sufficient amount of targets.</APM_Mech_Mantis.description>
+  <APM_Mech_Mantis.tools.0.label>head</APM_Mech_Mantis.tools.0.label>
+
+
+</LanguageData>

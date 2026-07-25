@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Satellite.label>Satellite</APM_Mech_Satellite.label>
+  <APM_Mech_Satellite.description>Equipped with a hover pack, this assault mechanoid can navigate most terrain with ease. The satellite can be seen summoned from a mechamancher pack to aid its allies or escorting mechanoid commanders in battle.</APM_Mech_Satellite.description>
+  <APM_Mech_Satellite.tools.0.label>left fist</APM_Mech_Satellite.tools.0.label>
+  <APM_Mech_Satellite.tools.1.label>right fist</APM_Mech_Satellite.tools.1.label>
+  <APM_Mech_Satellite.tools.2.label>head</APM_Mech_Satellite.tools.2.label>
+
+
+</LanguageData>

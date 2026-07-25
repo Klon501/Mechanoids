@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Weapon_TerminusSword.label>terminus' sword</APM_Weapon_TerminusSword.label>
+  <APM_Weapon_TerminusSword.description>PLACEHOLDER</APM_Weapon_TerminusSword.description>
+  <APM_Weapon_TerminusSword.tools.0.label>handle</APM_Weapon_TerminusSword.tools.0.label>
+  <APM_Weapon_TerminusSword.tools.1.label>point</APM_Weapon_TerminusSword.tools.1.label>
+  <APM_Weapon_TerminusSword.tools.2.label>blade</APM_Weapon_TerminusSword.tools.2.label>
+
+
+</LanguageData>

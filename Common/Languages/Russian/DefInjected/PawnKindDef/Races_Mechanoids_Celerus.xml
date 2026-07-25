@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Celerus_Boss.label>Celerus</APM_Mech_Celerus_Boss.label>
+  <APM_Mech_Celerus_Boss.labelPlural>Celeruss</APM_Mech_Celerus_Boss.labelPlural>
+  <APM_Mech_Celerus_Boss.lifeStages.0.label>Celerus</APM_Mech_Celerus_Boss.lifeStages.0.label>
+  <APM_Mech_Celerus_Boss.lifeStages.0.labelPlural>Celerus</APM_Mech_Celerus_Boss.lifeStages.0.labelPlural>
+  <APM_Mech_Celerus_Boss.lifeStages.0.labelMale>male Celerus</APM_Mech_Celerus_Boss.lifeStages.0.labelMale>
+  <APM_Mech_Celerus_Boss.lifeStages.0.labelMalePlural>male Celeruss</APM_Mech_Celerus_Boss.lifeStages.0.labelMalePlural>
+  <APM_Mech_Celerus_Boss.lifeStages.0.labelFemale>female Celerus</APM_Mech_Celerus_Boss.lifeStages.0.labelFemale>
+  <APM_Mech_Celerus_Boss.lifeStages.0.labelFemalePlural>female Celeruss</APM_Mech_Celerus_Boss.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Celerus_Boss.lifeStages.1.label>Celerus</APM_Mech_Celerus_Boss.lifeStages.1.label>
+  <APM_Mech_Celerus_Boss.lifeStages.1.labelPlural>Celerus</APM_Mech_Celerus_Boss.lifeStages.1.labelPlural>
+  <APM_Mech_Celerus_Boss.lifeStages.1.labelMale>male Celerus</APM_Mech_Celerus_Boss.lifeStages.1.labelMale>
+  <APM_Mech_Celerus_Boss.lifeStages.1.labelMalePlural>male Celeruss</APM_Mech_Celerus_Boss.lifeStages.1.labelMalePlural>
+  <APM_Mech_Celerus_Boss.lifeStages.1.labelFemale>female Celerus</APM_Mech_Celerus_Boss.lifeStages.1.labelFemale>
+  <APM_Mech_Celerus_Boss.lifeStages.1.labelFemalePlural>female Celeruss</APM_Mech_Celerus_Boss.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Celerus_Boss.labelMale>male Celerus</APM_Mech_Celerus_Boss.labelMale>
+  <APM_Mech_Celerus_Boss.labelMalePlural>male Celeruss</APM_Mech_Celerus_Boss.labelMalePlural>
+  <APM_Mech_Celerus_Boss.labelFemale>female Celerus</APM_Mech_Celerus_Boss.labelFemale>
+  <APM_Mech_Celerus_Boss.labelFemalePlural>female Celeruss</APM_Mech_Celerus_Boss.labelFemalePlural>
+
+  <APM_Mech_Celerus.label>Celerus</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus.labelPlural>Celeruss</APM_Mech_Celerus.labelPlural>
+  <APM_Mech_Celerus.lifeStages.0.label>Celerus</APM_Mech_Celerus.lifeStages.0.label>
+  <APM_Mech_Celerus.lifeStages.0.labelPlural>Celerus</APM_Mech_Celerus.lifeStages.0.labelPlural>
+  <APM_Mech_Celerus.lifeStages.0.labelMale>male Celerus</APM_Mech_Celerus.lifeStages.0.labelMale>
+  <APM_Mech_Celerus.lifeStages.0.labelMalePlural>male Celeruss</APM_Mech_Celerus.lifeStages.0.labelMalePlural>
+  <APM_Mech_Celerus.lifeStages.0.labelFemale>female Celerus</APM_Mech_Celerus.lifeStages.0.labelFemale>
+  <APM_Mech_Celerus.lifeStages.0.labelFemalePlural>female Celeruss</APM_Mech_Celerus.lifeStages.0.labelFemalePlural>
+  <APM_Mech_Celerus.lifeStages.1.label>Celerus</APM_Mech_Celerus.lifeStages.1.label>
+  <APM_Mech_Celerus.lifeStages.1.labelPlural>Celerus</APM_Mech_Celerus.lifeStages.1.labelPlural>
+  <APM_Mech_Celerus.lifeStages.1.labelMale>male Celerus</APM_Mech_Celerus.lifeStages.1.labelMale>
+  <APM_Mech_Celerus.lifeStages.1.labelMalePlural>male Celeruss</APM_Mech_Celerus.lifeStages.1.labelMalePlural>
+  <APM_Mech_Celerus.lifeStages.1.labelFemale>female Celerus</APM_Mech_Celerus.lifeStages.1.labelFemale>
+  <APM_Mech_Celerus.lifeStages.1.labelFemalePlural>female Celeruss</APM_Mech_Celerus.lifeStages.1.labelFemalePlural>
+  <APM_Mech_Celerus.labelMale>male Celerus</APM_Mech_Celerus.labelMale>
+  <APM_Mech_Celerus.labelMalePlural>male Celeruss</APM_Mech_Celerus.labelMalePlural>
+  <APM_Mech_Celerus.labelFemale>female Celerus</APM_Mech_Celerus.labelFemale>
+  <APM_Mech_Celerus.labelFemalePlural>female Celeruss</APM_Mech_Celerus.labelFemalePlural>
+
+
+</LanguageData>

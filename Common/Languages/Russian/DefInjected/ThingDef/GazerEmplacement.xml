@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_GazerEmplacement.label>gazer emplacement</APM_GazerEmplacement.label>
+  <APM_GazerEmplacement.description>A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost.</APM_GazerEmplacement.description>
+
+
+</LanguageData>

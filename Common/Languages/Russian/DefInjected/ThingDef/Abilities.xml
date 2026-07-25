@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- "dashing" pawnFlyer with rope -->
+
+  <ApexMechanoids_DashingPawn.label>dashing</ApexMechanoids_DashingPawn.label>
+
+
+  <!-- Siren Lure -->
+
+  <APM_Projectile_Hook.label>hook</APM_Projectile_Hook.label>
+
+
+</LanguageData>

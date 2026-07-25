@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Siren Lure -->
+
+  <APM_LaserBlind.label>blinded by laser</APM_LaserBlind.label>
+  <APM_LaserBlind.description>vastly reduced sight capacity due to been blinded by laser.</APM_LaserBlind.description>
+
+
+</LanguageData>
