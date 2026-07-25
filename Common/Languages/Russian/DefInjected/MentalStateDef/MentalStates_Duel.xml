@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: dueling -->
   <APM_Duel.label>dueling</APM_Duel.label>
+  <!-- EN: {0} is dueling {1}. -->
   <APM_Duel.beginLetter>{0} is dueling {1}.</APM_Duel.beginLetter>
+  <!-- EN: {0}'s duel has come to an end. -->
   <APM_Duel.recoveryMessage>{0}'s duel has come to an end.</APM_Duel.recoveryMessage>
+  <!-- EN: Mental state: Duel -->
   <APM_Duel.baseInspectLine>Mental state: Duel</APM_Duel.baseInspectLine>
+
 
 
 </LanguageData>

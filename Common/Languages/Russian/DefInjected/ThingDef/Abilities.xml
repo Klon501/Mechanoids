@@ -3,12 +3,15 @@
 
   <!-- "dashing" pawnFlyer with rope -->
 
+  <!-- EN: dashing -->
   <ApexMechanoids_DashingPawn.label>dashing</ApexMechanoids_DashingPawn.label>
 
 
   <!-- Siren Lure -->
 
+  <!-- EN: hook -->
   <APM_Projectile_Hook.label>hook</APM_Projectile_Hook.label>
+
 
 
 </LanguageData>

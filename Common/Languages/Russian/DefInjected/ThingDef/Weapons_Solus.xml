@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: solus -->
   <APM_Solus.label>solus</APM_Solus.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_Solus.description>PLACEHOLDER</APM_Solus.description>
 
+  <!-- EN: solus orb -->
   <APM_SolusOrb.label>solus orb</APM_SolusOrb.label>
+
 
 
 </LanguageData>

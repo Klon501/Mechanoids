@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: ultimate sacrifice -->
   <APM_Hediff_UltimateSacrifice.label>ultimate sacrifice</APM_Hediff_UltimateSacrifice.label>
+  <!-- EN: Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius. -->
   <APM_Hediff_UltimateSacrifice.description>Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius.</APM_Hediff_UltimateSacrifice.description>
+
 
 
 </LanguageData>

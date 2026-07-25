@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: duel spot -->
   <APM_DuelSpot.label>duel spot</APM_DuelSpot.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_DuelSpot.description>PLACEHOLDER</APM_DuelSpot.description>
+
 
 
 </LanguageData>

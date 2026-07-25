@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Press The Attack -->
   <APM_PressTheAttack.label>Press The Attack</APM_PressTheAttack.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_PressTheAttack.description>PLACEHOLDER</APM_PressTheAttack.description>
 
+  <!-- EN: the duel trial -->
   <APM_Mech_Duel.label>the duel trial</APM_Mech_Duel.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_Mech_Duel.description>PLACEHOLDER</APM_Mech_Duel.description>
+
 
 
 </LanguageData>

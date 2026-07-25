@@ -1,43 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: terminus -->
   <APM_Mech_Terminus.label>terminus</APM_Mech_Terminus.label>
+  <!-- EN: terminuss -->
   <APM_Mech_Terminus.labelPlural>terminuss</APM_Mech_Terminus.labelPlural>
+  <!-- EN: terminus -->
   <APM_Mech_Terminus.lifeStages.0.label>terminus</APM_Mech_Terminus.lifeStages.0.label>
+  <!-- EN: terminus -->
   <APM_Mech_Terminus.lifeStages.0.labelPlural>terminus</APM_Mech_Terminus.lifeStages.0.labelPlural>
+  <!-- EN: male terminus -->
   <APM_Mech_Terminus.lifeStages.0.labelMale>male terminus</APM_Mech_Terminus.lifeStages.0.labelMale>
+  <!-- EN: male terminuss -->
   <APM_Mech_Terminus.lifeStages.0.labelMalePlural>male terminuss</APM_Mech_Terminus.lifeStages.0.labelMalePlural>
+  <!-- EN: female terminus -->
   <APM_Mech_Terminus.lifeStages.0.labelFemale>female terminus</APM_Mech_Terminus.lifeStages.0.labelFemale>
+  <!-- EN: female terminuss -->
   <APM_Mech_Terminus.lifeStages.0.labelFemalePlural>female terminuss</APM_Mech_Terminus.lifeStages.0.labelFemalePlural>
+  <!-- EN: terminus -->
   <APM_Mech_Terminus.lifeStages.1.label>terminus</APM_Mech_Terminus.lifeStages.1.label>
+  <!-- EN: terminus -->
   <APM_Mech_Terminus.lifeStages.1.labelPlural>terminus</APM_Mech_Terminus.lifeStages.1.labelPlural>
+  <!-- EN: male terminus -->
   <APM_Mech_Terminus.lifeStages.1.labelMale>male terminus</APM_Mech_Terminus.lifeStages.1.labelMale>
+  <!-- EN: male terminuss -->
   <APM_Mech_Terminus.lifeStages.1.labelMalePlural>male terminuss</APM_Mech_Terminus.lifeStages.1.labelMalePlural>
+  <!-- EN: female terminus -->
   <APM_Mech_Terminus.lifeStages.1.labelFemale>female terminus</APM_Mech_Terminus.lifeStages.1.labelFemale>
+  <!-- EN: female terminuss -->
   <APM_Mech_Terminus.lifeStages.1.labelFemalePlural>female terminuss</APM_Mech_Terminus.lifeStages.1.labelFemalePlural>
+  <!-- EN: male terminus -->
   <APM_Mech_Terminus.labelMale>male terminus</APM_Mech_Terminus.labelMale>
+  <!-- EN: male terminuss -->
   <APM_Mech_Terminus.labelMalePlural>male terminuss</APM_Mech_Terminus.labelMalePlural>
+  <!-- EN: female terminus -->
   <APM_Mech_Terminus.labelFemale>female terminus</APM_Mech_Terminus.labelFemale>
+  <!-- EN: female terminuss -->
   <APM_Mech_Terminus.labelFemalePlural>female terminuss</APM_Mech_Terminus.labelFemalePlural>
 
+  <!-- EN: terminus boss -->
   <APM_Mech_Terminus_Boss.label>terminus boss</APM_Mech_Terminus_Boss.label>
+  <!-- EN: terminus bosss -->
   <APM_Mech_Terminus_Boss.labelPlural>terminus bosss</APM_Mech_Terminus_Boss.labelPlural>
+  <!-- EN: terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.label>terminus boss</APM_Mech_Terminus_Boss.lifeStages.0.label>
+  <!-- EN: terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.labelPlural>terminus boss</APM_Mech_Terminus_Boss.lifeStages.0.labelPlural>
+  <!-- EN: male terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.labelMale>male terminus boss</APM_Mech_Terminus_Boss.lifeStages.0.labelMale>
+  <!-- EN: male terminus bosss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.labelMalePlural>male terminus bosss</APM_Mech_Terminus_Boss.lifeStages.0.labelMalePlural>
+  <!-- EN: female terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.labelFemale>female terminus boss</APM_Mech_Terminus_Boss.lifeStages.0.labelFemale>
+  <!-- EN: female terminus bosss -->
   <APM_Mech_Terminus_Boss.lifeStages.0.labelFemalePlural>female terminus bosss</APM_Mech_Terminus_Boss.lifeStages.0.labelFemalePlural>
+  <!-- EN: terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.label>terminus boss</APM_Mech_Terminus_Boss.lifeStages.1.label>
+  <!-- EN: terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.labelPlural>terminus boss</APM_Mech_Terminus_Boss.lifeStages.1.labelPlural>
+  <!-- EN: male terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.labelMale>male terminus boss</APM_Mech_Terminus_Boss.lifeStages.1.labelMale>
+  <!-- EN: male terminus bosss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.labelMalePlural>male terminus bosss</APM_Mech_Terminus_Boss.lifeStages.1.labelMalePlural>
+  <!-- EN: female terminus boss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.labelFemale>female terminus boss</APM_Mech_Terminus_Boss.lifeStages.1.labelFemale>
+  <!-- EN: female terminus bosss -->
   <APM_Mech_Terminus_Boss.lifeStages.1.labelFemalePlural>female terminus bosss</APM_Mech_Terminus_Boss.lifeStages.1.labelFemalePlural>
+  <!-- EN: male terminus boss -->
   <APM_Mech_Terminus_Boss.labelMale>male terminus boss</APM_Mech_Terminus_Boss.labelMale>
+  <!-- EN: male terminus bosss -->
   <APM_Mech_Terminus_Boss.labelMalePlural>male terminus bosss</APM_Mech_Terminus_Boss.labelMalePlural>
+  <!-- EN: female terminus boss -->
   <APM_Mech_Terminus_Boss.labelFemale>female terminus boss</APM_Mech_Terminus_Boss.labelFemale>
+  <!-- EN: female terminus bosss -->
   <APM_Mech_Terminus_Boss.labelFemalePlural>female terminus bosss</APM_Mech_Terminus_Boss.labelFemalePlural>
+
 
 
 </LanguageData>

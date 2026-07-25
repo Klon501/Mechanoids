@@ -1,62 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: DMR conqueror -->
   <APM_Mech_Conqueror_DMR.label>DMR conqueror</APM_Mech_Conqueror_DMR.label>
+  <!-- EN: DMR conquerors -->
   <APM_Mech_Conqueror_DMR.labelPlural>DMR conquerors</APM_Mech_Conqueror_DMR.labelPlural>
+  <!-- EN: DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.label>DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.0.label>
+  <!-- EN: DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.labelPlural>DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.0.labelPlural>
+  <!-- EN: male DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.labelMale>male DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.0.labelMale>
+  <!-- EN: male DMR conquerors -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.labelMalePlural>male DMR conquerors</APM_Mech_Conqueror_DMR.lifeStages.0.labelMalePlural>
+  <!-- EN: female DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.labelFemale>female DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.0.labelFemale>
+  <!-- EN: female DMR conquerors -->
   <APM_Mech_Conqueror_DMR.lifeStages.0.labelFemalePlural>female DMR conquerors</APM_Mech_Conqueror_DMR.lifeStages.0.labelFemalePlural>
+  <!-- EN: DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.label>DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.1.label>
+  <!-- EN: DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.labelPlural>DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.1.labelPlural>
+  <!-- EN: male DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.labelMale>male DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.1.labelMale>
+  <!-- EN: male DMR conquerors -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.labelMalePlural>male DMR conquerors</APM_Mech_Conqueror_DMR.lifeStages.1.labelMalePlural>
+  <!-- EN: female DMR conqueror -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.labelFemale>female DMR conqueror</APM_Mech_Conqueror_DMR.lifeStages.1.labelFemale>
+  <!-- EN: female DMR conquerors -->
   <APM_Mech_Conqueror_DMR.lifeStages.1.labelFemalePlural>female DMR conquerors</APM_Mech_Conqueror_DMR.lifeStages.1.labelFemalePlural>
+  <!-- EN: male DMR conqueror -->
   <APM_Mech_Conqueror_DMR.labelMale>male DMR conqueror</APM_Mech_Conqueror_DMR.labelMale>
+  <!-- EN: male DMR conquerors -->
   <APM_Mech_Conqueror_DMR.labelMalePlural>male DMR conquerors</APM_Mech_Conqueror_DMR.labelMalePlural>
+  <!-- EN: female DMR conqueror -->
   <APM_Mech_Conqueror_DMR.labelFemale>female DMR conqueror</APM_Mech_Conqueror_DMR.labelFemale>
+  <!-- EN: female DMR conquerors -->
   <APM_Mech_Conqueror_DMR.labelFemalePlural>female DMR conquerors</APM_Mech_Conqueror_DMR.labelFemalePlural>
 
+  <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.label>AR onqueror</APM_Mech_Conqueror_AR.label>
+  <!-- EN: AR onquerors -->
   <APM_Mech_Conqueror_AR.labelPlural>AR onquerors</APM_Mech_Conqueror_AR.labelPlural>
+  <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.0.label>AR onqueror</APM_Mech_Conqueror_AR.lifeStages.0.label>
+  <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.0.labelPlural>AR onqueror</APM_Mech_Conqueror_AR.lifeStages.0.labelPlural>
+  <!-- EN: male AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.0.labelMale>male AR onqueror</APM_Mech_Conqueror_AR.lifeStages.0.labelMale>
+  <!-- EN: male AR onquerors -->
   <APM_Mech_Conqueror_AR.lifeStages.0.labelMalePlural>male AR onquerors</APM_Mech_Conqueror_AR.lifeStages.0.labelMalePlural>
+  <!-- EN: female AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.0.labelFemale>female AR onqueror</APM_Mech_Conqueror_AR.lifeStages.0.labelFemale>
+  <!-- EN: female AR onquerors -->
   <APM_Mech_Conqueror_AR.lifeStages.0.labelFemalePlural>female AR onquerors</APM_Mech_Conqueror_AR.lifeStages.0.labelFemalePlural>
+  <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.1.label>AR onqueror</APM_Mech_Conqueror_AR.lifeStages.1.label>
+  <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.1.labelPlural>AR onqueror</APM_Mech_Conqueror_AR.lifeStages.1.labelPlural>
+  <!-- EN: male AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.1.labelMale>male AR onqueror</APM_Mech_Conqueror_AR.lifeStages.1.labelMale>
+  <!-- EN: male AR onquerors -->
   <APM_Mech_Conqueror_AR.lifeStages.1.labelMalePlural>male AR onquerors</APM_Mech_Conqueror_AR.lifeStages.1.labelMalePlural>
+  <!-- EN: female AR onqueror -->
   <APM_Mech_Conqueror_AR.lifeStages.1.labelFemale>female AR onqueror</APM_Mech_Conqueror_AR.lifeStages.1.labelFemale>
+  <!-- EN: female AR onquerors -->
   <APM_Mech_Conqueror_AR.lifeStages.1.labelFemalePlural>female AR onquerors</APM_Mech_Conqueror_AR.lifeStages.1.labelFemalePlural>
+  <!-- EN: male AR onqueror -->
   <APM_Mech_Conqueror_AR.labelMale>male AR onqueror</APM_Mech_Conqueror_AR.labelMale>
+  <!-- EN: male AR onquerors -->
   <APM_Mech_Conqueror_AR.labelMalePlural>male AR onquerors</APM_Mech_Conqueror_AR.labelMalePlural>
+  <!-- EN: female AR onqueror -->
   <APM_Mech_Conqueror_AR.labelFemale>female AR onqueror</APM_Mech_Conqueror_AR.labelFemale>
+  <!-- EN: female AR onquerors -->
   <APM_Mech_Conqueror_AR.labelFemalePlural>female AR onquerors</APM_Mech_Conqueror_AR.labelFemalePlural>
 
+  <!-- EN: LMG conqueror -->
   <APM_Mech_Conqueror_LMG.label>LMG conqueror</APM_Mech_Conqueror_LMG.label>
+  <!-- EN: LMG conquerors -->
   <APM_Mech_Conqueror_LMG.labelPlural>LMG conquerors</APM_Mech_Conqueror_LMG.labelPlural>
+  <!-- EN: LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.label>LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.0.label>
+  <!-- EN: LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.labelPlural>LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.0.labelPlural>
+  <!-- EN: male LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.labelMale>male LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.0.labelMale>
+  <!-- EN: male LMG conquerors -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.labelMalePlural>male LMG conquerors</APM_Mech_Conqueror_LMG.lifeStages.0.labelMalePlural>
+  <!-- EN: female LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.labelFemale>female LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.0.labelFemale>
+  <!-- EN: female LMG conquerors -->
   <APM_Mech_Conqueror_LMG.lifeStages.0.labelFemalePlural>female LMG conquerors</APM_Mech_Conqueror_LMG.lifeStages.0.labelFemalePlural>
+  <!-- EN: LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.label>LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.1.label>
+  <!-- EN: LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.labelPlural>LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.1.labelPlural>
+  <!-- EN: male LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.labelMale>male LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.1.labelMale>
+  <!-- EN: male LMG conquerors -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.labelMalePlural>male LMG conquerors</APM_Mech_Conqueror_LMG.lifeStages.1.labelMalePlural>
+  <!-- EN: female LMG conqueror -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.labelFemale>female LMG conqueror</APM_Mech_Conqueror_LMG.lifeStages.1.labelFemale>
+  <!-- EN: female LMG conquerors -->
   <APM_Mech_Conqueror_LMG.lifeStages.1.labelFemalePlural>female LMG conquerors</APM_Mech_Conqueror_LMG.lifeStages.1.labelFemalePlural>
+  <!-- EN: male LMG conqueror -->
   <APM_Mech_Conqueror_LMG.labelMale>male LMG conqueror</APM_Mech_Conqueror_LMG.labelMale>
+  <!-- EN: male LMG conquerors -->
   <APM_Mech_Conqueror_LMG.labelMalePlural>male LMG conquerors</APM_Mech_Conqueror_LMG.labelMalePlural>
+  <!-- EN: female LMG conqueror -->
   <APM_Mech_Conqueror_LMG.labelFemale>female LMG conqueror</APM_Mech_Conqueror_LMG.labelFemale>
+  <!-- EN: female LMG conquerors -->
   <APM_Mech_Conqueror_LMG.labelFemalePlural>female LMG conquerors</APM_Mech_Conqueror_LMG.labelFemalePlural>
+
 
 
 </LanguageData>

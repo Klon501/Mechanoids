@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Press The Attack -->
   <APM_Hediff_PressTheAttack.label>Press The Attack</APM_Hediff_PressTheAttack.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_Hediff_PressTheAttack.description>PLACEHOLDER</APM_Hediff_PressTheAttack.description>
+
 
 
 </LanguageData>

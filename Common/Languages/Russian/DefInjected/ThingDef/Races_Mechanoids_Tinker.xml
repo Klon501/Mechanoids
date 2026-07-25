@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Tinker -->
   <APM_Mech_Tinker.label>Tinker</APM_Mech_Tinker.label>
+  <!-- EN: The tinker is a mechanoid that is suited for repair. It can aid in fixing buildings, as well as assist in repair jobs for mechanitor controlled mechs. In a pinch, it can project a shield on a nearby ally as well as blind enemies in a radius around a laser it can cast. -->
   <APM_Mech_Tinker.description>The tinker is a mechanoid that is suited for repair. It can aid in fixing buildings, as well as assist in repair jobs for mechanitor controlled mechs. In a pinch, it can project a shield on a nearby ally as well as blind enemies in a radius around a laser it can cast.</APM_Mech_Tinker.description>
+  <!-- EN: left fist -->
   <APM_Mech_Tinker.tools.0.label>left fist</APM_Mech_Tinker.tools.0.label>
+  <!-- EN: right fist -->
   <APM_Mech_Tinker.tools.1.label>right fist</APM_Mech_Tinker.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Tinker.tools.2.label>head</APM_Mech_Tinker.tools.2.label>
+
 
 
 </LanguageData>

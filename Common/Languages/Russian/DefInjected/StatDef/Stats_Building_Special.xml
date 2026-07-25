@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: mech gestation speed factor -->
   <APM_GestationFactor.label>mech gestation speed factor</APM_GestationFactor.label>
+  <!-- EN: Mech gestation speed is multiplied by this value. -->
   <APM_GestationFactor.description>Mech gestation speed is multiplied by this value.</APM_GestationFactor.description>
+
 
 
 </LanguageData>

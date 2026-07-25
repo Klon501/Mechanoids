@@ -3,8 +3,11 @@
 
   <!-- Siren Lure -->
 
+  <!-- EN: blinded by laser -->
   <APM_LaserBlind.label>blinded by laser</APM_LaserBlind.label>
+  <!-- EN: vastly reduced sight capacity due to been blinded by laser. -->
   <APM_LaserBlind.description>vastly reduced sight capacity due to been blinded by laser.</APM_LaserBlind.description>
+
 
 
 </LanguageData>

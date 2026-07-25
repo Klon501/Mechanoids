@@ -1,24 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: mantis -->
   <APM_Mech_Mantis.label>mantis</APM_Mech_Mantis.label>
+  <!-- EN: mantiss -->
   <APM_Mech_Mantis.labelPlural>mantiss</APM_Mech_Mantis.labelPlural>
+  <!-- EN: mantis -->
   <APM_Mech_Mantis.lifeStages.0.label>mantis</APM_Mech_Mantis.lifeStages.0.label>
+  <!-- EN: mantis -->
   <APM_Mech_Mantis.lifeStages.0.labelPlural>mantis</APM_Mech_Mantis.lifeStages.0.labelPlural>
+  <!-- EN: male mantis -->
   <APM_Mech_Mantis.lifeStages.0.labelMale>male mantis</APM_Mech_Mantis.lifeStages.0.labelMale>
+  <!-- EN: male mantiss -->
   <APM_Mech_Mantis.lifeStages.0.labelMalePlural>male mantiss</APM_Mech_Mantis.lifeStages.0.labelMalePlural>
+  <!-- EN: female mantis -->
   <APM_Mech_Mantis.lifeStages.0.labelFemale>female mantis</APM_Mech_Mantis.lifeStages.0.labelFemale>
+  <!-- EN: female mantiss -->
   <APM_Mech_Mantis.lifeStages.0.labelFemalePlural>female mantiss</APM_Mech_Mantis.lifeStages.0.labelFemalePlural>
+  <!-- EN: mantis -->
   <APM_Mech_Mantis.lifeStages.1.label>mantis</APM_Mech_Mantis.lifeStages.1.label>
+  <!-- EN: mantis -->
   <APM_Mech_Mantis.lifeStages.1.labelPlural>mantis</APM_Mech_Mantis.lifeStages.1.labelPlural>
+  <!-- EN: male mantis -->
   <APM_Mech_Mantis.lifeStages.1.labelMale>male mantis</APM_Mech_Mantis.lifeStages.1.labelMale>
+  <!-- EN: male mantiss -->
   <APM_Mech_Mantis.lifeStages.1.labelMalePlural>male mantiss</APM_Mech_Mantis.lifeStages.1.labelMalePlural>
+  <!-- EN: female mantis -->
   <APM_Mech_Mantis.lifeStages.1.labelFemale>female mantis</APM_Mech_Mantis.lifeStages.1.labelFemale>
+  <!-- EN: female mantiss -->
   <APM_Mech_Mantis.lifeStages.1.labelFemalePlural>female mantiss</APM_Mech_Mantis.lifeStages.1.labelFemalePlural>
+  <!-- EN: male mantis -->
   <APM_Mech_Mantis.labelMale>male mantis</APM_Mech_Mantis.labelMale>
+  <!-- EN: male mantiss -->
   <APM_Mech_Mantis.labelMalePlural>male mantiss</APM_Mech_Mantis.labelMalePlural>
+  <!-- EN: female mantis -->
   <APM_Mech_Mantis.labelFemale>female mantis</APM_Mech_Mantis.labelFemale>
+  <!-- EN: female mantiss -->
   <APM_Mech_Mantis.labelFemalePlural>female mantiss</APM_Mech_Mantis.labelFemalePlural>
+
 
 
 </LanguageData>

@@ -1,24 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: haze -->
   <APM_Mech_Haze.label>haze</APM_Mech_Haze.label>
+  <!-- EN: hazes -->
   <APM_Mech_Haze.labelPlural>hazes</APM_Mech_Haze.labelPlural>
+  <!-- EN: haze -->
   <APM_Mech_Haze.lifeStages.0.label>haze</APM_Mech_Haze.lifeStages.0.label>
+  <!-- EN: haze -->
   <APM_Mech_Haze.lifeStages.0.labelPlural>haze</APM_Mech_Haze.lifeStages.0.labelPlural>
+  <!-- EN: male haze -->
   <APM_Mech_Haze.lifeStages.0.labelMale>male haze</APM_Mech_Haze.lifeStages.0.labelMale>
+  <!-- EN: male hazes -->
   <APM_Mech_Haze.lifeStages.0.labelMalePlural>male hazes</APM_Mech_Haze.lifeStages.0.labelMalePlural>
+  <!-- EN: female haze -->
   <APM_Mech_Haze.lifeStages.0.labelFemale>female haze</APM_Mech_Haze.lifeStages.0.labelFemale>
+  <!-- EN: female hazes -->
   <APM_Mech_Haze.lifeStages.0.labelFemalePlural>female hazes</APM_Mech_Haze.lifeStages.0.labelFemalePlural>
+  <!-- EN: haze -->
   <APM_Mech_Haze.lifeStages.1.label>haze</APM_Mech_Haze.lifeStages.1.label>
+  <!-- EN: haze -->
   <APM_Mech_Haze.lifeStages.1.labelPlural>haze</APM_Mech_Haze.lifeStages.1.labelPlural>
+  <!-- EN: male haze -->
   <APM_Mech_Haze.lifeStages.1.labelMale>male haze</APM_Mech_Haze.lifeStages.1.labelMale>
+  <!-- EN: male hazes -->
   <APM_Mech_Haze.lifeStages.1.labelMalePlural>male hazes</APM_Mech_Haze.lifeStages.1.labelMalePlural>
+  <!-- EN: female haze -->
   <APM_Mech_Haze.lifeStages.1.labelFemale>female haze</APM_Mech_Haze.lifeStages.1.labelFemale>
+  <!-- EN: female hazes -->
   <APM_Mech_Haze.lifeStages.1.labelFemalePlural>female hazes</APM_Mech_Haze.lifeStages.1.labelFemalePlural>
+  <!-- EN: male haze -->
   <APM_Mech_Haze.labelMale>male haze</APM_Mech_Haze.labelMale>
+  <!-- EN: male hazes -->
   <APM_Mech_Haze.labelMalePlural>male hazes</APM_Mech_Haze.labelMalePlural>
+  <!-- EN: female haze -->
   <APM_Mech_Haze.labelFemale>female haze</APM_Mech_Haze.labelFemale>
+  <!-- EN: female hazes -->
   <APM_Mech_Haze.labelFemalePlural>female hazes</APM_Mech_Haze.labelFemalePlural>
+
 
 
 </LanguageData>

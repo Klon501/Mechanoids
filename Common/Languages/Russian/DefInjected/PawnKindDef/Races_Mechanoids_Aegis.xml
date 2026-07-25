@@ -1,24 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.label>Aegis</APM_Mech_Aegis.label>
+  <!-- EN: Aegiss -->
   <APM_Mech_Aegis.labelPlural>Aegiss</APM_Mech_Aegis.labelPlural>
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.lifeStages.0.label>Aegis</APM_Mech_Aegis.lifeStages.0.label>
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.lifeStages.0.labelPlural>Aegis</APM_Mech_Aegis.lifeStages.0.labelPlural>
+  <!-- EN: male Aegis -->
   <APM_Mech_Aegis.lifeStages.0.labelMale>male Aegis</APM_Mech_Aegis.lifeStages.0.labelMale>
+  <!-- EN: male Aegiss -->
   <APM_Mech_Aegis.lifeStages.0.labelMalePlural>male Aegiss</APM_Mech_Aegis.lifeStages.0.labelMalePlural>
+  <!-- EN: female Aegis -->
   <APM_Mech_Aegis.lifeStages.0.labelFemale>female Aegis</APM_Mech_Aegis.lifeStages.0.labelFemale>
+  <!-- EN: female Aegiss -->
   <APM_Mech_Aegis.lifeStages.0.labelFemalePlural>female Aegiss</APM_Mech_Aegis.lifeStages.0.labelFemalePlural>
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.lifeStages.1.label>Aegis</APM_Mech_Aegis.lifeStages.1.label>
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.lifeStages.1.labelPlural>Aegis</APM_Mech_Aegis.lifeStages.1.labelPlural>
+  <!-- EN: male Aegis -->
   <APM_Mech_Aegis.lifeStages.1.labelMale>male Aegis</APM_Mech_Aegis.lifeStages.1.labelMale>
+  <!-- EN: male Aegiss -->
   <APM_Mech_Aegis.lifeStages.1.labelMalePlural>male Aegiss</APM_Mech_Aegis.lifeStages.1.labelMalePlural>
+  <!-- EN: female Aegis -->
   <APM_Mech_Aegis.lifeStages.1.labelFemale>female Aegis</APM_Mech_Aegis.lifeStages.1.labelFemale>
+  <!-- EN: female Aegiss -->
   <APM_Mech_Aegis.lifeStages.1.labelFemalePlural>female Aegiss</APM_Mech_Aegis.lifeStages.1.labelFemalePlural>
+  <!-- EN: male Aegis -->
   <APM_Mech_Aegis.labelMale>male Aegis</APM_Mech_Aegis.labelMale>
+  <!-- EN: male Aegiss -->
   <APM_Mech_Aegis.labelMalePlural>male Aegiss</APM_Mech_Aegis.labelMalePlural>
+  <!-- EN: female Aegis -->
   <APM_Mech_Aegis.labelFemale>female Aegis</APM_Mech_Aegis.labelFemale>
+  <!-- EN: female Aegiss -->
   <APM_Mech_Aegis.labelFemalePlural>female Aegiss</APM_Mech_Aegis.labelFemalePlural>
+
 
 
 </LanguageData>

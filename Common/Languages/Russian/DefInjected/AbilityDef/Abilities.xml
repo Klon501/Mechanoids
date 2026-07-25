@@ -1,52 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Recycle Biomess -->
   <APM_Absorb.label>Recycle Biomess</APM_Absorb.label>
+  <!-- EN: Grind up target corpse, and slowly process them into chem fuel. -->
   <APM_Absorb.description>Grind up target corpse, and slowly process them into chem fuel.</APM_Absorb.description>
 
+  <!-- EN: Power Plant Mode -->
   <APM_SwitchToPowerPlantMode.label>Power Plant Mode</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
   <APM_SwitchToPowerPlantMode.description>Switch to power plant mode, trade mobility and shield to power local power grid.</APM_SwitchToPowerPlantMode.description>
 
+  <!-- EN: "Blink" -->
   <APM_CelerusBlink.label>"Blink"</APM_CelerusBlink.label>
+  <!-- EN: Active onboard "blink" micro skip drive, skip to target loction. -->
   <APM_CelerusBlink.description>Active onboard "blink" micro skip drive, skip to target loction.</APM_CelerusBlink.description>
 
+  <!-- EN: Sun Ray -->
   <APM_SunRay.label>Sun Ray</APM_SunRay.label>
+  <!-- EN: Fire beam at full output towards target postion, burning everything in the way. -->
   <APM_SunRay.description>Fire beam at full output towards target postion, burning everything in the way.</APM_SunRay.description>
 
 
   <!-- "targeting" for pinpoint mech -->
 
+  <!-- EN: Mark Target -->
   <ApexMechanoids_Ability_GiveAccuracyHediff.label>Mark Target</ApexMechanoids_Ability_GiveAccuracyHediff.label>
+  <!-- EN: Mark target and share live location info to allies, make hitting said target eaiser. -->
   <ApexMechanoids_Ability_GiveAccuracyHediff.description>Mark target and share live location info to allies, make hitting said target eaiser.</ApexMechanoids_Ability_GiveAccuracyHediff.description>
 
 
   <!-- "true sight" for pinpoint mech -->
 
+  <!-- EN: Scanner Sweep -->
   <ApexMechanoids_Ability_RevealInvisible.label>Scanner Sweep</ApexMechanoids_Ability_RevealInvisible.label>
+  <!-- EN: Scanner sweep the area, revealing invisible targets caught in sweep. -->
   <ApexMechanoids_Ability_RevealInvisible.description>Scanner sweep the area, revealing invisible targets caught in sweep.</ApexMechanoids_Ability_RevealInvisible.description>
 
 
   <!-- Siren Lure -->
 
+  <!-- EN: Aluring Song -->
   <ApexMechanoids_Ability_SirenLure.label>Aluring Song</ApexMechanoids_Ability_SirenLure.label>
+  <!-- EN: Sing a aluring song to compel the target pawn to walk towards the caster. -->
   <ApexMechanoids_Ability_SirenLure.description>Sing a aluring song to compel the target pawn to walk towards the caster.</ApexMechanoids_Ability_SirenLure.description>
 
+  <!-- EN: Grappling Hook -->
   <APM_HookPawn.label>Grappling Hook</APM_HookPawn.label>
+  <!-- EN: Fire a grappling hook at a target, and quickly retract the hook to effectively launch caster to the target, can be used on buildings and pawns. -->
   <APM_HookPawn.description>Fire a grappling hook at a target, and quickly retract the hook to effectively launch caster to the target, can be used on buildings and pawns.</APM_HookPawn.description>
 
+  <!-- EN: Shield Charge -->
   <APM_ShieldCharge.label>Shield Charge</APM_ShieldCharge.label>
+  <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
   <APM_ShieldCharge.description>Charge at a pawn, stunning everything hit on the way.</APM_ShieldCharge.description>
 
+  <!-- EN: Bladehopp -->
   <APM_Bladehopp.label>Bladehopp</APM_Bladehopp.label>
+  <!-- EN: Dash to a target followed by a quick attack. -->
   <APM_Bladehopp.description>Dash to a target followed by a quick attack.</APM_Bladehopp.description>
 
+  <!-- EN: Blinding Laser -->
   <APM_BlindingLaser.label>Blinding Laser</APM_BlindingLaser.label>
+  <!-- EN: Fire a laser at target, effectively binding them for a short time. -->
   <APM_BlindingLaser.description>Fire a laser at target, effectively binding them for a short time.</APM_BlindingLaser.description>
 
+  <!-- EN: Defence Matrix -->
   <APM_DefenceMatrix.label>Defence Matrix</APM_DefenceMatrix.label>
+  <!-- EN: Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even
+  when cast
+  on enemies. The tinker will be focused on projecting the shield. -->
   <APM_DefenceMatrix.description>Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even
-			when cast
-			on enemies. The tinker will be focused on projecting the shield.</APM_DefenceMatrix.description>
+  when cast
+  on enemies. The tinker will be focused on projecting the shield.</APM_DefenceMatrix.description>
+
 
 
 </LanguageData>

@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: laser -->
   <APM_Gazer_Laser.label>laser</APM_Gazer_Laser.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_Gazer_Laser.description>PLACEHOLDER</APM_Gazer_Laser.description>
+
 
 
 </LanguageData>

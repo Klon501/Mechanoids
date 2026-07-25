@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: left shield -->
   <APM_LeftAegisShield.label>left shield</APM_LeftAegisShield.label>
+  <!-- EN: shield -->
   <APM_LeftAegisShield.labelShort>shield</APM_LeftAegisShield.labelShort>
 
+  <!-- EN: right shield -->
   <APM_RightAegisShield.label>right shield</APM_RightAegisShield.label>
+  <!-- EN: shield -->
   <APM_RightAegisShield.labelShort>shield</APM_RightAegisShield.labelShort>
+
 
 
 </LanguageData>

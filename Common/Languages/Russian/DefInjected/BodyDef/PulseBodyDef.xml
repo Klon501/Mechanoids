@@ -1,29 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: pulse -->
   <APM_Pulse.label>pulse</APM_Pulse.label>
+  <!-- EN: left sight sensor -->
   <APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>left sight sensor</APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right sight sensor -->
   <APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>right sight sensor</APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left hearing sensor -->
   <APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>left hearing sensor</APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right hearing sensor -->
   <APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>right hearing sensor</APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: left mechanical shoulder -->
   <APM_Pulse.corePart.parts.1.customLabel>left mechanical shoulder</APM_Pulse.corePart.parts.1.customLabel>
+  <!-- EN: left arm -->
   <APM_Pulse.corePart.parts.1.parts.0.customLabel>left arm</APM_Pulse.corePart.parts.1.parts.0.customLabel>
+  <!-- EN: left hand -->
   <APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>left hand</APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>
+  <!-- EN: left pinky -->
   <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>left pinky</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: left middle finger -->
   <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>left middle finger</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: left index finger -->
   <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>left index finger</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left thumb -->
   <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>left thumb</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right mechanical shoulder -->
   <APM_Pulse.corePart.parts.2.customLabel>right mechanical shoulder</APM_Pulse.corePart.parts.2.customLabel>
+  <!-- EN: right arm -->
   <APM_Pulse.corePart.parts.2.parts.0.customLabel>right arm</APM_Pulse.corePart.parts.2.parts.0.customLabel>
+  <!-- EN: right hand -->
   <APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>right hand</APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>
+  <!-- EN: right pinky -->
   <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>right pinky</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: right middle finger -->
   <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>right middle finger</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right index finger -->
   <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>right index finger</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: right thumb -->
   <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>right thumb</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: left leg -->
   <APM_Pulse.corePart.parts.3.customLabel>left leg</APM_Pulse.corePart.parts.3.customLabel>
+  <!-- EN: left foot -->
   <APM_Pulse.corePart.parts.3.parts.0.customLabel>left foot</APM_Pulse.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: right leg -->
   <APM_Pulse.corePart.parts.4.customLabel>right leg</APM_Pulse.corePart.parts.4.customLabel>
+  <!-- EN: right foot -->
   <APM_Pulse.corePart.parts.4.parts.0.customLabel>right foot</APM_Pulse.corePart.parts.4.parts.0.customLabel>
+
 
 
 </LanguageData>

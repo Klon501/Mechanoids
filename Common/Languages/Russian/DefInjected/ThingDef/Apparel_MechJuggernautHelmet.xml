@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: mechamancer helmet -->
   <APM_Apparel_ArmorHelmetMechamancerHelmet.label>mechamancer helmet</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+  <!-- EN: PLACEHOLDER -->
   <APM_Apparel_ArmorHelmetMechamancerHelmet.description>PLACEHOLDER</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+
 
 
 </LanguageData>

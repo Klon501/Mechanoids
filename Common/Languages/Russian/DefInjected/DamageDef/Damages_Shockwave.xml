@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: shockwave -->
   <APM_Shockwave.label>shockwave</APM_Shockwave.label>
+  <!-- EN: {0} was annihilated by a shockwave. -->
   <APM_Shockwave.deathMessage>{0} was annihilated by a shockwave.</APM_Shockwave.deathMessage>
+
 
 
 </LanguageData>

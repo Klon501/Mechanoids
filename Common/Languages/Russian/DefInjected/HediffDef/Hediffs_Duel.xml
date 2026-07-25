@@ -1,21 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: in duel -->
   <APM_InDuel.label>in duel</APM_InDuel.label>
+  <!-- EN: The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks) -->
   <APM_InDuel.description>The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks)</APM_InDuel.description>
 
+  <!-- EN: duel winner -->
   <APM_DuelWinner.label>duel winner</APM_DuelWinner.label>
+  <!-- EN: PLACEHOLDER. -->
   <APM_DuelWinner.description>PLACEHOLDER.</APM_DuelWinner.description>
+  <!-- EN: wins: 1 -->
   <APM_DuelWinner.stages.0.label>wins: 1</APM_DuelWinner.stages.0.label>
+  <!-- EN: wins: 2 -->
   <APM_DuelWinner.stages.1.label>wins: 2</APM_DuelWinner.stages.1.label>
+  <!-- EN: wins: 3 -->
   <APM_DuelWinner.stages.2.label>wins: 3</APM_DuelWinner.stages.2.label>
+  <!-- EN: wins: 4 -->
   <APM_DuelWinner.stages.3.label>wins: 4</APM_DuelWinner.stages.3.label>
+  <!-- EN: wins: 5 -->
   <APM_DuelWinner.stages.4.label>wins: 5</APM_DuelWinner.stages.4.label>
+  <!-- EN: wins: 6 -->
   <APM_DuelWinner.stages.5.label>wins: 6</APM_DuelWinner.stages.5.label>
+  <!-- EN: wins: 7 -->
   <APM_DuelWinner.stages.6.label>wins: 7</APM_DuelWinner.stages.6.label>
 
+  <!-- EN: duel draw -->
   <APM_DuelDraw.label>duel draw</APM_DuelDraw.label>
+  <!-- EN: PLACEHOLDER. -->
   <APM_DuelDraw.description>PLACEHOLDER.</APM_DuelDraw.description>
+
 
 
 </LanguageData>

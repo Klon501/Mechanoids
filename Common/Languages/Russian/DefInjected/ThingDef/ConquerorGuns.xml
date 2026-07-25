@@ -1,20 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: charge blaster -->
   <APM_Gun_Conqueror_AR.label>charge blaster</APM_Gun_Conqueror_AR.label>
+  <!-- EN: A charged-shot assault rifle. Weaker than a charge rifle, but more accurate. -->
   <APM_Gun_Conqueror_AR.description>A charged-shot assault rifle. Weaker than a charge rifle, but more accurate.</APM_Gun_Conqueror_AR.description>
+  <!-- EN: stock -->
   <APM_Gun_Conqueror_AR.tools.0.label>stock</APM_Gun_Conqueror_AR.tools.0.label>
+  <!-- EN: barrel -->
   <APM_Gun_Conqueror_AR.tools.1.label>barrel</APM_Gun_Conqueror_AR.tools.1.label>
 
+  <!-- EN: charge carbine -->
   <APM_Gun_Conqueror_DMR.label>charge carbine</APM_Gun_Conqueror_DMR.label>
+  <!-- EN: A stronger, faster, but less accurate Charge Lance. -->
   <APM_Gun_Conqueror_DMR.description>A stronger, faster, but less accurate Charge Lance.</APM_Gun_Conqueror_DMR.description>
+  <!-- EN: barrel -->
   <APM_Gun_Conqueror_DMR.tools.0.label>barrel</APM_Gun_Conqueror_DMR.tools.0.label>
 
+  <!-- EN: charge spitter shot -->
   <Bullet_ChargeSpitter.label>charge spitter shot</Bullet_ChargeSpitter.label>
 
+  <!-- EN: charge spitter -->
   <APM_Gun_Conqueror_LMG.label>charge spitter</APM_Gun_Conqueror_LMG.label>
+  <!-- EN: A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate. -->
   <APM_Gun_Conqueror_LMG.description>A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate.</APM_Gun_Conqueror_LMG.description>
+  <!-- EN: barrel -->
   <APM_Gun_Conqueror_LMG.tools.0.label>barrel</APM_Gun_Conqueror_LMG.tools.0.label>
+
 
 
 </LanguageData>

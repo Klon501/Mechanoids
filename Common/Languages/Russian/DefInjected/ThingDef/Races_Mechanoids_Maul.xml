@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Maul -->
   <APM_Mech_Maul.label>Maul</APM_Mech_Maul.label>
+  <!-- EN: TBD -->
   <APM_Mech_Maul.description>TBD</APM_Mech_Maul.description>
+  <!-- EN: left fist -->
   <APM_Mech_Maul.tools.0.label>left fist</APM_Mech_Maul.tools.0.label>
+  <!-- EN: right fist -->
   <APM_Mech_Maul.tools.1.label>right fist</APM_Mech_Maul.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Maul.tools.2.label>head</APM_Mech_Maul.tools.2.label>
+
 
 
 </LanguageData>

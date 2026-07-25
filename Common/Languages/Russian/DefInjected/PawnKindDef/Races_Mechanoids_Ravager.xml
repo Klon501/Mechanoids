@@ -1,24 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: ravager -->
   <APM_Mech_Ravager.label>ravager</APM_Mech_Ravager.label>
+  <!-- EN: ravagers -->
   <APM_Mech_Ravager.labelPlural>ravagers</APM_Mech_Ravager.labelPlural>
+  <!-- EN: ravager -->
   <APM_Mech_Ravager.lifeStages.0.label>ravager</APM_Mech_Ravager.lifeStages.0.label>
+  <!-- EN: ravager -->
   <APM_Mech_Ravager.lifeStages.0.labelPlural>ravager</APM_Mech_Ravager.lifeStages.0.labelPlural>
+  <!-- EN: male ravager -->
   <APM_Mech_Ravager.lifeStages.0.labelMale>male ravager</APM_Mech_Ravager.lifeStages.0.labelMale>
+  <!-- EN: male ravagers -->
   <APM_Mech_Ravager.lifeStages.0.labelMalePlural>male ravagers</APM_Mech_Ravager.lifeStages.0.labelMalePlural>
+  <!-- EN: female ravager -->
   <APM_Mech_Ravager.lifeStages.0.labelFemale>female ravager</APM_Mech_Ravager.lifeStages.0.labelFemale>
+  <!-- EN: female ravagers -->
   <APM_Mech_Ravager.lifeStages.0.labelFemalePlural>female ravagers</APM_Mech_Ravager.lifeStages.0.labelFemalePlural>
+  <!-- EN: ravager -->
   <APM_Mech_Ravager.lifeStages.1.label>ravager</APM_Mech_Ravager.lifeStages.1.label>
+  <!-- EN: ravager -->
   <APM_Mech_Ravager.lifeStages.1.labelPlural>ravager</APM_Mech_Ravager.lifeStages.1.labelPlural>
+  <!-- EN: male ravager -->
   <APM_Mech_Ravager.lifeStages.1.labelMale>male ravager</APM_Mech_Ravager.lifeStages.1.labelMale>
+  <!-- EN: male ravagers -->
   <APM_Mech_Ravager.lifeStages.1.labelMalePlural>male ravagers</APM_Mech_Ravager.lifeStages.1.labelMalePlural>
+  <!-- EN: female ravager -->
   <APM_Mech_Ravager.lifeStages.1.labelFemale>female ravager</APM_Mech_Ravager.lifeStages.1.labelFemale>
+  <!-- EN: female ravagers -->
   <APM_Mech_Ravager.lifeStages.1.labelFemalePlural>female ravagers</APM_Mech_Ravager.lifeStages.1.labelFemalePlural>
+  <!-- EN: male ravager -->
   <APM_Mech_Ravager.labelMale>male ravager</APM_Mech_Ravager.labelMale>
+  <!-- EN: male ravagers -->
   <APM_Mech_Ravager.labelMalePlural>male ravagers</APM_Mech_Ravager.labelMalePlural>
+  <!-- EN: female ravager -->
   <APM_Mech_Ravager.labelFemale>female ravager</APM_Mech_Ravager.labelFemale>
+  <!-- EN: female ravagers -->
   <APM_Mech_Ravager.labelFemalePlural>female ravagers</APM_Mech_Ravager.labelFemalePlural>
+
 
 
 </LanguageData>

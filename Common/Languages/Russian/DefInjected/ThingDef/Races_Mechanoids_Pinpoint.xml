@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Pinpoint -->
   <APM_Mech_Pinpoint.label>Pinpoint</APM_Mech_Pinpoint.label>
+  <!-- EN: The pinpoint wasn’t designed for direct confrontations in battle. It instead assists its allies with their aiming, targeting and designating an enemy with its primary sensor. When targeted, all allied forces get a bonus to accuracy on that target. Be sure not to encounter this mech with an entourage of pikemen. For those foes who keep slipping out of sight, its sensors can also detect invisible enemies nearby itself. -->
   <APM_Mech_Pinpoint.description>The pinpoint wasn’t designed for direct confrontations in battle. It instead assists its allies with their aiming, targeting and designating an enemy with its primary sensor. When targeted, all allied forces get a bonus to accuracy on that target. Be sure not to encounter this mech with an entourage of pikemen. For those foes who keep slipping out of sight, its sensors can also detect invisible enemies nearby itself.</APM_Mech_Pinpoint.description>
+  <!-- EN: head -->
   <APM_Mech_Pinpoint.tools.0.label>head</APM_Mech_Pinpoint.tools.0.label>
+
 
 
 </LanguageData>

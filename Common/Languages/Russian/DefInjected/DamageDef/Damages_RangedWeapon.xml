@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: sun ray -->
   <APM_SunRay.label>sun ray</APM_SunRay.label>
+  <!-- EN: {0} has been killed. -->
   <APM_SunRay.deathMessage>{0} has been killed.</APM_SunRay.deathMessage>
 
+  <!-- EN: sun ray -->
   <APM_SunRayGun.label>sun ray</APM_SunRayGun.label>
+  <!-- EN: {0} has been killed. -->
   <APM_SunRayGun.deathMessage>{0} has been killed.</APM_SunRayGun.deathMessage>
 
+  <!-- EN: push damage -->
   <Push.label>push damage</Push.label>
+  <!-- EN: {0} has been ... to death. -->
   <Push.deathMessage>{0} has been ... to death.</Push.deathMessage>
+
 
 
 </LanguageData>
