@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: Press The Attack -->
-  <APM_Thought_PressTheAttack.stages.0.label>Press The Attack</APM_Thought_PressTheAttack.stages.0.label>
-  <!-- EN: PLACEHOLDER. -->
-  <APM_Thought_PressTheAttack.stages.0.description>PLACEHOLDER.</APM_Thought_PressTheAttack.stages.0.description>
-
-
+  <APM_Thought_PressTheAttack.stages.0.label>Нажми на кнопку атаки!</APM_Thought_PressTheAttack.stages.0.label>
 
 </LanguageData>
