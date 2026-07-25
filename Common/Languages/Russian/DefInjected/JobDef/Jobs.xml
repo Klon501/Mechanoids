@@ -2,12 +2,10 @@
 <LanguageData>
 
   <!-- EN: Bashing into TargetA. -->
-  <APM_BashDamage.reportString>Bashing into TargetA.</APM_BashDamage.reportString>
+  <APM_BashDamage.reportString>врезается в TargetA</APM_BashDamage.reportString>
   <!-- EN: operating remote uplink. -->
-  <APM_RemoteControlUplink.reportString>operating remote uplink.</APM_RemoteControlUplink.reportString>
+  <APM_RemoteControlUplink.reportString>соединяется с удалённым каналом связи</APM_RemoteControlUplink.reportString>
   <!-- EN: retracting grappling hook towards TargetA. -->
-  <APM_HookPawn.reportString>retracting grappling hook towards TargetA.</APM_HookPawn.reportString>
-
-
+  <APM_HookPawn.reportString>притягивается к TargetA</APM_HookPawn.reportString>
 
 </LanguageData>

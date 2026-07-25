@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Siren Lure -->
-
   <!-- EN: Bashing into TargetA. -->
-  <APM_BashStun.reportString>Bashing into TargetA.</APM_BashStun.reportString>
-
-
+  <APM_BashStun.reportString>врезается в TargetA</APM_BashStun.reportString>
 
 </LanguageData>
