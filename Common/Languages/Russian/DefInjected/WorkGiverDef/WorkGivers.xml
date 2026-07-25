@@ -2,19 +2,17 @@
 <LanguageData>
 
   <!-- EN: enter repair station -->
-  <APM_EnterRepairStation.label>enter repair station</APM_EnterRepairStation.label>
+  <APM_EnterRepairStation.label>входить в ремонтную станцию</APM_EnterRepairStation.label>
   <!-- EN: enter -->
-  <APM_EnterRepairStation.verb>enter</APM_EnterRepairStation.verb>
+  <APM_EnterRepairStation.verb>войти в</APM_EnterRepairStation.verb>
   <!-- EN: entering -->
-  <APM_EnterRepairStation.gerund>entering</APM_EnterRepairStation.gerund>
+  <APM_EnterRepairStation.gerund>войти в</APM_EnterRepairStation.gerund>
 
   <!-- EN: carry to repair station -->
-  <APM_CarryToRepairStation.label>carry to repair station</APM_CarryToRepairStation.label>
+  <APM_CarryToRepairStation.label>относить к ремонтной станции</APM_CarryToRepairStation.label>
   <!-- EN: carry -->
-  <APM_CarryToRepairStation.verb>carry</APM_CarryToRepairStation.verb>
+  <APM_CarryToRepairStation.verb>нести</APM_CarryToRepairStation.verb>
   <!-- EN: carrying -->
-  <APM_CarryToRepairStation.gerund>carrying</APM_CarryToRepairStation.gerund>
-
-
+  <APM_CarryToRepairStation.gerund>нести</APM_CarryToRepairStation.gerund>
 
 </LanguageData>
