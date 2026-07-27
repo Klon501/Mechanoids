@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: power beam -->
-  <APM_PowerBeam.label>power beam</APM_PowerBeam.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_PowerBeam.description>PLACEHOLDER</APM_PowerBeam.description>
-
-
+  <APM_PowerBeam.label>энергетический луч</APM_PowerBeam.label>
 
 </LanguageData>
