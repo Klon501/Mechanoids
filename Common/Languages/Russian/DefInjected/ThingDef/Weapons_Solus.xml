@@ -2,13 +2,9 @@
 <LanguageData>
 
   <!-- EN: solus -->
-  <APM_Solus.label>solus</APM_Solus.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Solus.description>PLACEHOLDER</APM_Solus.description>
+  <APM_Solus.label>солус</APM_Solus.label>
 
   <!-- EN: solus orb -->
-  <APM_SolusOrb.label>solus orb</APM_SolusOrb.label>
-
-
+  <APM_SolusOrb.label>сфера солуса</APM_SolusOrb.label>
 
 </LanguageData>
