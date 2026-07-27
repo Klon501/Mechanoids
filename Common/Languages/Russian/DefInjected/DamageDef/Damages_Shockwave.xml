@@ -2,10 +2,8 @@
 <LanguageData>
 
   <!-- EN: shockwave -->
-  <APM_Shockwave.label>shockwave</APM_Shockwave.label>
+  <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
   <!-- EN: {0} was annihilated by a shockwave. -->
-  <APM_Shockwave.deathMessage>{0} was annihilated by a shockwave.</APM_Shockwave.deathMessage>
-
-
+  <APM_Shockwave.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито} ударной волной.</APM_Shockwave.deathMessage>
 
 </LanguageData>
