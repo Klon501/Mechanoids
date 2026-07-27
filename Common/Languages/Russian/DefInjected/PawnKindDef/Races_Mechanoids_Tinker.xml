@@ -1,43 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: tinker -->
-  <APM_Mech_Tinker.label>tinker</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.label>ремонтник</APM_Mech_Tinker.label>
   <!-- EN: tinkers -->
-  <APM_Mech_Tinker.labelPlural>tinkers</APM_Mech_Tinker.labelPlural>
-  <!-- EN: tinker -->
-  <APM_Mech_Tinker.lifeStages.0.label>tinker</APM_Mech_Tinker.lifeStages.0.label>
-  <!-- EN: tinker -->
-  <APM_Mech_Tinker.lifeStages.0.labelPlural>tinker</APM_Mech_Tinker.lifeStages.0.labelPlural>
-  <!-- EN: male tinker -->
-  <APM_Mech_Tinker.lifeStages.0.labelMale>male tinker</APM_Mech_Tinker.lifeStages.0.labelMale>
-  <!-- EN: male tinkers -->
-  <APM_Mech_Tinker.lifeStages.0.labelMalePlural>male tinkers</APM_Mech_Tinker.lifeStages.0.labelMalePlural>
-  <!-- EN: female tinker -->
-  <APM_Mech_Tinker.lifeStages.0.labelFemale>female tinker</APM_Mech_Tinker.lifeStages.0.labelFemale>
-  <!-- EN: female tinkers -->
-  <APM_Mech_Tinker.lifeStages.0.labelFemalePlural>female tinkers</APM_Mech_Tinker.lifeStages.0.labelFemalePlural>
-  <!-- EN: tinker -->
-  <APM_Mech_Tinker.lifeStages.1.label>tinker</APM_Mech_Tinker.lifeStages.1.label>
-  <!-- EN: tinker -->
-  <APM_Mech_Tinker.lifeStages.1.labelPlural>tinker</APM_Mech_Tinker.lifeStages.1.labelPlural>
-  <!-- EN: male tinker -->
-  <APM_Mech_Tinker.lifeStages.1.labelMale>male tinker</APM_Mech_Tinker.lifeStages.1.labelMale>
-  <!-- EN: male tinkers -->
-  <APM_Mech_Tinker.lifeStages.1.labelMalePlural>male tinkers</APM_Mech_Tinker.lifeStages.1.labelMalePlural>
-  <!-- EN: female tinker -->
-  <APM_Mech_Tinker.lifeStages.1.labelFemale>female tinker</APM_Mech_Tinker.lifeStages.1.labelFemale>
-  <!-- EN: female tinkers -->
-  <APM_Mech_Tinker.lifeStages.1.labelFemalePlural>female tinkers</APM_Mech_Tinker.lifeStages.1.labelFemalePlural>
-  <!-- EN: male tinker -->
-  <APM_Mech_Tinker.labelMale>male tinker</APM_Mech_Tinker.labelMale>
-  <!-- EN: male tinkers -->
-  <APM_Mech_Tinker.labelMalePlural>male tinkers</APM_Mech_Tinker.labelMalePlural>
-  <!-- EN: female tinker -->
-  <APM_Mech_Tinker.labelFemale>female tinker</APM_Mech_Tinker.labelFemale>
-  <!-- EN: female tinkers -->
-  <APM_Mech_Tinker.labelFemalePlural>female tinkers</APM_Mech_Tinker.labelFemalePlural>
-
-
+  <APM_Mech_Tinker.labelPlural>ремонтники</APM_Mech_Tinker.labelPlural>
 
 </LanguageData>

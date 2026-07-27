@@ -1,43 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: vassal -->
-  <APM_Mech_Vassal.label>vassal</APM_Mech_Vassal.label>
+  <APM_Mech_Vassal.label>вассал</APM_Mech_Vassal.label>
   <!-- EN: vassals -->
-  <APM_Mech_Vassal.labelPlural>vassals</APM_Mech_Vassal.labelPlural>
-  <!-- EN: vassal -->
-  <APM_Mech_Vassal.lifeStages.0.label>vassal</APM_Mech_Vassal.lifeStages.0.label>
-  <!-- EN: vassal -->
-  <APM_Mech_Vassal.lifeStages.0.labelPlural>vassal</APM_Mech_Vassal.lifeStages.0.labelPlural>
-  <!-- EN: male vassal -->
-  <APM_Mech_Vassal.lifeStages.0.labelMale>male vassal</APM_Mech_Vassal.lifeStages.0.labelMale>
-  <!-- EN: male vassals -->
-  <APM_Mech_Vassal.lifeStages.0.labelMalePlural>male vassals</APM_Mech_Vassal.lifeStages.0.labelMalePlural>
-  <!-- EN: female vassal -->
-  <APM_Mech_Vassal.lifeStages.0.labelFemale>female vassal</APM_Mech_Vassal.lifeStages.0.labelFemale>
-  <!-- EN: female vassals -->
-  <APM_Mech_Vassal.lifeStages.0.labelFemalePlural>female vassals</APM_Mech_Vassal.lifeStages.0.labelFemalePlural>
-  <!-- EN: vassal -->
-  <APM_Mech_Vassal.lifeStages.1.label>vassal</APM_Mech_Vassal.lifeStages.1.label>
-  <!-- EN: vassal -->
-  <APM_Mech_Vassal.lifeStages.1.labelPlural>vassal</APM_Mech_Vassal.lifeStages.1.labelPlural>
-  <!-- EN: male vassal -->
-  <APM_Mech_Vassal.lifeStages.1.labelMale>male vassal</APM_Mech_Vassal.lifeStages.1.labelMale>
-  <!-- EN: male vassals -->
-  <APM_Mech_Vassal.lifeStages.1.labelMalePlural>male vassals</APM_Mech_Vassal.lifeStages.1.labelMalePlural>
-  <!-- EN: female vassal -->
-  <APM_Mech_Vassal.lifeStages.1.labelFemale>female vassal</APM_Mech_Vassal.lifeStages.1.labelFemale>
-  <!-- EN: female vassals -->
-  <APM_Mech_Vassal.lifeStages.1.labelFemalePlural>female vassals</APM_Mech_Vassal.lifeStages.1.labelFemalePlural>
-  <!-- EN: male vassal -->
-  <APM_Mech_Vassal.labelMale>male vassal</APM_Mech_Vassal.labelMale>
-  <!-- EN: male vassals -->
-  <APM_Mech_Vassal.labelMalePlural>male vassals</APM_Mech_Vassal.labelMalePlural>
-  <!-- EN: female vassal -->
-  <APM_Mech_Vassal.labelFemale>female vassal</APM_Mech_Vassal.labelFemale>
-  <!-- EN: female vassals -->
-  <APM_Mech_Vassal.labelFemalePlural>female vassals</APM_Mech_Vassal.labelFemalePlural>
-
-
+  <APM_Mech_Vassal.labelPlural>вассалы</APM_Mech_Vassal.labelPlural>
 
 </LanguageData>

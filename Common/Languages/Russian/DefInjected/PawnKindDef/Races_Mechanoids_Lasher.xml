@@ -1,43 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: lasher -->
-  <APM_Mech_Lasher.label>lasher</APM_Mech_Lasher.label>
+  <APM_Mech_Lasher.label>погонщик</APM_Mech_Lasher.label>
   <!-- EN: lashers -->
-  <APM_Mech_Lasher.labelPlural>lashers</APM_Mech_Lasher.labelPlural>
-  <!-- EN: lasher -->
-  <APM_Mech_Lasher.lifeStages.0.label>lasher</APM_Mech_Lasher.lifeStages.0.label>
-  <!-- EN: lasher -->
-  <APM_Mech_Lasher.lifeStages.0.labelPlural>lasher</APM_Mech_Lasher.lifeStages.0.labelPlural>
-  <!-- EN: male lasher -->
-  <APM_Mech_Lasher.lifeStages.0.labelMale>male lasher</APM_Mech_Lasher.lifeStages.0.labelMale>
-  <!-- EN: male lashers -->
-  <APM_Mech_Lasher.lifeStages.0.labelMalePlural>male lashers</APM_Mech_Lasher.lifeStages.0.labelMalePlural>
-  <!-- EN: female lasher -->
-  <APM_Mech_Lasher.lifeStages.0.labelFemale>female lasher</APM_Mech_Lasher.lifeStages.0.labelFemale>
-  <!-- EN: female lashers -->
-  <APM_Mech_Lasher.lifeStages.0.labelFemalePlural>female lashers</APM_Mech_Lasher.lifeStages.0.labelFemalePlural>
-  <!-- EN: lasher -->
-  <APM_Mech_Lasher.lifeStages.1.label>lasher</APM_Mech_Lasher.lifeStages.1.label>
-  <!-- EN: lasher -->
-  <APM_Mech_Lasher.lifeStages.1.labelPlural>lasher</APM_Mech_Lasher.lifeStages.1.labelPlural>
-  <!-- EN: male lasher -->
-  <APM_Mech_Lasher.lifeStages.1.labelMale>male lasher</APM_Mech_Lasher.lifeStages.1.labelMale>
-  <!-- EN: male lashers -->
-  <APM_Mech_Lasher.lifeStages.1.labelMalePlural>male lashers</APM_Mech_Lasher.lifeStages.1.labelMalePlural>
-  <!-- EN: female lasher -->
-  <APM_Mech_Lasher.lifeStages.1.labelFemale>female lasher</APM_Mech_Lasher.lifeStages.1.labelFemale>
-  <!-- EN: female lashers -->
-  <APM_Mech_Lasher.lifeStages.1.labelFemalePlural>female lashers</APM_Mech_Lasher.lifeStages.1.labelFemalePlural>
-  <!-- EN: male lasher -->
-  <APM_Mech_Lasher.labelMale>male lasher</APM_Mech_Lasher.labelMale>
-  <!-- EN: male lashers -->
-  <APM_Mech_Lasher.labelMalePlural>male lashers</APM_Mech_Lasher.labelMalePlural>
-  <!-- EN: female lasher -->
-  <APM_Mech_Lasher.labelFemale>female lasher</APM_Mech_Lasher.labelFemale>
-  <!-- EN: female lashers -->
-  <APM_Mech_Lasher.labelFemalePlural>female lashers</APM_Mech_Lasher.labelFemalePlural>
-
-
+  <APM_Mech_Lasher.labelPlural>погонщики</APM_Mech_Lasher.labelPlural>
 
 </LanguageData>

@@ -1,43 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.label>pinpoint</APM_Mech_Pinpoint.label>
+  <APM_Mech_Pinpoint.label>целеуказатель</APM_Mech_Pinpoint.label>
   <!-- EN: pinpoints -->
-  <APM_Mech_Pinpoint.labelPlural>pinpoints</APM_Mech_Pinpoint.labelPlural>
-  <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.0.label>pinpoint</APM_Mech_Pinpoint.lifeStages.0.label>
-  <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.0.labelPlural>pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelPlural>
-  <!-- EN: male pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.0.labelMale>male pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelMale>
-  <!-- EN: male pinpoints -->
-  <APM_Mech_Pinpoint.lifeStages.0.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.lifeStages.0.labelMalePlural>
-  <!-- EN: female pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.0.labelFemale>female pinpoint</APM_Mech_Pinpoint.lifeStages.0.labelFemale>
-  <!-- EN: female pinpoints -->
-  <APM_Mech_Pinpoint.lifeStages.0.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.lifeStages.0.labelFemalePlural>
-  <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.1.label>pinpoint</APM_Mech_Pinpoint.lifeStages.1.label>
-  <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.1.labelPlural>pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelPlural>
-  <!-- EN: male pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.1.labelMale>male pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelMale>
-  <!-- EN: male pinpoints -->
-  <APM_Mech_Pinpoint.lifeStages.1.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.lifeStages.1.labelMalePlural>
-  <!-- EN: female pinpoint -->
-  <APM_Mech_Pinpoint.lifeStages.1.labelFemale>female pinpoint</APM_Mech_Pinpoint.lifeStages.1.labelFemale>
-  <!-- EN: female pinpoints -->
-  <APM_Mech_Pinpoint.lifeStages.1.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.lifeStages.1.labelFemalePlural>
-  <!-- EN: male pinpoint -->
-  <APM_Mech_Pinpoint.labelMale>male pinpoint</APM_Mech_Pinpoint.labelMale>
-  <!-- EN: male pinpoints -->
-  <APM_Mech_Pinpoint.labelMalePlural>male pinpoints</APM_Mech_Pinpoint.labelMalePlural>
-  <!-- EN: female pinpoint -->
-  <APM_Mech_Pinpoint.labelFemale>female pinpoint</APM_Mech_Pinpoint.labelFemale>
-  <!-- EN: female pinpoints -->
-  <APM_Mech_Pinpoint.labelFemalePlural>female pinpoints</APM_Mech_Pinpoint.labelFemalePlural>
-
-
+  <APM_Mech_Pinpoint.labelPlural>целеуказатели</APM_Mech_Pinpoint.labelPlural>
 
 </LanguageData>

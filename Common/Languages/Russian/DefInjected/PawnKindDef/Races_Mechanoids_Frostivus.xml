@@ -1,43 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: frostivus -->
-  <APM_Mech_Frostivus.label>frostivus</APM_Mech_Frostivus.label>
+  <APM_Mech_Frostivus.label>фростивус</APM_Mech_Frostivus.label>
   <!-- EN: frostivuss -->
-  <APM_Mech_Frostivus.labelPlural>frostivuss</APM_Mech_Frostivus.labelPlural>
-  <!-- EN: frostivus -->
-  <APM_Mech_Frostivus.lifeStages.0.label>frostivus</APM_Mech_Frostivus.lifeStages.0.label>
-  <!-- EN: frostivus -->
-  <APM_Mech_Frostivus.lifeStages.0.labelPlural>frostivus</APM_Mech_Frostivus.lifeStages.0.labelPlural>
-  <!-- EN: male frostivus -->
-  <APM_Mech_Frostivus.lifeStages.0.labelMale>male frostivus</APM_Mech_Frostivus.lifeStages.0.labelMale>
-  <!-- EN: male frostivuss -->
-  <APM_Mech_Frostivus.lifeStages.0.labelMalePlural>male frostivuss</APM_Mech_Frostivus.lifeStages.0.labelMalePlural>
-  <!-- EN: female frostivus -->
-  <APM_Mech_Frostivus.lifeStages.0.labelFemale>female frostivus</APM_Mech_Frostivus.lifeStages.0.labelFemale>
-  <!-- EN: female frostivuss -->
-  <APM_Mech_Frostivus.lifeStages.0.labelFemalePlural>female frostivuss</APM_Mech_Frostivus.lifeStages.0.labelFemalePlural>
-  <!-- EN: frostivus -->
-  <APM_Mech_Frostivus.lifeStages.1.label>frostivus</APM_Mech_Frostivus.lifeStages.1.label>
-  <!-- EN: frostivus -->
-  <APM_Mech_Frostivus.lifeStages.1.labelPlural>frostivus</APM_Mech_Frostivus.lifeStages.1.labelPlural>
-  <!-- EN: male frostivus -->
-  <APM_Mech_Frostivus.lifeStages.1.labelMale>male frostivus</APM_Mech_Frostivus.lifeStages.1.labelMale>
-  <!-- EN: male frostivuss -->
-  <APM_Mech_Frostivus.lifeStages.1.labelMalePlural>male frostivuss</APM_Mech_Frostivus.lifeStages.1.labelMalePlural>
-  <!-- EN: female frostivus -->
-  <APM_Mech_Frostivus.lifeStages.1.labelFemale>female frostivus</APM_Mech_Frostivus.lifeStages.1.labelFemale>
-  <!-- EN: female frostivuss -->
-  <APM_Mech_Frostivus.lifeStages.1.labelFemalePlural>female frostivuss</APM_Mech_Frostivus.lifeStages.1.labelFemalePlural>
-  <!-- EN: male frostivus -->
-  <APM_Mech_Frostivus.labelMale>male frostivus</APM_Mech_Frostivus.labelMale>
-  <!-- EN: male frostivuss -->
-  <APM_Mech_Frostivus.labelMalePlural>male frostivuss</APM_Mech_Frostivus.labelMalePlural>
-  <!-- EN: female frostivus -->
-  <APM_Mech_Frostivus.labelFemale>female frostivus</APM_Mech_Frostivus.labelFemale>
-  <!-- EN: female frostivuss -->
-  <APM_Mech_Frostivus.labelFemalePlural>female frostivuss</APM_Mech_Frostivus.labelFemalePlural>
-
-
+  <APM_Mech_Frostivus.labelPlural>фростивусы</APM_Mech_Frostivus.labelPlural>
 
 </LanguageData>

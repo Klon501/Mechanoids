@@ -2,42 +2,8 @@
 <LanguageData>
 
   <!-- EN: gazer -->
-  <APM_Mech_Gazer.label>gazer</APM_Mech_Gazer.label>
+  <APM_Mech_Gazer.label>соглядатай</APM_Mech_Gazer.label>
   <!-- EN: gazers -->
-  <APM_Mech_Gazer.labelPlural>gazers</APM_Mech_Gazer.labelPlural>
-  <!-- EN: gazer -->
-  <APM_Mech_Gazer.lifeStages.0.label>gazer</APM_Mech_Gazer.lifeStages.0.label>
-  <!-- EN: gazer -->
-  <APM_Mech_Gazer.lifeStages.0.labelPlural>gazer</APM_Mech_Gazer.lifeStages.0.labelPlural>
-  <!-- EN: male gazer -->
-  <APM_Mech_Gazer.lifeStages.0.labelMale>male gazer</APM_Mech_Gazer.lifeStages.0.labelMale>
-  <!-- EN: male gazers -->
-  <APM_Mech_Gazer.lifeStages.0.labelMalePlural>male gazers</APM_Mech_Gazer.lifeStages.0.labelMalePlural>
-  <!-- EN: female gazer -->
-  <APM_Mech_Gazer.lifeStages.0.labelFemale>female gazer</APM_Mech_Gazer.lifeStages.0.labelFemale>
-  <!-- EN: female gazers -->
-  <APM_Mech_Gazer.lifeStages.0.labelFemalePlural>female gazers</APM_Mech_Gazer.lifeStages.0.labelFemalePlural>
-  <!-- EN: gazer -->
-  <APM_Mech_Gazer.lifeStages.1.label>gazer</APM_Mech_Gazer.lifeStages.1.label>
-  <!-- EN: gazer -->
-  <APM_Mech_Gazer.lifeStages.1.labelPlural>gazer</APM_Mech_Gazer.lifeStages.1.labelPlural>
-  <!-- EN: male gazer -->
-  <APM_Mech_Gazer.lifeStages.1.labelMale>male gazer</APM_Mech_Gazer.lifeStages.1.labelMale>
-  <!-- EN: male gazers -->
-  <APM_Mech_Gazer.lifeStages.1.labelMalePlural>male gazers</APM_Mech_Gazer.lifeStages.1.labelMalePlural>
-  <!-- EN: female gazer -->
-  <APM_Mech_Gazer.lifeStages.1.labelFemale>female gazer</APM_Mech_Gazer.lifeStages.1.labelFemale>
-  <!-- EN: female gazers -->
-  <APM_Mech_Gazer.lifeStages.1.labelFemalePlural>female gazers</APM_Mech_Gazer.lifeStages.1.labelFemalePlural>
-  <!-- EN: male gazer -->
-  <APM_Mech_Gazer.labelMale>male gazer</APM_Mech_Gazer.labelMale>
-  <!-- EN: male gazers -->
-  <APM_Mech_Gazer.labelMalePlural>male gazers</APM_Mech_Gazer.labelMalePlural>
-  <!-- EN: female gazer -->
-  <APM_Mech_Gazer.labelFemale>female gazer</APM_Mech_Gazer.labelFemale>
-  <!-- EN: female gazers -->
-  <APM_Mech_Gazer.labelFemalePlural>female gazers</APM_Mech_Gazer.labelFemalePlural>
-
-
+  <APM_Mech_Gazer.labelPlural>соглядатаи</APM_Mech_Gazer.labelPlural>
 
 </LanguageData>
