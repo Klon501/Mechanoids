@@ -2,27 +2,21 @@
 <LanguageData>
 
   <!-- EN: Dominus' Spear -->
-  <APM_Weapon_DominusSpear.label>Dominus' Spear</APM_Weapon_DominusSpear.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Weapon_DominusSpear.description>PLACEHOLDER</APM_Weapon_DominusSpear.description>
+  <APM_Weapon_DominusSpear.label>копьё Доминуса</APM_Weapon_DominusSpear.label>
   <!-- EN: handle -->
-  <APM_Weapon_DominusSpear.tools.0.label>handle</APM_Weapon_DominusSpear.tools.0.label>
+  <APM_Weapon_DominusSpear.tools.0.label>рукоять</APM_Weapon_DominusSpear.tools.0.label>
   <!-- EN: point -->
-  <APM_Weapon_DominusSpear.tools.1.label>point</APM_Weapon_DominusSpear.tools.1.label>
+  <APM_Weapon_DominusSpear.tools.1.label>остриё</APM_Weapon_DominusSpear.tools.1.label>
   <!-- EN: edge -->
-  <APM_Weapon_DominusSpear.tools.2.label>edge</APM_Weapon_DominusSpear.tools.2.label>
+  <APM_Weapon_DominusSpear.tools.2.label>лезвие</APM_Weapon_DominusSpear.tools.2.label>
 
   <!-- EN: Dominus' Spear (Boss) -->
-  <APM_Weapon_DominusSpearBoss.label>Dominus' Spear (Boss)</APM_Weapon_DominusSpearBoss.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Weapon_DominusSpearBoss.description>PLACEHOLDER</APM_Weapon_DominusSpearBoss.description>
+  <APM_Weapon_DominusSpearBoss.label>копьё Доминуса (босса)</APM_Weapon_DominusSpearBoss.label>
   <!-- EN: handle -->
-  <APM_Weapon_DominusSpearBoss.tools.0.label>handle</APM_Weapon_DominusSpearBoss.tools.0.label>
+  <APM_Weapon_DominusSpearBoss.tools.0.label>рукоять</APM_Weapon_DominusSpearBoss.tools.0.label>
   <!-- EN: point -->
-  <APM_Weapon_DominusSpearBoss.tools.1.label>point</APM_Weapon_DominusSpearBoss.tools.1.label>
+  <APM_Weapon_DominusSpearBoss.tools.1.label>остриё</APM_Weapon_DominusSpearBoss.tools.1.label>
   <!-- EN: edge -->
-  <APM_Weapon_DominusSpearBoss.tools.2.label>edge</APM_Weapon_DominusSpearBoss.tools.2.label>
-
-
+  <APM_Weapon_DominusSpearBoss.tools.2.label>лезвие</APM_Weapon_DominusSpearBoss.tools.2.label>
 
 </LanguageData>

@@ -2,15 +2,9 @@
 <LanguageData>
 
   <!-- EN: Press The Attack -->
-  <APM_PressTheAttack.label>Press The Attack</APM_PressTheAttack.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_PressTheAttack.description>PLACEHOLDER</APM_PressTheAttack.description>
+  <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
 
   <!-- EN: the duel trial -->
-  <APM_Mech_Duel.label>the duel trial</APM_Mech_Duel.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Mech_Duel.description>PLACEHOLDER</APM_Mech_Duel.description>
-
-
+  <APM_Mech_Duel.label>испытание поединком</APM_Mech_Duel.label>
 
 </LanguageData>

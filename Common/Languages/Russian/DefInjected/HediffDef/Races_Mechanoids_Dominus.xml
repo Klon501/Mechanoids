@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: Press The Attack -->
-  <APM_Hediff_PressTheAttack.label>Press The Attack</APM_Hediff_PressTheAttack.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Hediff_PressTheAttack.description>PLACEHOLDER</APM_Hediff_PressTheAttack.description>
-
-
+  <APM_Hediff_PressTheAttack.label>натиск</APM_Hediff_PressTheAttack.label>
 
 </LanguageData>
