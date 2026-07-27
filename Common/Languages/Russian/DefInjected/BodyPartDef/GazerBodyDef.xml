@@ -2,16 +2,14 @@
 <LanguageData>
 
   <!-- EN: head -->
-  <APM_GazerHead.label>head</APM_GazerHead.label>
+  <APM_GazerHead.label>голова</APM_GazerHead.label>
   <!-- EN: cooling system -->
-  <APM_GazerCoolingSystem.label>cooling system</APM_GazerCoolingSystem.label>
+  <APM_GazerCoolingSystem.label>система охлаждения</APM_GazerCoolingSystem.label>
   <!-- EN: laser focus -->
-  <APM_GazerLaserFocus.label>laser focus</APM_GazerLaserFocus.label>
+  <APM_GazerLaserFocus.label>фокусирующая линза</APM_GazerLaserFocus.label>
   <!-- EN: thorax -->
-  <APM_GazerThorax.label>thorax</APM_GazerThorax.label>
+  <APM_GazerThorax.label>грудной отдел</APM_GazerThorax.label>
   <!-- EN: leg -->
-  <APM_GazerPaw.label>leg</APM_GazerPaw.label>
-
-
+  <APM_GazerPaw.label>нога</APM_GazerPaw.label>
 
 </LanguageData>
