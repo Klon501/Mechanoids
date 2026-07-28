@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: duel spot -->
-  <APM_DuelSpot.label>duel spot</APM_DuelSpot.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_DuelSpot.description>PLACEHOLDER</APM_DuelSpot.description>
-
-
+  <APM_DuelSpot.label>место для поединка</APM_DuelSpot.label>
 
 </LanguageData>
