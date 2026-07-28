@@ -2,19 +2,17 @@
 <LanguageData>
 
   <!-- EN: charge sword rifle -->
-  <APM_Gun_Vassal_SwordRifle.label>charge sword rifle</APM_Gun_Vassal_SwordRifle.label>
+  <APM_Gun_Vassal_SwordRifle.label>энергомеч-винтовка</APM_Gun_Vassal_SwordRifle.label>
   <!-- EN: A charged-shot sword rifle. Weaker than a charge rifle, but more accurate and melee capable. -->
-  <APM_Gun_Vassal_SwordRifle.description>A charged-shot sword rifle. Weaker than a charge rifle, but more accurate and melee capable.</APM_Gun_Vassal_SwordRifle.description>
+  <APM_Gun_Vassal_SwordRifle.description>Энергетическая винтовка-меч. Слабее обычной энерговинтовки, но точнее и может быть оружием ближнего боя.</APM_Gun_Vassal_SwordRifle.description>
   <!-- EN: stock -->
-  <APM_Gun_Vassal_SwordRifle.tools.0.label>stock</APM_Gun_Vassal_SwordRifle.tools.0.label>
+  <APM_Gun_Vassal_SwordRifle.tools.0.label>приклад</APM_Gun_Vassal_SwordRifle.tools.0.label>
   <!-- EN: point -->
-  <APM_Gun_Vassal_SwordRifle.tools.1.label>point</APM_Gun_Vassal_SwordRifle.tools.1.label>
+  <APM_Gun_Vassal_SwordRifle.tools.1.label>остриё</APM_Gun_Vassal_SwordRifle.tools.1.label>
   <!-- EN: blade -->
-  <APM_Gun_Vassal_SwordRifle.tools.2.label>blade</APM_Gun_Vassal_SwordRifle.tools.2.label>
+  <APM_Gun_Vassal_SwordRifle.tools.2.label>клинок</APM_Gun_Vassal_SwordRifle.tools.2.label>
 
   <!-- EN: charge shot -->
-  <APM_Bullet_ChargeSwordRifle.label>charge shot</APM_Bullet_ChargeSwordRifle.label>
-
-
+  <APM_Bullet_ChargeSwordRifle.label>энергетический выстрел</APM_Bullet_ChargeSwordRifle.label>
 
 </LanguageData>
