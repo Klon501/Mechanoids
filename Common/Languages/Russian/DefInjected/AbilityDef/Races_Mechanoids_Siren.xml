@@ -2,10 +2,8 @@
 <LanguageData>
 
   <!-- EN: siren's song -->
-  <APM_SirenSong.label>siren's song</APM_SirenSong.label>
+  <APM_SirenSong.label>песнь сирены</APM_SirenSong.label>
   <!-- EN: The Siren emits a pleasant tune that lifts the spirits of nearby organic allies and briefly helps them recover recreation. -->
-  <APM_SirenSong.description>The Siren emits a pleasant tune that lifts the spirits of nearby organic allies and briefly helps them recover recreation.</APM_SirenSong.description>
-
-
+  <APM_SirenSong.description>Сирена издаёт приятную мелодию, поднимающую настроение органическим союзникам поблизости и дающую им возможность немного передохнуть и развлечься.</APM_SirenSong.description>
 
 </LanguageData>
