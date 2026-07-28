@@ -2,16 +2,12 @@
 <LanguageData>
 
   <!-- EN: Maul -->
-  <APM_Mech_Maul.label>Maul</APM_Mech_Maul.label>
-  <!-- EN: TBD -->
-  <APM_Mech_Maul.description>TBD</APM_Mech_Maul.description>
+  <APM_Mech_Maul.label>Крушитель</APM_Mech_Maul.label>
   <!-- EN: left fist -->
-  <APM_Mech_Maul.tools.0.label>left fist</APM_Mech_Maul.tools.0.label>
+  <APM_Mech_Maul.tools.0.label>левый кулак</APM_Mech_Maul.tools.0.label>
   <!-- EN: right fist -->
-  <APM_Mech_Maul.tools.1.label>right fist</APM_Mech_Maul.tools.1.label>
+  <APM_Mech_Maul.tools.1.label>правый кулак</APM_Mech_Maul.tools.1.label>
   <!-- EN: head -->
-  <APM_Mech_Maul.tools.2.label>head</APM_Mech_Maul.tools.2.label>
-
-
+  <APM_Mech_Maul.tools.2.label>голова</APM_Mech_Maul.tools.2.label>
 
 </LanguageData>
