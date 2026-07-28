@@ -30,6 +30,7 @@
 						<li>APM_Terminus</li>
 						<li>APM_Celerus</li>
 						<li>APM_Gazer</li>
+						<li>APM_Javelin</li>
 					</value>
 				</li>
 
@@ -74,6 +75,7 @@
 						<li>Corpse_APM_Mech_Frostivus</li>
 						<li>Corpse_APM_Mech_Dominus</li>
 						<li>Corpse_APM_Mech_Celerus</li>
+						<li>Corpse_APM_Mech_Javelin</li>
 					</value>
 				</li>
 

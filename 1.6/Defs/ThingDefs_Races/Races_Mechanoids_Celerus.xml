@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<!-- ==================== THING DEFS ==================== -->
 	<ThingDef ParentName="BaseMechanoid" Name="APM_Mech_Celerus_Base" Abstract="True">
 		<label>Celerus</label>
 		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Japan during its Sengoku period, the swift and stealthy Celerus is not any weaker for its speed. It has the ability to skip itself short distances around it as well as create a smokescreen to hinder enemies perception of it and anything around it, additionally becoming psychically imperceptible in this area. On top of those effects, enemies will receive periodic.</description>
@@ -13,7 +15,6 @@
 			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
 			<EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.45</EMPResistance>
 		</statBases>
-		
 		<tools>
 			<li>
 				<label>left fist</label>
@@ -45,15 +46,15 @@
 				<power>8.5</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-						<chanceFactor>0.2</chanceFactor>
-					</li>
-				</tools>
-				<killedLeavingsPlayerHostile>
-					<APM_PsyfluxChip>1</APM_PsyfluxChip>
-				</killedLeavingsPlayerHostile>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<killedLeavingsPlayerHostile>
+			<APM_PsyfluxChip>1</APM_PsyfluxChip>
+		</killedLeavingsPlayerHostile>
 		<race>
-					<body>APM_Celerus</body>
+			<body>APM_Celerus</body>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
 			<thinkTreeMain>APM_CelerusMechanoid</thinkTreeMain>
@@ -108,63 +109,22 @@
 		<defName>APM_Mech_CelerusB</defName>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>APM_Mech_Celerus_Boss</defName>
+	<!-- ==================== PAWN KINDS ==================== -->
+	<PawnKindDef ParentName="BaseMechanoidKind" Name="APM_PawnKind_Celerus_Base" Abstract="True">
 		<label>Celerus</label>
-		<race>APM_Mech_CelerusB</race>
 		<combatPower>550</combatPower>
 		<maxPerGroup>3</maxPerGroup>
-    	<isBoss>true</isBoss>
-    	<allowInMechClusters>false</allowInMechClusters>
-		<lifeStages>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Celerus/Boss/CelerusBAncient</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Celerus/Boss/Mech_CelerusB</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.5</drawSize>
-					<shadowData>
-						<volume>(0.5, 0.9, 0.5)</volume>
-						<offset>(0, 0, -0.6)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Celerus/Boss/CelerusBAncient</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Celerus/Boss/Mech_CelerusB</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.5</drawSize>
-					<shadowData>
-						<volume>(0.5, 0.9, 0.5)</volume>
-						<offset>(0, 0, -0.6)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
+		<isBoss>true</isBoss>
+		<allowInMechClusters>false</allowInMechClusters>
 		<weaponMoney>9999~9999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>APM_WeaponCelerusApexVoltana</li>
-		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
-		<abilities>
-			<li>APM_CelerusBlink</li>
-			<li>APM_Ability_SmokeScreen_Boss</li>
-		</abilities>
 	</PawnKindDef>
-	
-	<PawnKindDef ParentName="BaseMechanoidKind">
+
+	<PawnKindDef ParentName="APM_PawnKind_Celerus_Base">
 		<defName>APM_Mech_Celerus</defName>
-		<label>Celerus</label>
 		<race>APM_Mech_Celerus</race>
-		<combatPower>550</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-    	<isBoss>true</isBoss>
-    	<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -193,57 +153,57 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-		<weaponMoney>9999~9999</weaponMoney>
-		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
 			<li>APM_WeaponCelerusVoltana</li>
 		</weaponTags>
-		<techHediffsChance>1</techHediffsChance>
-		<techHediffsMoney>9999~9999</techHediffsMoney>
 		<abilities>
 			<li>APM_CelerusBlink</li>
 			<li>APM_Ability_SmokeScreen</li>
 		</abilities>
 	</PawnKindDef>
 
-	<AbilityDef>
-		<defName>APM_Ability_SmokeScreen</defName>
-		<label>Smokescreen</label>
-		<description>Release a dense smokescreen, shrouding the Celerus and nearby allies in obscuring gas that hinders enemy perception and grants the Celerus combat bonuses while hidden.</description>
-		<iconPath>UI/Smokescreen</iconPath>
-		<cooldownTicksRange>3600</cooldownTicksRange><!-- 1 minute -->
-		<hostile>true</hostile>
-		<targetRequired>true</targetRequired>
-		<aiCanUse>true</aiCanUse>
-		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<warmupStartSound>APM_SmokeScreen</warmupStartSound>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>1</warmupTime>
-			<range>20</range>
-			<requireLineOfSight>true</requireLineOfSight>
-			<targetParams>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetPawns>true</canTargetPawns>
-				<canTargetHumans>true</canTargetHumans>
-				<canTargetMechs>false</canTargetMechs>
-				<canTargetAnimals>false</canTargetAnimals>
-				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetLocations>true</canTargetLocations>
-				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
-			</targetParams>
-		</verbProperties>
-		<comps>
-			<li Class="CompProperties_AbilityLaunchProjectile">
-				<projectileDef>APM_Projectile_CelerusSmokescreen</projectileDef>
+	<PawnKindDef ParentName="APM_PawnKind_Celerus_Base">
+		<defName>APM_Mech_Celerus_Boss</defName>
+		<race>APM_Mech_CelerusB</race>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Celerus/Boss/CelerusBAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Celerus/Boss/Mech_CelerusB</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.9, 0.5)</volume>
+						<offset>(0, 0, -0.6)</offset>
+					</shadowData>
+				</bodyGraphicData>
 			</li>
-		</comps>
-	</AbilityDef>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Celerus/Boss/CelerusBAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Celerus/Boss/Mech_CelerusB</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.9, 0.5)</volume>
+						<offset>(0, 0, -0.6)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags Inherit="False">
+			<li>APM_WeaponCelerusApexVoltana</li>
+		</weaponTags>
+		<abilities>
+			<li>APM_CelerusBlink</li>
+			<li>APM_Ability_SmokeScreen_Boss</li>
+		</abilities>
+	</PawnKindDef>
 
-	<AbilityDef>
-		<defName>APM_Ability_SmokeScreen_Boss</defName>
+	<!-- ==================== SMOKESCREEN ABILITIES ==================== -->
+	<AbilityDef Name="APM_Ability_SmokeScreen_Base" Abstract="True">
 		<label>Smokescreen</label>
 		<description>Release a dense smokescreen, shrouding the Celerus and nearby allies in obscuring gas that hinders enemy perception and grants the Celerus combat bonuses while hidden.</description>
 		<iconPath>UI/Smokescreen</iconPath>
@@ -271,6 +231,19 @@
 				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 			</targetParams>
 		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef ParentName="APM_Ability_SmokeScreen_Base">
+		<defName>APM_Ability_SmokeScreen</defName>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>APM_Projectile_CelerusSmokescreen</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="APM_Ability_SmokeScreen_Base">
+		<defName>APM_Ability_SmokeScreen_Boss</defName>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">
 				<projectileDef>APM_Projectile_CelerusSmokescreen_Boss</projectileDef>
@@ -278,15 +251,14 @@
 		</comps>
 	</AbilityDef>
 
-	<ThingDef ParentName="BaseBullet">
-		<defName>APM_Projectile_CelerusSmokescreen</defName>
+	<!-- ==================== PROJECTILES ==================== -->
+	<ThingDef ParentName="BaseBullet" Name="APM_Projectile_CelerusSmokescreen_Base" Abstract="True">
 		<thingClass>ApexMechanoids.Projectile_CelerusSmokescreen</thingClass>
 		<label>smokescreen grenade</label>
 		<graphicData>
 			<texPath>Things/Projectile/LauncherShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(163, 180, 187)</color>
 		</graphicData>
 		<projectile>
 			<speed>40</speed>
@@ -295,6 +267,13 @@
 			<shadowSize>0.6</shadowSize>
 			<soundExplode>Explosion_Smoke</soundExplode>
 		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Projectile_CelerusSmokescreen_Base">
+		<defName>APM_Projectile_CelerusSmokescreen</defName>
+		<graphicData>
+			<color>(163, 180, 187)</color>
+		</graphicData>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_CelerusSmokescreenProjectile">
 				<gasDef>APM_Smokescreen</gasDef>
@@ -304,23 +283,11 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="APM_Projectile_CelerusSmokescreen_Base">
 		<defName>APM_Projectile_CelerusSmokescreen_Boss</defName>
-		<thingClass>ApexMechanoids.Projectile_CelerusSmokescreen</thingClass>
-		<label>smokescreen grenade</label>
 		<graphicData>
-			<texPath>Things/Projectile/LauncherShot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
 			<color>(160, 60, 230)</color>
 		</graphicData>
-		<projectile>
-			<speed>40</speed>
-			<damageDef>Smoke</damageDef>
-			<arcHeightFactor>0.2</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
-		</projectile>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_CelerusSmokescreenProjectile">
 				<gasDef>APM_Smokescreen_Boss</gasDef>
@@ -330,6 +297,7 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- ==================== UTILITY ABILITIES ==================== -->
 	<AbilityDef>
 		<defName>APM_CelerusBlink</defName>
 		<label>"Blink"</label>
@@ -361,7 +329,7 @@
 			</targetParams>
 		</verbProperties>
 		<comps>
-		    <li Class="ApexMechanoids.CompProperties_BlinkWarmupVisuals">
+			<li Class="ApexMechanoids.CompProperties_BlinkWarmupVisuals">
 				<pillarMoteDef>APM_Mote_Blink_WarmupPillar</pillarMoteDef>
 				<ringMoteDef>APM_Mote_Blink_Ring</ringMoteDef>
 				<rayMoteDef>APM_Mote_Blink_WarmupRay</rayMoteDef>
@@ -393,4 +361,5 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 </Defs>

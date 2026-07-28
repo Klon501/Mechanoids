@@ -104,15 +104,28 @@ namespace ApexMechanoids
     {
         public CompProperties_SirenLureChannel ChannelProps => (CompProperties_SirenLureChannel)props;
 
+        public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
+        {
+            return CanStartLureOnTarget(target.Pawn, parent?.pawn) && base.CanApplyOn(target, dest);
+        }
+
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            return base.AICanTargetNow(target) && CanStartLureOnTarget(target.Pawn, parent?.pawn);
+        }
+
+        public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
+        {
+            return base.Valid(target, throwMessages) && CanStartLureOnTarget(target.Pawn, parent?.pawn);
+        }
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
 
             Pawn caster = parent.pawn;
             Pawn targetPawn = target.Pawn;
-            if (caster == null || caster.Dead || caster.Downed || !caster.Spawned || caster.Map == null ||
-                targetPawn == null || targetPawn.Dead || targetPawn.Downed || !targetPawn.Spawned || targetPawn.Map != caster.Map ||
-                ChannelProps.jobDef == null)
+            if (!CanAffectTarget(targetPawn, caster) || ChannelProps.jobDef == null)
             {
                 return;
             }
@@ -122,6 +135,67 @@ namespace ApexMechanoids
             channelJob.count = durationTicks;
             channelJob.playerForced = caster.Faction == Faction.OfPlayer;
             caster.jobs.StartJob(channelJob, JobCondition.InterruptForced, cancelBusyStances: true);
+        }
+
+        private bool CanStartLureOnTarget(Pawn targetPawn, Pawn caster)
+        {
+            return CanAffectTarget(targetPawn, caster) && !IsTargetAlreadyLured(targetPawn, caster);
+        }
+
+        private bool CanAffectTarget(Pawn targetPawn, Pawn caster)
+        {
+            if (caster == null || caster.Destroyed || caster.Dead || caster.Downed || !caster.Spawned || caster.Map == null)
+            {
+                return false;
+            }
+            if (targetPawn == null || targetPawn.Destroyed || targetPawn.Dead || targetPawn.Downed || !targetPawn.Spawned || targetPawn.Map != caster.Map)
+            {
+                return false;
+            }
+            if (targetPawn.RaceProps?.IsMechanoid == true)
+            {
+                return false;
+            }
+            if (targetPawn.GetStatValue(StatDefOf.PsychicSensitivity) <= 0f)
+            {
+                return false;
+            }
+            return targetPawn.health?.capacities != null && targetPawn.health.capacities.CapableOf(PawnCapacityDefOf.Hearing);
+        }
+
+        private bool IsTargetAlreadyLured(Pawn targetPawn, Pawn caster)
+        {
+            if (targetPawn.CurJobDef == JobDefOf.GotoMindControlled)
+            {
+                return true;
+            }
+
+            IReadOnlyList<Pawn> pawns = caster.Map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn other = pawns[i];
+                if (other == null || other == caster)
+                {
+                    continue;
+                }
+
+                Job job = other.CurJob;
+                if (job == null)
+                {
+                    continue;
+                }
+
+                if (job.ability?.def == parent.def && job.targetA.Thing == targetPawn)
+                {
+                    return true;
+                }
+                if (ChannelProps.jobDef != null && job.def == ChannelProps.jobDef && job.targetA.Thing == targetPawn)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 

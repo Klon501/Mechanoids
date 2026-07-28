@@ -19,7 +19,5 @@
 		<casualInterruptible>false</casualInterruptible>
 		<collideWithPawns>true</collideWithPawns>
 		<neverShowWeapon>true</neverShowWeapon>
-		<tryStartFlying>true</tryStartFlying>
-		<overrideFlyChance>1</overrideFlyChance>
 	</JobDef>
 </Defs>

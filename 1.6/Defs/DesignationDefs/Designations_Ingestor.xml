@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DesignationDef>
+		<defName>APM_IngestorAbsorbCorpse</defName>
+		<label>recycle biomass</label>
+		<texturePath>UI/Ingestor/MarkCorpse</texturePath>
+		<targetType>Thing</targetType>
+	</DesignationDef>
+</Defs>

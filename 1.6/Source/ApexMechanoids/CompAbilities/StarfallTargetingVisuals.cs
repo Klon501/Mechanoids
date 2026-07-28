@@ -29,6 +29,40 @@ namespace ApexMechanoids
         {
             return base.TryStartCastOn(StarfallTargetingUtility.FreezePawnTargetToCell(castTarg), StarfallTargetingUtility.FreezePawnTargetToCell(destTarg), surpriseAttack, canHitNonTargetPawns, preventFriendlyFire, nonInterruptingSelfCast);
         }
+
+        public override void WarmupComplete()
+        {
+            base.WarmupComplete();
+            ApplyPrimaryWeaponCooldown();
+        }
+
+        private void ApplyPrimaryWeaponCooldown()
+        {
+            if (!CasterIsPawn)
+            {
+                return;
+            }
+
+            Pawn casterPawn = CasterPawn;
+            Verb primaryVerb = casterPawn?.equipment?.Primary?.GetComp<CompEquippable>()?.PrimaryVerb;
+            if (casterPawn == null || primaryVerb == null || primaryVerb == this)
+            {
+                return;
+            }
+
+            int cooldownTicks = primaryVerb.verbProps.AdjustedCooldownTicks(primaryVerb, casterPawn);
+            if (cooldownTicks <= 0)
+            {
+                return;
+            }
+
+            Stance_Cooldown cooldownStance = new Stance_Cooldown(cooldownTicks, currentTarget, primaryVerb)
+            {
+                neverAimWeapon = true
+            };
+            casterPawn.stances?.SetStance(cooldownStance);
+        }
+
     }
 
     internal static class StarfallTargetingUtility

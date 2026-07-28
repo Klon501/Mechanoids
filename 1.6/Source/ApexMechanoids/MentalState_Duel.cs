@@ -48,13 +48,16 @@ namespace ApexMechanoids
         public override void PostEnd()
         {
             base.PostEnd();
-            if (causedByPawn.DeadOrDowned)
+            if (pawn.HostileTo(causedByPawn) || pawn.HostileTo(causedByPawn.Faction))
             {
-                HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, severityPerWin);
-            }
-            else if (!pawn.DeadOrDowned)
-            {
-                pawn.health.AddHediff(ApexDefsOf.APM_DuelDraw);
+                if (causedByPawn.DeadOrDowned)
+                {
+                    HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, severityPerWin);
+                }
+                else if (!pawn.DeadOrDowned)
+                {
+                    pawn.health.AddHediff(ApexDefsOf.APM_DuelDraw);
+                } 
             }
             Hediff inDuelHediff = pawn.health.hediffSet.GetFirstHediffOfDef(ApexDefsOf.APM_InDuel);
             if (inDuelHediff != null)
@@ -74,19 +77,22 @@ namespace ApexMechanoids
             var duelTarget = pawn == duelStarter ? causedByPawn : pawn;
             bool starterIsBoss = duelStarter != null && (duelStarter.kindDef?.defName?.EndsWith("_Boss") ?? false);
 
-            if (duelTarget.DeadOrDowned)
+            if (!pawn.DeadOrDowned)
             {
-                EffecterDef winEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelWin_Boss : ApexEffecterDefsOf.APM_DuelWin;
-                winEffecter.Spawn(pawn, pawn.Map).Cleanup();
-            }
-            else if (duelStarter != null && duelStarter.DeadOrDowned)
-            {
-                ApexEffecterDefsOf.APM_DuelLose.Spawn(pawn, pawn.Map).Cleanup();
-            }
-            else if (pawn == duelStarter)
-            {
-                EffecterDef drawEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelDraw_Boss : ApexEffecterDefsOf.APM_DuelDraw;
-                drawEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                if (duelTarget.DeadOrDowned)
+                {
+                    EffecterDef winEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelWin_Boss : ApexEffecterDefsOf.APM_DuelWin;
+                    winEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                }
+                else if (duelStarter != null && duelStarter.DeadOrDowned)
+                {
+                    ApexEffecterDefsOf.APM_DuelLose.Spawn(pawn, pawn.Map).Cleanup();
+                }
+                else if (pawn == duelStarter)
+                {
+                    EffecterDef drawEffecter = starterIsBoss ? ApexEffecterDefsOf.APM_DuelDraw_Boss : ApexEffecterDefsOf.APM_DuelDraw;
+                    drawEffecter.Spawn(pawn, pawn.Map).Cleanup();
+                } 
             }
         }
 
@@ -97,7 +103,7 @@ namespace ApexMechanoids
                 Log.Error("No target. This should have been checked in this mental state's worker.");
                 return "";
             }
-            return this.def.beginLetter.Formatted(this.pawn.NameShortColored, this.causedByPawn.NameShortColored, this.pawn.Named("PAWN"), this.causedByPawn.Named("TARGET")).AdjustedFor(this.pawn, "PAWN", true).Resolve().CapitalizeFirst();
+            return this.def.beginLetter.Formatted(this.pawn.NameShortColored, this.causedByPawn.NameShortColored, this.duelStarter.Named("INITIATOR"), (duelStarter == this.pawn ? causedByPawn : pawn).Named("TARGET")).AdjustedFor(this.pawn, "PAWN", true).Resolve().CapitalizeFirst();
         }
         public override void ExposeData()
         {

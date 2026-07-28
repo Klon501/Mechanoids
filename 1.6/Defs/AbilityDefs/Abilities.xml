@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
-		<label>Recycle Biomess</label>
+		<label>Recycle Biomass</label>
 		<jobDef>APM_Absorb</jobDef>
-		<description>Grind up target corpse, and slowly process them into chem fuel.</description>
+		<description>Grind up a fresh organic corpse or ingestible material, and slowly process it into chemfuel.</description>
 		<iconPath>UI/Absorb</iconPath>
-		<cooldownTicksRange>60000</cooldownTicksRange>
-		<!-- 1 days -->
+		<cooldownTicksRange>20000</cooldownTicksRange>
 		<targetRequired>true</targetRequired>
 		<hostile>false</hostile>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityTouch</verbClass>
 			<warmupTime>5</warmupTime>
@@ -22,6 +21,7 @@
 			<targetParams>
 				<canTargetCorpses>true</canTargetCorpses>
 				<canTargetItems>true</canTargetItems>
+				<canTargetMechs>false</canTargetMechs>
 				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 				<canTargetSelf>false</canTargetSelf>
 				<canTargetPawns>false</canTargetPawns>
@@ -33,6 +33,22 @@
 			<li Class="ApexMechanoids.CompProperties_Absorb">
 				<chemfuelPer1BodySizeOfCorpse>36</chemfuelPer1BodySizeOfCorpse>
 				<chemfuelPer1Nutrition>10</chemfuelPer1Nutrition>
+				<durationFromSize> <!--body size and hours-->
+					<points>
+						<li>(0, 0.2)</li>
+						<li>(1, 12)</li>
+						<!--linear scale-->
+						<li>(100, 1200)</li>
+					</points>
+				</durationFromSize>
+				<durationFromNutrition> <!--amount of nutrition and hours-->
+					<points>
+						<li>(1, 1)</li>
+						<li>(10, 3)</li>
+						<li>(100, 6)</li>
+						<li>(500, 12)</li>
+					</points>
+				</durationFromNutrition>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -50,7 +66,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<warmupStartSound>DynamoPowerPlant_Warmup</warmupStartSound>
+		<warmupStartSound>APM_DynamoPowerPlant_Warmup</warmupStartSound>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -79,6 +95,7 @@
 		<description>The gazer blasts a devastating beam from itself, remaining stationary to keep the beam on target. Anything within reach of the beam takes heavy damage.</description>
 		<iconPath>UI/SunRay</iconPath>
 		<cooldownTicksRange>3500</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_SunRayAbility">
@@ -220,7 +237,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<cooldownTicksRange>300</cooldownTicksRange>
+		<cooldownTicksRange>3000</cooldownTicksRange>
 		<waitForJobEnd>true</waitForJobEnd>
 		<aiCanUse>true</aiCanUse>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -491,7 +508,7 @@
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_Starfall">
 				<carrierProjectileDef>APM_StarfallCarrier</carrierProjectileDef>
-				<launchSoundDefName>Starfall</launchSoundDefName>
+				<launchSoundDefName>APM_Starfall</launchSoundDefName>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -617,7 +634,7 @@
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<showPsycastEffects>false</showPsycastEffects>
-		<warmupStartSound>GazerEMP_Warmup</warmupStartSound>
+		<warmupStartSound>APM_GazerEMP_Warmup</warmupStartSound>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>3.0</warmupTime>

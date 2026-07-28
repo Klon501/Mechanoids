@@ -40,7 +40,7 @@ namespace ApexMechanoids
             }
 
             bool isBossVariant = caster.kindDef?.defName?.EndsWith("_Boss") ?? false;
-            Color colorOne = Color.white;
+            Color colorOne = isBossVariant ? Color.white : (caster.Faction?.AllegianceColor ?? Color.white);
 
             for (int i = 0; i < burstCount; i++)
             {

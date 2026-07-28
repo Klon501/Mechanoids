@@ -2,7 +2,7 @@
 <LanguageData>
 
   <APM_Absorb.label>Переработать биомассу</APM_Absorb.label>
-  <APM_Absorb.description>Перемалывает выбранный труп и медленно перерабатывает его в химтопливо.</APM_Absorb.description>
+  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал и медленно перерабатывает его в химтопливо.</APM_Absorb.description>
 
   <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
   <APM_SwitchToPowerPlantMode.description>...</APM_SwitchToPowerPlantMode.description>

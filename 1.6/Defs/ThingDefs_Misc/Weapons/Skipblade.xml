@@ -22,8 +22,8 @@
 			<li>APM_WeaponSkipblade</li>
 		</weaponTags>
 		<statBases>
-			<MarketValue>3400</MarketValue>
-			<WorkToMake>22000</WorkToMake>
+			<MarketValue>3800</MarketValue>
+			<WorkToMake>26000</WorkToMake>
 			<Mass>1.8</Mass>
 		</statBases>
 		<tools>
@@ -32,24 +32,27 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>1.8</cooldownTime>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>0.30</armorPenetration>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1.7</cooldownTime>
+				<power>20</power>
+				<cooldownTime>1.4</cooldownTime>
+				<armorPenetration>0.85</armorPenetration>
 			</li>
 			<li>
 				<label>blade</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>1.6</cooldownTime>
+				<power>22</power>
+				<cooldownTime>1.35</cooldownTime>
+				<armorPenetration>0.85</armorPenetration>
 			</li>
 		</tools>
 		<comps>
@@ -59,7 +62,7 @@
 				</abilities>
 			</li>
 			<li>
-        <compClass>CompQuality</compClass>
+				<compClass>CompQuality</compClass>
       		</li>
 		</comps>
 		<modExtensions>

@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BaseWeapon">
 		<defName>APM_Weapon_DuelistsPsySpear</defName>
-		<label>duelist's psy-spear</label>
+		<label>dominion psy-spear</label>
 		<description>A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
@@ -22,8 +22,8 @@
 			<li>APM_WeaponDuelistsPsySpear</li>
 		</weaponTags>
 		<statBases>
-			<MarketValue>3400</MarketValue>
-			<WorkToMake>30000</WorkToMake>
+			<MarketValue>3800</MarketValue>
+			<WorkToMake>32000</WorkToMake>
 			<Mass>2.5</Mass>
 		</statBases>
 		<tools>
@@ -32,32 +32,35 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
+				<power>10</power>
 				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.40</armorPenetration>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>23</power>
-				<cooldownTime>2.2</cooldownTime>
+				<power>32</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.95</armorPenetration>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>19</power>
-				<cooldownTime>2.2</cooldownTime>
+				<power>18</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.70</armorPenetration>
 			</li>
 		</tools>
 		<comps>
 			<li Class="CompProperties_EquippableAbility">
 				<abilityDef>APM_Mech_Duel</abilityDef>
 			</li>
-			      <li>
-        <compClass>CompQuality</compClass>
+			<li>
+				<compClass>CompQuality</compClass>
       		</li>
 		</comps>
 		<modExtensions>

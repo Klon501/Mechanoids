@@ -3,11 +3,11 @@
 	<ThingDef Name="APM_Mech_Maul" ParentName="BaseMechanoidWalker">
 		<defName>APM_Mech_Maul</defName>
 		<label>Maul</label>
-		<description>The maul is the mechhive’s core tenet made machine, to crush and overwhelm. Impervious to small arms, this mechanoid is the bane of infantry, light vehicles, and outer defense emplacements. It is intelligent enough to know when it isn’t on the upper hand, and will continuously overlock and overheat its weapon until the job is done as it takes damage.</description>
+		<description>The maul is the mechhive’s core tenet made machine, to crush and overwhelm. Impervious to small arms, this mechanoid is the bane of infantry, light vehicles, and outer defense emplacements. It is intelligent enough to know when it isn’t on the upper hand, and will continuously overclock and overheat its weapon until the job is done as it takes damage.</description>
 		<statBases>
-			<MarketValue>1200</MarketValue>
-			<MoveSpeed>1.9</MoveSpeed>
-			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<MarketValue>1400</MarketValue>
+			<MoveSpeed>2.1</MoveSpeed>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt> 
 			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<ArmorRating_Heat>2.0</ArmorRating_Heat>
 			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
@@ -20,8 +20,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>20.0</power>
-				<cooldownTime>2</cooldownTime>
+				<power>12.0</power>
+				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
@@ -31,8 +31,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>20.0</power>
-				<cooldownTime>2</cooldownTime>
+				<power>12.0</power>
+				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
@@ -41,8 +41,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.0</power>
-				<cooldownTime>2</cooldownTime>
+				<power>12.0</power>
+				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -70,13 +70,20 @@
 			<li Class="ApexMechanoids.CompProperties_StatFactorsFromHealth">
 				<statFactors>
 					<li>
+						<stat>MeleeCooldownFactor</stat>
+						<curve>
+							<points>
+								<li>(0.0, 0.67)</li>
+								<li>(1.0, 1.00)</li>
+							</points>
+						</curve>
+					</li>
+					<li>
 						<stat>RangedCooldownFactor</stat>
 						<curve>
 							<points>
-								<li>(0, 0.55)</li>  
-                    			<li>(0.5, 0.75)</li>
-								<li>(1.0, 1)</li>
-								<li>(2.0, 2)</li>
+								<li>(0.0, 0.67)</li>  
+								<li>(1.0, 1.00)</li>
 							</points>
 						</curve>
 					</li>
@@ -84,10 +91,8 @@
 						<stat>AimingDelayFactor</stat>
 						<curve>
 							<points>
-								<li>(0, 0.55)</li>  
-                    			<li>(0.5, 0.75)</li>
-								<li>(1.0, 1)</li>
-								<li>(2.0, 2)</li>
+								<li>(0.0, 0.67)</li>  
+								<li>(1.0, 1.00)</li>
 							</points>
 						</curve>
 					</li>
@@ -95,8 +100,8 @@
 			</li>
 		</comps>
 		<butcherProducts>
-			<Steel>50</Steel>
-			<Plasteel>20</Plasteel>
+			<Steel>60</Steel>
+			<Plasteel>25</Plasteel>
 		</butcherProducts>
 	</ThingDef>
 
@@ -104,7 +109,7 @@
 		<defName>APM_Mech_Maul</defName>
 		<label>maul</label>
 		<race>APM_Mech_Maul</race>
-		<combatPower>400</combatPower>
+		<combatPower>480</combatPower>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>

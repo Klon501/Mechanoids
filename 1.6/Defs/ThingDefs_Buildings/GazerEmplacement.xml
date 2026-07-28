@@ -1,102 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BuildingBase">
-		<defName>APM_GazerEmplacement</defName>
-		<label>gazer emplacement</label>
-		<description>A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost.</description>
-		<thingClass>ApexMechanoids.Building_GazerEmplacement</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData>
-			<texPath>Things/Building/GazerEmplacement/GazerEmplacement</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>4</drawSize>
-			<shadowData>
-				<volume>(1.6, 1.5, 2.8)</volume>
-				<offset>(0, 0, 0)</offset>
-			</shadowData>
-		</graphicData>
-		<uiIconPath>Things/Building/GazerEmplacement/GazerEmplacement_north</uiIconPath>
-		<uiIconScale>0.95</uiIconScale>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<drawHighlight>true</drawHighlight>
-		<drawHighlightOnlyForHostile>false</drawHighlightOnlyForHostile>
-		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
-		<stealable>false</stealable>
-		<rotatable>true</rotatable>
-		<size>(2,3)</size>
-		<passability>Impassable</passability>
-		<pathCost>90</pathCost>
-		<fillPercent>1.0</fillPercent>
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<tickerType>Normal</tickerType>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Biotech</designationCategory>
-		<uiOrder>2452</uiOrder>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-		<costList>
-			<Steel>250</Steel>
-			<Plasteel>100</Plasteel>
-			<APM_OcularChip>1</APM_OcularChip>
-		</costList>
-		<researchPrerequisites>
-			<li>AdvancedMechtech</li>
-		</researchPrerequisites>
-		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<WorkToBuild>4000</WorkToBuild>
-			<Mass>220</Mass>
-			<Beauty>-18</Beauty>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-				<planetLayerWhitelist>
-					<li>Surface</li>
-				</planetLayerWhitelist>
-			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>600</basePowerConsumption>
-			</li>
-			<li Class="ApexMechanoids.CompProperties_GazerBeamOriginOffsets">
-				<northOffset>(0,0.8)</northOffset>
-				<eastOffset>(0.8,0.5)</eastOffset>
-				<southOffset>(0,-0.3)</southOffset>
-				<westOffset>(-0.8,0.5)</westOffset>
-				<fireCommandIconPath>UI/GazerBeam_UI</fireCommandIconPath>
-				<cancelCommandIconPath>UI/Designators/Cancel</cancelCommandIconPath>
-			</li>
-			<li Class="CompProperties_Breakdownable" />
-			<li Class="CompProperties_Flickable" />
-			<li Class="CompProperties_Stunnable">
-				<affectedDamageDefs>
-					<li>Stun</li>
-					<li>EMP</li>
-				</affectedDamageDefs>
-			</li>
-		</comps>
-		<building>
-			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
-			<combatPower>260</combatPower>
-			<ai_combatDangerous>true</ai_combatDangerous>
-			<ai_chillDestination>false</ai_chillDestination>
-			<buildingTags>
-				<li>Biotech</li>
-				<li>Artillery</li>
-			</buildingTags>
-		</building>
-		<modExtensions>
-			<li Class="ApexMechanoids.DefModExtension_GazerEmplacement">
-				<firingArcHalfAngle>18</firingArcHalfAngle>
-				<firingPowerConsumption>20000</firingPowerConsumption>
-				<cooldownTicks>2400</cooldownTicks>
-			</li>
-		</modExtensions>
-	</ThingDef>
+  <defName>APM_GazerEmplacement</defName>
+  <label>gazer emplacement</label>
+  <description>A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost.</description>
+  <thingClass>ApexMechanoids.Building_GazerEmplacement</thingClass>
+  <drawerType>MapMeshAndRealTime</drawerType>
+  <graphicData>
+    <texPath>Things/Building/GazerEmplacement/GazerEmplacement</texPath>
+    <graphicClass>Graphic_Multi</graphicClass>
+    <drawSize>4</drawSize>
+    <shadowData>
+      <volume>(1.6, 1.5, 2.8)</volume>
+      <offset>(0, 0, 0)</offset>
+    </shadowData>
+  </graphicData>
+  <uiIconPath>Things/Building/GazerEmplacement/GazerEmplacement_north</uiIconPath>
+  <uiIconScale>0.95</uiIconScale>
+  <minifiedDef>MinifiedThing</minifiedDef>
+  <altitudeLayer>Building</altitudeLayer>
+  <drawHighlight>true</drawHighlight>
+  <drawHighlightOnlyForHostile>false</drawHighlightOnlyForHostile>
+  <hasInteractionCell>true</hasInteractionCell>
+  <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+  <stealable>false</stealable>
+  <rotatable>true</rotatable>
+  <size>(2,3)</size>
+  <passability>Impassable</passability>
+  <pathCost>90</pathCost>
+  <fillPercent>1.0</fillPercent>
+  <thingCategories>
+    <li>BuildingsSecurity</li>
+  </thingCategories>
+  <tickerType>Normal</tickerType>
+  <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  <designationCategory>Biotech</designationCategory>
+  <uiOrder>2452</uiOrder>
+  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  <costList>
+    <Steel>250</Steel>
+    <Plasteel>100</Plasteel>
+    <APM_OcularChip>1</APM_OcularChip>
+  </costList>
+  <researchPrerequisites>
+    <li>AdvancedMechtech</li>
+  </researchPrerequisites>
+  <statBases>
+    <MaxHitPoints>400</MaxHitPoints>
+    <Flammability>0</Flammability>
+    <WorkToBuild>4000</WorkToBuild>
+    <Mass>220</Mass>
+    <Beauty>-18</Beauty>
+  </statBases>
+  <comps>
+    <li Class="CompProperties_Forbiddable" />
+    <li Class="CompProperties_Mannable">
+      <manWorkType>Violent</manWorkType>
+      <planetLayerWhitelist>
+        <li>Surface</li>
+      </planetLayerWhitelist>
+    </li>
+    <li Class="CompProperties_Power">
+      <compClass>CompPowerTrader</compClass>
+      <basePowerConsumption>600</basePowerConsumption>
+    </li>
+    <li Class="ApexMechanoids.CompProperties_GazerBeamOriginOffsets">
+      <northOffset>(0,0.8)</northOffset>
+      <eastOffset>(0.8,0.5)</eastOffset>
+      <southOffset>(0,-0.3)</southOffset>
+      <westOffset>(-0.8,0.5)</westOffset>
+      <fireCommandIconPath>UI/GazerBeam_UI</fireCommandIconPath>
+      <cancelCommandIconPath>UI/Designators/Cancel</cancelCommandIconPath>
+    </li>
+    <li Class="CompProperties_Breakdownable" />
+    <li Class="CompProperties_Flickable" />
+    <li Class="CompProperties_Stunnable">
+      <affectedDamageDefs>
+        <li>Stun</li>
+        <li>EMP</li>
+      </affectedDamageDefs>
+    </li>
+  </comps>
+  <building>
+    <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    <combatPower>260</combatPower>
+    <ai_combatDangerous>true</ai_combatDangerous>
+    <ai_chillDestination>false</ai_chillDestination>
+    <forcedCostLeavings>
+      <li>APM_OcularChip</li>
+    </forcedCostLeavings>
+    <buildingTags>
+      <li>Biotech</li>
+      <li>Artillery</li>
+    </buildingTags>
+  </building>
+  <modExtensions>
+    <li Class="ApexMechanoids.DefModExtension_GazerEmplacement">
+      <firingArcHalfAngle>18</firingArcHalfAngle>
+      <firingPowerConsumption>20000</firingPowerConsumption>
+      <cooldownTicks>2400</cooldownTicks>
+      <minRange>1</minRange>
+    </li>
+  </modExtensions>
+</ThingDef>
 </Defs>

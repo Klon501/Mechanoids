@@ -187,6 +187,7 @@
 		<hostile>true</hostile>
 		<writeCombatLog>true</writeCombatLog>
 		<aiCanUse>true</aiCanUse>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -199,6 +200,8 @@
 				<canTargetBuildings>False</canTargetBuildings>
 				<canTargetLocations>False</canTargetLocations>
 				<canTargetAnimals>False</canTargetAnimals>
+				<canTargetMechs>False</canTargetMechs>
+				<onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
 			</targetParams>
 		</verbProperties>
 		<statBases>

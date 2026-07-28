@@ -3,17 +3,13 @@
 
 	<HediffDef>
 		<defName>APM_AbsorbedThing</defName>
-		<label>absorbed something</label>
+		<label>recycling biomass</label>
 		<hediffClass>HediffWithComps</hediffClass>
-		<description>Recycling the absorbed thing.</description>
+		<description>Processing absorbed biomass into chemfuel.</description>
 		<isBad>false</isBad>
 		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>12000</disappearsAfterTicks> <!--The same as duel mental state-->
-				<showRemainingTime>True</showRemainingTime>
-			</li>
-			<li>
-				<compClass>ApexMechanoids.CompSpawnThingOnRemove</compClass>
+			<li Class="ApexMechanoids.HediffCompProperties_IngestorBiomassProcessor">
+				<maxTooltipBatches>8</maxTooltipBatches>
 			</li>
 			<!--<li Class="HediffCompProperties_DisappearsOnDeath"/>-->
 		</comps>

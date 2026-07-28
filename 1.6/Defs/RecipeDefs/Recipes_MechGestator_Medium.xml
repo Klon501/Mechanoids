@@ -292,7 +292,7 @@
     <defName>APM_Vassal</defName>
     <label>gestate vassal</label>
     <description>Gestate a vassal mechanoid.</description>
-    <researchPrerequisite>ApexMechtech</researchPrerequisite>
+    <researchPrerequisite>AdvancedMechtech</researchPrerequisite>
     <gestationCycles>3</gestationCycles>
     <ingredients Inherit="False">
       <li>
@@ -314,10 +314,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentIndustrial</li>
+            <li>ComponentSpacer</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -436,7 +436,7 @@
     <defName>APM_Frostivus</defName>
     <label>gestate frostivus</label>
     <description>Gestate a frostivus mechanoid.</description>
-    <researchPrerequisite>ApexMechtech</researchPrerequisite>
+    <researchPrerequisite>AdvancedMechtech</researchPrerequisite>
     <gestationCycles>3</gestationCycles>
     <ingredients Inherit="False">
       <li>
@@ -477,6 +477,62 @@
     </products>
     <descriptionHyperlinks>
       <ThingDef>APM_Mech_Frostivus</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+   
+    <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>APM_Javelin</defName>
+    <label>gestate javelin</label>
+    <description>Gestate a javelin mechanoid.</description>
+    <researchPrerequisite>ApexMechtech</researchPrerequisite>
+    <gestationCycles>3</gestationCycles>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+        <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <APM_Mech_Javelin>1</APM_Mech_Javelin>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>APM_Mech_Javelin</ThingDef>
     </descriptionHyperlinks>
   </RecipeDef>
 </Defs>

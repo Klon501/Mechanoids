@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoidWalker">
+		<defName>APM_Mech_Javelin</defName>
+		<label>javelin</label>
+		<description>placeholder</description>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>2.5</MoveSpeed>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
+			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
+			<ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">18</ControlTakingTime>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>APM_Javelin</body>
+			<baseBodySize>3.0</baseBodySize>
+			<baseHealthScale>2.42</baseHealthScale>
+			<mechWeightClass>Heavy</mechWeightClass>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+					<soundCall>Pawn_Mech_Legionary_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Legionary_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Legionary_Death</soundDeath>
+					<soundCall>Pawn_Mech_Legionary_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<detritusLeavings>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>16</texOverrideIndex>
+					<spawnChance>0.1</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>11</texOverrideIndex>
+					<spawnChance>0.1</spawnChance>
+				</li>
+				<li>
+					<def>ChunkMechanoidSlag</def>
+					<texOverrideIndex>1</texOverrideIndex>
+					<spawnChance>0.1</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<comps>
+			<li Class="CompProperties_WasteProducer">
+				<showContentsInInspectPane>false</showContentsInInspectPane>
+			</li>
+			<li Class="CompProperties_ThingContainer">
+				<compClass>CompThingContainer</compClass>
+				<stackLimit>100</stackLimit>
+				<drawContainedThing>false</drawContainedThing>
+				<dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+			</li>
+		</comps>
+		<butcherProducts>
+			<Steel>40</Steel>
+			<Plasteel>10</Plasteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>APM_Mech_Javelin</defName>
+		<label>javelin</label>
+		<race>APM_Mech_Javelin</race>
+		<combatPower>350</combatPower>
+		<allowInMechClusters>true</allowInMechClusters>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Javelin/Javelin</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Javelin/Mech_Javelin</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+						<offset>(0, 0, -0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Javelin/JavelinAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Javelin/Mech_Javelin</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+						<offset>(0, 0, -0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>APM_WeaponEMPImpactor</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>0.85</controlGroupPortraitZoom>
+	</PawnKindDef>
+</Defs>

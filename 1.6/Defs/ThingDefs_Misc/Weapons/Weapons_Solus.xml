@@ -7,6 +7,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Solus</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -20,7 +21,7 @@
 			<AccuracyShort>1.0</AccuracyShort>
 			<AccuracyMedium>1.0</AccuracyMedium>
 			<AccuracyLong>1.0</AccuracyLong>
-			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -42,7 +43,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>APM_SolusOrb</defaultProjectile>
 				<warmupTime>5.2</warmupTime>
-				<range>29.9</range>
+				<range>19.9</range>
 				<minRange>3.9</minRange>
 				<forcedMissRadius>0</forcedMissRadius>
 				<burstShotCount>1</burstShotCount>
@@ -57,6 +58,44 @@
 				<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
 			</li>
 		</verbs>
+			<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0,0,-0.1)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0,0.0,0)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0,0,-0.1)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0,0.0,0)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0,0,0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0,0.0,-0.25)</drawOffset>
+
+					</east>
+					<south>
+						<drawOffset>(0,0,0)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0,0.0,-0.25)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -70,10 +109,10 @@
 			<drawSize>1.25</drawSize>
 		</graphicData>
 		<projectile>
-			<speed>8</speed>
+			<speed>5</speed>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Burn</damageDef>
-			<damageAmountBase>0</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<stoppingPower>0</stoppingPower>
 			<useGraphicClass>true</useGraphicClass>
 		</projectile>
@@ -99,8 +138,8 @@
 				<activationSoundDef>Explosion_EMP</activationSoundDef>
 				<arcStrikeSoundDef>MechBandShockwave</arcStrikeSoundDef>
 				<impactSoundDef>Explosion_Vaporize</impactSoundDef>
-				<totalArcStrikeBudget>40</totalArcStrikeBudget>
-				<maxLifetimeTicks>500</maxLifetimeTicks>
+				<totalArcStrikeBudget>60</totalArcStrikeBudget>
+				<maxLifetimeTicks>1000</maxLifetimeTicks>
 				<orbSpinDegreesPerTick>2.6</orbSpinDegreesPerTick>
 				<orbPulseAmplitude>0.15</orbPulseAmplitude>
 				<orbPulseTicks>22</orbPulseTicks>

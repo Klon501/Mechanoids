@@ -19,6 +19,7 @@
       <APM_Mech_Haze>5</APM_Mech_Haze>
 
         <!-- Epic -->
+      <APM_Mech_Javelin>2</APM_Mech_Javelin>
       <APM_Mech_Siren>2</APM_Mech_Siren>
       <APM_Mech_Vassal>2</APM_Mech_Vassal>
         <!-- Bosses -->
@@ -44,6 +45,7 @@
         <!-- Epic -->
       <APM_Mech_Siren>2</APM_Mech_Siren>
       <APM_Mech_Vassal>2</APM_Mech_Vassal>
+      <APM_Mech_Javelin>2</APM_Mech_Javelin>
     </value>
   </Operation>
 
@@ -80,6 +82,7 @@
       <APM_Mech_Pulse>10</APM_Mech_Pulse>
       <APM_Mech_Maul>10</APM_Mech_Maul>
       <APM_Mech_Vassal>2</APM_Mech_Vassal>
+      <APM_Mech_Javelin>2</APM_Mech_Javelin>
     </value>
   </Operation>
 </Patch>

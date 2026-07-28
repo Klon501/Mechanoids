@@ -15,6 +15,8 @@ namespace ApexMechanoids
         public static ThingDef APM_Smokescreen;
         public static ThingDef APM_Smokescreen_Boss;
         public static AbilityDef APM_Absorb;
+        public static DesignationDef APM_IngestorAbsorbCorpse;
+        public static WorkTypeDef APM_IngestorCorpseProcessing;
         public static AbilityDef APM_CelerusBlink;
         public static AbilityDef APM_Ability_SmokeScreen;
         public static AbilityDef APM_Ability_SmokeScreen_Boss;

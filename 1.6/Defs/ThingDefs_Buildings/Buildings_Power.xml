@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>APM_DynamoPoweredGenerator</defName>
 		<label>Dynamo powered generator</label>
-		<description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</description>
+		<description>Produces power by consuming uranium. Must be periodically refueled by hand.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>

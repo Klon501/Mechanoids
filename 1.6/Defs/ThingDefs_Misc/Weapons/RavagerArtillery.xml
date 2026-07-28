@@ -7,7 +7,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RavagerArtillery</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.6</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<techLevel>Ultra</techLevel>
@@ -17,7 +17,7 @@
 		<statBases>
 			<MarketValue>9999</MarketValue>
 			<AccuracyTouch>0.7</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.92</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
 			<RangedWeapon_Cooldown>22</RangedWeapon_Cooldown>
@@ -39,7 +39,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<burstShotCount>1</burstShotCount>
 				<range>80</range>
-				<forcedMissRadius>1.0</forcedMissRadius>
+				<forcedMissRadius>4.9</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<noiseRadius>4</noiseRadius>
 				<isMortar>true</isMortar>
@@ -68,7 +68,7 @@
 						<angleOffset>217</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0,0.0,0.55)</drawOffset>
+						<drawOffset>(-0.6,0.0,0.55)</drawOffset>
 						<angleOffset>-90</angleOffset>
 					</east>
 					<south>
@@ -76,7 +76,7 @@
 						<angleOffset>37</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(0,0.0,0.55)</drawOffset>
+						<drawOffset>(0.6,0.0,0.55)</drawOffset>
 						<angleOffset>90</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
@@ -85,13 +85,14 @@
 						<drawOffset>(0,1,0)</drawOffset>
 					</north>
 					<east>
-						<drawOffset>(-0.7,0.0,0.6)</drawOffset>
+						<drawOffset>(-0.6,0.0,0.55)</drawOffset>
+
 					</east>
 					<south>
 						<drawOffset>(0,0,1)</drawOffset>
 					</south>
 					<west>
-						<drawOffset>(0.7,0.0,0.6)</drawOffset>
+						<drawOffset>(0.6,0.0,0.55)</drawOffset>
 					</west>
 				</weaponCarryDrawOffsets>
 			</li>

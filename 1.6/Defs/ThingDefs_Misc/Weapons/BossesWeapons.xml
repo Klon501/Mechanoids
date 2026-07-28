@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== DOMINUS MECHLANCE ==================== -->
+	<ThingDef ParentName="BaseGun" Name="APM_Weapon_DominusMechlance_Base" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<uiIconScale>0.5</uiIconScale>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<Mass>2.0</Mass>
+			<WorkToMake>30000</WorkToMake>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities><li>Blunt</li></capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities><li>Stab</li></capacities>
+				<power>27</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities><li>Cut</li></capacities>
+				<power>34</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north><drawOffset>(-0.30, 0.00, 0.15)</drawOffset><angleOffset>-120</angleOffset></north>
+					<east><drawOffset>(0.50, 0.00, 0.15)</drawOffset><angleOffset>-60</angleOffset></east>
+					<south><drawOffset>(0.30, 0.00, 0.15)</drawOffset><angleOffset>-60</angleOffset></south>
+					<west><drawOffset>(-0.50, 0.00, 0.15)</drawOffset><angleOffset>60</angleOffset></west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Weapon_DominusMechlance_Base">
+		<defName>APM_Weapon_DominusMechlance</defName>
+		<label>Dominus mechlance</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/Mechlance</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponDominusMechlance</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="APM_Weapon_DominusMechlance_Base">
+		<defName>APM_Weapon_DominusApexMechlance</defName>
+		<label>Dominus apex mechlance</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/ApexMechlance</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponDominusApexMechlance</li>
+		</weaponTags>
+	</ThingDef>
+
+
+	<!-- ==================== CELERUS VOLTANA ==================== -->
+	<ThingDef ParentName="BaseGun" Name="APM_Weapon_CelerusVoltana_Base" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities><li>Blunt</li></capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>tip</label>
+				<capacities><li>Stab</li></capacities>
+				<power>27</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities><li>Cut</li></capacities>
+				<power>25</power>
+				<cooldownTime>1.3</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north><drawOffset>(-0.25, 0.00, 0.40)</drawOffset><angleOffset>130</angleOffset></north>
+					<east><drawOffset>(0.40, 0.00, 0.40)</drawOffset><angleOffset>300</angleOffset></east>
+					<south><drawOffset>(0.25, 0.00, 0.40)</drawOffset><angleOffset>300</angleOffset></south>
+					<west><drawOffset>(-0.40, 0.00, 0.40)</drawOffset><angleOffset>60</angleOffset></west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Weapon_CelerusVoltana_Base">
+		<defName>APM_Weapon_CelerusVoltana</defName>
+		<label>celerus voltana</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/Voltana</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponCelerusVoltana</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Weapon_CelerusVoltana_Base">
+		<defName>APM_Weapon_CelerusApexVoltana</defName>
+		<label>celerus apex voltana</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/ApexVoltana</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponCelerusApexVoltana</li>
+		</weaponTags>
+	</ThingDef>
+
+
+	<!-- ==================== TERMINUS EXOBLADE ==================== -->
+	<ThingDef ParentName="BaseGun" Name="APM_Weapon_TerminusExoblade_Base" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>4.6</Mass>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities><li>Blunt</li></capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities><li>Stab</li></capacities>
+				<power>34</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities><li>Cut</li></capacities>
+				<power>42</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<usableWithShields>true</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north><drawOffset>(-0.55, 0.00, 0.30)</drawOffset><angleOffset>130</angleOffset></north>
+					<east><drawOffset>(0.60, 0.00, 0.30)</drawOffset><angleOffset>-50</angleOffset></east>
+					<south><drawOffset>(0.55, 0.00, 0.30)</drawOffset><angleOffset>-60</angleOffset></south>
+					<west><drawOffset>(-0.60, 0.00, 0.30)</drawOffset><angleOffset>50</angleOffset></west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Weapon_TerminusExoblade_Base">
+		<defName>APM_Weapon_TerminusExoblade</defName>
+		<label>terminus exoblade</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/Exoblade</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponTerminusExoblade</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Weapon_TerminusExoblade_Base">
+		<defName>APM_Weapon_TerminusApexExoblade</defName>
+		<label>terminus apex exoblade</label>
+		<description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Boss/ApexExoblade</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>APM_WeaponTerminusApexExoblade</li>
+		</weaponTags>
+	</ThingDef>
+
+</Defs>

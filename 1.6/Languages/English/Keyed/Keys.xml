@@ -3,6 +3,7 @@
 	<APM_MechRepaired>{0} has been fully repaired.</APM_MechRepaired>
 	<APM_Repairing>Repairing {0}</APM_Repairing>
 	<APM_NotMechanoid>Only mechanoids can be repaired here.</APM_NotMechanoid>
+	<APM_RepairStation_CannotRepairSatellite>Satellites cannot be repaired in repair stations.</APM_RepairStation_CannotRepairSatellite>
 	<APM_NotPlayerFaction>Only friendly mechanoids can be repaired.</APM_NotPlayerFaction>
 	<APM_WrongSize>Mechanoid size must be {0} for this station.</APM_WrongSize>
 	<APM_AutoRepairOrdered>Repair station scanning found {0}. Repairs ordered.</APM_AutoRepairOrdered>
@@ -12,6 +13,8 @@
 	<APM_Gizmo_AutoRepair>Auto-Repair</APM_Gizmo_AutoRepair>
 	<APM_Gizmo_AutoRepair_Desc>Automatically scan for damaged mechs and assign them to the station.</APM_Gizmo_AutoRepair_Desc>
 	<APM_Gizmo_SetInterval>Interval: {0}</APM_Gizmo_SetInterval>
+	<APM_Settings_ShowRepairStationAutoRepairMessages_Label>Show repair station auto-repair messages</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+	<APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Show a message when a repair station automatically calls a mechanoid for repairs.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
 	<APM_FullHealth>This mechanoid is already at full health.</APM_FullHealth>
 	<APM_CommandCancelRepair>Cancel repair</APM_CommandCancelRepair>
 	<APM_CommandCancelRepairDesc>Stop repairing and eject the mechanoid.</APM_CommandCancelRepairDesc>

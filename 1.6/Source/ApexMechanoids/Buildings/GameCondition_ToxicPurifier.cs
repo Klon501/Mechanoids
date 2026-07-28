@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TMPro;
+using UnityEngine;
 using Verse;
 using static HarmonyLib.Code;
 
@@ -15,34 +16,59 @@ namespace ApexMechanoids
     {
         public float toxicityLevel = 0f;
 
-        public DefModExtension_ToxicPurifier modExtension => def.GetModExtension<DefModExtension_ToxicPurifier>();
+		public List<Thing> purifiersOnMap = new List<Thing>();
+
+		public DefModExtension_ToxicPurifier ModExtension => def.GetModExtension<DefModExtension_ToxicPurifier>();
 
         public override string Label
         {
             get
             {
-                if (modExtension.toxicityUnit != null)
-                {
-                    return $"{base.Label} ({toxicityLevel}{modExtension.toxicityUnit})";
-                }
-                else
-                {
-                    return $"{base.Label} ({toxicityLevel.ToStringPercent("0.00")})";
-                }
+				if (toxicityLevel < 0.01f)
+				{
+					return base.Label;
+				}
+				var modExtension = ModExtension;
+				return $"{base.Label} ({ToxicityToString(Mathf.Clamp(toxicityLevel, 0, modExtension.maxValue))})";
             }
         }
-        public List<Thing> purifierOnMap = new List<Thing>();
+
+		public string ToxicityToString(float toxicity)
+		{
+			var modExtension = ModExtension;
+			if (modExtension.toxicityUnit != null)
+			{
+				return toxicity.ToStringByStyle(ToStringStyle.FloatTwo) + modExtension.toxicityUnit;
+			}
+			else
+			{
+                return (toxicity / modExtension.maxValue).ToStringPercent("0.00");
+			}
+		}
+
+		public override string Description
+        {
+            get
+            {
+                string s = base.Description;
+                s += "\n\n";
+                s += "APM_ToxicPurifier_RecoveryPerDay".Translate().Colorize(ColoredText.TipSectionTitleColor) + ": " + ToxicityToString(ModExtension.toxicRecoveryPerDay);
+				return s;
+            }
+        }
+
         public bool ShouldRemove
         {
             get
             {
-                if (purifierOnMap.Count <= 0)
+                if (purifiersOnMap.NullOrEmpty())
                 {
                     return toxicityLevel <= 0f;
                 }
                 return false;
             }
         }
+
         public override void PostMake()
         {
             base.PostMake();
@@ -59,17 +85,25 @@ namespace ApexMechanoids
             }
             if (Find.TickManager.TicksGame % 60000 == 0)
             {
-                if (toxicityLevel >= modExtension.toxicLevelToStartSpreading)
+                bool flag1 = toxicityLevel >= ModExtension.toxicLevelToAffectRelation;
+                bool flag2 = toxicityLevel >= ModExtension.toxicLevelToStartSpreading;
+				if (flag1 && flag2)
+				{
+					Messages.Message("APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading".Translate(ToxicityToString(ModExtension.toxicLevelToStartSpreading), ToxicityToString(ModExtension.toxicLevelToAffectRelation)), MessageTypeDefOf.NegativeEvent);
+					AffectFactionRelation();
+					AffectNearbyTiles();
+				}
+				else if (flag1)
+				{
+					Messages.Message("APM_ToxicPurifier_LevelToAffectRelation".Translate(ToxicityToString(ModExtension.toxicLevelToAffectRelation)), MessageTypeDefOf.NegativeEvent);
+					AffectFactionRelation();
+				}
+				else if (flag2)
                 {
-                    AffectNearbyTiles();
-                    Messages.Message($"toxicity in the atmosphere in local area has reach the critical point of {modExtension.toxicLevelToStartSpreading.ToStringPercent("0.00")} that would affect nearby tiles", MessageTypeDefOf.NegativeEvent);
-                }
-                if (toxicityLevel >= modExtension.toxicLevelToAffectRelation)
-                {
-                    Messages.Message($"toxicity in the atmosphere in local area has reach the critical point of {toxicityLevel.ToStringPercent("0.00")} that would affect the globe, relation with other faction will deteriorate",MessageTypeDefOf.NegativeEvent);
-                    AffectFactionRelation();
-                }
-                toxicDegradation();                
+                    Messages.Message("APM_ToxicPurifier_LevelToStartSpreading".Translate(ToxicityToString(ModExtension.toxicLevelToStartSpreading)), MessageTypeDefOf.NegativeEvent);
+					AffectNearbyTiles();
+				}
+				ToxicDegradation();                
             }
             
         }
@@ -79,10 +113,10 @@ namespace ApexMechanoids
             List<Map> affectedMaps = base.AffectedMaps;
             foreach (var map in affectedMaps)
             {
-                if (Rand.Chance(modExtension.chanceForToxicFallout))
+                if (Rand.Chance(ModExtension.chanceForToxicFallout) && !map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout))
                 {
                     GameCondition gameCondition = GameConditionMaker.MakeCondition(GameConditionDefOf.ToxicFallout);
-                    gameCondition.Duration = 60000;
+                    gameCondition.Duration = ModExtension.toxicFalloutTicksRange.RandomInRange;
                     map.gameConditionManager.RegisterCondition(gameCondition);
                 }
                 var curTile = map.Tile;
@@ -100,11 +134,12 @@ namespace ApexMechanoids
                 {
                     foreach (var tile in neighborTileInRange)
                     {
-                        Find.World.grid[tile].pollution += modExtension.pollutionChangeOnNeighborsTile;
+                        Find.World.grid[tile].pollution += ModExtension.pollutionChangeOnNeighborsTile;
                     }
                 }
             }
         }
+
         public void AffectFactionRelation()
         {
             
@@ -113,7 +148,7 @@ namespace ApexMechanoids
                 if (item == Faction.OfPlayer) continue;
                 if (item.HasGoodwill && !item.def.permanentEnemy)
                 {
-                    Faction.OfPlayer.TryAffectGoodwillWith(item,modExtension.goodWillChangePerDayAboveThreshold);
+                    Faction.OfPlayer.TryAffectGoodwillWith(item, ModExtension.goodWillChangePerDayAboveThreshold, false);
                     //Messages.Message($"faction relation with {item.Name} changed by {modExtension.goodWillChangePerDayAboveThreshold}. cause: {Label}",MessageTypeDefOf.NegativeEvent);
                 }
             }
@@ -121,20 +156,20 @@ namespace ApexMechanoids
         public void ChangeToxicity(float value)
         {
             toxicityLevel += value;
-            if (modExtension.maxValue > 0)
+            if (ModExtension.maxValue > 0)
             {
-                if (toxicityLevel > modExtension.maxValue)
+                if (toxicityLevel > ModExtension.maxValue)
                 {
-                    toxicityLevel = modExtension.maxValue;
+                    toxicityLevel = ModExtension.maxValue;
                 }
             }
         }
 
-        public void toxicDegradation()
+        public void ToxicDegradation()
         {
             if (toxicityLevel > 0f)
             {
-                ChangeToxicity(modExtension.toxicRecoveryPerDay);
+                ChangeToxicity(ModExtension.toxicRecoveryPerDay);
                 if (toxicityLevel < 0f)
                 {
                     toxicityLevel = 0f;
@@ -162,5 +197,7 @@ namespace ApexMechanoids
         public float tileRadius = 10f;
 
         public string toxicityUnit;
-    }
+
+        public IntRange toxicFalloutTicksRange = new IntRange(120000, 300000);
+	}
 }

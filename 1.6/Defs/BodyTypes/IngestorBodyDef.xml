@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- Ingestor: Scavenger/centipede mech that refines organic matter. 3-directional textures.
@@ -155,6 +155,9 @@
 		<solid>true</solid>
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
 	</BodyPartDef>
 
 	<BodyPartDef>

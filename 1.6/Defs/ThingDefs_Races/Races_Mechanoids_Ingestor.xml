@@ -39,12 +39,23 @@
 		<race>
 			<body>APM_Ingestor</body>
 			<renderTree>APM_RenderTree_Ingestor</renderTree>
+			<thinkTreeMain>APM_IngestorMechanoid</thinkTreeMain>
 			<baseHealthScale>4.32</baseHealthScale>
 			<mechWeightClass>UltraHeavy</mechWeightClass>
 			<mechEnabledWorkTypes>
 				<li>APM_IngestorCorpseProcessing</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<APM_IngestorCorpseProcessing>2</APM_IngestorCorpseProcessing>
+			</mechWorkTypePriorities>
 		</race>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_IngestorAbsorbSettings">
+				<stripIconPath>UI/Ingestor/StripMode</stripIconPath>
+				<processModeIconPath>UI/Ingestor/ProcessMode</processModeIconPath>
+				<markIconPath>UI/Ingestor/MarkCorpse</markIconPath>
+			</li>
+		</comps>
 		<butcherProducts>
 			<Steel>45</Steel>
 			<Plasteel>25</Plasteel>

@@ -19,6 +19,7 @@ namespace ApexMechanoids
             var casterPos = this.parent.pawn.Position;
             var pos = Vector3.Lerp(casterPos.ToVector3Shifted(), target.Cell.ToVector3Shifted(), 0.5f).ToIntVec3();
             var thing = GenSpawn.Spawn(Props.thing, pos, parent.pawn.Map, wipeMode: WipeMode.VanishOrMoveAside);
+            thing.SetFaction(parent.pawn.Faction);
             if (target.Pawn?.MentalState is MentalState_Duel duel)
             {
                 duel.attachedThing = thing;

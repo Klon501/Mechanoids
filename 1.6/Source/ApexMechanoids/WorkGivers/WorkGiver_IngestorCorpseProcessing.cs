@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -10,9 +11,42 @@ namespace ApexMechanoids
 
         public override PathEndMode PathEndMode => PathEndMode.Touch;
 
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
+        {
+            if (pawn?.Map == null)
+            {
+                yield break;
+            }
+
+            if (IngestorCorpseProcessingUtility.RequiresMarkedCorpses(pawn))
+            {
+                foreach (Designation designation in pawn.Map.designationManager.SpawnedDesignationsOfDef(ApexDefsOf.APM_IngestorAbsorbCorpse))
+                {
+                    if (designation.target.Thing != null)
+                    {
+                        yield return designation.target.Thing;
+                    }
+                }
+
+                yield break;
+            }
+
+            List<Thing> corpses = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse);
+            for (int i = 0; i < corpses.Count; i++)
+            {
+                yield return corpses[i];
+            }
+        }
+
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
-            return !IngestorCorpseProcessingUtility.CanDoCorpseProcessing(pawn);
+            if (!IngestorCorpseProcessingUtility.CanDoCorpseProcessing(pawn))
+            {
+                return true;
+            }
+
+            return IngestorCorpseProcessingUtility.RequiresMarkedCorpses(pawn)
+                && !pawn.Map.designationManager.AnySpawnedDesignationOfDef(ApexDefsOf.APM_IngestorAbsorbCorpse);
         }
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
@@ -27,11 +61,7 @@ namespace ApexMechanoids
                 return null;
             }
 
-            Ability absorb = IngestorCorpseProcessingUtility.GetAbsorbAbility(pawn);
-            Job job = absorb.GetJob(corpse, corpse);
-            job.expiryInterval = 500;
-            job.checkOverrideOnExpire = true;
-            return job;
+            return IngestorCorpseProcessingUtility.MakeAbsorbCorpseJob(pawn, corpse);
         }
     }
 }

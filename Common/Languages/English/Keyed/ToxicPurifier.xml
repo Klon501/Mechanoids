@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_ToxicPurifier_RecoveryPerDay>Fall per day</APM_ToxicPurifier_RecoveryPerDay>
+  
+  <APM_ToxicPurifier_LevelToAffectRelation>Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect the globe, relations with other faction will deteriorate.</APM_ToxicPurifier_LevelToAffectRelation>
+  <APM_ToxicPurifier_LevelToStartSpreading>Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect nearby tiles.</APM_ToxicPurifier_LevelToStartSpreading>
+  <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>Toxicity in the atmosphere in local area has reach the critical point of {0} which would affect nearby tiles and critical point of {1} which would affect faction relations.</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
+  
+</LanguageData>

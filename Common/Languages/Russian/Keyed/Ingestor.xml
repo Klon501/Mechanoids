@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Ingestor_StripMode_Off_Label>Перерабатывать как есть</APM_Ingestor_StripMode_Off_Label>
+  <APM_Ingestor_StripMode_Off_Desc>Ингестор уничтожает одежду, снаряжение и инвентарь вместе с трупом при переработке.</APM_Ingestor_StripMode_Off_Desc>
+  <APM_Ingestor_StripMode_On_Label>Раздевать перед переработкой</APM_Ingestor_StripMode_On_Label>
+  <APM_Ingestor_StripMode_On_Desc>Ингестор снимает одежду, снаряжение и инвентарь с трупа перед переработкой.</APM_Ingestor_StripMode_On_Desc>
+  <APM_Ingestor_ProcessMode_All_Label>Есть все подходящие трупы</APM_Ingestor_ProcessMode_All_Label>
+  <APM_Ingestor_ProcessMode_All_Desc>Ингестор автоматически перерабатывает любой доступный свежий органический труп.</APM_Ingestor_ProcessMode_All_Desc>
+  <APM_Ingestor_ProcessMode_Marked_Label>Есть отмеченные трупы</APM_Ingestor_ProcessMode_Marked_Label>
+  <APM_Ingestor_ProcessMode_Marked_Desc>Ингестор автоматически перерабатывает только трупы, отмеченные для переработки биомассы.</APM_Ingestor_ProcessMode_Marked_Desc>
+  <APM_Ingestor_MarkCorpses_Label>Отметить для переработки биомассы</APM_Ingestor_MarkCorpses_Label>
+  <APM_Ingestor_MarkCorpses_Desc>Отметить свежие органические трупы для переработки ингестором.</APM_Ingestor_MarkCorpses_Desc>
+  <APM_IngestorAbsorb_MustTargetCorpse>Нужен свежий органический труп.</APM_IngestorAbsorb_MustTargetCorpse>
+  <APM_IngestorAbsorb_InvalidTarget>Нужен свежий органический труп или съедобный материал.</APM_IngestorAbsorb_InvalidTarget>
+  <APM_IngestorAbsorb_InvalidCorpse>Неподходящий труп.</APM_IngestorAbsorb_InvalidCorpse>
+  <APM_IngestorAbsorb_NotOrganic>Цель не является органической биомассой.</APM_IngestorAbsorb_NotOrganic>
+  <APM_IngestorAbsorb_Burning>Нельзя переработать горящий труп.</APM_IngestorAbsorb_Burning>
+  <APM_IngestorAbsorb_NotFresh>Нельзя переработать гнилой или высохший труп.</APM_IngestorAbsorb_NotFresh>
+  <APM_IngestorAbsorb_AlreadyMarked>Уже отмечено для переработки биомассы.</APM_IngestorAbsorb_AlreadyMarked>
+  <APM_IngestorBiomass_LabelSingle>{0} {1} через {2}</APM_IngestorBiomass_LabelSingle>
+  <APM_IngestorBiomass_LabelMultiple>{0} партий, {1} {2}, ближайшая через {3}</APM_IngestorBiomass_LabelMultiple>
+  <APM_IngestorBiomass_TooltipHeader>Ожидаемый выход:</APM_IngestorBiomass_TooltipHeader>
+  <APM_IngestorBiomass_TooltipBatch>{0} {1} через {2}</APM_IngestorBiomass_TooltipBatch>
+  <APM_IngestorBiomass_TooltipMore>...и еще {0}.</APM_IngestorBiomass_TooltipMore>
+  <APM_IngestorBiomass_UnknownOutput>неизвестный выход</APM_IngestorBiomass_UnknownOutput>
+</LanguageData>

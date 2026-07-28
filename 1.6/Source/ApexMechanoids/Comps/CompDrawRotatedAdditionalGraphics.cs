@@ -21,7 +21,12 @@ namespace ApexMechanoids
         {
             foreach (GraphicData graphicData in this.Props.graphics)
             {
-                graphicData.Graphic.Draw(this.parent.DrawPos, this.parent.Rotation, this.parent, rotation + Props.extraRotation);
+                var graphics = graphicData.Graphic;
+                if (Props.usePlayerMechsColor && parent.Faction == Faction.OfPlayer)
+                {
+                    graphics = graphics.GetColoredVersion(graphics.Shader, Find.FactionManager.OfPlayer.AllegianceColor, graphics.ColorTwo);
+                }
+                graphics.Draw(this.parent.DrawPos, this.parent.Rotation, this.parent, rotation + Props.extraRotation);
             }
         }
         public float rotation = 0f;
@@ -38,5 +43,6 @@ namespace ApexMechanoids
             this.compClass = typeof(CompDrawRotatedAdditionalGraphics);
         }
         public float extraRotation = 90f;
+        public bool usePlayerMechsColor = false;
     }
 }
