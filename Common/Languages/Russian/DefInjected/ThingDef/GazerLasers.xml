@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: laser -->
-  <APM_Gazer_Laser.label>laser</APM_Gazer_Laser.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Gazer_Laser.description>PLACEHOLDER</APM_Gazer_Laser.description>
-
-
+  <APM_Gazer_Laser.label>лазер</APM_Gazer_Laser.label>
 
 </LanguageData>
