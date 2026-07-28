@@ -2,16 +2,12 @@
 <LanguageData>
 
   <!-- EN: terminus' sword -->
-  <APM_Weapon_TerminusSword.label>terminus' sword</APM_Weapon_TerminusSword.label>
-  <!-- EN: PLACEHOLDER -->
-  <APM_Weapon_TerminusSword.description>PLACEHOLDER</APM_Weapon_TerminusSword.description>
+  <APM_Weapon_TerminusSword.label>меч Терминуса</APM_Weapon_TerminusSword.label>
   <!-- EN: handle -->
-  <APM_Weapon_TerminusSword.tools.0.label>handle</APM_Weapon_TerminusSword.tools.0.label>
+  <APM_Weapon_TerminusSword.tools.0.label>рукоять</APM_Weapon_TerminusSword.tools.0.label>
   <!-- EN: point -->
-  <APM_Weapon_TerminusSword.tools.1.label>point</APM_Weapon_TerminusSword.tools.1.label>
+  <APM_Weapon_TerminusSword.tools.1.label>остриё</APM_Weapon_TerminusSword.tools.1.label>
   <!-- EN: blade -->
-  <APM_Weapon_TerminusSword.tools.2.label>blade</APM_Weapon_TerminusSword.tools.2.label>
-
-
+  <APM_Weapon_TerminusSword.tools.2.label>клинок</APM_Weapon_TerminusSword.tools.2.label>
 
 </LanguageData>
