@@ -2,10 +2,6 @@
 <LanguageData>
 
   <!-- EN: Smokescreen -->
-  <APM_CelerusSmokescreenBuff.label>Smokescreen</APM_CelerusSmokescreenBuff.label>
-  <!-- EN: WIP. -->
-  <APM_CelerusSmokescreenBuff.description>WIP.</APM_CelerusSmokescreenBuff.description>
-
-
+  <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
 
 </LanguageData>
