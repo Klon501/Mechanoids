@@ -2,42 +2,8 @@
 <LanguageData>
 
   <!-- EN: haze -->
-  <APM_Mech_Haze.label>дымка</APM_Mech_Haze.label>
+  <APM_Mech_Haze.label>завеса</APM_Mech_Haze.label>
   <!-- EN: hazes -->
-  <APM_Mech_Haze.labelPlural>дымки</APM_Mech_Haze.labelPlural>
-  <!-- EN: haze -->
-  <APM_Mech_Haze.lifeStages.0.label>дымка</APM_Mech_Haze.lifeStages.0.label>
-  <!-- EN: haze -->
-  <APM_Mech_Haze.lifeStages.0.labelPlural>дымка</APM_Mech_Haze.lifeStages.0.labelPlural>
-  <!-- EN: male haze -->
-  <APM_Mech_Haze.lifeStages.0.labelMale>самец дымки</APM_Mech_Haze.lifeStages.0.labelMale>
-  <!-- EN: male hazes -->
-  <APM_Mech_Haze.lifeStages.0.labelMalePlural>самцы дымок</APM_Mech_Haze.lifeStages.0.labelMalePlural>
-  <!-- EN: female haze -->
-  <APM_Mech_Haze.lifeStages.0.labelFemale>самка дымки</APM_Mech_Haze.lifeStages.0.labelFemale>
-  <!-- EN: female hazes -->
-  <APM_Mech_Haze.lifeStages.0.labelFemalePlural>самки дымок</APM_Mech_Haze.lifeStages.0.labelFemalePlural>
-  <!-- EN: haze -->
-  <APM_Mech_Haze.lifeStages.1.label>дымка</APM_Mech_Haze.lifeStages.1.label>
-  <!-- EN: haze -->
-  <APM_Mech_Haze.lifeStages.1.labelPlural>дымка</APM_Mech_Haze.lifeStages.1.labelPlural>
-  <!-- EN: male haze -->
-  <APM_Mech_Haze.lifeStages.1.labelMale>самец дымки</APM_Mech_Haze.lifeStages.1.labelMale>
-  <!-- EN: male hazes -->
-  <APM_Mech_Haze.lifeStages.1.labelMalePlural>самцы дымок</APM_Mech_Haze.lifeStages.1.labelMalePlural>
-  <!-- EN: female haze -->
-  <APM_Mech_Haze.lifeStages.1.labelFemale>самка дымки</APM_Mech_Haze.lifeStages.1.labelFemale>
-  <!-- EN: female hazes -->
-  <APM_Mech_Haze.lifeStages.1.labelFemalePlural>самки дымок</APM_Mech_Haze.lifeStages.1.labelFemalePlural>
-  <!-- EN: male haze -->
-  <APM_Mech_Haze.labelMale>самец дымки</APM_Mech_Haze.labelMale>
-  <!-- EN: male hazes -->
-  <APM_Mech_Haze.labelMalePlural>самцы дымок</APM_Mech_Haze.labelMalePlural>
-  <!-- EN: female haze -->
-  <APM_Mech_Haze.labelFemale>самка дымки</APM_Mech_Haze.labelFemale>
-  <!-- EN: female hazes -->
-  <APM_Mech_Haze.labelFemalePlural>самки дымок</APM_Mech_Haze.labelFemalePlural>
-
-
+  <APM_Mech_Haze.labelPlural>завесы</APM_Mech_Haze.labelPlural>
 
 </LanguageData>
