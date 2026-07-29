@@ -2,10 +2,8 @@
 <LanguageData>
 
   <!-- EN: overdrive -->
-  <APM_Hediff_TerminusOverdrive.label>overdrive</APM_Hediff_TerminusOverdrive.label>
+  <APM_Hediff_TerminusOverdrive.label>перегрузка</APM_Hediff_TerminusOverdrive.label>
   <!-- EN: Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression. -->
-  <APM_Hediff_TerminusOverdrive.description>Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression.</APM_Hediff_TerminusOverdrive.description>
-
-
+  <APM_Hediff_TerminusOverdrive.description>Терминус направляет мощный поток энергии на повышение своих боевых характеристик, отбрасывая плащ и сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
 
 </LanguageData>
