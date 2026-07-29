@@ -2,9 +2,9 @@
 <LanguageData>
 
   <!-- EN: DMR conqueror -->
-  <APM_Mech_Conqueror_DMR.label>завоеватель (DMR)</APM_Mech_Conqueror_DMR.label>
+  <APM_Mech_Conqueror_DMR.label>завоеватель (карабин)</APM_Mech_Conqueror_DMR.label>
   <!-- EN: DMR conquerors -->
-  <APM_Mech_Conqueror_DMR.labelPlural>завоеватели (DMR)</APM_Mech_Conqueror_DMR.labelPlural>
+  <APM_Mech_Conqueror_DMR.labelPlural>завоеватели (карабин)</APM_Mech_Conqueror_DMR.labelPlural>
 
   <!-- EN: AR onqueror -->
   <APM_Mech_Conqueror_AR.label>завоеватель (винтовка)</APM_Mech_Conqueror_AR.label>
