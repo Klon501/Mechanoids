@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM.MechamancerPack.MaxSatellites>This pack is already maintaining {0} deployed satellites.</APM.MechamancerPack.MaxSatellites>
+  <APM.MechamancerPack.NoValidSpawnCell>No valid satellite deployment cell found.</APM.MechamancerPack.NoValidSpawnCell>
+
+</LanguageData>

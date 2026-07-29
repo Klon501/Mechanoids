@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Tinker.label>Tinker</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.description>The tinker is a support mechanoid built to repair same-faction buildings and mechanoids. It cannot construct new structures, but it can project a defensive matrix onto allies and blind enemies with a targeted laser.</APM_Mech_Tinker.description>
+  <APM_Mech_Tinker.tools.0.label>left fist</APM_Mech_Tinker.tools.0.label>
+  <APM_Mech_Tinker.tools.1.label>right fist</APM_Mech_Tinker.tools.1.label>
+  <APM_Mech_Tinker.tools.2.label>head</APM_Mech_Tinker.tools.2.label>
+
+</LanguageData>

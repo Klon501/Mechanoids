@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_SirenWarden.labelShort>warden</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>Warden</APM_SirenWarden.pawnLabel>
+  <APM_SirenWarden.gerundLabel>wardening</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.description>Manage, feed, chat with, and recruit prisoners.</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>Handle</APM_SirenWarden.verb>
+
+</LanguageData>

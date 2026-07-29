@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Absorb.label>Recycle Biomass</APM_Absorb.label>
+  <APM_Absorb.description>Grind up a fresh organic corpse or ingestible material, and slowly process it into chemfuel.</APM_Absorb.description>
+
+  <APM_SwitchToPowerPlantMode.label>Power Plant Mode</APM_SwitchToPowerPlantMode.label>
+  <APM_SwitchToPowerPlantMode.description>...</APM_SwitchToPowerPlantMode.description>
+
+  <APM_BlindingLaser.label>Blinding Laser</APM_BlindingLaser.label>
+  <APM_BlindingLaser.description>Fire a laser at a target, sharply reducing sight for a short time.</APM_BlindingLaser.description>
+
+  <APM_DefenceMatrix.label>Defence Matrix</APM_DefenceMatrix.label>
+  <APM_DefenceMatrix.description>Project a personal defense shield onto a same-faction pawn. The shield stops incoming damage and prevents the target from shooting out.</APM_DefenceMatrix.description>
+
+</LanguageData>

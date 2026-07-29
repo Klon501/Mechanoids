@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_FrostivusFoodPreservation.labelShort>preserve</APM_FrostivusFoodPreservation.labelShort>
+  <APM_FrostivusFoodPreservation.pawnLabel>Preserver</APM_FrostivusFoodPreservation.pawnLabel>
+  <APM_FrostivusFoodPreservation.gerundLabel>preserving food</APM_FrostivusFoodPreservation.gerundLabel>
+  <APM_FrostivusFoodPreservation.description>Rescue temperature-spoiling food and unload it to cold storage.</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>Preserve</APM_FrostivusFoodPreservation.verb>
+
+</LanguageData>

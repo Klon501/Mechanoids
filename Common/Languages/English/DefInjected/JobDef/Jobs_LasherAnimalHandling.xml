@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_LasherTame.reportString>taming TargetA.</APM_LasherTame.reportString>
+  <APM_LasherTrain.reportString>training TargetA.</APM_LasherTrain.reportString>
+  <APM_LasherMilk.reportString>milking TargetA.</APM_LasherMilk.reportString>
+  <APM_LasherShear.reportString>shearing TargetA.</APM_LasherShear.reportString>
+  <APM_LasherSlaughter.reportString>slaughtering TargetA.</APM_LasherSlaughter.reportString>
+  <APM_LasherReleaseToWild.reportString>releasing TargetA.</APM_LasherReleaseToWild.reportString>
+
+</LanguageData>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APM_Ravager_AutoArtillery_Label>Auto artillery</APM_Ravager_AutoArtillery_Label>
+	<APM_Ravager_AutoArtillery_Desc>Allow this ravager to automatically choose hostile pawns as artillery targets while under player control. Manual attack orders always fire once at the selected cell.</APM_Ravager_AutoArtillery_Desc>
+
+</LanguageData>

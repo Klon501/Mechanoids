@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_IngestorProcessCorpses.label>process corpses</APM_IngestorProcessCorpses.label>
+  <APM_IngestorProcessCorpses.verb>process</APM_IngestorProcessCorpses.verb>
+  <APM_IngestorProcessCorpses.gerund>processing</APM_IngestorProcessCorpses.gerund>
+
+</LanguageData>

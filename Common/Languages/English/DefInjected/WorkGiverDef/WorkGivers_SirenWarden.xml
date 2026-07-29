@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_SirenReleasePrisoner.label>release prisoners</APM_SirenReleasePrisoner.label>
+  <APM_SirenReleasePrisoner.verb>release</APM_SirenReleasePrisoner.verb>
+  <APM_SirenReleasePrisoner.gerund>releasing</APM_SirenReleasePrisoner.gerund>
+  <APM_SirenTakePrisonerToBed.label>take prisoners to bed</APM_SirenTakePrisonerToBed.label>
+  <APM_SirenTakePrisonerToBed.verb>take to bed</APM_SirenTakePrisonerToBed.verb>
+  <APM_SirenTakePrisonerToBed.gerund>taking to bed</APM_SirenTakePrisonerToBed.gerund>
+  <APM_SirenFeedPrisoner.label>feed prisoners</APM_SirenFeedPrisoner.label>
+  <APM_SirenFeedPrisoner.verb>feed</APM_SirenFeedPrisoner.verb>
+  <APM_SirenFeedPrisoner.gerund>feeding</APM_SirenFeedPrisoner.gerund>
+  <APM_SirenDeliverFoodToPrisoner.label>deliver food to prisoners</APM_SirenDeliverFoodToPrisoner.label>
+  <APM_SirenDeliverFoodToPrisoner.verb>deliver food for</APM_SirenDeliverFoodToPrisoner.verb>
+  <APM_SirenDeliverFoodToPrisoner.gerund>delivering food for</APM_SirenDeliverFoodToPrisoner.gerund>
+  <APM_SirenChatWithPrisoner.label>chat with prisoners</APM_SirenChatWithPrisoner.label>
+  <APM_SirenChatWithPrisoner.verb>chat with</APM_SirenChatWithPrisoner.verb>
+  <APM_SirenChatWithPrisoner.gerund>chatting with</APM_SirenChatWithPrisoner.gerund>
+
+</LanguageData>

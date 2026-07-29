@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Ingestor_StripMode_Enable_Label>Enable stripping</APM_Ingestor_StripMode_Enable_Label>
+  <APM_Ingestor_StripMode_Enable_Desc>Click to strip apparel, equipment and inventory from corpses before recycling them. Current mode: recycle corpses intact; carried items are destroyed with the corpse.</APM_Ingestor_StripMode_Enable_Desc>
+  <APM_Ingestor_StripMode_Disable_Label>Disable stripping</APM_Ingestor_StripMode_Disable_Label>
+  <APM_Ingestor_StripMode_Disable_Desc>Click to recycle corpses intact and destroy apparel, equipment and inventory with the corpse. Current mode: strip carried items before recycling.</APM_Ingestor_StripMode_Disable_Desc>
+  <APM_Ingestor_ProcessMode_All_Label>Recycle all valid corpses</APM_Ingestor_ProcessMode_All_Label>
+  <APM_Ingestor_ProcessMode_All_Desc>Click to let the ingestor recycle any reachable fresh organic corpse. Current mode: only marked corpses are recycled.</APM_Ingestor_ProcessMode_All_Desc>
+  <APM_Ingestor_ProcessMode_Marked_Label>Use marked corpses only</APM_Ingestor_ProcessMode_Marked_Label>
+  <APM_Ingestor_ProcessMode_Marked_Desc>Click to make the ingestor recycle only corpses marked for biomass recycling. Current mode: all reachable fresh organic corpses are recycled.</APM_Ingestor_ProcessMode_Marked_Desc>
+  <APM_Ingestor_MarkCorpses_Label>Mark for biomass recycling</APM_Ingestor_MarkCorpses_Label>
+  <APM_Ingestor_MarkCorpses_Desc>Mark fresh organic corpses for ingestor recycling.</APM_Ingestor_MarkCorpses_Desc>
+  <APM_IngestorAbsorb_MustTargetCorpse>Must target a fresh organic corpse.</APM_IngestorAbsorb_MustTargetCorpse>
+  <APM_IngestorAbsorb_InvalidTarget>Must target a fresh organic corpse or ingestible material.</APM_IngestorAbsorb_InvalidTarget>
+  <APM_IngestorAbsorb_InvalidCorpse>Invalid corpse.</APM_IngestorAbsorb_InvalidCorpse>
+  <APM_IngestorAbsorb_NotOrganic>Target is not organic biomass.</APM_IngestorAbsorb_NotOrganic>
+  <APM_IngestorAbsorb_Burning>Cannot recycle a burning corpse.</APM_IngestorAbsorb_Burning>
+  <APM_IngestorAbsorb_NotFresh>Cannot recycle a rotted or desiccated corpse.</APM_IngestorAbsorb_NotFresh>
+  <APM_IngestorAbsorb_AlreadyMarked>Already marked for biomass recycling.</APM_IngestorAbsorb_AlreadyMarked>
+  <APM_IngestorBiomass_LabelSingle>{0} {1} in {2}</APM_IngestorBiomass_LabelSingle>
+  <APM_IngestorBiomass_LabelMultiple>{0} batches, {1} {2}, next in {3}</APM_IngestorBiomass_LabelMultiple>
+  <APM_IngestorBiomass_TooltipHeader>Pending output:</APM_IngestorBiomass_TooltipHeader>
+  <APM_IngestorBiomass_TooltipBatch>{0} {1} in {2}</APM_IngestorBiomass_TooltipBatch>
+  <APM_IngestorBiomass_TooltipMore>...and {0} more.</APM_IngestorBiomass_TooltipMore>
+  <APM_IngestorBiomass_UnknownOutput>unknown output</APM_IngestorBiomass_UnknownOutput>
+</LanguageData>
