@@ -6,6 +6,8 @@ using Verse.Sound;
 using System.Linq;
 using System.ComponentModel;
 using System.Xml.Linq;
+using VEF.Things;
+using Verse.AI;
 
 
 
@@ -263,8 +265,32 @@ namespace ApexMechanoids
                     {
                         if (!curLocalTargetInfo.Pawn.Dead && curLocalTargetInfo.Pawn.Map == parent.Map)
                         {
-                            PawnUtility.ForceWait(curLocalTargetInfo.Pawn, 5, null, maintainPosture: true, maintainSleep: true);    
+                            PawnUtility.ForceWait(curLocalTargetInfo.Pawn, 5, null, maintainPosture: true, maintainSleep: true);
                             // in tick so that mech can move again if it gets canceled
+                        }
+
+                        if (effecter == null)
+                        {
+                            EffecterDef progressBar = EffecterDefOf.ProgressBar;
+                            effecter = progressBar.Spawn();
+                        }
+                        if (effecter != null)
+                        {
+                            TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
+
+                            effecter.EffectTick(infoMech, TargetInfo.Invalid);
+                        }
+
+                        if(mote == null)
+                        {
+                            mote = ((SubEffecter_ProgressBar)effecter.children[0]).mote;
+                        }
+                        
+                        if (mote != null)
+                        {
+                            mote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
+                            mote.offsetZ = -0.5f;
+                            mote.alwaysShow = true;
                         }
 
                         if (actionTick >= ticksToTakeControl)
@@ -300,8 +326,26 @@ namespace ApexMechanoids
                         ShieldTick();
                     }
                 }
+                else //idle
+                {
+                    ResetEffecter();
+                }
             }
         }
+
+        public void ResetEffecter()
+        {
+            if (effecter != null)
+            {
+                effecter.Cleanup();
+                effecter = null;
+                mote = null;
+            }
+        }
+
+        public Effecter effecter = null;
+
+        public MoteProgressBar mote = null;
 
         public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
@@ -411,6 +455,7 @@ namespace ApexMechanoids
             DestroyMechShield();
             IsBusy = (int)MechCasketAction.idle;
             ResetTarget();
+            ResetEffecter();
         }
         private void ResetTarget()
         {
