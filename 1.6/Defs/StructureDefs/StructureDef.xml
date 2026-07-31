@@ -237,9 +237,6 @@
     <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,PavedTile,PavedTile,PavedTile,PavedTile,PavedTile,PavedTile,PavedTile,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
   </terrainGrid>
-  <spawnAt>
-    <li>100,100</li>
-  </spawnAt>
   <modRequirements>
     <li>ludeon.rimworld.biotech</li>
   </modRequirements>

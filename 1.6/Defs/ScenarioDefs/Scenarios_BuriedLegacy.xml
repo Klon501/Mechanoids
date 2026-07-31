@@ -17,6 +17,11 @@
           <pawnChoiceCount>8</pawnChoiceCount>
         </li>
 
+
+        <li Class="VEF.Planet.ScenPart_ArriveAtEdge">
+                    <def>VFEC_PlayerPawnsArriveMethodEdge</def>
+                    <location>(120, 0, 100)</location>
+                </li>
         <li Class="KCSG.ScenPart_AddStartingStructure">
           <def>VFEC_AddStartingStructure</def>
           <structureLabel>An ancient mechanitor domain</structureLabel>

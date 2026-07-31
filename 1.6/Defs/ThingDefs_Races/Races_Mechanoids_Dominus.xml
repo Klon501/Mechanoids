@@ -69,9 +69,7 @@
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
 				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
-					<li>APM_Mech_Duel</li>
 					<li>APM_PressTheAttack</li>
-					<li>APM_Mech_Duel_Boss</li>
 				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
 			</li>
 		</modExtensions>

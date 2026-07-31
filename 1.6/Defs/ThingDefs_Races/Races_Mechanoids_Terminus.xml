@@ -102,11 +102,8 @@
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
 				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
-					<li>SeveringEdge</li>
-					<li>SeveringEdge_Boss</li>
 					<li>APM_TerminusOverdrive</li>
 					<li>APM_TerminusOverdrive_Boss</li>
-					<li>APM_HookPawn</li>
 				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
 			</li>
 		</modExtensions>

@@ -64,13 +64,6 @@
 			<Steel>30</Steel>
 			<Plasteel>20</Plasteel>
 		</butcherProducts>
-		<modExtensions>
-			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
-				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
-					<li>APM_Bladehopp</li>
-				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">

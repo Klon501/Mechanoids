@@ -98,11 +98,6 @@
 				<!-- Extra mech energy drained per shield HP restored during repair (x MechEnergyLossPerHP) -->
 				<repairEnergyCostMultiplier>3</repairEnergyCostMultiplier>
 			</li>
-			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
-				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
-					<li>APM_ShieldCharge</li>
-				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
-			</li>
 		</modExtensions>
 		<butcherProducts>
 			<Steel>40</Steel>
