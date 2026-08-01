@@ -103,7 +103,7 @@
 			<li>APM_WeaponPulseShotgun</li>
 		</weaponTags>
 		<abilities>
-			<li>LongjumpMech</li>
+			<li>APM_PulseLongjump</li>
 			<li>APM_PulseWave</li>
 		</abilities>
 	</PawnKindDef>
