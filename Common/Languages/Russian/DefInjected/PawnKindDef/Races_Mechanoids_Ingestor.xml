@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: ingestor -->
+  <APM_Mech_Ingestor.label>поглотитель</APM_Mech_Ingestor.label>
+  <!-- EN: ingestors -->
+  <APM_Mech_Ingestor.labelPlural>поглотители</APM_Mech_Ingestor.labelPlural>
+
+</LanguageData>

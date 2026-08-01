@@ -39,7 +39,8 @@
   <spawnPartOfFaction>false</spawnPartOfFaction>
   <faction>Ancients</faction>
   <numberToSpawn>1</numberToSpawn>
-  <!--<spawnDead>true</spawnDead>-->
+  <!-- Corpses are made by APM_SpawnScenarioCorpses, not by KCSG's spawnDead. KCSG kills the
+       pawn before it is ever spawned, which skips normal corpse placement. -->
   <spawnRotten>true</spawnRotten>
   <spawnFilthAround>true</spawnFilthAround>
 </KCSG.SymbolDef>
@@ -50,7 +51,8 @@
   <spawnPartOfFaction>false</spawnPartOfFaction>
   <faction>OutlanderRough</faction>
   <numberToSpawn>1</numberToSpawn>
-  <!--<spawnDead>true</spawnDead>-->
+  <!-- Corpses are made by APM_SpawnScenarioCorpses, not by KCSG's spawnDead. KCSG kills the
+       pawn before it is ever spawned, which skips normal corpse placement. -->
   <spawnRotten>true</spawnRotten>
   <spawnFilthAround>true</spawnFilthAround>
 </KCSG.SymbolDef>

@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<APM_Ravager_Artillery.label>артиллерия опустошителя</APM_Ravager_Artillery.label>
-  <APM_Ravager_Artillery.description>ЗАГОЛОВОК</APM_Ravager_Artillery.description>
-  <APM_Ravager_Artillery.verbs.0.label>запуск осколочной гранаты</APM_Ravager_Artillery.verbs.0.label>
+  <!-- EN: ravager artillery -->
+  <APM_Ravager_Artillery.label>артиллерия Разорителя</APM_Ravager_Artillery.label>
+  <!-- EN: launch frag grenade -->
+  <APM_Ravager_Artillery.verbs.0.label>выстрелить гранатой</APM_Ravager_Artillery.verbs.0.label>
 
+  <!-- EN: starfall carrier -->
+  <APM_StarfallCarrier.label>заряд «Звездопада»</APM_StarfallCarrier.label>
+  <!-- EN: starfall split projectile -->
+  <APM_StarfallSplitProjectile.label>осколок «Звездопада»</APM_StarfallSplitProjectile.label>
+  <!-- EN: artillery projectile -->
   <APM_ArtilleryProjectile.label>артиллерийский снаряд</APM_ArtilleryProjectile.label>
-
 
 </LanguageData>

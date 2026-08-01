@@ -1,16 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Gazer.label>наблюдатель</APM_Gazer.label>
+  <!-- EN: gazer -->
+  <APM_Gazer.label>соглядатай</APM_Gazer.label>
+  <!-- EN: left cooling system -->
   <APM_Gazer.corePart.parts.0.parts.1.customLabel>левая система охлаждения</APM_Gazer.corePart.parts.0.parts.1.customLabel>
+  <!-- EN: right cooling system -->
   <APM_Gazer.corePart.parts.0.parts.2.customLabel>правая система охлаждения</APM_Gazer.corePart.parts.0.parts.2.customLabel>
-  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусировщик лазера</APM_Gazer.corePart.parts.0.parts.3.customLabel>
-  <APM_Gazer.corePart.parts.0.parts.4.customLabel>левый акустический сенсор</APM_Gazer.corePart.parts.0.parts.4.customLabel>
-  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правый акустический сенсор</APM_Gazer.corePart.parts.0.parts.5.customLabel>
-  <APM_Gazer.corePart.parts.3.customLabel>передняя левая нога</APM_Gazer.corePart.parts.3.customLabel>
-  <APM_Gazer.corePart.parts.3.parts.0.customLabel>передняя левая лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
-  <APM_Gazer.corePart.parts.4.customLabel>передняя правая нога</APM_Gazer.corePart.parts.4.customLabel>
-  <APM_Gazer.corePart.parts.4.parts.0.customLabel>передняя правая лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
-
+  <!-- EN: laser focus -->
+  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусирующая линза</APM_Gazer.corePart.parts.0.parts.3.customLabel>
+  <!-- EN: left hearing sensor -->
+  <APM_Gazer.corePart.parts.0.parts.4.customLabel>левый звуковой датчик</APM_Gazer.corePart.parts.0.parts.4.customLabel>
+  <!-- EN: right hearing sensor -->
+  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правый звуковой датчик</APM_Gazer.corePart.parts.0.parts.5.customLabel>
+  <!-- EN: front left leg -->
+  <APM_Gazer.corePart.parts.3.customLabel>левая передняя нога</APM_Gazer.corePart.parts.3.customLabel>
+  <!-- EN: front left paw -->
+  <APM_Gazer.corePart.parts.3.parts.0.customLabel>левая передняя лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: front right leg -->
+  <APM_Gazer.corePart.parts.4.customLabel>правая передняя нога</APM_Gazer.corePart.parts.4.customLabel>
+  <!-- EN: front left paw -->
+  <APM_Gazer.corePart.parts.4.parts.0.customLabel>правая передняя лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
 
 </LanguageData>

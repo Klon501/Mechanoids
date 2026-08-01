@@ -1,16 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Ravager.label>опустошитель</APM_Ravager.label>
-  <APM_Ravager.corePart.parts.0.parts.0.customLabel>основной искусственный мозг</APM_Ravager.corePart.parts.0.parts.0.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.1.customLabel>вторичный искусственный мозг</APM_Ravager.corePart.parts.0.parts.1.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.2.customLabel>центральный оптический сенсор</APM_Ravager.corePart.parts.0.parts.2.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.3.customLabel>левый сенсорный массив</APM_Ravager.corePart.parts.0.parts.3.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.4.customLabel>правый сенсорный массив</APM_Ravager.corePart.parts.0.parts.4.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.5.customLabel>левый акустический сенсор</APM_Ravager.corePart.parts.0.parts.5.customLabel>
-  <APM_Ravager.corePart.parts.0.parts.6.customLabel>правый акустический сенсор</APM_Ravager.corePart.parts.0.parts.6.customLabel>
-  <APM_Ravager.corePart.parts.1.customLabel>левый жидкостный препроцессор</APM_Ravager.corePart.parts.1.customLabel>
-  <APM_Ravager.corePart.parts.2.customLabel>правый жидкостный препроцессор</APM_Ravager.corePart.parts.2.customLabel>
-
+  <!-- EN: ravager -->
+  <APM_Ravager.label>разоритель</APM_Ravager.label>
+  <!-- EN: left sight sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right sight sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left hearing sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right hearing sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: front left leg -->
+  <APM_Ravager.corePart.parts.1.customLabel>левая передняя нога</APM_Ravager.corePart.parts.1.customLabel>
+  <!-- EN: front left foot -->
+  <APM_Ravager.corePart.parts.1.parts.0.customLabel>левая передняя ступня</APM_Ravager.corePart.parts.1.parts.0.customLabel>
+  <!-- EN: front right leg -->
+  <APM_Ravager.corePart.parts.2.customLabel>правая передняя нога</APM_Ravager.corePart.parts.2.customLabel>
+  <!-- EN: front right foot -->
+  <APM_Ravager.corePart.parts.2.parts.0.customLabel>правая передняя ступня</APM_Ravager.corePart.parts.2.parts.0.customLabel>
+  <!-- EN: rear left leg -->
+  <APM_Ravager.corePart.parts.3.customLabel>левая задняя нога</APM_Ravager.corePart.parts.3.customLabel>
+  <!-- EN: rear left foot -->
+  <APM_Ravager.corePart.parts.3.parts.0.customLabel>левая задняя ступня</APM_Ravager.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: rear right leg -->
+  <APM_Ravager.corePart.parts.4.customLabel>правая задняя нога</APM_Ravager.corePart.parts.4.customLabel>
+  <!-- EN: rear right foot -->
+  <APM_Ravager.corePart.parts.4.parts.0.customLabel>правая задняя ступня</APM_Ravager.corePart.parts.4.parts.0.customLabel>
 
 </LanguageData>

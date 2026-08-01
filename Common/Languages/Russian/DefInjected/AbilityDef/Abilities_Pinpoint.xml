@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: combat command -->
+  <APM_PinpointCombatCommand.label>боевое командование</APM_PinpointCombatCommand.label>
+  <!-- EN: Pinpoint projects a tactical targeting aura that improves the ranged accuracy of nearby allies. -->
+  <APM_PinpointCombatCommand.description>Установить метку, которая создаст вокруг себя зону тактического наведения, повышающую точность стрельбы союзников поблизости.</APM_PinpointCombatCommand.description>
+
+</LanguageData>

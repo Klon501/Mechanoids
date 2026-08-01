@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: blinded by laser -->
+  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
+  <!-- EN: vastly reduced sight capacity due to been blinded by laser. -->
+  <APM_LaserBlind.description>Способность видеть сильно снижена из-за ослепления лазерным лучом.</APM_LaserBlind.description>
+
+</LanguageData>

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Mech_Frostivus.label>фростивус</APM_Mech_Frostivus.label>
-  <APM_Mech_Frostivus.description>Мобильная криогенная камера, сохраняющая уязвимую еду и запечатывающая человекоподобных пешек или тела в анабиозе до выпуска.</APM_Mech_Frostivus.description>
+  <!-- EN: Frostivus -->
+  <APM_Mech_Frostivus.label>Морозус</APM_Mech_Frostivus.label>
+  <!-- EN: A very unique mechanoid, the frostivus is a mobile cryogenic chamber. It consumes organic material such as foodstuffs to store, freeze and dispense at request. It can be commanded to seal a targeted pawn inside of itself to store for the mechhive to later utilize for its twisted machinations. Not entirely for utility, the frostivus can also extend its chilling properties to its extremities, inflicting hypothermia over repeated attacks. -->
+  <APM_Mech_Frostivus.description>Весьма необычный механоид, Морозус представляет собой мобильную криогенную камеру. Он поглощает органические материалы, например, продукты питания, чтобы хранить, замораживать и выдавать их по запросу. Ему можно приказать запечатать внутри себя выбранного персонажа, чтобы мехрой впоследствии использовал его в своих извращённых целях. Но не Морозус годится не только в качестве инструмента: он способен распространять свои охлаждающие свойства на конечности, вызывая гипотермию при повторяющихся атаках.</APM_Mech_Frostivus.description>
+  <!-- EN: front left leg -->
+  <APM_Mech_Frostivus.tools.0.label>левая передняя нога</APM_Mech_Frostivus.tools.0.label>
+  <!-- EN: front right leg -->
+  <APM_Mech_Frostivus.tools.1.label>правая передняя нога</APM_Mech_Frostivus.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Frostivus.tools.2.label>голова</APM_Mech_Frostivus.tools.2.label>
 
 </LanguageData>

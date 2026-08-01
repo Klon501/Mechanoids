@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: toxicity level -->
+  <APM_Toxicity.label>уровень загрязнения</APM_Toxicity.label>
+  <!-- EN: toxic level in local atmosphere. -->
+  <APM_Toxicity.description>Уровень загрязнения воздуха на этой карте.</APM_Toxicity.description>
+
+</LanguageData>

@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Hediff_TerminusOverdrive.label>Овердрайв</APM_Hediff_TerminusOverdrive.label>
-  <APM_Hediff_TerminusOverdrive.description>Терминус перевёл часть систем в режим форсирования. На это время он двигается и сражается агрессивнее, а плащ остаётся сброшенным до завершения эффекта.</APM_Hediff_TerminusOverdrive.description>
+  <!-- EN: overdrive -->
+  <APM_Hediff_TerminusOverdrive.label>перегрузка</APM_Hediff_TerminusOverdrive.label>
+  <!-- EN: Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression. -->
+  <APM_Hediff_TerminusOverdrive.description>Терминус направляет мощный поток энергии на повышение своих боевых характеристик, отбрасывая плащ и сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
 
 </LanguageData>

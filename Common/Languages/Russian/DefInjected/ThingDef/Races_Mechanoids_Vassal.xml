@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Mech_Vassal.label>Вассал</APM_Mech_Vassal.label>
-  <APM_Mech_Vassal.description>Разум мехулья не является яростной бездной, ненавидящей органическую жизнь — он жесток и расчётлив. Он признаёт необходимость координации своих сил, и в этом заключается предназначение вассала. Он увеличивает скорость союзников вокруг себя. Для тех, кому удалось вырастить собственного вассала вне контроля улья, он также взаимодействует с местными системами связи, повышая настроение союзников и снижая порог психических срывов на 25%. Кроме того, мехамастеры могут расширять свой радиус командования вокруг этого меха.</APM_Mech_Vassal.description>
-  <APM_Mech_Vassal.tools.0.label>левая кисть</APM_Mech_Vassal.tools.0.label>
-  <APM_Mech_Vassal.tools.1.label>правая кисть</APM_Mech_Vassal.tools.1.label>
+  <!-- EN: Vassal -->
+  <APM_Mech_Vassal.label>Вассал</APM_Mech_Vassal.label>
+  <!-- EN: The mechhive’s mind isn’t a rage filled abyss towards organic life, it is cruel and calculating. It recognizes the need for coordination within its forces and that is where the vassal’s purpose lies. It gives allies around it a boost to their speed. For those who have managed to gestate their own vassal outside the hive’s grasp, it also interfaces with local comms systems, giving allies a mood boost and a decreased mental break threshold by 25%. Additionally, mechanitors can extend their command range in a radius around this mech. -->
+  <APM_Mech_Vassal.description>Разум роя механоидов не является бушующей бездной ненависти к любой органической жизни. Это нечто коварное и расчётливое. Рой осознаёт необходимость координации внутри своих сил, и именно в этом заключается предназначение Вассала. Он даёт союзникам поблизости прирост к скорости. А для тех, кто сумел вырастить собственного Вассала вне власти мехроя, он ещё способен взаимодействовать с местными системами связи, поднимая настроение союзников и снижая порог нервного срыва на 25%. Кроме того, если этот механоид находится под контролем механитора, тот может расширить свой командный радиус на зону вокруг Вассала.</APM_Mech_Vassal.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Vassal.tools.0.label>левый кулак</APM_Mech_Vassal.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Vassal.tools.1.label>правый кулак</APM_Mech_Vassal.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Vassal.tools.2.label>голова</APM_Mech_Vassal.tools.2.label>
-
 
 </LanguageData>

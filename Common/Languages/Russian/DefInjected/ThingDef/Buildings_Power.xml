@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Building_PowerPlant.label>электростанция</Building_PowerPlant.label>
-  <Building_PowerPlant.description>ЗАГОЛОВОК</Building_PowerPlant.description>
+  <!-- EN: Dynamo powered generator -->
+  <APM_DynamoPoweredGenerator.label>динамо-генератор</APM_DynamoPoweredGenerator.label>
+  <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <APM_DynamoPoweredGenerator.description>Производит энергию, потребляя химическое топливо. Необходимо заправлять вручную.</APM_DynamoPoweredGenerator.description>
 
-  <APM_DynamoPoweredGenerator.label>Генератор на динамо</APM_DynamoPoweredGenerator.label>
-  <APM_DynamoPoweredGenerator.description>Производит энергию, потребляя химическое топливо. Требует периодической дозаправки вручную.</APM_DynamoPoweredGenerator.description>
-
+  <!-- EN: Gazer Emplacement -->
+  <APM_GazerBeam.label>огневая позиция Соглядатая</APM_GazerBeam.label>
+  <!-- EN: The grazer emplacement is mainly composed of the primary ocular beam emitter of a Gazer mechanoid ripped off and attached to a reinforced metal base. While
+  extremely inefficient, it can emit a massive beam of energy in a single direction, destroying foe and fortification alike in its path. It is not capable of moving in
+  any direction. -->
+  <APM_GazerBeam.description>Огневая позиция Соглядатая состоит из глазной лазерной установки, вырванной из механоида-Соглядатая и закреплённой на усиленном металлическом основании. Несмотря на крайнюю неэффективность, она способна испускать в одном направлении мощный луч энергии, уничтожающий на своём пути и врагов, и укрепления. Передвигаться она не способна.</APM_GazerBeam.description>
 
 </LanguageData>

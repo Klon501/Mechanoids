@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Hediff_UltimateSacrifice.label>Великая жертва</APM_Hediff_UltimateSacrifice.label>
-  <APM_Hediff_UltimateSacrifice.description>Абсолютная жертва — один завоеватель может пожертвовать собой, чтобы дать мощный бонус всем союзным завоевателям в радиусе.</APM_Hediff_UltimateSacrifice.description>
-
+  <!-- EN: ultimate sacrifice -->
+  <APM_Hediff_UltimateSacrifice.label>высшая жертва</APM_Hediff_UltimateSacrifice.label>
+  <!-- EN: Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius. -->
+  <APM_Hediff_UltimateSacrifice.description>Один из Завоевателей может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
 
 </LanguageData>

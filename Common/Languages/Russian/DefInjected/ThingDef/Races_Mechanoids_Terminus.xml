@@ -1,10 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Terminus -->
   <APM_Mech_Terminus.label>Терминус</APM_Mech_Terminus.label>
-  <APM_Mech_Terminus.description>Три мощных типа механоидов были созданы разумом Архотека в попытке создать центрального командующего всеми силами механоидов. Под влиянием региона Старой Земли в Европе в средние века, Терминус рассекает волны врагов, и даже расстояние не может смягчить его ярость. Его оружие способно пронзать большую область перед собой. Терминус также может фокусировать свое психическое воздействие внутрь, увеличивая свой урон и сопротивление ошеломлению. Для врагов, вырвавшихся из его хватки, он также оснащен крюком-кошкой, чтобы притягивать врагов на расстоянии и добивать их. Кроме того, механизаторы могут расширять радиус своих команд вокруг этого меха, если он находится под их контролем.</APM_Mech_Terminus.description>
-  <APM_Mech_Terminus.tools.0.label>левая кисть</APM_Mech_Terminus.tools.0.label>
-  <APM_Mech_Terminus.tools.1.label>правая кисть</APM_Mech_Terminus.tools.1.label>
+  <!-- EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control. -->
+  <APM_Mech_Terminus.description>Разум Архотека создал три могущественных модели механоидов в попытках создать универсального командира для всех механоидных сил. Терминус был вдохновлён Европой Старой Земли. Этот механоид прорубается сквозь волны врагов, и даже расстояние не способно смягчить его гнев. Его оружие способно широким взмахом накрыть большую область перед собой. Терминус также может направить собственное психическое воздействие внутрь себя, усиливая наносимый урон и сопротивление сбиванию с ног. Для тех врагов, что пытаются ускользнуть от него, Терминус оснащён крюком-кошкой, притягивающим противников издалека, чтобы прикончить их. Кроме того, если этот механоид находится под контролем механитора, тот может расширить свой командный радиус на зону вокруг Терминуса.</APM_Mech_Terminus.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Terminus.tools.0.label>левый кулак</APM_Mech_Terminus.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Terminus.tools.1.label>правый кулак</APM_Mech_Terminus.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+
+  <!-- EN: severing edge -->
+  <SeveringEdge.label>рассекающее лезвие</SeveringEdge.label>
+
+
 
 </LanguageData>

@@ -1,8 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM_Weapon_TerminusExoblade.label>меч терминуса</APM_Weapon_TerminusExoblade.label>
-  <APM_Weapon_TerminusExoblade.description>ЗАГОЛОВОК</APM_Weapon_TerminusExoblade.description>
-  <APM_Weapon_TerminusExoblade.tools.0.label>рукоять</APM_Weapon_TerminusExoblade.tools.0.label>
-  <APM_Weapon_TerminusExoblade.tools.1.label>остриё</APM_Weapon_TerminusExoblade.tools.1.label>
-  <APM_Weapon_TerminusExoblade.tools.2.label>клинок</APM_Weapon_TerminusExoblade.tools.2.label>
+
+  <!-- EN: terminus' sword -->
+  <APM_Weapon_TerminusSword.label>меч Терминуса</APM_Weapon_TerminusSword.label>
+  <!-- EN: handle -->
+  <APM_Weapon_TerminusSword.tools.0.label>рукоять</APM_Weapon_TerminusSword.tools.0.label>
+  <!-- EN: point -->
+  <APM_Weapon_TerminusSword.tools.1.label>остриё</APM_Weapon_TerminusSword.tools.1.label>
+  <!-- EN: blade -->
+  <APM_Weapon_TerminusSword.tools.2.label>клинок</APM_Weapon_TerminusSword.tools.2.label>
+
 </LanguageData>

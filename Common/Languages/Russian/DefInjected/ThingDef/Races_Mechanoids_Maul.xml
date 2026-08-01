@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Maul -->
+  <APM_Mech_Maul.label>Крушитель</APM_Mech_Maul.label>
+  <!-- EN: left fist -->
+  <APM_Mech_Maul.tools.0.label>левый кулак</APM_Mech_Maul.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Maul.tools.1.label>правый кулак</APM_Mech_Maul.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Maul.tools.2.label>голова</APM_Mech_Maul.tools.2.label>
+
+</LanguageData>

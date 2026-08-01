@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!--<ScenarioDef ParentName="ScenarioBase">
+  <ScenarioDef ParentName="ScenarioBase">
     <defName>APM_BuriedLegacy</defName>
     <label>Buried Legacy WIP</label>
     <description>Years of wandering through wastes and abandoned ruins have left behind only scars and a belief in legends. But the legends turned out to be true. Following the faint signal of an ancient transponder, you have discovered the lost complex of an ancient mechanoid. Inside, locked within his command casket, lies the skeleton of the previous owner, killed centuries ago by his own foolishness. All around is silence, broken only by the hum of generators and the footsteps of mechanoids wandering aimlessly across the territory. The hive did not recall them - their final directive remained unfinished. This entire base and the remnants of a bygone army now belong to you. All that is left is to claim the throne and accept your destiny.</description>
@@ -17,7 +17,6 @@
           <pawnChoiceCount>8</pawnChoiceCount>
         </li>
 
-
         <li Class="VEF.Planet.ScenPart_ArriveAtEdge">
                     <def>VFEC_PlayerPawnsArriveMethodEdge</def>
                     <location>(120, 0, 100)</location>
@@ -30,10 +29,19 @@
             <li>APM_MechanitorDomain1</li>
           </chooseFrom>
         </li>
-        <li Class="ScenPart_PlayerPawnsArriveMethod">
-					<def>PlayerPawnsArriveMethod</def>
-					<method>Standing</method>
-				</li>
+        <li Class="ApexMechanoids.ScenPart_SpawnScenarioCorpses">
+          <def>APM_SpawnScenarioCorpses</def>
+          <targets>
+            <li>
+              <pawnKind>APM_Mechanitor_Ancient</pawnKind>
+              <rotStage>Dessicated</rotStage>
+            </li>
+            <li>
+              <pawnKind>Slave</pawnKind>
+              <rotStage>Dessicated</rotStage>
+            </li>
+          </targets>
+        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
@@ -53,10 +61,10 @@
           <def>GameStartDialog</def>
           <text>Years of searching led you to the buried domain of a long-dead mechanitor. Guided by a faint signal, you step into a silent base where a skeleton rots inside a locked command casket, undone by his own mistakes. The hive-mind never recalled the garrison, leaving mindless mechanoids patrolling the empty halls under an unfinished directive. The base, the machinery, and the dormant army are now yours. All that remains is to take the throne.</text>
           <closeSound>GameStartSting</closeSound>
-        </li> -->
+        </li>
         
         <!-- Starting Research -->
-        <!--<li Class="ScenPart_StartingResearch">
+        <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>MicroelectronicsBasics</project>
         </li>
@@ -67,10 +75,10 @@
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>Batteries</project>
-        </li> -->
+        </li>
 
         <!-- Starting mechs -->
-        <!--<li Class="ScenPart_StartingMech">
+       <li Class="ScenPart_StartingMech">
           <def>StartingMech</def>
           <mechKind>Mech_Lifter</mechKind>
           <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
@@ -87,7 +95,7 @@
         </li>
       </parts>
     </scenario>
-  </ScenarioDef> -->
+  </ScenarioDef>
 
   <FactionDef ParentName="PlayerFactionBase">
     <defName>APM_DomainPlayerFaction</defName>
