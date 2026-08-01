@@ -22,15 +22,53 @@ namespace ApexMechanoids
             this.FailOnDespawnedOrNull(PrisonerInd);
             this.FailOnMentalState(PrisonerInd);
             this.FailOnNotAwake(PrisonerInd);
-            this.FailOnCannotTouch(PrisonerInd, PathEndMode.Touch);
             this.FailOn(() => !SirenWardenUtility.CanSirenWork(pawn));
             this.FailOn(() => !SirenWardenUtility.CanContinueChatWithPrisoner(pawn, Prisoner));
+            this.FailOn(() => !SirenWardenUtility.HasReachableInteractablePosition(pawn, Prisoner));
 
-            yield return Toils_Goto.GotoThing(PrisonerInd, PathEndMode.Touch);
+            yield return GotoPrisoner();
+            yield return WaitToBeAbleToSing();
+            yield return Toils_Interpersonal.GotoInteractablePosition(PrisonerInd);
             yield return SingVerse();
-            yield return Toils_Goto.GotoThing(PrisonerInd, PathEndMode.Touch);
+            yield return GotoPrisoner();
+            yield return WaitToBeAbleToSing();
+            yield return Toils_Interpersonal.GotoInteractablePosition(PrisonerInd);
             yield return SingVerse();
             yield return ResolveRecruitment();
+        }
+
+        private Toil GotoPrisoner()
+        {
+            Pawn prisoner = Prisoner;
+            PrisonerInteractionModeDef mode = prisoner?.guest?.ExclusiveInteractionMode ?? PrisonerInteractionModeDefOf.AttemptRecruit;
+            return Toils_Interpersonal.GotoPrisoner(pawn, prisoner, mode);
+        }
+
+        private Toil WaitToBeAbleToSing()
+        {
+            Toil toil = ToilMaker.MakeToil("SirenWaitToBeAbleToSing");
+            toil.initAction = delegate
+            {
+                if (CanStartSirenVerse(toil.actor))
+                {
+                    toil.actor.jobs.curDriver.ReadyForNextToil();
+                }
+            };
+            toil.tickIntervalAction = delegate
+            {
+                if (CanStartSirenVerse(toil.actor))
+                {
+                    toil.actor.jobs.curDriver.ReadyForNextToil();
+                }
+            };
+            toil.defaultCompleteMode = ToilCompleteMode.Never;
+            toil.socialMode = RandomSocialMode.Off;
+            return toil;
+        }
+
+        private static bool CanStartSirenVerse(Pawn siren)
+        {
+            return siren?.interactions == null || !siren.interactions.InteractedTooRecentlyToInteract();
         }
 
         private Toil SingVerse()
@@ -57,8 +95,7 @@ namespace ApexMechanoids
             {
                 SirenWardenUtility.DoRecruitInteraction(toil.actor, Prisoner);
             };
-            toil.defaultCompleteMode = ToilCompleteMode.Delay;
-            toil.defaultDuration = VerseDuration;
+            toil.defaultCompleteMode = ToilCompleteMode.Instant;
             toil.socialMode = RandomSocialMode.Off;
             return toil;
         }
