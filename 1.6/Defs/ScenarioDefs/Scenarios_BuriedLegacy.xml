@@ -42,6 +42,9 @@
             </li>
           </targets>
         </li>
+        <li Class="ApexMechanoids.ScenPart_CameraOnPlayerStart">
+          <def>APM_CameraOnPlayerStart</def>
+        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
