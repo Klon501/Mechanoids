@@ -28,8 +28,10 @@ namespace ApexMechanoids
         private int totalHpToHeal;
         private int hpHealedSoFar;
         private float hpHealedFraction;
+        private int inactiveRepairTicks;
         private const int QueuedRepairGraceTicks = 120;
         private const int QueuedRepairTimeoutTicks = 15000;
+        private const int InactiveRepairAutoEjectTicks = 600;
         private static readonly int[] IntervalOptions = new int[] { 1500, 2500, 5000, 10000 };
         private static readonly Texture2D CancelIcon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel");
         public static readonly CachedTexture InsertPawnIcon = new CachedTexture("UI/Gizmos/APM_Repairstation_InsertMech");
@@ -131,6 +133,7 @@ namespace ApexMechanoids
             {
                 if (PowerOn && !this.IsBrokenDown())
                 {
+                    inactiveRepairTicks = 0;
                     DoRepairTick(containedMech);
                     armsAnim?.Update(true);
                     platformAnim?.Update(true);
@@ -157,10 +160,18 @@ namespace ApexMechanoids
                         progressBar.Cleanup();
                         progressBar = null;
                     }
+                    inactiveRepairTicks++;
+                    if (inactiveRepairTicks >= InactiveRepairAutoEjectTicks)
+                    {
+                        Pawn ejectedMech = containedMech;
+                        EjectContents();
+                        Messages.Message("APM_RepairStation_InactiveEjected".Translate(ejectedMech.LabelShort), ejectedMech, MessageTypeDefOf.NeutralEvent);
+                    }
                 }
             }
             else
             {
+                inactiveRepairTicks = 0;
                 armsAnim?.Update(false);
                 platformAnim?.Update(false);
                 if (mechRepairEffecter != null)
@@ -534,6 +545,7 @@ namespace ApexMechanoids
             totalHpToHeal = 0;
             hpHealedSoFar = 0;
             hpHealedFraction = 0f;
+            inactiveRepairTicks = 0;
             SoundDefOf.Building_Complete.PlayOneShot(SoundInfo.InMap(this));
         }
 
@@ -678,6 +690,7 @@ namespace ApexMechanoids
             Scribe_Values.Look<int>(ref totalHpToHeal, "totalHpToHeal", 0);
             Scribe_Values.Look<int>(ref hpHealedSoFar, "hpHealedSoFar", 0);
             Scribe_Values.Look(ref hpHealedFraction, "hpHealedFraction", 0f);
+            Scribe_Values.Look(ref inactiveRepairTicks, "inactiveRepairTicks", 0);
         }
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
@@ -694,6 +707,7 @@ namespace ApexMechanoids
             }
             selectedPawnAutoRepair = false;
             selectedPawnClaimTick = -1;
+            inactiveRepairTicks = 0;
             base.DeSpawn(mode);
         }
 
