@@ -112,9 +112,9 @@
 			<targetParams>
 				<canTargetSelf>False</canTargetSelf>
 				<canTargetPawns>False</canTargetPawns>
-				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetBuildings>True</canTargetBuildings>
 				<canTargetAnimals>False</canTargetAnimals>
-				<canTargetItems>False</canTargetItems>
+				<canTargetItems>True</canTargetItems>
 				<canTargetLocations>True</canTargetLocations>
 				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
 			</targetParams>
