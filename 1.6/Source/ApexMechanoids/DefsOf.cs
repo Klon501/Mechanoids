@@ -43,6 +43,9 @@ namespace ApexMechanoids
         public static StatDef APM_CasketBandwidth;
         public static ThingDef APM_MechCommandCasket;
         public static HediffDef APM_MechCommandCasketBoost;
+        public static HediffDef APM_Hediff_JavelinMissileLock;
+        public static ThingDef APM_Gun_JavelinRocketLauncher;
+        public static ThingDef APM_Proj_JavelinMissile;
 
         public static HediffDef RemoteRepairerImplant;  //from Biotech
         public static HediffDef RemoteShielderImplant;  //from Biotech

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Gun_JavelinRocketLauncher</defName>
+		<label>javelin rocket launcher</label>
+		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs every hull it opens, and each rocket that finds the same target again is fused to bite deeper than the last.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/DynamoEMPImpactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2200</MarketValue>
+			<Mass>8.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>APM_WeaponJavelinRocketLauncher</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>APM_Proj_JavelinMissile</defaultProjectile>
+				<warmupTime>1.9</warmupTime>
+				<range>28.9</range>
+				<!-- The curved flight already makes close targets unhittable; this floor stops the
+				     mech burning its cooldown on shots that physically cannot connect. It is set from
+				     the measured dead zone, which peaks at 9.9 tiles across the reachable firing cone. -->
+				<minRange>10</minRange>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_Proj_JavelinMissile</defName>
+		<label>javelin missile</label>
+		<thingClass>ApexMechanoids.Projectile_JavelinMissile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/EMPImpactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(214, 168, 130)</color>
+		</graphicData>
+		<projectile>
+			<!-- Lands as a single aimed hit rather than a blast. An explosive projectile class would
+			     make the verb count as an area weapon and force a scattered aim point, which cannot
+			     coexist with a guided missile. -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>25</speed>
+			<flyOverhead>false</flyOverhead>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
+				<!-- 6 deg/tick at 25 tiles/s gives a turn radius of about 4 tiles. -->
+				<turnDegreesPerTick>6</turnDegreesPerTick>
+				<!-- 12 ticks of straight boost, about 5 tiles, before the seeker takes over. -->
+				<boostTicks>12</boostTicks>
+				<lifetimeTicks>120</lifetimeTicks>
+				<hitRadius>0.5</hitRadius>
+				<damageMultiplierPerStack>0.25</damageMultiplierPerStack>
+				<maxDamageMultiplier>2.5</maxDamageMultiplier>
+				<targetStackHediff>APM_Hediff_JavelinMissileLock</targetStackHediff>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

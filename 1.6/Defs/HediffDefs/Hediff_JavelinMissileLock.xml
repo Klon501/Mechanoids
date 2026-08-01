@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+		Counts javelin missile hits on one target. Severity mirrors the stack count, and the stack
+		is what scales each successive missile's damage. The count is kept on the target rather than
+		on the launcher so several javelins concentrating fire share one escalating stack.
+	-->
+	<HediffDef>
+		<defName>APM_Hediff_JavelinMissileLock</defName>
+		<label>missile lock</label>
+		<description>Seeker heads from a javelin missile rack have logged this target's hull profile. Every rocket that finds it again is fused to bite deeper than the last, until the lock fades.</description>
+		<hediffClass>ApexMechanoids.Hediff_JavelinMissileLock</hediffClass>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.95, 0.55, 0.25)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>6</maxSeverity>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<label>missile lock</label>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
