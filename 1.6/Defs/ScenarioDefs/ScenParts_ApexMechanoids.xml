@@ -10,4 +10,13 @@
     <maxUses>1</maxUses>
   </ScenPartDef>
 
+  <ScenPartDef>
+    <defName>APM_CameraOnPlayerStart</defName>
+    <label>start on your pawns</label>
+    <description>The camera opens on the pawns instead of the middle of the map</description>
+    <scenPartClass>ApexMechanoids.ScenPart_CameraOnPlayerStart</scenPartClass>
+    <category>Fixed</category>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
 </Defs>

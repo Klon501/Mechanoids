@@ -69,6 +69,7 @@ namespace ApexMechanoids
         public static JobDef APM_FrostivusManualUnloadFood;
         public static JobDef APM_FrostivusReleaseDevouredContents;
         public static JobDef APM_RavagerArtilleryAttack;
+        public static JobDef APM_CastPulseJump;
     }
     [DefOf]
     public static class ApexEffecterDefsOf

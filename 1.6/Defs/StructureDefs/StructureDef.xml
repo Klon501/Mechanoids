@@ -34,7 +34,7 @@
       <li>.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,AncientMilitaryCrate,.,.,.,.,.,.,.,.,AncientBarrel,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,Battery_South_Power0,Battery_South_Power0,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.</li>
       <li>.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,ComponentIndustrial,AncientMilitaryCrate,.,ComponentSpacer,.,.,.,AncientBarrel,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,AncientGenerator,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.</li>
       <li>.,.,.,.,.,Wall_BlocksGranite,AncientLargeCrate,.,.,.,.,.,.,.,AncientBarrel,Wall_BlocksGranite,.,CollapsedRocks_North,CollapsedRocks_North,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.</li>
-      <li>.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,AncientWheel,.,.,.,.,SubcoreEncoder_North,.,.,Door_BlocksGranite,CollapsedRocks_North,CollapsedRocks_North,CollapsedRocks_North,Door_BlocksGranite,.,WoodFiredGenerator,.,AncientGenerator,.,AncientGenerator,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.</li>
+      <li>.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,AncientWheel,.,.,.,.,SubcoreEncoder_North,.,.,Door_BlocksGranite,CollapsedRocks_North,CollapsedRocks_North,CollapsedRocks_North,Door_BlocksGranite,.,WoodFiredGenerator_Fuel0,.,AncientGenerator,.,AncientGenerator,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,AncientMilitaryCrate,AncientWheel,AncientWheel,.,.,.,AncientLamp,Wall_BlocksGranite,CollapsedRocks_North,CollapsedRocks_North,CollapsedRocks_North,Wall_BlocksGranite,AncientLamp,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Door_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,Wall_BlocksGranite,CollapsedRocks_North,.,AncientStandardRecharger,.,.,.,.,CollapsedRocks_North,CollapsedRocks_North,Wall_BlocksGranite,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.</li>
@@ -45,9 +45,9 @@
       <li>.,.,.,.,.,.,Wall_BlocksGranite,Hopper_East,.,.,.,Hopper_West,Wall_BlocksGranite,.,.,.,.,.,APM_Mechanitor_Ancient,.,.,.,Wall_BlocksGranite,SleepingSpot_South,Slave,SleepingSpot_South,Slave,SleepingSpot_South,Wall_BlocksGranite,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,.,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,HiddenConduit,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,APM_MechCommandCasket_South,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,APM_Mech_Vassal,.,.,AncientBandNode,.,.,.,APM_Mech_Tinker,.,.,BandNode,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,AncientBandNode,.,.,.,.,.,.,BandNode,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,APM_Mech_Lasher,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -78,7 +78,7 @@
       <li>.,.,PowerConduit,.,.,.,.,Shelf_Steel_South,.,.,Steel,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.</li>
       <li>.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.</li>
-      <li>.,.,.,.,PowerConduit,PowerConduit,.,Shelf_Steel_South,.,.,Shelf_Steel_South,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,PowerConduit,PowerConduit,.,.,.,.</li>
+      <li>.,.,.,.,PowerConduit,PowerConduit,.,Shelf_Steel_South,.,APM_Weapon_PlasmaWhip,Shelf_Steel_South,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,PowerConduit,PowerConduit,.,.,.,.</li>
       <li>.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.</li>
       <li>.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,PowerConduit,.,.,.,PowerConduit,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.</li>

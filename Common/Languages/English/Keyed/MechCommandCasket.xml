@@ -10,9 +10,13 @@
 		
     <APM.CommandCasket.Gizmo.Shield.Label>remote shield</APM.CommandCasket.Gizmo.Shield.Label> 
     <APM.CommandCasket.Gizmo.Shield.Desc>shield a friendly mechanoid, can target the whole map.\nPower scales with the remote shielder implant. </APM.CommandCasket.Gizmo.Shield.Desc>
+	<APM.CommandCasket.Gizmo.ShieldSelf.Desc>shield the selected mechanoid.\nPower scales with the remote shielder implant.</APM.CommandCasket.Gizmo.ShieldSelf.Desc>
+
 
     <APM.CommandCasket.Gizmo.Repair.Label>remote repair</APM.CommandCasket.Gizmo.Repair.Label> 
     <APM.CommandCasket.Gizmo.Repair.Desc>repair a friendly mechanoid until it is fully repaired or has no energy remaining. Can target the whole map.</APM.CommandCasket.Gizmo.Repair.Desc>
+	<APM.CommandCasket.Gizmo.RepairSelf.Desc>repair the selected mechanoid until it is fully repaired or has no energy remaining.</APM.CommandCasket.Gizmo.RepairSelf.Desc>
+	
 			
     <APM.CommandCasket.Gizmo.Disconnect.Label>remote disconnect</APM.CommandCasket.Gizmo.Disconnect.Label> 
     <APM.CommandCasket.Gizmo.Disconnect.Desc>remotely disconnect from a controlled mech. Can target mechs on the same map.</APM.CommandCasket.Gizmo.Disconnect.Desc>
@@ -26,6 +30,8 @@
 	<APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>remotely connect this mech to a mechanitor inside a mech command casket.</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
 	
 	<APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu> (missing bandwidth)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
+
+
 
 
 </LanguageData>

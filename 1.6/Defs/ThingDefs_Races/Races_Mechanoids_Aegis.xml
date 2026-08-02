@@ -111,9 +111,7 @@
 		<race>APM_Mech_Aegis</race>
 		<allowInMechClusters>true</allowInMechClusters>
 		<combatPower>400</combatPower>
-		<weaponTags>
-			<li>APM_AegisShield</li>
-		</weaponTags>
+		<weaponTags Inherit="False" />
 		<weaponMoney>9999~9999</weaponMoney>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">

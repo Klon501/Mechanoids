@@ -20,6 +20,21 @@
 	</JobDef>
 
 	<JobDef>
+		<defName>APM_CastPulseJump</defName>
+		<driverClass>JobDriver_CastJump</driverClass>
+		<reportString>jumping to TargetA.</reportString>
+		<abilityCasting>true</abilityCasting>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<playerInterruptible>false</playerInterruptible>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+		<carryThingAfterJob>true</carryThingAfterJob>
+		<dropThingBeforeJob>false</dropThingBeforeJob>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
+	</JobDef>
+
+	<JobDef>
 		<defName>APM_SirenLureChannel</defName>
 		<driverClass>ApexMechanoids.JobDriver_SirenLureChannel</driverClass>
 		<reportString>singing.</reportString>

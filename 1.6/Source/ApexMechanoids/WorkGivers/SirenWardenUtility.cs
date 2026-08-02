@@ -19,7 +19,27 @@ namespace ApexMechanoids
 
         public static bool CanChatWithPrisoner(Pawn siren, Pawn prisoner, bool forced)
         {
-            return CanContinueChatWithPrisoner(siren, prisoner) && siren.CanReserveAndReach(prisoner, PathEndMode.Touch, siren.NormalMaxDanger(), 1, -1, null, forced);
+            return CanStartChatWithPrisoner(siren, prisoner) && siren.CanReserve(prisoner, 1, -1, null, forced) && HasReachableInteractablePosition(siren, prisoner);
+        }
+
+        public static bool CanStartChatWithPrisoner(Pawn siren, Pawn prisoner, bool showFailReason = true)
+        {
+            if (!CanContinueChatWithPrisoner(siren, prisoner))
+            {
+                return false;
+            }
+
+            if (!prisoner.guest.ScheduledForInteraction)
+            {
+                if (showFailReason)
+                {
+                    JobFailReason.Is("PrisonerInteractedTooRecently".Translate());
+                }
+                return false;
+            }
+
+            PrisonerInteractionModeDef mode = prisoner.guest.ExclusiveInteractionMode;
+            return mode != PrisonerInteractionModeDefOf.ReduceResistance || prisoner.guest.Resistance > 0f;
         }
 
         public static bool CanContinueChatWithPrisoner(Pawn siren, Pawn prisoner)
@@ -35,17 +55,6 @@ namespace ApexMechanoids
                 return false;
             }
 
-            if (!prisoner.guest.ScheduledForInteraction)
-            {
-                JobFailReason.Is("PrisonerInteractedTooRecently".Translate());
-                return false;
-            }
-
-            if (mode == PrisonerInteractionModeDefOf.ReduceResistance && prisoner.guest.Resistance <= 0f)
-            {
-                return false;
-            }
-
             if (!prisoner.Awake() || (prisoner.Downed && !prisoner.InBed()))
             {
                 return false;
@@ -54,9 +63,19 @@ namespace ApexMechanoids
             return siren.health?.capacities?.CapableOf(PawnCapacityDefOf.Talking) == true;
         }
 
+        public static bool HasReachableInteractablePosition(Pawn siren, Pawn prisoner)
+        {
+            if (siren?.Map == null || prisoner?.Map != siren.Map)
+            {
+                return false;
+            }
+
+            return SocialInteractionUtility.IsGoodPositionForInteraction(siren, prisoner) || SocialInteractionUtility.BestInteractableCell(siren, prisoner).IsValid;
+        }
+
         public static void DoRecruitInteraction(Pawn siren, Pawn prisoner)
         {
-            if (siren == null || prisoner?.guest == null || !prisoner.Spawned || !prisoner.Awake())
+            if (!CanStartChatWithPrisoner(siren, prisoner, showFailReason: false))
             {
                 return;
             }

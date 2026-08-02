@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_PulseLongjump.label>мех-дальний прыжок</APM_PulseLongjump.label>
+  <APM_PulseLongjump.description>Позволяет механоиду прыгнуть в отдалённую точку с помощью особых сверхбыстрых механических мышц.</APM_PulseLongjump.description>
+  <APM_PulseWave.label>импульсная волна</APM_PulseWave.label>
+  <APM_PulseWave.description>Выпускает ослепляющую акустическую волну, которая расходится от меха наружу, оглушая и временно ослепляя враждебных пешек.</APM_PulseWave.description>
+</LanguageData>

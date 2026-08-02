@@ -2,6 +2,7 @@
 <LanguageData>
 	<APM_MechRepaired>{0} has been fully repaired.</APM_MechRepaired>
 	<APM_Repairing>Repairing {0}</APM_Repairing>
+	<APM_RepairStation_InactiveEjected>{0} was released after the repair station stopped working.</APM_RepairStation_InactiveEjected>
 	<APM_NotMechanoid>Only mechanoids can be repaired here.</APM_NotMechanoid>
 	<APM_RepairStation_CannotRepairSatellite>Satellites cannot be repaired in repair stations.</APM_RepairStation_CannotRepairSatellite>
 	<APM_NotPlayerFaction>Only friendly mechanoids can be repaired.</APM_NotPlayerFaction>

@@ -2,7 +2,7 @@
 <Defs>
   <ScenarioDef ParentName="ScenarioBase">
     <defName>APM_BuriedLegacy</defName>
-    <label>Buried Legacy WIP</label>
+    <label>Buried Legacy</label>
     <description>Years of wandering through wastes and abandoned ruins have left behind only scars and a belief in legends. But the legends turned out to be true. Following the faint signal of an ancient transponder, you have discovered the lost complex of an ancient mechanoid. Inside, locked within his command casket, lies the skeleton of the previous owner, killed centuries ago by his own foolishness. All around is silence, broken only by the hum of generators and the footsteps of mechanoids wandering aimlessly across the territory. The hive did not recall them - their final directive remained unfinished. This entire base and the remnants of a bygone army now belong to you. All that is left is to claim the throne and accept your destiny.</description>
     <scenario>
       <summary>Explore a forgotten mechanitor complex, find a dead master's legacy, and claim an abandoned army as your own. A classic Apex Mechanoids experience.</summary>
@@ -42,6 +42,9 @@
             </li>
           </targets>
         </li>
+        <li Class="ApexMechanoids.ScenPart_CameraOnPlayerStart">
+          <def>APM_CameraOnPlayerStart</def>
+        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Silver</thingDef>
@@ -50,12 +53,17 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MedicineIndustrial</thingDef>
-          <count>10</count>
+          <count>5</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>WoodLog</thingDef>
-          <count>300</count>
+          <count>100</count>
+        </li>
+         <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>10</count>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
@@ -100,7 +108,7 @@
   <FactionDef ParentName="PlayerFactionBase">
     <defName>APM_DomainPlayerFaction</defName>
     <label>Mechanitor's Domain</label>
-    <description>A secret ancient vault hiding a mysterious past.</description>
+    <description>An ancient mechanitor's domain hiding a master's treasures.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>APM_Mechanitor_Nomad</basicMemberKind>
     <pawnSingular>colonist</pawnSingular>

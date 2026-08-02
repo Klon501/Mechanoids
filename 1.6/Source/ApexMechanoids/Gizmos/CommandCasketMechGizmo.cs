@@ -8,13 +8,15 @@ using Verse.Sound;
 namespace ApexMechanoids
 {
     [StaticConstructorOnStartup]
-    public class CommandCasketAbilityGizmo : Gizmo
+    public class CommandCasketMechGizmo : Gizmo
     {
         private CompRemoteMechCasketAbilities abilityComp;
 
         private Thing thing;
 
-        private const float BaseWidth = 75f;
+        private Pawn mech;
+
+        private float BaseWidth => 30f + (Spacing * 2);      
 
         private const float AbilityWidth = 65f; // same as mainRect.width
 
@@ -22,18 +24,13 @@ namespace ApexMechanoids
 
         private const float Spacing = 5f;
 
-        private static readonly Texture2D BarTex = SolidColorMaterials.NewSolidColorTexture(new UnityEngine.Color(1f, 0.20f, 0.19f));
-
-        private static readonly Texture2D EmptyBarTex = SolidColorMaterials.NewSolidColorTexture(new UnityEngine.Color(0.03f, 0.035f, 0.05f));
-
-        private static readonly Texture2D CancelLoadingIcon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_LeaveCasket");
-
         private Building_MechCommandCasket thingAsCasket => (Building_MechCommandCasket)thing;
 
-        public CommandCasketAbilityGizmo(Thing thing, CompRemoteMechCasketAbilities abilityComp)
+        public CommandCasketMechGizmo(Thing thing, CompRemoteMechCasketAbilities abilityComp, Pawn mech)
         {
             this.abilityComp = abilityComp;
             this.thing = thing;
+            this.mech = mech;
         }
 
         public override float GetWidth(float maxWidth)  // total should be 75, or 75 + (80 * x) to fall into vanillas pattern
@@ -44,18 +41,15 @@ namespace ApexMechanoids
             {
                 return width;
             }
-            width += AbilityWidthSmall + Spacing; // connect /disconnect
-            width += AbilityWidth + Spacing; //cancel
 
             if (abilityComp.HasImplantRepair())
             {
-                width += AbilityWidth + Spacing;
+                width += AbilityWidthSmall + Spacing;
             }
             if (abilityComp.HasImplantShield())
             {
-                width += AbilityWidth + Spacing;
+                width += AbilityWidthSmall + Spacing;
             }
-            width -= Spacing;  
 
             return width;
         }
@@ -73,27 +67,15 @@ namespace ApexMechanoids
 
             Text.Font = GameFont.Tiny;
 
-            Rect mainLabelRect = new Rect(mainRect.x, mainRect.y, mainRect.height, mainRect.height);
-            Rect thingRect = new Rect(mainRect.x + 2.5f, mainRect.y + 2.5f, 60f, 40f);
-            GUI.DrawTexture(thingRect, thing.def.uiIcon);
-            if(thing is Building_MechCommandCasket casket)
-            {
-                Rect barRect = new Rect(thingRect.x, thingRect.y + thingRect.height + 7.5f, thingRect.width - 1f, 12f);
-                barRect.y -= 4f; // offset to not conflict with the label
 
-                Widgets.FillableBar(barRect, casket.NutritionPercent, BarTex, EmptyBarTex, true);
-            }
             
-            DrawVanillalikeLabel(mainLabelRect, abilityComp.Props.labelShort.CapitalizeFirst());
-            //DrawVanillalikeLabel(mainLabelRect, thing.def.label.CapitalizeFirst());
-
 
             if (abilityComp.User != null)
             {
-                Rect connectRect = new Rect(mainRect.x + thingRect.width + Spacing, mainRect.y, mainRect.height / 2 - Spacing / 2, mainRect.height / 2 - 1f);
+                Rect connectRect = new Rect(mainRect.x, mainRect.y, mainRect.height / 2 - Spacing / 2, 1f);
+                connectRect.height = connectRect.width;
 
                 DrawVanillalikeGizmoHighlight(connectRect);
-
                 if (Mouse.IsOver(connectRect))
                 {
                     if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
@@ -106,12 +88,12 @@ namespace ApexMechanoids
                         abilityComp.EndActionWithSound();
                     }
                 }
-
                 GUI.DrawTexture(connectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Connect));
                 TooltipHandler.TipRegion(connectRect, "APM.CommandCasket.Gizmo.Connect.Desc".Translate().CapitalizeFirst());
-                //CancelAction(connectRect);
+  
 
-                Rect disconnectRect = new Rect(connectRect.x, connectRect.y + connectRect.height + 2f, connectRect.width, connectRect.height);
+
+                Rect disconnectRect = new Rect(connectRect.x, connectRect.y + connectRect.height + Spacing, connectRect.width, connectRect.height);
 
                 DrawVanillalikeGizmoHighlight(disconnectRect);
                 if (Mouse.IsOver(disconnectRect))
@@ -128,13 +110,16 @@ namespace ApexMechanoids
                 }
                 GUI.DrawTexture(disconnectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Disconnect));
                 TooltipHandler.TipRegion(disconnectRect, "APM.CommandCasket.Gizmo.Disconnect.Desc".Translate().CapitalizeFirst());
-                //CancelAction(disconnectRect);
 
-                Rect abilityRect = new Rect(connectRect.x + connectRect.width + Spacing, mainRect.y, mainRect.height, mainRect.height);
+
+                Rect abilityRect = new Rect(connectRect.x + connectRect.width + Spacing, connectRect.y, connectRect.height, connectRect.height);
+                Rect abilitySelfRect = new Rect(abilityRect.x, abilityRect.y + abilityRect.height + Spacing, abilityRect.height, abilityRect.height);
+
                 if (abilityComp.HasImplantRepair())
                 {
                     DrawVanillalikeGizmoHighlight(abilityRect);
                     GUI.DrawTexture(abilityRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Repair));
+
                     if (Mouse.IsOver(abilityRect))
                     {
                         if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
@@ -148,9 +133,30 @@ namespace ApexMechanoids
                         }
                     }
                     TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Repair.Desc".Translate().CapitalizeFirst());
-                    DrawVanillalikeLabel(abilityRect, "APM.CommandCasket.Gizmo.Repair.Label".Translate().CapitalizeFirst());
+
+
+                    DrawVanillalikeGizmoHighlight(abilitySelfRect);
+                    GUI.DrawTexture(abilitySelfRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Repair));
+
+                    if (Mouse.IsOver(abilitySelfRect))
+                    {
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
+                        {
+                            abilityComp.ForceSetTarget(mech, out LocalTargetInfo target);
+                            abilityComp.StartToRepair(target);
+                        }
+
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                        {
+                            abilityComp.EndActionWithSound();
+                        }
+                    }
+
+                    TooltipHandler.TipRegion(abilitySelfRect, "APM.CommandCasket.Gizmo.RepairSelf.Desc".Translate().CapitalizeFirst());
+                    //DrawVanillalikeLabel(abilitySelfRect, "APM.CommandCasket.Gizmo.Repair.Label".Translate().CapitalizeFirst());
 
                     abilityRect.x += abilityRect.width + Spacing;
+                    abilitySelfRect.x += abilitySelfRect.width + Spacing;
                 }
 
                 if (abilityComp.HasImplantShield())
@@ -185,26 +191,46 @@ namespace ApexMechanoids
                         Widgets.Label(cooldownRect, topRightLabel);
                         Text.Anchor = TextAnchor.UpperLeft;
                     }
-                    DrawVanillalikeLabel(abilityRect, abilityComp.GetShieldGizmoLabel());
+                    //DrawVanillalikeLabel(abilityRect, abilityComp.GetShieldGizmoLabel());
                     TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Shield.Desc".Translate().CapitalizeFirst());
-                    abilityRect.x += abilityRect.width + Spacing;
-                }
 
-                Rect cancelRect = new Rect(abilityRect.x, mainRect.y, mainRect.height, mainRect.height);
-                DrawVanillalikeGizmoHighlight(cancelRect);
-                GUI.DrawTexture(cancelRect, CancelLoadingIcon);
 
-                if (Widgets.ButtonInvisible(cancelRect))
-                {
-                    if (thingAsCasket != null)
+
+                    DrawVanillalikeGizmoHighlight(abilitySelfRect);
+                    GUI.DrawTexture(abilitySelfRect, abilityComp.GetShieldTexture());
+
+                    if (Mouse.IsOver(abilitySelfRect))
                     {
-                        thingAsCasket.Finish();
-                        //thingAsCasket.innerContainer.TryDropAll(thingAsCasket.InteractionCell, thingAsCasket.Map, ThingPlaceMode.Near);
-                        abilityComp.EndActionWithSound();
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && abilityComp.TicksForShieldcooldown == 0) //left click
+                        {
+                            abilityComp.ForceSetTarget(mech, out LocalTargetInfo target);
+                            abilityComp.StartToShield(target);
+                        }
+
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                        {
+                            abilityComp.EndActionWithSound();
+                        }
                     }
+
+                    if (abilityComp.TicksForShieldcooldown > 0)
+                    {
+                        string topRightLabel = (int)(abilityComp.TicksForShieldcooldown / 60) + "s";
+
+                        Vector2 vector2 = Text.CalcSize(topRightLabel);
+                        Rect position;
+                        Rect cooldownRect = (position = new Rect(abilitySelfRect.xMax - vector2.x - 2f, abilitySelfRect.y + 3f, vector2.x, vector2.y));
+                        position.x -= 2f;
+                        position.width += 3f;
+                        Text.Anchor = TextAnchor.UpperRight;
+                        GUI.DrawTexture(position, TexUI.GrayTextBG);
+                        Widgets.Label(cooldownRect, topRightLabel);
+                        Text.Anchor = TextAnchor.UpperLeft;
+                    }
+                    //DrawVanillalikeLabel(abilitySelfRect, abilityComp.GetShieldGizmoLabel());
+                    TooltipHandler.TipRegion(abilitySelfRect, "APM.CommandCasket.Gizmo.ShieldSelf.Desc".Translate().CapitalizeFirst());
+
                 }
-                DrawVanillalikeLabel(abilityRect, "APM.CommandCasket.Gizmo.CancelLink.Label".Translate().CapitalizeFirst());
-                TooltipHandler.TipRegion(cancelRect, "APM.CommandCasket.Gizmo.CancelLink.Desc".Translate().CapitalizeFirst());
             }
 
             Text.Font = GameFont.Medium;
@@ -233,7 +259,6 @@ namespace ApexMechanoids
                 Text.Anchor = TextAnchor.UpperLeft;
             }
         }
-
 
     }
 
