@@ -144,26 +144,6 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>ConquerorSacr_WarmUp</defName>
-		<sustain>true</sustain>
-		<context>MapOnly</context>
-		<maxSimultaneous>2</maxSimultaneous>
-		<priorityMode>PrioritizeNearest</priorityMode>
-		<subSounds>
-			<li>
-				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>UltSacrWarmUp</clipPath>
-					</li>
-				</grains>
-				<pitchRange>0.99~1.01</pitchRange>
-				<volumeRange>25</volumeRange>
-			</li>
-		</subSounds>
-	</SoundDef>
-
-	<SoundDef>
 		<defName>APM_DuelStarted</defName>
 		<context>MapOnly</context>
 		
