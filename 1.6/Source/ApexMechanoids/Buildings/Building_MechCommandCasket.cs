@@ -308,7 +308,7 @@ namespace ApexMechanoids
         }
 
 
-        private CompRemoteMechCasketAbilities CompAbilities
+        public CompRemoteMechCasketAbilities CompAbilities
         {
             get
             {
