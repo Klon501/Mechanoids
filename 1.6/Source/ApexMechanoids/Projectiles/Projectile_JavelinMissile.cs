@@ -59,6 +59,20 @@ namespace ApexMechanoids
         /// </summary>
         private const int PathStretch = 8;
 
+        /// <summary>
+        /// How far behind the missile the interpolation origin is placed each tick.
+        ///
+        /// Vanilla gates every free-intercept collision on
+        /// <c>VerbUtility.InterceptChanceFactorFromDistance(origin, cell)</c>, which returns zero
+        /// inside 5 tiles of <c>origin</c> and reaches full strength at 12. Steering by rewriting
+        /// <c>origin</c> to the missile's current position each tick therefore silently disabled
+        /// collision entirely: the missile flew through walls, cover and bystanders and could only
+        /// ever hit its intended target. Setting the origin back along the current heading keeps
+        /// the position interpolation exactly the same - the missile still sits on the segment -
+        /// while putting the intercept distance back into a range where vanilla collision runs.
+        /// </summary>
+        private const float InterceptOriginBackset = 13f;
+
         private JavelinFlightState flight;
         private bool flightInitialized;
         private float pendingDamageMultiplier = 1f;
@@ -152,8 +166,12 @@ namespace ApexMechanoids
             }
 
             // Hand the vanilla mover a straight segment that interpolates onto the guided position
-            // after it subtracts delta, so collision and impact stay on the base code path.
-            origin = previousPosition;
+            // after it subtracts delta, so collision and impact stay on the base code path. The
+            // segment starts behind the missile so vanilla's intercept-distance gate stays live;
+            // ticksToImpact is unaffected by the backset, because the extra length behind the
+            // missile is exactly the distance already covered.
+            Vector3 heading = step.normalized;
+            origin = previousPosition - heading * InterceptOriginBackset;
             destination = previousPosition + step * PathStretch;
             ticksToImpact = delta * PathStretch;
 
