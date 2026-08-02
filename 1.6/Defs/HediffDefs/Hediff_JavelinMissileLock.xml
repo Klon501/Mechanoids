@@ -20,5 +20,13 @@
 				<label>missile lock</label>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinMissileLock">
+				<!-- Must stay longer than the launcher's shot cycle (warmup 1.9s + cooldown 3.4s,
+				     about 318 ticks) or a lone javelin sheds each stack before it can fire again
+				     and the escalation never builds. -->
+				<decayIntervalTicks>600</decayIntervalTicks>
+			</li>
+		</modExtensions>
 	</HediffDef>
 </Defs>

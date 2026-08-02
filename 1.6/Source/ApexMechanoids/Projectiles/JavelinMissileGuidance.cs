@@ -13,10 +13,13 @@ namespace ApexMechanoids
         public float hitRadius;
 
         /// <summary>
-        /// Motor burn time. A missile that has manoeuvred past its target runs out of fuel rather
-        /// than looping back for a second pass, which is what stops a target standing too close
-        /// from being hit anyway on the way around.
+        /// Range at which the missile counts as committed to its attack run. Once it has been this
+        /// close and the range opens again it has had its pass, and guidance shuts down for good
+        /// instead of letting the missile come round for another try.
         /// </summary>
+        public float terminalRadius;
+
+        /// <summary>Motor burn time. A spent missile is removed rather than loitering.</summary>
         public int lifetimeTicks;
     }
 
@@ -29,8 +32,10 @@ namespace ApexMechanoids
         public float z;
         public float heading;
         public int ticksFlown;
-        public float previousDistance;
+
+        /// <summary>True once the missile has been inside the terminal radius at least once.</summary>
         public bool hasClosed;
+
         public bool guidanceLockedOut;
     }
 
@@ -110,7 +115,6 @@ namespace ApexMechanoids
                 z = z,
                 heading = heading,
                 ticksFlown = 0,
-                previousDistance = -1f,
                 hasClosed = false,
                 guidanceLockedOut = false
             };
@@ -127,38 +131,29 @@ namespace ApexMechanoids
         /// <summary>
         /// Advances the missile one tick toward the supplied target position.
         ///
-        /// Once the missile has actually closed on the target and its range starts opening again,
+        /// Once the missile has been inside the terminal radius and the range opens past it again,
         /// guidance locks out permanently. That turns an overflown target into an honest miss
         /// instead of a missile that loops around and eventually connects anyway.
         ///
-        /// The lockout only arms after the missile has closed at least once. A missile launched
-        /// along a facing that points away from the target opens the range while it swings onto
-        /// the bearing, and that opening must not be mistaken for an overflight.
+        /// The range bookkeeping deliberately runs on every tick, including the boost phase. A
+        /// target standing close enough to be overflown before guidance engages is exactly the case
+        /// the client asked to miss, and gating this on guidance let such a missile treat its return
+        /// leg as a fresh attack run and come back for a second pass.
         /// </summary>
         public static JavelinFlightState Step(JavelinFlightState state, float targetX, float targetZ, JavelinFlightParams flightParams)
         {
-            bool guided = GuidanceActive(state, flightParams);
+            float distance = Distance(state.x, state.z, targetX, targetZ);
 
-            if (guided)
+            if (distance <= flightParams.terminalRadius)
             {
-                float distance = Distance(state.x, state.z, targetX, targetZ);
-
-                // The first guided tick has nothing to compare against, so it only seeds the range.
-                if (state.previousDistance >= 0f)
-                {
-                    if (distance < state.previousDistance)
-                    {
-                        state.hasClosed = true;
-                    }
-                    else if (state.hasClosed && distance > flightParams.hitRadius)
-                    {
-                        state.guidanceLockedOut = true;
-                        guided = false;
-                    }
-                }
-
-                state.previousDistance = distance;
+                state.hasClosed = true;
             }
+            else if (state.hasClosed)
+            {
+                state.guidanceLockedOut = true;
+            }
+
+            bool guided = GuidanceActive(state, flightParams);
 
             if (guided)
             {

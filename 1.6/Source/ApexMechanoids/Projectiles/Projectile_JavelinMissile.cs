@@ -18,6 +18,13 @@ namespace ApexMechanoids
         /// <summary>How close the missile has to get to the target to detonate on it.</summary>
         public float hitRadius = 0.5f;
 
+        /// <summary>
+        /// Range at which the missile counts as committed to its attack run. Once it has been this
+        /// close and the range opens again, guidance shuts down instead of letting the missile come
+        /// round for a second pass at a target it already overflew.
+        /// </summary>
+        public float terminalRadius = 3f;
+
         /// <summary>Extra fraction of base damage added for each previous hit on the same target.</summary>
         public float damageMultiplierPerStack = 0.25f;
 
@@ -69,6 +76,7 @@ namespace ApexMechanoids
                     maxTurnPerTick = props.turnDegreesPerTick * Mathf.Deg2Rad,
                     boostTicks = props.boostTicks,
                     hitRadius = props.hitRadius,
+                    terminalRadius = props.terminalRadius,
                     lifetimeTicks = props.lifetimeTicks
                 };
             }
@@ -226,7 +234,6 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref flight.z, "flightZ");
             Scribe_Values.Look(ref flight.heading, "flightHeading");
             Scribe_Values.Look(ref flight.ticksFlown, "flightTicksFlown");
-            Scribe_Values.Look(ref flight.previousDistance, "flightPreviousDistance", -1f);
             Scribe_Values.Look(ref flight.hasClosed, "flightHasClosed");
             Scribe_Values.Look(ref flight.guidanceLockedOut, "flightGuidanceLockedOut");
         }

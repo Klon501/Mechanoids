@@ -97,6 +97,10 @@
 				<boostTicks>12</boostTicks>
 				<lifetimeTicks>120</lifetimeTicks>
 				<hitRadius>0.5</hitRadius>
+				<!-- Once the missile has been this close and the range opens again, its attack run
+				     is spent. Without this a missile that overflew a target during the boost phase
+				     curved round and came back for a second pass. -->
+				<terminalRadius>3</terminalRadius>
 				<damageMultiplierPerStack>0.25</damageMultiplierPerStack>
 				<maxDamageMultiplier>2.5</maxDamageMultiplier>
 				<targetStackHediff>APM_Hediff_JavelinMissileLock</targetStackHediff>
