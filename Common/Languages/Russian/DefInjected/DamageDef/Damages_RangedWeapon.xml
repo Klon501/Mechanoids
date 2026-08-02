@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: sun ray -->
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+  <!-- EN: {0} has been killed. -->
+  <APM_SunRay.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRay.deathMessage>
+
+  <!-- EN: sun ray -->
+  <APM_SunRayGun.label>солнечный луч</APM_SunRayGun.label>
+  <!-- EN: {0} has been killed. -->
+  <APM_SunRayGun.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRayGun.deathMessage>
+
+  <!-- EN: push damage -->
+  <Push.label>толчок</Push.label>
+  <!-- EN: {0} has been ... to death. -->
+  <Push.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</Push.deathMessage>
+
+</LanguageData>

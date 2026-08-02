@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<APM_Apparel_MechamancerSuit.label>костюм мехамастера</APM_Apparel_MechamancerSuit.label>
-  <APM_Apparel_MechamancerSuit.description>ЗАГОЛОВОК</APM_Apparel_MechamancerSuit.description>
 
+  <!-- EN: mechmancer suit -->
+  <APM_Apparel_MechamancerSuit.label>костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+  <!-- EN: A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor. -->
+  <APM_Apparel_MechamancerSuit.description>Силовой бронекостюм, полный разного снаряжения для помощи механитору. Костюм мехаманта значительно увеличивает пропускную способность механитора, обеспечивая при этом персональный энергетический щит и сопротивление урону, сравнимое с обычной силовой бронёй.</APM_Apparel_MechamancerSuit.description>
 
 </LanguageData>

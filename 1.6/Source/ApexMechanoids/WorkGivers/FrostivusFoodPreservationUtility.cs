@@ -11,6 +11,10 @@ namespace ApexMechanoids
         public const float ColdStorageMaxTemperature = 0f;
         public const int PickupDelayTicks = 120;
 
+        private const int OutsideStorageRescueScore = 1000000;
+        private const int WarmStorageRescueScore = 100000;
+        private const int RotUrgencyScoreTicks = 600000;
+
         private static readonly List<Thing> TmpInventoryFood = new List<Thing>();
         private static readonly List<Thing> TmpDevouredContents = new List<Thing>();
         private static Caravan cachedCaravan;
@@ -73,7 +77,8 @@ namespace ApexMechanoids
             }
 
             CompRottable rottable = thing.TryGetComp<CompRottable>();
-            return (rottable == null || rottable.Stage == RotStage.Fresh)
+            return rottable != null
+                && rottable.Stage == RotStage.Fresh
                 && !IsInColdFoodStorage(thing);
         }
 
@@ -85,7 +90,7 @@ namespace ApexMechanoids
             }
 
             CompRottable rottable = thing.TryGetComp<CompRottable>();
-            return rottable == null || rottable.Stage == RotStage.Fresh;
+            return rottable != null && rottable.Stage == RotStage.Fresh;
         }
 
         public static bool IsCaravanPreservableFood(Thing thing)
@@ -164,6 +169,7 @@ namespace ApexMechanoids
         {
             return CanDoFoodPreservation(pawn)
                 && IsPreservableFoodOnMap(thing)
+                && (forced || ShouldAutoRescueFoodFromCurrentStorage(pawn, thing))
                 && (forced || !thing.IsForbidden(pawn))
                 && !thing.IsBurning()
                 && CountToPickUp(pawn, thing) > 0
@@ -197,6 +203,7 @@ namespace ApexMechanoids
                 return false;
             }
 
+            int bestScore = int.MinValue;
             int bestDistance = int.MaxValue;
             int maxDistanceSquared = maxDistance >= 9999f ? int.MaxValue : (int)System.Math.Ceiling(maxDistance * maxDistance);
             List<Thing> things = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver);
@@ -209,9 +216,16 @@ namespace ApexMechanoids
                 }
 
                 int distance = pawn.Position.DistanceToSquared(thing.Position);
-                if (distance <= maxDistanceSquared && (bestFood == null || distance < bestDistance))
+                if (distance > maxDistanceSquared)
+                {
+                    continue;
+                }
+
+                int score = FoodRescuePriorityScore(thing);
+                if (bestFood == null || score > bestScore || (score == bestScore && distance < bestDistance))
                 {
                     bestFood = thing;
+                    bestScore = score;
                     bestDistance = distance;
                 }
             }
@@ -239,6 +253,7 @@ namespace ApexMechanoids
 
             Job job = JobMaker.MakeJob(ApexDefsOf.APM_FrostivusTakeFoodToInventory, food);
             job.count = count;
+            job.playerForced = forced;
             job.expiryInterval = expiryInterval;
             job.checkOverrideOnExpire = true;
             return job;
@@ -282,43 +297,7 @@ namespace ApexMechanoids
                 return false;
             }
 
-            Map map = pawn.Map;
-            List<SlotGroup> groups = map.haulDestinationManager.AllGroupsListInPriorityOrder;
-            for (int i = 0; i < groups.Count; i++)
-            {
-                SlotGroup group = groups[i];
-                if (group?.parent == null || !group.parent.HaulDestinationEnabled || !group.parent.Accepts(food))
-                {
-                    continue;
-                }
-
-                IntVec3 bestInGroup = IntVec3.Invalid;
-                float bestDistanceSquared = float.MaxValue;
-                List<IntVec3> cells = group.CellsList;
-                for (int j = 0; j < cells.Count; j++)
-                {
-                    IntVec3 cell = cells[j];
-                    if (!IsColdStoreCellFor(pawn, food, cell))
-                    {
-                        continue;
-                    }
-
-                    float distanceSquared = pawn.Position.DistanceToSquared(cell);
-                    if (!bestInGroup.IsValid || distanceSquared < bestDistanceSquared)
-                    {
-                        bestInGroup = cell;
-                        bestDistanceSquared = distanceSquared;
-                    }
-                }
-
-                if (bestInGroup.IsValid)
-                {
-                    foundCell = bestInGroup;
-                    return true;
-                }
-            }
-
-            return false;
+            return TryFindColdStorageCellAtLeastPriority(pawn, food, StoragePriority.Unstored, out foundCell);
         }
 
         public static bool CanReachManualUnloadCell(Pawn pawn, IntVec3 cell)
@@ -497,7 +476,7 @@ namespace ApexMechanoids
 
             if (IsFrostivus(holderPawn))
             {
-                return true;
+                return IsInventoryFood(thing) || IsDevouredContent(thing);
             }
 
             if (!IsPreservableFoodThing(thing))
@@ -580,23 +559,146 @@ namespace ApexMechanoids
                 return false;
             }
 
-            SlotGroup slotGroup = thing.Map.haulDestinationManager.SlotGroupAt(thing.Position);
-            return slotGroup?.parent != null
-                && slotGroup.parent.HaulDestinationEnabled
-                && slotGroup.parent.Accepts(thing)
+            IHaulDestination currentDestination = StoreUtility.CurrentHaulDestinationOf(thing);
+            return currentDestination != null
+                && currentDestination.Accepts(thing)
                 && thing.Position.GetTemperature(thing.Map) < ColdStorageMaxTemperature;
         }
 
         private static bool IsPreservableFoodThing(Thing thing)
         {
-            return thing != null
-                && !thing.Destroyed
-                && thing.def != null
-                && thing.def.EverHaulable
-                && thing.def.ingestible != null
-                && thing.def.IsNutritionGivingIngestible
-                && !thing.def.IsCorpse
-                && (thing.TryGetComp<CompRottable>() != null || thing.def.useHitPoints);
+            if (thing == null
+                || thing.Destroyed
+                || thing.def == null
+                || !thing.def.EverHaulable
+                || thing.def.ingestible == null
+                || !thing.def.IsNutritionGivingIngestible
+                || thing.def.IsCorpse
+                || thing.def.IsDrug
+                || thing.TryGetComp<CompRottable>() == null)
+            {
+                return false;
+            }
+
+            return thing.def.ingestible.preferability >= FoodPreferability.RawBad
+                || thing.def.IsWithinCategory(ThingCategoryDefOf.Foods)
+                || thing.def.IsWithinCategory(ThingCategoryDefOf.PlantFoodRaw)
+                || thing.def.IsWithinCategory(ThingCategoryDefOf.MeatRaw);
+        }
+
+        private static bool ShouldAutoRescueFoodFromCurrentStorage(Pawn pawn, Thing thing)
+        {
+            if (pawn?.Map == null || thing?.Map != pawn.Map)
+            {
+                return false;
+            }
+
+            IHaulDestination currentDestination = StoreUtility.CurrentHaulDestinationOf(thing);
+            if (currentDestination == null || !currentDestination.Accepts(thing))
+            {
+                return true;
+            }
+
+            if (thing.Position.GetTemperature(thing.Map) < ColdStorageMaxTemperature)
+            {
+                return false;
+            }
+
+            StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(thing);
+            return TryFindColdStorageCellAtLeastPriority(pawn, thing, currentPriority, out IntVec3 _);
+        }
+
+        private static int FoodRescuePriorityScore(Thing thing)
+        {
+            int score = 0;
+            if (!IsInValidStorage(thing))
+            {
+                score += OutsideStorageRescueScore;
+            }
+
+            if (thing.Spawned && thing.Map != null && thing.Position.GetTemperature(thing.Map) >= ColdStorageMaxTemperature)
+            {
+                score += WarmStorageRescueScore;
+            }
+
+            CompRottable rottable = thing.TryGetComp<CompRottable>();
+            if (rottable != null)
+            {
+                int ticksUntilRot = rottable.TicksUntilRotAtCurrentTemp;
+                if (ticksUntilRot <= 0)
+                {
+                    score += RotUrgencyScoreTicks;
+                }
+                else if (ticksUntilRot < RotUrgencyScoreTicks)
+                {
+                    score += RotUrgencyScoreTicks - ticksUntilRot;
+                }
+            }
+
+            return score;
+        }
+
+        private static bool IsInValidStorage(Thing thing)
+        {
+            IHaulDestination currentDestination = StoreUtility.CurrentHaulDestinationOf(thing);
+            return currentDestination != null && currentDestination.Accepts(thing);
+        }
+
+        private static bool TryFindColdStorageCellAtLeastPriority(Pawn pawn, Thing food, StoragePriority minimumPriority, out IntVec3 foundCell)
+        {
+            foundCell = IntVec3.Invalid;
+            if (pawn?.Map == null || food == null)
+            {
+                return false;
+            }
+
+            Map map = pawn.Map;
+            List<SlotGroup> groups = map.haulDestinationManager.AllGroupsListInPriorityOrder;
+            for (int i = 0; i < groups.Count; i++)
+            {
+                SlotGroup group = groups[i];
+                if (group?.parent == null)
+                {
+                    continue;
+                }
+
+                if ((int)group.Settings.Priority < (int)minimumPriority)
+                {
+                    break;
+                }
+
+                if (!group.parent.HaulDestinationEnabled || !group.parent.Accepts(food))
+                {
+                    continue;
+                }
+
+                IntVec3 bestInGroup = IntVec3.Invalid;
+                float bestDistanceSquared = float.MaxValue;
+                List<IntVec3> cells = group.CellsList;
+                for (int j = 0; j < cells.Count; j++)
+                {
+                    IntVec3 cell = cells[j];
+                    if (!IsColdStoreCellFor(pawn, food, cell))
+                    {
+                        continue;
+                    }
+
+                    float distanceSquared = pawn.Position.DistanceToSquared(cell);
+                    if (!bestInGroup.IsValid || distanceSquared < bestDistanceSquared)
+                    {
+                        bestInGroup = cell;
+                        bestDistanceSquared = distanceSquared;
+                    }
+                }
+
+                if (bestInGroup.IsValid)
+                {
+                    foundCell = bestInGroup;
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private static bool IsColdStoreCellFor(Pawn pawn, Thing food, IntVec3 cell)

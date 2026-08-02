@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: {0} has been fully repaired. -->
+  <APM_MechRepaired>{0} полностью отремонтирован.</APM_MechRepaired>
+  <!-- EN: Repairing {0} -->
+  <APM_Repairing>Ремонтирует {0}</APM_Repairing>
+  <!-- EN: Only mechanoids can be repaired here. -->
+  <APM_NotMechanoid>Здесь можно ремонтировать только механоидов.</APM_NotMechanoid>
+  <!-- EN: Only friendly mechanoids can be repaired. -->
+  <APM_NotPlayerFaction>Можно ремонтировать только дружественных механоидов.</APM_NotPlayerFaction>
+  <!-- EN: Mechanoid size must be {0} for this station. -->
+  <APM_WrongSize>Только механоиды {0} размера могут использовать эту станцию.</APM_WrongSize>
+  <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
+  <APM_AutoRepairOrdered>Ремонтная станция обнаружила, что {0} нуждается в ремонте и начала работу.</APM_AutoRepairOrdered>
+
+  <!-- EN: Auto-Repair -->
+  <APM_Gizmo_AutoRepair>Авторемонт</APM_Gizmo_AutoRepair>
+  <!-- EN: Automatically scan for damaged mechs and assign them to the station. -->
+  <APM_Gizmo_AutoRepair_Desc>Позволяет автоматически сканировать местность в поисках повреждённых механоидов и направлять их на станцию.</APM_Gizmo_AutoRepair_Desc>
+  <!-- EN: Interval: {0} -->
+  <APM_Gizmo_SetInterval>Периодичность: {0}</APM_Gizmo_SetInterval>
+  <!-- EN: This mechanoid is already at full health. -->
+  <APM_FullHealth>Этот механоид не имеет повреждений.</APM_FullHealth>
+  <!-- EN: Cancel repair -->
+  <APM_CommandCancelRepair>Отменить ремонт</APM_CommandCancelRepair>
+  <!-- EN: Stop repairing and eject the mechanoid. -->
+  <APM_CommandCancelRepairDesc>Прекратить ремонт и убрать механоида.</APM_CommandCancelRepairDesc>
+
+</LanguageData>

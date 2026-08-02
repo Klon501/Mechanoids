@@ -1,16 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Mech_Conqueror_DMR.label>Завоеватель-DMR</APM_Mech_Conqueror_DMR.label>
-  <APM_Mech_Conqueror_DMR.description>Человеческого роста, вооружён до зубов и готов к бою. Завоеватели — лучшая пехота. Ура. Этот вооружён высокомощным заряженным карабином.</APM_Mech_Conqueror_DMR.description>
-  <APM_Mech_Conqueror_DMR.tools.0.label>левая кисть</APM_Mech_Conqueror_DMR.tools.0.label>
-  <APM_Mech_Conqueror_DMR.tools.1.label>правая кисть</APM_Mech_Conqueror_DMR.tools.1.label>
+  <!-- EN: DMR Conqueror -->
+  <APM_Mech_Conqueror_DMR.label>Завоеватель (карабин)</APM_Mech_Conqueror_DMR.label>
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a highly powered Charge Carbine. -->
+  <APM_Mech_Conqueror_DMR.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным энергокарабином.</APM_Mech_Conqueror_DMR.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_DMR.tools.0.label>левый кулак</APM_Mech_Conqueror_DMR.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_DMR.tools.1.label>правый кулак</APM_Mech_Conqueror_DMR.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
 
-  <APM_Mech_Conqueror_AR.label>Завоеватель-AR</APM_Mech_Conqueror_AR.label>
-  <APM_Mech_Conqueror_AR.description>Человеческого роста, вооружён до зубов и готов к бою. Завоеватели — лучшая пехота. Ура. Этот вооружён мощным заряженным бластером.</APM_Mech_Conqueror_AR.description>
-  <APM_Mech_Conqueror_AR.tools.0.label>левая кисть</APM_Mech_Conqueror_AR.tools.0.label>
-  <APM_Mech_Conqueror_AR.tools.1.label>правая кисть</APM_Mech_Conqueror_AR.tools.1.label>
+  <!-- EN: AR Conqueror -->
+  <APM_Mech_Conqueror_AR.label>Завоеватель (винтовка)</APM_Mech_Conqueror_AR.label>
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Blaster. -->
+  <APM_Mech_Conqueror_AR.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным бластером.</APM_Mech_Conqueror_AR.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_AR.tools.0.label>левый кулак</APM_Mech_Conqueror_AR.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_AR.tools.1.label>правый кулак</APM_Mech_Conqueror_AR.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
+
+  <!-- EN: LMG Conqueror -->
+  <APM_Mech_Conqueror_LMG.label>Завоеватель (пулемёт)</APM_Mech_Conqueror_LMG.label>
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter. -->
+  <APM_Mech_Conqueror_LMG.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным энергопулемётом.</APM_Mech_Conqueror_LMG.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_LMG.tools.0.label>левый кулак</APM_Mech_Conqueror_LMG.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_LMG.tools.1.label>правый кулак</APM_Mech_Conqueror_LMG.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_LMG.tools.2.label>голова</APM_Mech_Conqueror_LMG.tools.2.label>
 
 </LanguageData>

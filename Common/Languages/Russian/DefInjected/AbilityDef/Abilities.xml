@@ -1,14 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Absorb.label>Переработать биомассу</APM_Absorb.label>
-  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал и медленно перерабатывает его в химтопливо.</APM_Absorb.description>
+  <!-- EN: Recycle Biomess -->
+  <APM_Absorb.label>переработка биомассы</APM_Absorb.label>
+  <!-- EN: Grind up target corpse, and slowly process them into chem fuel. -->
+  <APM_Absorb.description>Перемолоть труп указанный труп и начать процесс постепенной переработки его в химтопливо.</APM_Absorb.description>
 
-  <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
-  <APM_SwitchToPowerPlantMode.description>...</APM_SwitchToPowerPlantMode.description>
+  <!-- EN: Power Plant Mode -->
+  <APM_SwitchToPowerPlantMode.label>режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
+  <APM_SwitchToPowerPlantMode.description>Переключиться в режим электростанции, пожертвовав подвижностью и щитом ради питания местной энергосети.</APM_SwitchToPowerPlantMode.description>
 
-  <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
-  <APM_BlindingLaser.description>Выстрелить лазером по цели, резко снижая её зрение на короткое время.</APM_BlindingLaser.description>
+  <!-- EN: "Blink" -->
+  <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+  <!-- EN: Active onboard "blink" micro skip drive, skip to target loction. -->
+  <APM_CelerusBlink.description>Активировать бортовой миниатюрный скачковый двигатель и мгновенно переместиться в выбранную точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Sun Ray -->
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+  <!-- EN: Fire beam at full output towards target postion, burning everything in the way. -->
+  <APM_SunRay.description>Выстрелить лучом на полной мощности в выбранную точку, выжигая всё на своём пути.</APM_SunRay.description>
+
+  <!-- EN: Mark Target -->
+  <ApexMechanoids_Ability_GiveAccuracyHediff.label>отметить цель</ApexMechanoids_Ability_GiveAccuracyHediff.label>
+  <!-- EN: Mark target and share live location info to allies, make hitting said target eaiser. -->
+  <ApexMechanoids_Ability_GiveAccuracyHediff.description>Отметить цель и начать передавать союзникам данные о её местоположении в реальном времени, что облегчит попадание по ней.</ApexMechanoids_Ability_GiveAccuracyHediff.description>
+
+  <!-- EN: Scanner Sweep -->
+  <ApexMechanoids_Ability_RevealInvisible.label>сканирование окружения</ApexMechanoids_Ability_RevealInvisible.label>
+  <!-- EN: Scanner sweep the area, revealing invisible targets caught in sweep. -->
+  <ApexMechanoids_Ability_RevealInvisible.description>Провести сканирование области и раскрыть невидимые цели, попавшие в её радиус.</ApexMechanoids_Ability_RevealInvisible.description>
+
+  <!-- EN: Aluring Song -->
+  <ApexMechanoids_Ability_SirenLure.label>манящая песнь</ApexMechanoids_Ability_SirenLure.label>
+  <!-- EN: Sing a aluring song to compel the target pawn to walk towards the caster. -->
+  <ApexMechanoids_Ability_SirenLure.description>Запустить манящую песнь, вынуждающую выбранного персонажа идти к призывающему.</ApexMechanoids_Ability_SirenLure.description>
+
+  <!-- EN: Grappling Hook -->
+  <APM_HookPawn.label>крюк-кошка</APM_HookPawn.label>
+  <!-- EN: Fire a grappling hook at a target, and quickly retract the hook to effectively launch caster to the target, can be used on buildings and pawns. -->
+  <APM_HookPawn.description>Выстрелить крюком-кошкой по цели и быстро втянуть трос, тем самым притянуться к цели. Можно применять как на постройки, так и на персонажей.</APM_HookPawn.description>
+
+  <!-- EN: Shield Charge -->
+  <APM_ShieldCharge.label>щитовой таран</APM_ShieldCharge.label>
+  <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
+  <APM_ShieldCharge.description>Совершить таранный рывок к персонажу, оглушая всё на своём пути.</APM_ShieldCharge.description>
+
+  <!-- EN: Bladehopp -->
+  <APM_Bladehopp.label>клинковый скачок</APM_Bladehopp.label>
+  <!-- EN: Dash to a target followed by a quick attack. -->
+  <APM_Bladehopp.description>Стремительно броситься к цели с последующей быстрой атакой.</APM_Bladehopp.description>
+
+  <!-- EN: Blinding Laser -->
+  <APM_BlindingLaser.label>ослепляющий лазер</APM_BlindingLaser.label>
+  <!-- EN: Fire a laser at target, effectively binding them for a short time. -->
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, чтобы на короткое время ослепить её.</APM_BlindingLaser.description>
+
+  <!-- EN: Defence Matrix -->
+  <APM_DefenceMatrix.label>защитная матрица</APM_DefenceMatrix.label>
+  <!-- EN: Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even
+  when cast
+  on enemies. The tinker will be focused on projecting the shield. -->
+  <APM_DefenceMatrix.description>Удалённо спроецировать персональный защитный щит на дружественного персонажа. Щит останавливает входящий урон, но при этом не позволяет вести огонь изнутри. Это может быть полезно, даже если щит наложен на врага. При этом Мастер при этом будет полностью сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
 
   <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
   <APM_DefenceMatrix.description>Создать персональный защитный щит на пешке своей фракции. Щит блокирует входящий урон и не даёт цели стрелять наружу.</APM_DefenceMatrix.description>

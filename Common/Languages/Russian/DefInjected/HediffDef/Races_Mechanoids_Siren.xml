@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: siren's song -->
   <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
-  <APM_Hediff_SirenSong.description>Механическая мелодия всё ещё звучит в голове, временно облегчая напряжение и придавая бодрости.</APM_Hediff_SirenSong.description>
+  <!-- EN: This pawn is carried by a soothing mechanical chorus, feeling lighter and more energized. -->
+  <APM_Hediff_SirenSong.description>Этот персонаж охвачен убаюкивающим механическим хором, чувствуя себя легче и бодрее.</APM_Hediff_SirenSong.description>
+
 
 
 </LanguageData>

@@ -1,8 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<APM_Weapon_DominusMechlance.label>Копьё Доминуса</APM_Weapon_DominusMechlance.label>
-	<APM_Weapon_DominusMechlance.description>ЗАГОЛОВОК</APM_Weapon_DominusMechlance.description>
-	<APM_Weapon_DominusMechlance.tools.0.label>древко</APM_Weapon_DominusMechlance.tools.0.label>
-	<APM_Weapon_DominusMechlance.tools.1.label>остриё</APM_Weapon_DominusMechlance.tools.1.label>
-	<APM_Weapon_DominusMechlance.tools.2.label>лезвие</APM_Weapon_DominusMechlance.tools.2.label>
+
+  <!-- EN: Dominus' Spear -->
+  <APM_Weapon_DominusSpear.label>копьё Доминуса</APM_Weapon_DominusSpear.label>
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpear.tools.0.label>рукоять</APM_Weapon_DominusSpear.tools.0.label>
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpear.tools.1.label>остриё</APM_Weapon_DominusSpear.tools.1.label>
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpear.tools.2.label>лезвие</APM_Weapon_DominusSpear.tools.2.label>
+
+  <!-- EN: Dominus' Spear (Boss) -->
+  <APM_Weapon_DominusSpearBoss.label>копьё Доминуса (босса)</APM_Weapon_DominusSpearBoss.label>
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpearBoss.tools.0.label>рукоять</APM_Weapon_DominusSpearBoss.tools.0.label>
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpearBoss.tools.1.label>остриё</APM_Weapon_DominusSpearBoss.tools.1.label>
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpearBoss.tools.2.label>лезвие</APM_Weapon_DominusSpearBoss.tools.2.label>
+
 </LanguageData>

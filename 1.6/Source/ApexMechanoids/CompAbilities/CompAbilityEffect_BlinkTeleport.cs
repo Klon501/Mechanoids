@@ -317,32 +317,33 @@ namespace ApexMechanoids
 
             if (Props.range > 0f && cell.DistanceTo(caster.PositionHeld) > Props.range)
             {
-                failureReason = "OutOfRange".Translate();
+                failureReason = "AbilityOutOfRange".Translate();
                 return false;
             }
 
             if (Props.requiresLineOfSight && !GenSight.LineOfSight(caster.PositionHeld, cell, map))
             {
-                failureReason = "AbilityNoLineOfSight".Translate();
+                failureReason = "AbilityCannotHitTarget".Translate();
                 return false;
             }
 
             Building_Door door = cell.GetDoor(map);
             if (door != null && !door.CanPhysicallyPass(caster))
             {
-                failureReason = "CannotUseAbility".Translate();
+                failureReason = "Impassable".Translate();
                 return false;
             }
 
             if (cell.Impassable(map) || !cell.WalkableBy(map, caster))
             {
-                failureReason = "CannotUseAbility".Translate();
+                failureReason = "Impassable".Translate();
                 return false;
             }
 
-            if (!CompAbilityEffect_WithDest.CanTeleportThingTo(target, map))
+            Pawn blockingPawn = cell.GetFirstPawn(map);
+            if (blockingPawn != null && blockingPawn != caster)
             {
-                failureReason = "CannotUseAbility".Translate();
+                failureReason = "AbilityOccupiedCells".Translate();
                 return false;
             }
 

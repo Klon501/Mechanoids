@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_UltimateSacrifice.label>Великая жертва</APM_UltimateSacrifice.label>
-  <APM_UltimateSacrifice.description>Завоеватель может принести себя в жертву, чтобы наложить мощное усиление на всех союзных завоевателей в радиусе.</APM_UltimateSacrifice.description>
+  <!-- EN: ultimate sacrifice -->
+  <APM_UltimateSacrifice.label>последняя жертва</APM_UltimateSacrifice.label>
+  <!-- EN: One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius -->
+  <APM_UltimateSacrifice.description>Один из Завоевателей может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_UltimateSacrifice.description>
+
 
 
 </LanguageData>

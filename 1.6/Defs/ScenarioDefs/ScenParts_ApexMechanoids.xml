@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>APM_SpawnScenarioCorpses</defName>
+    <label>ancient corpses</label>
+    <description>The map contains the bodies of the ancients</description>
+    <scenPartClass>ApexMechanoids.ScenPart_SpawnScenarioCorpses</scenPartClass>
+    <category>Fixed</category>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>APM_CameraOnPlayerStart</defName>
+    <label>start on your pawns</label>
+    <description>The camera opens on the pawns instead of the middle of the map</description>
+    <scenPartClass>ApexMechanoids.ScenPart_CameraOnPlayerStart</scenPartClass>
+    <category>Fixed</category>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+</Defs>

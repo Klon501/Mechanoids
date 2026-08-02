@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: gazer emplacement -->
+  <APM_GazerEmplacement.label>огневая позиция Соглядатая</APM_GazerEmplacement.label>
+  <!-- EN: A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost. -->
+  <APM_GazerEmplacement.description>Укреплённая неподвижная лазерная огневая точка, организованная вокруг восстановленной лазерной установки Соглядатая. После установки не может быть перемещена. При ручном наведении в пределах своего сектора стрельбы способна выпускать разрушительный «Солнечный луч», аналогичный тому, что использует Соглядатай, выжигая всё на своём пути ценой огромных затрат энергии.</APM_GazerEmplacement.description>
+
+</LanguageData>

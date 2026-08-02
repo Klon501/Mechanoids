@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<APM_LeftAegisShield.label>левый щит</APM_LeftAegisShield.label>
+
+  <!-- EN: left shield -->
+  <APM_LeftAegisShield.label>левый щит</APM_LeftAegisShield.label>
+  <!-- EN: shield -->
   <APM_LeftAegisShield.labelShort>щит</APM_LeftAegisShield.labelShort>
 
+  <!-- EN: right shield -->
   <APM_RightAegisShield.label>правый щит</APM_RightAegisShield.label>
+  <!-- EN: shield -->
   <APM_RightAegisShield.labelShort>щит</APM_RightAegisShield.labelShort>
 
 </LanguageData>

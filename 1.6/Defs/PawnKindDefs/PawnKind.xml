@@ -9,6 +9,9 @@
     <techHediffsTags Inherit="False" />
     <forcedTraits Inherit="False" />
     <defaultFactionDef Inherit="False" />
+    <weaponTags Inherit="False" />
+    <weaponMoney>0</weaponMoney>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
     <apparelRequired>
       <li>Apparel_PackBandwidth</li>
       <li>Apparel_ArmorRecon</li>

@@ -1,14 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Gun_Conqueror_AR.label>заряженный бластер</APM_Gun_Conqueror_AR.label>
-  <APM_Gun_Conqueror_AR.description>Заряженная штурмовая винтовка. Слабее заряженной винтовки, но точнее.</APM_Gun_Conqueror_AR.description>
+  <!-- EN: charge blaster -->
+  <APM_Gun_Conqueror_AR.label>бластер</APM_Gun_Conqueror_AR.label>
+  <!-- EN: A charged-shot assault rifle. Weaker than a charge rifle, but more accurate. -->
+  <APM_Gun_Conqueror_AR.description>Энергетическая штурмовая винтовка. Слабее энерговинтовки, но точнее.</APM_Gun_Conqueror_AR.description>
+  <!-- EN: stock -->
   <APM_Gun_Conqueror_AR.tools.0.label>приклад</APM_Gun_Conqueror_AR.tools.0.label>
+  <!-- EN: barrel -->
   <APM_Gun_Conqueror_AR.tools.1.label>ствол</APM_Gun_Conqueror_AR.tools.1.label>
 
-  <APM_Gun_Conqueror_DMR.label>заряженный карабин</APM_Gun_Conqueror_DMR.label>
-  <APM_Gun_Conqueror_DMR.description>Более мощный и скорострельный, но менее точный заряженный ланцет.</APM_Gun_Conqueror_DMR.description>
+  <!-- EN: charge carbine -->
+  <APM_Gun_Conqueror_DMR.label>энергокарабин</APM_Gun_Conqueror_DMR.label>
+  <!-- EN: A stronger, faster, but less accurate Charge Lance. -->
+  <APM_Gun_Conqueror_DMR.description>Более мощная и скорострельная, но менее точная версия энергокопья.</APM_Gun_Conqueror_DMR.description>
+  <!-- EN: barrel -->
   <APM_Gun_Conqueror_DMR.tools.0.label>ствол</APM_Gun_Conqueror_DMR.tools.0.label>
 
+  <!-- EN: charge spitter shot -->
+  <Bullet_ChargeSpitter.label>выстрел энергопулемёта</Bullet_ChargeSpitter.label>
+
+  <!-- EN: charge spitter -->
+  <APM_Gun_Conqueror_LMG.label>энергопулемёт</APM_Gun_Conqueror_LMG.label>
+  <!-- EN: A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate. -->
+  <APM_Gun_Conqueror_LMG.description>Энергетический скорострельный бластер для ведения огня на подавление. Легче тяжёлого бластера, но точнее.</APM_Gun_Conqueror_LMG.description>
+  <!-- EN: barrel -->
+  <APM_Gun_Conqueror_LMG.tools.0.label>ствол</APM_Gun_Conqueror_LMG.tools.0.label>
 
 </LanguageData>

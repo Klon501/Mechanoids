@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_TerminusOverdrive.label>Овердрайв</APM_TerminusOverdrive.label>
-  <APM_TerminusOverdrive.description>Терминус перенаправляет энергию внутрь корпуса и на короткое время входит в боевой овердрайв. Во время действия он сбрасывает плащ, наносит больше урона в ближнем бою, быстрее проводит атаки и заметно слабее реагирует на stagger.</APM_TerminusOverdrive.description>
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive.label>перегрузка</APM_TerminusOverdrive.label>
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive.description>Терминус направляет энергию внутрь себя и ненадолго входит в перегруженное боевое состояние. Пока оно активно, он сбрасывает плащ, бьёт сильнее, чаще и становится устойчивее к сбиванию с ног.</APM_TerminusOverdrive.description>
+
+  <!-- EN: severing edge -->
+  <SeveringEdge.label>рассекающее лезвие</SeveringEdge.label>
 
 </LanguageData>

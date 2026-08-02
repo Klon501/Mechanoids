@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: pinpoint -->
+  <APM_Mech_Pinpoint.label>наводчик</APM_Mech_Pinpoint.label>
+  <!-- EN: pinpoints -->
+  <APM_Mech_Pinpoint.labelPlural>наводчики</APM_Mech_Pinpoint.labelPlural>
+
+</LanguageData>

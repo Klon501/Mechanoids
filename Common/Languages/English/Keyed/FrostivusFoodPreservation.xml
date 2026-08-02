@@ -5,13 +5,5 @@
   <APM.FrostivusFoodPreservation.ManualUnload.Desc>Choose a cell where Frostivus should unload all preserved food. Manually unloaded food will be forbidden.</APM.FrostivusFoodPreservation.ManualUnload.Desc>
   <APM.FrostivusFoodPreservation.ManualUnload.NoFood>No preserved food carried.</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
   <APM.FrostivusFoodPreservation.ManualUnload.NoPath>Frostivus cannot reach that cell.</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
-  <APM.FrostivusFoodPreservation.CommandUnavailable>Frostivus cannot take preservation orders right now.</APM.FrostivusFoodPreservation.CommandUnavailable>
-  <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>Release cryo contents</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
-  <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>Choose a cell where Frostivus should release swallowed pawns or corpses.</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
-  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>No swallowed pawn or corpse carried.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
-  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>Frostivus cannot reach that cell.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
-  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>Frostivus can only swallow a spawned humanlike pawn or corpse on its map.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
-  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>Frostivus can swallow any humanlike corpse or downed pawn, but only living colonists, prisoners, or slaves.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
-  <APM.FrostivusFoodPreservation.CryptoSwallow.Self>Frostivus cannot swallow itself.</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
 
 </LanguageData>

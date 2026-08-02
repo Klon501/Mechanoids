@@ -153,6 +153,16 @@
 		</verbProperties>
 	</AbilityDef>
 
+	<!-- protected longjump for pulse mech -->
+	<AbilityDef ParentName="LongJumpMech">
+		<defName>APM_PulseLongjump</defName>
+		<jobDef>APM_CastPulseJump</jobDef>
+		<verbProperties>
+			<verbClass>ApexMechanoids.Verb_CastPulseLongjump</verbClass>
+			<minRange>0</minRange>
+		</verbProperties>
+	</AbilityDef>
+
 	<!-- "pulse wave" for pulse mech -->
 	<AbilityDef>
 		<defName>APM_PulseWave</defName>

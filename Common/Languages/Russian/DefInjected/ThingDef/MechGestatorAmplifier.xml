@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: mech gestator amplifier -->
+  <APM_GestatorAmplifier.label>усилитель гестатора механоидов</APM_GestatorAmplifier.label>
+  <!-- EN: Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to. -->
+  <APM_GestatorAmplifier.description>Военные технологии роя механоидов были украдены и попали в органические руки. Это привело к созданию данного усилителя. Он увеличивает скорость работы во всех гестаторах механоидов поблизости.</APM_GestatorAmplifier.description>
+
+</LanguageData>

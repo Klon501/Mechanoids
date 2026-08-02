@@ -4,7 +4,7 @@
   <APM_FrostivusFoodPreservation.labelShort>preserve</APM_FrostivusFoodPreservation.labelShort>
   <APM_FrostivusFoodPreservation.pawnLabel>Preserver</APM_FrostivusFoodPreservation.pawnLabel>
   <APM_FrostivusFoodPreservation.gerundLabel>preserving food</APM_FrostivusFoodPreservation.gerundLabel>
-  <APM_FrostivusFoodPreservation.description>Rescue vulnerable food from unsafe storage or outdoor deterioration and unload it to cold storage when available.</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.description>Rescue temperature-spoiling food and unload it to cold storage.</APM_FrostivusFoodPreservation.description>
   <APM_FrostivusFoodPreservation.verb>Preserve</APM_FrostivusFoodPreservation.verb>
 
 </LanguageData>

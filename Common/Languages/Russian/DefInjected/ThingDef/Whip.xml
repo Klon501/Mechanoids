@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: whip -->
+  <APM_Weapon_MechWhip.label>хлыст</APM_Weapon_MechWhip.label>
+  <!-- EN: A small burst-oriented flamethrower used by mechanoids. -->
+  <APM_Weapon_MechWhip.description>Небольшой залповый огнемёт механоидов.</APM_Weapon_MechWhip.description>
+  <!-- EN: edge -->
+  <APM_Weapon_MechWhip.tools.0.label>наконечник</APM_Weapon_MechWhip.tools.0.label>
+
+</LanguageData>

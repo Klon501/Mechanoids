@@ -21,7 +21,7 @@ namespace ApexMechanoids
         {
             this.FailOn(() => !FrostivusFoodPreservationUtility.CanDoFoodPreservation(pawn));
             this.FailOn(() => Food == null || Food.Destroyed || !Food.Spawned || Food.Map != pawn.Map);
-            this.FailOn(() => !FrostivusFoodPreservationUtility.CanRescueFoodNow(pawn, Food));
+            this.FailOn(() => !FrostivusFoodPreservationUtility.CanRescueFoodNow(pawn, Food, job.playerForced));
             this.FailOnDespawnedNullOrForbidden(FoodIndex);
 
             yield return Toils_Goto.GotoThing(FoodIndex, PathEndMode.ClosestTouch);

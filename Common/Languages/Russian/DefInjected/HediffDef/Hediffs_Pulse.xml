@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: flash-blinded -->
+  <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
+  <!-- EN: An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time. -->
+  <APM_PulseWaveBlind.description>Яркая вспышка и резкий скачок давления перегрузили датчики этого персонажа, резко снизив его зрение на короткое время.</APM_PulseWaveBlind.description>
+
+</LanguageData>

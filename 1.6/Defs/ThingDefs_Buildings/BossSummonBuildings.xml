@@ -265,7 +265,7 @@
 
 
 	</ThingDef>
-		<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>APM_MechbandAntenna_United</defName>
 		<label>Mechband Invoker</label>
 		<description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an 3-fold apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. This particular mechband device sends out 3 simultaneous signals, be warned.</description>
@@ -314,13 +314,11 @@
 				<useDuration>900</useDuration>
 				<floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
 			</li>
-			<li Class="CompProperties_Useable_CallBossgroup">
-				<bossgroupDef>APM_Group_Trio</bossgroupDef>
+			<li Class="ApexMechanoids.CompProperties_Useable_CallMulBossgroup">
+				<incidentDef>APM_IncidentDef_TrioBoss</incidentDef>
+				<leaderName>Three Lords</leaderName>
 				<effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
 				<prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
-				<unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
-				<unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
-				<delayTicks>120</delayTicks>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf">
 				<delayTicks>120</delayTicks>

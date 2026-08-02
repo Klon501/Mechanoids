@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Ingestor -->
+  <APM_Mech_Ingestor.label>Поглотитель</APM_Mech_Ingestor.label>
+  <!-- EN: While mechtech devices typically rely on internal power cells, provided electricity and incendiary fuel are still needed. The ingestor scourers the remains of battlefields for survivors to finish off and organic material including corpses, to automatically refine into chemfuel within its chassis. -->
+  <APM_Mech_Ingestor.description>Обычно механоиды и их техника полагаются на внутренние батареи, но подключение к электросети или горючее топливо им всё же необходимы. Поглотитель прочёсывает поля после сражений для добивания выживших и поиска органических материалов, чаще всего просто трупов. Он способен поглощать их и перерабатывать в химтопливо внутри себя.</APM_Mech_Ingestor.description>
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.0.label>голова</APM_Mech_Ingestor.tools.0.label>
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.1.label>голова</APM_Mech_Ingestor.tools.1.label>
+
+</LanguageData>
