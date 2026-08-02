@@ -410,6 +410,19 @@ namespace ApexMechanoids
             curTarget = curLocalTargetInfo.Pawn;
         }
 
+        public void ForceSetTarget(LocalTargetInfo target)
+        {
+            curLocalTargetInfo = target;
+            curTarget = curLocalTargetInfo.Pawn;
+        }
+
+        public void ForceSetTarget(Pawn mech, out LocalTargetInfo target)
+        {
+            curLocalTargetInfo = new LocalTargetInfo(mech);
+            curTarget = curLocalTargetInfo.Pawn;
+            target = curLocalTargetInfo;
+        }
+
         private bool HasATarget()
         {
             if (curTarget != null)
@@ -457,6 +470,13 @@ namespace ApexMechanoids
             ResetTarget();
             ResetEffecter();
         }
+
+        public void EndActionWithSound()
+        {
+            EndAction();
+            SoundDefOf.Tick_High.PlayOneShotOnCamera();
+        }
+
         private void ResetTarget()
         {
             curLocalTargetInfo = LocalTargetInfo.Invalid;
@@ -826,14 +846,17 @@ namespace ApexMechanoids
 
         public string GetShieldGizmoLabel()
         {
-            /*
-            if (TicksForShieldcooldown != 0)
-            {
-                int time = TicksForShieldcooldown / 60;
-                return "remote shield cooldown: " + time.ToString() + "s";
-            }
-            */
             return "APM.CommandCasket.Gizmo.Shield.Label".Translate().CapitalizeFirst();
+        }
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            List<Gizmo> list = GetGizmos().ToList();      //only add gizmos in GetGizmos, so we can mirror them to the mechanitor!
+
+            foreach (Gizmo g in list)
+            {
+                yield return g;
+            }
         }
 
         #endregion
@@ -847,15 +870,7 @@ namespace ApexMechanoids
             } 
         }
 
-        public override IEnumerable<Gizmo> CompGetGizmosExtra()
-        {
-            List<Gizmo> list = GetGizmos().ToList();      //only add gizmos in GetGizmos, so we can mirror them to the mechanitor!
 
-            foreach (Gizmo g in list)
-            {
-                yield return g;
-            }
-        }
     }
 
 }
