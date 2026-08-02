@@ -45,6 +45,11 @@ namespace ApexMechanoids
             LocalTargetInfo targetCell = StarfallTargetingUtility.FreezePawnTargetToCell(castTarg);
             LocalTargetInfo destinationCell = destTarg.IsValid ? StarfallTargetingUtility.FreezePawnTargetToCell(destTarg) : targetCell;
             LocalTargetInfo validationTarget = targetCell.IsValid ? targetCell : destinationCell;
+            if (CasterIsPawn && RavagerArtilleryUtility.AutoAbilityBlockedByArtilleryToggle(CasterPawn) && !RavagerArtilleryUtility.IsManualStarfallJob(CasterPawn))
+            {
+                return false;
+            }
+
             if (CasterIsPawn && !RavagerArtilleryUtility.CanFireAtCell(CasterPawn, validationTarget, this))
             {
                 return false;

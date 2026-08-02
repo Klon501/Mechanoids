@@ -8,6 +8,8 @@ namespace ApexMechanoids
 {
     public static class RavagerArtilleryUtility
     {
+        private const string StarfallDefName = "APM_Starfall";
+
         public static bool CanUseArtillery(Pawn pawn)
         {
             return pawn != null && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && !pawn.Position.Roofed(pawn.Map);
@@ -27,6 +29,23 @@ namespace ApexMechanoids
         {
             Job job = pawn?.CurJob;
             return job != null && job.def == ApexDefsOf.APM_RavagerArtilleryAttack && job.playerForced;
+        }
+
+        public static bool AutoAbilityBlockedByArtilleryToggle(Pawn pawn, Ability ability)
+        {
+            return ability?.def?.defName == StarfallDefName && AutoAbilityBlockedByArtilleryToggle(pawn);
+        }
+
+        public static bool AutoAbilityBlockedByArtilleryToggle(Pawn pawn)
+        {
+            CompRavagerArtilleryController controller = pawn?.TryGetComp<CompRavagerArtilleryController>();
+            return IsPlayerControlled(pawn) && controller != null && !controller.AutoFireEnabled;
+        }
+
+        public static bool IsManualStarfallJob(Pawn pawn)
+        {
+            Job job = pawn?.CurJob;
+            return job != null && job.playerForced && (job.ability?.def?.defName == StarfallDefName || job.verbToUse is Verb_CastStarfall);
         }
 
         public static bool IsPlayerControlled(Pawn pawn)
@@ -313,6 +332,45 @@ namespace ApexMechanoids
                     autoFireEnabled = !autoFireEnabled;
                 }
             };
+        }
+
+        public override string CompInspectStringExtra()
+        {
+            Pawn pawn = parent as Pawn;
+            if (pawn == null || !RavagerArtilleryUtility.IsPlayerControlled(pawn) || pawn.Dead || pawn.Downed || !pawn.Spawned || pawn.Map == null)
+            {
+                return null;
+            }
+
+            if (!AutoFireEnabled)
+            {
+                return "APM_Ravager_Inspect_AutoArtilleryDisabled".Translate();
+            }
+
+            if (pawn.Position.Roofed(pawn.Map))
+            {
+                return "APM_Ravager_Inspect_AutoArtilleryBlockedRoof".Translate();
+            }
+
+            Thing target = pawn.mindState?.enemyTarget;
+            if (target == null || target.Destroyed || !target.Spawned || target.Map != pawn.Map)
+            {
+                return null;
+            }
+
+            RoofDef targetRoof = target.Position.GetRoof(pawn.Map);
+            if (targetRoof != null && targetRoof.isThickRoof)
+            {
+                return "APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof".Translate();
+            }
+
+            Verb verb = pawn.TryGetAttackVerb(target, !pawn.IsColonist && !pawn.IsColonySubhuman);
+            if (!RavagerArtilleryUtility.CanFireAtCell(pawn, new LocalTargetInfo(target.Position), verb))
+            {
+                return "APM_Ravager_Inspect_AutoArtilleryCannotHit".Translate();
+            }
+
+            return null;
         }
 
         private void EnsureInitialized()
