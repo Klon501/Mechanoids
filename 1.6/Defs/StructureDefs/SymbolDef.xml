@@ -13,6 +13,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>APM_Weapon_PlasmaWhip</defName>
+    <thing>APM_Weapon_PlasmaWhip</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
   <defName>APM_Mech_Vassal</defName>
   <pawnKindDef>APM_Mech_Vassal</pawnKindDef>
   <spawnPartOfFaction>True</spawnPartOfFaction>
