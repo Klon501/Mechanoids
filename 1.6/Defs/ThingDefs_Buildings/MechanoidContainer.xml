@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="APM_MechanoidContainerBase" ParentName="BuildingBase">
+		<defName>APM_MechanoidContainerBase</defName>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2, 2)</size>
+		<tickerType>Normal</tickerType>
+		<hasInteractionCell>false</hasInteractionCell>
+		<building>
+			<paintable>false</paintable>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="APM_MechanoidContainerBase">
+		<defName>APM_MechanoidContainer_Cluster</defName>
+		<label>ancient mechanoid stasis container</label>
+		<description>A heavy container equipped with autonomous activity-maintenance systems and archaic telemetry screens. Judging by the internal sensors, the mechanoid sealed inside was isolated from the hive mind immediately after its creation. The device is in deep preservation mode. Its mechanisms do not respond to external access codes, but the isolation saved the machine from forced deactivation. By breaking open this container, one can attempt to seize control of the forgotten mechanoid contained within.</description>
+		<graphicData>
+            <texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2, 3)</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1.8, 1.8, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+        <uiIconPath>Things/Building/MechanoidContainer/MechanoidContainerCluster</uiIconPath>
+        <uiIconScale>0.95</uiIconScale>
+        <building>
+			<buildingTags>
+				<li>MechanoidClusterBuilding</li>
+			</buildingTags>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_MechanoidContainerBase">
+		<defName>APM_MechanoidContainer_Player</defName>
+		<label>mechanoid stasis container</label>
+		<description>A specialized stasis container designed for the safe storage of mechanoids. Placing a mechanoid inside completely severs its active neural link with the mechanitor and puts its systems into deep suspended animation. In this state, the machine consumes no power and does not occupy the mechanitor's bandwidth, freeing up valuable network resources. The container allows you to keep an assault or worker squad in reserve, ready for deployment at a moment's notice without risking network overload.</description>
+		<graphicData>
+            <texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2, 3)</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1.8, 1.8, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+        <uiIconPath>Things/Building/MechanoidContainer/MechanoidContainer</uiIconPath>
+        <uiIconScale>0.95</uiIconScale>
+        <designationCategory>Biotech</designationCategory> 
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+        <researchPrerequisites>
+			<li>AdvancedMechtech</li>
+		</researchPrerequisites>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+	</ThingDef>
+
+</Defs>
