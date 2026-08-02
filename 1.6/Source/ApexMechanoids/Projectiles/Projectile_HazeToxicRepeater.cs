@@ -1,10 +1,13 @@
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace ApexMechanoids
 {
     public class Projectile_HazeToxicRepeater : Beam
     {
+        private const float DirectToxicSeverity = 0.015f;
+
         private static ThingDef toxicPuddleDef;
 
         private static ThingDef ToxicPuddleDef
@@ -32,7 +35,26 @@ namespace ApexMechanoids
                 return;
             }
 
+            ApplyDirectToxicBuildup(hitThing);
             TryPlaceToxicPuddle(cell, map);
+        }
+
+        private static void ApplyDirectToxicBuildup(Thing hitThing)
+        {
+            Pawn pawn = hitThing as Pawn;
+            if (pawn == null || pawn.Dead || !(pawn.RaceProps?.IsFlesh ?? false))
+            {
+                return;
+            }
+
+            float resistanceFactor = Mathf.Clamp01(1f - pawn.GetStatValue(StatDefOf.ToxicResistance));
+            if (resistanceFactor <= 0f)
+            {
+                return;
+            }
+
+            float bodySizeFactor = 1f / Mathf.Max(pawn.BodySize, 0.25f);
+            HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, DirectToxicSeverity * resistanceFactor * bodySizeFactor);
         }
 
         private static void TryPlaceToxicPuddle(IntVec3 cell, Map map)
