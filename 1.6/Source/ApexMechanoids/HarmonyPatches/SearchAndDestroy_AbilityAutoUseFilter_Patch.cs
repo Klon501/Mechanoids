@@ -15,14 +15,18 @@ namespace ApexMechanoids.HarmonyPatches
         [HarmonyPostfix]
         private static void AICastableAbilitiesPostfix(Pawn_AbilityTracker __instance, ref List<Ability> __result)
         {
-            if (__result == null || __result.Count == 0 || !SearchAndDestroyCompatUtility.SearchAndDestroyEnabledFor(__instance.pawn))
+            if (__result == null || __result.Count == 0)
             {
                 return;
             }
 
+            Pawn pawn = __instance.pawn;
+            bool searchAndDestroyEnabled = SearchAndDestroyCompatUtility.SearchAndDestroyEnabledFor(pawn);
             for (int i = __result.Count - 1; i >= 0; i--)
             {
-                if (SearchAndDestroyCompatUtility.AutoUseDisabledWithSearchAndDestroy(__instance.pawn, __result[i]))
+                Ability ability = __result[i];
+                if (RavagerArtilleryUtility.AutoAbilityBlockedByArtilleryToggle(pawn, ability)
+                    || (searchAndDestroyEnabled && SearchAndDestroyCompatUtility.AutoUseDisabledWithSearchAndDestroy(pawn, ability)))
                 {
                     __result.RemoveAt(i);
                 }
