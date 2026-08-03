@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -33,6 +34,22 @@ namespace ApexMechanoids
 
         /// <summary>Hediff carrying the per-target hit count. Left null disables escalation.</summary>
         public HediffDef targetStackHediff;
+
+        /// <summary>Damage the warhead blast deals to everything caught in it.</summary>
+        public int blastDamageAmount = 14;
+
+        /// <summary>Armour penetration for the blast, separate from the direct hit.</summary>
+        public float blastArmorPenetration = 0.3f;
+
+        /// <summary>Blast damage type. Falls back to the projectile's own damage def.</summary>
+        public DamageDef blastDamageDef;
+
+        /// <summary>
+        /// Whether the pawn the missile actually struck also takes the blast. Off by default: that
+        /// target already took the full escalating direct hit, so including it would charge the
+        /// same missile twice and blur where the escalation shows up.
+        /// </summary>
+        public bool blastHitsPrimaryTarget;
     }
 
     /// <summary>
@@ -199,12 +216,56 @@ namespace ApexMechanoids
 
         public override void Impact(Thing hitThing, bool blockedByShield = false)
         {
+            // Captured before the base call, which destroys the projectile and clears its map.
+            Map map = Map;
+            IntVec3 blastCell = hitThing != null && hitThing.Spawned ? hitThing.Position : Position;
+
             if (!blockedByShield)
             {
                 pendingDamageMultiplier = ResolveAndAdvanceStack(hitThing);
             }
 
             base.Impact(hitThing, blockedByShield);
+            TryDetonate(map, blastCell, hitThing);
+        }
+
+        /// <summary>
+        /// Detonates the warhead. This runs for every impact, including the missile burning out or
+        /// losing its target, so a spent missile visibly explodes instead of quietly winking out.
+        ///
+        /// The blast is raised here rather than by deriving from <see cref="Projectile_Explosive"/>
+        /// or adding <c>CompProperties_Explosive</c>, because either of those makes
+        /// <c>VerbProperties.CausesExplosion</c> true and forces a scattered aim point on the verb.
+        /// </summary>
+        private void TryDetonate(Map map, IntVec3 cell, Thing hitThing)
+        {
+            DefModExtension_JavelinMissile props = Props;
+            float radius = def.projectile.explosionRadius;
+            if (map == null || props == null || radius <= 0f || !cell.InBounds(map))
+            {
+                return;
+            }
+
+            List<Thing> ignoredThings = null;
+            if (!props.blastHitsPrimaryTarget && hitThing != null)
+            {
+                ignoredThings = new List<Thing> { hitThing };
+            }
+
+            GenExplosion.DoExplosion(
+                cell,
+                map,
+                radius,
+                props.blastDamageDef ?? def.projectile.damageDef,
+                launcher,
+                props.blastDamageAmount,
+                props.blastArmorPenetration,
+                def.projectile.soundExplode,
+                equipmentDef,
+                def,
+                intendedTarget.Thing,
+                damageFalloff: true,
+                ignoredThings: ignoredThings);
         }
 
         /// <summary>
