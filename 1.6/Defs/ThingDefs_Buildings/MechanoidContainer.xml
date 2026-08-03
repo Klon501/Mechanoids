@@ -2,7 +2,6 @@
 <Defs>
 
 	<ThingDef Abstract="True" Name="APM_MechanoidContainerBase" ParentName="BuildingBase">
-		<defName>APM_MechanoidContainerBase</defName>
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
@@ -21,6 +20,7 @@
 		</statBases>
 		<size>(2, 2)</size>
 		<tickerType>Normal</tickerType>
+		<dontPrint>true</dontPrint>
 		<hasInteractionCell>false</hasInteractionCell>
 		<building>
 			<paintable>false</paintable>
@@ -30,8 +30,6 @@
 			</buildingTags>
 			<ai_chillDestination>false</ai_chillDestination>
 		</building>
-		<comps>
-		</comps>
 	</ThingDef>
 
 
@@ -40,23 +38,73 @@
 		<label>ancient mechanoid stasis container</label>
 		<description>A heavy container equipped with autonomous activity-maintenance systems and archaic telemetry screens. Judging by the internal sensors, the mechanoid sealed inside was isolated from the hive mind immediately after its creation. The device is in deep preservation mode. Its mechanisms do not respond to external access codes, but the isolation saved the machine from forced deactivation. By breaking open this container, one can attempt to seize control of the forgotten mechanoid contained within.</description>
 		<graphicData>
-            <texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster_Empty</texPath>
+			<texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2, 3)</drawSize>
-            <drawOffset>(0,0,0.5)</drawOffset>
+			<drawOffset>(0,0,0.5)</drawOffset>
 			<shadowData>
 				<volume>(1.8, 1.8, 0.7)</volume>
 			</shadowData>
 		</graphicData>
-        <uiIconPath>Things/Building/MechanoidContainer/MechanoidContainerCluster</uiIconPath>
-        <uiIconScale>0.95</uiIconScale>
-        <building>
+		<uiIconPath>Things/Building/MechanoidContainer/MechanoidContainerCluster</uiIconPath>
+		<uiIconScale>0.95</uiIconScale>
+		<building>
 			<buildingTags>
 				<li>MechanoidClusterBuilding</li>
 			</buildingTags>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_MechanoidContainer">
+				<activeTicks>120</activeTicks>
+				<ticksToActivate>5000</ticksToActivate>
+				<!-- <cooldownTicks>20000</cooldownTicks> -->
+				<activateTexPath>UI/Gizmos/MechControlGroup</activateTexPath>
+        
+				<activateLabelString>Hack</activateLabelString>
+				<activateDescString>Will hack container to reprogram mechanoid inside.</activateDescString>
+				<guiLabelString>Choose who should hack this.</guiLabelString>
+				<jobString>hack container</jobString>
+				<activatingStringPending>hacking container with {0}</activatingStringPending>
+				<activatingString>hacking container with {0}: {1}s</activatingString>
+				<onCooldownString>recalibrating</onCooldownString>
+				<!-- <messageCooldownEnded>Can hack again.</messageCooldownEnded> -->
+
+				<!-- <fleckOnUsed>PsycastAreaEffect</fleckOnUsed> -->
+				<!-- <fleckOnUsedScale>5</fleckOnUsedScale> -->
+				<soundActivate>GestatorGlassShattered</soundActivate>
+				<interactionEffecter>Hacking</interactionEffecter>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+				
+				<mechKindOptions>
+					<Mech_Scyther/>
+					<Mech_Lancer/>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey"/>
+					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech"/>
+					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech"/>
+				</mechKindOptions>
+				<emptyGraphic>
+					<texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2, 3)</drawSize>
+					<drawOffset>(0,0,0.5)</drawOffset>
+					<shadowData>
+						<volume>(1.8, 1.8, 0.7)</volume>
+					</shadowData>
+				</emptyGraphic>
+			</li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="APM_MechanoidContainerBase">
@@ -64,17 +112,17 @@
 		<label>mechanoid stasis container</label>
 		<description>A specialized stasis container designed for the safe storage of mechanoids. Placing a mechanoid inside completely severs its active neural link with the mechanitor and puts its systems into deep suspended animation. In this state, the machine consumes no power and does not occupy the mechanitor's bandwidth, freeing up valuable network resources. The container allows you to keep an assault or worker squad in reserve, ready for deployment at a moment's notice without risking network overload.</description>
 		<graphicData>
-            <texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
+			<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2, 3)</drawSize>
-            <drawOffset>(0,0,0.5)</drawOffset>
+			<drawOffset>(0,0,0.5)</drawOffset>
 			<shadowData>
 				<volume>(1.8, 1.8, 0.7)</volume>
 			</shadowData>
 		</graphicData>
-        <uiIconPath>Things/Building/MechanoidContainer/MechanoidContainer</uiIconPath>
-        <uiIconScale>0.95</uiIconScale>
-        <designationCategory>Biotech</designationCategory> 
+		<uiIconPath>Things/Building/MechanoidContainer/MechanoidContainer</uiIconPath>
+		<uiIconScale>0.95</uiIconScale>
+		<designationCategory>Biotech</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
 			<li>BuildingsSpecial</li>
@@ -84,7 +132,7 @@
 			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-        <researchPrerequisites>
+		<researchPrerequisites>
 			<li>AdvancedMechtech</li>
 		</researchPrerequisites>
 		<building>
@@ -95,7 +143,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 		</comps>
 	</ThingDef>
 
