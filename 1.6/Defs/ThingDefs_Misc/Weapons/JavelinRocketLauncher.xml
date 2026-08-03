@@ -5,11 +5,15 @@
 		<label>javelin rocket launcher</label>
 		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs every hull it opens, and each rocket that finds the same target again is fused to bite deeper than the last.</description>
 		<techLevel>Spacer</techLevel>
+		<!-- The launcher is drawn into the javelin's own body sprite in all three facings, so the
+		     held weapon is kept invisible rather than stacking a second launcher on top of it. Same
+		     approach as APM_Gazer_Laser. The gear tab still shows a real icon via uiIconPath.
+		     TODO: uiIconPath is the dynamo's impactor art as a placeholder and wants its own icon. -->
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/DynamoEMPImpactor</texPath>
+			<texPath>Blank</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Item/Equipment/WeaponRanged/DynamoEMPImpactor</uiIconPath>
 		<uiIconScale>0.5</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<destroyOnDrop>true</destroyOnDrop>
