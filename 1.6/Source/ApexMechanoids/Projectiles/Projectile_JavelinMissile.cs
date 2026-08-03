@@ -7,87 +7,54 @@ namespace ApexMechanoids
 {
     public class DefModExtension_JavelinMissile : DefModExtension
     {
-        /// <summary>How hard the missile can pull once its motor has settled, in degrees per tick.</summary>
         public float turnDegreesPerTick = 6f;
-
-        /// <summary>Ticks the missile holds its launch heading before guidance engages.</summary>
         public int boostTicks = 12;
-
-        /// <summary>Motor burn time. The missile is spent once this runs out.</summary>
         public int lifetimeTicks = 120;
-
-        /// <summary>How close the missile has to get to the target to detonate on it.</summary>
         public float hitRadius = 0.5f;
 
-        /// <summary>
-        /// Range at which the missile counts as committed to its attack run. Once it has been this
-        /// close and the range opens again, guidance shuts down instead of letting the missile come
-        /// round for a second pass at a target it already overflew.
-        /// </summary>
+        // Once the missile has been this close and the range opens again, guidance shuts down
+        // instead of letting it come round for a second pass at a target it already overflew.
         public float terminalRadius = 3f;
 
-        /// <summary>Extra fraction of base damage added for each previous hit on the same target.</summary>
         public float damageMultiplierPerStack = 0.25f;
-
-        /// <summary>Ceiling on the escalating damage multiplier.</summary>
         public float maxDamageMultiplier = 2.5f;
 
-        /// <summary>Hediff carrying the per-target hit count. Left null disables escalation.</summary>
+        // Leave null to disable the escalating damage entirely.
         public HediffDef targetStackHediff;
 
-        /// <summary>Damage the warhead blast deals to everything caught in it.</summary>
         public int blastDamageAmount = 14;
-
-        /// <summary>Armour penetration for the blast, separate from the direct hit.</summary>
         public float blastArmorPenetration = 0.3f;
 
-        /// <summary>Blast damage type. Falls back to the projectile's own damage def.</summary>
+        // Falls back to the projectile's own damage def when null.
         public DamageDef blastDamageDef;
 
-        /// <summary>
-        /// Whether the pawn the missile actually struck also takes the blast. Off by default: that
-        /// target already took the full escalating direct hit, so including it would charge the
-        /// same missile twice and blur where the escalation shows up.
-        /// </summary>
+        // Off by default: the struck pawn already took the full escalating direct hit, so including
+        // it in the blast would charge the same missile twice.
         public bool blastHitsPrimaryTarget;
     }
 
     /// <summary>
     /// A homing missile that leaves the launcher along the mech's cardinal facing, holds that
     /// heading through a short boost phase, then steers onto the target at a capped turn rate.
-    ///
-    /// Steering works by rewriting the base projectile's <c>origin</c>, <c>destination</c> and
-    /// <c>ticksToImpact</c> each tick so the vanilla mover walks exactly the path the guidance
-    /// produced. That keeps free-intercept collision, shield blocking and impact handling on the
-    /// vanilla code path instead of reimplementing them.
-    ///
-    /// This derives from <see cref="Bullet"/> rather than <see cref="Projectile_Explosive"/> on
-    /// purpose. <c>VerbProperties.CausesExplosion</c> treats any Projectile_Explosive subclass as an
-    /// area weapon and then requires a matching <c>forcedMissRadius</c>, which scatters the aim
-    /// point - the opposite of a guided missile. Landing as a single aimed hit also keeps the
-    /// escalating damage attributable to one target.
+    /// Steering rewrites the base projectile's origin, destination and ticksToImpact each tick so
+    /// collision, shield blocking and impact all stay on the vanilla code path.
     /// </summary>
+    // Derives from Bullet rather than Projectile_Explosive on purpose: VerbProperties.CausesExplosion
+    // treats any Projectile_Explosive subclass as an area weapon and then requires a matching
+    // forcedMissRadius, which scatters the aim point and cannot coexist with a guided missile. The
+    // warhead is detonated from Impact instead.
     public class Projectile_JavelinMissile : Bullet
     {
-        /// <summary>
-        /// How far past the next step the destination is projected. Any value above one keeps
-        /// <c>ticksToImpact</c> positive so the base mover never treats a steering update as an
-        /// arrival, while the interpolation still lands on the exact guided position.
-        /// </summary>
+        // Any value above one keeps ticksToImpact positive, so the base mover never mistakes a
+        // steering update for an arrival while the interpolation still lands on the guided position.
         private const int PathStretch = 8;
 
-        /// <summary>
-        /// How far behind the missile the interpolation origin is placed each tick.
-        ///
-        /// Vanilla gates every free-intercept collision on
-        /// <c>VerbUtility.InterceptChanceFactorFromDistance(origin, cell)</c>, which returns zero
-        /// inside 5 tiles of <c>origin</c> and reaches full strength at 12. Steering by rewriting
-        /// <c>origin</c> to the missile's current position each tick therefore silently disabled
-        /// collision entirely: the missile flew through walls, cover and bystanders and could only
-        /// ever hit its intended target. Setting the origin back along the current heading keeps
-        /// the position interpolation exactly the same - the missile still sits on the segment -
-        /// while putting the intercept distance back into a range where vanilla collision runs.
-        /// </summary>
+        // Vanilla gates free-intercept collision on InterceptChanceFactorFromDistance(origin, cell),
+        // which returns zero inside 5 tiles of origin and reaches full strength at 12. Rewriting
+        // origin to the missile's current position each tick therefore disabled collision outright:
+        // the missile flew through walls, cover and bystanders and could only hit its intended
+        // target. Setting origin back along the heading leaves the interpolation identical, since
+        // the missile still sits on the segment, while restoring a live intercept distance.
         private const float InterceptOriginBackset = 13f;
 
         private JavelinFlightState flight;
@@ -126,12 +93,8 @@ namespace ApexMechanoids
             flightInitialized = true;
         }
 
-        /// <summary>
-        /// The missile always leaves along one of the four cardinal headings so it exits the
-        /// launcher tube at the angle the sprite is actually drawn at. The shooter's own rotation
-        /// is used rather than a recomputed bearing, so the missile matches what is on screen even
-        /// if the pawn's facing lags the target by a tick.
-        /// </summary>
+        // Uses the shooter's own rotation rather than a recomputed bearing, so the missile leaves at
+        // the angle the sprite is actually drawn at even if the pawn's facing lags by a tick.
         private float ResolveLaunchHeading(Thing launcher, Vector3 origin)
         {
             if (launcher is Pawn pawn)
@@ -229,14 +192,8 @@ namespace ApexMechanoids
             TryDetonate(map, blastCell, hitThing);
         }
 
-        /// <summary>
-        /// Detonates the warhead. This runs for every impact, including the missile burning out or
-        /// losing its target, so a spent missile visibly explodes instead of quietly winking out.
-        ///
-        /// The blast is raised here rather than by deriving from <see cref="Projectile_Explosive"/>
-        /// or adding <c>CompProperties_Explosive</c>, because either of those makes
-        /// <c>VerbProperties.CausesExplosion</c> true and forces a scattered aim point on the verb.
-        /// </summary>
+        // Runs for every impact, including burning out or losing the target, so a spent missile
+        // visibly explodes instead of quietly winking out.
         private void TryDetonate(Map map, IntVec3 cell, Thing hitThing)
         {
             DefModExtension_JavelinMissile props = Props;
@@ -268,11 +225,8 @@ namespace ApexMechanoids
                 ignoredThings: ignoredThings);
         }
 
-        /// <summary>
-        /// Reads the target's current hit count, then records this hit. The multiplier returned is
-        /// the one for the hit being resolved now, so the first missile always lands for base
-        /// damage and the escalation shows up from the second hit onward.
-        /// </summary>
+        // Returns the multiplier for the hit being resolved now, then records it, so the first
+        // missile lands for base damage and the escalation shows from the second hit onward.
         private float ResolveAndAdvanceStack(Thing hitThing)
         {
             DefModExtension_JavelinMissile props = Props;

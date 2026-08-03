@@ -12,14 +12,10 @@ namespace ApexMechanoids
         public int boostTicks;
         public float hitRadius;
 
-        /// <summary>
-        /// Range at which the missile counts as committed to its attack run. Once it has been this
-        /// close and the range opens again it has had its pass, and guidance shuts down for good
-        /// instead of letting the missile come round for another try.
-        /// </summary>
+        // Range at which the missile counts as committed to its attack run. Once it has been this
+        // close and the range opens again, guidance shuts down instead of coming round for a retry.
         public float terminalRadius;
 
-        /// <summary>Motor burn time. A spent missile is removed rather than loitering.</summary>
         public int lifetimeTicks;
     }
 
@@ -32,27 +28,20 @@ namespace ApexMechanoids
         public float z;
         public float heading;
         public int ticksFlown;
-
-        /// <summary>True once the missile has been inside the terminal radius at least once.</summary>
         public bool hasClosed;
-
         public bool guidanceLockedOut;
     }
 
     /// <summary>
     /// Pure flight maths for the javelin's homing missiles, kept free of Verse and Unity types so
-    /// the trajectory can be simulated and checked outside the game.
-    ///
-    /// The missile leaves the launcher along the mech's cardinal facing, holds that heading for a
-    /// boost phase, then steers toward the target at a capped turn rate. A target standing too
-    /// close is overflown during the boost phase and cannot be recovered, which is where the
-    /// weapon's minimum engagement range comes from.
+    /// the trajectory can be checked outside the game. The missile leaves along the mech's cardinal
+    /// facing, holds that heading through a boost phase, then steers at a capped turn rate, which
+    /// is where the weapon's minimum engagement range comes from.
     /// </summary>
     public static class JavelinMissileGuidance
     {
         public const float TwoPi = (float)(Math.PI * 2.0);
 
-        /// <summary>Wraps an angle into (-pi, pi] so turn deltas take the short way around.</summary>
         public static float NormalizeAngle(float radians)
         {
             while (radians <= -(float)Math.PI)
@@ -67,10 +56,8 @@ namespace ApexMechanoids
             return radians;
         }
 
-        /// <summary>
-        /// Heading for one of the four sprite facings, so a missile always leaves the launcher tube
-        /// along a multiple of 90 degrees in world space. Rot4 order is north, east, south, west.
-        /// </summary>
+        // Rot4 order is north, east, south, west, so the missile always leaves the launcher tube
+        // along a multiple of 90 degrees in world space.
         public static float CardinalHeading(int rot4AsInt)
         {
             switch (((rot4AsInt % 4) + 4) % 4)
@@ -82,7 +69,6 @@ namespace ApexMechanoids
             }
         }
 
-        /// <summary>Turns <paramref name="heading"/> toward the target by at most maxTurnPerTick.</summary>
         public static float SteerHeading(float heading, float x, float z, float targetX, float targetZ, float maxTurnPerTick)
         {
             float desired = (float)Math.Atan2(targetZ - z, targetX - x);
@@ -120,28 +106,17 @@ namespace ApexMechanoids
             };
         }
 
-        /// <summary>
-        /// True once the missile has flown its boost phase and has not yet sailed past the target.
-        /// </summary>
         public static bool GuidanceActive(JavelinFlightState state, JavelinFlightParams flightParams)
         {
             return !state.guidanceLockedOut && state.ticksFlown >= flightParams.boostTicks;
         }
 
-        /// <summary>
-        /// Advances the missile one tick toward the supplied target position.
-        ///
-        /// Once the missile has been inside the terminal radius and the range opens past it again,
-        /// guidance locks out permanently. That turns an overflown target into an honest miss
-        /// instead of a missile that loops around and eventually connects anyway.
-        ///
-        /// The range bookkeeping deliberately runs on every tick, including the boost phase. A
-        /// target standing close enough to be overflown before guidance engages is exactly the case
-        /// the client asked to miss, and gating this on guidance let such a missile treat its return
-        /// leg as a fresh attack run and come back for a second pass.
-        /// </summary>
         public static JavelinFlightState Step(JavelinFlightState state, float targetX, float targetZ, JavelinFlightParams flightParams)
         {
+            // This runs every tick, including the boost phase. A target close enough to be overflown
+            // before guidance engages is meant to be missed, and gating the check on guidance let
+            // such a missile treat its return leg as a fresh attack run and come back for a second
+            // pass at something it had already flown past.
             float distance = Distance(state.x, state.z, targetX, targetZ);
 
             if (distance <= flightParams.terminalRadius)
@@ -166,19 +141,16 @@ namespace ApexMechanoids
             return state;
         }
 
-        /// <summary>True once the missile has burned through its motor and must be removed.</summary>
         public static bool IsExpired(JavelinFlightState state, JavelinFlightParams flightParams)
         {
             return flightParams.lifetimeTicks > 0 && state.ticksFlown >= flightParams.lifetimeTicks;
         }
 
-        /// <summary>True when the missile is close enough to the target to detonate on it.</summary>
         public static bool HasReachedTarget(JavelinFlightState state, float targetX, float targetZ, JavelinFlightParams flightParams)
         {
             return Distance(state.x, state.z, targetX, targetZ) <= flightParams.hitRadius;
         }
 
-        /// <summary>Escalating damage multiplier for a target that has already been hit stacks times.</summary>
         public static float DamageMultiplier(int stacks, float perStack, float maxMultiplier)
         {
             if (stacks < 0)
