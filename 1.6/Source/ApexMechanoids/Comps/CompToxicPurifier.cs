@@ -10,6 +10,13 @@ using Verse;
 
 namespace ApexMechanoids
 {
+	public enum PurifierMode
+	{
+		WastepacksAndGround,
+		Ground,
+		Wastepacks
+	}
+	
     public class CompToxicPurifier : ThingComp
     {
         public CompProperties_ToxicPurifier Props => (CompProperties_ToxicPurifier)props;
