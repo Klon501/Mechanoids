@@ -52,4 +52,9 @@
 		<canBeDoneByMechs>true</canBeDoneByMechs>
 		<canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
 	</WorkGiverDef>
+  <WorkGiverDef ParentName="HaulToBase">
+    <defName>APM_HaulToToxicPurifier</defName>
+    <label>haul wastepacks to purifier station</label>
+    <giverClass>ApexMechanoids.WorkGiver_HaulToToxicPurifier</giverClass>
+  </WorkGiverDef>
 </Defs>
