@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using LudeonTK;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,17 +8,57 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Analytics;
 using Verse;
+using Verse.Noise;
 
 namespace ApexMechanoids
 {
 	public enum PurifierMode
 	{
-		WastepacksAndGround,
-		Ground,
-		Wastepacks
+		WastepacksOverGround = 0,
+		GroundOverWastepacks = 1,
+		OnlyWastepacks = 2,
+        OnlyGround = 3
 	}
-	
-    public class CompToxicPurifier : ThingComp
+
+	[StaticConstructorOnStartup]
+	public static class PurifierModeUtility
+	{
+		public static readonly Texture2D WastepacksOverGround = ContentFinder<Texture2D>.Get("UI/Gizmos/WastepacksOverGround");
+		public static readonly Texture2D GroundOverWastepacks = ContentFinder<Texture2D>.Get("UI/Gizmos/GroundOverWastepacks");
+		public static readonly Texture2D OnlyWastepacks = ContentFinder<Texture2D>.Get("UI/Gizmos/OnlyWastepacks");
+		public static readonly Texture2D OnlyGround = ContentFinder<Texture2D>.Get("UI/Gizmos/OnlyGround");
+		public static string GetLabel(this PurifierMode mode)
+		{
+            switch (mode)
+            {
+                case PurifierMode.OnlyGround:
+                    return "APM_ToxicPurifier_Mode_OnlyGround".Translate();
+                case PurifierMode.OnlyWastepacks:
+					return "APM_ToxicPurifier_Mode_OnlyWastepacks".Translate();
+                case PurifierMode.WastepacksOverGround:
+					return "APM_ToxicPurifier_Mode_WastepacksOverGround".Translate();
+                default:
+					return "APM_ToxicPurifier_Mode_GroundOverWastepacks".Translate();
+			}
+		}
+
+		public static Texture2D GetIcon(this PurifierMode mode)
+		{
+			switch (mode)
+			{
+				case PurifierMode.OnlyGround:
+					return OnlyGround;
+				case PurifierMode.OnlyWastepacks:
+					return OnlyWastepacks;
+				case PurifierMode.WastepacksOverGround:
+					return WastepacksOverGround;
+				default:
+					return GroundOverWastepacks;
+			}
+		}
+	}
+
+	public class CompToxicPurifier : ThingComp
     {
         public CompProperties_ToxicPurifier Props => (CompProperties_ToxicPurifier)props;
 
@@ -40,11 +81,20 @@ namespace ApexMechanoids
             }
         }
 
+		public bool Full => wastepacksCount >= Props.wastepackCapacity;
+
+		public float FillPercent => (float)wastepacksCount / (float)Props.wastepackCapacity;
+
+        public PurifierMode mode = PurifierMode.GroundOverWastepacks;
+
         public CompPowerTrader compPower;
 
         public bool shouldSprayToxic = false;
 
         public int sprayTickLeft = -1;
+
+        public int wastepacksCount;
+
         private bool Active
         {
             get
@@ -78,7 +128,10 @@ namespace ApexMechanoids
             {
 				GameCondition.purifiersOnMap.Remove(parent);
             }
-        }
+            Thing t = ThingMaker.MakeThing(ThingDefOf.Wastepack);
+            t.stackCount = wastepacksCount;
+            GenPlace.TryPlaceThing(t, parent.Position, map, ThingPlaceMode.Near);
+		}
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
@@ -103,12 +156,34 @@ namespace ApexMechanoids
             if (parent.IsHashIntervalTick(Props.interval, delta))
             {
 				if (!Active) return;
-				IntVec3 cell = GetCellToUnpollute();
-                if (cell.IsValid)
+                if(wastepacksCount > 0 && (mode == PurifierMode.WastepacksOverGround || mode == PurifierMode.OnlyWastepacks))
                 {
-					Pump(cell);
+                    wastepacksCount--;
+					Pump();
+                    return;
 				}
-            }
+                if(mode == PurifierMode.OnlyWastepacks)
+                {
+                    return;
+                }
+				IntVec3 cell = GetCellToUnpollute();
+				if (cell.IsValid)
+				{
+					parent.Map.pollutionGrid.SetPolluted(cell, false);
+					Pump();
+					return;
+				}
+				if (mode == PurifierMode.OnlyGround)
+				{
+					return;
+				}
+				if (wastepacksCount > 0)
+				{
+					wastepacksCount--;
+					Pump();
+					return;
+				}
+			}
         }
 
         public override void CompTick()
@@ -140,10 +215,9 @@ namespace ApexMechanoids
             }
         }
 
-        private void Pump(IntVec3 cell)
+        private void Pump()
         {
             Map map = parent.Map;
-			map.pollutionGrid.SetPolluted(cell, false);
 			GameCondition.ChangeToxicity(Props.toxicPerTileCleaned);
 			shouldSprayToxic = true;
 			sprayTickLeft = Rand.RangeInclusive(200, 500);
@@ -151,7 +225,7 @@ namespace ApexMechanoids
             effecter.Cleanup();
         }
 
-		private IntVec3 GetCellToUnpollute()
+		public IntVec3 GetCellToUnpollute()
 		{
 			Map map = parent.Map;
 			if (Props.clearWholeMap)
@@ -189,10 +263,39 @@ namespace ApexMechanoids
 			return IntVec3.Invalid;
 		}
 
+		public override IEnumerable<Gizmo> CompGetGizmosExtra()
+		{
+			Command_Action command_Action = new Command_Action();
+			command_Action.defaultLabel = "APM_ToxicPurifier_ModeChangeLabel".Translate() + ": " + mode.GetLabel();
+			command_Action.defaultDesc = "APM_ToxicPurifier_ModeChangeDesc".Translate();
+			command_Action.icon = mode.GetIcon();
+			command_Action.action = delegate
+            {
+				List<FloatMenuOption> list = new List<FloatMenuOption>();
+				for(int i = 0; i < 4; i++)
+				{
+					PurifierMode localMode = (PurifierMode)i;
+					list.Add(new FloatMenuOption(localMode.GetLabel(), delegate
+					{
+                        mode = localMode;
+					}, localMode.GetIcon(), Color.white));
+				}
+				Find.WindowStack.Add(new FloatMenu(list));
+			};
+			yield return command_Action;
+		}
+
+		public override string CompInspectStringExtra()
+		{
+			return "ContainedThings".Translate(ThingDefOf.Wastepack) + ": " + wastepacksCount.ToString() + " / " + Props.wastepackCapacity.ToString();
+		}
+
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-            Scribe_Values.Look(ref shouldSprayToxic, "shouldSprayToxic");
+			Scribe_Values.Look(ref wastepacksCount, "wastepacksCount");
+			Scribe_Values.Look(ref mode, "mode");
+			Scribe_Values.Look(ref shouldSprayToxic, "shouldSprayToxic");
 			Scribe_Values.Look(ref sprayTickLeft, "sprayTickLeft", defaultValue: -1);
 		}
     }
