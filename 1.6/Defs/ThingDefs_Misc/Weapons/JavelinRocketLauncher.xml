@@ -13,8 +13,8 @@
 			<texPath>Blank</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<uiIconPath>Things/Item/Equipment/WeaponRanged/DynamoEMPImpactor</uiIconPath>
-		<uiIconScale>0.5</uiIconScale>
+		<uiIconPath>UI/JavelinLauncher</uiIconPath>
+		<uiIconScale>1</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<destroyOnDrop>true</destroyOnDrop>
 		<tradeability>None</tradeability>
@@ -25,7 +25,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
-			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>APM_WeaponJavelinRocketLauncher</li>
@@ -39,11 +39,11 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>APM_Proj_JavelinMissile</defaultProjectile>
 				<warmupTime>1.9</warmupTime>
-				<range>28.9</range>
+				<range>38.9</range>
 				<!-- The curved flight already makes close targets unhittable; this floor stops the
 				     mech burning its cooldown on shots that physically cannot connect. It is set from
 				     the measured dead zone, which peaks at 9.9 tiles across the reachable firing cone. -->
-				<minRange>10</minRange>
+				<minRange>5.9</minRange>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -76,10 +76,8 @@
 		<label>javelin missile</label>
 		<thingClass>ApexMechanoids.Projectile_JavelinMissile</thingClass>
 		<graphicData>
-			<texPath>Things/Projectile/EMPImpactor</texPath>
+			<texPath>Things/Projectile/Rocket/Rocket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(214, 168, 130)</color>
 		</graphicData>
 		<projectile>
 			<!-- The warhead is detonated from the projectile's own Impact rather than by using an
@@ -88,22 +86,22 @@
 			     coexist with a guided missile. damageAmountBase is the direct hit that carries the
 			     escalating damage; the blast is configured on the mod extension below. -->
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>40</damageAmountBase>
-			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>1.35</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
-			<speed>25</speed>
+			<speed>15</speed>
 			<flyOverhead>false</flyOverhead>
-			<explosionRadius>1.9</explosionRadius>
+			<explosionRadius>0.9</explosionRadius>
 			<soundExplode>Explosion_Bomb</soundExplode>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
 				<!-- 6 deg/tick at 25 tiles/s gives a turn radius of about 4 tiles. -->
-				<turnDegreesPerTick>6</turnDegreesPerTick>
+				<turnDegreesPerTick>1.5</turnDegreesPerTick>
 				<!-- 12 ticks of straight boost, about 5 tiles, before the seeker takes over. -->
-				<boostTicks>12</boostTicks>
-				<lifetimeTicks>120</lifetimeTicks>
+				<boostTicks>22</boostTicks>
+				<lifetimeTicks>420</lifetimeTicks>
 				<hitRadius>0.5</hitRadius>
 				<!-- Once the missile has been this close and the range opens again, its attack run
 				     is spent. Without this a missile that overflew a target during the boost phase
@@ -115,8 +113,8 @@
 				<!-- Splash only. The pawn actually struck takes the escalating direct hit above and
 				     is left out of the blast, so one missile is not charged twice. Set
 				     blastHitsPrimaryTarget to true if the target should take both. -->
-				<blastDamageAmount>14</blastDamageAmount>
-				<blastArmorPenetration>0.3</blastArmorPenetration>
+				<blastDamageAmount>0</blastDamageAmount>
+				<blastArmorPenetration>0</blastArmorPenetration>
 				<blastHitsPrimaryTarget>false</blastHitsPrimaryTarget>
 			</li>
 		</modExtensions>
