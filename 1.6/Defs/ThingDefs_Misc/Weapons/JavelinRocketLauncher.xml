@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Gun_JavelinRocketLauncher</defName>
+		<label>javelin rocket launcher</label>
+		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs every hull it opens, and each rocket that finds the same target again is fused to bite deeper than the last.</description>
+		<techLevel>Spacer</techLevel>
+		<!-- The launcher is drawn into the javelin's own body sprite in all three facings, so the
+		     held weapon is kept invisible rather than stacking a second launcher on top of it. Same
+		     approach as APM_Gazer_Laser. The gear tab still shows a real icon via uiIconPath.
+		     TODO: uiIconPath is the dynamo's impactor art as a placeholder and wants its own icon. -->
+		<graphicData>
+			<texPath>Blank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Item/Equipment/WeaponRanged/DynamoEMPImpactor</uiIconPath>
+		<uiIconScale>0.5</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2200</MarketValue>
+			<Mass>8.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>APM_WeaponJavelinRocketLauncher</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>APM_Proj_JavelinMissile</defaultProjectile>
+				<warmupTime>1.9</warmupTime>
+				<range>28.9</range>
+				<!-- The curved flight already makes close targets unhittable; this floor stops the
+				     mech burning its cooldown on shots that physically cannot connect. It is set from
+				     the measured dead zone, which peaks at 9.9 tiles across the reachable firing cone. -->
+				<minRange>10</minRange>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_Proj_JavelinMissile</defName>
+		<label>javelin missile</label>
+		<thingClass>ApexMechanoids.Projectile_JavelinMissile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/EMPImpactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(214, 168, 130)</color>
+		</graphicData>
+		<projectile>
+			<!-- The warhead is detonated from the projectile's own Impact rather than by using an
+			     explosive projectile class or CompProperties_Explosive. Either of those would make
+			     the verb count as an area weapon and force a scattered aim point, which cannot
+			     coexist with a guided missile. damageAmountBase is the direct hit that carries the
+			     escalating damage; the blast is configured on the mod extension below. -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>25</speed>
+			<flyOverhead>false</flyOverhead>
+			<explosionRadius>1.9</explosionRadius>
+			<soundExplode>Explosion_Bomb</soundExplode>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
+				<!-- 6 deg/tick at 25 tiles/s gives a turn radius of about 4 tiles. -->
+				<turnDegreesPerTick>6</turnDegreesPerTick>
+				<!-- 12 ticks of straight boost, about 5 tiles, before the seeker takes over. -->
+				<boostTicks>12</boostTicks>
+				<lifetimeTicks>120</lifetimeTicks>
+				<hitRadius>0.5</hitRadius>
+				<!-- Once the missile has been this close and the range opens again, its attack run
+				     is spent. Without this a missile that overflew a target during the boost phase
+				     curved round and came back for a second pass. -->
+				<terminalRadius>3</terminalRadius>
+				<damageMultiplierPerStack>0.25</damageMultiplierPerStack>
+				<maxDamageMultiplier>2.5</maxDamageMultiplier>
+				<targetStackHediff>APM_Hediff_JavelinMissileLock</targetStackHediff>
+				<!-- Splash only. The pawn actually struck takes the escalating direct hit above and
+				     is left out of the blast, so one missile is not charged twice. Set
+				     blastHitsPrimaryTarget to true if the target should take both. -->
+				<blastDamageAmount>14</blastDamageAmount>
+				<blastArmorPenetration>0.3</blastArmorPenetration>
+				<blastHitsPrimaryTarget>false</blastHitsPrimaryTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
