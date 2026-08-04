@@ -30,7 +30,9 @@
 			<body>APM_Javelin</body>
 			<baseBodySize>3.0</baseBodySize>
 			<baseHealthScale>2.42</baseHealthScale>
-			<mechWeightClass>Heavy</mechWeightClass>
+			<!-- Medium to match the 3 bandwidth cost and the medium gestator recipe this mech
+			     already ships with; Heavy mechs cost 6 bandwidth in vanilla. -->
+			<mechWeightClass>Medium</mechWeightClass>
 			<lifeStageAges Inherit="False">
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -116,7 +118,7 @@
 		</lifeStages>
 		<weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
-			<li>APM_WeaponEMPImpactor</li>
+			<li>APM_WeaponJavelinRocketLauncher</li>
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>

@@ -19,6 +19,12 @@
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 
+  <JobDef>
+    <defName>APM_HaulToToxicPurifier</defName>
+    <driverClass>ApexMechanoids.JobDriver_HaulToToxicPurifier</driverClass>
+    <reportString>hauling wastepacks to TargetA.</reportString>
+  </JobDef>
+
 	<JobDef>
 		<defName>APM_CastPulseJump</defName>
 		<driverClass>JobDriver_CastJump</driverClass>

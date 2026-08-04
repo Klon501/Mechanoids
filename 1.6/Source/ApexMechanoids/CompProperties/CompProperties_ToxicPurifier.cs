@@ -19,7 +19,9 @@ namespace ApexMechanoids
 
         public bool clearWholeMap;
 
-        public EffecterDef pumpEffecterDef;
+		public int wastepackCapacity = 10;
+
+		public EffecterDef pumpEffecterDef;
 
         public Vector3 effecterOffsetDefault;
 

@@ -61,6 +61,7 @@
 				<toxicPerTileCleaned>0.005</toxicPerTileCleaned>
 				<interval>250</interval>
         <clearWholeMap>true</clearWholeMap>
+        <wastepackCapacity>15</wastepackCapacity>
 				<pumpEffecterDef>PollutionPumped</pumpEffecterDef>
         <effecterOffsetDefault>(0,0,0)</effecterOffsetDefault>
         <effecterOffsetNorth>(0,0,1.75)</effecterOffsetNorth>

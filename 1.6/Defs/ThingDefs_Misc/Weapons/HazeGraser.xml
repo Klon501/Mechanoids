@@ -72,10 +72,10 @@
 		<thingClass>ApexMechanoids.Projectile_HazeToxicRepeater</thingClass>
 		<projectile>
 			<damageDef>APM_HazeAcidBeam</damageDef>
-			<damageAmountBase>0</damageAmountBase>
+			<damageAmountBase>1</damageAmountBase>
 			<beamMoteDef>APM_Mote_HazeBeamRepeaterLaser</beamMoteDef>
 			<beamStartOffset>0.5</beamStartOffset>
-			<armorPenetrationBase>0</armorPenetrationBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 

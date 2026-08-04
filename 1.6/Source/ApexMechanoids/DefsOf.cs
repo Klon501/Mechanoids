@@ -9,7 +9,8 @@ namespace ApexMechanoids
 		public static ThingDef APM_Mech_Tinker;
 		public static ThingDef APM_Mech_Frostivus;
         public static ThingDef APM_Mech_Ingestor;
-        public static AbilityDef APM_DefenceMatrix;
+        public static ThingDef APM_Building_ToxicPurifier;
+		public static AbilityDef APM_DefenceMatrix;
         public static AbilityDef APM_BlindingLaser;
         public static ThingDef APM_Mech_Celerus;
         public static ThingDef APM_Mech_CelerusB;
@@ -42,6 +43,9 @@ namespace ApexMechanoids
         public static StatDef APM_CasketBandwidth;
         public static ThingDef APM_MechCommandCasket;
         public static HediffDef APM_MechCommandCasketBoost;
+        public static HediffDef APM_Hediff_JavelinMissileLock;
+        public static ThingDef APM_Gun_JavelinRocketLauncher;
+        public static ThingDef APM_Proj_JavelinMissile;
 
         public static HediffDef RemoteRepairerImplant;  //from Biotech
         public static HediffDef RemoteShielderImplant;  //from Biotech
@@ -70,7 +74,9 @@ namespace ApexMechanoids
         public static JobDef APM_FrostivusReleaseDevouredContents;
         public static JobDef APM_RavagerArtilleryAttack;
         public static JobDef APM_CastPulseJump;
-    }
+        public static JobDef APM_HaulToToxicPurifier;
+
+	}
     [DefOf]
     public static class ApexEffecterDefsOf
     {
