@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>APM_Gun_JavelinRocketLauncher</defName>
 		<label>javelin rocket launcher</label>
-		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs every hull it opens, and each rocket that finds the same target again is fused to bite deeper than the last.</description>
+		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs the damage profile of every creature and machine it opens up, and each rocket that finds the same one again is fused to bite deeper than the last. Structures give it nothing to read, and are hit at a flat rate.</description>
 		<techLevel>Spacer</techLevel>
 		<!-- The launcher is drawn into the javelin's own body sprite in all three facings, so the
 		     held weapon is kept invisible rather than stacking a second launcher on top of it. Same
@@ -50,6 +50,28 @@
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinTargetPriority">
+				<!-- Vanilla scores shooting targets on distance and keeps everything within 30 points
+				     of the best, so an offset only decides a target once it clears that band. Measured
+				     against this mod's own roster: a tinker (combat power 100, sharp armour 0.30)
+				     scores 1.5 and a gazer (750, 0.96) scores 50.4, so the gazer wins outright.
+				     Section J of the guidance harness fails if that stops holding. -->
+				<neutralCombatPower>150</neutralCombatPower>
+				<scorePerCombatPower>0.06</scorePerCombatPower>
+				<maxCombatPowerScore>40</maxCombatPowerScore>
+				<minCombatPowerScore>-12</minCombatPowerScore>
+				<scorePerArmourRating>15</scorePerArmourRating>
+				<maxArmourScore>18</maxArmourScore>
+				<!-- Missiles already landed on a target are thrown away by switching to a new one, so
+				     the launcher is paid to finish what it started. Three stacks is worth more than
+				     the whole band, which is what stops it wandering off mid-sequence when line of
+				     sight breaks for a moment. -->
+				<scorePerLockStack>12</scorePerLockStack>
+				<maxLockScore>36</maxLockScore>
+				<lockHediff>APM_Hediff_JavelinMissileLock</lockHediff>
+			</li>
+		</modExtensions>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -119,11 +141,19 @@
 				<blastDamageAmount>0</blastDamageAmount>
 				<blastArmorPenetration>0</blastArmorPenetration>
 				<blastHitsPrimaryTarget>false</blastHitsPrimaryTarget>
-				<!-- Rocks, walls and bystanders are only struck once the missile is inside
-				     terminalRadius and diving. A guided missile crosses far more cover on its way in
-				     than a straight shot does, so without this it detonates on the first obstacle its
-				     curve happens to clip. -->
-				<cruisePassesOverObstacles>true</cruisePassesOverObstacles>
+				<!-- The missile flies over pawns, chunks and low cover for the whole flight and is
+				     stopped only by a wall or by rock. A guided missile crosses far more occupied cells
+				     on its curved run-in than a straight shot does, so leaving it on vanilla's per-cell
+				     intercept roll meant bystanders and ground rocks soaked shots aimed at something
+				     else. Shield belts still stop it either way. -->
+				<solidObstaclesBlock>true</solidObstaclesBlock>
+				<solidObstacleArmTiles>5</solidObstacleArmTiles>
+				<!-- Draw the flight path while the launcher winds up. The missile leaves along the
+				     mech's cardinal facing before turning onto the target, so a shot at something off
+				     to the side departs sideways; without the preview that reads as a misfire. -->
+				<drawAimPreview>true</drawAimPreview>
+				<aimPreviewStrideTicks>4</aimPreviewStrideTicks>
+				<aimPreviewMaxPoints>96</aimPreviewMaxPoints>
 				<!-- Exhaust frames, suffixed 1-4. Held off until the boost phase ends, so the missile
 				     coasts out of the tube dark and lights up when the seeker takes over. -->
 				<trailTexPath>Things/Projectile/Rocket/Rocket_trail</trailTexPath>
