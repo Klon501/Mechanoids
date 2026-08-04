@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+		A shaped warhead, not a fragmentation one. Vanilla Bomb sets minDamageToFragment to 15, and
+		DamageWorker_AddInjury.ApplyToPawn splits any hit at or above that across 2 to 4 random body
+		parts. A 35 damage missile therefore lands as two to four hits of roughly 9 to 18, which
+		destroys the small parts of a light target and does nothing but chip a heavy one, since the
+		big parts on an armoured pawn have far more health than one fragment carries. Putting the
+		threshold out of reach keeps the whole hit, and the whole escalating multiplier on top of it,
+		on a single part. This is what makes the javelin a tank killer rather than a shrapnel gun.
+	-->
+	<DamageDef ParentName="Bomb">
+		<defName>APM_JavelinWarhead</defName>
+		<label>javelin warhead</label>
+		<minDamageToFragment>99999</minDamageToFragment>
+	</DamageDef>
+</Defs>
