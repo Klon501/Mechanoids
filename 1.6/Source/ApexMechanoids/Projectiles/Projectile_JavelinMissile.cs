@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace ApexMechanoids
 {
@@ -40,6 +41,17 @@ namespace ApexMechanoids
         // Grace distance out of the tube before a solid obstacle can stop the missile, so a launcher
         // standing next to its own wall does not detonate the shot on the doorframe.
         public float solidObstacleArmTiles = 5f;
+
+        // Dodging. A seeker turning at a fixed rate is beaten by angle, not by distance: a target
+        // running away down the missile's own heading is simply chased down, while one running across
+        // or into the incoming missile forces a correction it cannot make in the last few tiles.
+        // Set evasionMaxChance to 0 to make the missile unavoidable again.
+        public float evasionMaxChance = 0.5f;
+        public float evasionMinAngleDegrees = 60f;
+
+        // Move speed, in tiles per second, at which the full angle bonus applies. Slower things get
+        // proportionally less of it.
+        public float evasionReferenceMoveSpeed = 4.6f;
 
         // Aim preview. During the warmup the launcher draws the path the missile will actually fly,
         // simulated from the same guidance the projectile uses, because a missile that leaves
@@ -99,6 +111,10 @@ namespace ApexMechanoids
         // Where the shot left the tube, kept because origin is rewritten every tick and the obstacle
         // grace distance has to be measured from the launcher rather than from the missile.
         private Vector3 launchOrigin;
+
+        // The dodge roll happens once, on arrival, and sticks for the rest of the flight.
+        private bool evasionResolved;
+        private bool evaded;
 
         private DefModExtension_JavelinMissile Props => def.GetModExtension<DefModExtension_JavelinMissile>();
 
@@ -208,7 +224,10 @@ namespace ApexMechanoids
                 return;
             }
 
-            if (JavelinMissileGuidance.HasReachedTarget(flight, targetPosition.x, targetPosition.z, flightParams))
+            // A dodged missile is deliberately not detonated here: guidance has already latched
+            // hasClosed by this point, so it flies on, locks out as the range opens, and blows up
+            // behind the target. That reads as a missile whipping past rather than fizzling.
+            if (JavelinMissileGuidance.HasReachedTarget(flight, targetPosition.x, targetPosition.z, flightParams) && !TargetEvades())
             {
                 Position = newPosition.ToIntVec3();
                 Impact(intendedTarget.Thing ?? usedTarget.Thing);
@@ -221,6 +240,91 @@ namespace ApexMechanoids
                 // so an overflown shot still reads as a missile that went past and blew up.
                 Impact(null);
             }
+        }
+
+        /// <summary>
+        /// Whether the target shook this missile. Rolled once per missile, the first tick it comes
+        /// inside hitRadius, and latched - otherwise a missile sitting on top of a target would get a
+        /// fresh roll every tick until one of them came up.
+        /// </summary>
+        private bool TargetEvades()
+        {
+            if (evasionResolved)
+            {
+                return evaded;
+            }
+
+            evasionResolved = true;
+            evaded = false;
+
+            DefModExtension_JavelinMissile props = Props;
+            if (props == null || props.evasionMaxChance <= 0f)
+            {
+                return false;
+            }
+
+            if (!((intendedTarget.Thing ?? usedTarget.Thing) is Pawn pawn) || !pawn.Spawned)
+            {
+                return false;
+            }
+
+            if (!TryGetMovement(pawn, out float moveHeading, out float speedPerTick))
+            {
+                return false;
+            }
+
+            JavelinEvasionParams evasion = new JavelinEvasionParams
+            {
+                maxChance = props.evasionMaxChance,
+                minAngleDegrees = props.evasionMinAngleDegrees,
+                referenceSpeedPerTick = props.evasionReferenceMoveSpeed / 60f
+            };
+
+            // Measured against the missile's own heading, so zero means the target is running away
+            // along the flight line and pi means it is running straight into the missile.
+            float chance = JavelinEvasion.EvasionChance(moveHeading - flight.heading, speedPerTick, evasion);
+            if (chance <= 0f || !Rand.Chance(chance))
+            {
+                return false;
+            }
+
+            evaded = true;
+            MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "TextMote_Dodge".Translate(), 1.9f);
+            return true;
+        }
+
+        private static bool TryGetMovement(Pawn pawn, out float heading, out float speedPerTick)
+        {
+            heading = 0f;
+            speedPerTick = 0f;
+
+            Pawn_PathFollower pather = pawn.pather;
+            if (pather == null || !pather.Moving)
+            {
+                return false;
+            }
+
+            // nextCell is the step actually being taken, which is what the pawn is committed to for
+            // the tick the missile arrives on. The destination is only a fallback for the tick where
+            // the two happen to coincide.
+            Vector3 direction = (pather.nextCell - pawn.Position).ToVector3().Yto0();
+            if (direction.sqrMagnitude < 0.0001f)
+            {
+                if (!pather.Destination.IsValid)
+                {
+                    return false;
+                }
+
+                direction = (pather.Destination.Cell - pawn.Position).ToVector3().Yto0();
+                if (direction.sqrMagnitude < 0.0001f)
+                {
+                    return false;
+                }
+            }
+
+            heading = Mathf.Atan2(direction.z, direction.x);
+            speedPerTick = pawn.GetStatValue(StatDefOf.MoveSpeed) / 60f;
+            return speedPerTick > 0f;
         }
 
         /// <summary>
@@ -444,6 +548,8 @@ namespace ApexMechanoids
             base.ExposeData();
             Scribe_Values.Look(ref flightInitialized, nameof(flightInitialized));
             Scribe_Values.Look(ref launchOrigin, nameof(launchOrigin));
+            Scribe_Values.Look(ref evasionResolved, nameof(evasionResolved));
+            Scribe_Values.Look(ref evaded, nameof(evaded));
             Scribe_Values.Look(ref pendingDamageMultiplier, nameof(pendingDamageMultiplier), 1f);
             Scribe_Values.Look(ref flight.x, "flightX");
             Scribe_Values.Look(ref flight.z, "flightZ");
