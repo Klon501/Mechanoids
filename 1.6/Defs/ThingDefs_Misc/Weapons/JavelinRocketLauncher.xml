@@ -85,7 +85,10 @@
 			     the verb count as an area weapon and force a scattered aim point, which cannot
 			     coexist with a guided missile. damageAmountBase is the direct hit that carries the
 			     escalating damage; the blast is configured on the mod extension below. -->
-			<damageDef>Bomb</damageDef>
+			<!-- Not vanilla Bomb: that fragments across 2-4 body parts above 15 damage, which is what
+			     made the mech better against light targets than armoured ones. See the def comment on
+			     APM_JavelinWarhead. -->
+			<damageDef>APM_JavelinWarhead</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>1.35</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
@@ -116,6 +119,16 @@
 				<blastDamageAmount>0</blastDamageAmount>
 				<blastArmorPenetration>0</blastArmorPenetration>
 				<blastHitsPrimaryTarget>false</blastHitsPrimaryTarget>
+				<!-- Rocks, walls and bystanders are only struck once the missile is inside
+				     terminalRadius and diving. A guided missile crosses far more cover on its way in
+				     than a straight shot does, so without this it detonates on the first obstacle its
+				     curve happens to clip. -->
+				<cruisePassesOverObstacles>true</cruisePassesOverObstacles>
+				<!-- Exhaust frames, suffixed 1-4. Held off until the boost phase ends, so the missile
+				     coasts out of the tube dark and lights up when the seeker takes over. -->
+				<trailTexPath>Things/Projectile/Rocket/Rocket_trail</trailTexPath>
+				<trailFrameCount>4</trailFrameCount>
+				<trailTicksPerFrame>3</trailTicksPerFrame>
 			</li>
 		</modExtensions>
 	</ThingDef>

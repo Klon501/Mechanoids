@@ -4,10 +4,11 @@ namespace ApexMechanoids
 {
     public class DefModExtension_JavelinMissileLock : DefModExtension
     {
-        // Ticks without a fresh hit before one stack is shed. Has to stay longer than the launcher's
-        // own shot cycle (warmup plus cooldown, about 318 ticks), or a lone javelin sheds each stack
-        // before it can fire again and the escalation never builds.
-        public int decayIntervalTicks = 600;
+        // Ticks without a fresh hit before one stack is shed. Has to stay longer than the gap
+        // between two landed hits, which is the launcher's whole shot cycle plus the missile's own
+        // flight time, or a lone javelin sheds each stack before the next one arrives and the
+        // escalation never builds.
+        public int decayIntervalTicks = 900;
     }
 
     /// <summary>
@@ -18,7 +19,7 @@ namespace ApexMechanoids
     /// </summary>
     public class Hediff_JavelinMissileLock : HediffWithComps
     {
-        private const int FallbackDecayIntervalTicks = 600;
+        private const int FallbackDecayIntervalTicks = 900;
 
         private int stacks;
         private int ticksSinceLastHit;

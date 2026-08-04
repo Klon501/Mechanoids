@@ -22,10 +22,13 @@
 		</stages>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_JavelinMissileLock">
-				<!-- Must stay longer than the launcher's shot cycle (warmup 1.9s + cooldown 3.4s,
-				     about 318 ticks) or a lone javelin sheds each stack before it can fire again
-				     and the escalation never builds. -->
-				<decayIntervalTicks>600</decayIntervalTicks>
+				<!-- Must stay longer than the gap between two landed hits, which is the launcher's
+				     whole shot cycle (warmup 1.9s + cooldown 7.4s, 558 ticks) plus the missile's own
+				     flight time (154 ticks at max range), so 712 ticks. At the previous 600 a lone
+				     javelin shed each stack before the next missile arrived and the escalation never
+				     built past one. Section H of the guidance harness fails if this stops holding,
+				     which is what a cooldown rebalance breaks. -->
+				<decayIntervalTicks>900</decayIntervalTicks>
 			</li>
 		</modExtensions>
 	</HediffDef>
