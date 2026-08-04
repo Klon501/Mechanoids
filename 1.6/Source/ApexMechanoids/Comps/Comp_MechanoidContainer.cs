@@ -9,10 +9,30 @@ namespace ApexMechanoids
     {
         public new CompProperties_MechanoidContainer Props => (CompProperties_MechanoidContainer)props;
 
+        public virtual bool IsEmpty
+        {
+            get
+            {
+                return isEmpty;
+            }
+            set
+            {
+                if (value != isEmpty)
+                {
+                    isEmpty = value;
+                    if (parent.Map != null)
+                    {
+                        parent.DirtyMapMesh(parent.Map);
+                        parent.TryGetComp<CompGlower>()?.UpdateLit(parent.Map);
+                    }
+                }
+            }
+        }
+
         public bool isEmpty = false;
         public PawnKindDef mechKind;
 
-        public override bool HideInteraction => isEmpty;
+        public override bool HideInteraction => IsEmpty;
 
         public Comp_MechanoidContainer()
         {
@@ -32,7 +52,7 @@ namespace ApexMechanoids
 
         public override void PostPrintOnto(SectionLayer layer)
         {
-            (isEmpty ? Props.emptyGraphic.Graphic : parent.Graphic).Print(layer, parent, 0f);
+            (IsEmpty ? Props.emptyGraphic.Graphic : parent.Graphic).Print(layer, parent, 0f);
         }
 
         public override void OnInteracted(Pawn caster)
@@ -40,7 +60,7 @@ namespace ApexMechanoids
             DeployMech(caster);
         }
 
-        public void DeployMech(Pawn mechanitor)
+        public virtual void DeployMech(Pawn mechanitor)
         {
             IntVec3 loc = parent.OccupiedRect().ExpandedBy(1).EdgeCells.Where(c => c.Standable(parent.Map)).MinBy(c => c.DistanceTo(mechanitor.Position));
             if (loc.IsValid)
@@ -49,32 +69,44 @@ namespace ApexMechanoids
                 Pawn mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
                 GenSpawn.Spawn(mech, loc, parent.Map);
                 mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
-                isEmpty = true;
-                parent.DirtyMapMesh(parent.Map);
-                parent.TryGetComp<CompGlower>()?.UpdateLit(parent.Map);
+                IsEmpty = true;
             }
         }
 
-        public void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
+        public virtual void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
         {
             if (kindDef == null)
             {
-                mechKind = Props.mechKindOptions.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
+                if (Props.mechKindOptions.NullOrEmpty())
+                {
+                    IsEmpty = true;
+                }
+                else
+                {
+                    mechKind = Props.mechKindOptions.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
+                    IsEmpty = false;
+                }
             }
             else
             {
                 mechKind = kindDef;
+                IsEmpty = false;
             }
+        }
+
+        public AcceptanceReport BaseCanInteract(Pawn activateBy = null, bool checkOptionalItems = true)
+        {
+            return base.CanInteract(activateBy, checkOptionalItems);
         }
 
         public override AcceptanceReport CanInteract(Pawn activateBy = null, bool checkOptionalItems = true)
         {
-            AcceptanceReport baseReport = base.CanInteract(activateBy, checkOptionalItems);
+            AcceptanceReport baseReport = BaseCanInteract(activateBy, checkOptionalItems);
             if (!baseReport)
             {
                 return baseReport;
             }
-            if (isEmpty)
+            if (IsEmpty)
             {
                 return "CommandPodEjectFailEmpty".Translate();
             }
@@ -119,12 +151,12 @@ namespace ApexMechanoids
             base.PostExposeData();
             Scribe_Values.Look(ref isEmpty, "isEmpty", defaultValue: false);
             string kindDefName = "";
-            if (Scribe.mode == LoadSaveMode.Saving)
+            if (Scribe.mode == LoadSaveMode.Saving && mechKind != null)
             {
                 kindDefName = mechKind.defName;
             }
             Scribe_Values.Look(ref kindDefName, "kindDefName", "");
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
                 if (kindDefName.NullOrEmpty())
                 {
@@ -147,13 +179,18 @@ namespace ApexMechanoids
 
         public bool ShouldBeLitNow()
         {
-            return !isEmpty;
+            return !IsEmpty;
+        }
+
+        public string BaseCompInspectStringExtra()
+        {
+            return base.CompInspectStringExtra();
         }
 
         public override string CompInspectStringExtra()
         {
             string iString = "\n";
-            if (isEmpty)
+            if (IsEmpty)
             {
                 iString = "CommandPodEjectFailEmpty".Translate() + iString;
             }
@@ -161,7 +198,7 @@ namespace ApexMechanoids
             {
                 iString = "CasketContains".Translate() + $" {mechKind.label}" + iString;
             }
-            return iString + base.CompInspectStringExtra();
+            return iString + BaseCompInspectStringExtra();
         }
     }
 }
