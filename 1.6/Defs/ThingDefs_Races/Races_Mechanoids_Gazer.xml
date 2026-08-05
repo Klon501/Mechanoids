@@ -88,7 +88,7 @@
       <li Class="ApexMechanoids.CompProperties_GazerShockwaveController">
         <shockwaveAbilityDef>APM_Shockwave</shockwaveAbilityDef>
         <checkIntervalTicks>30</checkIntervalTicks>
-        <meleeThreatRadius>2.9</meleeThreatRadius>
+        <meleeThreatRadius>4.0</meleeThreatRadius>
         <minHostilesToTrigger>2</minHostilesToTrigger>
       </li>
     </comps>
