@@ -21,7 +21,6 @@ namespace ApexMechanoids
             }
             set
             {
-                Log.Message($"IsEmpty {value} != {isEmpty}");
                 if (value != isEmpty)
                 {
                     isEmpty = value;
