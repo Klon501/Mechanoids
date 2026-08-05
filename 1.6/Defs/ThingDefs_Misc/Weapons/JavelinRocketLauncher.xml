@@ -39,11 +39,13 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>APM_Proj_JavelinMissile</defaultProjectile>
 				<warmupTime>1.9</warmupTime>
-				<range>38.9</range>
+				<range>50</range>
 				<!-- The curved flight already makes close targets unhittable; this floor stops the
-				     mech burning its cooldown on shots that physically cannot connect. It is set from
-				     the measured dead zone, which peaks at 9.9 tiles across the reachable firing cone. -->
-				<minRange>5.9</minRange>
+				     mech burning its cooldown on shots that physically cannot connect. At 3 deg/tick the
+				     measured floor peaks at 11.5 tiles across the reachable firing cone, so 12 covers the
+				     whole band the mech is allowed to fire into. Sections C, D and G of the guidance
+				     harness fail if that stops holding. -->
+				<minRange>12</minRange>
 				<burstShotCount>1</burstShotCount>
 				<!-- Verb_LaunchProjectile.TryCastShot bails out on a missing shoot line while this is
 				     true, which would let the cover shot pass CanHitTargetFrom and then fizzle at the
@@ -73,6 +75,10 @@
 				     note in _validation. It only ever removes shots, so a mis-set flight model
 				     would silence the weapon rather than waste a missile. -->
 				<skipUnreachableShots>false</skipUnreachableShots>
+				<!-- The obstacle preflight walks the simulated path a quarter tile at a time, so this
+				     needs a point per tick of lifetimeTicks or the tail of a long curve goes unchecked
+				     and a cover shot could be allowed into a wall. -->
+				<obstacleSampleMaxPoints>448</obstacleSampleMaxPoints>
 			</li>
 			<li Class="ApexMechanoids.DefModExtension_JavelinTargetPriority">
 				<!-- Vanilla scores shooting targets on distance and keeps everything within 30 points
@@ -145,9 +151,12 @@
 		</projectile>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
-				<!-- 6 deg/tick at 25 tiles/s gives a turn radius of about 4 tiles. -->
-				<turnDegreesPerTick>1.5</turnDegreesPerTick>
-				<!-- 12 ticks of straight boost, about 5 tiles, before the seeker takes over. -->
+				<!-- 3 deg/tick at 15 tiles/s gives a turn radius of 4.77 tiles, which is what closes the
+				     gap between minRange and the range the missile can actually come back round in. -->
+				<turnDegreesPerTick>3</turnDegreesPerTick>
+				<!-- 22 ticks of straight boost, 5.5 tiles, before the seeker takes over. This is the
+				     hard floor under minRange: no turn rate brings the mech's reach below about 6.5
+				     tiles while the missile leaves the tube blind for this long. -->
 				<boostTicks>22</boostTicks>
 				<lifetimeTicks>420</lifetimeTicks>
 				<hitRadius>0.5</hitRadius>
@@ -185,7 +194,7 @@
 				     to the side departs sideways; without the preview that reads as a misfire. -->
 				<drawAimPreview>true</drawAimPreview>
 				<aimPreviewStrideTicks>4</aimPreviewStrideTicks>
-				<aimPreviewMaxPoints>96</aimPreviewMaxPoints>
+				<aimPreviewMaxPoints>128</aimPreviewMaxPoints>
 				<!-- Exhaust frames, suffixed 1-4. Held off until the boost phase ends, so the missile
 				     coasts out of the tube dark and lights up when the seeker takes over. -->
 				<trailTexPath>Things/Projectile/Rocket/Rocket_trail</trailTexPath>
