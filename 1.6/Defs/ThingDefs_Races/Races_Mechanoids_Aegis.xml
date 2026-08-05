@@ -82,8 +82,8 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="ApexMechanoids.ModExtension_Aegis">
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_Aegis">
 				<shieldPart>APM_AegisShield</shieldPart>
 				<leftShieldGroup>APM_LeftAegisShield</leftShieldGroup>
 				<rightShieldGroup>APM_RightAegisShield</rightShieldGroup>
@@ -93,12 +93,14 @@
 				<regenerationIntervalSeconds>30</regenerationIntervalSeconds>
 				<!-- Shield HP restored per regeneration step (kept very slow) -->
 				<regenerationHPPerStep>1</regenerationHPPerStep>
+				<!-- Chance a front attack is caught by a shield -->
+				<frontDamageChance>1</frontDamageChance>
 				<!-- Chance a side attack is caught by that side's shield -->
 				<sideDamageChance>0.2</sideDamageChance>
 				<!-- Extra mech energy drained per shield HP restored during repair (x MechEnergyLossPerHP) -->
 				<repairEnergyCostMultiplier>3</repairEnergyCostMultiplier>
 			</li>
-		</modExtensions>
+		</comps>
 		<butcherProducts>
 			<Steel>40</Steel>
 			<Plasteel>15</Plasteel>

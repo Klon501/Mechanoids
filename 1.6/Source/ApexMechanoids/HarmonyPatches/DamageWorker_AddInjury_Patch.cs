@@ -1,92 +1,51 @@
-﻿using Verse;
+using HarmonyLib;
+using Verse;
 
-namespace ApexMechanoids
+namespace ApexMechanoids.HarmonyPatches
 {
     internal static class DamageWorker_AddInjury_Patch
     {
-        public static bool pickShield;
-        public static BodyPartGroupDef whichShield;
-        public static BodyPartDef whichShieldPart;
-
-        [HarmonyLib.HarmonyPatch(typeof(DamageWorker_AddInjury), "GetExactPartFromDamageInfo")]
+        // GetExactPartFromDamageInfo is the one place that settles the final hit part, so a single
+        // postfix here is enough to make an Aegis catch the hit on a shield.
+        //
+        // It used to take two patches to do this: a prefix here stashed the chosen shield in public
+        // statics and a postfix on HediffSet.GetRandomNotMissingPart read them back out. That meant
+        // patching a method every pawn in the game calls on every damage roll, and leaving shared
+        // state live across the whole damage call, where nested damage could clear it out from under
+        // the outer one.
+        [HarmonyPatch(typeof(DamageWorker_AddInjury), "GetExactPartFromDamageInfo")]
         internal static class GetExactPartFromDamageInfo
         {
-            private static void Prefix(DamageInfo dinfo, Pawn pawn)
+            private static void Postfix(DamageInfo dinfo, Pawn pawn, ref BodyPartRecord __result)
             {
-                ModExtension_Aegis ext = pawn?.def?.GetModExtension<ModExtension_Aegis>();
-                if (ext == null || ext.shieldPart == null || !(dinfo.Instigator is Pawn pawn2))
+                // A caller that named the part it wants keeps it: surgery, targeted abilities, and
+                // damage propagating into inner parts all arrive with HitPart already set.
+                if (__result == null || dinfo.HitPart != null)
                 {
                     return;
                 }
 
-                var angle = (pawn2.DrawPos - pawn.DrawPos).AngleFlat();
-                var rot = Pawn_RotationTracker.RotFromAngleBiased(angle);
-
-                if (rot == pawn.Rotation)
-                {
-                    TryPickShieldForFrontAttack(pawn, ext);
-                }
-                else if (IsSideAttack(rot, pawn.Rotation) && Rand.Chance(ext.sideDamageChance))
-                {
-                    TryPickShieldForSideAttack(pawn, ext, rot);
-                }
-            }
-
-            private static void TryPickShieldForFrontAttack(Pawn pawn, ModExtension_Aegis ext)
-            {
-                bool checkRightFirst = Rand.Chance(0.5f);
-                var firstShield = checkRightFirst ? ext.rightShieldGroup : ext.leftShieldGroup;
-                var secondShield = checkRightFirst ? ext.leftShieldGroup : ext.rightShieldGroup;
-
-                if (TryPickShield(pawn, ext, firstShield))
+                CompAegis comp = pawn.TryGetComp<CompAegis>();
+                if (comp == null)
                 {
                     return;
                 }
 
-                TryPickShield(pawn, ext, secondShield);
-            }
-
-            private static void TryPickShieldForSideAttack(Pawn pawn, ModExtension_Aegis ext, Rot4 attackRot)
-            {
-                bool isRightSide = IsRightSideAttack(attackRot, pawn.Rotation);
-                var shieldGroup = isRightSide ? ext.rightShieldGroup : ext.leftShieldGroup;
-                TryPickShield(pawn, ext, shieldGroup);
-            }
-
-            private static bool TryPickShield(Pawn pawn, ModExtension_Aegis ext, BodyPartGroupDef shieldGroup)
-            {
-                if (shieldGroup == null)
+                // Which shield covers the mech depends on where the attacker is standing, so both
+                // pawns have to actually be on a map together for the question to mean anything.
+                if (!(dinfo.Instigator is Pawn instigator)
+                    || !instigator.Spawned
+                    || !pawn.Spawned
+                    || instigator.Map != pawn.Map)
                 {
-                    return false;
+                    return;
                 }
 
-                var targetBodyPart = Utils.GetNonMissingBodyPart(pawn, ext.shieldPart, shieldGroup);
-                if (targetBodyPart != null)
+                BodyPartRecord shield = comp.ShieldInterceptingAttackFrom(instigator);
+                if (shield != null)
                 {
-                    whichShield = shieldGroup;
-                    whichShieldPart = ext.shieldPart;
-                    pickShield = true;
-                    return true;
+                    __result = shield;
                 }
-
-                return false;
-            }
-
-            private static bool IsSideAttack(Rot4 attackRot, Rot4 pawnRot)
-            {
-                int rotDiff = (attackRot.AsInt - pawnRot.AsInt + 4) % 4;
-                return rotDiff == 1 || rotDiff == 3;
-            }
-
-            private static bool IsRightSideAttack(Rot4 attackRot, Rot4 pawnRot)
-            {
-                int rotDiff = (attackRot.AsInt - pawnRot.AsInt + 4) % 4;
-                return rotDiff == 1;
-            }
-
-            private static void Postfix()
-            {
-                pickShield = false;
             }
         }
     }
