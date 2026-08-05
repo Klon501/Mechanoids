@@ -5,8 +5,9 @@ namespace ApexMechanoids
 {
     [DefOf]
     public static class ApexDefsOf
-    {
+	{
 		public static ThingDef APM_Mech_Tinker;
+		public static ThingDef APM_Mech_Dynamo;
 		public static ThingDef APM_Mech_Frostivus;
         public static ThingDef APM_Mech_Ingestor;
         public static AbilityDef APM_DefenceMatrix;
