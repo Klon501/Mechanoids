@@ -60,6 +60,41 @@ namespace ApexMechanoids
         private DefModExtension_JavelinIndirectFire Props =>
             EquipmentSource?.def?.GetModExtension<DefModExtension_JavelinIndirectFire>();
 
+        // Cached because Projectile below is read several times per candidate during a target scan
+        // and a comp lookup walks the mech's whole comp list. Keyed on the caster so a verb that
+        // changes hands - a dropped launcher picked up by another mech - re-resolves rather than
+        // spending the wrong mech's uranium.
+        private Pawn rackCasterCache;
+        private CompJavelinRocketRack rackCache;
+
+        private CompJavelinRocketRack Rack
+        {
+            get
+            {
+                Pawn pawn = caster as Pawn;
+                if (pawn == null)
+                {
+                    return null;
+                }
+
+                if (!ReferenceEquals(pawn, rackCasterCache))
+                {
+                    rackCasterCache = pawn;
+                    rackCache = pawn.GetComp<CompJavelinRocketRack>();
+                }
+
+                return rackCache;
+            }
+        }
+
+        /// <summary>
+        /// The loaded warhead, when the mech carries a rocket rack. Overriding this rather than
+        /// swapping the verb's def is what keeps everything downstream on the selected rocket for
+        /// free: the reach and obstacle preflights below, the aim preview drawn during the warmup,
+        /// and the projectile the base verb actually spawns all read this one property.
+        /// </summary>
+        public override ThingDef Projectile => Rack?.CurrentProjectile ?? base.Projectile;
+
         private DefModExtension_JavelinMissile MissileProps =>
             Projectile?.GetModExtension<DefModExtension_JavelinMissile>();
 
@@ -70,6 +105,20 @@ namespace ApexMechanoids
                 DefModExtension_JavelinIndirectFire props = Props;
                 return props != null && props.fireFromBehindCover && MissileProps != null;
             }
+        }
+
+        // Charged after the base call rather than before it, so a shot that the base verb refuses -
+        // no shoot line, target gone, warmup interrupted - costs the mech nothing. The uranium buys
+        // a missile that actually left the tube.
+        public override bool TryCastShot()
+        {
+            if (!base.TryCastShot())
+            {
+                return false;
+            }
+
+            Rack?.Notify_ShotFired();
+            return true;
         }
 
         public override bool CanHitTargetFrom(IntVec3 root, LocalTargetInfo targ)
