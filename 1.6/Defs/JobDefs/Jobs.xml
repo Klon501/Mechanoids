@@ -17,6 +17,9 @@
 		<abilityCasting>true</abilityCasting>
 		<playerInterruptible>false</playerInterruptible>
 		<casualInterruptible>false</casualInterruptible>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+		<suspendable>false</suspendable>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
 	</JobDef>
 
 	<JobDef>

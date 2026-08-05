@@ -238,6 +238,7 @@
 
 	<AbilityDef>
 		<defName>APM_HookPawn</defName>
+		<abilityClass>ApexMechanoids.Ability_TerminusHook</abilityClass>
 		<label>Grappling Hook</label>
 		<description>The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target.</description>
 		<jobDef>APM_HookPawn</jobDef>

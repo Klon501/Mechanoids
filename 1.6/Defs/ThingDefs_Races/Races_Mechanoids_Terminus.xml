@@ -246,6 +246,7 @@
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>APM_Hediff_TerminusOverdrive</hediffDef>
 				<applyToSelf>true</applyToSelf>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_AbilityWarmupMote">
 				<moteDef>APM_Mote_TerminusOverdrive_BlueSacrificeWave</moteDef>
@@ -300,6 +301,7 @@
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>APM_Hediff_TerminusOverdrive</hediffDef>
 				<applyToSelf>true</applyToSelf>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_AbilityWarmupMote">
 				<moteDef>APM_Mote_TerminusOverdrive_SacrificeWave</moteDef>
