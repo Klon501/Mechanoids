@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace ApexMechanoids
 {
@@ -32,10 +33,34 @@ namespace ApexMechanoids
         // it in the blast would charge the same missile twice.
         public bool blastHitsPrimaryTarget;
 
-        // While cruising the missile passes over anything that is not its target, and only becomes
-        // able to strike cover, walls and bystanders once it is inside terminalRadius and committed
-        // to its dive. Without this a curved flight path detonates on the first rock it crosses.
-        public bool cruisePassesOverObstacles = true;
+        // The missile flies over pawns, chunks and low cover for the whole flight and is stopped only
+        // by something that fills its cell outright. See JavelinObstacleRules for why vanilla's own
+        // free-intercept roll is the wrong shape for a guided weapon.
+        public bool solidObstaclesBlock = true;
+
+        // Grace distance out of the tube before a solid obstacle can stop the missile, so a launcher
+        // standing next to its own wall does not detonate the shot on the doorframe.
+        public float solidObstacleArmTiles = 5f;
+
+        // Dodging. A seeker turning at a fixed rate is beaten by angle, not by distance: a target
+        // running away down the missile's own heading is simply chased down, while one running across
+        // or into the incoming missile forces a correction it cannot make in the last few tiles.
+        // Set evasionMaxChance to 0 to make the missile unavoidable again.
+        public float evasionMaxChance = 0.5f;
+        public float evasionMinAngleDegrees = 60f;
+
+        // Move speed, in tiles per second, at which the full angle bonus applies. Slower things get
+        // proportionally less of it.
+        public float evasionReferenceMoveSpeed = 4.6f;
+
+        // Aim preview. During the warmup the launcher draws the path the missile will actually fly,
+        // simulated from the same guidance the projectile uses, because a missile that leaves
+        // sideways and curves back reads as a malfunction if the player cannot see where it is going.
+        public bool drawAimPreview = true;
+
+        // One drawn segment per this many flight ticks. Lower is smoother and costs more segments.
+        public int aimPreviewStrideTicks = 4;
+        public int aimPreviewMaxPoints = 96;
 
         // Exhaust animation, drawn over the projectile's own graphic. Held off until the boost phase
         // ends so the missile coasts out of the tube dark and only lights up once the seeker has it.
@@ -66,12 +91,15 @@ namespace ApexMechanoids
         private const int PathStretch = 8;
 
         // Vanilla gates free-intercept collision on InterceptChanceFactorFromDistance(origin, cell),
-        // which returns zero inside 5 tiles of origin and reaches full strength at 12. Rewriting
-        // origin to the missile's current position each tick therefore disabled collision outright:
-        // the missile flew through walls, cover and bystanders and could only hit its intended
-        // target. Setting origin back along the heading leaves the interpolation identical, since
-        // the missile still sits on the segment, while restoring a live intercept distance.
-        private const float InterceptOriginBackset = 13f;
+        // which returns zero inside 5 tiles of origin. Rewriting origin to the missile's current
+        // position each tick therefore keeps that roll switched off for the whole flight, which is
+        // what stops bystanders and low cover soaking a guided missile. What the roll would have
+        // caught - walls and rock - is handled explicitly by TryBlockOnSolidObstacle instead.
+        // Shield belts are unaffected either way: CompProjectileInterceptor is checked at the top of
+        // CheckForFreeInterceptBetween, before the distance gate.
+
+        // Sampling step for that obstacle walk, matching vanilla's own 0.2-tile intercept walk.
+        private const float ObstacleScanStep = 0.2f;
 
         private static Material[] trailMaterials;
         private static string trailMaterialsPath;
@@ -79,6 +107,14 @@ namespace ApexMechanoids
         private JavelinFlightState flight;
         private bool flightInitialized;
         private float pendingDamageMultiplier = 1f;
+
+        // Where the shot left the tube, kept because origin is rewritten every tick and the obstacle
+        // grace distance has to be measured from the launcher rather than from the missile.
+        private Vector3 launchOrigin;
+
+        // The dodge roll happens once, on arrival, and sticks for the rest of the flight.
+        private bool evasionResolved;
+        private bool evaded;
 
         private DefModExtension_JavelinMissile Props => def.GetModExtension<DefModExtension_JavelinMissile>();
 
@@ -108,6 +144,7 @@ namespace ApexMechanoids
                 return;
             }
 
+            launchOrigin = origin;
             flight = JavelinMissileGuidance.CreateState(origin.x, origin.z, ResolveLaunchHeading(launcher, origin));
             flightInitialized = true;
         }
@@ -165,17 +202,11 @@ namespace ApexMechanoids
             }
 
             // Hand the vanilla mover a straight segment that interpolates onto the guided position
-            // after it subtracts delta, so collision and impact stay on the base code path. The
-            // segment starts behind the missile so vanilla's intercept-distance gate stays live;
-            // ticksToImpact is unaffected by the backset, because the extra length behind the
-            // missile is exactly the distance already covered.
-            //
-            // The backset is what arms free-intercept collision, so it is held back until the
-            // missile has closed on its target. Cruising with origin pinned to the missile's own
-            // position leaves the interpolation identical while the intercept distance reads as
-            // zero, which is what lets a curved flight path cross rocks and cover untouched.
-            Vector3 heading = step.normalized;
-            origin = InterceptsArmed() ? previousPosition - heading * InterceptOriginBackset : previousPosition;
+            // after it subtracts delta, so movement, shield interception and impact all stay on the
+            // base code path. Pinning origin to the missile's own position leaves the interpolation
+            // identical while the intercept distance reads as zero, which is what keeps vanilla's
+            // free-intercept roll from letting a bystander soak the shot.
+            origin = previousPosition;
             destination = previousPosition + step * PathStretch;
             ticksToImpact = delta * PathStretch;
 
@@ -186,7 +217,17 @@ namespace ApexMechanoids
                 return;
             }
 
-            if (JavelinMissileGuidance.HasReachedTarget(flight, targetPosition.x, targetPosition.z, flightParams))
+            // Checked before the arrival test so a wall between the missile and its target stops it
+            // on the wall rather than teleporting the hit through.
+            if (TryBlockOnSolidObstacle(previousPosition, newPosition))
+            {
+                return;
+            }
+
+            // A dodged missile is deliberately not detonated here: guidance has already latched
+            // hasClosed by this point, so it flies on, locks out as the range opens, and blows up
+            // behind the target. That reads as a missile whipping past rather than fizzling.
+            if (JavelinMissileGuidance.HasReachedTarget(flight, targetPosition.x, targetPosition.z, flightParams) && !TargetEvades())
             {
                 Position = newPosition.ToIntVec3();
                 Impact(intendedTarget.Thing ?? usedTarget.Thing);
@@ -201,12 +242,165 @@ namespace ApexMechanoids
             }
         }
 
-        // hasClosed is set the moment the missile first comes inside terminalRadius, so it doubles as
-        // "the dive has started" without needing a second distance check here.
-        private bool InterceptsArmed()
+        /// <summary>
+        /// Whether the target shook this missile. Rolled once per missile, the first tick it comes
+        /// inside hitRadius, and latched - otherwise a missile sitting on top of a target would get a
+        /// fresh roll every tick until one of them came up.
+        /// </summary>
+        private bool TargetEvades()
+        {
+            if (evasionResolved)
+            {
+                return evaded;
+            }
+
+            evasionResolved = true;
+            evaded = false;
+
+            DefModExtension_JavelinMissile props = Props;
+            if (props == null || props.evasionMaxChance <= 0f)
+            {
+                return false;
+            }
+
+            if (!((intendedTarget.Thing ?? usedTarget.Thing) is Pawn pawn) || !pawn.Spawned)
+            {
+                return false;
+            }
+
+            if (!TryGetMovement(pawn, out float moveHeading, out float speedPerTick))
+            {
+                return false;
+            }
+
+            JavelinEvasionParams evasion = new JavelinEvasionParams
+            {
+                maxChance = props.evasionMaxChance,
+                minAngleDegrees = props.evasionMinAngleDegrees,
+                referenceSpeedPerTick = props.evasionReferenceMoveSpeed / 60f
+            };
+
+            // Measured against the missile's own heading, so zero means the target is running away
+            // along the flight line and pi means it is running straight into the missile.
+            float chance = JavelinEvasion.EvasionChance(moveHeading - flight.heading, speedPerTick, evasion);
+            if (chance <= 0f || !Rand.Chance(chance))
+            {
+                return false;
+            }
+
+            evaded = true;
+            MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "TextMote_Dodge".Translate(), 1.9f);
+            return true;
+        }
+
+        private static bool TryGetMovement(Pawn pawn, out float heading, out float speedPerTick)
+        {
+            heading = 0f;
+            speedPerTick = 0f;
+
+            Pawn_PathFollower pather = pawn.pather;
+            if (pather == null || !pather.Moving)
+            {
+                return false;
+            }
+
+            // nextCell is the step actually being taken, which is what the pawn is committed to for
+            // the tick the missile arrives on. The destination is only a fallback for the tick where
+            // the two happen to coincide.
+            Vector3 direction = (pather.nextCell - pawn.Position).ToVector3().Yto0();
+            if (direction.sqrMagnitude < 0.0001f)
+            {
+                if (!pather.Destination.IsValid)
+                {
+                    return false;
+                }
+
+                direction = (pather.Destination.Cell - pawn.Position).ToVector3().Yto0();
+                if (direction.sqrMagnitude < 0.0001f)
+                {
+                    return false;
+                }
+            }
+
+            heading = Mathf.Atan2(direction.z, direction.x);
+            speedPerTick = pawn.GetStatValue(StatDefOf.MoveSpeed) / 60f;
+            return speedPerTick > 0f;
+        }
+
+        /// <summary>
+        /// Walks the cells the missile crossed this tick and detonates it on the first thing it
+        /// physically cannot pass. Returns true if the missile is gone.
+        /// </summary>
+        private bool TryBlockOnSolidObstacle(Vector3 from, Vector3 to)
         {
             DefModExtension_JavelinMissile props = Props;
-            return props == null || !props.cruisePassesOverObstacles || flight.hasClosed;
+            Map map = Map;
+            if (map == null || props == null || !props.solidObstaclesBlock)
+            {
+                return false;
+            }
+
+            Vector3 segment = (to - from).Yto0();
+            float length = segment.magnitude;
+            if (length < 0.0001f)
+            {
+                return false;
+            }
+
+            Thing target = intendedTarget.Thing ?? usedTarget.Thing;
+            Vector3 stride = segment / length * ObstacleScanStep;
+            int steps = Mathf.CeilToInt(length / ObstacleScanStep);
+            IntVec3 lastCell = from.ToIntVec3();
+            Vector3 probe = from;
+
+            for (int i = 0; i < steps; i++)
+            {
+                // The last probe lands exactly on the end of the segment rather than overshooting it,
+                // so the walk never reports a cell the missile has not actually entered yet.
+                probe = i == steps - 1 ? to : probe + stride;
+
+                IntVec3 cell = probe.ToIntVec3();
+                if (cell == lastCell || !cell.InBounds(map))
+                {
+                    continue;
+                }
+
+                lastCell = cell;
+                if (TryBlockInCell(cell, map, target, props))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private bool TryBlockInCell(IntVec3 cell, Map map, Thing target, DefModExtension_JavelinMissile props)
+        {
+            float tilesFromLaunch = (cell.ToVector3Shifted() - launchOrigin).Yto0().magnitude;
+            List<Thing> things = cell.GetThingList(map);
+
+            for (int i = 0; i < things.Count; i++)
+            {
+                Thing thing = things[i];
+                if (!CanHit(thing))
+                {
+                    continue;
+                }
+
+                bool openDoor = thing is Building_Door door && door.Open;
+                bool blocksFully = thing.def.Fillage == FillCategory.Full;
+                if (!JavelinObstacleRules.Blocks(blocksFully, openDoor, thing == target, tilesFromLaunch, props.solidObstacleArmTiles))
+                {
+                    continue;
+                }
+
+                Position = cell;
+                Impact(thing);
+                return true;
+            }
+
+            return false;
         }
 
         public override void Impact(Thing hitThing, bool blockedByShield = false)
@@ -353,6 +547,9 @@ namespace ApexMechanoids
         {
             base.ExposeData();
             Scribe_Values.Look(ref flightInitialized, nameof(flightInitialized));
+            Scribe_Values.Look(ref launchOrigin, nameof(launchOrigin));
+            Scribe_Values.Look(ref evasionResolved, nameof(evasionResolved));
+            Scribe_Values.Look(ref evaded, nameof(evaded));
             Scribe_Values.Look(ref pendingDamageMultiplier, nameof(pendingDamageMultiplier), 1f);
             Scribe_Values.Look(ref flight.x, "flightX");
             Scribe_Values.Look(ref flight.z, "flightZ");
