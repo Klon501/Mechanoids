@@ -31,6 +31,19 @@
 	
 	<APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu> (missing bandwidth)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
 
+	<APM.CommandCasket.Inspect.CurrentAction>currently</APM.CommandCasket.Inspect.CurrentAction>
+
+	<APM.CommandCasket.Inspect.CurrentAction.Connect>connecting</APM.CommandCasket.Inspect.CurrentAction.Connect>
+
+	<APM.CommandCasket.Inspect.CurrentAction.Disconnect>disconnecting</APM.CommandCasket.Inspect.CurrentAction.Disconnect>
+
+	<APM.CommandCasket.Inspect.CurrentAction.Shield>shielding</APM.CommandCasket.Inspect.CurrentAction.Shield>
+
+	<APM.CommandCasket.Inspect.CurrentAction.Repair>repairing</APM.CommandCasket.Inspect.CurrentAction.Repair>
+
+	<APM.CommandCasket.Inspect.CurrentAction.Idle>idle</APM.CommandCasket.Inspect.CurrentAction.Idle>
+
+	<APM.CommandCasket.Gizmo.ControlsInfo>\nLeftclick = choose target\nShift = target self\nCtrl = que action\nRightclick = cancel</APM.CommandCasket.Gizmo.ControlsInfo>
 
 
 

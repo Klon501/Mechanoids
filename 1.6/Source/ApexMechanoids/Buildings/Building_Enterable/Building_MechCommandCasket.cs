@@ -1,14 +1,13 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.Sound;
 using PipeSystem;
+using static ApexMechanoids.CompRemoteMechCasketAbilities;
 
 namespace ApexMechanoids
 {
@@ -16,7 +15,6 @@ namespace ApexMechanoids
     public class Building_MechCommandCasket : Building_Enterable, IStoreSettingsParent, IThingHolderWithDrawnPawn, IThingHolder
     {
         private float containedNutritionNotInItems = 0f;
-
 
         private StorageSettings allowedNutritionSettings;
 
@@ -509,17 +507,43 @@ namespace ApexMechanoids
             }
         }
 
-        /*
-        public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
+        private string CurrentActionString
         {
-            if (base.Working && selectedPawn != null && innerContainer.Contains(selectedPawn))
+            get
             {
-                selectedPawn.Drawer.renderer.DynamicDrawPhaseAt(phase, drawLoc + PawnDrawOffset, null, neverAimWeapon: true);
+                if(CompAbilities != null)
+                {
+                    string temp = "APM.CommandCasket.Inspect.CurrentAction".Translate() + " ";
+                    if (CompAbilities.IsBusy == (int)MechCasketAction.idle)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction".Translate() + " ";
+                        return temp;
+                    }
+                    if (CompAbilities.IsBusy == (int)MechCasketAction.connecting)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.Connect".Translate() + " ";
+                    }
+                    else if (CompAbilities.IsBusy == (int)MechCasketAction.disconnecting)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.Disconnect".Translate() + " ";
+                    }
+                    else if (CompAbilities.IsBusy == (int)MechCasketAction.shield)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.Shield".Translate() + " ";
+                    }
+                    else if (CompAbilities.IsBusy == (int)MechCasketAction.repair)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.Repair".Translate() + " ";
+                    }
+                    if (CompAbilities.HasQuedAction)
+                    {
+                        temp += "(+" + CompAbilities.QuedActions.Count + ")";
+                    }
+                    return temp;
+                }
+                return "";
             }
-            base.DynamicDrawPhaseAt(phase, drawLoc, flip);
         }
-        */
-
 
         public override string GetInspectString()
         {
@@ -530,6 +554,10 @@ namespace ApexMechanoids
                 if (selectedPawn != null && innerContainer.Contains(selectedPawn))
                 {
                     stringBuilder.AppendLineIfNotEmpty().Append(string.Format("{0}: {1}, {2}", "CasketContains".Translate().ToString(), selectedPawn.NameShortColored.Resolve(), selectedPawn.ageTracker.AgeBiologicalYears));
+                    if(CompAbilities != null && CompAbilities.HasQuedAction)
+                    {
+                        stringBuilder.AppendLineIfNotEmpty().Append(CurrentActionString);
+                    }
                     stringBuilder.AppendLineIfNotEmpty().Append("APM.CommandCasket.Inspection.Bandwidth".Translate() + " " + selectedPawn.mechanitor.UsedBandwidth.ToString() + " / " + selectedPawn.mechanitor.TotalBandwidth);
                 }
 
