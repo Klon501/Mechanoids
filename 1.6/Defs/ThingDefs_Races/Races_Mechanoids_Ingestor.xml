@@ -51,8 +51,10 @@
 		</race>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_IngestorAbsorbSettings">
-				<stripIconPath>UI/Ingestor/StripMode</stripIconPath>
-				<processModeIconPath>UI/Ingestor/ProcessMode</processModeIconPath>
+				<stripDestroyIconPath>UI/Ingestor/StripModeDestroyApparel</stripDestroyIconPath>
+				<stripKeepIconPath>UI/Ingestor/StripModeKeepApparel</stripKeepIconPath>
+				<processMarkedIconPath>UI/Ingestor/ProcessModeMarkedCorpse</processMarkedIconPath>
+				<processAnyIconPath>UI/Ingestor/ProcessModeAnyCorpse</processAnyIconPath>
 				<markIconPath>UI/Ingestor/MarkCorpse</markIconPath>
 			</li>
 		</comps>
