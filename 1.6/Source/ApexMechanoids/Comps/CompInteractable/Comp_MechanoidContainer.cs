@@ -38,11 +38,29 @@ namespace ApexMechanoids
         {
         }
 
+        /// <summary>
+        /// A scaled container cannot pick its occupant at make time: the roll needs the colony it is
+        /// about to land next to, and mech cluster buildings are made well before they are spawned.
+        /// </summary>
+        public bool ScalesWithPlayerStrength => Props.maxCombatPowerByThreatPoints != null;
+
         public override void PostPostMake()
         {
             base.PostPostMake();
-            ChangeMechKindToSpawn();
+            if (!ScalesWithPlayerStrength)
+            {
+                ChangeMechKindToSpawn();
+            }
             parent.overrideGraphicIndex = 0;
+        }
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            if (!respawningAfterLoad && ScalesWithPlayerStrength && mechKind == null && !isEmpty)
+            {
+                ChangeMechKindToSpawn();
+            }
         }
 
         public override bool DontDrawParent()
@@ -75,23 +93,73 @@ namespace ApexMechanoids
 
         public virtual void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
         {
-            if (kindDef == null)
-            {
-                if (Props.mechKindOptions.NullOrEmpty())
-                {
-                    IsEmpty = true;
-                }
-                else
-                {
-                    mechKind = Props.mechKindOptions.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
-                    IsEmpty = false;
-                }
-            }
-            else
+            if (kindDef != null)
             {
                 mechKind = kindDef;
                 IsEmpty = false;
+                return;
             }
+
+            List<PawnKindDefWeight> options = AllowedMechKindOptions();
+            if (options.NullOrEmpty())
+            {
+                IsEmpty = true;
+                return;
+            }
+
+            mechKind = options.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
+            IsEmpty = false;
+        }
+
+        /// <summary>
+        /// The option list with anything the colony is not yet strong enough to be handed filtered out.
+        /// If the colony is below even the weakest option the container still holds something: it drops
+        /// to the cheapest kinds rather than opening empty.
+        /// </summary>
+        protected List<PawnKindDefWeight> AllowedMechKindOptions()
+        {
+            List<PawnKindDefWeight> options = Props.mechKindOptions
+                .Where((PawnKindDefWeight x) => x?.kindDef != null)
+                .ToList();
+
+            if (!ScalesWithPlayerStrength || options.Count == 0)
+            {
+                return options;
+            }
+
+            float cap = Props.maxCombatPowerByThreatPoints.Evaluate(PlayerStrengthPoints());
+            List<PawnKindDefWeight> withinCap = options
+                .Where((PawnKindDefWeight x) => x.kindDef.combatPower <= cap)
+                .ToList();
+            if (withinCap.Count > 0)
+            {
+                return withinCap;
+            }
+
+            float weakest = options.Min((PawnKindDefWeight x) => x.kindDef.combatPower);
+            return options.Where((PawnKindDefWeight x) => x.kindDef.combatPower <= weakest).ToList();
+        }
+
+        /// <summary>
+        /// Threat points are the game's own read on how strong the colony is, so they are what the
+        /// occupant scales against. Measured on a player home map: a container generated for a pocket
+        /// map or a quest site would otherwise read as a colony with nothing in it.
+        /// </summary>
+        private float PlayerStrengthPoints()
+        {
+            // Loading a save re-rolls containers whose kind no longer resolves, and that runs before
+            // the game has maps or a storyteller. Read as "no colony yet" rather than throwing.
+            if (Current.Game == null || Find.Storyteller == null)
+            {
+                return 0f;
+            }
+
+            Map map = parent.MapHeld;
+            if (map == null || !map.IsPlayerHome)
+            {
+                map = Find.AnyPlayerHomeMap ?? map;
+            }
+            return map == null ? 0f : StorytellerUtility.DefaultThreatPointsNow(map);
         }
 
         public AcceptanceReport BaseCanInteract(Pawn activateBy = null, bool checkOptionalItems = true)
