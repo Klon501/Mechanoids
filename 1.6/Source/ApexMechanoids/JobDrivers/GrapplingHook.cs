@@ -15,13 +15,80 @@ using static UnityEngine.Scripting.GarbageCollector;
 
 namespace ApexMechanoids
 {
+	public class Ability_TerminusHook : Ability
+	{
+		public Ability_TerminusHook()
+		{
+		}
+
+		public Ability_TerminusHook(Pawn pawn)
+			: base(pawn)
+		{
+		}
+
+		public Ability_TerminusHook(Pawn pawn, AbilityDef def)
+			: base(pawn, def)
+		{
+		}
+
+		public Ability_TerminusHook(Pawn pawn, Precept sourcePrecept, AbilityDef def)
+			: base(pawn, sourcePrecept, def)
+		{
+		}
+
+		public override bool AICanTargetNow(LocalTargetInfo target)
+		{
+			return base.AICanTargetNow(target) && TerminusHookUtility.IsValidAITarget(pawn, target.Pawn, this);
+		}
+	}
+
+	public static class TerminusHookUtility
+	{
+		public static bool IsValidAITarget(Pawn caster, Pawn target, Ability ability)
+		{
+			if (caster == null || target == null || target == caster || caster.DeadOrDowned || target.DeadOrDowned)
+			{
+				return false;
+			}
+			if (!caster.Spawned || !target.Spawned || caster.Map == null || target.Map != caster.Map)
+			{
+				return false;
+			}
+			if (!target.HostileTo(caster) || target.IsPsychologicallyInvisible())
+			{
+				return false;
+			}
+			if (caster.ParentHolder is PawnFlyer || target.ParentHolder is PawnFlyer)
+			{
+				return false;
+			}
+			if (target is IAttackTarget attackTarget && attackTarget.ThreatDisabled(caster))
+			{
+				return false;
+			}
+			if (ability?.verb == null || !ability.verb.CanHitTarget(target))
+			{
+				return false;
+			}
+			return caster.CanReserve(target, 1, -1, null, false);
+		}
+	}
 
 	public class JobDriver_HookPawn : JobDriver_CastAbility
 	{
 		private Projectile_GrapplingHook hook;
 
 		public bool hooked = false;
-
+		
+		public override bool TryMakePreToilReservations(bool errorOnFailed)
+		{
+			if (job.GetTarget(TargetIndex.A).Thing is Pawn targetPawn)
+			{
+				return pawn.Reserve(targetPawn, job, 1, -1, null, errorOnFailed);
+			}
+			return true;
+		}
+		
 		public override IEnumerable<Toil> MakeNewToils()
 		{
 			foreach (Toil item in base.MakeNewToils())
@@ -93,8 +160,14 @@ namespace ApexMechanoids
 		public override void Impact(Thing hitThing, bool blockedByShield = false)
 		{
 			Pawn caster = launcher as Pawn;
-			if (!caster.DeadOrDowned)
+			if (caster != null && !caster.DeadOrDowned)
 			{
+				if (blockedByShield)
+				{
+					caster.jobs?.EndCurrentJob(JobCondition.Succeeded);
+					Destroy();
+					return;
+				}
 				IntVec3 position = hitThing?.Position ?? base.Position;
 				IntVec3 flyerOrigin = base.Position;
 				Pawn victim = hitThing as Pawn;
@@ -108,7 +181,6 @@ namespace ApexMechanoids
 				}
 				else
 				{
-					caster.jobs.EndCurrentJob(JobCondition.Succeeded);
 					if (victim != null && victim.pather != null)
 					{
 						victim.pather.debugDisabled = true;

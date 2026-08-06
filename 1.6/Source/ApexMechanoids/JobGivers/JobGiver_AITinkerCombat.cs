@@ -21,6 +21,13 @@ namespace ApexMechanoids
         public int moveJobExpiryInterval = 120;
         public int repairJobExpiryInterval = 120;
         public int waitJobExpiryInterval = 60;
+        public int shieldRecentAttackTargetTicks = 300;
+        public int shieldRecentRangedHarmTicks = 2500;
+        public int shieldTargetLockTicks = 500;
+
+        private static readonly Dictionary<int, ShieldTargetMemory> shieldTargetMemory = new Dictionary<int, ShieldTargetMemory>();
+        private static readonly List<int> tmpShieldTargetMemoryKeysToRemove = new List<int>();
+        private static int lastShieldTargetMemoryCleanupTick = -99999;
 
         public override ThinkNode DeepCopy(bool resolve = true)
         {
@@ -38,6 +45,9 @@ namespace ApexMechanoids
             obj.moveJobExpiryInterval = moveJobExpiryInterval;
             obj.repairJobExpiryInterval = repairJobExpiryInterval;
             obj.waitJobExpiryInterval = waitJobExpiryInterval;
+            obj.shieldRecentAttackTargetTicks = shieldRecentAttackTargetTicks;
+            obj.shieldRecentRangedHarmTicks = shieldRecentRangedHarmTicks;
+            obj.shieldTargetLockTicks = shieldTargetLockTicks;
             return obj;
         }
 
@@ -275,14 +285,24 @@ namespace ApexMechanoids
             }
 
             LocalTargetInfo targetInfo = target;
+            RememberShieldTarget(pawn, target);
             return ability.GetJob(targetInfo, targetInfo);
         }
 
         private Pawn FindShieldTarget(Pawn pawn, Ability ability, Thing enemyTarget)
         {
+            Pawn lockedTarget = CurrentLockedShieldTarget(pawn, ability);
+            if (lockedTarget != null)
+            {
+                return lockedTarget;
+            }
+
             Pawn bestTarget = null;
             float bestScore = float.MinValue;
+            Pawn bestTinkerTarget = null;
+            float bestTinkerScore = float.MinValue;
             float maxDistanceSq = shieldSearchRadius * shieldSearchRadius;
+            List<IAttackTarget> potentialThreats = pawn.Map.attackTargetsCache.GetPotentialTargetsFor(pawn);
             List<Pawn> factionPawns = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
             for (int i = 0; i < factionPawns.Count; i++)
             {
@@ -298,22 +318,15 @@ namespace ApexMechanoids
                     continue;
                 }
 
-                float score = 10000f - distanceSq;
-                if (candidate.def != ApexDefsOf.APM_Mech_Tinker)
+                float score = ShieldTargetScore(pawn, candidate, enemyTarget, distanceSq, potentialThreats);
+                if (candidate.def == ApexDefsOf.APM_Mech_Tinker)
                 {
-                    score += 400f;
-                }
-                if (candidate.IsAttacking())
-                {
-                    score += 250f;
-                }
-                if (candidate.Position.InHorDistOf(enemyTarget.Position, 15f))
-                {
-                    score += 150f;
-                }
-                if (candidate.RaceProps != null && candidate.RaceProps.IsMechanoid && MechRepairUtility.CanRepair(candidate))
-                {
-                    score += 100f;
+                    if (bestTinkerTarget == null || score > bestTinkerScore)
+                    {
+                        bestTinkerTarget = candidate;
+                        bestTinkerScore = score;
+                    }
+                    continue;
                 }
 
                 if (bestTarget == null || score > bestScore)
@@ -323,12 +336,178 @@ namespace ApexMechanoids
                 }
             }
 
-            return bestTarget;
+            return bestTarget ?? bestTinkerTarget;
+        }
+
+        private Pawn CurrentLockedShieldTarget(Pawn pawn, Ability ability)
+        {
+            if (shieldTargetLockTicks <= 0 || pawn == null)
+            {
+                return null;
+            }
+
+            int ticksGame = Find.TickManager.TicksGame;
+            if (!shieldTargetMemory.TryGetValue(pawn.thingIDNumber, out ShieldTargetMemory memory))
+            {
+                return null;
+            }
+
+            if (ticksGame - memory.startTick >= shieldTargetLockTicks)
+            {
+                return null;
+            }
+
+            Pawn target = memory.target;
+            if (!CanShieldTarget(pawn, target, ability))
+            {
+                return null;
+            }
+
+            return pawn.Position.DistanceToSquared(target.Position) <= shieldSearchRadius * shieldSearchRadius ? target : null;
+        }
+
+        private void RememberShieldTarget(Pawn pawn, Pawn target)
+        {
+            if (shieldTargetLockTicks <= 0 || pawn == null || target == null)
+            {
+                return;
+            }
+
+            int ticksGame = Find.TickManager.TicksGame;
+            shieldTargetMemory[pawn.thingIDNumber] = new ShieldTargetMemory(target, ticksGame);
+            CleanupShieldTargetMemory(ticksGame);
+        }
+
+        private static void CleanupShieldTargetMemory(int ticksGame)
+        {
+            if (ticksGame - lastShieldTargetMemoryCleanupTick < 2500)
+            {
+                return;
+            }
+
+            lastShieldTargetMemoryCleanupTick = ticksGame;
+            tmpShieldTargetMemoryKeysToRemove.Clear();
+            foreach (KeyValuePair<int, ShieldTargetMemory> pair in shieldTargetMemory)
+            {
+                Pawn target = pair.Value.target;
+                if (ticksGame - pair.Value.startTick > 60000
+                    || target == null
+                    || target.Destroyed
+                    || target.Dead
+                    || !target.Spawned)
+                {
+                    tmpShieldTargetMemoryKeysToRemove.Add(pair.Key);
+                }
+            }
+
+            for (int i = 0; i < tmpShieldTargetMemoryKeysToRemove.Count; i++)
+            {
+                shieldTargetMemory.Remove(tmpShieldTargetMemoryKeysToRemove[i]);
+            }
+            tmpShieldTargetMemoryKeysToRemove.Clear();
+        }
+
+        private struct ShieldTargetMemory
+        {
+            public Pawn target;
+            public int startTick;
+
+            public ShieldTargetMemory(Pawn target, int startTick)
+            {
+                this.target = target;
+                this.startTick = startTick;
+            }
+        }
+
+        private float ShieldTargetScore(Pawn pawn, Pawn target, Thing enemyTarget, float distanceSq, List<IAttackTarget> potentialThreats)
+        {
+            float score = -distanceSq * 0.35f;
+            score += IncomingRangedThreatScore(pawn, target, potentialThreats);
+
+            if (WasRecentlyHitByRanged(target))
+            {
+                score += 1000f;
+            }
+
+            float missingHealth = 1f - target.health.summaryHealth.SummaryHealthPercent;
+            score += missingHealth * 900f;
+            score += ShieldTargetValueScore(target);
+
+            if (target.IsAttacking())
+            {
+                score += 150f;
+            }
+            if (enemyTarget != null && target.Position.InHorDistOf(enemyTarget.Position, 15f))
+            {
+                score += 150f;
+            }
+
+            return score;
+        }
+
+        private float IncomingRangedThreatScore(Pawn pawn, Pawn target, List<IAttackTarget> potentialThreats)
+        {
+            float score = 0f;
+            int ticksGame = Find.TickManager.TicksGame;
+            for (int i = 0; i < potentialThreats.Count; i++)
+            {
+                IAttackTarget threat = potentialThreats[i];
+                Thing threatThing = threat.Thing;
+                if (!IsValidEnemyTarget(pawn, threatThing) || threat.ThreatDisabled(pawn))
+                {
+                    continue;
+                }
+
+                IAttackTargetSearcher searcher = threat as IAttackTargetSearcher;
+                if (!HasRangedThreatVerb(searcher))
+                {
+                    continue;
+                }
+
+                if (threat.TargetCurrentlyAimingAt == target)
+                {
+                    score += 2500f;
+                }
+                if (searcher.LastAttackedTarget == target && ticksGame - searcher.LastAttackTargetTick <= shieldRecentAttackTargetTicks)
+                {
+                    score += 1500f;
+                }
+            }
+
+            return score;
+        }
+
+        private bool WasRecentlyHitByRanged(Pawn target)
+        {
+            return target.mindState != null
+                && target.mindState.lastRangedHarmTick > 0
+                && Find.TickManager.TicksGame - target.mindState.lastRangedHarmTick <= shieldRecentRangedHarmTicks;
+        }
+
+        private static bool HasRangedThreatVerb(IAttackTargetSearcher searcher)
+        {
+            Verb verb = searcher?.CurrentEffectiveVerb;
+            return verb != null && verb.verbProps != null && verb.verbProps.Ranged;
+        }
+
+        private static float ShieldTargetValueScore(Pawn target)
+        {
+            float score = target.kindDef != null ? target.kindDef.combatPower * 0.6f : 0f;
+            if (target.RaceProps != null)
+            {
+                score += target.BodySize * 45f;
+            }
+            return score;
         }
 
         private static bool CanShieldTarget(Pawn pawn, Pawn target, Ability ability)
         {
             if (target == null || target == pawn || target.Destroyed || target.Dead || target.Downed || !target.Spawned || target.Map != pawn.Map)
+            {
+                return false;
+            }
+
+            if (target.def == ApexDefsOf.APM_Mech_Dynamo)
             {
                 return false;
             }
