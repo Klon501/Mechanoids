@@ -4,9 +4,6 @@ using Verse;
 using UnityEngine;
 using Verse.Sound;
 using System.Linq;
-using System.ComponentModel;
-using System.Xml.Linq;
-using VEF.Things;
 using Verse.AI;
 
 
@@ -31,6 +28,7 @@ namespace ApexMechanoids
 
         public bool IsActing => IsBusy != (int)MechCasketAction.idle;
         
+        public List<MechCasketQuedAction> QuedActions = new List<MechCasketQuedAction>();
 
         private int TicksPerHeal => Mathf.RoundToInt(1f / User.GetStatValue(StatDefOf.MechRepairSpeed) * 120f * Props.actionspeed);
 
@@ -67,6 +65,22 @@ namespace ApexMechanoids
                     */
 
                     yield return abilityGizmo;
+                }
+                if(Prefs.DevMode)
+                {
+                    Command_Action LogQue_Action = new Command_Action();
+                    LogQue_Action.defaultLabel = "DEV: Write Que in log";
+                    LogQue_Action.action = delegate
+                    {
+                        if (!QuedActions.NullOrEmpty())
+                        {
+                            foreach (MechCasketQuedAction action in QuedActions)
+                            {
+                                Log.Message(action.targetinfo.ToString() + " -> " + action.action);
+                            }
+                        }
+                    };
+                    yield return LogQue_Action;
                 }
             }
 
@@ -159,6 +173,131 @@ namespace ApexMechanoids
             }
         }
 
+        #region QuedActions
+
+        public void AddQuedAction(LocalTargetInfo curLocalTargetInfo, int action)
+        {
+            if(ActionIsValid(curLocalTargetInfo, action))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, action);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+        public void AddQuedActionShield(LocalTargetInfo curLocalTargetInfo)
+        {
+            if (ActionIsValid(curLocalTargetInfo, (int)MechCasketAction.shield))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, (int)MechCasketAction.shield);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+        public void AddQuedActionRepair(LocalTargetInfo curLocalTargetInfo)
+        {
+            if (ActionIsValid(curLocalTargetInfo, (int)MechCasketAction.repair))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, (int)MechCasketAction.repair);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+        public void AddQuedActionConnect(LocalTargetInfo curLocalTargetInfo)
+        {
+            if (ActionIsValid(curLocalTargetInfo, (int)MechCasketAction.connecting))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, (int)MechCasketAction.connecting);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+        public void AddQuedActionDisconnect(LocalTargetInfo curLocalTargetInfo)
+        {
+            if (ActionIsValid(curLocalTargetInfo, (int)MechCasketAction.disconnecting))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, (int)MechCasketAction.disconnecting);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+        private bool ActionIsValid(LocalTargetInfo curLocalTargetInfo, int action)
+        {
+            if(curLocalTargetInfo.Pawn != null) // && action >= (int)MechCasketAction.connecting && action <= (int)MechCasketAction.shield)
+            {
+                if(!curLocalTargetInfo.Pawn.Dead)
+                {
+                    if(action == (int)MechCasketAction.connecting && curLocalTargetInfo.Pawn.GetOverseer() == User)
+                    {
+                        return false;
+                    }
+                    if (action == (int)MechCasketAction.disconnecting && curLocalTargetInfo.Pawn.GetOverseer() != User)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool ActionIsValid(MechCasketQuedAction quedAction)
+        {
+            if (quedAction != null && ActionIsValid(quedAction.targetinfo, quedAction.action))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void StartQuedAction()
+        {
+            if (!QuedActions.NullOrEmpty())
+            {
+                MechCasketQuedAction quedAction = QuedActions.FirstOrDefault();
+
+                if (ActionIsValid(quedAction))
+                {
+                    ForceSetTarget(quedAction.targetinfo.Pawn, out LocalTargetInfo target);
+                    if (quedAction.action == (int)MechCasketAction.connecting)
+                    {
+                        StartToConnect(target);
+                    }
+                    else if (quedAction.action == (int)MechCasketAction.disconnecting)
+                    {
+                        StartToDisconnect(target);
+                    }
+                    else if (quedAction.action == (int)MechCasketAction.repair)
+                    {
+                        StartToRepair(target);
+                    }
+                    else if (quedAction.action == (int)MechCasketAction.shield)
+                    {
+                        StartToShield(target);
+                    }
+                }
+
+                QuedActions.Remove(quedAction);
+            }
+        }
+
+        public bool HasQuedAction
+        {
+            get
+            {
+                if(QuedActions == null)
+                {
+                    QuedActions = new List<MechCasketQuedAction>();
+                }
+
+                if (!QuedActions.NullOrEmpty())
+                {
+                    return QuedActions.Count > 0;
+                }
+                return false;
+            }
+        }
+
+        #endregion
 
         public bool IsBoosted
         {
@@ -198,6 +337,7 @@ namespace ApexMechanoids
 
             if (User == null)
             {
+                ResetAllEffecter();
                 return;
             }
             if (parent.IsHashIntervalTick(Props.TicksToCheckForHediff))
@@ -252,7 +392,7 @@ namespace ApexMechanoids
                 }
 
             }
-        
+
             // gizmo actions
 
             if (actionTick != 0)
@@ -269,28 +409,28 @@ namespace ApexMechanoids
                             // in tick so that mech can move again if it gets canceled
                         }
 
-                        if (effecter == null)
+                        if (connectEffecter == null)
                         {
                             EffecterDef progressBar = EffecterDefOf.ProgressBar;
-                            effecter = progressBar.Spawn();
+                            connectEffecter = progressBar.Spawn();
                         }
-                        if (effecter != null)
+                        if (connectEffecter != null)
                         {
                             TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
 
-                            effecter.EffectTick(infoMech, TargetInfo.Invalid);
+                            connectEffecter.EffectTick(infoMech, TargetInfo.Invalid);
                         }
 
-                        if(mote == null)
+                        if(connecMote == null)
                         {
-                            mote = ((SubEffecter_ProgressBar)effecter.children[0]).mote;
+                            connecMote = ((SubEffecter_ProgressBar)connectEffecter.children[0]).mote;
                         }
                         
-                        if (mote != null)
+                        if (connecMote != null)
                         {
-                            mote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
-                            mote.offsetZ = -0.5f;
-                            mote.alwaysShow = true;
+                            connecMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
+                            connecMote.offsetZ = -0.5f;
+                            connecMote.alwaysShow = true;
                         }
 
                         if (actionTick >= ticksToTakeControl)
@@ -314,6 +454,61 @@ namespace ApexMechanoids
                             if (CanRemoteRepair(curLocalTargetInfo) && !curLocalTargetInfo.Pawn.Dead)
                             {
                                 Repair(curLocalTargetInfo, User, delta);
+
+                                /*
+                                if (repairEffecter == null )
+                                {
+                                    EffecterDef repair = EffecterDefOf.MechRepairing;
+                                    repairEffecter = repair.Spawn();
+                                    //repairEffecter.Trigger(new TargetInfo(thing: curLocalTargetInfo.Pawn), TargetInfo.Invalid);
+                                }
+                                if (repairEffecter != null)
+                                {
+                                    TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
+
+                                    repairEffecter.EffectTick(infoMech, TargetInfo.Invalid);
+                                }
+                                
+                                if (repairMote == null)
+                                {
+                                    repairMote = (((SubEffecter_SprayerChance)repairEffecter.children[2]).mote);
+                                }
+
+                                if (repairMote != null)
+                                {
+                                    //repairMote.Attach(curLocalTargetInfo.Pawn);
+                                    //repairMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick);
+                                    //repairMote.offsetZ = -0.5f;
+                                    //repairMote.alwaysShow = true;
+                                }
+                                */
+
+
+                                if (repairEffecter == null)
+                                {
+                                    EffecterDef progressBar = EffecterDefOf.ProgressBar;
+                                    repairEffecter = progressBar.Spawn();
+                                }
+                                if (repairEffecter != null)
+                                {
+                                    TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
+
+                                    repairEffecter.EffectTick(infoMech, TargetInfo.Invalid);
+                                }
+
+                                if (repairMote == null)
+                                {
+                                    repairMote = ((SubEffecter_ProgressBar)repairEffecter.children[0]).mote;
+                                }
+
+                                if (repairMote != null)
+                                {
+                                    repairMote.progress = Mathf.Clamp01(1f - ((float)ticksToNextRepair / (float)TicksPerHeal));
+
+                                    repairMote.offsetZ = -0.5f;
+                                    repairMote.alwaysShow = true;
+                                }
+
                             }
                             else
                             {
@@ -328,24 +523,54 @@ namespace ApexMechanoids
                 }
                 else //idle
                 {
-                    ResetEffecter();
+                    ResetAllEffecter();
+                }
+            }
+            else //idle but ticking without actiontick
+            {
+                if (HasQuedAction)
+                {
+                    StartQuedAction();
                 }
             }
         }
 
-        public void ResetEffecter()
+
+        public void ResetAllEffecter()
         {
-            if (effecter != null)
+            ResetConnectEffecter();
+            ResetRepairEffecter();
+        }
+
+        public void ResetConnectEffecter()
+        {
+            if (connectEffecter != null)
             {
-                effecter.Cleanup();
-                effecter = null;
-                mote = null;
+                connectEffecter.Cleanup();
+                connectEffecter = null;
+                connecMote = null;
             }
         }
 
-        public Effecter effecter = null;
+        public void ResetRepairEffecter()
+        {
+            if (repairEffecter != null)
+            {
+                repairEffecter.Cleanup();
+                repairEffecter = null;
+                repairMote = null;
+            }
+        }
 
-        public MoteProgressBar mote = null;
+        public Effecter connectEffecter = null;
+
+        public MoteProgressBar connecMote = null;
+
+        public Effecter repairEffecter = null;
+
+        //public Mote repairMote = null;
+        public MoteProgressBar repairMote = null;
+        
 
         public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
@@ -370,6 +595,7 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref ticksToDisconnect, "ticksToDisconnect");
             Scribe_Values.Look(ref actionTick, "actionTick");
             Scribe_Values.Look(ref TicksForShieldcooldown, "TicksForShieldcooldown");
+            Scribe_Collections.Look(ref QuedActions, "QuedActions", LookMode.Value);
         }
 
         
@@ -423,6 +649,8 @@ namespace ApexMechanoids
             target = curLocalTargetInfo;
         }
 
+
+
         private bool HasATarget()
         {
             if (curTarget != null)
@@ -468,7 +696,7 @@ namespace ApexMechanoids
             DestroyMechShield();
             IsBusy = (int)MechCasketAction.idle;
             ResetTarget();
-            ResetEffecter();
+            ResetAllEffecter();
         }
 
         public void EndActionWithSound()

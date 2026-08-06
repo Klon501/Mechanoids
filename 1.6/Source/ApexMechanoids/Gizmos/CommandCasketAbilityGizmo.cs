@@ -1,8 +1,7 @@
 ﻿using RimWorld;
-using System.Drawing;
 using UnityEngine;
 using Verse;
-using Verse.Sound;
+
 
 
 namespace ApexMechanoids
@@ -98,7 +97,14 @@ namespace ApexMechanoids
                 {
                     if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
                     {
-                        Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.StartToConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                        if (Event.current.control)
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.AddQuedActionConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                        }
+                        else
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.StartToConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                        }
                     }
 
                     if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
@@ -108,7 +114,7 @@ namespace ApexMechanoids
                 }
 
                 GUI.DrawTexture(connectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Connect));
-                TooltipHandler.TipRegion(connectRect, "APM.CommandCasket.Gizmo.Connect.Desc".Translate().CapitalizeFirst());
+                TooltipHandler.TipRegion(connectRect, "APM.CommandCasket.Gizmo.Connect.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                 //CancelAction(connectRect);
 
                 Rect disconnectRect = new Rect(connectRect.x, connectRect.y + connectRect.height + 2f, connectRect.width, connectRect.height);
@@ -118,16 +124,22 @@ namespace ApexMechanoids
                 {
                     if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
                     {
-                        Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.StartToDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                        if (Event.current.control)
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.AddQuedActionDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                        }
+                        else
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.StartToDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                        }
                     }
-
                     if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
                     {
                         abilityComp.EndActionWithSound();
                     }
                 }
                 GUI.DrawTexture(disconnectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Disconnect));
-                TooltipHandler.TipRegion(disconnectRect, "APM.CommandCasket.Gizmo.Disconnect.Desc".Translate().CapitalizeFirst());
+                TooltipHandler.TipRegion(disconnectRect, "APM.CommandCasket.Gizmo.Disconnect.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                 //CancelAction(disconnectRect);
 
                 Rect abilityRect = new Rect(connectRect.x + connectRect.width + Spacing, mainRect.y, mainRect.height, mainRect.height);
@@ -139,7 +151,14 @@ namespace ApexMechanoids
                     {
                         if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
                         {
-                            Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.StartToRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                            if (Event.current.control)
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.AddQuedActionRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                            }
+                            else
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.StartToRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                            }
                         }
 
                         if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
@@ -147,7 +166,7 @@ namespace ApexMechanoids
                             abilityComp.EndActionWithSound();
                         }
                     }
-                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Repair.Desc".Translate().CapitalizeFirst());
+                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Repair.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                     DrawVanillalikeLabel(abilityRect, "APM.CommandCasket.Gizmo.Repair.Label".Translate().CapitalizeFirst());
 
                     abilityRect.x += abilityRect.width + Spacing;
@@ -162,7 +181,14 @@ namespace ApexMechanoids
                     {
                         if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && abilityComp.TicksForShieldcooldown == 0) //left click
                         {
-                            Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.StartToShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            if (Event.current.control)
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.AddQuedActionShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            }
+                            else
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.StartToShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            }
                         }
 
                         if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
@@ -186,7 +212,7 @@ namespace ApexMechanoids
                         Text.Anchor = TextAnchor.UpperLeft;
                     }
                     DrawVanillalikeLabel(abilityRect, abilityComp.GetShieldGizmoLabel());
-                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Shield.Desc".Translate().CapitalizeFirst());
+                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Shield.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                     abilityRect.x += abilityRect.width + Spacing;
                 }
 
