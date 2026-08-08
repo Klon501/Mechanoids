@@ -63,7 +63,7 @@
 							<workerClass>ApexMechanoids.PawnRenderNodeWorker_BodyPartShield</workerClass>
 							<linkedBodyPartsGroup>APM_LeftAegisShield</linkedBodyPartsGroup>
 							<texPath>Things/Pawn/Mechanoid/Aegis/LeftShield/AegisLS</texPath>
-							<maskPath>Things/Pawn/Mechanoid/AllegienceOverlays/Aegis/LeftShield/Mech_AegisLS</maskPath>
+							<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Aegis/LeftShield/Mech_AegisLS</maskPath>
 							<baseLayer>15</baseLayer>
 							<drawData>
 								<scale>1.7</scale>
@@ -85,7 +85,7 @@
 							<workerClass>ApexMechanoids.PawnRenderNodeWorker_BodyPartShield</workerClass>
 							<linkedBodyPartsGroup>APM_RightAegisShield</linkedBodyPartsGroup>
 							<texPath>Things/Pawn/Mechanoid/Aegis/RightShield/AegisRS</texPath>
-							<maskPath>Things/Pawn/Mechanoid/AllegienceOverlays/Aegis/RightShield/Mech_AegisRS</maskPath>
+							<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Aegis/RightShield/Mech_AegisRS</maskPath>
 							<baseLayer>15</baseLayer>
 							<drawData>
 								<scale>1.7</scale>

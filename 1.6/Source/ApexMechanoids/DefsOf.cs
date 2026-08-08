@@ -28,7 +28,6 @@ namespace ApexMechanoids
         public static BodyPartGroupDef APM_RightAegisShield;
         public static PawnKindDef APM_Mech_Aegis;
 		public static BodyPartDef APM_AegisShield;
-        //public static JobDef APM_RepairAegisShields;
         public static HediffDef APM_Hediff_Unity;
         public static HediffDef APM_DuelWinner;
         public static HediffDef APM_DuelDraw;
