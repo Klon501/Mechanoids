@@ -84,15 +84,10 @@
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>APM_CasketBandwidthAmplifier</li>
 				</linkableFacilities>
-			</li>
-			<li  MayRequire="VanillaExpanded.VNutrientE" Class="PipeSystem.CompProperties_Resource">
-				<pipeNet>VNPE_NutrientPasteNet</pipeNet>
 			</li>
 		</comps>
 		<placeWorkers>
@@ -133,14 +128,6 @@
 			<li>ApexMechtech</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>1000</basePowerConsumption>
-				<idlePowerDraw>80</idlePowerDraw>
-			</li>
 			<li Class="ApexMechanoids.CompProperties_RemoteMechCasketAbilities">
 				<actionspeed>1.0</actionspeed>
 				<repairExp>0.05</repairExp>
@@ -155,6 +142,17 @@
 				<textpath_Shield>UI/Gizmos/APM_ShieldMech</textpath_Shield>
 				<textpath_ShieldCooldown>UI/Gizmos/APM_ShieldMechCooldown</textpath_ShieldCooldown>
 				<labelShort>Casket</labelShort>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>1000</basePowerConsumption>
+				<idlePowerDraw>80</idlePowerDraw>
+			</li>
+			<li  MayRequire="VanillaExpanded.VNutrientE" Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>VNPE_NutrientPasteNet</pipeNet>
 			</li>
 		</comps>
 		<placeWorkers>

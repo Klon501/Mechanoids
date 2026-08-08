@@ -47,10 +47,20 @@
 		<building>
 			<buildingTags>
 				<li>MechanoidClusterBuilding</li>
+				<li>MechClusterMember</li>
 			</buildingTags>
+			<minMechClusterPoints>500</minMechClusterPoints>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+		<modExtensions>
+			<!-- Rare on purpose. One slot per cluster, rolled at 8%, and never below 500 point clusters. -->
+			<li Class="ApexMechanoids.DefModExtension_MechClusterExtra">
+				<spawnChance>0.08</spawnChance>
+				<minTotalPoints>500</minTotalPoints>
+				<maxPerCluster>1</maxPerCluster>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_MechanoidContainer">
 				<activeTicks>120</activeTicks>
@@ -79,13 +89,34 @@
 					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
 				</targetingParameters>
 				
+				<!-- Weights are the roll inside whatever the points cap below has left available. -->
 				<mechKindOptions>
-					<Mech_Scyther/>
-					<Mech_Lancer/>
-					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey"/>
-					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech"/>
-					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech"/>
+					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Militor>
+					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Scorcher>
+					<Mech_Pikeman>8</Mech_Pikeman>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">8</Mech_Cyclops>
+					<Mech_Scyther>8</Mech_Scyther>
+					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">8</Mech_Tesseron>
+					<Mech_Lancer>6</Mech_Lancer>
+					<Mech_Tunneler MayRequire="Ludeon.RimWorld.Biotech">4</Mech_Tunneler>
+					<Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">3</Mech_Centurion>
+					<Mech_CentipedeBlaster>2</Mech_CentipedeBlaster>
+					<Mech_CentipedeBurner>2</Mech_CentipedeBurner>
+					<Mech_CentipedeGunner>2</Mech_CentipedeGunner>
 				</mechKindOptions>
+				<!--
+					Colony threat points to the highest combatPower this container may hold.
+					80 covers militor and scorcher, 150 adds pikeman, cyclops, scyther and tesseron,
+					250 adds lancer, tunneler and centurion, 400 opens up the centipedes.
+				-->
+				<maxCombatPowerByThreatPoints>
+					<points>
+						<li>(0, 80)</li>
+						<li>(350, 150)</li>
+						<li>(800, 250)</li>
+						<li>(1600, 400)</li>
+					</points>
+				</maxCombatPowerByThreatPoints>
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
