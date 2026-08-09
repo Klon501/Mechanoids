@@ -34,15 +34,15 @@ namespace ApexMechanoids
             bool allowManualCastWeapons = !pawn.IsColonist && !pawn.IsColonySubhuman;
             if (allowManualCastWeapons)
             {
-                Job abilityJob = GetAbilityJob(pawn, enemyTarget);
-                if (abilityJob != null)
+                Job abilityJob;
+                if (RavagerArtilleryUtility.TryMakeBestStarfallJob(pawn, TargetSearchRange(pawn, null), out abilityJob))
                 {
                     return abilityJob;
                 }
             }
 
             Verb verb = pawn.TryGetAttackVerb(enemyTarget, allowManualCastWeapons, allowTurrets);
-            if (!RavagerArtilleryUtility.CanFireAtCell(pawn, targetCell, verb))
+            if (!RavagerArtilleryUtility.TryFindBestArtilleryTarget(pawn, verb, TargetSearchRange(pawn, verb), out targetCell))
             {
                 return null;
             }
@@ -125,6 +125,17 @@ namespace ApexMechanoids
             return RavagerArtilleryUtility.CanUseArtillery(pawn)
                 && pawn.Awake()
                 && RavagerArtilleryUtility.AutoFireEnabled(pawn);
+        }
+
+        private float TargetSearchRange(Pawn pawn, Verb verb)
+        {
+            float maxRange = verb?.EffectiveRange ?? pawn?.TryGetAttackVerb(null, !pawn.IsColonist && !pawn.IsColonySubhuman)?.EffectiveRange ?? targetAcquireRadius;
+            if (targetAcquireRadius > 0f && targetAcquireRadius < maxRange)
+            {
+                maxRange = targetAcquireRadius;
+            }
+
+            return maxRange;
         }
     }
 }

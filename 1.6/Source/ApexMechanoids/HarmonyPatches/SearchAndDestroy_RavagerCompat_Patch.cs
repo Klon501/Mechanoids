@@ -26,7 +26,16 @@ namespace ApexMechanoids.HarmonyPatches
             Job currentJob = __result.Job;
             if (IsRavagerStarfallJob(currentJob))
             {
-                AllowStarfallWarmup(currentJob);
+                if (!currentJob.playerForced && RavagerArtilleryUtility.TryMakeBestStarfallJob(pawn, 80f, out Job scoredStarfallJob))
+                {
+                    AllowStarfallWarmup(scoredStarfallJob);
+                    __result = new ThinkResult(scoredStarfallJob, __result.SourceNode, __result.Tag);
+                }
+                else
+                {
+                    AllowStarfallWarmup(currentJob);
+                }
+
                 return;
             }
 
