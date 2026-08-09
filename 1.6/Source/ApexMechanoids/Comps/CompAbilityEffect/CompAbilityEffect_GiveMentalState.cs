@@ -47,6 +47,10 @@ namespace ApexMechanoids
             Pawn pawn = target.Pawn;
             if (pawn != null)
             {
+                if (pawn.MentalState?.def == this.Props.stateDef)
+                {
+                    return false;
+                }
                 if (this.Props.excludeNPCFactions && pawn.Faction != null && !pawn.Faction.IsPlayer)
                 {
                     if (throwMessages)
