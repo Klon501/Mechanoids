@@ -34,7 +34,7 @@ namespace ApexMechanoids
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed)
+            if (pawn == null || !pawn.Spawned || pawn.Map == null || pawn.Dead || pawn.Downed || !pawn.Awake())
             {
                 return;
             }
@@ -67,7 +67,13 @@ namespace ApexMechanoids
                 return;
             }
 
-            ability.QueueCastingJob(pawn, pawn);
+            LocalTargetInfo selfTarget = pawn;
+            if (!ability.AICanTargetNow(selfTarget) || !ability.CanApplyOn(selfTarget))
+            {
+                return;
+            }
+
+            ability.QueueCastingJob(selfTarget, selfTarget);
         }
 
         private void EnsureAbility()

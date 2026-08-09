@@ -26,6 +26,7 @@ namespace ApexMechanoids.HarmonyPatches
             {
                 Ability ability = __result[i];
                 if (RavagerArtilleryUtility.AutoAbilityBlockedByArtilleryToggle(pawn, ability)
+                    || GazerLaserUtility.AutoAbilityBlockedByLaserToggle(pawn, ability)
                     || (searchAndDestroyEnabled && SearchAndDestroyCompatUtility.AutoUseDisabledWithSearchAndDestroy(pawn, ability)))
                 {
                     __result.RemoveAt(i);
