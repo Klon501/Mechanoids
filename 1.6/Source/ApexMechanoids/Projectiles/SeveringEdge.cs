@@ -37,7 +37,7 @@ namespace ApexMechanoids
         }
         protected virtual bool IsValidTarget(Thing target)
         {
-            if (!(target is Pawn pawn))
+            if (!(target is Pawn) && !(target is Building))
             {
                 return false;
             }
