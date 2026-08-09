@@ -1,4 +1,5 @@
 using RimWorld;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -84,6 +85,8 @@ namespace ApexMechanoids
         private const int ToxicTickInterval = 120;
         private const float ToxicSeverity = 0.025f;
 
+        private static readonly List<Pawn> tmpPawnsToAffect = new List<Pawn>();
+
         private int ticksLeft = LifetimeTicks;
 
         public void Refresh()
@@ -116,21 +119,42 @@ namespace ApexMechanoids
 
         private void ApplyToxicBuildup()
         {
-            if (Map == null)
+            Map map = Map;
+            if (map == null)
             {
                 return;
             }
 
-            foreach (Thing thing in Position.GetThingList(Map))
+            tmpPawnsToAffect.Clear();
+            List<Thing> things = Position.GetThingList(map);
+            for (int i = 0; i < things.Count; i++)
             {
-                Pawn pawn = thing as Pawn;
-                if (pawn == null || pawn.Dead || pawn.RaceProps.IsMechanoid)
+                if (things[i] is Pawn pawn && ShouldAffectPawn(pawn, map))
                 {
-                    continue;
+                    tmpPawnsToAffect.Add(pawn);
                 }
-
-                HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, ToxicSeverity);
             }
+
+            for (int i = 0; i < tmpPawnsToAffect.Count; i++)
+            {
+                Pawn pawn = tmpPawnsToAffect[i];
+                if (ShouldAffectPawn(pawn, map))
+                {
+                    HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, ToxicSeverity);
+                }
+            }
+
+            tmpPawnsToAffect.Clear();
+        }
+
+        private bool ShouldAffectPawn(Pawn pawn, Map map)
+        {
+            return pawn != null
+                && !pawn.Dead
+                && pawn.Spawned
+                && pawn.MapHeld == map
+                && pawn.Position == Position
+                && !(pawn.RaceProps?.IsMechanoid ?? false);
         }
     }
 }
