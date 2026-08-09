@@ -49,6 +49,10 @@ namespace ApexMechanoids
             {
                 return false;
             }
+            if (!GenSight.LineOfSight(this.Position, target.Position, Map))
+            {
+                return false;
+            }
 
             return true;
         }
