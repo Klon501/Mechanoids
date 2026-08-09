@@ -2,26 +2,100 @@ using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 
 namespace ApexMechanoids
 {
+    public class Ability_PulseWave : Ability
+    {
+        public Ability_PulseWave()
+        {
+        }
+
+        public Ability_PulseWave(Pawn pawn)
+            : base(pawn)
+        {
+        }
+
+        public Ability_PulseWave(Pawn pawn, AbilityDef def)
+            : base(pawn, def)
+        {
+        }
+
+        public Ability_PulseWave(Pawn pawn, Precept sourcePrecept, AbilityDef def)
+            : base(pawn, sourcePrecept, def)
+        {
+        }
+
+        public override bool CanApplyOn(LocalTargetInfo target)
+        {
+            return PulseWaveUtility.HasHostileAffectedPawnInRadius(pawn, PulseWaveUtility.GetProps(def));
+        }
+
+        public override Job GetJob(LocalTargetInfo target, LocalTargetInfo destination)
+        {
+            LocalTargetInfo selfTarget = pawn != null ? new LocalTargetInfo(pawn.Position) : target;
+            return base.GetJob(selfTarget, selfTarget);
+        }
+    }
+
     public class Verb_CastPulseWave : Verb_CastAbility
     {
         public override bool TryStartCastOn(LocalTargetInfo castTarg, LocalTargetInfo destTarg, bool surpriseAttack = false, bool canHitNonTargetPawns = true, bool preventFriendlyFire = false, bool nonInterruptingSelfCast = false)
         {
-            if (!castTarg.IsValid && caster != null)
+            if (CasterIsPawn && !PulseWaveUtility.HasHostileAffectedPawnInRadius(CasterPawn, PulseWaveUtility.GetProps(ability?.def)))
             {
-                castTarg = caster;
+                return false;
+            }
+
+            if (CasterIsPawn)
+            {
+                LocalTargetInfo selfTarget = new LocalTargetInfo(CasterPawn.Position);
+                Job currentJob = CasterPawn.CurJob;
+                if (currentJob?.ability == ability)
+                {
+                    currentJob.targetA = selfTarget;
+                    currentJob.targetB = selfTarget;
+                }
+
+                return base.TryStartCastOn(selfTarget, selfTarget, surpriseAttack, canHitNonTargetPawns, preventFriendlyFire, nonInterruptingSelfCast);
             }
 
             return base.TryStartCastOn(castTarg, destTarg, surpriseAttack, canHitNonTargetPawns, preventFriendlyFire, nonInterruptingSelfCast);
+        }
+
+        public override bool CanHitTarget(LocalTargetInfo targ)
+        {
+            if (IsSelfCenteredTarget(targ))
+            {
+                return true;
+            }
+
+            return base.CanHitTarget(targ);
+        }
+
+        public override bool CanHitTargetFrom(IntVec3 root, LocalTargetInfo targ)
+        {
+            if (IsSelfCenteredTarget(targ))
+            {
+                return true;
+            }
+
+            return base.CanHitTargetFrom(root, targ);
         }
 
         public override void WarmupComplete()
         {
             base.WarmupComplete();
             PulseWaveUtility.TryApply(CasterPawn, PulseWaveUtility.GetProps(ability?.def));
+        }
+
+        private bool IsSelfCenteredTarget(LocalTargetInfo target)
+        {
+            return CasterIsPawn
+                && target.IsValid
+                && (target.Cell == CasterPawn.Position || target.Thing == CasterPawn);
         }
     }
 
@@ -33,6 +107,16 @@ namespace ApexMechanoids
         {
             base.Apply(target, dest);
             PulseWaveUtility.TryApply(parent.pawn, Props);
+        }
+
+        public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
+        {
+            if (target.Pawn != null && !base.CanApplyOn(target, dest))
+            {
+                return false;
+            }
+
+            return PulseWaveUtility.HasHostileAffectedPawnInRadius(parent?.pawn, Props);
         }
 
         public override bool AICanTargetNow(LocalTargetInfo target)
@@ -89,7 +173,7 @@ namespace ApexMechanoids
         public static bool HasHostileAffectedPawnInRadius(Pawn caster, CompProperties_PulseWave props)
         {
             Map map = caster?.MapHeld;
-            if (caster == null || props == null || map == null || !caster.Spawned)
+            if (caster == null || props == null || map == null || caster.Dead || caster.Downed || !caster.Spawned || !caster.Awake())
             {
                 return false;
             }
@@ -99,28 +183,37 @@ namespace ApexMechanoids
             for (int i = 0; i < pawns.Count; i++)
             {
                 Pawn pawn = pawns[i];
-                if (pawn == null || pawn == caster || pawn.Dead || pawn.Downed || !pawn.Spawned)
-                {
-                    continue;
-                }
-
-                if (!(pawn.RaceProps?.IsFlesh ?? false) || pawn.Faction == Faction.OfMechanoids)
-                {
-                    continue;
-                }
-
-                if (!pawn.HostileTo(caster))
-                {
-                    continue;
-                }
-
-                if (pawn.Position.DistanceTo(caster.Position) <= radius)
+                if (IsValidHostileAffectedPawn(caster, pawn) && pawn.Position.DistanceTo(caster.Position) <= radius)
                 {
                     return true;
                 }
             }
 
             return false;
+        }
+
+        private static bool IsValidHostileAffectedPawn(Pawn caster, Pawn pawn)
+        {
+            return IsAffectedPawn(caster, pawn)
+                && !pawn.Downed
+                && !(pawn.ParentHolder is PawnFlyer)
+                && !pawn.IsPsychologicallyInvisible()
+                && pawn.HostileTo(caster);
+        }
+
+        public static bool IsAffectedPawn(Pawn caster, Pawn pawn)
+        {
+            if (caster == null || pawn == null || pawn == caster || pawn.Dead || !pawn.Spawned || pawn.MapHeld != caster.MapHeld)
+            {
+                return false;
+            }
+
+            if (!(pawn.RaceProps?.IsFlesh ?? false))
+            {
+                return false;
+            }
+
+            return pawn.Faction != Faction.OfMechanoids;
         }
 
         private static void SpawnCasterFlash(Pawn caster, Map map, CompProperties_PulseWave props)
@@ -326,22 +419,7 @@ namespace ApexMechanoids
 
         private bool ShouldAffectPawn(Pawn pawn)
         {
-            if (pawn == null || pawn == caster || pawn.Dead || !pawn.Spawned)
-            {
-                return false;
-            }
-
-            if (!(pawn.RaceProps?.IsFlesh ?? false))
-            {
-                return false;
-            }
-
-            if (pawn.Faction == Faction.OfMechanoids)
-            {
-                return false;
-            }
-
-            return true;
+            return PulseWaveUtility.IsAffectedPawn(caster, pawn);
         }
 
         private void ApplyWaveToPawn(Pawn pawn)

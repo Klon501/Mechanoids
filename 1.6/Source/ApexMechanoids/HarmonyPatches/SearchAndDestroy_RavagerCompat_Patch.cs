@@ -87,8 +87,7 @@ namespace ApexMechanoids.HarmonyPatches
                 return;
             }
 
-            job.expiryInterval = 0;
-            job.checkOverrideOnExpire = false;
+            SearchAndDestroyCompatUtility.ProtectApexAbilityJobFromOverride(job);
         }
 
         private sealed class RavagerSearchAndDestroyJobGiver : JobGiver_AIRavagerArtilleryFight

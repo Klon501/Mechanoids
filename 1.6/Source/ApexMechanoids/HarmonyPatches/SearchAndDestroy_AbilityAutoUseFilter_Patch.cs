@@ -35,9 +35,44 @@ namespace ApexMechanoids.HarmonyPatches
         }
     }
 
+    [HarmonyPatch(typeof(Pawn_JobTracker), "DetermineNextJob")]
+    [HarmonyAfter("MemeGoddess.SearchAndDestroy")]
+    public static class SearchAndDestroy_AbilityJobStability_Patch
+    {
+        [HarmonyPostfix]
+        private static void DetermineNextJobPostfix(Pawn_JobTracker __instance, ref ThinkResult __result)
+        {
+            Pawn pawn = SearchAndDestroyCompatUtility.GetPawn(__instance);
+            if (!SearchAndDestroyCompatUtility.SearchAndDestroyEnabledFor(pawn))
+            {
+                return;
+            }
+
+            SearchAndDestroyCompatUtility.ProtectApexAbilityJobFromOverride(__result.Job);
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.StartJob))]
+    [HarmonyAfter("MemeGoddess.SearchAndDestroy")]
+    public static class SearchAndDestroy_AbilityJobStartStability_Patch
+    {
+        [HarmonyPrefix]
+        private static void StartJobPrefix(Pawn_JobTracker __instance, Job newJob)
+        {
+            Pawn pawn = SearchAndDestroyCompatUtility.GetPawn(__instance);
+            if (!SearchAndDestroyCompatUtility.SearchAndDestroyEnabledFor(pawn))
+            {
+                return;
+            }
+
+            SearchAndDestroyCompatUtility.ProtectApexAbilityJobFromOverride(newJob);
+        }
+    }
+
     internal static class SearchAndDestroyCompatUtility
     {
         private const string SearchAndDestroyPackageId = "memegoddess.searchanddestroy";
+        private const string ApexAbilityDefPrefix = "APM_";
 
         private static readonly FieldInfo pawnField = AccessTools.Field(typeof(Pawn_JobTracker), "pawn");
 
@@ -67,6 +102,27 @@ namespace ApexMechanoids.HarmonyPatches
         {
             List<AbilityDef> disabledAbilities = pawn?.def?.GetModExtension<DefModExtension_SearchAndDestroyMech>()?.disabledAutoUseAbilitiesWhenSearchAndDestroy;
             return ability?.def != null && disabledAbilities != null && disabledAbilities.Contains(ability.def);
+        }
+
+        public static bool ProtectApexAbilityJobFromOverride(Job job)
+        {
+            if (!ShouldProtectApexAbilityJob(job))
+            {
+                return false;
+            }
+
+            job.expiryInterval = 0;
+            job.checkOverrideOnExpire = false;
+            return true;
+        }
+
+        private static bool ShouldProtectApexAbilityJob(Job job)
+        {
+            AbilityDef abilityDef = job?.ability?.def;
+            return abilityDef != null
+                && !job.playerForced
+                && job.verbToUse is Verb_CastAbility
+                && abilityDef.defName.StartsWith(ApexAbilityDefPrefix, StringComparison.Ordinal);
         }
 
         private static bool TryGetSearchAndDestroyEnabled(Pawn pawn)
