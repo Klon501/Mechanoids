@@ -63,7 +63,7 @@
 			<renderTree>APM_RenderTree_Terminus</renderTree>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>6.32</baseHealthScale>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_TerminusMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>Heavy</mechWeightClass>
 			<lifeStageAges>

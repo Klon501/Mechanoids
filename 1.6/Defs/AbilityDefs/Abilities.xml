@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
@@ -166,6 +166,7 @@
 	<!-- "pulse wave" for pulse mech -->
 	<AbilityDef>
 		<defName>APM_PulseWave</defName>
+		<abilityClass>ApexMechanoids.Ability_PulseWave</abilityClass>
 		<label>pulse wave</label>
 		<description>Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>

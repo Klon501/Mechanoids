@@ -320,7 +320,7 @@ namespace ApexMechanoids
         public static bool HasRequiredHostilesNear(Pawn caster, float threatRadius, int minHostilesToTrigger)
         {
             Map map = caster?.MapHeld;
-            if (caster == null || map == null || !caster.Spawned || caster.Dead || caster.Downed)
+            if (caster == null || map == null || !caster.Spawned || caster.Dead || caster.Downed || !caster.Awake())
             {
                 return false;
             }
