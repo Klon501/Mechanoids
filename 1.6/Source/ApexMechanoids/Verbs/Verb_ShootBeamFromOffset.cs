@@ -60,6 +60,16 @@ namespace ApexMechanoids
     {
         private VerbProperties_ShootBeamFromOffset OffsetProps => verbProps as VerbProperties_ShootBeamFromOffset;
 
+        public override bool TryStartCastOn(LocalTargetInfo castTarg, LocalTargetInfo destTarg, bool surpriseAttack = false, bool canHitNonTargetPawns = true, bool preventFriendlyFire = false, bool nonInterruptingSelfCast = false)
+        {
+            if (CasterIsPawn && GazerLaserUtility.AutoWeaponFireBlocked(CasterPawn) && !GazerLaserUtility.IsManualLaserJob(CasterPawn))
+            {
+                return false;
+            }
+
+            return base.TryStartCastOn(castTarg, destTarg, surpriseAttack, canHitNonTargetPawns, preventFriendlyFire, nonInterruptingSelfCast);
+        }
+
         public override float? AimAngleOverride
         {
             get

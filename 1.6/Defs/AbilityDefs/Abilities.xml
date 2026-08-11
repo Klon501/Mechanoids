@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
@@ -166,6 +166,7 @@
 	<!-- "pulse wave" for pulse mech -->
 	<AbilityDef>
 		<defName>APM_PulseWave</defName>
+		<abilityClass>ApexMechanoids.Ability_PulseWave</abilityClass>
 		<label>pulse wave</label>
 		<description>Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
@@ -238,6 +239,7 @@
 
 	<AbilityDef>
 		<defName>APM_HookPawn</defName>
+		<abilityClass>ApexMechanoids.Ability_TerminusHook</abilityClass>
 		<label>Grappling Hook</label>
 		<description>The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target.</description>
 		<jobDef>APM_HookPawn</jobDef>
@@ -683,6 +685,8 @@
 				<maxThrowDistance>6</maxThrowDistance>
 				<empDamageAmount>8</empDamageAmount>
 				<castSoundDefName>Explosion_EMP</castSoundDefName>
+				<aiThreatRadius>4.0</aiThreatRadius>
+				<aiMinHostilesToTrigger>2</aiMinHostilesToTrigger>
 			</li>
 		</comps>
 	</AbilityDef>

@@ -1,0 +1,141 @@
+using RimWorld;
+using Verse;
+using Verse.AI;
+
+namespace ApexMechanoids
+{
+    public class JobGiver_AIRavagerArtilleryFight : JobGiver_AIFightEnemies
+    {
+        public override Job TryGiveJob(Pawn pawn)
+        {
+            if (!CanRunFor(pawn))
+            {
+                return null;
+            }
+
+            UpdateEnemyTarget(pawn);
+            Thing enemyTarget = pawn.mindState.enemyTarget;
+            if (enemyTarget == null)
+            {
+                return null;
+            }
+
+            if (enemyTarget is Pawn targetPawn && targetPawn.IsPsychologicallyInvisible())
+            {
+                return null;
+            }
+
+            LocalTargetInfo targetCell = new LocalTargetInfo(enemyTarget.Position);
+            if (!RavagerArtilleryUtility.CanFireAtCell(pawn, targetCell))
+            {
+                return null;
+            }
+
+            bool allowManualCastWeapons = !pawn.IsColonist && !pawn.IsColonySubhuman;
+            if (allowManualCastWeapons)
+            {
+                Job abilityJob;
+                if (RavagerArtilleryUtility.TryMakeBestStarfallJob(pawn, TargetSearchRange(pawn, null), out abilityJob))
+                {
+                    return abilityJob;
+                }
+            }
+
+            Verb verb = pawn.TryGetAttackVerb(enemyTarget, allowManualCastWeapons, allowTurrets);
+            if (!RavagerArtilleryUtility.TryFindBestArtilleryTarget(pawn, verb, TargetSearchRange(pawn, verb), out targetCell))
+            {
+                return null;
+            }
+
+            pawn.pather?.StopDead();
+            return RavagerArtilleryUtility.MakeArtilleryAttackJob(targetCell, verb);
+        }
+
+        public override Thing FindAttackTarget(Pawn pawn)
+        {
+            if (!CanRunFor(pawn))
+            {
+                return null;
+            }
+
+            bool allowManualCastWeapons = !pawn.IsColonist && !pawn.IsColonySubhuman;
+            Verb verb = pawn.TryGetAttackVerb(null, allowManualCastWeapons);
+            if (verb == null || verb.verbProps.IsMeleeAttack)
+            {
+                return null;
+            }
+
+            float maxRange = verb.EffectiveRange;
+            if (targetAcquireRadius > 0f && targetAcquireRadius < maxRange)
+            {
+                maxRange = targetAcquireRadius;
+            }
+
+            return RavagerArtilleryUtility.FindBestPawnTarget(pawn, verb, maxRange);
+        }
+
+        public override bool ExtraTargetValidator(Pawn pawn, Thing target)
+        {
+            return base.ExtraTargetValidator(pawn, target) && RavagerArtilleryUtility.IsValidPawnTarget(pawn, target);
+        }
+
+        public override bool ShouldLoseTarget(Pawn pawn)
+        {
+            if (!CanRunFor(pawn))
+            {
+                return true;
+            }
+
+            Thing enemyTarget = pawn.mindState.enemyTarget;
+            if (enemyTarget == null || enemyTarget.Destroyed || !enemyTarget.Spawned || enemyTarget.Map != pawn.Map)
+            {
+                return true;
+            }
+
+            if (!RavagerArtilleryUtility.IsValidPawnTarget(pawn, enemyTarget))
+            {
+                return true;
+            }
+
+            if (Find.TickManager.TicksGame - pawn.mindState.lastEngageTargetTick > TicksSinceEngageToLoseTarget)
+            {
+                return true;
+            }
+
+            if ((float)(pawn.Position - enemyTarget.Position).LengthHorizontalSquared > targetKeepRadius * targetKeepRadius)
+            {
+                return true;
+            }
+
+            if ((enemyTarget as IAttackTarget)?.ThreatDisabled(pawn) ?? false)
+            {
+                return true;
+            }
+
+            if (RavagerArtilleryUtility.CanFireAtCell(pawn, new LocalTargetInfo(enemyTarget.Position)))
+            {
+                return false;
+            }
+
+            return !pawn.CanReach(enemyTarget, PathEndMode.Touch, Danger.Deadly);
+        }
+
+        private static bool CanRunFor(Pawn pawn)
+        {
+            return RavagerArtilleryUtility.CanUseArtillery(pawn)
+                && pawn.Awake()
+                && RavagerArtilleryUtility.AutoFireEnabled(pawn);
+        }
+
+        private float TargetSearchRange(Pawn pawn, Verb verb)
+        {
+            float maxRange = verb?.EffectiveRange ?? pawn?.TryGetAttackVerb(null, !pawn.IsColonist && !pawn.IsColonySubhuman)?.EffectiveRange ?? targetAcquireRadius;
+            if (targetAcquireRadius > 0f && targetAcquireRadius < maxRange)
+            {
+                maxRange = targetAcquireRadius;
+            }
+
+            return maxRange;
+        }
+    }
+}
