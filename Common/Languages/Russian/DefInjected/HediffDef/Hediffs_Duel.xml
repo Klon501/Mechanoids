@@ -1,21 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_InDuel.label>в дуэли</APM_InDuel.label>
-  <APM_InDuel.description>Испытание дуэлью — вызывает выбранную вражескую пешку на дуэль, вынуждая обоих противников на короткий промежуток времени вступить в ближний бой. Способности и дистанционные атаки деактивируются. Вокруг участников дуэли автоматически создаётся визуальная «арена» на время действия способности. Другие персонажи не могут выбрать в качестве цели участников дуэли. Если один из бойцов погибает в дуэли, победитель получает мощный временный бонус. Если дуэль не заканчивается смертью (истёкло время), оба участника получают значительный штраф. Участники дуэли получают периодический урон каждую секунду дуэли. Это стимулирует агрессию и гарантирует, что дуэль редко заканчивается ничьей. Любое восстановление здоровья участников во время дуэли блокируется (за исключением возможного восстановления жизни от атак).</APM_InDuel.description>
+  <!-- EN: in duel -->
+  <APM_InDuel.label>в поединке</APM_InDuel.label>
+  <!-- EN: The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks) -->
+  <APM_InDuel.description>«Испытание поединком» бросает вызов выбранному вражескому персонажу, вынуждая оппонентов на короткое время вступить в ближний бой. Способности и дальние атаки отключаются. Вокруг участников поединка на время действия способности автоматически создаётся визуальная «арена». Другие персонажи не могут выбирать участников поединка целью. Если один из оппонентов погибает в поединке, победитель получает мощный временный бонус. Если поединок не завершается смертью (истекло время), оба участника получают значительный штраф. Участники поединка получают периодический урон каждую секунду поединка. Это поощряет агрессию и гарантирует, что поединок будет редко заканчиваться ничьей по истечении времени. Любое восстановление здоровья участников во время поединка блокируется (за исключением возможного вампиризма от атак).</APM_InDuel.description>
 
-  <APM_DuelWinner.label>победитель дуэли</APM_DuelWinner.label>
-  <APM_DuelWinner.description>ЗАГОЛОВОК.</APM_DuelWinner.description>
+  <!-- EN: duel winner -->
+  <APM_DuelWinner.label>победитель поединка</APM_DuelWinner.label>
+  <!-- EN: wins: 1 -->
   <APM_DuelWinner.stages.0.label>побед: 1</APM_DuelWinner.stages.0.label>
+  <!-- EN: wins: 2 -->
   <APM_DuelWinner.stages.1.label>побед: 2</APM_DuelWinner.stages.1.label>
+  <!-- EN: wins: 3 -->
   <APM_DuelWinner.stages.2.label>побед: 3</APM_DuelWinner.stages.2.label>
+  <!-- EN: wins: 4 -->
   <APM_DuelWinner.stages.3.label>побед: 4</APM_DuelWinner.stages.3.label>
+  <!-- EN: wins: 5 -->
   <APM_DuelWinner.stages.4.label>побед: 5</APM_DuelWinner.stages.4.label>
+  <!-- EN: wins: 6 -->
   <APM_DuelWinner.stages.5.label>побед: 6</APM_DuelWinner.stages.5.label>
+  <!-- EN: wins: 7 -->
   <APM_DuelWinner.stages.6.label>побед: 7</APM_DuelWinner.stages.6.label>
 
-  <APM_DuelDraw.label>ничья в дуэли</APM_DuelDraw.label>
-  <APM_DuelDraw.description>ЗАГОЛОВОК.</APM_DuelDraw.description>
-
+  <!-- EN: duel draw -->
+  <APM_DuelDraw.label>ничья в поединке</APM_DuelDraw.label>
 
 </LanguageData>

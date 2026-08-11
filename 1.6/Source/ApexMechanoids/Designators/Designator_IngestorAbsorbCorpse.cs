@@ -85,6 +85,7 @@ namespace ApexMechanoids
             if (thing is Corpse corpse && Map.designationManager.DesignationOn(corpse, Designation) == null)
             {
                 Map.designationManager.AddDesignation(new Designation(corpse, Designation));
+                IngestorCorpseProcessingUtility.RegisterAbsorbDesignation(corpse);
             }
         }
 

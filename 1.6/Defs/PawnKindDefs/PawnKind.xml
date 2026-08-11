@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="MechanitorBase">
+    <defName>APM_Mechanitor_Ancient</defName>
+    <label>ancient mechanitor</label>
+    <apparelMoney>6000</apparelMoney>
+    <apparelRequired Inherit="False" />
+    <techHediffsTags Inherit="False" />
+    <forcedTraits Inherit="False" />
+    <defaultFactionDef Inherit="False" />
+    <weaponTags Inherit="False" />
+    <weaponMoney>0</weaponMoney>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <apparelRequired>
+      <li>Apparel_PackBandwidth</li>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_ArmorHelmetMechCommander</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MechanitorBase">
+    <defName>APM_Mechanitor_Nomad</defName>
+    <label>nomad mechanitor</label>
+    <apparelMoney>2500</apparelMoney>
+    <defaultFactionDef>APM_DomainPlayerFaction</defaultFactionDef>
+    <apparelRequired Inherit="False" />
+    <techHediffsTags Inherit="False" />
+    <forcedTraits Inherit="False" />
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_Duster</li>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_AirwireHeadset</li>
+    </apparelRequired>
+  </PawnKindDef>
+</Defs>

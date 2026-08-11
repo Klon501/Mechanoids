@@ -61,6 +61,27 @@ namespace ApexMechanoids
             }
         }
 
+        public override void PostDrawExtraSelectionOverlays()
+        {
+            List<Pawn> mechs = parent.Map.mapPawns.PawnsInFaction(parent.Faction).Where((Pawn p) => p.Spawned && p.RaceProps.IsMechanoid && !p.Dead && ((p.needs?.energy?.CurLevel ?? float.PositiveInfinity) < (p.needs?.energy?.MaxLevel ?? float.NegativeInfinity)) && p.PositionHeld.DistanceTo(parent.Position) <= Props.radius).OrderBy((Pawn p) => p.needs.energy.CurLevel).ToList();
+            int mechsCharged = 0;
+            foreach (Pawn mech in mechs)
+            {
+                Need_MechEnergy energy = mech.needs.energy;
+                if (energy.CurLevel < energy.MaxLevel)
+                {
+                    GenDraw.DrawLineBetween(parent.TrueCenter(), mech.TrueCenter());
+                    mechsCharged++;
+                    if (mechsCharged >= Props.maxMechPerCharge)
+                    {
+                        break;
+                    }
+                }
+            }
+            GenDraw.DrawRadiusRing(parent.PositionHeld, Props.radius);
+            base.PostDrawExtraSelectionOverlays();
+        }
+
         public void GenerateWastePack()
         {
             if (wasteProducer != null)

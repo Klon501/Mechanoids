@@ -88,6 +88,13 @@
 				<blockIfAlliesInRadius>true</blockIfAlliesInRadius>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_Ability_ToxicMist</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
+		</modExtensions>
 		<butcherProducts>
 			<Steel>15</Steel>
 			<Plasteel>5</Plasteel>

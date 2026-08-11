@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APM_Ravager_AutoArtillery_Label>Автоартиллерия</APM_Ravager_AutoArtillery_Label>
+	<APM_Ravager_AutoArtillery_Desc>Разрешить этому опустошителю автоматически выбирать враждебных пешек как цели для артиллерии под управлением игрока. Ручные приказы атаки всегда выполняют один выстрел по выбранной клетке.</APM_Ravager_AutoArtillery_Desc>
+	<APM_Ravager_Inspect_AutoArtilleryDisabled>Автоартиллерия: отключена.</APM_Ravager_Inspect_AutoArtilleryDisabled>
+	<APM_Ravager_Inspect_AutoArtilleryBlockedRoof>Автоартиллерия: нельзя стрелять из-под крыши.</APM_Ravager_Inspect_AutoArtilleryBlockedRoof>
+	<APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>Автоартиллерия: текущая цель под толстой крышей.</APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>
+	<APM_Ravager_Inspect_AutoArtilleryCannotHit>Автоартиллерия: текущую цель нельзя обстрелять с этой позиции.</APM_Ravager_Inspect_AutoArtilleryCannotHit>
+
+</LanguageData>

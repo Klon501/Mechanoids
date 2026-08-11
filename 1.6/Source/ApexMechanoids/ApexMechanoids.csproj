@@ -38,5 +38,9 @@
       <HintPath>.\ReferenceAssembly\VEF-reference.dll</HintPath>
       <Private>False</Private>
     </Reference>
+	 <Reference Include="PipeSystem">
+      <HintPath>.\ReferenceAssembly\PipeSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
 </Project>

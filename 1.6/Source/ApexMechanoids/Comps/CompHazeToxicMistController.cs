@@ -36,7 +36,7 @@ namespace ApexMechanoids
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed || pawn.Map == null)
+            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed || !pawn.Awake() || pawn.Map == null)
             {
                 return;
             }
@@ -81,52 +81,12 @@ namespace ApexMechanoids
 
         private bool ShouldAutoCast(Pawn pawn)
         {
-            if (pawn?.Map == null)
-            {
-                return false;
-            }
-
-            float radius = Props.threatRadius > 0f ? Props.threatRadius : 4.9f;
-            int requiredHostiles = Props.minHostilesToTrigger > 0 ? Props.minHostilesToTrigger : 1;
-            int hostiles = 0;
-            var pawns = pawn.Map.mapPawns.AllPawnsSpawned;
-
-            for (int i = 0; i < pawns.Count; i++)
-            {
-                Pawn other = pawns[i];
-                if (other == null || other == pawn || other.Dead || other.Downed || !other.Spawned)
-                {
-                    continue;
-                }
-
-                if (other.Position.DistanceTo(pawn.Position) > radius)
-                {
-                    continue;
-                }
-
-                if (!other.HostileTo(pawn))
-                {
-                    if (Props.blockIfAlliesInRadius && other.Faction == pawn.Faction)
-                    {
-                        return false;
-                    }
-
-                    continue;
-                }
-
-                if (Props.requireFleshThreat && !(other.RaceProps?.IsFlesh ?? false))
-                {
-                    continue;
-                }
-
-                hostiles++;
-                if (hostiles >= requiredHostiles)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return ToxicMistAIUtility.CanAutoCast(
+                pawn,
+                Props.threatRadius,
+                Props.minHostilesToTrigger,
+                Props.requireFleshThreat,
+                Props.blockIfAlliesInRadius);
         }
 
         private void EnsureAbility()

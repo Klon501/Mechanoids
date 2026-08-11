@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<APM_Mech_Ravager.label>Опустошитель</APM_Mech_Ravager.label>
-  <APM_Mech_Ravager.description>Грозной автоматической мортиры было недостаточно, чтобы утолить жажду разрушения механоидов. Их решение? Опустошитель — мобильная артиллерийская установка. Способный заряжать избыточную энергию в своих резервных энергоэлементах, он может временно увеличить энергопотребление своей артиллерийской пушки, производя 3 выстрела в быстрой последовательности.</APM_Mech_Ravager.description>
+
+  <!-- EN: Ravager -->
+  <APM_Mech_Ravager.label>Разоритель</APM_Mech_Ravager.label>
+  <!-- EN: The dreaded auto mortar was not enough to sate the mechanoids’ hunger for destruction. Their solution? The ravager, a mobile artillery emplacement. Able to charge excess energy in its reserve power cells, it can temporarily overcharge its cannon and launch a shell that splits into three destructive blasts while still in flight. -->
+  <APM_Mech_Ravager.description>Внушающего страх автоминомёта оказалось недостаточно, чтобы утолить жажду разрушения разума механоидов. что пришло им в голову? Разоритель — мобильная артиллерийская установка. Он способен накапливать избыточную энергию в резервных батареях, а потом использовать её для перегрузки своего орудия и выпустить снаряд, распадающийся в полёте на три меньших, но всё ещё разрушительных снаряда.</APM_Mech_Ravager.description>
+  <!-- EN: head -->
   <APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
 
 </LanguageData>

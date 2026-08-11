@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <APM_Apparel_ArmorHelmetMechamancerHelmet.label>шлем мехамастера</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
-  <APM_Apparel_ArmorHelmetMechamancerHelmet.description>ЗАГОЛОВОК</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
-
+  <!-- EN: mechamancer helmet -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
 
 </LanguageData>

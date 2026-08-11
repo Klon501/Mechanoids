@@ -1,17 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--========= General ============-->
- <!--
- <JobDef>
-        <defName>APM_RepairAegisShields</defName>--><!--I don't know what should be here, the author of this code forgot to create a file but added this def name to the code!!!! FIX!!!--><!--
-        <driverClass>ApexMechanoids.JobDriver_RepairAegisShields</driverClass>
-        <reportString>Repairing TargetA.</reportString>
-        <playerInterruptible>true</playerInterruptible>
-         <carryThingAfterJob>true</carryThingAfterJob>
-         <dropThingBeforeJob>false</dropThingBeforeJob>
-    </JobDef>
-		-->
+	<!--========= General ============-->
 
 	<JobDef>
 		<defName>APM_Absorb</defName>
@@ -19,5 +9,12 @@
 		<casualInterruptible>false</casualInterruptible>
 		<collideWithPawns>true</collideWithPawns>
 		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
+
+	<JobDef>
+		<defName>APM_EnterMechanoidContainer</defName>
+		<driverClass>ApexMechanoids.JobDriver_EnterMechanoidContainer</driverClass>
+		<reportString>entering TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 </Defs>

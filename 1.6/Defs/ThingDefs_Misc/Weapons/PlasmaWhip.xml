@@ -30,6 +30,7 @@
 		<verbs>
 			<li>
 				<verbClass>ApexMechanoids.Verb_Whip</verbClass>
+				<beamDamageDef>APM_Whip</beamDamageDef>
 				<hasStandardCommand>true</hasStandardCommand>
 				<warmupTime>0</warmupTime>
 				<range>7.9</range>
@@ -57,7 +58,7 @@
 				<extraMeleeDamages>
 				<li>
 					<def>EMP</def>
-					<chance>10</chance>
+					<chance>0.4</chance>
 					<amount>15</amount>
 				</li>
 				</extraMeleeDamages>

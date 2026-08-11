@@ -3,4 +3,7 @@
   <APM_TinkerRepairMech.label>repair mech</APM_TinkerRepairMech.label>
   <APM_TinkerRepairMech.verb>repair</APM_TinkerRepairMech.verb>
   <APM_TinkerRepairMech.gerund>repairing</APM_TinkerRepairMech.gerund>
+  <APM_TinkerRepairBuilding.label>repair building</APM_TinkerRepairBuilding.label>
+  <APM_TinkerRepairBuilding.verb>repair</APM_TinkerRepairBuilding.verb>
+  <APM_TinkerRepairBuilding.gerund>repairing</APM_TinkerRepairBuilding.gerund>
 </LanguageData>

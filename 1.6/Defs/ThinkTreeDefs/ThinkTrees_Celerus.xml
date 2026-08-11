@@ -74,9 +74,13 @@
 				</li>
 
 				<!-- Celerus combat abilities -->
-				<li Class="ApexMechanoids.JobGiver_AICelerusAbilityFight">
-					<targetAcquireRadius>65</targetAcquireRadius>
-					<targetKeepRadius>72</targetKeepRadius>
+				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+					<subNodes>
+						<li Class="ApexMechanoids.JobGiver_AICelerusAbilityFight">
+							<targetAcquireRadius>65</targetAcquireRadius>
+							<targetKeepRadius>72</targetKeepRadius>
+						</li>
+					</subNodes>
 				</li>
 
 				<!-- Lord -->
@@ -164,9 +168,13 @@
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
 					<subNodes>
-						<li Class="JobGiver_AIFightEnemies">
-							<targetAcquireRadius>30</targetAcquireRadius>
-							<targetKeepRadius>35</targetKeepRadius>
+						<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+							<subNodes>
+								<li Class="JobGiver_AIFightEnemies">
+									<targetAcquireRadius>30</targetAcquireRadius>
+									<targetKeepRadius>35</targetKeepRadius>
+								</li>
+							</subNodes>
 						</li>
 					</subNodes>
 				</li>

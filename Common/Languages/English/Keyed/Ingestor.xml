@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM_Ingestor_StripMode_Off_Label>Recycle intact</APM_Ingestor_StripMode_Off_Label>
-  <APM_Ingestor_StripMode_Off_Desc>The ingestor destroys apparel, equipment and inventory with the corpse while recycling it.</APM_Ingestor_StripMode_Off_Desc>
-  <APM_Ingestor_StripMode_On_Label>Strip before recycling</APM_Ingestor_StripMode_On_Label>
-  <APM_Ingestor_StripMode_On_Desc>The ingestor strips apparel, equipment and inventory from corpses before recycling them.</APM_Ingestor_StripMode_On_Desc>
-  <APM_Ingestor_ProcessMode_All_Label>Eat all valid corpses</APM_Ingestor_ProcessMode_All_Label>
-  <APM_Ingestor_ProcessMode_All_Desc>The ingestor automatically recycles any reachable fresh organic corpse.</APM_Ingestor_ProcessMode_All_Desc>
-  <APM_Ingestor_ProcessMode_Marked_Label>Eat marked corpses</APM_Ingestor_ProcessMode_Marked_Label>
-  <APM_Ingestor_ProcessMode_Marked_Desc>The ingestor automatically recycles only corpses marked for biomass recycling.</APM_Ingestor_ProcessMode_Marked_Desc>
+  <APM_Ingestor_StripMode_Enable_Label>Enable stripping</APM_Ingestor_StripMode_Enable_Label>
+  <APM_Ingestor_StripMode_Enable_Desc>Click to strip apparel, equipment and inventory from corpses before recycling them. Current mode: recycle corpses intact; carried items are destroyed with the corpse.</APM_Ingestor_StripMode_Enable_Desc>
+  <APM_Ingestor_StripMode_Disable_Label>Disable stripping</APM_Ingestor_StripMode_Disable_Label>
+  <APM_Ingestor_StripMode_Disable_Desc>Click to recycle corpses intact and destroy apparel, equipment and inventory with the corpse. Current mode: strip carried items before recycling.</APM_Ingestor_StripMode_Disable_Desc>
+  <APM_Ingestor_ProcessMode_All_Label>Recycle all valid corpses</APM_Ingestor_ProcessMode_All_Label>
+  <APM_Ingestor_ProcessMode_All_Desc>Click to let the ingestor recycle any reachable fresh organic corpse. Current mode: only marked corpses are recycled.</APM_Ingestor_ProcessMode_All_Desc>
+  <APM_Ingestor_ProcessMode_Marked_Label>Use marked corpses only</APM_Ingestor_ProcessMode_Marked_Label>
+  <APM_Ingestor_ProcessMode_Marked_Desc>Click to make the ingestor recycle only corpses marked for biomass recycling. Current mode: all reachable fresh organic corpses are recycled.</APM_Ingestor_ProcessMode_Marked_Desc>
   <APM_Ingestor_MarkCorpses_Label>Mark for biomass recycling</APM_Ingestor_MarkCorpses_Label>
   <APM_Ingestor_MarkCorpses_Desc>Mark fresh organic corpses for ingestor recycling.</APM_Ingestor_MarkCorpses_Desc>
   <APM_IngestorAbsorb_MustTargetCorpse>Must target a fresh organic corpse.</APM_IngestorAbsorb_MustTargetCorpse>

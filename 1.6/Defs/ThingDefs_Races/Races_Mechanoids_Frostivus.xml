@@ -3,7 +3,7 @@
 	<ThingDef Name="APM_Mech_Frostivus" ParentName="BaseMechanoidWalker">
 		<defName>APM_Mech_Frostivus</defName>
 		<label>Frostivus</label>
-		<description>A very unique mechanoid, the frostivus is a mobile cryogenic chamber. It consumes organic material such as foodstuffs to store, freeze and dispense at request. It can be commanded to seal a targeted pawn inside of itself to store for the mechhive to later utilize for its twisted machinations. Not entirely for utility, the frostivus can also extend its chilling properties to its extremities, inflicting hypothermia over repeated attacks.</description>
+		<description>A very unique mechanoid, the frostivus is a mobile cryogenic chamber. It consumes organic material such as foodstuffs to store, freeze and dispense at request. It can be commanded to seal a targeted pawn inside of itself to store for the mechhive to later utilize for its twisted machinations.</description>
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<MoveSpeed>3.3</MoveSpeed>
@@ -50,6 +50,7 @@
 		</tools>
 		<race>
 			<body>APM_Frostivus</body>
+			<thinkTreeMain>APM_FrostivusMechanoid</thinkTreeMain>
 			<baseBodySize>3.0</baseBodySize>
 			<baseHealthScale>1.82</baseHealthScale>
 			<mechWeightClass>Medium</mechWeightClass>
@@ -89,6 +90,9 @@
 			<mechEnabledWorkTypes>
 				<li>APM_FrostivusFoodPreservation</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<APM_FrostivusFoodPreservation>2</APM_FrostivusFoodPreservation>
+			</mechWorkTypePriorities>
 		</race>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_FrostivusFoodPreservation" />
@@ -105,10 +109,6 @@
 		<race>APM_Mech_Frostivus</race>
 		<combatPower>200</combatPower>
     	<allowInMechClusters>false</allowInMechClusters>
-		<weaponTags>
-			<!--<li>APM_FrostivusWeapon</li>-->
-		</weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -149,21 +149,21 @@
 	<AbilityDef>
 		<defName>APM_Ability_CryptoSwallow</defName>
 		<label>Crypto Swallow</label>
-		<description>Engulfs a living pawn or corpse, sealing it within an internal cryo-chamber. Preserves the target in suspended animation - halting decay and biological processes until released.</description>
+		<description>Engulfs a humanlike pawn or corpse, sealing it within an internal cryo-chamber. Preserves the target in suspended animation until released.</description>
 		<iconPath>UI/Cryptoswallow</iconPath>
-		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<jobDef>APM_CryptoSwallow</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<showWhenDrafted>false</showWhenDrafted>
+		<showWhenDrafted>true</showWhenDrafted>
 		<cooldownTicksRange>3600~3600</cooldownTicksRange>
-		<hostile>true</hostile>
+		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<writeCombatLog>true</writeCombatLog>
-		<aiCanUse>true</aiCanUse>
+		<writeCombatLog>false</writeCombatLog>
+		<aiCanUse>false</aiCanUse>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
 			<drawAimPie>False</drawAimPie>
 			<range>-1</range>
 			<warmupTime>1.0</warmupTime>
@@ -179,7 +179,7 @@
 				<canTargetBuildings>False</canTargetBuildings>
 				<canTargetLocations>False</canTargetLocations>
 				<canTargetCorpses>True</canTargetCorpses>
-				<neverTargetHostileFaction>True</neverTargetHostileFaction>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 			</targetParams>
 		</verbProperties>
 		<statBases>

@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<APM_GazerHead.label>голова</APM_GazerHead.label>
+
+  <!-- EN: head -->
+  <APM_GazerHead.label>голова</APM_GazerHead.label>
+  <!-- EN: cooling system -->
   <APM_GazerCoolingSystem.label>система охлаждения</APM_GazerCoolingSystem.label>
-  <APM_GazerLaserFocus.label>фокусировщик лазера</APM_GazerLaserFocus.label>
-  <APM_GazerThorax.label>торакс</APM_GazerThorax.label>
-  <APM_GazerPaw.label>лапа</APM_GazerPaw.label>
+  <!-- EN: laser focus -->
+  <APM_GazerLaserFocus.label>фокусирующая линза</APM_GazerLaserFocus.label>
+  <!-- EN: thorax -->
+  <APM_GazerThorax.label>грудной отдел</APM_GazerThorax.label>
+  <!-- EN: leg -->
+  <APM_GazerPaw.label>нога</APM_GazerPaw.label>
 
 </LanguageData>

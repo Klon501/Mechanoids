@@ -30,7 +30,7 @@
 				</fleckDefs>
 				<effecterDef>APM_ElectricityArc</effecterDef>
 				<damageDef>Burn</damageDef>
-				<amount>1</amount>
+				<amount>12</amount>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -64,7 +64,7 @@
 				</fleckDefs>
 				<effecterDef>APM_ElectricityArc</effecterDef>
 				<damageDef>Burn</damageDef>
-				<amount>1</amount>
+				<amount>12</amount>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_FrostivusTakeFoodToInventory.reportString>сохраняет TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+  <APM_FrostivusUnloadFoodToStorage.reportString>выгружает TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+  <APM_FrostivusManualUnloadFood.reportString>выгружает сохраненную еду.</APM_FrostivusManualUnloadFood.reportString>
+  <APM_FrostivusReleaseDevouredContents.reportString>выпускает сохраненное существо.</APM_FrostivusReleaseDevouredContents.reportString>
+
+</LanguageData>

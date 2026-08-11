@@ -28,7 +28,7 @@
 		<defName>APM_TinkerRepairMech</defName>
 		<label>repair mech</label>
 		<giverClass>ApexMechanoids.WorkGiver_TinkerRepairMech</giverClass>
-		<workType>Construction</workType>
+		<workType>APM_TinkerRepair</workType>
 		<verb>repair</verb>
 		<gerund>repairing</gerund>
 		<priorityInType>220</priorityInType>
@@ -38,4 +38,23 @@
 		<canBeDoneByMechs>true</canBeDoneByMechs>
 		<canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
 	</WorkGiverDef>
+	<WorkGiverDef>
+		<defName>APM_TinkerRepairBuilding</defName>
+		<label>repair building</label>
+		<giverClass>ApexMechanoids.WorkGiver_TinkerRepairBuilding</giverClass>
+		<workType>APM_TinkerRepair</workType>
+		<verb>repair</verb>
+		<gerund>repairing</gerund>
+		<priorityInType>230</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+	</WorkGiverDef>
+  <WorkGiverDef ParentName="HaulToBase">
+    <defName>APM_HaulToToxicPurifier</defName>
+    <label>haul wastepacks to purifier station</label>
+    <giverClass>ApexMechanoids.WorkGiver_HaulToToxicPurifier</giverClass>
+  </WorkGiverDef>
 </Defs>

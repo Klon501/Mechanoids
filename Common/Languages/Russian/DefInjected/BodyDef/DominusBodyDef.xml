@@ -1,29 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<APM_Dominus.label>доминус</APM_Dominus.label>
-  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
-  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
-  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>левый акустический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
-  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правый акустический сенсор</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: dominus -->
+  <APM_Dominus.label>доминус</APM_Dominus.label>
+  <!-- EN: left sight sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right sight sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left hearing sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right hearing sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: left mechanical shoulder -->
   <APM_Dominus.corePart.parts.1.customLabel>левое механическое плечо</APM_Dominus.corePart.parts.1.customLabel>
+  <!-- EN: left arm -->
   <APM_Dominus.corePart.parts.1.parts.0.customLabel>левая рука</APM_Dominus.corePart.parts.1.parts.0.customLabel>
+  <!-- EN: left hand -->
   <APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>
+  <!-- EN: left pinky -->
   <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: left middle finger -->
   <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: left index finger -->
   <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left thumb -->
   <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right mechanical shoulder -->
   <APM_Dominus.corePart.parts.2.customLabel>правое механическое плечо</APM_Dominus.corePart.parts.2.customLabel>
+  <!-- EN: right arm -->
   <APM_Dominus.corePart.parts.2.parts.0.customLabel>правая рука</APM_Dominus.corePart.parts.2.parts.0.customLabel>
+  <!-- EN: right hand -->
   <APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>
+  <!-- EN: right pinky -->
   <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: right middle finger -->
   <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right index finger -->
   <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: right thumb -->
   <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: left leg -->
   <APM_Dominus.corePart.parts.3.customLabel>левая нога</APM_Dominus.corePart.parts.3.customLabel>
-  <APM_Dominus.corePart.parts.3.parts.0.customLabel>левая стопа</APM_Dominus.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: left foot -->
+  <APM_Dominus.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Dominus.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: right leg -->
   <APM_Dominus.corePart.parts.4.customLabel>правая нога</APM_Dominus.corePart.parts.4.customLabel>
-  <APM_Dominus.corePart.parts.4.parts.0.customLabel>правая стопа</APM_Dominus.corePart.parts.4.parts.0.customLabel>
-
+  <!-- EN: right foot -->
+  <APM_Dominus.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Dominus.corePart.parts.4.parts.0.customLabel>
 
 </LanguageData>

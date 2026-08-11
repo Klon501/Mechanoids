@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Lasher -->
+  <APM_Mech_Lasher.label>Погонщик</APM_Mech_Lasher.label>
+  <!-- EN: Wielding a plasma charged whip, this mechanoid was designed to handle, tame and train animals. Its more unique role in a mechanoid task force has this lasher’s whip also function in short range combat, with it being able to strike out at foes, dealing EMP damage.\n\nThis mechanoid can strike out with its whip, dealing damage and electrifying anything within a short area around the whip. -->
+  <APM_Mech_Lasher.description>Этот механоид создан для того, чтобы управлять животными, приручать и дрессировать их. Погонщик вооружён плазменным хлыстом и это позволяет играть нестандартную роль в составе сил механоидов: он может поражать врагов в ближнем бою, нанося ЭМИ-урон.\n\nЭтот механоид может ударить хлыстом, нанося урон и поражая электричеством всё в небольшой области вокруг удара.</APM_Mech_Lasher.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Lasher.tools.0.label>левый кулак</APM_Mech_Lasher.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Lasher.tools.1.label>правый кулак</APM_Mech_Lasher.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Lasher.tools.2.label>голова</APM_Mech_Lasher.tools.2.label>
+
+</LanguageData>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<KCSG.SymbolDef>
+  <defName>APM_MechCommandCasket_South</defName>
+  <thing>APM_MechCommandCasket</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>APM_RepairStation_Small_South</defName>
+    <thing>APM_RepairStation_Small</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>APM_Weapon_PlasmaWhip</defName>
+    <thing>APM_Weapon_PlasmaWhip</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+  <defName>APM_Mech_Vassal</defName>
+  <pawnKindDef>APM_Mech_Vassal</pawnKindDef>
+  <spawnPartOfFaction>True</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+</KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+  <defName>APM_Mech_Tinker</defName>
+  <pawnKindDef>APM_Mech_Tinker</pawnKindDef>
+  <spawnPartOfFaction>True</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+</KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+  <defName>APM_Mech_Lasher</defName>
+  <pawnKindDef>APM_Mech_Lasher</pawnKindDef>
+  <spawnPartOfFaction>True</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>APM_Mechanitor_Ancient</defName>
+  <pawnKindDef>APM_Mechanitor_Ancient</pawnKindDef>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+  <faction>Ancients</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <!-- Corpses are made by APM_SpawnScenarioCorpses, not by KCSG's spawnDead. KCSG kills the
+       pawn before it is ever spawned, which skips normal corpse placement. -->
+  <spawnRotten>true</spawnRotten>
+  <spawnFilthAround>true</spawnFilthAround>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Slave</defName>
+  <pawnKindDef>Slave</pawnKindDef>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+  <faction>OutlanderRough</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <!-- Corpses are made by APM_SpawnScenarioCorpses, not by KCSG's spawnDead. KCSG kills the
+       pawn before it is ever spawned, which skips normal corpse placement. -->
+  <spawnRotten>true</spawnRotten>
+  <spawnFilthAround>true</spawnFilthAround>
+</KCSG.SymbolDef>
+</Defs>

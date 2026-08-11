@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityDef>
 		<defName>APM_Absorb</defName>
@@ -153,9 +153,20 @@
 		</verbProperties>
 	</AbilityDef>
 
+	<!-- protected longjump for pulse mech -->
+	<AbilityDef ParentName="LongJumpMech">
+		<defName>APM_PulseLongjump</defName>
+		<jobDef>APM_CastPulseJump</jobDef>
+		<verbProperties>
+			<verbClass>ApexMechanoids.Verb_CastPulseLongjump</verbClass>
+			<minRange>0</minRange>
+		</verbProperties>
+	</AbilityDef>
+
 	<!-- "pulse wave" for pulse mech -->
 	<AbilityDef>
 		<defName>APM_PulseWave</defName>
+		<abilityClass>ApexMechanoids.Ability_PulseWave</abilityClass>
 		<label>pulse wave</label>
 		<description>Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
@@ -192,8 +203,8 @@
 				<blindFlashThingDef>APM_PulseWaveBlindFlash</blindFlashThingDef>
 				<blindHediffDef>APM_PulseWaveBlind</blindHediffDef>
 				<radius>6.9</radius>
-				<ringIntervalTicks>4</ringIntervalTicks>
-				<stunTicks>60</stunTicks>
+				<ringIntervalTicks>5</ringIntervalTicks>
+				<stunTicks>90</stunTicks>
 				<blindTicks>480</blindTicks>
 				<visualScale>0.72</visualScale>
 			</li>
@@ -228,6 +239,7 @@
 
 	<AbilityDef>
 		<defName>APM_HookPawn</defName>
+		<abilityClass>ApexMechanoids.Ability_TerminusHook</abilityClass>
 		<label>Grappling Hook</label>
 		<description>The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target.</description>
 		<jobDef>APM_HookPawn</jobDef>
@@ -385,7 +397,7 @@
 		<aiCanUse>true</aiCanUse>
 		<uiOrder>2</uiOrder>
 		<showWhenDrafted>true</showWhenDrafted>
-		<hostile>false</hostile>
+		<hostile>true</hostile>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 			<Ability_EffectRadius>3.9</Ability_EffectRadius>
@@ -393,6 +405,7 @@
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_BlindingLaser">
 				<hediffDef>APM_LaserBlind</hediffDef>
+				<replaceExisting>true</replaceExisting>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_AbilityMoteDualAttachedOnTarget">
 				<preCastTicks>1</preCastTicks>
@@ -446,7 +459,7 @@
 		<defName>APM_LaserBlind</defName>
 		<label>blinded by laser</label>
 		<description>Vastly reduced sight capacity due to been blinded by laser.</description>
-		<isBad>false</isBad>
+		<isBad>true</isBad>
 		<defaultLabelColor>(0.82, 0.6, 0.44)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
@@ -516,13 +529,14 @@
 	<AbilityDef>
 		<defName>APM_DefenceMatrix</defName>
 		<label>Defence Matrix</label>
-		<description>Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even when cast on enemies. The tinker will be focused on projecting the shield.</description>
+		<description>Remotely project a personal defense shield onto a same-faction pawn. The shield stops incoming damage, but also prevents shooting out. The tinker will be focused on projecting the shield.</description>
 		<jobDef>ShieldMech</jobDef>
 		<targetRequired>true</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<iconPath>UI/Matrix</iconPath>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>false</ai_IsOffensive>
 		<showPsycastEffects>False</showPsycastEffects>
 		<hotKey>Misc12</hotKey>
 		<uiOrder>3</uiOrder>
@@ -531,8 +545,11 @@
 		<cooldownTicksRange>300</cooldownTicksRange>
 		<waitForJobEnd>true</waitForJobEnd>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<comps>
+			<li Class="ApexMechanoids.CompProperties_AbilitySameFactionTarget" />
+		</comps>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
+			<verbClass>ApexMechanoids.Verb_CastSameFactionAbility</verbClass>
 			<range>7.9</range>
 			<rangeStat>MechRemoteShieldDistance</rangeStat>
 			<drawAimPie>true</drawAimPie>
@@ -668,6 +685,8 @@
 				<maxThrowDistance>6</maxThrowDistance>
 				<empDamageAmount>8</empDamageAmount>
 				<castSoundDefName>Explosion_EMP</castSoundDefName>
+				<aiThreatRadius>4.0</aiThreatRadius>
+				<aiMinHostilesToTrigger>2</aiMinHostilesToTrigger>
 			</li>
 		</comps>
 	</AbilityDef>

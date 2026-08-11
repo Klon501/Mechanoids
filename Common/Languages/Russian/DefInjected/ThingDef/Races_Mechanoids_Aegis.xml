@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Aegis -->
   <APM_Mech_Aegis.label>Эгида</APM_Mech_Aegis.label>
-  <APM_Mech_Aegis.description>"Эгида — это мощный механоид, жертвующий наступательными способностями ради оборонительного мастерства. Поговорка 'Лучшая защита — это нападение' находит отклик в двойных щитах Эгиды."</APM_Mech_Aegis.description>
+  <!-- EN: "The Aegis is a mighty mechanoid that sacrifices offensive capabilities for defensive mastery. The phrase 'The best defense is a good offense' rings true with the Aegis' dual shields." -->
+  <APM_Mech_Aegis.description>Эгида является могучим механоидом, жертвующим наступательной мощью ради непревзойдённого мастерства обороны. Фраза «Лучшая защита — это нападение» как нельзя точно описывает его парные щиты.</APM_Mech_Aegis.description>
+  <!-- EN: left shield -->
   <APM_Mech_Aegis.tools.0.label>левый щит</APM_Mech_Aegis.tools.0.label>
+  <!-- EN: right shield -->
   <APM_Mech_Aegis.tools.1.label>правый щит</APM_Mech_Aegis.tools.1.label>
-
 
 </LanguageData>

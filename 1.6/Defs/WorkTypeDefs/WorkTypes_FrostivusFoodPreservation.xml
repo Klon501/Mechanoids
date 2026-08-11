@@ -6,7 +6,7 @@
     <labelShort>preserve</labelShort>
     <pawnLabel>Preserver</pawnLabel>
     <gerundLabel>preserving food</gerundLabel>
-    <description>Rescue temperature-spoiling food and unload it to cold storage.</description>
+    <description>Rescue vulnerable food from unsafe storage or outdoor deterioration and unload it to cold storage when available.</description>
     <verb>Preserve</verb>
     <visible>false</visible>
     <naturalPriority>950</naturalPriority>

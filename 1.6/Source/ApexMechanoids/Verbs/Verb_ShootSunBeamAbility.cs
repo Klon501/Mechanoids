@@ -226,6 +226,10 @@ namespace ApexMechanoids
             {
                 return false;
             }
+            if (CasterIsPawn && GazerLaserUtility.AutoAbilityBlockedByLaserToggle(CasterPawn) && !GazerLaserUtility.IsManualSunRayJob(CasterPawn))
+            {
+                return false;
+            }
             if (state == VerbState.Bursting || !CanHitTarget(castTarg))
             {
                 return false;

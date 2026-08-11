@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<APM_Mech_Celerus.label>Целерус</APM_Mech_Celerus.label>
-  <APM_Mech_Celerus.description>Три мощных типа механоидов были созданы архотехным разумом в попытке создать центрального командующего всеми силами механоидов. Испытав влияние Японии Старой Земли периода Сэнгоку, быстрый и скрытный Целерус не становится слабее из-за своей скорости. Он способен мгновенно перемещаться на короткие расстояния вокруг себя, а также создавать дымовую завесу, чтобы затруднить врагам восприятие его и всего вокруг, дополнительно становясь психически невоспринимаемым в этой области. Помимо этих эффектов, враги будут получать периодические.</APM_Mech_Celerus.description>
-  <APM_Mech_Celerus.tools.0.label>левая кисть</APM_Mech_Celerus.tools.0.label>
-  <APM_Mech_Celerus.tools.1.label>правая кисть</APM_Mech_Celerus.tools.1.label>
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus.label>Целерус</APM_Mech_Celerus.label>
+  <!-- EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Japan during its Sengoku period, the swift and stealthy Celerus is not any weaker for its speed. It has the ability to skip itself short distances around it as well as create a smokescreen to hinder enemies perception of it and anything around it, additionally becoming psychically imperceptible in this area. On top of those effects, enemies will receive periodic. -->
+  <APM_Mech_Celerus.description>Разум Архотека создал три могущественных модели механоидов в попытках создать универсального командира для всех механоидных сил. Целерус был вдохновлён Японией Старой Земли эпохи Сэнгоку. Этот механоид быстр и скрытен, но это не делает его слабее. Целерус способен телепортироваться на короткие расстояния, а также создавать дымовую завесу, мешающую врагам видеть его и что-либо вокруг, и становясь психически неразличимым внутри завесы. Вдобавок ко всему враги внутри завесы будут получать периодический урон.</APM_Mech_Celerus.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Celerus.tools.0.label>левый кулак</APM_Mech_Celerus.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Celerus.tools.1.label>правый кулак</APM_Mech_Celerus.tools.1.label>
+  <!-- EN: head -->
   <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
-
 
 </LanguageData>

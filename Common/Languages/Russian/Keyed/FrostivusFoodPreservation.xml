@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.Label>Выгрузить сохраненную еду</APM.FrostivusFoodPreservation.ManualUnload.Label>
+  <APM.FrostivusFoodPreservation.ManualUnload.Desc>Выберите клетку, куда Frostivus выгрузит всю сохраненную еду. Вручную выгруженная еда будет запрещена.</APM.FrostivusFoodPreservation.ManualUnload.Desc>
+  <APM.FrostivusFoodPreservation.ManualUnload.NoFood>Сохраненная еда отсутствует.</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
+  <APM.FrostivusFoodPreservation.ManualUnload.NoPath>Frostivus не может добраться до этой клетки.</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
+  <APM.FrostivusFoodPreservation.CommandUnavailable>Frostivus сейчас не может выполнять приказы сохранения.</APM.FrostivusFoodPreservation.CommandUnavailable>
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>Выпустить из криокамеры</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>Выберите клетку, куда Frostivus выпустит проглоченных пешек или тела.</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>Внутри нет проглоченной пешки или тела.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>Frostivus не может добраться до этой клетки.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>Frostivus может поглотить только заспавненную человекоподобную пешку или тело на своей карте.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>Frostivus может поглотить любой человекоподобный труп или поваленную пешку, но из живых только колонистов, пленников или рабов.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
+  <APM.FrostivusFoodPreservation.CryptoSwallow.Self>Frostivus не может поглотить самого себя.</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
+
+</LanguageData>

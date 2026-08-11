@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM_Ingestor_StripMode_Off_Label>Перерабатывать как есть</APM_Ingestor_StripMode_Off_Label>
-  <APM_Ingestor_StripMode_Off_Desc>Ингестор уничтожает одежду, снаряжение и инвентарь вместе с трупом при переработке.</APM_Ingestor_StripMode_Off_Desc>
-  <APM_Ingestor_StripMode_On_Label>Раздевать перед переработкой</APM_Ingestor_StripMode_On_Label>
-  <APM_Ingestor_StripMode_On_Desc>Ингестор снимает одежду, снаряжение и инвентарь с трупа перед переработкой.</APM_Ingestor_StripMode_On_Desc>
-  <APM_Ingestor_ProcessMode_All_Label>Есть все подходящие трупы</APM_Ingestor_ProcessMode_All_Label>
-  <APM_Ingestor_ProcessMode_All_Desc>Ингестор автоматически перерабатывает любой доступный свежий органический труп.</APM_Ingestor_ProcessMode_All_Desc>
-  <APM_Ingestor_ProcessMode_Marked_Label>Есть отмеченные трупы</APM_Ingestor_ProcessMode_Marked_Label>
-  <APM_Ingestor_ProcessMode_Marked_Desc>Ингестор автоматически перерабатывает только трупы, отмеченные для переработки биомассы.</APM_Ingestor_ProcessMode_Marked_Desc>
+  <APM_Ingestor_StripMode_Enable_Label>Включить раздевание</APM_Ingestor_StripMode_Enable_Label>
+  <APM_Ingestor_StripMode_Enable_Desc>Нажмите, чтобы ингестор снимал одежду, снаряжение и инвентарь с трупов перед переработкой. Текущий режим: переработка как есть; вещи уничтожаются вместе с трупом.</APM_Ingestor_StripMode_Enable_Desc>
+  <APM_Ingestor_StripMode_Disable_Label>Отключить раздевание</APM_Ingestor_StripMode_Disable_Label>
+  <APM_Ingestor_StripMode_Disable_Desc>Нажмите, чтобы ингестор перерабатывал трупы как есть, уничтожая одежду, снаряжение и инвентарь вместе с трупом. Текущий режим: вещи снимаются перед переработкой.</APM_Ingestor_StripMode_Disable_Desc>
+  <APM_Ingestor_ProcessMode_All_Label>Перерабатывать все подходящие</APM_Ingestor_ProcessMode_All_Label>
+  <APM_Ingestor_ProcessMode_All_Desc>Нажмите, чтобы ингестор перерабатывал любой доступный свежий органический труп. Текущий режим: перерабатываются только отмеченные трупы.</APM_Ingestor_ProcessMode_All_Desc>
+  <APM_Ingestor_ProcessMode_Marked_Label>Только отмеченные трупы</APM_Ingestor_ProcessMode_Marked_Label>
+  <APM_Ingestor_ProcessMode_Marked_Desc>Нажмите, чтобы ингестор перерабатывал только трупы, отмеченные для переработки биомассы. Текущий режим: перерабатываются все доступные свежие органические трупы.</APM_Ingestor_ProcessMode_Marked_Desc>
   <APM_Ingestor_MarkCorpses_Label>Отметить для переработки биомассы</APM_Ingestor_MarkCorpses_Label>
   <APM_Ingestor_MarkCorpses_Desc>Отметить свежие органические трупы для переработки ингестором.</APM_Ingestor_MarkCorpses_Desc>
   <APM_IngestorAbsorb_MustTargetCorpse>Нужен свежий органический труп.</APM_IngestorAbsorb_MustTargetCorpse>

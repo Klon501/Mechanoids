@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<APM_Mech_Pulse.label>Импульс</APM_Mech_Pulse.label>
-  <APM_Mech_Pulse.description>Последним словом в тактике городских боёв механоидов является механоид Импульс. Созданный для того, чтобы заставать врагов врасплох, пробивая сооружения, он затем может использовать свою фирменную способность. Импульсы, выпускаемые из наплечных установок этого меха, не только взрываются оглушающим звуком, но и ослепляют ближайших противников интенсивным светом. Цель, лишённая чувств, не имеет шансов против непрерывного марша мехулья. Для тех, кто всё ещё стоит после этого, установленный джетпак быстро отправляет этот мех к следующей цели.</APM_Mech_Pulse.description>
+  <!-- EN: pulse -->
+  <APM_Mech_Pulse.label>Импульс</APM_Mech_Pulse.label>
+  <!-- EN: The latest in mechanoid urban warfare tactics is the pulse mechanoid. Designed to catch enemies off guard by breaching structures, it can then discharge its signature ability. Impulses fired from this mech’s shoulder mounts not only blast out with deafening sound, but blind nearby opponents with intense light. A sensory deprived target stands no chance against the mechhive’s ever continuous march. For those who still stand afterwards, an installed jump pack quickly sends this mech to its next target. -->
+  <APM_Mech_Pulse.description>Последним словом механоидной тактики городского боя является механоид «Импульс». Он создан, чтобы заставать врагов врасплох своей особой техникой, когда прорывается сквозь преграды. Импульсы, выпускаемые из плечевых установок этого меха, не просто оглушают взрывным звуком, но и ослепляют находящихся рядом противников ярчайшей вспышкой. Лишённая чувств цель не имеет шансов против неудержимого наступления роя механоидов. А встроенный прыжковый ранец быстро доставит меха к следующей цели.</APM_Mech_Pulse.description>
+  <!-- EN: head -->
   <APM_Mech_Pulse.tools.0.label>голова</APM_Mech_Pulse.tools.0.label>
 
 </LanguageData>

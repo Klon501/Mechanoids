@@ -56,7 +56,7 @@
       <body>APM_Gazer</body>
       <baseBodySize>8</baseBodySize>
       <baseHealthScale>8.42</baseHealthScale>
-      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeMain>APM_GazerMechanoid</thinkTreeMain>
       <intelligence>ToolUser</intelligence>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <lifeStageAges>
@@ -88,10 +88,22 @@
       <li Class="ApexMechanoids.CompProperties_GazerShockwaveController">
         <shockwaveAbilityDef>APM_Shockwave</shockwaveAbilityDef>
         <checkIntervalTicks>30</checkIntervalTicks>
-        <meleeThreatRadius>2.9</meleeThreatRadius>
+        <meleeThreatRadius>4.0</meleeThreatRadius>
         <minHostilesToTrigger>2</minHostilesToTrigger>
       </li>
+      <li Class="ApexMechanoids.CompProperties_GazerLaserController">
+        <autoLaserEnabledDefault>true</autoLaserEnabledDefault>
+        <autoLaserGizmoIconPath>UI/Gazer/AutoLaser</autoLaserGizmoIconPath>
+      </li>
     </comps>
+    <modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_SunRay</li>
+					<li>APM_Shockwave</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseMechanoidKind">

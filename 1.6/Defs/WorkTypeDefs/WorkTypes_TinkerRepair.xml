@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>APM_TinkerRepair</defName>
+    <labelShort>repair</labelShort>
+    <pawnLabel>Tinker</pawnLabel>
+    <gerundLabel>repairing buildings and mechs</gerundLabel>
+    <description>Repair same-faction buildings and mechanoids.</description>
+    <verb>Repair</verb>
+    <visible>false</visible>
+    <naturalPriority>945</naturalPriority>
+    <workTags>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

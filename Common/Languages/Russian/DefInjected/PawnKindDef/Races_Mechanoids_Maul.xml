@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: maul -->
+  <APM_Mech_Maul.label>крушитель</APM_Mech_Maul.label>
+  <!-- EN: mauls -->
+  <APM_Mech_Maul.labelPlural>крушители</APM_Mech_Maul.labelPlural>
+
+</LanguageData>

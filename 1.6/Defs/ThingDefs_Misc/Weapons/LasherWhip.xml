@@ -46,6 +46,7 @@
 		<verbs>
 			<li>
 				<verbClass>ApexMechanoids.Verb_Whip</verbClass>
+				<beamDamageDef>APM_Whip</beamDamageDef>
 				<hasStandardCommand>true</hasStandardCommand>
 				<warmupTime>0</warmupTime>
 				<range>6.9</range>
@@ -66,11 +67,11 @@
 				<power>15</power>
 				<cooldownTime>2.6</cooldownTime>
 				<extraMeleeDamages>
-				<li>
-					<def>EMP</def>
-					<chance>10</chance>
-					<amount>15</amount>
-				</li>
+					<li>
+						<def>EMP</def>
+						<chance>0.4</chance>
+						<amount>15</amount>
+					</li>
 				</extraMeleeDamages>
 			</li>
 		</tools>
@@ -80,7 +81,7 @@
 		<defName>APM_Whip</defName>
 		<requiredCapacity>APM_Whip</requiredCapacity>
 		<verb>
-			<verbClass>ApexMechanoids.Verb_MeleeWhip</verbClass>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
 			<meleeDamageDef>Cut</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>

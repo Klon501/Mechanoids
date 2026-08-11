@@ -17,6 +17,30 @@
 		<abilityCasting>true</abilityCasting>
 		<playerInterruptible>false</playerInterruptible>
 		<casualInterruptible>false</casualInterruptible>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+		<suspendable>false</suspendable>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
+	</JobDef>
+
+  <JobDef>
+    <defName>APM_HaulToToxicPurifier</defName>
+    <driverClass>ApexMechanoids.JobDriver_HaulToToxicPurifier</driverClass>
+    <reportString>hauling wastepacks to TargetA.</reportString>
+  </JobDef>
+
+	<JobDef>
+		<defName>APM_CastPulseJump</defName>
+		<driverClass>JobDriver_CastJump</driverClass>
+		<reportString>jumping to TargetA.</reportString>
+		<abilityCasting>true</abilityCasting>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<playerInterruptible>false</playerInterruptible>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+		<carryThingAfterJob>true</carryThingAfterJob>
+		<dropThingBeforeJob>false</dropThingBeforeJob>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
 	</JobDef>
 
 	<JobDef>

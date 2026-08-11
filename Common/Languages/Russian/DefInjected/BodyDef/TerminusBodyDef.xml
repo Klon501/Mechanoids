@@ -1,28 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: terminus -->
   <APM_Terminus.label>терминус</APM_Terminus.label>
-  <APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический сенсор</APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>
-  <APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический сенсор</APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>
-  <APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>левый акустический сенсор</APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>
-  <APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>правый акустический сенсор</APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: left sight sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right sight sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left hearing sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right hearing sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>
+  <!-- EN: left mechanical shoulder -->
   <APM_Terminus.corePart.parts.1.customLabel>левое механическое плечо</APM_Terminus.corePart.parts.1.customLabel>
+  <!-- EN: left arm -->
   <APM_Terminus.corePart.parts.1.parts.0.customLabel>левая рука</APM_Terminus.corePart.parts.1.parts.0.customLabel>
+  <!-- EN: left hand -->
   <APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>
+  <!-- EN: left pinky -->
   <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: left middle finger -->
   <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: left index finger -->
   <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: left thumb -->
   <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: right mechanical shoulder -->
   <APM_Terminus.corePart.parts.2.customLabel>правое механическое плечо</APM_Terminus.corePart.parts.2.customLabel>
+  <!-- EN: right arm -->
   <APM_Terminus.corePart.parts.2.parts.0.customLabel>правая рука</APM_Terminus.corePart.parts.2.parts.0.customLabel>
+  <!-- EN: right hand -->
   <APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>
+  <!-- EN: right pinky -->
   <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <!-- EN: right middle finger -->
   <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <!-- EN: right index finger -->
   <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <!-- EN: right thumb -->
   <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <!-- EN: left leg -->
   <APM_Terminus.corePart.parts.3.customLabel>левая нога</APM_Terminus.corePart.parts.3.customLabel>
-  <APM_Terminus.corePart.parts.3.parts.0.customLabel>левая стопа</APM_Terminus.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: left foot -->
+  <APM_Terminus.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Terminus.corePart.parts.3.parts.0.customLabel>
+  <!-- EN: right leg -->
   <APM_Terminus.corePart.parts.4.customLabel>правая нога</APM_Terminus.corePart.parts.4.customLabel>
-  <APM_Terminus.corePart.parts.4.parts.0.customLabel>правая стопа</APM_Terminus.corePart.parts.4.parts.0.customLabel>
+  <!-- EN: right foot -->
+  <APM_Terminus.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Terminus.corePart.parts.4.parts.0.customLabel>
 
 </LanguageData>

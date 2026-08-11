@@ -1,84 +1,92 @@
 using HarmonyLib;
 using RimWorld;
-using System.Linq;
-using System.Reflection;
+using System.Collections.Generic;
 using Verse;
 
 namespace ApexMechanoids.HarmonyPatches
 {
     internal static class MechRepairUtility_Patch
     {
-        // Allow vanilla/mod repair jobs to fix Aegis shields, but stop colonists from getting stuck
-        // when the ONLY remaining damage is a destroyed (missing) shield part, which vanilla repair
-        // cannot rebuild (CompAegis slowly regenerates those instead).
-        [HarmonyLib.HarmonyPatch(typeof(MechRepairUtility), nameof(MechRepairUtility.CanRepair))]
-        internal static class CanRepair
+        // A mech already claimed by a repair station is not up for grabs by a colonist.
+        [HarmonyPatch(typeof(MechRepairUtility), nameof(MechRepairUtility.CanRepair))]
+        internal static class CanRepair_RepairStation
         {
             private static bool Prefix(Pawn mech, ref bool __result)
             {
-                if (Building_RepairStation.IsPawnClaimedByAnyRepairStation(mech))
-                {
-                    __result = false;
-                    return false;
-                }
-
-                CompAegis comp = mech?.TryGetComp<CompAegis>();
-                if (comp == null || comp.Ext == null)
+                if (!Building_RepairStation.IsPawnClaimedByAnyRepairStation(mech))
                 {
                     return true;
                 }
 
-                // Repairable by a colonist = any injury (including shield injuries) or any missing
-                // NON-shield part. Missing shield parts alone are left to CompAegis.
-                bool hasRepairable = mech.health.hediffSet.hediffs.Any(h =>
-                    h is Hediff_Injury ||
-                    (h is Hediff_MissingPart mp && mp.Part != null && mp.Part.def != comp.Ext.shieldPart));
-
-                if (!hasRepairable)
-                {
-                    __result = false;
-                    return false;
-                }
-
-                return true;
+                __result = false;
+                return false;
             }
         }
 
-        // Vanilla repair heals shield injuries like any other part. Charge extra mech energy for the
-        // shield HP restored so shields are more expensive to repair than normal armour.
-        [HarmonyLib.HarmonyPatch]
-        internal static class RepairTick
+        // A colonist repairs shield injuries like any other damage, but rebuilding a destroyed
+        // shield is CompAegis's job. JobDriver_RepairMech ends the moment CanRepair goes false, so
+        // reporting "nothing to do" here is what keeps a destroyed shield out of vanilla's reach:
+        // RepairTick itself is perfectly willing to delete a Hediff_MissingPart and hand the whole
+        // shield back in one tick.
+        [HarmonyPatch(typeof(MechRepairUtility), nameof(MechRepairUtility.CanRepair))]
+        internal static class CanRepair_Aegis
         {
-            // MechRepairUtility.RepairTick has multiple overloads in 1.6, so name-only matching is
-            // ambiguous. Resolve the single-Pawn overload (falling back to any RepairTick) explicitly.
-            private static MethodBase TargetMethod()
+            private static bool Prefix(Pawn mech, ref bool __result)
             {
-                MethodInfo[] candidates = AccessTools.GetDeclaredMethods(typeof(MechRepairUtility))
-                    .Where(m => m.Name == "RepairTick")
-                    .ToArray();
+                CompAegis comp = mech?.TryGetComp<CompAegis>();
+                if (comp == null)
+                {
+                    return true;
+                }
 
-                return candidates.FirstOrDefault(m =>
-                        {
-                            ParameterInfo[] ps = m.GetParameters();
-                            return ps.Length == 1 && ps[0].ParameterType == typeof(Pawn);
-                        })
-                    ?? candidates.FirstOrDefault();
+                if (HasColonistRepairableDamage(mech, comp.Props.shieldPart)
+                    || MechRepairUtility.IsMissingWeapon(mech))
+                {
+                    return true;
+                }
+
+                __result = false;
+                return false;
             }
 
+            // Any injury, or any missing part other than a shield.
+            private static bool HasColonistRepairableDamage(Pawn mech, BodyPartDef shieldPart)
+            {
+                List<Hediff> hediffs = mech.health.hediffSet.hediffs;
+                for (int i = 0; i < hediffs.Count; i++)
+                {
+                    Hediff hediff = hediffs[i];
+                    if (hediff is Hediff_Injury)
+                    {
+                        return true;
+                    }
+
+                    if (hediff is Hediff_MissingPart && hediff.Part != null && hediff.Part.def != shieldPart)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        }
+
+        // Vanilla heals shield injuries like any other part. Charge extra mech energy for the shield
+        // HP restored, on top of the flat cost JobDriver_RepairMech already pays, so shields are more
+        // expensive to patch up than plating.
+        [HarmonyPatch(typeof(MechRepairUtility), nameof(MechRepairUtility.RepairTick), new[] { typeof(Pawn) })]
+        internal static class RepairTick
+        {
             private static void Prefix(Pawn mech, out float __state)
             {
-                __state = 0f;
                 CompAegis comp = mech?.TryGetComp<CompAegis>();
-                if (comp != null && comp.Ext != null)
-                {
-                    __state = comp.CurShieldHP;
-                }
+                __state = comp != null ? comp.CurShieldHP : 0f;
             }
 
             private static void Postfix(Pawn mech, float __state)
             {
                 CompAegis comp = mech?.TryGetComp<CompAegis>();
-                if (comp == null || comp.Ext == null || mech.needs?.energy == null)
+                if (comp == null || mech.needs?.energy == null)
                 {
                     return;
                 }
@@ -89,11 +97,9 @@ namespace ApexMechanoids.HarmonyPatches
                     return;
                 }
 
-                float extraEnergy = restored
+                mech.needs.energy.CurLevel -= restored
                     * mech.GetStatValue(StatDefOf.MechEnergyLossPerHP)
-                    * comp.Ext.repairEnergyCostMultiplier;
-
-                mech.needs.energy.CurLevel -= extraEnergy;
+                    * comp.Props.repairEnergyCostMultiplier;
             }
         }
     }

@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Mech_Gazer.label>Наблюдатель</APM_Mech_Gazer.label>
-  <APM_Mech_Gazer.description>Другое применение технологии адской сферы привело к созданию Наблюдателя — механоида, легко узнаваемого по своему основному глазному эмиттеру лучей. Это оружие настолько мощное, что Наблюдатель должен зафиксировать себя на месте и перенаправить все моторные функции на стабилизацию при стрельбе. Даже в этом случае требуется значительное время зарядки. Результирующий луч может уничтожить всё на своём пути, нанося значительный урон даже сооружениям. Если же враги навязывают ближний бой, Наблюдатель может выпустить накопленную энергию наружу в виде мощной ударной волны, отбрасывая атакующих и перегружая ближайшие механические цели.</APM_Mech_Gazer.description>
+  <!-- EN: Gazer -->
+  <APM_Mech_Gazer.label>Соглядатай</APM_Mech_Gazer.label>
+  <!-- EN: A different application of hellsphere technology resulted in the Gazer, a mechanoid clearly identified by its primary ocular beam emitter. This weapon is strong enough that the gazer must lock itself in place and divert all motor functions to stabilizing itself when firing. Even then, a significant charge time is required. The resultant beam can obliterate anything in front of it, even doing decent damage to structures. When pressed in close quarters, the Gazer can instead discharge the accumulated energy outward as a violent shockwave that hurls attackers back and disrupts nearby mechanized targets. -->
+  <APM_Mech_Gazer.description>Разработкам, положенным в начало дезинтегратора нашлось и другое применение. Им стала модель «Соглядатай» с узнаваемой лучевой установкой на месте глаз. Эта установка настолько мощная, что Соглядатаю во время стрельбы приходится фиксироваться на месте, направляя все двигательные функции на собственную стабилизацию. Но даже так требуется значительное время на зарядку. Выпускаемый луч способен испепелить всё перед собой, нанося при этом значительный урон даже постройкам. А встретившийся в ближнем бою с врагом Соглядатай может вместо луча высвободить накопленную энергию в виде мощной ударной волны вокруг себя, отбрасывающей атакующих и выводящей из строя ближайших механоидов.</APM_Mech_Gazer.description>
+  <!-- EN: head -->
   <APM_Mech_Gazer.tools.0.label>голова</APM_Mech_Gazer.tools.0.label>
-  <APM_Mech_Gazer.tools.1.label>передняя левая лапа</APM_Mech_Gazer.tools.1.label>
-  <APM_Mech_Gazer.tools.2.label>передняя правая лапа</APM_Mech_Gazer.tools.2.label>
-
+  <!-- EN: front left paw -->
+  <APM_Mech_Gazer.tools.1.label>левая передняя лапа</APM_Mech_Gazer.tools.1.label>
+  <!-- EN: front right paw -->
+  <APM_Mech_Gazer.tools.2.label>правая передняя лапа</APM_Mech_Gazer.tools.2.label>
 
 </LanguageData>

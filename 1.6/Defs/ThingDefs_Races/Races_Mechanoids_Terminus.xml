@@ -63,7 +63,7 @@
 			<renderTree>APM_RenderTree_Terminus</renderTree>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>6.32</baseHealthScale>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_TerminusMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>Heavy</mechWeightClass>
 			<lifeStageAges>
@@ -99,6 +99,14 @@
 			<Steel>80</Steel>
 			<Plasteel>50</Plasteel>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_TerminusOverdrive</li>
+					<li>APM_TerminusOverdrive_Boss</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="APM_Mech_Terminus_Base">
@@ -246,6 +254,7 @@
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>APM_Hediff_TerminusOverdrive</hediffDef>
 				<applyToSelf>true</applyToSelf>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_AbilityWarmupMote">
 				<moteDef>APM_Mote_TerminusOverdrive_BlueSacrificeWave</moteDef>
@@ -272,6 +281,7 @@
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>APM_Hediff_TerminusOverdrive</hediffDef>
 				<applyToSelf>true</applyToSelf>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_AbilityWarmupMote">
 				<moteDef>APM_Mote_TerminusOverdrive_SacrificeWave</moteDef>

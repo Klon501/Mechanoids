@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Pinpoint -->
+  <APM_Mech_Pinpoint.label>Наводчик</APM_Mech_Pinpoint.label>
+  <!-- EN: The pinpoint wasn’t designed for direct confrontations in battle. It instead assists its allies with their aiming, targeting and designating an enemy with its primary sensor. When targeted, all allied forces get a bonus to accuracy on that target. Be sure not to encounter this mech with an entourage of pikemen. For those foes who keep slipping out of sight, its sensors can also detect invisible enemies nearby itself. -->
+  <APM_Mech_Pinpoint.description>Наводчик не создан для прямых боевых столкновений. Вместо этого он помогает союзникам с прицеливанием, наведением и указанием цели с помощью своего основного датчика. Пока цель отмечена, все союзники получают бонус к точности для атак по ней. Постарайтесь не встретить этого механоида в сопровождении копейщиков. А для врагов, что всё норовят ускользнуть из виду, его датчики способны обнаруживать невидимых противников поблизости от себя.</APM_Mech_Pinpoint.description>
+  <!-- EN: head -->
+  <APM_Mech_Pinpoint.tools.0.label>голова</APM_Mech_Pinpoint.tools.0.label>
+
+</LanguageData>

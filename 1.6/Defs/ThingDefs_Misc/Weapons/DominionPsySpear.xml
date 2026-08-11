@@ -56,8 +56,10 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_EquippableAbility">
-				<abilityDef>APM_Mech_Duel</abilityDef>
+			<li Class="ApexMechanoids.CompProperties_AbilityGranter">
+				<abilities>
+					<li>APM_Mech_Duel</li>
+				</abilities>
 			</li>
 			<li>
 				<compClass>CompQuality</compClass>

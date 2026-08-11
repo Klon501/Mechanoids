@@ -3,7 +3,7 @@
 		<defName>APM_CelerusSmokescreenBuff</defName>
 		<label>Smokescreen</label>
 		<!-- <defaultLabelColor>(196, 145, 191)</defaultLabelColor> -->
-		<description>WIP.</description>
+		<description>Celerus hiding in smoke</description>
 		<isBad>false</isBad>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
@@ -17,6 +17,7 @@
 				<fadeDurationTicks>60</fadeDurationTicks>
 				<affectedByDisruptor>false</affectedByDisruptor>
 			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
 		</comps>
 		<stages>
 			<li>

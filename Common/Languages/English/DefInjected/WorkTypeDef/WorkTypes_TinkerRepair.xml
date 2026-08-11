@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_TinkerRepair.labelShort>repair</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>Tinker</APM_TinkerRepair.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>repairing buildings and mechs</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.description>Repair same-faction buildings and mechanoids.</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>Repair</APM_TinkerRepair.verb>
+
+</LanguageData>

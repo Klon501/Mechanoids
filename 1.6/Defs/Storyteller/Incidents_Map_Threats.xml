@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<IncidentDef>
+		<defName>APM_IncidentDef_TrioBoss</defName>
+		<label>Three Lords</label>
+		<workerClass>ApexMechanoids.IncidentWorker_GroupBossAssault</workerClass>
+		<baseChance>0</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<letterLabel>Three Lords arrived</letterLabel>
+		<letterText>An ultra-heavy mechs from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking.</letterText>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<category>ThreatBig</category>
+		<letterDef>ThreatBig</letterDef>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_Incident_CallMulBossgroup">
+				<bosses>
+					<li>APM_Mech_Terminus_Boss</li>
+					<li>APM_Mech_Dominus_Boss</li>
+					<li>APM_Mech_Celerus_Boss</li>
+				</bosses>
+				<escorts>
+					<!-- Common -->
+					<!-- <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR> -->
+					<!-- <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR> -->
+					<!-- <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG> -->
+					<!-- <APM_Mech_Lasher>10</APM_Mech_Lasher> -->
+					<!-- <APM_Mech_Pulse>10</APM_Mech_Pulse> -->
+					<!-- <APM_Mech_Aegis>10</APM_Mech_Aegis> -->
+					<!-- <APM_Mech_Maul>10</APM_Mech_Maul> -->
+
+					<!-- Rare -->
+					<!-- <APM_Mech_Mantis>5</APM_Mech_Mantis> -->
+					<!-- <APM_Mech_Ingestor>5</APM_Mech_Ingestor> -->
+					<!-- <APM_Mech_Haze>5</APM_Mech_Haze> -->
+
+					<!-- Epic -->
+					<!-- <APM_Mech_Javelin>2</APM_Mech_Javelin> -->
+					<!-- <APM_Mech_Siren>2</APM_Mech_Siren> -->
+					<!-- <APM_Mech_Vassal>2</APM_Mech_Vassal> -->
+					<!-- Bosses -->
+					<!-- <APM_Mech_Dominus>1</APM_Mech_Dominus> -->
+					<!-- <APM_Mech_Terminus>1</APM_Mech_Terminus> -->
+					<!-- <APM_Mech_Celerus>1</APM_Mech_Celerus> -->
+					
+					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
+					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
+					<APM_Mech_Conqueror_LMG>6</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
+					<APM_Mech_Mantis>3</APM_Mech_Mantis>
+					<APM_Mech_Aegis>3</APM_Mech_Aegis>
+					<APM_Mech_Tinker>2</APM_Mech_Tinker>
+					<APM_Mech_Vassal>1</APM_Mech_Vassal>
+				</escorts>
+				<bossMultPerThreat>
+					<li>5000</li>
+					<li>7000</li>
+				</bossMultPerThreat>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	
+</Defs>

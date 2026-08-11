@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
-using static HarmonyLib.Code;
-
 
 namespace ApexMechanoids
 {
@@ -76,11 +74,25 @@ namespace ApexMechanoids
             #endregion
 
 
-
-            #region Add Reconnect uncontrolled mech to mechanitor in command casket 
-
             if (Find.Selector.SingleSelectedThing == mech && mech.IsColonyMech)
             {
+
+                #region Draw small casket icons
+
+                if(Utils.IsUplinkActiveFor(mech.GetOverseer(), out Building_MechCommandCasket casket) == true)
+                {
+                    if(casket != null)
+                    {
+                        CommandCasketMechGizmo command_Action_MechCasket = new CommandCasketMechGizmo(casket, casket.CompAbilities, mech);
+
+                        list.Add(command_Action_MechCasket);
+                    }
+                }
+                #endregion
+
+
+                #region Add Reconnect uncontrolled mech to mechanitor in command casket 
+
                 if (mech.IsColonyMechRequiringMechanitor())    //connected but uncontrolled
                 {
                     tmpAllMaps.Clear();
@@ -118,9 +130,14 @@ namespace ApexMechanoids
 
                                 floatlist.Add(new FloatMenuOption(label, delegate
                                 {
-                                    mech.GetOverseer()?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, mech);
-                                    mech.SetFaction(Faction.OfPlayer);
-                                    mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                                    if(Utils.IsUplinkActiveFor(mechanitor, out Building_MechCommandCasket casketBuilding))
+                                    {
+                                        if (casketBuilding.CompAbilities != null)
+                                        {
+                                            casketBuilding.CompAbilities.ForceSetTarget(mech, out LocalTargetInfo target);
+                                            casketBuilding.CompAbilities.StartToConnect(target);
+                                        }
+                                    }
                                 }));
                             }
 
@@ -130,11 +147,48 @@ namespace ApexMechanoids
                             }
                         };
                         list.Add(command_Action_Reconnect);
+
+
+                        if (DebugSettings.ShowDevGizmos)
+                        {
+                            Command_Action command_Action_Reconnect_DEV = new Command_Action();
+                            command_Action_Reconnect_DEV.defaultLabel = "DEV: Instant reconnect";
+                            command_Action_Reconnect_DEV.defaultDesc = "APM.CommandCasket.Mech.Gizmo.Reconnect.Desc".Translate().CapitalizeFirst();
+                            command_Action_Reconnect_DEV.action = delegate
+                            {
+                                List<FloatMenuOption> floatlist = new List<FloatMenuOption>();
+                                foreach (Pawn mechanitor in tmpMechanitorsInCaskets)
+                                {
+                                    string label = mechanitor.LabelShortCap;
+
+                                    if (mech.GetStatValue(StatDefOf.BandwidthCost) > mechanitor.mechanitor.TotalBandwidth - mechanitor.mechanitor.UsedBandwidth)
+                                    {
+                                        label += "APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu".Translate();
+                                    }
+
+                                    floatlist.Add(new FloatMenuOption(label, delegate
+                                    {
+                                        mech.GetOverseer()?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, mech);
+                                        mech.SetFaction(Faction.OfPlayer);
+                                        mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                                    }));
+                                }
+
+                                if (floatlist.Any())
+                                {
+                                    Find.WindowStack.Add(new FloatMenu(floatlist));
+                                }
+                            };
+                            list.Add(command_Action_Reconnect_DEV);
+                        }
                     }
+
+
                 }
+                #endregion
             }
 
-            #endregion
+
 
             IEnumerable<Gizmo> enumerable = list;
             __result = enumerable;

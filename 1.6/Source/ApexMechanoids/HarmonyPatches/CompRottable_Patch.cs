@@ -1,19 +1,16 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+using HarmonyLib;
+using RimWorld;
 
 namespace ApexMechanoids
 {
-    [HarmonyLib.HarmonyPatch(typeof(CompRottable), nameof(CompRottable.Active), HarmonyLib.MethodType.Getter)] //Or we can patch ShouldTakeRotDamage()
+    [HarmonyPatch(typeof(CompRottable), nameof(CompRottable.Active), MethodType.Getter)]
     internal static class CompRottable_Patch
     {
         public static void Postfix(CompRottable __instance, ref bool __result)
         {
-            if (__result && (__instance.parent.ParentHolder as Pawn_InventoryTracker)?.pawn?.def == ApexDefsOf.APM_Mech_Frostivus)
+            if (__result
+                && (FrostivusFoodPreservationUtility.IsRotPreservedByFrostivus(__instance.parent)
+                    || FrostivusCaravanFoodCalculatorUtility.IsFoodPreservedInTransferableRotContext(__instance.parent)))
             {
                 __result = false;
             }

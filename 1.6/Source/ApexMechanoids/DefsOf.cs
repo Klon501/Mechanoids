@@ -1,15 +1,18 @@
 ﻿using RimWorld;
-using System.Security.Cryptography;
 using Verse;
 
 namespace ApexMechanoids
 {
     [DefOf]
     public static class ApexDefsOf
-    {
+	{
 		public static ThingDef APM_Mech_Tinker;
+		public static ThingDef APM_Mech_Dynamo;
 		public static ThingDef APM_Mech_Frostivus;
         public static ThingDef APM_Mech_Ingestor;
+        public static ThingDef APM_Building_ToxicPurifier;
+		public static AbilityDef APM_DefenceMatrix;
+        public static AbilityDef APM_BlindingLaser;
         public static ThingDef APM_Mech_Celerus;
         public static ThingDef APM_Mech_CelerusB;
         public static ThingDef APM_Smokescreen;
@@ -25,7 +28,6 @@ namespace ApexMechanoids
         public static BodyPartGroupDef APM_RightAegisShield;
         public static PawnKindDef APM_Mech_Aegis;
 		public static BodyPartDef APM_AegisShield;
-        //public static JobDef APM_RepairAegisShields;
         public static HediffDef APM_Hediff_Unity;
         public static HediffDef APM_DuelWinner;
         public static HediffDef APM_DuelDraw;
@@ -41,6 +43,9 @@ namespace ApexMechanoids
         public static StatDef APM_CasketBandwidth;
         public static ThingDef APM_MechCommandCasket;
         public static HediffDef APM_MechCommandCasketBoost;
+        public static HediffDef APM_Hediff_JavelinMissileLock;
+        public static ThingDef APM_Gun_JavelinRocketLauncher;
+        public static ThingDef APM_Proj_JavelinMissile;
 
         public static HediffDef RemoteRepairerImplant;  //from Biotech
         public static HediffDef RemoteShielderImplant;  //from Biotech
@@ -63,10 +68,15 @@ namespace ApexMechanoids
         public static JobDef APM_LasherSlaughter;
         public static JobDef APM_LasherReleaseToWild;
         public static JobDef APM_SirenChatWithPrisoner;
+        public static JobDef APM_FrostivusTakeFoodToInventory;
         public static JobDef APM_FrostivusUnloadFoodToStorage;
         public static JobDef APM_FrostivusManualUnloadFood;
+        public static JobDef APM_FrostivusReleaseDevouredContents;
         public static JobDef APM_RavagerArtilleryAttack;
-    }
+        public static JobDef APM_CastPulseJump;
+        public static JobDef APM_HaulToToxicPurifier;
+
+	}
     [DefOf]
     public static class ApexEffecterDefsOf
     {

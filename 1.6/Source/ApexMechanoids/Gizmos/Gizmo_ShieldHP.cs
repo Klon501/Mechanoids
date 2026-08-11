@@ -27,6 +27,10 @@ namespace ApexMechanoids
             Rect inner = rect.ContractedBy(6f);
             Widgets.DrawWindowBackground(rect);
 
+            float cur = comp.CurShieldHP;
+            float max = comp.MaxShieldHP;
+
+            GameFont font = Text.Font;
             Text.Font = GameFont.Tiny;
 
             Rect labelRect = inner;
@@ -35,11 +39,12 @@ namespace ApexMechanoids
 
             Rect barRect = inner;
             barRect.yMin = inner.y + inner.height / 2f;
-            Widgets.FillableBar(barRect, comp.ShieldHPPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
+            Widgets.FillableBar(barRect, max > 0f ? Mathf.Clamp01(cur / max) : 0f, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
 
             Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(barRect, Mathf.RoundToInt(comp.CurShieldHP) + " / " + Mathf.RoundToInt(comp.MaxShieldHP));
+            Widgets.Label(barRect, Mathf.RoundToInt(cur) + " / " + Mathf.RoundToInt(max));
             Text.Anchor = TextAnchor.UpperLeft;
+            Text.Font = font;
 
             return new GizmoResult(GizmoState.Clear);
         }

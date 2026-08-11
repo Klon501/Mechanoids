@@ -41,9 +41,9 @@ namespace ApexMechanoids
 
             yield return new Command_Toggle
             {
-                defaultLabel = (stripCorpseBeforeAbsorb ? "APM_Ingestor_StripMode_On_Label" : "APM_Ingestor_StripMode_Off_Label").Translate(),
-                defaultDesc = (stripCorpseBeforeAbsorb ? "APM_Ingestor_StripMode_On_Desc" : "APM_Ingestor_StripMode_Off_Desc").Translate(),
-                icon = ContentFinder<Texture2D>.Get(Props.stripIconPath),
+                defaultLabel = (stripCorpseBeforeAbsorb ? "APM_Ingestor_StripMode_Disable_Label" : "APM_Ingestor_StripMode_Enable_Label").Translate(),
+                defaultDesc = (stripCorpseBeforeAbsorb ? "APM_Ingestor_StripMode_Disable_Desc" : "APM_Ingestor_StripMode_Enable_Desc").Translate(),
+                icon = ContentFinder<Texture2D>.Get(stripCorpseBeforeAbsorb ? Props.stripKeepIconPath : Props.stripDestroyIconPath),
                 isActive = () => stripCorpseBeforeAbsorb,
                 toggleAction = delegate
                 {
@@ -53,9 +53,9 @@ namespace ApexMechanoids
 
             yield return new Command_Toggle
             {
-                defaultLabel = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_Marked_Label" : "APM_Ingestor_ProcessMode_All_Label").Translate(),
-                defaultDesc = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_Marked_Desc" : "APM_Ingestor_ProcessMode_All_Desc").Translate(),
-                icon = ContentFinder<Texture2D>.Get(Props.processModeIconPath),
+                defaultLabel = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_All_Label" : "APM_Ingestor_ProcessMode_Marked_Label").Translate(),
+                defaultDesc = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_All_Desc" : "APM_Ingestor_ProcessMode_Marked_Desc").Translate(),
+                icon = ContentFinder<Texture2D>.Get(onlyProcessMarkedCorpses ? Props.processMarkedIconPath : Props.processAnyIconPath),
                 isActive = () => onlyProcessMarkedCorpses,
                 toggleAction = delegate
                 {
@@ -93,8 +93,10 @@ namespace ApexMechanoids
 
     public class CompProperties_IngestorAbsorbSettings : CompProperties
     {
-        public string stripIconPath = "UI/Ingestor/StripMode";
-        public string processModeIconPath = "UI/Ingestor/ProcessMode";
+        public string stripDestroyIconPath = "UI/Ingestor/StripModeDestroyApparel";
+        public string stripKeepIconPath = "UI/Ingestor/StripModeKeepApparel";
+        public string processMarkedIconPath = "UI/Ingestor/ProcessModeMarkedCorpse";
+        public string processAnyIconPath = "UI/Ingestor/ProcessModeAnyCorpse";
         public string markIconPath = "UI/Ingestor/MarkCorpse";
 
         public CompProperties_IngestorAbsorbSettings()

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		The human built stasis container as it is found rather than built. Same def the player
+		crafts, so a recovered one can be claimed and used, uninstalled and hauled home, or
+		deconstructed back into its steel, plasteel and spacer components.
+
+		Footprint is 2x2; the prefab reserves a third row so the tall sprite is not drawn into a wall.
+	-->
+	<PrefabDef>
+		<defName>APM_MechanoidStasisContainer</defName>
+		<size>(2,3)</size>
+		<things>
+			<APM_MechanoidContainer_Player>
+				<position>(0, 0, 0)</position>
+			</APM_MechanoidContainer_Player>
+		</things>
+	</PrefabDef>
+
+</Defs>

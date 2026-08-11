@@ -1,8 +1,7 @@
 ﻿using RimWorld;
-using System.Drawing;
 using UnityEngine;
 using Verse;
-using Verse.Sound;
+
 
 
 namespace ApexMechanoids
@@ -90,45 +89,87 @@ namespace ApexMechanoids
 
             if (abilityComp.User != null)
             {
-
                 Rect connectRect = new Rect(mainRect.x + thingRect.width + Spacing, mainRect.y, mainRect.height / 2 - Spacing / 2, mainRect.height / 2 - 1f);
 
                 DrawVanillalikeGizmoHighlight(connectRect);
-                if (Widgets.ButtonInvisible(connectRect) && Event.current.button == 0)
+
+                if (Mouse.IsOver(connectRect))
                 {
-                    Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.StartToConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                    if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
+                    {
+                        if (Event.current.control)
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.AddQuedActionConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                        }
+                        else
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteConnectTargetingParameters(), abilityComp.StartToConnect, abilityComp.Highlight, abilityComp.CanRemoteConnect);
+                        }
+                    }
+
+                    if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                    {
+                        abilityComp.EndActionWithSound();
+                    }
                 }
+
                 GUI.DrawTexture(connectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Connect));
-                TooltipHandler.TipRegion(connectRect, "APM.CommandCasket.Gizmo.Connect.Desc".Translate().CapitalizeFirst());
-                CancelAction(connectRect);
+                TooltipHandler.TipRegion(connectRect, "APM.CommandCasket.Gizmo.Connect.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
+                //CancelAction(connectRect);
 
                 Rect disconnectRect = new Rect(connectRect.x, connectRect.y + connectRect.height + 2f, connectRect.width, connectRect.height);
 
                 DrawVanillalikeGizmoHighlight(disconnectRect);
-                if (Widgets.ButtonInvisible(disconnectRect) && Event.current.button == 0)
+                if (Mouse.IsOver(disconnectRect))
                 {
-                    Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.StartToDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                    if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
+                    {
+                        if (Event.current.control)
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.AddQuedActionDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                        }
+                        else
+                        {
+                            Find.Targeter.BeginTargeting(abilityComp.RemoteDisconnectTargetingParameters(), abilityComp.StartToDisconnect, abilityComp.Highlight, abilityComp.CanRemoteDisconnect);
+                        }
+                    }
+                    if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                    {
+                        abilityComp.EndActionWithSound();
+                    }
                 }
                 GUI.DrawTexture(disconnectRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Disconnect));
-                TooltipHandler.TipRegion(disconnectRect, "APM.CommandCasket.Gizmo.Disconnect.Desc".Translate().CapitalizeFirst());
-                CancelAction(disconnectRect);
+                TooltipHandler.TipRegion(disconnectRect, "APM.CommandCasket.Gizmo.Disconnect.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
+                //CancelAction(disconnectRect);
 
                 Rect abilityRect = new Rect(connectRect.x + connectRect.width + Spacing, mainRect.y, mainRect.height, mainRect.height);
                 if (abilityComp.HasImplantRepair())
                 {
                     DrawVanillalikeGizmoHighlight(abilityRect);
                     GUI.DrawTexture(abilityRect, ContentFinder<Texture2D>.Get(abilityComp.Props.textpath_Repair));
-
-                    if (Widgets.ButtonInvisible(abilityRect) && Event.current.button == 0)
+                    if (Mouse.IsOver(abilityRect))
                     {
-                        Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.StartToRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 0) //left click
+                        {
+                            if (Event.current.control)
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.AddQuedActionRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                            }
+                            else
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteRepairTargetingParameters(), abilityComp.StartToRepair, abilityComp.Highlight, abilityComp.CanRemoteRepair);
+                            }
+                        }
+
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                        {
+                            abilityComp.EndActionWithSound();
+                        }
                     }
-                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Repair.Desc".Translate().CapitalizeFirst());
+                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Repair.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                     DrawVanillalikeLabel(abilityRect, "APM.CommandCasket.Gizmo.Repair.Label".Translate().CapitalizeFirst());
 
                     abilityRect.x += abilityRect.width + Spacing;
-
-                    CancelAction(abilityRect);
                 }
 
                 if (abilityComp.HasImplantShield())
@@ -136,11 +177,23 @@ namespace ApexMechanoids
                     DrawVanillalikeGizmoHighlight(abilityRect);
                     GUI.DrawTexture(abilityRect, abilityComp.GetShieldTexture());
 
-                    if (Widgets.ButtonInvisible(abilityRect) && Event.current.button == 0) 
+                    if (Mouse.IsOver(abilityRect))
                     {
-                        if (abilityComp.TicksForShieldcooldown == 0)
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && abilityComp.TicksForShieldcooldown == 0) //left click
                         {
-                            Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.StartToShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            if (Event.current.control)
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.AddQuedActionShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            }
+                            else
+                            {
+                                Find.Targeter.BeginTargeting(abilityComp.RemoteShieldTargetingParameters(), abilityComp.StartToShield, abilityComp.Highlight, abilityComp.CanRemoteShield);
+                            }
+                        }
+
+                        if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
+                        {
+                            abilityComp.EndActionWithSound();
                         }
                     }
 
@@ -159,25 +212,23 @@ namespace ApexMechanoids
                         Text.Anchor = TextAnchor.UpperLeft;
                     }
                     DrawVanillalikeLabel(abilityRect, abilityComp.GetShieldGizmoLabel());
-                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Shield.Desc".Translate().CapitalizeFirst());
+                    TooltipHandler.TipRegion(abilityRect, "APM.CommandCasket.Gizmo.Shield.Desc".Translate().CapitalizeFirst() + "APM.CommandCasket.Gizmo.ControlsInfo".Translate());
                     abilityRect.x += abilityRect.width + Spacing;
-                    CancelAction(abilityRect);
                 }
 
                 Rect cancelRect = new Rect(abilityRect.x, mainRect.y, mainRect.height, mainRect.height);
                 DrawVanillalikeGizmoHighlight(cancelRect);
                 GUI.DrawTexture(cancelRect, CancelLoadingIcon);
 
-                if (Widgets.ButtonInvisible(cancelRect) && Event.current.button == 0)
+                if (Widgets.ButtonInvisible(cancelRect))
                 {
                     if (thingAsCasket != null)
                     {
                         thingAsCasket.Finish();
-                        thingAsCasket.innerContainer.TryDropAll(thingAsCasket.InteractionCell, thingAsCasket.Map, ThingPlaceMode.Near);
-                        abilityComp.EndAction();
+                        //thingAsCasket.innerContainer.TryDropAll(thingAsCasket.InteractionCell, thingAsCasket.Map, ThingPlaceMode.Near);
+                        abilityComp.EndActionWithSound();
                     }
                 }
-                CancelAction(abilityRect);
                 DrawVanillalikeLabel(abilityRect, "APM.CommandCasket.Gizmo.CancelLink.Label".Translate().CapitalizeFirst());
                 TooltipHandler.TipRegion(cancelRect, "APM.CommandCasket.Gizmo.CancelLink.Desc".Translate().CapitalizeFirst());
             }
@@ -209,19 +260,7 @@ namespace ApexMechanoids
             }
         }
 
-        private void CancelAction(Rect rect)
-        {
-            if (Mouse.IsOver(rect))
-            {
-                if (Event.current.type == EventType.MouseDown && Event.current.button == 1)  //right click
-                {
-                    abilityComp.EndAction();
 
-                    SoundDefOf.Tick_High.PlayOneShotOnCamera();
-                }
-
-            }
-        }
     }
 
 

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: purifier station -->
+  <APM_Building_ToxicPurifier.label>станция очистки</APM_Building_ToxicPurifier.label>
+  <!-- EN: The pollution reclaimer is an imperfect solution to a disastrous problem. It cleans pollution from a large area around it in addition to vaporizing toxic wastepacks. Its function is imperfect due to the drastic rate it runs at and It has a constant chance to cause several severe ecological events such as the following: Releasing toxic waste into the air, causing a toxic downpour, generating a toxic smog in the local area up to several world tiles around where it is placed and spoiling relations over time with local neighboring factions. While it works well, ecologists and mechanitors alike still argue whether the side effects are worth the hassle. -->
+  <APM_Building_ToxicPurifier.description>Эта постройка для восстановления от загрязнения является несовершенным решением катастрофической проблемы. Она очищает загрязнение на большой территории вокруг себя, а также испаряет отходны. Её работа считается несовершенной из-за чрезмерно высокой интенсивности, с которой она функционирует. Таким образом, работа сопряжена с постоянным риском вызвать ряд серьёзных экологических событий, таких как: выброс токсичных отходов прямо в небо с последующим токсичными осадками, образование токсичного смога на карте мира в радиусе нескольких клеток вокруг места установки, а также постепенное ухудшение отношений с соседними фракциями. Несмотря на то, что устройство неплохо справляется со своей задачей, экологи и механиторы до сих пор спорят, стоят ли побочные эффекты таких проблем.</APM_Building_ToxicPurifier.description>
+
+</LanguageData>

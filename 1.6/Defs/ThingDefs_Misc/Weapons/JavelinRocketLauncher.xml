@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun">
+		<defName>APM_Gun_JavelinRocketLauncher</defName>
+		<label>javelin rocket launcher</label>
+		<description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs the damage profile of every creature and machine it opens up, and each rocket that finds the same one again is fused to bite deeper than the last. Structures give it nothing to read, and are hit at a flat rate.</description>
+		<techLevel>Spacer</techLevel>
+		<!-- The launcher is drawn into the javelin's own body sprite in all three facings, so the
+		     held weapon is kept invisible rather than stacking a second launcher on top of it. Same
+		     approach as APM_Gazer_Laser. The gear tab still shows a real icon via uiIconPath.
+		     TODO: uiIconPath is the dynamo's impactor art as a placeholder and wants its own icon. -->
+		<graphicData>
+			<texPath>Blank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>UI/JavelinLauncher</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2200</MarketValue>
+			<Mass>8.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>APM_WeaponJavelinRocketLauncher</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>ApexMechanoids.Verb_ShootJavelin</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>APM_Proj_JavelinMissile</defaultProjectile>
+				<warmupTime>1.9</warmupTime>
+				<range>50</range>
+				<!-- The curved flight already makes close targets unhittable; this floor stops the
+				     mech burning its cooldown on shots that physically cannot connect. At 3 deg/tick the
+				     measured floor peaks at 11.5 tiles across the reachable firing cone, so 12 covers the
+				     whole band the mech is allowed to fire into. Sections C, D and G of the guidance
+				     harness fail if that stops holding. -->
+				<minRange>12</minRange>
+				<burstShotCount>1</burstShotCount>
+				<!-- Verb_LaunchProjectile.TryCastShot bails out on a missing shoot line while this is
+				     true, which would let the cover shot pass CanHitTargetFrom and then fizzle at the
+				     end of the warmup. With it false the missile spawns at the launcher and flies the
+				     curve. Burst count is 1, so nothing else depends on it. -->
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinIndirectFire">
+				<!-- Let the launcher shoot from behind its own cover. Only ever permits shots
+				     vanilla was already refusing, and only when two things hold: the obstruction
+				     is within maxBlockerTiles of the launcher rather than terrain around the
+				     target, and the missile's curve is simulated all the way in and comes round
+				     it without touching anything solid. So a rock the mech is standing behind
+				     counts; a target inside a mountain does not, and neither does a shot whose
+				     path runs into the rock. At the current 1.5 deg/tick turn rate the flight
+				     model will rarely find a way round; raising the turn rate is what makes this
+				     actually happen. -->
+				<fireFromBehindCover>true</fireFromBehindCover>
+				<maxBlockerTiles>6</maxBlockerTiles>
+				<!-- Off by default. Turning this on refuses every shot the flight model says
+				     cannot connect, which is what minRange only approximates - see the dead-band
+				     note in _validation. It only ever removes shots, so a mis-set flight model
+				     would silence the weapon rather than waste a missile. -->
+				<skipUnreachableShots>false</skipUnreachableShots>
+				<!-- The obstacle preflight walks the simulated path a quarter tile at a time, so this
+				     needs a point per tick of lifetimeTicks or the tail of a long curve goes unchecked
+				     and a cover shot could be allowed into a wall. -->
+				<obstacleSampleMaxPoints>448</obstacleSampleMaxPoints>
+			</li>
+			<li Class="ApexMechanoids.DefModExtension_JavelinTargetPriority">
+				<!-- Vanilla scores shooting targets on distance and keeps everything within 30 points
+				     of the best, so an offset only decides a target once it clears that band. Measured
+				     against this mod's own roster: a tinker (combat power 100, sharp armour 0.30)
+				     scores 1.5 and a gazer (750, 0.96) scores 50.4, so the gazer wins outright.
+				     Section J of the guidance harness fails if that stops holding. -->
+				<neutralCombatPower>150</neutralCombatPower>
+				<scorePerCombatPower>0.06</scorePerCombatPower>
+				<maxCombatPowerScore>40</maxCombatPowerScore>
+				<minCombatPowerScore>-12</minCombatPowerScore>
+				<scorePerArmourRating>15</scorePerArmourRating>
+				<maxArmourScore>18</maxArmourScore>
+				<!-- Missiles already landed on a target are thrown away by switching to a new one, so
+				     the launcher is paid to finish what it started. Three stacks is worth more than
+				     the whole band, which is what stops it wandering off mid-sequence when line of
+				     sight breaks for a moment. -->
+				<scorePerLockStack>12</scorePerLockStack>
+				<maxLockScore>36</maxLockScore>
+				<lockHediff>APM_Hediff_JavelinMissileLock</lockHediff>
+			</li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>APM_Proj_JavelinMissile</defName>
+		<label>javelin missile</label>
+		<thingClass>ApexMechanoids.Projectile_JavelinMissile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/Rocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<!-- The warhead is detonated from the projectile's own Impact rather than by using an
+			     explosive projectile class or CompProperties_Explosive. Either of those would make
+			     the verb count as an area weapon and force a scattered aim point, which cannot
+			     coexist with a guided missile. damageAmountBase is the direct hit that carries the
+			     escalating damage; the blast is configured on the mod extension below. -->
+			<!-- Not vanilla Bomb: that fragments across 2-4 body parts above 15 damage, which is what
+			     made the mech better against light targets than armoured ones. See the def comment on
+			     APM_JavelinWarhead. -->
+			<damageDef>APM_JavelinWarhead</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>1.35</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>15</speed>
+			<flyOverhead>false</flyOverhead>
+			<explosionRadius>0.9</explosionRadius>
+			<soundExplode>Explosion_Bomb</soundExplode>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
+				<!-- 3 deg/tick at 15 tiles/s gives a turn radius of 4.77 tiles, which is what closes the
+				     gap between minRange and the range the missile can actually come back round in. -->
+				<turnDegreesPerTick>3</turnDegreesPerTick>
+				<!-- 22 ticks of straight boost, 5.5 tiles, before the seeker takes over. This is the
+				     hard floor under minRange: no turn rate brings the mech's reach below about 6.5
+				     tiles while the missile leaves the tube blind for this long. -->
+				<boostTicks>22</boostTicks>
+				<lifetimeTicks>420</lifetimeTicks>
+				<hitRadius>0.5</hitRadius>
+				<!-- Once the missile has been this close and the range opens again, its attack run
+				     is spent. Without this a missile that overflew a target during the boost phase
+				     curved round and came back for a second pass. -->
+				<terminalRadius>3</terminalRadius>
+				<damageMultiplierPerStack>0.25</damageMultiplierPerStack>
+				<maxDamageMultiplier>2.5</maxDamageMultiplier>
+				<targetStackHediff>APM_Hediff_JavelinMissileLock</targetStackHediff>
+				<!-- Splash only. The pawn actually struck takes the escalating direct hit above and
+				     is left out of the blast, so one missile is not charged twice. Set
+				     blastHitsPrimaryTarget to true if the target should take both. -->
+				<blastDamageAmount>0</blastDamageAmount>
+				<blastArmorPenetration>0</blastArmorPenetration>
+				<blastHitsPrimaryTarget>false</blastHitsPrimaryTarget>
+				<!-- The missile flies over pawns, chunks and low cover for the whole flight and is
+				     stopped only by a wall or by rock. A guided missile crosses far more occupied cells
+				     on its curved run-in than a straight shot does, so leaving it on vanilla's per-cell
+				     intercept roll meant bystanders and ground rocks soaked shots aimed at something
+				     else. Shield belts still stop it either way. -->
+				<solidObstaclesBlock>true</solidObstaclesBlock>
+				<solidObstacleArmTiles>5</solidObstacleArmTiles>
+				<!-- Dodging. A seeker turning at a fixed rate is beaten by angle, not distance: a
+				     target running away down the missile's own heading is chased down, one running
+				     into it forces a correction the missile cannot make. 50% at a head-on run for
+				     something as quick as a colonist, scaling down with move speed, nothing at all
+				     under 60 degrees. Set evasionMaxChance to 0 to make missiles unavoidable.
+				     Section L of the guidance harness covers the curve. -->
+				<evasionMaxChance>0.5</evasionMaxChance>
+				<evasionMinAngleDegrees>60</evasionMinAngleDegrees>
+				<evasionReferenceMoveSpeed>4.6</evasionReferenceMoveSpeed>
+				<!-- Draw the flight path while the launcher winds up. The missile leaves along the
+				     mech's cardinal facing before turning onto the target, so a shot at something off
+				     to the side departs sideways; without the preview that reads as a misfire. -->
+				<drawAimPreview>true</drawAimPreview>
+				<aimPreviewStrideTicks>4</aimPreviewStrideTicks>
+				<aimPreviewMaxPoints>128</aimPreviewMaxPoints>
+				<!-- Exhaust frames, suffixed 1-4. Held off until the boost phase ends, so the missile
+				     coasts out of the tube dark and lights up when the seeker takes over. -->
+				<trailTexPath>Things/Projectile/Rocket/Rocket_trail</trailTexPath>
+				<trailFrameCount>4</trailFrameCount>
+				<trailTicksPerFrame>3</trailTicksPerFrame>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

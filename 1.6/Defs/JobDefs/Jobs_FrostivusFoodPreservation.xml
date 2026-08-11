@@ -2,6 +2,21 @@
 <Defs>
 
   <JobDef>
+    <defName>APM_FrostivusTakeFoodToInventory</defName>
+    <driverClass>ApexMechanoids.JobDriver_FrostivusTakeFoodToInventory</driverClass>
+    <reportString>preserving TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_CryptoSwallow</defName>
+    <driverClass>ApexMechanoids.JobDriver_CryptoSwallow</driverClass>
+    <casualInterruptible>false</casualInterruptible>
+    <collideWithPawns>true</collideWithPawns>
+    <neverShowWeapon>true</neverShowWeapon>
+  </JobDef>
+
+  <JobDef>
     <defName>APM_FrostivusUnloadFoodToStorage</defName>
     <driverClass>ApexMechanoids.JobDriver_FrostivusUnloadFoodToStorage</driverClass>
     <reportString>unloading TargetA.</reportString>
@@ -12,6 +27,13 @@
     <defName>APM_FrostivusManualUnloadFood</defName>
     <driverClass>ApexMechanoids.JobDriver_FrostivusManualUnloadFood</driverClass>
     <reportString>unloading preserved food.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_FrostivusReleaseDevouredContents</defName>
+    <driverClass>ApexMechanoids.JobDriver_FrostivusReleaseDevouredContents</driverClass>
+    <reportString>releasing preserved creature.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 

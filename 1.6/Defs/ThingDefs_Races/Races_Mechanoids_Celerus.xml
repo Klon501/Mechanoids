@@ -99,6 +99,15 @@
 				<maxRange>15.4</maxRange>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_CelerusBlink</li>
+					<li>APM_Ability_SmokeScreen</li>
+					<li>APM_Ability_SmokeScreen_Boss</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="APM_Mech_Celerus_Base">
@@ -321,9 +330,9 @@
 			<targetParams>
 				<canTargetSelf>False</canTargetSelf>
 				<canTargetPawns>False</canTargetPawns>
-				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetBuildings>True</canTargetBuildings>
 				<canTargetAnimals>False</canTargetAnimals>
-				<canTargetItems>False</canTargetItems>
+				<canTargetItems>True</canTargetItems>
 				<canTargetLocations>True</canTargetLocations>
 				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
 			</targetParams>

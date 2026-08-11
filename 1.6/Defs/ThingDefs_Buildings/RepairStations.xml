@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
 	<ThingDef Name="APM_RepairStationBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>ApexMechanoids.Building_RepairStation</thingClass>
 		<tickerType>Normal</tickerType>
 		<containedPawnsSelectable>true</containedPawnsSelectable>
 		<designationCategory>Biotech</designationCategory>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData />
+		<graphicData/>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<rotatable>true</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -16,101 +18,104 @@
 		</statBases>
 		<hasInteractionCell>true</hasInteractionCell>
 		<comps>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 	</ThingDef>
+	
 	<ThingDef ParentName="APM_RepairStationBase">
-  <defName>APM_RepairStation_Small</defName>
-  <label>repair station</label>
-  <description>A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs.</description>
-  <uiIconPath>Things/Building/SmallRepairStation/SmallRepairStationMenu</uiIconPath>
-  <graphicData>
-    <texPath>Things/Building/SmallRepairStation/SmallRepairStation_Base</texPath>
-    <graphicClass>Graphic_Multi</graphicClass>
-    <drawSize>(4,4)</drawSize>
-    <shadowData>
-      <volume>(1.8, 1.0, 1.8)</volume>
-    </shadowData>
-  </graphicData>
-  <defaultPlacingRot>South</defaultPlacingRot>
-  <size>(3,2)</size>
-  <interactionCellOffset>(0,0,2)</interactionCellOffset>
-  <statBases>
-    <MaxHitPoints>300</MaxHitPoints>
-    <WorkToBuild>15000</WorkToBuild>
-    <Mass>100</Mass>
-  </statBases>
-  <costList>
-    <Steel>200</Steel>
-    <ComponentIndustrial>6</ComponentIndustrial>
-    <Plasteel>50</Plasteel>
-  </costList>
-  <comps>
-    <li Class="CompProperties_Power">
-      <compClass>CompPowerTrader</compClass>
-      <basePowerConsumption>50</basePowerConsumption>
-    </li>
-    <li Class="ApexMechanoids.CompProperties_RepairStation">
-      <maxMechBodySize>2</maxMechBodySize>
-      <healHpPerSecond>0.5</healHpPerSecond>
-      <activePowerConsumption>500</activePowerConsumption>
-      <mechPositionOffsetNorth>(0.000,0.000,0.445)</mechPositionOffsetNorth>
-      <mechPositionOffsetEast>(0.276,0.000,0.120)</mechPositionOffsetEast>
-      <mechPositionOffsetSouth>(0.000,0.000,-0.271)</mechPositionOffsetSouth>
-      <mechPositionOffsetWest>(-0.401,0.000,0.146)</mechPositionOffsetWest>
-      <heldPawnBodyAngleNorth>0</heldPawnBodyAngleNorth>
-      <heldPawnBodyAngleEast>0</heldPawnBodyAngleEast>
-      <heldPawnBodyAngleSouth>0</heldPawnBodyAngleSouth>
-      <heldPawnBodyAngleWest>0</heldPawnBodyAngleWest>
-      <armsAnimation>
-        <extendTicks>60</extendTicks>
-        <retractTicks>60</retractTicks>
-		  <arms>
-			  <li>
-				  <graphicData>
-					  <texPath>Things/Building/SmallRepairStation/ArmL</texPath>
-					  <graphicClass>Verse.Graphic_Multi</graphicClass>
-					  <drawSize>(1.250,1.250)</drawSize>
-				  </graphicData>
-				  <maxReach>0.275</maxReach>
-				  <drawOffsetNorth>(-0.534,0.000,0.565)</drawOffsetNorth>
-				  <drawOffsetEast>(0.267,0.000,0.738)</drawOffsetEast>
-				  <drawOffsetSouth>(0.570,0.000,0.118)</drawOffsetSouth>
-				  <drawOffsetWest>(-0.262,0.000,0.918)</drawOffsetWest>
-				  <randomInterval>45~120</randomInterval>
-				  <randomReach>0.040~0.140</randomReach>
-				  <randomVerticalReach>0.080~0.200</randomVerticalReach>
-			  </li>
-			  <li>
-				  <graphicData>
-					  <texPath>Things/Building/SmallRepairStation/ArmR</texPath>
-					  <graphicClass>Verse.Graphic_Multi</graphicClass>
-					  <drawSize>(1.250,1.250)</drawSize>
-				  </graphicData>
-				  <maxReach>0.275</maxReach>
-				  <drawOffsetNorth>(0.448,0.000,0.501)</drawOffsetNorth>
-				  <drawOffsetEast>(0.253,0.000,-0.426)</drawOffsetEast>
-				  <drawOffsetSouth>(-0.594,-0.008,-0.036)</drawOffsetSouth>
-				  <drawOffsetWest>(-0.253,0.000,-0.648)</drawOffsetWest>
-				  <randomInterval>45~120</randomInterval>
-				  <randomReach>0.040~0.140</randomReach>
-				  <randomVerticalReach>0.080~0.200</randomVerticalReach>
-			  </li>
-		  </arms>
+		<defName>APM_RepairStation_Small</defName>
+		<label>repair station</label>
+		<description>A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs.</description>
+		<uiIconPath>Things/Building/SmallRepairStation/SmallRepairStationMenu</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/SmallRepairStation/SmallRepairStation_Base</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(1.8, 1.0, 1.8)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,2)</size>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>15000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Plasteel>50</Plasteel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="ApexMechanoids.CompProperties_RepairStation">
+				<maxMechBodySize>2</maxMechBodySize>
+				<healHpPerSecond>0.5</healHpPerSecond>
+				<activePowerConsumption>500</activePowerConsumption>
+				<mechPositionOffsetNorth>(0.000,0.000,0.445)</mechPositionOffsetNorth>
+				<mechPositionOffsetEast>(0.276,0.000,0.120)</mechPositionOffsetEast>
+				<mechPositionOffsetSouth>(0.000,0.000,-0.271)</mechPositionOffsetSouth>
+				<mechPositionOffsetWest>(-0.401,0.000,0.146)</mechPositionOffsetWest>
+				<heldPawnBodyAngleNorth>0</heldPawnBodyAngleNorth>
+				<heldPawnBodyAngleEast>0</heldPawnBodyAngleEast>
+				<heldPawnBodyAngleSouth>0</heldPawnBodyAngleSouth>
+				<heldPawnBodyAngleWest>0</heldPawnBodyAngleWest>
+				<armsAnimation>
+					<extendTicks>60</extendTicks>
+					<retractTicks>60</retractTicks>
+					<arms>
+						<li>
+							<graphicData>
+								<texPath>Things/Building/SmallRepairStation/ArmL</texPath>
+								<graphicClass>Verse.Graphic_Multi</graphicClass>
+								<drawSize>(1.250,1.250)</drawSize>
+							</graphicData>
+							<maxReach>0.275</maxReach>
+							<drawOffsetNorth>(-0.534,0.000,0.565)</drawOffsetNorth>
+							<drawOffsetEast>(0.267,0.000,0.738)</drawOffsetEast>
+							<drawOffsetSouth>(0.570,0.000,0.118)</drawOffsetSouth>
+							<drawOffsetWest>(-0.262,0.000,0.918)</drawOffsetWest>
+							<randomInterval>45~120</randomInterval>
+							<randomReach>0.040~0.140</randomReach>
+							<randomVerticalReach>0.080~0.200</randomVerticalReach>
+						</li>
+						<li>
+							<graphicData>
+								<texPath>Things/Building/SmallRepairStation/ArmR</texPath>
+								<graphicClass>Verse.Graphic_Multi</graphicClass>
+								<drawSize>(1.250,1.250)</drawSize>
+							</graphicData>
+							<maxReach>0.275</maxReach>
+							<drawOffsetNorth>(0.448,0.000,0.501)</drawOffsetNorth>
+							<drawOffsetEast>(0.253,0.000,-0.426)</drawOffsetEast>
+							<drawOffsetSouth>(-0.594,-0.008,-0.036)</drawOffsetSouth>
+							<drawOffsetWest>(-0.253,0.000,-0.648)</drawOffsetWest>
+							<randomInterval>45~120</randomInterval>
+							<randomReach>0.040~0.140</randomReach>
+							<randomVerticalReach>0.080~0.200</randomVerticalReach>
+						</li>
+					</arms>
 
 
-	  </armsAnimation>
-      <topGraphic>
-        <texPath>Things/Building/SmallRepairStation/SmallRepairStation_Top</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(4,4)</drawSize>
-      </topGraphic>
-    </li>
-  </comps>
-  <researchPrerequisites>
-    <li>AdvancedMechtech</li>
-  </researchPrerequisites>
-</ThingDef>
+				</armsAnimation>
+				<topGraphic>
+					<texPath>Things/Building/SmallRepairStation/SmallRepairStation_Top</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(4,4)</drawSize>
+				</topGraphic>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>AdvancedMechtech</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="APM_RepairStationBase">
 		<defName>APM_RepairStation_Advanced</defName>
 		<label>advanced repair station</label>
@@ -119,14 +124,14 @@
 		<graphicData>
 			<texPath>Things/Building/BigRepairStation/BigRepairStation_Base</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5.3,5.3)</drawSize>
+			<drawSize>(3.98,3.98)</drawSize>
 			<drawOffset>(0, 0, 0.5)</drawOffset>
 			<shadowData>
-				<volume>(2.8, 1.0, 2.8)</volume>
+				<volume>(2.84, 1.0, 2.84)</volume>
 			</shadowData>
 		</graphicData>
-		<size>(4,4)</size>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<size>(3,3)</size>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>25000</WorkToBuild>
@@ -139,6 +144,8 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>100</basePowerConsumption>
@@ -147,7 +154,7 @@
 				<maxMechBodySize>999</maxMechBodySize>
 				<minMechBodySize>2</minMechBodySize>
 				<healHpPerSecond>0.8</healHpPerSecond>
-				<activePowerConsumption>1500</activePowerConsumption>
+				<activePowerConsumption>1000</activePowerConsumption>
 				<heldPawnBodyAngleNorth>0</heldPawnBodyAngleNorth>
 				<heldPawnBodyAngleEast>0</heldPawnBodyAngleEast>
 				<heldPawnBodyAngleSouth>0</heldPawnBodyAngleSouth>
@@ -160,14 +167,14 @@
 					<graphicData>
 						<texPath>Things/Building/BigRepairStation/BigRepairStation_Moving</texPath>
 						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>(5.3,5.3)</drawSize>
+						<drawSize>(3.98,3.98)</drawSize>
 						<drawOffset>(0, 0, 0.5)</drawOffset>
 					</graphicData>
 				</platformAnimation>
 				<topGraphic>
 					<texPath>Things/Building/BigRepairStation/BigRepairStation_Top</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(5.3,5.3)</drawSize>
+					<drawSize>(3.98,3.98)</drawSize>
 					<drawOffset>(0, 0, 0.5)</drawOffset>
 				</topGraphic>
 			</li>
@@ -176,4 +183,5 @@
 			<li>ApexMechtech</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
 </Defs>

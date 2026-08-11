@@ -28,4 +28,11 @@
 			</li>
 		</modExtensions>
 	</DamageDef>
+
+	<DamageDef ParentName="CutBase">
+		<defName>APM_Whip</defName>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+	
 </Defs>

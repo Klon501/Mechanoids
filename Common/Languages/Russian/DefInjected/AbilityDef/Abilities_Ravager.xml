@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: starfall -->
+  <APM_Starfall.label>звездопад</APM_Starfall.label>
+  <!-- EN: Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight. -->
+  <APM_Starfall.description>Разоритель перегружает своё орудие и выпускает один тяжёлый снаряд, который в полёте распадается на три меньших энергетических снаряда.</APM_Starfall.description>
+
+</LanguageData>

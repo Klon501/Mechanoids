@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>Механик</APM_TinkerRepair.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>ремонтируя здания и мехов</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.description>Ремонт зданий и механоидов своей фракции.</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>Ремонтировать</APM_TinkerRepair.verb>
+
+</LanguageData>

@@ -79,6 +79,13 @@
 				<range>0</range>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_UltimateSacrifice</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
+		</modExtensions>
 		<butcherProducts>
 			<Steel>20</Steel>
 			<Plasteel>5</Plasteel>

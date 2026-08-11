@@ -81,6 +81,11 @@
 		</race>
 		<modExtensions>
 			<li Class="ApexMechanoids.GestatorExtension" />
+			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
+				<disabledAutoUseAbilitiesWhenSearchAndDestroy>
+					<li>APM_Ability_SteelDiscipline</li>
+				</disabledAutoUseAbilitiesWhenSearchAndDestroy>
+			</li>
 		</modExtensions>
 		<butcherProducts>
 			<Steel>20</Steel>
