@@ -53,7 +53,7 @@
 				     curve. Burst count is 1, so nothing else depends on it. -->
 				<stopBurstWithoutLos>false</stopBurstWithoutLos>
 				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<soundCast>Jvln_Launch</soundCast>
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -146,8 +146,8 @@
 			<speed>15</speed>
 			<flyOverhead>false</flyOverhead>
 			<explosionRadius>0.9</explosionRadius>
-			<soundExplode>Explosion_Bomb</soundExplode>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<soundExplode>Jvln_Missile_Explode</soundExplode>
+			<soundAmbient>Jvln_Missile_Ambient</soundAmbient>
 		</projectile>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
