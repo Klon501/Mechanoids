@@ -71,6 +71,41 @@ namespace ApexMechanoids
     }
 
     /// <summary>
+    /// The warhead half of a rocket, split out so the launcher's other rockets can inherit the
+    /// whole flight model - turn rate, boost, evasion, aim preview, trail, obstacle rules - from the
+    /// basic rocket's def and state only what their own warhead does differently.
+    ///
+    /// Present on a def, this replaces the warhead fields on
+    /// <see cref="DefModExtension_JavelinMissile"/> outright rather than merging with them, so a
+    /// variant rocket is read in one place. Absent, those fields are used as before, which is what
+    /// leaves the basic rocket's def untouched.
+    /// </summary>
+    public class DefModExtension_JavelinWarhead : DefModExtension
+    {
+        // Off by default: the escalating single-target damage is what makes the basic rocket the
+        // tank killer, and handing it to the area warheads as well would leave no reason to load
+        // anything else.
+        public bool escalatingDamage;
+
+        public float damageMultiplierPerStack = 0.25f;
+        public float maxDamageMultiplier = 2.5f;
+        public HediffDef targetStackHediff;
+
+        // Falls back to the projectile's own damage def when null.
+        public DamageDef blastDamageDef;
+        public int blastDamageAmount;
+        public float blastArmorPenetration;
+
+        // On for the area warheads: the whole point of an HE or incendiary rocket is that the thing
+        // it struck is standing in the middle of the blast.
+        public bool blastHitsPrimaryTarget = true;
+
+        // Passed through to the explosion, for the warhead whose job is to set the ground alight
+        // rather than to blow a hole in something.
+        public float chanceToStartFire;
+    }
+
+    /// <summary>
     /// A homing missile that leaves the launcher along the mech's cardinal facing, holds that
     /// heading through a short boost phase, then steers onto the target at a capped turn rate.
     /// Steering rewrites the base projectile's origin, destination and ticksToImpact each tick so
@@ -117,6 +152,10 @@ namespace ApexMechanoids
         private bool evaded;
 
         private DefModExtension_JavelinMissile Props => def.GetModExtension<DefModExtension_JavelinMissile>();
+
+        // Null on the basic rocket, which keeps its warhead on the flight extension as it always
+        // has. The variant rockets inherit that extension from it and add one of these.
+        private DefModExtension_JavelinWarhead Warhead => def.GetModExtension<DefModExtension_JavelinWarhead>();
 
         private JavelinFlightParams FlightParams
         {
@@ -423,14 +462,20 @@ namespace ApexMechanoids
         private void TryDetonate(Map map, IntVec3 cell, Thing hitThing)
         {
             DefModExtension_JavelinMissile props = Props;
+            DefModExtension_JavelinWarhead warhead = Warhead;
             float radius = def.projectile.explosionRadius;
             if (map == null || props == null || radius <= 0f || !cell.InBounds(map))
             {
                 return;
             }
 
+            DamageDef blastDamageDef = warhead != null ? warhead.blastDamageDef : props.blastDamageDef;
+            int blastDamageAmount = warhead != null ? warhead.blastDamageAmount : props.blastDamageAmount;
+            float blastArmorPenetration = warhead != null ? warhead.blastArmorPenetration : props.blastArmorPenetration;
+            bool blastHitsPrimaryTarget = warhead != null ? warhead.blastHitsPrimaryTarget : props.blastHitsPrimaryTarget;
+
             List<Thing> ignoredThings = null;
-            if (!props.blastHitsPrimaryTarget && hitThing != null)
+            if (!blastHitsPrimaryTarget && hitThing != null)
             {
                 ignoredThings = new List<Thing> { hitThing };
             }
@@ -439,14 +484,15 @@ namespace ApexMechanoids
                 cell,
                 map,
                 radius,
-                props.blastDamageDef ?? def.projectile.damageDef,
+                blastDamageDef ?? def.projectile.damageDef,
                 launcher,
-                props.blastDamageAmount,
-                props.blastArmorPenetration,
+                blastDamageAmount,
+                blastArmorPenetration,
                 def.projectile.soundExplode,
                 equipmentDef,
                 def,
                 intendedTarget.Thing,
+                chanceToStartFire: warhead?.chanceToStartFire ?? 0f,
                 damageFalloff: true,
                 ignoredThings: ignoredThings);
         }
@@ -456,10 +502,25 @@ namespace ApexMechanoids
         private float ResolveAndAdvanceStack(Thing hitThing)
         {
             DefModExtension_JavelinMissile props = Props;
-            if (props?.targetStackHediff == null)
+            DefModExtension_JavelinWarhead warhead = Warhead;
+            if (props == null)
             {
                 return 1f;
             }
+
+            // A variant rocket only escalates if its own warhead says so, which none of the area
+            // warheads do - they inherit the basic rocket's stack settings and would otherwise pick
+            // up its escalation along with them.
+            HediffDef stackHediff = warhead != null
+                ? (warhead.escalatingDamage ? warhead.targetStackHediff : null)
+                : props.targetStackHediff;
+            if (stackHediff == null)
+            {
+                return 1f;
+            }
+
+            float perStack = warhead != null ? warhead.damageMultiplierPerStack : props.damageMultiplierPerStack;
+            float maxMultiplier = warhead != null ? warhead.maxDamageMultiplier : props.maxDamageMultiplier;
 
             Pawn target = (hitThing ?? intendedTarget.Thing) as Pawn;
             if (target == null || target.Dead || target.health == null)
@@ -467,17 +528,17 @@ namespace ApexMechanoids
                 return 1f;
             }
 
-            Hediff_JavelinMissileLock hediff = target.health.hediffSet.GetFirstHediffOfDef(props.targetStackHediff) as Hediff_JavelinMissileLock;
+            Hediff_JavelinMissileLock hediff = target.health.hediffSet.GetFirstHediffOfDef(stackHediff) as Hediff_JavelinMissileLock;
             if (hediff == null)
             {
                 // First missile to land on this target. The new hediff is created already holding
                 // this hit, so it must not be registered again here.
-                hediff = (Hediff_JavelinMissileLock)HediffMaker.MakeHediff(props.targetStackHediff, target);
+                hediff = (Hediff_JavelinMissileLock)HediffMaker.MakeHediff(stackHediff, target);
                 target.health.AddHediff(hediff);
-                return JavelinMissileGuidance.DamageMultiplier(0, props.damageMultiplierPerStack, props.maxDamageMultiplier);
+                return JavelinMissileGuidance.DamageMultiplier(0, perStack, maxMultiplier);
             }
 
-            float multiplier = JavelinMissileGuidance.DamageMultiplier(hediff.Stacks, props.damageMultiplierPerStack, props.maxDamageMultiplier);
+            float multiplier = JavelinMissileGuidance.DamageMultiplier(hediff.Stacks, perStack, maxMultiplier);
             hediff.RegisterHit();
             return multiplier;
         }
