@@ -32,6 +32,10 @@
           <nearMapCenter>True</nearMapCenter>
           <chooseFrom>
             <li>APM_MechanitorDomain1</li>
+            <li>APM_MechanitorDomain2</li>
+            <li>APM_MechanitorDomain3</li>
+            <li>APM_MechanitorDomain4</li>
+            <li>APM_MechanitorDomain5</li>
           </chooseFrom>
         </li>
         <li Class="ApexMechanoids.ScenPart_SpawnScenarioCorpses">

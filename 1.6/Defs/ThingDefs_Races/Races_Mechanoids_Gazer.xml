@@ -93,7 +93,7 @@
       </li>
       <li Class="ApexMechanoids.CompProperties_GazerLaserController">
         <autoLaserEnabledDefault>true</autoLaserEnabledDefault>
-        <autoLaserGizmoIconPath>UI/Gazer/AutoLaser</autoLaserGizmoIconPath>
+        <autoLaserGizmoIconPath>UI/AutoLaser</autoLaserGizmoIconPath>
       </li>
     </comps>
     <modExtensions>
