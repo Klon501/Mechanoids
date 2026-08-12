@@ -42,7 +42,15 @@ namespace ApexMechanoids
         /// A scaled container cannot pick its occupant at make time: the roll needs the colony it is
         /// about to land next to, and mech cluster buildings are made well before they are spawned.
         /// </summary>
-        public bool ScalesWithPlayerStrength => Props.maxCombatPowerByThreatPoints != null;
+        public bool ScalesWithPlayerStrength =>
+            Props.maxCombatPowerByThreatPoints != null || Props.minCombatPowerByThreatPoints != null;
+
+        /// <summary>
+        /// True for a container the colony put down itself, which is the one case that must not come
+        /// with an occupant. Reinstalling a found one lands here too, but by then it already has its
+        /// mech and the stocking pass has nothing left to do.
+        /// </summary>
+        private bool PlayerBuilt => parent.Faction != null && parent.Faction.IsPlayer;
 
         public override void PostPostMake()
         {
@@ -57,10 +65,16 @@ namespace ApexMechanoids
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (!respawningAfterLoad && ScalesWithPlayerStrength && mechKind == null && !isEmpty)
+            if (respawningAfterLoad || !ScalesWithPlayerStrength || mechKind != null || isEmpty)
             {
-                ChangeMechKindToSpawn();
+                return;
             }
+            if (Props.stockOnlyWhenNotPlayerBuilt && PlayerBuilt)
+            {
+                IsEmpty = true;
+                return;
+            }
+            ChangeMechKindToSpawn();
         }
 
         public override bool DontDrawParent()
@@ -87,6 +101,7 @@ namespace ApexMechanoids
                 Pawn mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
                 GenSpawn.Spawn(mech, loc, parent.Map);
                 mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                mechKind = null;
                 IsEmpty = true;
             }
         }
@@ -112,33 +127,107 @@ namespace ApexMechanoids
         }
 
         /// <summary>
-        /// The option list with anything the colony is not yet strong enough to be handed filtered out.
-        /// If the colony is below even the weakest option the container still holds something: it drops
-        /// to the cheapest kinds rather than opening empty.
+        /// The option list narrowed to the band of combat power this colony has earned. The cap keeps a
+        /// young colony from walking away with a centipede; the floor keeps a rich one from opening a
+        /// rare container onto a militor, which the cap alone cannot do because the cheap kinds carry
+        /// the heaviest weights and never leave the pool.
+        ///
+        /// The band is a preference, not a promise. If nothing sits inside it the container still holds
+        /// something: whatever is closest to the band rather than nothing at all.
         /// </summary>
         protected List<PawnKindDefWeight> AllowedMechKindOptions()
         {
-            List<PawnKindDefWeight> options = Props.mechKindOptions
-                .Where((PawnKindDefWeight x) => x?.kindDef != null)
-                .ToList();
+            List<PawnKindDefWeight> options = CandidateMechKinds();
 
             if (!ScalesWithPlayerStrength || options.Count == 0)
             {
                 return options;
             }
 
-            float cap = Props.maxCombatPowerByThreatPoints.Evaluate(PlayerStrengthPoints());
-            List<PawnKindDefWeight> withinCap = options
-                .Where((PawnKindDefWeight x) => x.kindDef.combatPower <= cap)
+            float points = PlayerStrengthPoints();
+            float cap = Props.maxCombatPowerByThreatPoints?.Evaluate(points) ?? float.MaxValue;
+            float floor = Props.minCombatPowerByThreatPoints?.Evaluate(points) ?? 0f;
+
+            List<float> combatPowers = options.Select((PawnKindDefWeight x) => x.kindDef.combatPower).ToList();
+            return MechContainerStockRules.IndicesWithinBand(combatPowers, floor, cap)
+                .Select((int i) => options[i])
                 .ToList();
-            if (withinCap.Count > 0)
+        }
+
+        /// <summary>
+        /// Everything this container could hold before the colony's strength is taken into account: the
+        /// curated list, plus whatever <c>autoIncludeControllableMechs</c> sweeps up.
+        /// </summary>
+        private List<PawnKindDefWeight> CandidateMechKinds()
+        {
+            List<PawnKindDefWeight> options = Props.mechKindOptions
+                .Where((PawnKindDefWeight x) => x?.kindDef != null && !Excluded(x.kindDef))
+                .ToList();
+
+            if (!Props.autoIncludeControllableMechs)
             {
-                return withinCap;
+                return options;
             }
 
-            float weakest = options.Min((PawnKindDefWeight x) => x.kindDef.combatPower);
-            return options.Where((PawnKindDefWeight x) => x.kindDef.combatPower <= weakest).ToList();
+            HashSet<PawnKindDef> curated = new HashSet<PawnKindDef>(options.Select((PawnKindDefWeight x) => x.kindDef));
+            foreach (PawnKindDef kindDef in ControllableMechKinds())
+            {
+                if (curated.Contains(kindDef) || Excluded(kindDef))
+                {
+                    continue;
+                }
+                options.Add(new PawnKindDefWeight
+                {
+                    kindDef = kindDef,
+                    weight = Props.autoIncludeWeight
+                });
+            }
+            return options;
         }
+
+        private bool Excluded(PawnKindDef kindDef)
+        {
+            return Props.excludedMechKinds.Contains(kindDef) || BossKinds.Contains(kindDef);
+        }
+
+        /// <summary>
+        /// Every mech a colony could have built for itself, from any mod. A gestator recipe is the test
+        /// rather than the overseer comp: every mechanoid inherits that comp from the vanilla base, so
+        /// it would sweep up escorts and set pieces that were never meant to leave their group, while a
+        /// recipe is somebody deciding on purpose that a player may own one. Our own Satellite is the
+        /// case in point, and it drops out here without needing to be named.
+        ///
+        /// Built once. Def lists do not change after startup, and this runs inside cluster generation.
+        /// </summary>
+        private static IEnumerable<PawnKindDef> ControllableMechKinds()
+        {
+            if (cachedControllableMechKinds != null)
+            {
+                return cachedControllableMechKinds;
+            }
+
+            HashSet<ThingDef> gestatable = new HashSet<ThingDef>(MechanitorUtility.MechRecipes
+                .Select((RecipeDef recipe) => recipe.ProducedThingDef)
+                .Where((ThingDef def) => def != null));
+
+            return cachedControllableMechKinds = DefDatabase<PawnKindDef>.AllDefsListForReading
+                .Where((PawnKindDef kindDef) => kindDef.race != null
+                    && kindDef.RaceProps.IsMechanoid
+                    && kindDef.combatPower > 0f
+                    && gestatable.Contains(kindDef.race)
+                    && kindDef.race.HasComp(typeof(CompOverseerSubject)))
+                .ToList();
+        }
+
+        /// <summary>The bossgroup bosses of every mod, which are nobody's prize for opening a crate.</summary>
+        private static HashSet<PawnKindDef> BossKinds =>
+            cachedBossKinds ?? (cachedBossKinds = new HashSet<PawnKindDef>(DefDatabase<BossDef>.AllDefsListForReading
+                .Select((BossDef boss) => boss.kindDef)
+                .Where((PawnKindDef kindDef) => kindDef != null)));
+
+        private static List<PawnKindDef> cachedControllableMechKinds;
+
+        private static HashSet<PawnKindDef> cachedBossKinds;
 
         /// <summary>
         /// Threat points are the game's own read on how strong the colony is, so they are what the
@@ -226,22 +315,15 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref kindDefName, "kindDefName", "");
             if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
-                if (kindDefName.NullOrEmpty())
+                bool wasEmpty = isEmpty;
+                mechKind = kindDefName.NullOrEmpty()
+                    ? null
+                    : DefDatabase<PawnKindDef>.GetNamed(kindDefName, false);
+                if (MechContainerStockRules.Resolve(wasEmpty, mechKind != null) == LoadedOccupancy.Reroll)
                 {
                     ChangeMechKindToSpawn();
                 }
-                else
-                {
-                    PawnKindDef kindDef = DefDatabase<PawnKindDef>.GetNamed(kindDefName, false);
-                    if (kindDef == null)
-                    {
-                        ChangeMechKindToSpawn();
-                    }
-                    else
-                    {
-                        ChangeMechKindToSpawn(kindDef);
-                    }
-                }
+                isEmpty = wasEmpty;
             }
         }
 
@@ -255,6 +337,13 @@ namespace ApexMechanoids
             return base.CompInspectStringExtra();
         }
 
+        /// <summary>
+        /// What a sealed container gives away about its occupant. A mech the colony walked in there
+        /// itself is named; one that was already inside when the container was found is not, because
+        /// reading the label off a crate nobody has opened is the whole tension of opening it.
+        /// </summary>
+        protected string ContentsLine => "APM.MechanoidContainer.ContainsUnknown".Translate();
+
         public override string CompInspectStringExtra()
         {
             string iString = "\n";
@@ -264,7 +353,7 @@ namespace ApexMechanoids
             }
             else
             {
-                iString = "CasketContains".Translate() + $" {mechKind.label}" + iString;
+                iString = ContentsLine + iString;
             }
             return iString + BaseCompInspectStringExtra();
         }
