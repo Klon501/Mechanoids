@@ -29,6 +29,12 @@ namespace ApexMechanoids
         // mech's MechEnergyLossPerHP stat. Higher = shields cost more to repair.
         public float repairEnergyCostMultiplier = 3f;
 
+        // What a shield tool hits for once its shield is gone, as a fraction of full power. Vanilla
+        // will not go below 0.4 for a tool flagged ensureLinkedBodyPartsGroupAlwaysUsable, which these
+        // are; this replaces that floor. Zero would take the verb out of the melee list entirely, so
+        // keep it above it.
+        public float destroyedShieldDamageFactor = 0.15f;
+
         public CompProperties_Aegis()
         {
             compClass = typeof(CompAegis);
