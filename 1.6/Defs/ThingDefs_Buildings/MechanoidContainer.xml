@@ -135,6 +135,7 @@
 					Anything else a mechanitor could have gestated for itself, ours or another mod's,
 					joins the roll at a flat weight. The list above stays the curated core.
 				-->
+				<!-- Fighting mechs only. The work drones gestate the same way and are not a prize. -->
 				<autoIncludeControllableMechs>true</autoIncludeControllableMechs>
 				<autoIncludeWeight>2</autoIncludeWeight>
 				<!--
@@ -389,6 +390,7 @@
 					<Mech_CentipedeGunner>2</Mech_CentipedeGunner>
 					<APM_Mech_Aegis>2</APM_Mech_Aegis>
 				</mechKindOptions>
+				<!-- Fighting mechs only. The work drones gestate the same way and are not a prize. -->
 				<autoIncludeControllableMechs>true</autoIncludeControllableMechs>
 				<autoIncludeWeight>2</autoIncludeWeight>
 				<excludedMechKinds>

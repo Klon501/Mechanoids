@@ -179,11 +179,15 @@ namespace ApexMechanoids
         }
 
         /// <summary>
-        /// Every mech a colony could have built for itself, from any mod. A gestator recipe is the test
-        /// rather than the overseer comp: every mechanoid inherits that comp from the vanilla base, so
-        /// it would sweep up escorts and set pieces that were never meant to leave their group, while a
-        /// recipe is somebody deciding on purpose that a player may own one. Our own Satellite is the
-        /// case in point, and it drops out here without needing to be named.
+        /// Every fighting mech a colony could have built for itself, from any mod. A gestator recipe is
+        /// the test rather than the overseer comp: every mechanoid inherits that comp from the vanilla
+        /// base, so it would sweep up escorts and set pieces that were never meant to leave their
+        /// group, while a recipe is somebody deciding on purpose that a player may own one. Our own
+        /// Satellite is the case in point, and it drops out here without needing to be named.
+        ///
+        /// isFighter is the other half of it. Without it the roll picks up the work drones, and a rare
+        /// container that has stood sealed since the archotech wars opening onto a cleansweeper is not
+        /// the moment anyone is going for.
         ///
         /// Built once. Def lists do not change after startup, and this runs inside cluster generation.
         /// </summary>
@@ -201,6 +205,7 @@ namespace ApexMechanoids
             return cachedControllableMechKinds = DefDatabase<PawnKindDef>.AllDefsListForReading
                 .Where((PawnKindDef kindDef) => kindDef.race != null
                     && kindDef.RaceProps.IsMechanoid
+                    && kindDef.isFighter
                     && kindDef.combatPower > 0f
                     && gestatable.Contains(kindDef.race)
                     && kindDef.race.HasComp(typeof(CompOverseerSubject)))
