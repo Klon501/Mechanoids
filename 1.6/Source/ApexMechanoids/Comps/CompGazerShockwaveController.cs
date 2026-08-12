@@ -8,7 +8,7 @@ namespace ApexMechanoids
     {
         public AbilityDef shockwaveAbilityDef;
         public int checkIntervalTicks = 30;
-        public float meleeThreatRadius = 2.9f;
+        public float meleeThreatRadius = 4f;
         public int minHostilesToTrigger = 2;
 
         public CompProperties_GazerShockwaveController()
@@ -34,7 +34,7 @@ namespace ApexMechanoids
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed)
+            if (pawn == null || !pawn.Spawned || pawn.Map == null || pawn.Dead || pawn.Downed || !pawn.Awake())
             {
                 return;
             }
@@ -67,7 +67,13 @@ namespace ApexMechanoids
                 return;
             }
 
-            ability.QueueCastingJob(pawn, pawn);
+            LocalTargetInfo selfTarget = pawn;
+            if (!ability.AICanTargetNow(selfTarget) || !ability.CanApplyOn(selfTarget))
+            {
+                return;
+            }
+
+            ability.QueueCastingJob(selfTarget, selfTarget);
         }
 
         private void EnsureAbility()
@@ -86,39 +92,7 @@ namespace ApexMechanoids
 
         private bool ShouldAutoCast(Pawn pawn)
         {
-            if (pawn.MapHeld == null)
-            {
-                return false;
-            }
-
-            int nearbyHostiles = 0;
-            IReadOnlyList<Pawn> pawns = pawn.MapHeld.mapPawns.AllPawnsSpawned;
-            for (int i = 0; i < pawns.Count; i++)
-            {
-                Pawn other = pawns[i];
-                if (other == null || other == pawn || other.Dead || other.Downed || !other.Spawned)
-                {
-                    continue;
-                }
-
-                if (!other.HostileTo(pawn))
-                {
-                    continue;
-                }
-
-                if (other.Position.DistanceTo(pawn.PositionHeld) > Props.meleeThreatRadius)
-                {
-                    continue;
-                }
-
-                nearbyHostiles++;
-                if (nearbyHostiles >= Props.minHostilesToTrigger)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return ShockwaveAIUtility.HasRequiredHostilesNear(pawn, Props.meleeThreatRadius, Props.minHostilesToTrigger);
         }
     }
 }

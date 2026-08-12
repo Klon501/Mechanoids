@@ -21,12 +21,21 @@
                     <def>VFEC_PlayerPawnsArriveMethodEdge</def>
                     <location>(120, 0, 100)</location>
                 </li>
+        <!-- Must stay above the structure part: Scenario.PostMapGenerate walks the parts in
+             declaration order, and this one has to make the ground good before KCSG builds on it. -->
+        <li Class="ApexMechanoids.ScenPart_PrepareStructureSite">
+          <def>APM_PrepareStructureSite</def>
+        </li>
         <li Class="KCSG.ScenPart_AddStartingStructure">
           <def>VFEC_AddStartingStructure</def>
           <structureLabel>An ancient mechanitor domain</structureLabel>
           <nearMapCenter>True</nearMapCenter>
           <chooseFrom>
             <li>APM_MechanitorDomain1</li>
+            <li>APM_MechanitorDomain2</li>
+            <li>APM_MechanitorDomain3</li>
+            <li>APM_MechanitorDomain4</li>
+            <li>APM_MechanitorDomain5</li>
           </chooseFrom>
         </li>
         <li Class="ApexMechanoids.ScenPart_SpawnScenarioCorpses">

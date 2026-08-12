@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APM_Gazer_AutoLaser_Label>Автолазер</APM_Gazer_AutoLaser_Label>
+	<APM_Gazer_AutoLaser_Desc>Разрешить этому соглядатаю автоматически стрелять обычным лазером и способностью "Солнечный луч" под управлением игрока. Ручные приказы атаки всё равно выполняют один выстрел по выбранной цели.</APM_Gazer_AutoLaser_Desc>
+	<APM_Gazer_Inspect_AutoLaserDisabled>Автолазер: отключён.</APM_Gazer_Inspect_AutoLaserDisabled>
+
+</LanguageData>

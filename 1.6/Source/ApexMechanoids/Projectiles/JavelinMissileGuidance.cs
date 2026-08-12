@@ -151,6 +151,61 @@ namespace ApexMechanoids
             return Distance(state.x, state.z, targetX, targetZ) <= flightParams.hitRadius;
         }
 
+        /// <summary>
+        /// Flies the whole shot without a map and writes the path into the caller's buffers, so the
+        /// aim preview can draw the exact trajectory the missile will take instead of a second guess
+        /// at it. Returns the number of points written; the last one is always where the flight ends,
+        /// whether that is the target or wherever the motor burned out.
+        /// </summary>
+        public static int SamplePath(JavelinFlightState state, float targetX, float targetZ, JavelinFlightParams flightParams, int strideTicks, float[] xs, float[] zs)
+        {
+            if (xs == null || zs == null)
+            {
+                return 0;
+            }
+
+            int capacity = xs.Length < zs.Length ? xs.Length : zs.Length;
+            if (capacity < 1)
+            {
+                return 0;
+            }
+
+            if (strideTicks < 1)
+            {
+                strideTicks = 1;
+            }
+
+            int count = 0;
+            xs[count] = state.x;
+            zs[count] = state.z;
+            count++;
+
+            while (count < capacity)
+            {
+                bool ended = false;
+                for (int i = 0; i < strideTicks; i++)
+                {
+                    state = Step(state, targetX, targetZ, flightParams);
+                    if (HasReachedTarget(state, targetX, targetZ, flightParams) || IsExpired(state, flightParams))
+                    {
+                        ended = true;
+                        break;
+                    }
+                }
+
+                xs[count] = state.x;
+                zs[count] = state.z;
+                count++;
+
+                if (ended)
+                {
+                    break;
+                }
+            }
+
+            return count;
+        }
+
         public static float DamageMultiplier(int stacks, float perStack, float maxMultiplier)
         {
             if (stacks < 0)

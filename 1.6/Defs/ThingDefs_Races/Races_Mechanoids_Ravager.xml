@@ -60,7 +60,7 @@
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_RavagerArtilleryController">
 				<autoFireEnabledDefault>true</autoFireEnabledDefault>
-				<autoFireGizmoIconPath>UI/Ravager/AutoArtillery</autoFireGizmoIconPath>
+				<autoFireGizmoIconPath>UI/AutoArtillery</autoFireGizmoIconPath>
 			</li>
 		</comps>
 		<butcherProducts>
@@ -74,6 +74,7 @@
 		<label>ravager</label>
 		<race>APM_Mech_Ravager</race>
 		<combatPower>300</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
 		<weaponMoney>99999~99999</weaponMoney>
 		<controlGroupPortraitZoom>0.70</controlGroupPortraitZoom>
 		<weaponTags Inherit="False">
