@@ -45,13 +45,6 @@ namespace ApexMechanoids
         public bool ScalesWithPlayerStrength =>
             Props.maxCombatPowerByThreatPoints != null || Props.minCombatPowerByThreatPoints != null;
 
-        /// <summary>
-        /// True for a container the colony put down itself, which is the one case that must not come
-        /// with an occupant. Reinstalling a found one lands here too, but by then it already has its
-        /// mech and the stocking pass has nothing left to do.
-        /// </summary>
-        private bool PlayerBuilt => parent.Faction != null && parent.Faction.IsPlayer;
-
         public override void PostPostMake()
         {
             base.PostPostMake();
@@ -67,11 +60,6 @@ namespace ApexMechanoids
             base.PostSpawnSetup(respawningAfterLoad);
             if (respawningAfterLoad || !ScalesWithPlayerStrength || mechKind != null || isEmpty)
             {
-                return;
-            }
-            if (Props.stockOnlyWhenNotPlayerBuilt && PlayerBuilt)
-            {
-                IsEmpty = true;
                 return;
             }
             ChangeMechKindToSpawn();

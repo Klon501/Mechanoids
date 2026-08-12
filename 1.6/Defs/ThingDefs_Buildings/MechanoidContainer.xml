@@ -264,17 +264,101 @@
 				<enterJobDef>APM_EnterMechanoidContainer</enterJobDef>
 				<ChooseMechLabel>Choose mechanoid</ChooseMechLabel>
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
+				<emptyGraphic>
+					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2, 3)</drawSize>
+					<drawOffset>(0,0,0.5)</drawOffset>
+					<shadowData>
+						<volume>(1.8, 1.8, 0.7)</volume>
+					</shadowData>
+				</emptyGraphic>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 
-				<!--
-					One the colony builds starts empty and waits for a mech to walk into it. One found
-					standing in an ancient ruin was stocked by whoever left it there, so it comes with
-					an occupant sealed inside, on the same band and the same roll as the cluster kind.
 
-					A generated occupant is not a stored pawn, which matters here: this thing runs on
-					150W and drops whatever it is holding the moment the power does. Nothing in a ruin
-					has power, so the occupant has to be one the container conjures on opening.
-				-->
-				<stockOnlyWhenNotPlayerBuilt>true</stockOnlyWhenNotPlayerBuilt>
+	<!--
+		The same human built container as it is found rather than built, and the only one the ruin
+		prefab places. It is its own def rather than a flag on the one above because the one above is
+		placed by three different routes - the architect menu, the Buried Legacy starting structure,
+		and hauling a minified one back down - and none of those should hand out a mech. A separate
+		def cannot be got wrong by any of them.
+
+		Everything else about it matches: claim it, use it, uninstall it and haul it home, or
+		deconstruct it for the steel, plasteel and components.
+
+		The occupant is generated on opening rather than stored, which matters here: this thing runs
+		on 150W and drops whatever it is holding the moment the power does, and nothing in a ruin has
+		power.
+	-->
+	<ThingDef ParentName="APM_MechanoidContainerBase">
+		<defName>APM_MechanoidContainer_Ancient</defName>
+		<label>abandoned mechanoid stasis container</label>
+		<description>A stasis container of human make, left running long enough that whoever built it is no longer around to say what is inside. The storage bay reads as occupied and the preservation cycle is still turning over on the last of its reserves. Breaking the seal will wake whatever is in there, and the neural link it once answered to is long dead, so a mechanitor should be able to claim it.</description>
+		<graphicData>
+			<texPath>Things/Building/MechanoidContainer/MechanoidContainer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2, 3)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1.8, 1.8, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/MechanoidContainer/MechanoidContainer</uiIconPath>
+		<uiIconScale>0.95</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<!-- Not buildable. The cost is what deconstructing one gives back. -->
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="ApexMechanoids.CompProperties_MechanoidContainerControlled">
+				<activeTicks>120</activeTicks>
+				<ticksToActivate>5000</ticksToActivate>
+				<cooldownTicks>20000</cooldownTicks>
+				<activateTexPath>UI/Gizmos/MechControlGroup</activateTexPath>
+
+				<activateLabelString>Hack</activateLabelString>
+				<activateDescString>Will hack container to reprogram mechanoid inside.</activateDescString>
+				<guiLabelString>Choose who should hack this.</guiLabelString>
+				<jobString>hack container</jobString>
+				<activatingStringPending>hacking {0}</activatingStringPending>
+				<activatingString>hacking {0}: {1}s</activatingString>
+				<onCooldownString>recalibrating</onCooldownString>
+
+				<soundActivate>GestatorGlassShattered</soundActivate>
+				<interactionEffecter>Hacking</interactionEffecter>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+
+				<enterJobDef>APM_EnterMechanoidContainer</enterJobDef>
+				<ChooseMechLabel>Choose mechanoid</ChooseMechLabel>
+				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
+
+				<!-- The same band and the same roll as the cluster kind. -->
 				<mechKindOptions>
 					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Militor>
 					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Scorcher>

@@ -42,13 +42,6 @@ namespace ApexMechanoids
         /// </summary>
         public List<PawnKindDef> excludedMechKinds = new List<PawnKindDef>();
 
-        /// <summary>
-        /// Stock this container only when something other than the player put it on the map. A found
-        /// one comes with an occupant sealed inside; one the colony builds starts empty and waits for
-        /// a mech to be walked into it.
-        /// </summary>
-        public bool stockOnlyWhenNotPlayerBuilt;
-
         public GraphicData emptyGraphic;
 
         public CompProperties_MechanoidContainer()
