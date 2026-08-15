@@ -42,9 +42,10 @@ namespace ApexMechanoids
                     continue;
                 }
 
+                float chance = parms.ChanceFor(budget);
                 for (int i = 0; i < parms.maxPerCluster; i++)
                 {
-                    if (!Rand.Chance(parms.spawnChance))
+                    if (!Rand.Chance(chance))
                     {
                         break;
                     }
