@@ -96,6 +96,13 @@ namespace ApexMechanoids
 
         public virtual void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
         {
+            // A def that names its occupant is answered before anything is rolled, and by every route
+            // that asks: made, spawned, or reloaded from a save whose kind no longer resolves.
+            if (kindDef == null && Props.fixedMechKind != null)
+            {
+                kindDef = Props.fixedMechKind;
+            }
+
             if (kindDef != null)
             {
                 mechKind = kindDef;
