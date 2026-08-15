@@ -82,6 +82,13 @@ namespace ApexMechanoids
             }
         }
 
+        // Whether a body part group is one of this mech's shield sides. Asked by the melee damage
+        // patch, which sees a tool's linked group and needs to know if it is looking at a shield.
+        public bool IsShieldGroup(BodyPartGroupDef group)
+        {
+            return group != null && (group == Props.leftShieldGroup || group == Props.rightShieldGroup);
+        }
+
         // ---- Hit interception ----
 
         // The shield that catches an attack coming from attacker, or null if the attack gets
