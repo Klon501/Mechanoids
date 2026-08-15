@@ -2,5 +2,6 @@
 <LanguageData>
 
 	<APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>Select mechanoid...</APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>
+	<APM.MechanoidContainer.ContainsUnknown>Contains an unidentified mechanoid.</APM.MechanoidContainer.ContainsUnknown>
 
 </LanguageData>

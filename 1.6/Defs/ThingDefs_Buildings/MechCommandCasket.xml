@@ -68,7 +68,7 @@
 			<Mass>100</Mass>
 			<Flammability>0.6</Flammability>
 		</statBases>
-		<size>(3,2)</size>
+		<size>(5,3)</size>
 		<rotatable>true</rotatable>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<interactionCellOffset>(0,0,2)</interactionCellOffset>
@@ -101,8 +101,8 @@
 		<graphicData>
 			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
-			<drawOffset>(0,0,0)</drawOffset>
+			<drawSize>(6,5)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
 			<shadowData>
 				<volume>(2.70, 1, 1.70)</volume>
 				<offset>(0, 0, 0)</offset>
@@ -114,7 +114,7 @@
 			<Mass>100</Mass>
 			<Flammability>0.6</Flammability>
 		</statBases>
-		<size>(3,2)</size>
+		<size>(5,3)</size>
 		<costList>
 			<Steel>150</Steel>
 			<Plasteel>40</Plasteel>
@@ -159,16 +159,17 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
+	
 	<ThingDef ParentName="BuildingBase">
 		<defName>APM_CasketBandwidthAmplifier</defName>
 		<label>mech casket bandwidth amplifier</label>
 		<description>PLACEHOLDER DESCRIPTION! It increases the bandwidth of any mechanitor inside a command casket it is placed adjacent to.</description>
 		<tickerType>Long</tickerType>
 		<graphicData>
-			<texPath>Things/Building/GestatorAmplifier/Amplifier</texPath>
+			<texPath>Things/Building/CasketAmplifier/CasketAmplifier</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<drawOffset>(0,0,0)</drawOffset>
+			<drawSize>(3,2)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
 			<shadowData>
 				<volume>(1.65, 0.75, 1)</volume>
 				<offset>(0.15, 0, 0)</offset>
@@ -199,7 +200,7 @@
 			<Mass>70</Mass>
 			<Flammability>0.5</Flammability>
 		</statBases>
-		<size>(2,1)</size>
+		<size>(3,1)</size>
 		<rotatable>true</rotatable>
 		<costList>
 			<Steel>250</Steel>

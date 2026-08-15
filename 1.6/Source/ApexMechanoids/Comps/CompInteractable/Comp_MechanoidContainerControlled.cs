@@ -124,6 +124,10 @@ namespace ApexMechanoids
                 {
                     mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
                     GenSpawn.Spawn(mech, loc, parent.Map);
+                    // The kind was the container's one sealed occupant, not a recipe it keeps. Leaving
+                    // it set would hand out a fresh mech every time the container was refilled and
+                    // opened again.
+                    mechKind = null;
                 }
                 else if (isContaining)
                 {
@@ -255,7 +259,7 @@ namespace ApexMechanoids
             {
                 if (mechKind != null)
                 {
-                    iString = "CasketContains".Translate() + $" {mechKind.label}" + iString;
+                    iString = ContentsLine + iString;
                 }
                 else if (isContaining)
                 {
