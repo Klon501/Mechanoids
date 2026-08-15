@@ -13,7 +13,12 @@ namespace ApexMechanoids
     {
         public override Job TryGiveJob(Pawn pawn)
         {
-            var target = pawn.mindState.enemyTarget;
+            if (pawn == null || pawn.Destroyed || pawn.Dead || pawn.Downed || !pawn.Spawned || pawn.Map == null || !pawn.Awake())
+            {
+                return null;
+            }
+
+            var target = pawn.mindState?.enemyTarget;
             if (target == null)
             {
                 Log.Error($"{nameof(pawn.mindState.enemyTarget)} is null");

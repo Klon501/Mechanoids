@@ -39,6 +39,7 @@ namespace ApexMechanoids
                 && !pawn.Downed
                 && pawn.Spawned
                 && pawn.Map != null
+                && pawn.Awake()
                 && pawn.inventory != null
                 && HasFoodPreservationControl(pawn)
                 && pawn.health?.capacities != null

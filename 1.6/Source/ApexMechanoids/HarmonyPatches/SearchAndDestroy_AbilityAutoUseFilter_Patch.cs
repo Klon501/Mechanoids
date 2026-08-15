@@ -25,7 +25,8 @@ namespace ApexMechanoids.HarmonyPatches
             for (int i = __result.Count - 1; i >= 0; i--)
             {
                 Ability ability = __result[i];
-                if (RavagerArtilleryUtility.AutoAbilityBlockedByArtilleryToggle(pawn, ability)
+                if (SearchAndDestroyCompatUtility.AutoUseBlockedBecausePawnNotAwake(pawn, ability)
+                    || RavagerArtilleryUtility.AutoAbilityBlockedByArtilleryToggle(pawn, ability)
                     || GazerLaserUtility.AutoAbilityBlockedByLaserToggle(pawn, ability)
                     || (searchAndDestroyEnabled && SearchAndDestroyCompatUtility.AutoUseDisabledWithSearchAndDestroy(pawn, ability)))
                 {
@@ -104,6 +105,14 @@ namespace ApexMechanoids.HarmonyPatches
             return ability?.def != null && disabledAbilities != null && disabledAbilities.Contains(ability.def);
         }
 
+        public static bool AutoUseBlockedBecausePawnNotAwake(Pawn pawn, Ability ability)
+        {
+            return pawn != null
+                && pawn.RaceProps?.IsMechanoid == true
+                && !pawn.Awake()
+                && IsApexAbility(ability);
+        }
+
         public static bool ProtectApexAbilityJobFromOverride(Job job)
         {
             if (!ShouldProtectApexAbilityJob(job))
@@ -123,6 +132,11 @@ namespace ApexMechanoids.HarmonyPatches
                 && !job.playerForced
                 && job.verbToUse is Verb_CastAbility
                 && abilityDef.defName.StartsWith(ApexAbilityDefPrefix, StringComparison.Ordinal);
+        }
+
+        private static bool IsApexAbility(Ability ability)
+        {
+            return ability?.def?.defName?.StartsWith(ApexAbilityDefPrefix, StringComparison.Ordinal) == true;
         }
 
         private static bool TryGetSearchAndDestroyEnabled(Pawn pawn)

@@ -31,7 +31,7 @@ namespace ApexMechanoids
 
         public static bool CanUseArtillery(Pawn pawn)
         {
-            return pawn != null && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && !pawn.Position.Roofed(pawn.Map);
+            return pawn != null && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && pawn.Awake() && !pawn.Position.Roofed(pawn.Map);
         }
 
         public static bool AutoFireEnabled(Pawn pawn)

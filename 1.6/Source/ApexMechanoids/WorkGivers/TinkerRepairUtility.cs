@@ -22,6 +22,7 @@ namespace ApexMechanoids
                 && !pawn.Downed
                 && pawn.Spawned
                 && pawn.Map != null
+                && pawn.Awake()
                 && pawn.Faction != null
                 && HasRepairControl(pawn)
                 && pawn.health?.capacities != null

@@ -78,6 +78,20 @@
 				<!-- 0 = mapwide; other positive integer numbers indicate the tile radius -->
 				<range>0</range>
 			</li>
+			<li Class="ApexMechanoids.CompProperties_ConquerorSacrificeController">
+				<abilityDef>APM_UltimateSacrifice</abilityDef>
+				<sacrificeHediff>APM_Hediff_UltimateSacrifice</sacrificeHediff>
+				<kindDefs>
+					<li>APM_Mech_Conqueror_DMR</li>
+					<li>APM_Mech_Conqueror_AR</li>
+					<li>APM_Mech_Conqueror_LMG</li>
+				</kindDefs>
+				<checkIntervalTicks>120</checkIntervalTicks>
+				<aiMaxHealthPct>0.30</aiMaxHealthPct>
+				<radius>12</radius>
+				<minBuffTargets>2</minBuffTargets>
+				<autoCastForPlayer>false</autoCastForPlayer>
+			</li>
 		</comps>
 		<butcherProducts>
 			<Steel>20</Steel>
@@ -266,11 +280,15 @@
 			</targetParams>
 		</verbProperties>
 		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<li Class="ApexMechanoids.CompProperties_ConquerorSacrificeGiveHediff">
 				<hediffDef>APM_Hediff_UltimateSacrifice</hediffDef>
 				<applyToSelf>false</applyToSelf>
 				<ignoreSelf>true</ignoreSelf>
+				<kindDefs>
+					<li>APM_Mech_Conqueror_DMR</li>
+					<li>APM_Mech_Conqueror_AR</li>
+					<li>APM_Mech_Conqueror_LMG</li>
+				</kindDefs>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_KillCaster">
 				<destroy>false</destroy>

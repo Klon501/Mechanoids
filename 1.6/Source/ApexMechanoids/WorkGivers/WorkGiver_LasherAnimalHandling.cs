@@ -11,6 +11,11 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
+            if (!LasherAnimalHandlingUtility.CanLasherWork(pawn))
+            {
+                yield break;
+            }
+
             foreach (Designation designation in pawn.Map.designationManager.SpawnedDesignationsOfDef(DesignationDefOf.Tame))
             {
                 yield return designation.target.Thing;
@@ -69,7 +74,16 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            return pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
+            if (!LasherAnimalHandlingUtility.CanLasherWork(pawn))
+            {
+                yield break;
+            }
+
+            List<Pawn> pawns = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                yield return pawns[i];
+            }
         }
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
@@ -121,7 +135,16 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            return pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
+            if (!LasherAnimalHandlingUtility.CanLasherWork(pawn))
+            {
+                yield break;
+            }
+
+            List<Pawn> pawns = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                yield return pawns[i];
+            }
         }
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
@@ -191,6 +214,11 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
+            if (!LasherAnimalHandlingUtility.CanLasherWork(pawn))
+            {
+                yield break;
+            }
+
             foreach (Designation designation in pawn.Map.designationManager.SpawnedDesignationsOfDef(DesignationDefOf.Slaughter))
             {
                 yield return designation.target.Thing;
@@ -251,6 +279,11 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
+            if (!LasherAnimalHandlingUtility.CanLasherWork(pawn))
+            {
+                yield break;
+            }
+
             foreach (Designation designation in pawn.Map.designationManager.SpawnedDesignationsOfDef(DesignationDefOf.ReleaseAnimalToWild))
             {
                 yield return designation.target.Thing;
