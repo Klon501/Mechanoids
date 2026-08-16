@@ -38,11 +38,31 @@ namespace ApexMechanoids
         {
         }
 
+        /// <summary>
+        /// A scaled container cannot pick its occupant at make time: the roll needs the colony it is
+        /// about to land next to, and mech cluster buildings are made well before they are spawned.
+        /// </summary>
+        public bool ScalesWithPlayerStrength =>
+            Props.maxCombatPowerByThreatPoints != null || Props.minCombatPowerByThreatPoints != null;
+
         public override void PostPostMake()
         {
             base.PostPostMake();
-            ChangeMechKindToSpawn();
+            if (!ScalesWithPlayerStrength)
+            {
+                ChangeMechKindToSpawn();
+            }
             parent.overrideGraphicIndex = 0;
+        }
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            if (respawningAfterLoad || !ScalesWithPlayerStrength || mechKind != null || isEmpty)
+            {
+                return;
+            }
+            ChangeMechKindToSpawn();
         }
 
         public override bool DontDrawParent()
@@ -69,29 +89,159 @@ namespace ApexMechanoids
                 Pawn mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
                 GenSpawn.Spawn(mech, loc, parent.Map);
                 mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                mechKind = null;
                 IsEmpty = true;
             }
         }
 
         public virtual void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
         {
-            if (kindDef == null)
-            {
-                if (Props.mechKindOptions.NullOrEmpty())
-                {
-                    IsEmpty = true;
-                }
-                else
-                {
-                    mechKind = Props.mechKindOptions.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
-                    IsEmpty = false;
-                }
-            }
-            else
+            if (kindDef != null)
             {
                 mechKind = kindDef;
                 IsEmpty = false;
+                return;
             }
+
+            List<PawnKindDefWeight> options = AllowedMechKindOptions();
+            if (options.NullOrEmpty())
+            {
+                IsEmpty = true;
+                return;
+            }
+
+            mechKind = options.RandomElementByWeight((PawnKindDefWeight x) => x.weight).kindDef;
+            IsEmpty = false;
+        }
+
+        /// <summary>
+        /// The option list narrowed to the band of combat power this colony has earned. The cap keeps a
+        /// young colony from walking away with a centipede; the floor keeps a rich one from opening a
+        /// rare container onto a militor, which the cap alone cannot do because the cheap kinds carry
+        /// the heaviest weights and never leave the pool.
+        ///
+        /// The band is a preference, not a promise. If nothing sits inside it the container still holds
+        /// something: whatever is closest to the band rather than nothing at all.
+        /// </summary>
+        protected List<PawnKindDefWeight> AllowedMechKindOptions()
+        {
+            List<PawnKindDefWeight> options = CandidateMechKinds();
+
+            if (!ScalesWithPlayerStrength || options.Count == 0)
+            {
+                return options;
+            }
+
+            float points = PlayerStrengthPoints();
+            float cap = Props.maxCombatPowerByThreatPoints?.Evaluate(points) ?? float.MaxValue;
+            float floor = Props.minCombatPowerByThreatPoints?.Evaluate(points) ?? 0f;
+
+            List<float> combatPowers = options.Select((PawnKindDefWeight x) => x.kindDef.combatPower).ToList();
+            return MechContainerStockRules.IndicesWithinBand(combatPowers, floor, cap)
+                .Select((int i) => options[i])
+                .ToList();
+        }
+
+        /// <summary>
+        /// Everything this container could hold before the colony's strength is taken into account: the
+        /// curated list, plus whatever <c>autoIncludeControllableMechs</c> sweeps up.
+        /// </summary>
+        private List<PawnKindDefWeight> CandidateMechKinds()
+        {
+            List<PawnKindDefWeight> options = Props.mechKindOptions
+                .Where((PawnKindDefWeight x) => x?.kindDef != null && !Excluded(x.kindDef))
+                .ToList();
+
+            if (!Props.autoIncludeControllableMechs)
+            {
+                return options;
+            }
+
+            HashSet<PawnKindDef> curated = new HashSet<PawnKindDef>(options.Select((PawnKindDefWeight x) => x.kindDef));
+            foreach (PawnKindDef kindDef in ControllableMechKinds())
+            {
+                if (curated.Contains(kindDef) || Excluded(kindDef))
+                {
+                    continue;
+                }
+                options.Add(new PawnKindDefWeight
+                {
+                    kindDef = kindDef,
+                    weight = Props.autoIncludeWeight
+                });
+            }
+            return options;
+        }
+
+        private bool Excluded(PawnKindDef kindDef)
+        {
+            return Props.excludedMechKinds.Contains(kindDef) || BossKinds.Contains(kindDef);
+        }
+
+        /// <summary>
+        /// Every fighting mech a colony could have built for itself, from any mod. A gestator recipe is
+        /// the test rather than the overseer comp: every mechanoid inherits that comp from the vanilla
+        /// base, so it would sweep up escorts and set pieces that were never meant to leave their
+        /// group, while a recipe is somebody deciding on purpose that a player may own one. Our own
+        /// Satellite is the case in point, and it drops out here without needing to be named.
+        ///
+        /// isFighter is the other half of it. Without it the roll picks up the work drones, and a rare
+        /// container that has stood sealed since the archotech wars opening onto a cleansweeper is not
+        /// the moment anyone is going for.
+        ///
+        /// Built once. Def lists do not change after startup, and this runs inside cluster generation.
+        /// </summary>
+        private static IEnumerable<PawnKindDef> ControllableMechKinds()
+        {
+            if (cachedControllableMechKinds != null)
+            {
+                return cachedControllableMechKinds;
+            }
+
+            HashSet<ThingDef> gestatable = new HashSet<ThingDef>(MechanitorUtility.MechRecipes
+                .Select((RecipeDef recipe) => recipe.ProducedThingDef)
+                .Where((ThingDef def) => def != null));
+
+            return cachedControllableMechKinds = DefDatabase<PawnKindDef>.AllDefsListForReading
+                .Where((PawnKindDef kindDef) => kindDef.race != null
+                    && kindDef.RaceProps.IsMechanoid
+                    && kindDef.isFighter
+                    && kindDef.combatPower > 0f
+                    && gestatable.Contains(kindDef.race)
+                    && kindDef.race.HasComp(typeof(CompOverseerSubject)))
+                .ToList();
+        }
+
+        /// <summary>The bossgroup bosses of every mod, which are nobody's prize for opening a crate.</summary>
+        private static HashSet<PawnKindDef> BossKinds =>
+            cachedBossKinds ?? (cachedBossKinds = new HashSet<PawnKindDef>(DefDatabase<BossDef>.AllDefsListForReading
+                .Select((BossDef boss) => boss.kindDef)
+                .Where((PawnKindDef kindDef) => kindDef != null)));
+
+        private static List<PawnKindDef> cachedControllableMechKinds;
+
+        private static HashSet<PawnKindDef> cachedBossKinds;
+
+        /// <summary>
+        /// Threat points are the game's own read on how strong the colony is, so they are what the
+        /// occupant scales against. Measured on a player home map: a container generated for a pocket
+        /// map or a quest site would otherwise read as a colony with nothing in it.
+        /// </summary>
+        private float PlayerStrengthPoints()
+        {
+            // Loading a save re-rolls containers whose kind no longer resolves, and that runs before
+            // the game has maps or a storyteller. Read as "no colony yet" rather than throwing.
+            if (Current.Game == null || Find.Storyteller == null)
+            {
+                return 0f;
+            }
+
+            Map map = parent.MapHeld;
+            if (map == null || !map.IsPlayerHome)
+            {
+                map = Find.AnyPlayerHomeMap ?? map;
+            }
+            return map == null ? 0f : StorytellerUtility.DefaultThreatPointsNow(map);
         }
 
         public AcceptanceReport BaseCanInteract(Pawn activateBy = null, bool checkOptionalItems = true)
@@ -158,22 +308,15 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref kindDefName, "kindDefName", "");
             if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
-                if (kindDefName.NullOrEmpty())
+                bool wasEmpty = isEmpty;
+                mechKind = kindDefName.NullOrEmpty()
+                    ? null
+                    : DefDatabase<PawnKindDef>.GetNamed(kindDefName, false);
+                if (MechContainerStockRules.Resolve(wasEmpty, mechKind != null) == LoadedOccupancy.Reroll)
                 {
                     ChangeMechKindToSpawn();
                 }
-                else
-                {
-                    PawnKindDef kindDef = DefDatabase<PawnKindDef>.GetNamed(kindDefName, false);
-                    if (kindDef == null)
-                    {
-                        ChangeMechKindToSpawn();
-                    }
-                    else
-                    {
-                        ChangeMechKindToSpawn(kindDef);
-                    }
-                }
+                isEmpty = wasEmpty;
             }
         }
 
@@ -187,6 +330,13 @@ namespace ApexMechanoids
             return base.CompInspectStringExtra();
         }
 
+        /// <summary>
+        /// What a sealed container gives away about its occupant. A mech the colony walked in there
+        /// itself is named; one that was already inside when the container was found is not, because
+        /// reading the label off a crate nobody has opened is the whole tension of opening it.
+        /// </summary>
+        protected string ContentsLine => "APM.MechanoidContainer.ContainsUnknown".Translate();
+
         public override string CompInspectStringExtra()
         {
             string iString = "\n";
@@ -196,7 +346,7 @@ namespace ApexMechanoids
             }
             else
             {
-                iString = "CasketContains".Translate() + $" {mechKind.label}" + iString;
+                iString = ContentsLine + iString;
             }
             return iString + BaseCompInspectStringExtra();
         }

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!--
+		Puts the human built stasis container where a mechanitor would have kept one. The mechanitor
+		complex rooms are the hideout case; the Odyssey secure room is the dungeon case. Counts are
+		deliberately low so a run turns up one at a time rather than a wall of them.
+	-->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/LayoutRoomDef[defName = "AncientRechargeRoom"]/prefabs</xpath>
+					<value>
+						<APM_MechanoidStasisContainer>
+							<countPerHundredCells>2</countPerHundredCells>
+							<minMaxRange>0~1</minMaxRange>
+						</APM_MechanoidStasisContainer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/LayoutRoomDef[defName = "AncientMechGestatorRoom"]/prefabs</xpath>
+					<value>
+						<APM_MechanoidStasisContainer>
+							<countPerHundredCells>2</countPerHundredCells>
+							<minMaxRange>0~1</minMaxRange>
+						</APM_MechanoidStasisContainer>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/LayoutRoomDef[defName = "AncientRuinsSecureRoom"]/prefabs</xpath>
+			<value>
+				<APM_MechanoidStasisContainer>
+					<countPerHundredCells>1</countPerHundredCells>
+					<minMaxRange>0~1</minMaxRange>
+				</APM_MechanoidStasisContainer>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

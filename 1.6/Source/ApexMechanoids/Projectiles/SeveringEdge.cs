@@ -37,7 +37,7 @@ namespace ApexMechanoids
         }
         protected virtual bool IsValidTarget(Thing target)
         {
-            if (!(target is Pawn pawn))
+            if (!(target is Pawn) && !(target is Building))
             {
                 return false;
             }
@@ -46,6 +46,10 @@ namespace ApexMechanoids
                 return false;
             }
             if ((target.DrawPos - DrawPos).MagnitudeHorizontalSquared() > maxDist * maxDist)
+            {
+                return false;
+            }
+            if (!GenSight.LineOfSight(this.Position, target.Position, Map))
             {
                 return false;
             }

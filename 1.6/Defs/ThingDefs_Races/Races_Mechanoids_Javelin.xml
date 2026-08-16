@@ -77,6 +77,81 @@
 				<drawContainedThing>false</drawContainedThing>
 				<dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
 			</li>
+			<!--
+				The rocket magazine. Uranium rather than a bespoke ammo item so loading it is
+				ordinary hauling work and needs no job of its own, which is the same arrangement the
+				dynamo already uses for its own uranium. Nothing is drawn while the mech is standing
+				around: consumeFuelOnlyWhenUsed switches the passive drain off entirely, and the only
+				thing that ever spends from here is a shot leaving the tube (CompJavelinRocketRack).
+
+				30 is a magazine of roughly six to ten of the paid warheads. A javelin that runs it
+				dry is not disarmed - it drops back to the free basic rocket - so this is how long
+				the mech gets to fight with the warhead the player chose, not how long it can fight.
+			-->
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<initialFuelPercent>0</initialFuelPercent>
+				<fuelFilter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelLabel>Rocket uranium</fuelLabel>
+				<fuelGizmoLabel>Rocket uranium</fuelGizmoLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<allowRefuelIfNotEmpty>true</allowRefuelIfNotEmpty>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>30.0</initialConfigurableTargetFuelLevel>
+				<canEjectFuel>true</canEjectFuel>
+				<!-- A mech with an empty magazine is still a working mech, so it gets none of the
+				     out-of-fuel furniture: no overlay, no gauge on the map, and no gizmos at all on
+				     a launcher the player does not own. -->
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<hideGizmosIfNotPlayerFaction>true</hideGizmosIfNotPlayerFaction>
+			</li>
+			<!--
+				The four warheads behind the switch gizmo. Order matters: the first is what the rack
+				falls back to when it cannot pay for anything else, so it has to be the free one.
+				Costs are per shot, drawn from the magazine above, and only the player is charged -
+				a raid has no stockpile to haul from, so an enemy javelin is handed one of the
+				non-playerOnly warheads when it spawns and fires it for nothing.
+			-->
+			<li Class="ApexMechanoids.CompProperties_JavelinRocketRack">
+				<rockets>
+					<li>
+						<key>basic</key>
+						<projectile>APM_Proj_JavelinMissile</projectile>
+						<label>basic rocket</label>
+						<description>A shaped tank-killer warhead. Free, and the only one whose seeker logs its target: every rocket that finds the same one again bites deeper than the last.</description>
+						<uraniumCost>0</uraniumCost>
+					</li>
+					<li>
+						<key>incendiary</key>
+						<projectile>APM_Proj_JavelinMissile_Incendiary</projectile>
+						<label>incendiary rocket</label>
+						<description>Sprays burning fuel across the impact point and sets light to whatever is standing in it. Poor against armour.</description>
+						<uraniumCost>3</uraniumCost>
+					</li>
+					<li>
+						<key>highExplosive</key>
+						<projectile>APM_Proj_JavelinMissile_HighExplosive</projectile>
+						<label>high-explosive rocket</label>
+						<description>A fragmentation warhead with a wide blast. Tears through a crowd of lightly armoured targets, and does far less to a single heavy one than the basic rocket would.</description>
+						<uraniumCost>4</uraniumCost>
+					</li>
+					<li>
+						<key>emp</key>
+						<projectile>APM_Proj_JavelinMissile_EMP</projectile>
+						<label>EMP rocket</label>
+						<description>An electromagnetic pulse that stuns machines outright and barely marks flesh. Mechanoid raids do not field this one.</description>
+						<uraniumCost>5</uraniumCost>
+						<playerOnly>true</playerOnly>
+					</li>
+				</rockets>
+			</li>
 		</comps>
 		<butcherProducts>
 			<Steel>40</Steel>

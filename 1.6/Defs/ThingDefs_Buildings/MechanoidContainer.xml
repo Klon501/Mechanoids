@@ -47,10 +47,31 @@
 		<building>
 			<buildingTags>
 				<li>MechanoidClusterBuilding</li>
+				<li>MechClusterMember</li>
 			</buildingTags>
+			<minMechClusterPoints>500</minMechClusterPoints>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+		<modExtensions>
+			<!--
+				Rare on purpose. One slot per cluster, never below 500 point clusters, and the chance
+				climbs with the cluster: a token 500 point cluster keeps the old 8%, while the ones
+				worth bringing an army to are better than even money.
+			-->
+			<li Class="ApexMechanoids.DefModExtension_MechClusterExtra">
+				<minTotalPoints>500</minTotalPoints>
+				<maxPerCluster>1</maxPerCluster>
+				<spawnChanceByTotalPoints>
+					<points>
+						<li>(500, 0.08)</li>
+						<li>(1500, 0.22)</li>
+						<li>(3000, 0.40)</li>
+						<li>(6000, 0.60)</li>
+					</points>
+				</spawnChanceByTotalPoints>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_MechanoidContainer">
 				<activeTicks>120</activeTicks>
@@ -79,13 +100,86 @@
 					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
 				</targetingParameters>
 				
+				<!-- Weights are the roll inside whatever the points band below has left available. -->
 				<mechKindOptions>
-					<Mech_Scyther/>
-					<Mech_Lancer/>
-					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey"/>
-					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech"/>
-					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech"/>
+					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Militor>
+					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Scorcher>
+					<APM_Mech_Tinker>8</APM_Mech_Tinker>
+					<Mech_Pikeman>8</Mech_Pikeman>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">8</Mech_Cyclops>
+					<APM_Mech_Haze>8</APM_Mech_Haze>
+					<Mech_Scyther>8</Mech_Scyther>
+					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">8</Mech_Tesseron>
+					<APM_Mech_Lasher>6</APM_Mech_Lasher>
+					<Mech_Lancer>6</Mech_Lancer>
+					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
+					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
+					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Frostivus>5</APM_Mech_Frostivus>
+					<APM_Mech_Siren>5</APM_Mech_Siren>
+					<APM_Mech_Pulse>4</APM_Mech_Pulse>
+					<APM_Mech_Vassal>4</APM_Mech_Vassal>
+					<Mech_Tunneler MayRequire="Ludeon.RimWorld.Biotech">4</Mech_Tunneler>
+					<Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">3</Mech_Centurion>
+					<APM_Mech_Dynamo>3</APM_Mech_Dynamo>
+					<APM_Mech_Ravager>3</APM_Mech_Ravager>
+					<APM_Mech_Mantis>3</APM_Mech_Mantis>
+					<APM_Mech_Ingestor>3</APM_Mech_Ingestor>
+					<APM_Mech_Javelin>3</APM_Mech_Javelin>
+					<Mech_CentipedeBlaster>2</Mech_CentipedeBlaster>
+					<Mech_CentipedeBurner>2</Mech_CentipedeBurner>
+					<Mech_CentipedeGunner>2</Mech_CentipedeGunner>
+					<APM_Mech_Aegis>2</APM_Mech_Aegis>
 				</mechKindOptions>
+				<!--
+					Anything else a mechanitor could have gestated for itself, ours or another mod's,
+					joins the roll at a flat weight. The list above stays the curated core.
+				-->
+				<!-- Fighting mechs only. The work drones gestate the same way and are not a prize. -->
+				<autoIncludeControllableMechs>true</autoIncludeControllableMechs>
+				<autoIncludeWeight>2</autoIncludeWeight>
+				<!--
+					Bosses are not a prize for opening a crate, and the Satellite does not spawn on its
+					own. The points ceiling already keeps all of these out; naming them means raising
+					that ceiling later cannot let them back in by accident.
+				-->
+				<excludedMechKinds>
+					<li>APM_Mech_Satellite</li>
+					<li>APM_Mech_Maul</li>
+					<li>APM_Mech_Celerus</li>
+					<li>APM_Mech_Dominus</li>
+					<li>APM_Mech_Terminus</li>
+					<li>APM_Mech_Gazer</li>
+				</excludedMechKinds>
+				<!--
+					Colony threat points to the highest combatPower this container may hold.
+					80 covers militor and scorcher, 150 adds pikeman, cyclops, scyther, tesseron, tinker
+					and haze, 250 adds lancer, tunneler, centurion, lasher, conqueror, frostivus, siren,
+					pulse and vassal, 400 opens up the centipedes and our heavies.
+				-->
+				<maxCombatPowerByThreatPoints>
+					<points>
+						<li>(0, 80)</li>
+						<li>(350, 150)</li>
+						<li>(800, 250)</li>
+						<li>(1600, 400)</li>
+					</points>
+				</maxCombatPowerByThreatPoints>
+				<!--
+					And the lowest. The ceiling alone only ever widens the pool, so a colony with a few
+					million in wealth kept rolling militors and scythers because those carry the heavy
+					weights. This walks the floor up behind it, so the container tracks the colony
+					instead of trailing it.
+				-->
+				<minCombatPowerByThreatPoints>
+					<points>
+						<li>(0, 0)</li>
+						<li>(500, 0)</li>
+						<li>(1000, 110)</li>
+						<li>(1800, 190)</li>
+						<li>(3000, 300)</li>
+					</points>
+				</minCombatPowerByThreatPoints>
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainerCluster_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -171,6 +265,159 @@
 				<enterJobDef>APM_EnterMechanoidContainer</enterJobDef>
 				<ChooseMechLabel>Choose mechanoid</ChooseMechLabel>
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
+				<emptyGraphic>
+					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2, 3)</drawSize>
+					<drawOffset>(0,0,0.5)</drawOffset>
+					<shadowData>
+						<volume>(1.8, 1.8, 0.7)</volume>
+					</shadowData>
+				</emptyGraphic>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!--
+		The same human built container as it is found rather than built, and the only one the ruin
+		prefab places. It is its own def rather than a flag on the one above because the one above is
+		placed by three different routes - the architect menu, the Buried Legacy starting structure,
+		and hauling a minified one back down - and none of those should hand out a mech. A separate
+		def cannot be got wrong by any of them.
+
+		Everything else about it matches: claim it, use it, uninstall it and haul it home, or
+		deconstruct it for the steel, plasteel and components.
+
+		The occupant is generated on opening rather than stored, which matters here: this thing runs
+		on 150W and drops whatever it is holding the moment the power does, and nothing in a ruin has
+		power.
+	-->
+	<ThingDef ParentName="APM_MechanoidContainerBase">
+		<defName>APM_MechanoidContainer_Ancient</defName>
+		<label>abandoned mechanoid stasis container</label>
+		<description>A stasis container of human make, left running long enough that whoever built it is no longer around to say what is inside. The storage bay reads as occupied and the preservation cycle is still turning over on the last of its reserves. Breaking the seal will wake whatever is in there, and the neural link it once answered to is long dead, so a mechanitor should be able to claim it.</description>
+		<graphicData>
+			<texPath>Things/Building/MechanoidContainer/MechanoidContainer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2, 3)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1.8, 1.8, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/MechanoidContainer/MechanoidContainer</uiIconPath>
+		<uiIconScale>0.95</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<!-- Not buildable. The cost is what deconstructing one gives back. -->
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="ApexMechanoids.CompProperties_MechanoidContainerControlled">
+				<activeTicks>120</activeTicks>
+				<ticksToActivate>5000</ticksToActivate>
+				<cooldownTicks>20000</cooldownTicks>
+				<activateTexPath>UI/Gizmos/MechControlGroup</activateTexPath>
+
+				<activateLabelString>Hack</activateLabelString>
+				<activateDescString>Will hack container to reprogram mechanoid inside.</activateDescString>
+				<guiLabelString>Choose who should hack this.</guiLabelString>
+				<jobString>hack container</jobString>
+				<activatingStringPending>hacking {0}</activatingStringPending>
+				<activatingString>hacking {0}: {1}s</activatingString>
+				<onCooldownString>recalibrating</onCooldownString>
+
+				<soundActivate>GestatorGlassShattered</soundActivate>
+				<interactionEffecter>Hacking</interactionEffecter>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+
+				<enterJobDef>APM_EnterMechanoidContainer</enterJobDef>
+				<ChooseMechLabel>Choose mechanoid</ChooseMechLabel>
+				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
+
+				<!-- The same band and the same roll as the cluster kind. -->
+				<mechKindOptions>
+					<Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Militor>
+					<Mech_Scorcher MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Scorcher>
+					<APM_Mech_Tinker>8</APM_Mech_Tinker>
+					<Mech_Pikeman>8</Mech_Pikeman>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">8</Mech_Cyclops>
+					<APM_Mech_Haze>8</APM_Mech_Haze>
+					<Mech_Scyther>8</Mech_Scyther>
+					<Mech_Tesseron MayRequire="Ludeon.RimWorld.Biotech">8</Mech_Tesseron>
+					<APM_Mech_Lasher>6</APM_Mech_Lasher>
+					<Mech_Lancer>6</Mech_Lancer>
+					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
+					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
+					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Frostivus>5</APM_Mech_Frostivus>
+					<APM_Mech_Siren>5</APM_Mech_Siren>
+					<APM_Mech_Pulse>4</APM_Mech_Pulse>
+					<APM_Mech_Vassal>4</APM_Mech_Vassal>
+					<Mech_Tunneler MayRequire="Ludeon.RimWorld.Biotech">4</Mech_Tunneler>
+					<Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">3</Mech_Centurion>
+					<APM_Mech_Dynamo>3</APM_Mech_Dynamo>
+					<APM_Mech_Ravager>3</APM_Mech_Ravager>
+					<APM_Mech_Mantis>3</APM_Mech_Mantis>
+					<APM_Mech_Ingestor>3</APM_Mech_Ingestor>
+					<APM_Mech_Javelin>3</APM_Mech_Javelin>
+					<Mech_CentipedeBlaster>2</Mech_CentipedeBlaster>
+					<Mech_CentipedeBurner>2</Mech_CentipedeBurner>
+					<Mech_CentipedeGunner>2</Mech_CentipedeGunner>
+					<APM_Mech_Aegis>2</APM_Mech_Aegis>
+				</mechKindOptions>
+				<!-- Fighting mechs only. The work drones gestate the same way and are not a prize. -->
+				<autoIncludeControllableMechs>true</autoIncludeControllableMechs>
+				<autoIncludeWeight>2</autoIncludeWeight>
+				<excludedMechKinds>
+					<li>APM_Mech_Satellite</li>
+					<li>APM_Mech_Maul</li>
+					<li>APM_Mech_Celerus</li>
+					<li>APM_Mech_Dominus</li>
+					<li>APM_Mech_Terminus</li>
+					<li>APM_Mech_Gazer</li>
+				</excludedMechKinds>
+				<maxCombatPowerByThreatPoints>
+					<points>
+						<li>(0, 80)</li>
+						<li>(350, 150)</li>
+						<li>(800, 250)</li>
+						<li>(1600, 400)</li>
+					</points>
+				</maxCombatPowerByThreatPoints>
+				<minCombatPowerByThreatPoints>
+					<points>
+						<li>(0, 0)</li>
+						<li>(500, 0)</li>
+						<li>(1000, 110)</li>
+						<li>(1800, 190)</li>
+						<li>(3000, 300)</li>
+					</points>
+				</minCombatPowerByThreatPoints>
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>

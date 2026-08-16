@@ -10,6 +10,11 @@ namespace ApexMechanoids
     {
         public new CompProperties_Shockwave Props => (CompProperties_Shockwave)props;
 
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            return ShockwaveAIUtility.HasRequiredHostilesNear(parent?.pawn, Props.aiThreatRadius, Props.aiMinHostilesToTrigger);
+        }
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
@@ -306,6 +311,51 @@ namespace ApexMechanoids
         public int empDamageAmount = 8;
         public string ringFleckDefName = "PsycastPsychicEffect";
         public string castSoundDefName = "PsycastPsychicPulse";
+        public float aiThreatRadius = 4f;
+        public int aiMinHostilesToTrigger = 2;
+    }
+
+    public static class ShockwaveAIUtility
+    {
+        public static bool HasRequiredHostilesNear(Pawn caster, float threatRadius, int minHostilesToTrigger)
+        {
+            Map map = caster?.MapHeld;
+            if (caster == null || map == null || !caster.Spawned || caster.Dead || caster.Downed || !caster.Awake())
+            {
+                return false;
+            }
+
+            int requiredHostiles = Mathf.Max(minHostilesToTrigger, 1);
+            float radius = Mathf.Max(threatRadius, 0f);
+            int nearbyHostiles = 0;
+            IReadOnlyList<Pawn> pawns = map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn other = pawns[i];
+                if (other == null || other == caster || other.Dead || other.Downed || !other.Spawned || other.ParentHolder is PawnFlyer)
+                {
+                    continue;
+                }
+
+                if (!other.HostileTo(caster) || other.IsPsychologicallyInvisible())
+                {
+                    continue;
+                }
+
+                if (other.Position.DistanceTo(caster.PositionHeld) > radius)
+                {
+                    continue;
+                }
+
+                nearbyHostiles++;
+                if (nearbyHostiles >= requiredHostiles)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 
     public class CompAbility_ShockwaveWarmup : AbilityComp
