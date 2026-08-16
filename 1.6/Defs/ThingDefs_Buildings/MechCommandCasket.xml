@@ -96,8 +96,8 @@
 	</ThingDef>
 	<ThingDef ParentName="APM_MechCommandCasket_Base">
 		<defName>APM_MechCommandCasket</defName>
-		<label>mech command casket</label>
-		<description>The mech command casket is a fusion of mechlink and biosculpter casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them.</description>
+		<label>command casket</label>
+		<description>The pinnacle of mechanitor engineering, a monumental sarcophagus that embodies absolute power and technological majesty. Fusing mechlink and biosculpter technologies, it allows the enclosed user to command their legions from absolute safety. However, its true power lies within: a highly complex replica of a 'Cerebrex' brain is integrated into its core. This allows the casket to pierce atmospheric interference and connect directly to the global mechanoid network in orbit. By hijacking the processing power of these orbital systems, the mechanitor can broadcast their commands over colossal distances, controlling their mechs even when world tiles away.</description>
 		<graphicData>
 			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -162,14 +162,14 @@
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>APM_CasketBandwidthAmplifier</defName>
-		<label>mech casket bandwidth amplifier</label>
-		<description>PLACEHOLDER DESCRIPTION! It increases the bandwidth of any mechanitor inside a command casket it is placed adjacent to.</description>
+		<label>subcore signal booster</label>
+		<description>An auxiliary expansion module designed to augment the command casket using the raw processing power of high subcores. By integrating high-tier subcores directly into the casket's auxiliary neural network, this device significantly amplifies the mechanitor's mental output. It expands the available bandwidth limit, allowing the operator to safely control a much larger and more complex legion of mechanoids without overloading their own neurological link.</description>
 		<tickerType>Long</tickerType>
 		<graphicData>
 			<texPath>Things/Building/CasketAmplifier/CasketAmplifier</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,2)</drawSize>
-			<drawOffset>(0,0,0.5)</drawOffset>
+			<drawOffset>(0,0,0)</drawOffset>
 			<shadowData>
 				<volume>(1.65, 0.75, 1)</volume>
 				<offset>(0.15, 0, 0)</offset>
@@ -233,4 +233,35 @@
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
 	</HediffDef>
+
+	<ThingDef ParentName="CrateBase">
+		<defName>APM_MechCommandCasket_Ancient</defName>
+		<thingClass>ApexMechanoids.Building_AncientCommandCasket</thingClass>
+		<label>command casket</label>
+		<description>The pinnacle of mechanitor engineering, a monumental sarcophagus that embodies absolute power and technological majesty. Fusing mechlink and biosculpter technologies, it allows the enclosed user to command their legions from absolute safety. However, its true power lies within: a highly complex replica of a 'Cerebrex' brain is integrated into its core. This allows the casket to pierce atmospheric interference and connect directly to the global mechanoid network in orbit. By hijacking the processing power of these orbital systems, the mechanitor can broadcast their commands over colossal distances, controlling their mechs even when world tiles away.</description>
+		<graphicData>
+			<texPath>Things/Building/MechCommandCasket/MechCommandCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,5)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(2.70, 1, 1.70)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(5, 3)</size>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<fillPercent>0.50</fillPercent>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>0.6</Flammability>
+		</statBases>  
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
 </Defs>

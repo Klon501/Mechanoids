@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMechanoidWalker">
 		<defName>APM_Mech_Javelin</defName>
 		<label>javelin</label>
-		<description>placeholder</description>
+		<description>While standard mechanoids rely on direct ballistic impacts, the Javelin acts as a mobile missile launcher utilizing semi-autonomous micro-missile mechanics. Instead of a conventional payload, it fires tiny self-guided missile-mechanoids that cruise slowly toward their target with built-in homing capabilities.\n\nThe Javelin is equipped with a switchable missile system; while its basic rockets apply a stacking vulnerable hediff with every consecutive hit against heavy armor, specialized warheads require raw uranium to fire - allowing it to unleash devastating HE blasts, wide-area incendiary explosions, or crippling EMP pulses depending on the tactical situation.</description>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>2.5</MoveSpeed>
