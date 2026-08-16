@@ -1,9 +1,4 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RimWorld;
 using Verse;
 using Verse.AI;
 
@@ -18,17 +13,24 @@ namespace ApexMechanoids
                 return null;
             }
 
-            var target = pawn.mindState?.enemyTarget;
-            if (target == null)
+            Thing target = pawn.mindState?.enemyTarget;
+            if (!DuelUtility.IsValidActiveDuelOpponent(pawn, target))
             {
-                Log.Error($"{nameof(pawn.mindState.enemyTarget)} is null");
+                pawn.mindState?.mentalStateHandler?.CurState?.RecoverFromState();
                 return null;
             }
-            Job job2 = JobMaker.MakeJob(JobDefOf.AttackMelee, target);
-            job2.maxNumMeleeAttacks = 1;
-            job2.expiryInterval = Rand.Range(420, 900);
-            job2.canBashDoors = true;
-            return job2;
+
+            if (!pawn.CanReach(target, PathEndMode.Touch, Danger.Deadly))
+            {
+                return null;
+            }
+
+            Job job = JobMaker.MakeJob(JobDefOf.AttackMelee, target);
+            job.maxNumMeleeAttacks = 1;
+            job.expiryInterval = Rand.Range(420, 900);
+            job.checkOverrideOnExpire = true;
+            job.canBashDoors = true;
+            return job;
         }
     }
 }

@@ -70,12 +70,57 @@ namespace ApexMechanoids.HarmonyPatches
         }
     }
 
+    [HarmonyPatch(typeof(MentalStateHandler), nameof(MentalStateHandler.TryStartMentalState))]
+    [HarmonyAfter("MemeGoddess.SearchAndDestroy")]
+    public static class SearchAndDestroy_DuelMentalStateMemory_Patch
+    {
+        [HarmonyPrefix]
+        private static void TryStartMentalStatePrefix(MentalStateHandler __instance, MentalStateDef stateDef)
+        {
+            if (stateDef?.defName != "APM_Duel" && stateDef?.defName != "APM_Duel_Boss")
+            {
+                return;
+            }
+
+            SearchAndDestroyDuelStateMemory.Capture(SearchAndDestroyCompatUtility.GetPawn(__instance));
+        }
+    }
+
+    internal static class SearchAndDestroyDuelStateMemory
+    {
+        private static readonly Dictionary<Pawn, bool> pendingRestoreStates = new Dictionary<Pawn, bool>();
+
+        public static void Capture(Pawn pawn)
+        {
+            if (SearchAndDestroyCompatUtility.TryGetSearchAndDestroyEnabledRaw(pawn, out bool enabled) && enabled)
+            {
+                pendingRestoreStates[pawn] = true;
+            }
+            else if (pawn != null)
+            {
+                pendingRestoreStates.Remove(pawn);
+            }
+        }
+
+        public static bool Consume(Pawn pawn)
+        {
+            if (pawn == null || !pendingRestoreStates.TryGetValue(pawn, out bool enabled))
+            {
+                return false;
+            }
+
+            pendingRestoreStates.Remove(pawn);
+            return enabled;
+        }
+    }
+
     internal static class SearchAndDestroyCompatUtility
     {
         private const string SearchAndDestroyPackageId = "memegoddess.searchanddestroy";
         private const string ApexAbilityDefPrefix = "APM_";
 
-        private static readonly FieldInfo pawnField = AccessTools.Field(typeof(Pawn_JobTracker), "pawn");
+        private static readonly FieldInfo jobTrackerPawnField = AccessTools.Field(typeof(Pawn_JobTracker), "pawn");
+        private static readonly FieldInfo mentalStateHandlerPawnField = AccessTools.Field(typeof(MentalStateHandler), "pawn");
 
         private static bool reflectionInitialized;
         private static bool reflectionAvailable;
@@ -86,7 +131,12 @@ namespace ApexMechanoids.HarmonyPatches
 
         public static Pawn GetPawn(Pawn_JobTracker jobTracker)
         {
-            return pawnField?.GetValue(jobTracker) as Pawn;
+            return jobTrackerPawnField?.GetValue(jobTracker) as Pawn;
+        }
+
+        public static Pawn GetPawn(MentalStateHandler mentalStateHandler)
+        {
+            return mentalStateHandlerPawnField?.GetValue(mentalStateHandler) as Pawn;
         }
 
         public static bool SearchAndDestroyEnabledFor(Pawn pawn)
@@ -96,7 +146,51 @@ namespace ApexMechanoids.HarmonyPatches
                 return false;
             }
 
-            return TryGetSearchAndDestroyEnabled(pawn);
+            return TryGetSearchAndDestroyEnabledRaw(pawn, out bool enabled) && enabled;
+        }
+
+        public static bool TryGetSearchAndDestroyEnabledRaw(Pawn pawn, out bool enabled)
+        {
+            enabled = false;
+            if (pawn == null || !ModsConfig.IsActive(SearchAndDestroyPackageId) || !EnsureReflection())
+            {
+                return false;
+            }
+
+            try
+            {
+                object pawnData = GetSearchAndDestroyPawnData(pawn);
+                object enabledValue = searchAndDestroyEnabledField.GetValue(pawnData);
+                if (enabledValue is bool enabledBool)
+                {
+                    enabled = enabledBool;
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+            }
+
+            return false;
+        }
+
+        public static bool TrySetSearchAndDestroyEnabled(Pawn pawn, bool enabled)
+        {
+            if (pawn == null || !ModsConfig.IsActive(SearchAndDestroyPackageId) || !EnsureReflection())
+            {
+                return false;
+            }
+
+            try
+            {
+                object pawnData = GetSearchAndDestroyPawnData(pawn);
+                searchAndDestroyEnabledField.SetValue(pawnData, enabled);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public static bool AutoUseDisabledWithSearchAndDestroy(Pawn pawn, Ability ability)
@@ -139,25 +233,11 @@ namespace ApexMechanoids.HarmonyPatches
             return ability?.def?.defName?.StartsWith(ApexAbilityDefPrefix, StringComparison.Ordinal) == true;
         }
 
-        private static bool TryGetSearchAndDestroyEnabled(Pawn pawn)
+        private static object GetSearchAndDestroyPawnData(Pawn pawn)
         {
-            if (!EnsureReflection())
-            {
-                return false;
-            }
-
-            try
-            {
-                object searchAndDestroy = searchAndDestroyInstanceProperty.GetValue(null);
-                object extendedDataStorage = extendedDataStorageProperty.GetValue(searchAndDestroy);
-                object pawnData = getExtendedDataForMethod.Invoke(extendedDataStorage, new object[] { pawn });
-                object enabled = searchAndDestroyEnabledField.GetValue(pawnData);
-                return enabled is bool enabledBool && enabledBool;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            object searchAndDestroy = searchAndDestroyInstanceProperty.GetValue(null);
+            object extendedDataStorage = extendedDataStorageProperty.GetValue(searchAndDestroy);
+            return getExtendedDataForMethod.Invoke(extendedDataStorage, new object[] { pawn });
         }
 
         private static bool EnsureReflection()
