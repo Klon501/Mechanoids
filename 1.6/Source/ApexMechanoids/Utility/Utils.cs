@@ -106,5 +106,31 @@ namespace ApexMechanoids
         }
 
 
+        public static void ReplaceBuilding(Building oldBuilding, ThingDef NewBuildingDef)
+        {
+            if (oldBuilding == null)
+            {
+                return;
+            }
+  
+            Thing newThing = ThingMaker.MakeThing(NewBuildingDef);
+            Building building = newThing as Building;
+
+            if(building == null)
+            {
+                return;
+            }
+
+            Map map = oldBuilding.Map;
+            IntVec3 pos = oldBuilding.Position;
+            Rot4 rot4 = oldBuilding.Rotation;
+
+
+            oldBuilding.Kill(null);
+
+            GenSpawn.Spawn(building, pos, map, rot4, WipeMode.Vanish, false);
+
+        }
+
     }
 }
