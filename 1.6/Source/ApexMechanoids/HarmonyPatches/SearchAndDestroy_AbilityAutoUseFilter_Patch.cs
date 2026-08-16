@@ -203,7 +203,7 @@ namespace ApexMechanoids.HarmonyPatches
         {
             return pawn != null
                 && pawn.RaceProps?.IsMechanoid == true
-                && !pawn.Awake()
+                && !Utils.IsAwakeAndNotDormant(pawn)
                 && IsApexAbility(ability);
         }
 

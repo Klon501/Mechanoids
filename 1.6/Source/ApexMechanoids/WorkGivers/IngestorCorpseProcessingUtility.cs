@@ -23,7 +23,7 @@ namespace ApexMechanoids
                 && !pawn.Downed
                 && pawn.Spawned
                 && pawn.Map != null
-                && pawn.Awake()
+                && Utils.IsAwakeAndNotDormant(pawn)
                 && pawn.health?.capacities != null
                 && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Moving)
                 && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation);

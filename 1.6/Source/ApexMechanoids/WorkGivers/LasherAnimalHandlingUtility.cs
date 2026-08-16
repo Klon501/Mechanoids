@@ -24,7 +24,7 @@ namespace ApexMechanoids
 
         public static bool CanLasherWork(Pawn pawn)
         {
-            return IsLasher(pawn) && pawn.Spawned && pawn.Map != null && !pawn.Dead && !pawn.Downed && pawn.Awake() && pawn.Faction != null;
+            return IsLasher(pawn) && Utils.CanRunAutonomousPawn(pawn) && pawn.Faction != null;
         }
 
         public static bool CanInteractWithAnimal(Pawn pawn, Pawn animal, bool forced)

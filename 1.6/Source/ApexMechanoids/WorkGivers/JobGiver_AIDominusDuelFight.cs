@@ -140,7 +140,7 @@ namespace ApexMechanoids
         {
             return IsBasicSpawnedPawn(pawn)
                 && !pawn.Downed
-                && pawn.Awake()
+                && Utils.IsAwakeAndNotDormant(pawn)
                 && !IsInDuel(pawn);
         }
 

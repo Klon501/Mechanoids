@@ -8,7 +8,7 @@ namespace ApexMechanoids
     {
         public override Job TryGiveJob(Pawn pawn)
         {
-            if (pawn == null || pawn.Destroyed || pawn.Dead || pawn.Downed || !pawn.Spawned || pawn.Map == null || !pawn.Awake())
+            if (!Utils.CanRunAutonomousPawn(pawn))
             {
                 return null;
             }

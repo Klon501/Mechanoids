@@ -1,4 +1,5 @@
 using UnityEngine;
+using RimWorld;
 using Verse;
 
 namespace ApexMechanoids
@@ -34,7 +35,7 @@ namespace ApexMechanoids
     {
         public static bool CanHover(PawnDrawParms parms)
         {
-            return !parms.Portrait && !parms.dead && parms.pawn != null && !parms.pawn.Dead;
+            return !parms.Portrait && !parms.dead && parms.pawn != null && !parms.pawn.Dead && Utils.IsAwakeAndNotDormant(parms.pawn);
         }
 
         public static float HoverOffset(Pawn pawn, float amplitude, int periodTicks, float phaseOffset, bool seedPhaseByPawn)
@@ -68,7 +69,7 @@ namespace ApexMechanoids
         {
             Vector3 offset = base.OffsetFor(node, parms, out pivot);
             PawnRenderNodeProperties_SatelliteCarriedHover props = node.Props as PawnRenderNodeProperties_SatelliteCarriedHover;
-            if (parms.Portrait || props == null)
+            if (!SatelliteHoverUtility.CanHover(parms) || props == null)
             {
                 return offset;
             }

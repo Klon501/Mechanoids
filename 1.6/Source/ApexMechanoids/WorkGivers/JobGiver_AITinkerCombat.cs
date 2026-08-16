@@ -112,7 +112,7 @@ namespace ApexMechanoids
                 && !pawn.Destroyed
                 && !pawn.Dead
                 && !pawn.Downed
-                && pawn.Awake()
+                && Utils.IsAwakeAndNotDormant(pawn)
                 && !pawn.IsPlayerControlled
                 && pawn.abilities != null
                 && pawn.health?.capacities != null

@@ -31,6 +31,29 @@ namespace ApexMechanoids
 
     public static class Utils
     {
+        public static bool IsAwakeAndNotDormant(Pawn pawn)
+        {
+            if (pawn == null || pawn.health?.capacities == null || !pawn.Awake() || pawn.IsSelfShutdown() || pawn.IsDeactivated())
+            {
+                return false;
+            }
+
+            // RestUtility.Awake() does not cover mech cluster dormancy.
+            CompCanBeDormant dormantComp = pawn.TryGetComp<CompCanBeDormant>();
+            return dormantComp == null || dormantComp.Awake;
+        }
+
+        public static bool CanRunAutonomousPawn(Pawn pawn)
+        {
+            return pawn != null
+                && !pawn.Destroyed
+                && !pawn.Dead
+                && !pawn.Downed
+                && pawn.Spawned
+                && pawn.Map != null
+                && IsAwakeAndNotDormant(pawn);
+        }
+
         public static BodyPartRecord GetNonMissingBodyPart(Pawn pawn, BodyPartDef def, BodyPartGroupDef group = null)
         {
             foreach (var notMissingPart in pawn.health.hediffSet.GetNotMissingParts())

@@ -123,7 +123,6 @@ namespace ApexMechanoids
         private static bool CanRunFor(Pawn pawn)
         {
             return RavagerArtilleryUtility.CanUseArtillery(pawn)
-                && pawn.Awake()
                 && RavagerArtilleryUtility.AutoFireEnabled(pawn);
         }
 

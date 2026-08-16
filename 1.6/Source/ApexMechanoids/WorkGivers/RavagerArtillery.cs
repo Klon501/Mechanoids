@@ -31,7 +31,7 @@ namespace ApexMechanoids
 
         public static bool CanUseArtillery(Pawn pawn)
         {
-            return pawn != null && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && pawn.Awake() && !pawn.Position.Roofed(pawn.Map);
+            return Utils.CanRunAutonomousPawn(pawn) && !pawn.Position.Roofed(pawn.Map);
         }
 
         public static bool AutoFireEnabled(Pawn pawn)
@@ -319,7 +319,6 @@ namespace ApexMechanoids
         private static bool CanUseStarfall(Pawn pawn, Ability ability)
         {
             return CanUseArtillery(pawn)
-                && pawn.Awake()
                 && ability != null
                 && ability.def?.defName == StarfallDefName
                 && ability.def.aiCanUse

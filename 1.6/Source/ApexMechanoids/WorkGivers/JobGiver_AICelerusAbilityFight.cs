@@ -445,11 +445,7 @@ namespace ApexMechanoids
         private bool CanRunFor(Pawn pawn)
         {
             return pawn != null
-                && pawn.Spawned
-                && pawn.Map != null
-                && !pawn.Dead
-                && !pawn.Downed
-                && pawn.Awake()
+                && Utils.CanRunAutonomousPawn(pawn)
                 && CelerusRaidUtility.IsCelerus(pawn)
                 && pawn.abilities != null
                 && pawn.CurJob?.ability == null

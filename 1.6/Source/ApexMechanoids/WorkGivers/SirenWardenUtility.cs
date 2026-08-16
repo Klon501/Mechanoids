@@ -14,7 +14,7 @@ namespace ApexMechanoids
 
         public static bool CanSirenWork(Pawn pawn)
         {
-            return pawn != null && !pawn.Destroyed && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && pawn.Awake() && pawn.def?.defName == SirenDefName;
+            return Utils.CanRunAutonomousPawn(pawn) && pawn.def?.defName == SirenDefName;
         }
 
         public static bool CanChatWithPrisoner(Pawn siren, Pawn prisoner, bool forced)

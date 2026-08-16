@@ -39,7 +39,7 @@ namespace ApexMechanoids
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Map == null || pawn.Dead || pawn.Downed || !pawn.Awake())
+            if (!Utils.CanRunAutonomousPawn(pawn))
             {
                 return;
             }
@@ -219,12 +219,7 @@ namespace ApexMechanoids
         private static bool IsValidCaster(Pawn pawn)
         {
             return pawn != null
-                && pawn.Spawned
-                && pawn.Map != null
-                && !pawn.Destroyed
-                && !pawn.Dead
-                && !pawn.Downed
-                && pawn.Awake();
+                && Utils.CanRunAutonomousPawn(pawn);
         }
 
         private static bool IsWorthBuffing(Pawn pawn, HediffDef sacrificeHediff)
@@ -234,7 +229,7 @@ namespace ApexMechanoids
                 && !pawn.Destroyed
                 && !pawn.Dead
                 && !pawn.Downed
-                && pawn.Awake()
+                && Utils.IsAwakeAndNotDormant(pawn)
                 && !HasHediff(pawn, sacrificeHediff);
         }
 

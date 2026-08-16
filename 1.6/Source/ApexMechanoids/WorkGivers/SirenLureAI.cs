@@ -227,12 +227,7 @@ namespace ApexMechanoids
         {
             return pawn != null
                 && IsSiren(pawn)
-                && !pawn.Destroyed
-                && !pawn.Dead
-                && !pawn.Downed
-                && pawn.Spawned
-                && pawn.Map != null
-                && pawn.Awake()
+                && Utils.CanRunAutonomousPawn(pawn)
                 && pawn.abilities != null
                 && pawn.CurJob?.ability == null
                 && ability?.pawn == pawn
