@@ -34,7 +34,7 @@ namespace ApexMechanoids
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Map == null || pawn.Dead || pawn.Downed || !pawn.Awake())
+            if (!Utils.CanRunAutonomousPawn(pawn))
             {
                 return;
             }

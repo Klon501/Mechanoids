@@ -9,6 +9,16 @@ namespace ApexMechanoids
         public List<PawnKindDefWeight> mechKindOptions = new List<PawnKindDefWeight>();
 
         /// <summary>
+        /// The one kind this container holds, named by the def instead of rolled for. Set it and the
+        /// option list, the weights and the combat power band are all skipped: this is a container
+        /// somebody placed on purpose, not one the game stocked.
+        ///
+        /// The Buried Legacy starting structure is what it is for. A layout cell only names a def, so
+        /// wanting a particular mech in a particular container means a def per mech.
+        /// </summary>
+        public PawnKindDef fixedMechKind;
+
+        /// <summary>
         /// Maps the colony's current threat points onto the highest <c>combatPower</c> this container
         /// is allowed to hold. Options above the cap are dropped before the weighted roll, so a young
         /// colony cannot open one of these and walk away with a centipede.

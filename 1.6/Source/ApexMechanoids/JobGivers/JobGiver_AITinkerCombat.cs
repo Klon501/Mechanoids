@@ -24,6 +24,7 @@ namespace ApexMechanoids
         public int shieldRecentAttackTargetTicks = 300;
         public int shieldRecentRangedHarmTicks = 2500;
         public int shieldTargetLockTicks = 500;
+        public float shieldSelfMeleeThreatRadius = 2.9f;
 
         private static readonly Dictionary<int, ShieldTargetMemory> shieldTargetMemory = new Dictionary<int, ShieldTargetMemory>();
         private static readonly List<int> tmpShieldTargetMemoryKeysToRemove = new List<int>();
@@ -48,6 +49,7 @@ namespace ApexMechanoids
             obj.shieldRecentAttackTargetTicks = shieldRecentAttackTargetTicks;
             obj.shieldRecentRangedHarmTicks = shieldRecentRangedHarmTicks;
             obj.shieldTargetLockTicks = shieldTargetLockTicks;
+            obj.shieldSelfMeleeThreatRadius = shieldSelfMeleeThreatRadius;
             return obj;
         }
 
@@ -110,6 +112,7 @@ namespace ApexMechanoids
                 && !pawn.Destroyed
                 && !pawn.Dead
                 && !pawn.Downed
+                && Utils.IsAwakeAndNotDormant(pawn)
                 && !pawn.IsPlayerControlled
                 && pawn.abilities != null
                 && pawn.health?.capacities != null
@@ -274,6 +277,10 @@ namespace ApexMechanoids
         private Job TryGetShieldJob(Pawn pawn, Ability ability, Thing enemyTarget)
         {
             if (ability == null || !ability.CanCast)
+            {
+                return null;
+            }
+            if (HasCloseMeleeThreat(pawn))
             {
                 return null;
             }
@@ -680,6 +687,17 @@ namespace ApexMechanoids
             }
 
             return !requireLineOfSightToTargets || GenSight.LineOfSightToThing(pawn.Position, target, pawn.Map);
+        }
+
+        private bool HasCloseMeleeThreat(Pawn pawn)
+        {
+            if (pawn?.mindState != null && pawn.mindState.MeleeThreatStillThreat)
+            {
+                return true;
+            }
+
+            return GenAI.EnemyIsNear(pawn, shieldSelfMeleeThreatRadius, out Thing threat, meleeOnly: true, requireLos: true)
+                && IsValidEnemyTarget(pawn, threat);
         }
 
         private static bool IsValidEnemyTarget(Pawn pawn, Thing target)

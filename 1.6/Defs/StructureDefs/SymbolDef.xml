@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+<!--
+  KCSG writes a symbol of its own for every ThingDef of Core and the DLCs, which is why the layouts
+  can say Wall_BlocksGranite with nothing declared for it. It does not do that for any other mod, so
+  each of ours needs one here.
+
+  The rotation suffix is not a second way out. An unknown APM_Foo_North sends KCSG to
+  HotGenerateRotationSymbols, which strips the suffix and looks the remainder up among the symbols,
+  not among the things; with no APM_Foo symbol it hands back an empty one, and SymbolUtils.Generate
+  returns on the null thingDef without a word. The cell just stays bare.
+
+  So the entries below are unrotated on purpose: one symbol per thing covers every rotation the
+  layouts ask for.
+-->
+
+<KCSG.SymbolDef>
+  <defName>APM_MechanoidContainer_Player</defName>
+  <thing>APM_MechanoidContainer_Player</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>APM_MechanoidContainer_Legacy_Lasher</defName>
+  <thing>APM_MechanoidContainer_Legacy_Lasher</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>APM_MechanoidContainer_Legacy_Vassal</defName>
+  <thing>APM_MechanoidContainer_Legacy_Vassal</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>APM_MechanoidContainer_Legacy_Tinker</defName>
+  <thing>APM_MechanoidContainer_Legacy_Tinker</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>APM_RepairStation_Small</defName>
+  <thing>APM_RepairStation_Small</thing>
+</KCSG.SymbolDef>
+
+<!--
+  Vanilla thing, but the layout asks for it under an exported name carrying a charge level, and KCSG
+  only auto-creates the plain Battery and Battery_South. Two of these stand in Domain 1.
+-->
+<KCSG.SymbolDef>
+  <defName>Battery_South_Power0</defName>
+  <thing>Battery</thing>
+  <rotation>South</rotation>
+  <powerPercent>0</powerPercent>
+</KCSG.SymbolDef>
+
 <KCSG.SymbolDef>
   <defName>APM_MechCommandCasket_South</defName>
   <thing>APM_MechCommandCasket</thing>
@@ -10,6 +61,18 @@
     <defName>APM_RepairStation_Small_South</defName>
     <thing>APM_RepairStation_Small</thing>
     <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>APM_CasketBandwidthAmplifier_South</defName>
+    <thing>APM_CasketBandwidthAmplifier</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>APM_CasketBandwidthAmplifier_East</defName>
+    <thing>APM_CasketBandwidthAmplifier</thing>
+    <rotation>East</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>

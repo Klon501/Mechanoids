@@ -76,6 +76,19 @@ namespace ApexMechanoids
         }
 
         /// <summary>
+        /// The structure now exists, so this is the first moment its real extent can be read. The
+        /// site was prepared for the largest layout it might have been; <see cref="StructureSiteCleanup"/>
+        /// cleans what was actually taken and gives the rest back.
+        ///
+        /// A postfix rather than another scen part: this has to run after KCSG whatever order the
+        /// scenario lists its parts in, and the cleanup is only ever armed by our own scen part.
+        /// </summary>
+        private static void Postfix(Map map)
+        {
+            StructureSiteCleanup.Run(map);
+        }
+
+        /// <summary>
         /// Only for our own scenarios: they are the ones that declare the site-preparation part.
         /// </summary>
         private static bool OptedIn()

@@ -52,6 +52,7 @@
 			<body>APM_Siren</body>
 			<baseHealthScale>1.32</baseHealthScale>
 			<baseBodySize>2.5</baseBodySize>
+			<thinkTreeMain>APM_SirenMechanoid</thinkTreeMain>
 			<mechWeightClass>Medium</mechWeightClass>
 			<mechEnabledWorkTypes>
 				<li>APM_SirenWarden</li>
