@@ -64,6 +64,18 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>APM_CasketBandwidthAmplifier_South</defName>
+    <thing>APM_CasketBandwidthAmplifier</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>APM_CasketBandwidthAmplifier_East</defName>
+    <thing>APM_CasketBandwidthAmplifier</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>APM_Weapon_PlasmaWhip</defName>
     <thing>APM_Weapon_PlasmaWhip</thing>
   </KCSG.SymbolDef>
