@@ -116,11 +116,11 @@
 		</statBases>
 		<size>(5,3)</size>
 		<costList>
-			<Steel>150</Steel>
-			<Plasteel>40</Plasteel>
+			<Steel>450</Steel>
+			<Plasteel>110</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>6</ComponentSpacer>
-			<SubcoreHigh>1</SubcoreHigh>
+			<ComponentSpacer>8</ComponentSpacer>
+			<SubcoreHigh>3</SubcoreHigh>
 			<APM_PsionicChip>1</APM_PsionicChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -204,7 +204,8 @@
 		<rotatable>true</rotatable>
 		<costList>
 			<Steel>250</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<SubcoreHigh>1</SubcoreHigh>
 			<APM_OcularChip>1</APM_OcularChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>

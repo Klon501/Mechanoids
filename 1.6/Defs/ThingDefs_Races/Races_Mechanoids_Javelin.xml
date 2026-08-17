@@ -90,7 +90,7 @@
 			-->
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>0</fuelConsumptionRate>
-				<fuelCapacity>30.0</fuelCapacity>
+				<fuelCapacity>60.0</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
 				<fuelFilter>
 					<thingDefs>
@@ -103,7 +103,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<allowRefuelIfNotEmpty>true</allowRefuelIfNotEmpty>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-				<initialConfigurableTargetFuelLevel>30.0</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>60.0</initialConfigurableTargetFuelLevel>
 				<canEjectFuel>true</canEjectFuel>
 				<!-- A mech with an empty magazine is still a working mech, so it gets none of the
 				     out-of-fuel furniture: no overlay, no gauge on the map, and no gizmos at all on
@@ -133,21 +133,21 @@
 						<projectile>APM_Proj_JavelinMissile_Incendiary</projectile>
 						<label>incendiary rocket</label>
 						<description>Sprays burning fuel across the impact point and sets light to whatever is standing in it. Poor against armour.</description>
-						<uraniumCost>3</uraniumCost>
+						<uraniumCost>10</uraniumCost>
 					</li>
 					<li>
 						<key>highExplosive</key>
 						<projectile>APM_Proj_JavelinMissile_HighExplosive</projectile>
 						<label>high-explosive rocket</label>
 						<description>A fragmentation warhead with a wide blast. Tears through a crowd of lightly armoured targets, and does far less to a single heavy one than the basic rocket would.</description>
-						<uraniumCost>4</uraniumCost>
+						<uraniumCost>25</uraniumCost>
 					</li>
 					<li>
 						<key>emp</key>
 						<projectile>APM_Proj_JavelinMissile_EMP</projectile>
 						<label>EMP rocket</label>
 						<description>An electromagnetic pulse that stuns machines outright and barely marks flesh. Mechanoid raids do not field this one.</description>
-						<uraniumCost>5</uraniumCost>
+						<uraniumCost>15</uraniumCost>
 						<playerOnly>true</playerOnly>
 					</li>
 				</rockets>

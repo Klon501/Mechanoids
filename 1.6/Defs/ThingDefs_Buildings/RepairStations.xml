@@ -24,7 +24,7 @@
 	
 	<ThingDef ParentName="APM_RepairStationBase">
 		<defName>APM_RepairStation_Small</defName>
-		<label>repair station</label>
+		<label>mech repair station</label>
 		<description>A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs.</description>
 		<uiIconPath>Things/Building/SmallRepairStation/SmallRepairStationMenu</uiIconPath>
 		<graphicData>
@@ -118,7 +118,7 @@
 
 	<ThingDef ParentName="APM_RepairStationBase">
 		<defName>APM_RepairStation_Advanced</defName>
-		<label>advanced repair station</label>
+		<label>advanced mech repair station</label>
 		<description>A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs.</description>
 		<uiIconPath>Things/Building/BigRepairStation/BigRepairStation</uiIconPath>
 		<graphicData>
