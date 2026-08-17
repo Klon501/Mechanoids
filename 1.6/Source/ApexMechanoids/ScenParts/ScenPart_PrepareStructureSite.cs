@@ -36,7 +36,8 @@ namespace ApexMechanoids
 
         // Cells of prepared ground around the structure itself. The layout's own walls sit on the
         // edge of its footprint, so a little apron keeps the doorways and the ground a player first
-        // walks on from opening straight onto sand.
+        // walks on from opening straight onto sand. It is also how much of the repaired ground
+        // survives the cleanup; past it the map gets its own terrain back.
         public int margin = 2;
 
         // How far out the replacement ground is sampled from. Wide enough to see past a single
@@ -110,24 +111,36 @@ namespace ApexMechanoids
             TerrainDef replacement = ChooseReplacementTerrain(map, rect);
 
             int unbuildableBefore = CountUnbuildable(map, rect, out string groundBefore);
-            int cleared = 0;
+            int count = rect.Width * rect.Height;
+            TerrainDef[] originalTerrain = new TerrainDef[count];
+            bool[] repairedCells = new bool[count];
             int repaired = 0;
+            int index = 0;
             foreach ((int x, int z) in StructureSiteRules.Cells(rect))
             {
                 IntVec3 cell = new IntVec3(x, 0, z);
-                cleared += ClearCell(map, cell);
+                originalTerrain[index] = map.terrainGrid.TerrainAt(cell);
                 if (replacement != null && RepairCell(map, cell, replacement))
                 {
+                    repairedCells[index] = true;
                     repaired++;
                 }
+                index++;
             }
+
+            // Nothing is cleared here. The site is prepared for the largest layout because KCSG has
+            // not chosen one yet, and clearing all of that is what left a bare rectangle around a
+            // smaller complex. StructureSiteCleanup does it once the structure exists and its real
+            // extent can be read, and hands back the ground the structure never reached.
+            StructureSiteCleanup.Arm(
+                map, rect, originalTerrain, repairedCells, margin, clearNaturalRock, clearBlockingThings);
 
             // The after count is what says the site is actually fit to build on, rather than that
             // the pass ran. It is the line to read in Player.log when a start goes wrong.
             Log.Message(
-                $"[Apex Mechanoids] Starting structure site {rect}: {unbuildableBefore} of {rect.Width * rect.Height} "
+                $"[Apex Mechanoids] Starting structure site {rect}: {unbuildableBefore} of {count} "
                 + $"cell(s) could not carry a structure{groundBefore}, {repaired} replaced with {replacement?.defName ?? "nothing"}, "
-                + $"{cleared} blocker(s) removed, {CountUnbuildable(map, rect, out _)} still unbuildable.");
+                + $"{CountUnbuildable(map, rect, out _)} still unbuildable.");
         }
 
         /// <summary>
@@ -171,60 +184,6 @@ namespace ApexMechanoids
         private static bool CarriesStructures(TerrainDef terrain)
         {
             return terrain.affordances != null && terrain.affordances.Contains(TerrainAffordanceDefOf.Heavy);
-        }
-
-        private int ClearCell(Map map, IntVec3 cell)
-        {
-            int removed = 0;
-            List<Thing> things = cell.GetThingList(map);
-            for (int i = things.Count - 1; i >= 0; i--)
-            {
-                Thing thing = things[i];
-                if (thing == null || !thing.Spawned || thing is Pawn)
-                {
-                    continue;
-                }
-
-                if (thing.def.category == ThingCategory.Building
-                    && thing.def.building != null
-                    && thing.def.building.isNaturalRock)
-                {
-                    if (!clearNaturalRock)
-                    {
-                        continue;
-                    }
-
-                    thing.DeSpawn();
-                    removed++;
-                    continue;
-                }
-
-                if (!clearBlockingThings)
-                {
-                    continue;
-                }
-
-                if (thing.def.category == ThingCategory.Plant
-                    || thing.def.category == ThingCategory.Filth
-                    || (thing.def.thingCategories != null && thing.def.thingCategories.Contains(ThingCategoryDefOf.Chunks)))
-                {
-                    thing.DeSpawn();
-                    removed++;
-                }
-            }
-
-            if (clearNaturalRock)
-            {
-                // Rock that has been taken out still has its mountain roof over it, which collapses
-                // on whatever is built underneath.
-                RoofDef roof = map.roofGrid.RoofAt(cell);
-                if (roof != null && roof.isNatural)
-                {
-                    map.roofGrid.SetRoof(cell, null);
-                }
-            }
-
-            return removed;
         }
 
         /// <summary>

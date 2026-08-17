@@ -42,7 +42,7 @@
 			<body>APM_Dominus</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4.5</baseHealthScale>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_DominusMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>Medium</mechWeightClass>
 			<lifeStageAges>

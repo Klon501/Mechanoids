@@ -9,6 +9,8 @@ namespace ApexMechanoids
 		public static ThingDef APM_Mech_Tinker;
 		public static ThingDef APM_Mech_Dynamo;
 		public static ThingDef APM_Mech_Frostivus;
+        public static ThingDef APM_Mech_Dominus;
+        public static ThingDef APM_Mech_DominusB;
         public static ThingDef APM_Mech_Ingestor;
         public static ThingDef APM_Building_ToxicPurifier;
 		public static AbilityDef APM_DefenceMatrix;
@@ -23,6 +25,8 @@ namespace ApexMechanoids
         public static AbilityDef APM_CelerusBlink;
         public static AbilityDef APM_Ability_SmokeScreen;
         public static AbilityDef APM_Ability_SmokeScreen_Boss;
+        public static AbilityDef APM_Mech_Duel;
+        public static AbilityDef APM_Mech_Duel_Boss;
         public static HediffDef APM_Hediff_TerminusOverdrive;
         public static BodyPartGroupDef APM_LeftAegisShield;
         public static BodyPartGroupDef APM_RightAegisShield;
