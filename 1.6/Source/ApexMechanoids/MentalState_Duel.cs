@@ -74,10 +74,10 @@ namespace ApexMechanoids
             {
                 if (causedByPawn.DeadOrDowned)
                 {
-                    HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, severityPerWin);
+                    HealthUtility.AdjustSeverity(pawn, ApexDefsOf.APM_DuelWinner, SeverityPerWin);
                 }
                 else if (!pawn.DeadOrDowned)
-                {
+                { 
                     pawn.health.AddHediff(ApexDefsOf.APM_DuelDraw);
                 } 
             }
