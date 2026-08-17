@@ -29,6 +29,61 @@ namespace ApexMechanoids
 
     public static class Utils
     {
+        public static bool IsAwakeAndNotDormant(Pawn pawn)
+        {
+            if (pawn == null || pawn.health?.capacities == null || !pawn.Awake() || pawn.IsSelfShutdown() || pawn.IsDeactivated())
+            {
+                return false;
+            }
+
+            // RestUtility.Awake() does not cover mech cluster dormancy.
+            CompCanBeDormant dormantComp = pawn.TryGetComp<CompCanBeDormant>();
+            return dormantComp == null || dormantComp.Awake;
+        }
+
+        public static bool CanRunAutonomousPawn(Pawn pawn)
+        {
+            return pawn != null
+                && !pawn.Destroyed
+                && !pawn.Dead
+                && !pawn.Downed
+                && pawn.Spawned
+                && pawn.Map != null
+                && IsAwakeAndNotDormant(pawn);
+        }
+
+        public static BodyPartRecord GetNonMissingBodyPart(Pawn pawn, BodyPartDef def, BodyPartGroupDef group = null)
+        {
+            foreach (var notMissingPart in pawn.health.hediffSet.GetNotMissingParts())
+            {
+                if (notMissingPart.def == def)
+                {
+                    if (group != null && !notMissingPart.groups.Contains(group))
+                    {
+                        continue;
+                    }
+                    return notMissingPart;
+                }
+            }
+
+            return null;
+        }
+
+        public static List<BodyPartRecord> GetNonMissingBodyParts(Pawn pawn, BodyPartDef def)
+        {
+            List<BodyPartRecord> matchingParts = new List<BodyPartRecord>();
+
+            foreach (var notMissingPart in pawn.health.hediffSet.GetNotMissingParts())
+            {
+                if (notMissingPart.def == def)
+                {
+                    matchingParts.Add(notMissingPart);
+                }
+            }
+
+            return matchingParts;
+        }
+        
         #region -- Logs --
         public static void LogMessage(string str) => Log.Message("<color=#9ba08c>[ApexMechanoids]</color> " + str);
         public static void LogWarning(string str) => Log.Warning("<color=#9ba08c>[ApexMechanoids]</color> " + str);
@@ -105,6 +160,32 @@ namespace ApexMechanoids
             return false;
         }
 
+
+        public static void ReplaceBuilding(Building oldBuilding, ThingDef NewBuildingDef)
+        {
+            if (oldBuilding == null)
+            {
+                return;
+            }
+  
+            Thing newThing = ThingMaker.MakeThing(NewBuildingDef);
+            Building building = newThing as Building;
+
+            if(building == null)
+            {
+                return;
+            }
+
+            Map map = oldBuilding.Map;
+            IntVec3 pos = oldBuilding.Position;
+            Rot4 rot4 = oldBuilding.Rotation;
+
+
+            oldBuilding.Kill(null);
+
+            GenSpawn.Spawn(building, pos, map, rot4, WipeMode.Vanish, false);
+
+        }
 
         public static void ReplaceBuilding(Building oldBuilding, ThingDef NewBuildingDef)
         {

@@ -13,7 +13,7 @@ namespace ApexMechanoids
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            if (pawn?.Map == null)
+            if (!IngestorCorpseProcessingUtility.CanDoCorpseProcessing(pawn))
             {
                 yield break;
             }

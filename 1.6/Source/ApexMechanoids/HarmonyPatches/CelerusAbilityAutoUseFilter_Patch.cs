@@ -17,7 +17,7 @@ namespace ApexMechanoids.HarmonyPatches
             }
 
             Pawn pawn = __instance.pawn;
-            if (!CelerusAbilityAutoUseUtility.AutoUseBlockedInEscortMode(pawn))
+            if (!CelerusAbilityAutoUseUtility.AutoUseBlockedInGenericAI(pawn))
             {
                 return;
             }
@@ -34,9 +34,17 @@ namespace ApexMechanoids.HarmonyPatches
 
     internal static class CelerusAbilityAutoUseUtility
     {
+        public static bool AutoUseBlockedInGenericAI(Pawn pawn)
+        {
+            return CelerusRaidUtility.IsCelerus(pawn)
+                && (!pawn.IsPlayerControlled
+                    || AutoUseBlockedInEscortMode(pawn)
+                    || SearchAndDestroyCompatUtility.SearchAndDestroyEnabledFor(pawn));
+        }
+
         public static bool AutoUseBlockedInEscortMode(Pawn pawn)
         {
-            return IsCelerus(pawn)
+            return CelerusRaidUtility.IsCelerus(pawn)
                 && pawn.IsColonyMechPlayerControlled
                 && pawn.GetMechWorkMode() == MechWorkModeDefOf.Escort;
         }
@@ -44,14 +52,7 @@ namespace ApexMechanoids.HarmonyPatches
         public static bool IsCelerusAbility(Ability ability)
         {
             AbilityDef def = ability?.def;
-            return def == ApexDefsOf.APM_CelerusBlink
-                || def == ApexDefsOf.APM_Ability_SmokeScreen
-                || def == ApexDefsOf.APM_Ability_SmokeScreen_Boss;
-        }
-
-        private static bool IsCelerus(Pawn pawn)
-        {
-            return pawn?.def == ApexDefsOf.APM_Mech_Celerus || pawn?.def == ApexDefsOf.APM_Mech_CelerusB;
+            return CelerusRaidUtility.IsCelerusAbility(def);
         }
     }
 }

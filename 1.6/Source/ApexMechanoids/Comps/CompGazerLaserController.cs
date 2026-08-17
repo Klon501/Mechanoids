@@ -12,7 +12,7 @@ namespace ApexMechanoids
 
         public static bool CanUseLaser(Pawn pawn)
         {
-            return pawn != null && !pawn.Dead && !pawn.Downed && pawn.Spawned && pawn.Map != null && pawn.Awake();
+            return Utils.CanRunAutonomousPawn(pawn);
         }
 
         public static bool AutoLaserEnabled(Pawn pawn)

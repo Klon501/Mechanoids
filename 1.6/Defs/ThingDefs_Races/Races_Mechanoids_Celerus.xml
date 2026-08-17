@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== THING DEFS ==================== -->
@@ -56,7 +56,7 @@
 		<race>
 			<body>APM_Celerus</body>
 			<baseBodySize>2</baseBodySize>
-			<baseHealthScale>4</baseHealthScale>
+			<baseHealthScale>5.2</baseHealthScale>
 			<thinkTreeMain>APM_CelerusMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>Medium</mechWeightClass>
@@ -98,6 +98,8 @@
 				<minRange>7.9</minRange>
 				<maxRange>15.4</maxRange>
 			</li>
+		
+			<li Class="ApexMechanoids.CompProperties_CelerusRaidController" />
 		</comps>
 		<modExtensions>
 			<li Class="ApexMechanoids.DefModExtension_SearchAndDestroyMech">
