@@ -246,6 +246,68 @@ namespace ApexMechanoids
             }
         }
 
+
+        #region texture drawing
+
+        public override Graphic Graphic
+        {
+            get
+            {
+                return GetGraphic;
+            }
+        }
+
+        private Graphic GetGraphic
+        {
+            get
+            {
+                if (CachedGraphic == null || UpdateGraphic)
+                {
+                    if (def.graphicData == null)
+                    {
+                        return BaseContent.BadGraphic;
+                    }
+                    Graphic BaseGraphic = def.graphicData.GraphicColoredFor(this);
+
+                    CachedGraphic = GraphicDatabase.Get<Graphic_Multi>(GetTexturePath, BaseGraphic.Shader, BaseGraphic.drawSize, BaseGraphic.color, BaseGraphic.colorTwo, BaseGraphic.data);
+                    UpdateGraphic = false;
+                }
+
+                return CachedGraphic;
+
+            }
+        }
+
+        private Graphic CachedGraphic;
+        private bool UpdateGraphic = false;
+
+        private string GetTexturePath
+        {
+            get
+            {
+                if (selectedPawn != null && innerContainer.Contains(selectedPawn))
+                {
+                    return "Things/Building/MechCommandCasket/MechCommandCasket";
+                }
+                else
+                {
+                    return "Things/Building/MechCommandCasket/MechCommandCasket_Empty";
+                }
+            }
+        }
+
+        private void UpdateGraphics()
+        {
+            UpdateGraphic = true;
+            foreach (IntVec3 item in this.OccupiedRect())
+            {
+                this.Map.mapDrawer.MapMeshDirty(item, MapMeshFlagDefOf.Things);
+            }
+        }
+
+        #endregion
+
+
         private void GetNutritionFromNetwork()
         {
            // CompResource comp =  GetComp(__instance);
@@ -270,9 +332,6 @@ namespace ApexMechanoids
         }
 
         private float NutritionFromPaste => ThingDefOf.MealNutrientPaste.GetStatValueAbstract(StatDefOf.Nutrition);
-
-
-
 
 
         public override AcceptanceReport CanAcceptPawn(Pawn pawn)
@@ -341,8 +400,6 @@ namespace ApexMechanoids
             {
                 CompAbilities.TryChangeUser(selectedPawn);
             }
-
-
             bool num = pawn.DeSpawnOrDeselect();
             if (innerContainer.TryAddOrTransfer(pawn))
             {
@@ -353,6 +410,7 @@ namespace ApexMechanoids
             {
                 Find.Selector.Select(pawn, playSound: false, forceDesignatorDeselect: false);
             }
+            UpdateGraphics();
         }
 
         private void TryAbsorbNutritiousThing()
@@ -409,6 +467,7 @@ namespace ApexMechanoids
         {
             selectedPawn = null;
             startTick = -1;
+            UpdateGraphics();
         }
 
 
