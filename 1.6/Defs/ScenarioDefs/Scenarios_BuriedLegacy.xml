@@ -51,6 +51,36 @@
             </li>
           </targets>
         </li>
+        <!-- Also below the structure part: it trims what KCSG has already scattered. KCSG rolls a
+             loose item's stack anywhere up to the def's stack limit and its quality anywhere on the
+             scale, and neither is settable from a layout, so the tidying happens here. Only the
+             ground the complex was built on is touched. -->
+        <li Class="ApexMechanoids.ScenPart_LimitStructureLoot">
+          <def>APM_LimitStructureLoot</def>
+          <limits>
+            <li>
+              <thingDef>ComponentSpacer</thingDef>
+              <maxStackCount>4</maxStackCount>
+            </li>
+            <li>
+              <thingDef>ComponentIndustrial</thingDef>
+              <maxStackCount>4</maxStackCount>
+            </li>
+            <li>
+              <thingDef>MedicineIndustrial</thingDef>
+              <maxStackCount>4</maxStackCount>
+            </li>
+            <li>
+              <thingDef>Steel</thingDef>
+              <maxStackCount>25</maxStackCount>
+            </li>
+            <li>
+              <thingDef>APM_Weapon_PlasmaWhip</thingDef>
+              <minQuality>Normal</minQuality>
+              <maxQuality>Good</maxQuality>
+            </li>
+          </limits>
+        </li>
         <li Class="ApexMechanoids.ScenPart_CameraOnPlayerStart">
           <def>APM_CameraOnPlayerStart</def>
         </li>

@@ -20,6 +20,15 @@
   </ScenPartDef>
 
   <ScenPartDef>
+    <defName>APM_LimitStructureLoot</defName>
+    <label>picked over supplies</label>
+    <description>What the complex still holds was left behind, not stockpiled</description>
+    <scenPartClass>ApexMechanoids.ScenPart_LimitStructureLoot</scenPartClass>
+    <category>Fixed</category>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <ScenPartDef>
     <defName>APM_CameraOnPlayerStart</defName>
     <label>start on your pawns</label>
     <description>The camera opens on the pawns instead of the middle of the map</description>
