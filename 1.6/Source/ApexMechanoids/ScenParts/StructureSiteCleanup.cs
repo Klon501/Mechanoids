@@ -39,6 +39,17 @@ namespace ApexMechanoids
         private static bool clearBlockingThings;
 
         /// <summary>
+        /// The map the last site was prepared on, and the ground it covered. Unlike the fields above
+        /// these survive <see cref="Disarm"/>, because the parts that run after KCSG still need to
+        /// know which patch of map the complex was put on. <see cref="ScenPart_LimitStructureLoot"/>
+        /// is the one that asks, so its caps land on what the complex spawned and leave the map
+        /// generator's own ruins alone.
+        /// </summary>
+        public static Map LastSiteMap { get; private set; }
+
+        public static SiteRect LastSiteRect { get; private set; } = SiteRect.Empty;
+
+        /// <summary>
         /// Records the site as the structure is about to be built on it. Everything the cleanup
         /// decides is a comparison against this, so it is taken after the ground is repaired and
         /// before KCSG places a single thing.
@@ -54,6 +65,8 @@ namespace ApexMechanoids
         {
             armedMap = map;
             armedRect = rect;
+            LastSiteMap = map;
+            LastSiteRect = rect;
             terrainBeforeRepair = originalTerrain;
             repairedByUs = repaired;
             keepMargin = margin;

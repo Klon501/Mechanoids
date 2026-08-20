@@ -57,6 +57,16 @@
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
+<!--
+  The one the domains are built around. KCSG's own chanceToContainPawn is not the route: it only
+  fires for Building_CorpseCasket and Building_CryptosleepCasket, and neither is what this is. The
+  occupant is named on the ThingDef instead, by DefModExtension_CasketOccupant.
+-->
+<KCSG.SymbolDef>
+  <defName>APM_MechCommandCasket_Ancient</defName>
+  <thing>APM_MechCommandCasket_Ancient</thing>
+</KCSG.SymbolDef>
+
   <KCSG.SymbolDef>
     <defName>APM_RepairStation_Small_South</defName>
     <thing>APM_RepairStation_Small</thing>
