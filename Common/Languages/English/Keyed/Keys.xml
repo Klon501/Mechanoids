@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_MechRepaired>{0} has been fully repaired.</APM_MechRepaired>
+  <APM_Repairing>Repairing {0}</APM_Repairing>
+  <APM_NotMechanoid>Only mechanoids can be repaired here.</APM_NotMechanoid>
+  <APM_NotPlayerFaction>Only friendly mechanoids can be repaired.</APM_NotPlayerFaction>
+  <APM_WrongSize>Mechanoid size must be {0} for this station.</APM_WrongSize>
+  <APM_AutoRepairOrdered>Repair station scanning found {0}. Repairs ordered.</APM_AutoRepairOrdered>
+  <APM_RepairStation_InactiveEjected>The repair station stopped working and ejected {0}.</APM_RepairStation_InactiveEjected>
+  <APM_RepairStation_CannotRepairSatellite>Satellites cannot be repaired at a repair station.</APM_RepairStation_CannotRepairSatellite>
+
+  <APM_Gizmo_AutoRepair>Auto-repair</APM_Gizmo_AutoRepair>
+  <APM_Gizmo_AutoRepair_Desc>Automatically scan for damaged mechanoids and assign them to the station.</APM_Gizmo_AutoRepair_Desc>
+  <APM_Gizmo_SetInterval>Interval: {0}</APM_Gizmo_SetInterval>
+  <APM_FullHealth>This mechanoid is already at full health.</APM_FullHealth>
+  <APM_CommandCancelRepair>Cancel repair</APM_CommandCancelRepair>
+  <APM_CommandCancelRepairDesc>Stop repairing and eject the mechanoid.</APM_CommandCancelRepairDesc>
+  <APM_InsertMech>Insert mechanoid</APM_InsertMech>
+  <APM_NoMechsAvailable>No available mechanoids.</APM_NoMechsAvailable>
+
+  <APM_RepairStation_ArmEditor_GizmoLabel>Arm editor</APM_RepairStation_ArmEditor_GizmoLabel>
+  <APM_RepairStation_ArmEditor_GizmoDesc>Open the repair station arm offset editor.</APM_RepairStation_ArmEditor_GizmoDesc>
+  <APM_RepairStation_ArmEditor_NoStation>No repair station arm data available.</APM_RepairStation_ArmEditor_NoStation>
+  <APM_RepairStation_ArmEditor_Title>Repair station arm editor</APM_RepairStation_ArmEditor_Title>
+  <APM_RepairStation_ArmEditor_CurrentRotation>Current rotation: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
+  <APM_RepairStation_ArmEditor_Arm>Arm</APM_RepairStation_ArmEditor_Arm>
+  <APM_RepairStation_ArmEditor_View>View</APM_RepairStation_ArmEditor_View>
+  <APM_RepairStation_ArmEditor_UseCurrent>Use current</APM_RepairStation_ArmEditor_UseCurrent>
+  <APM_RepairStation_ArmEditor_Step>Step</APM_RepairStation_ArmEditor_Step>
+  <APM_RepairStation_ArmEditor_LivePreviewOn>Live preview: current rotation</APM_RepairStation_ArmEditor_LivePreviewOn>
+  <APM_RepairStation_ArmEditor_LivePreviewOff>Previewing {0}; live preview is off</APM_RepairStation_ArmEditor_LivePreviewOff>
+  <APM_RepairStation_ArmEditor_SelectedOffset>Offset for {0}, arm {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+  <APM_RepairStation_ArmEditor_ResetView>Reset offset</APM_RepairStation_ArmEditor_ResetView>
+  <APM_RepairStation_ArmEditor_CopyArmXml>Copy arm XML</APM_RepairStation_ArmEditor_CopyArmXml>
+  <APM_RepairStation_ArmEditor_CopyAllXml>Copy all XML</APM_RepairStation_ArmEditor_CopyAllXml>
+  <APM_RepairStation_ArmEditor_Footer>Edits affect this spawned station. Copy XML to save the offsets in defs.</APM_RepairStation_ArmEditor_Footer>
+  <APM_RepairStation_ArmEditor_Copied>Copied XML to clipboard.</APM_RepairStation_ArmEditor_Copied>
+
+</LanguageData>

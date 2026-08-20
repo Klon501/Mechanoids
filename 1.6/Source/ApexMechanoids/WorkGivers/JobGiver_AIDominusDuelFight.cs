@@ -146,7 +146,7 @@ namespace ApexMechanoids
 
         public static bool IsDominus(Pawn pawn)
         {
-            return pawn != null && (pawn.def == ApexDefsOf.APM_Mech_Dominus || pawn.def == ApexDefsOf.APM_Mech_DominusB);
+            return pawn != null && pawn.def == ApexDefsOf.APM_Mech_Dominus;
         }
 
         public static bool IsValidAIDuelTarget(Pawn caster, Thing target, Ability ability)
