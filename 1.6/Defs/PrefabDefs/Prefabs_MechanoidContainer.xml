@@ -8,12 +8,25 @@
 		it is its own def and nothing else places it.
 
 		Footprint is 2x2; the prefab reserves a third row so the tall sprite is not drawn into a wall.
+
+		North only. A PrefabDef with no rotations declared resolves to All, and the container's
+		graphic is a single 2x3 sprite on a square 2x2 footprint, so an East or West placement turns
+		the sprite on its side and leaves the container lying down. Vanilla declares the same one
+		rotation on every prefab whose art only reads one way up.
+
+		The chance is what keeps a large complex from filling with them. Each of the three rooms this
+		is injected into takes at most one, so the count follows the number of rooms rather than the
+		size of the complex, and a 9800 point mechanitor complex has enough of them to hand the
+		player fifteen. Three in ten placements keeps that closer to four or five without changing
+		which rooms they turn up in.
 	-->
 	<PrefabDef>
 		<defName>APM_MechanoidStasisContainer</defName>
+		<rotations>North</rotations>
 		<size>(2,3)</size>
 		<things>
 			<APM_MechanoidContainer_Ancient>
+				<chance>0.3</chance>
 				<position>(0, 0, 0)</position>
 			</APM_MechanoidContainer_Ancient>
 		</things>

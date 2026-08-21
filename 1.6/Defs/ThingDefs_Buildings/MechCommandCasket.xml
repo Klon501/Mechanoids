@@ -261,8 +261,19 @@
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>3200</WorkToBuild>
 			<Flammability>0.6</Flammability>
-		</statBases>  
+		</statBases>
 		<tickerType>Normal</tickerType>
+		<!--
+			The previous owner, named here rather than in code. Building_AncientCommandCasket reads
+			this the same way the stasis containers read fixedMechKind, so the casket class holds
+			whoever the def says and a second ancient casket needs no second class.
+		-->
+		<modExtensions>
+			<li Class="ApexMechanoids.DefModExtension_CasketOccupant">
+				<pawnKind>APM_Mechanitor_Ancient</pawnKind>
+				<rotStage>Dessicated</rotStage>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

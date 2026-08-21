@@ -13,8 +13,15 @@
   <ScenPartDef>
     <defName>APM_PrepareStructureSite</defName>
     <label>solid ground under the domain</label>
-    <description>The ground the ancient complex was built on carries its weight</description>
     <scenPartClass>ApexMechanoids.ScenPart_PrepareStructureSite</scenPartClass>
+    <category>Fixed</category>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>APM_LimitStructureLoot</defName>
+    <label>picked over supplies</label>
+    <scenPartClass>ApexMechanoids.ScenPart_LimitStructureLoot</scenPartClass>
     <category>Fixed</category>
     <maxUses>1</maxUses>
   </ScenPartDef>
@@ -22,7 +29,6 @@
   <ScenPartDef>
     <defName>APM_CameraOnPlayerStart</defName>
     <label>start on your pawns</label>
-    <description>The camera opens on the pawns instead of the middle of the map</description>
     <scenPartClass>ApexMechanoids.ScenPart_CameraOnPlayerStart</scenPartClass>
     <category>Fixed</category>
     <maxUses>1</maxUses>

@@ -13,6 +13,10 @@
   <APM_WrongSize>Только механоиды {0} размера могут использовать эту станцию.</APM_WrongSize>
   <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
   <APM_AutoRepairOrdered>Ремонтная станция обнаружила, что {0} нуждается в ремонте и начала работу.</APM_AutoRepairOrdered>
+  <!-- EN: The repair station stopped working and ejected {0}. -->
+  <APM_RepairStation_InactiveEjected>Ремонтная станция прекратила работу и выгрузила {0}.</APM_RepairStation_InactiveEjected>
+  <!-- EN: Satellites cannot be repaired at a repair station. -->
+  <APM_RepairStation_CannotRepairSatellite>Спутников нельзя ремонтировать на ремонтной станции.</APM_RepairStation_CannotRepairSatellite>
 
   <!-- EN: Auto-Repair -->
   <APM_Gizmo_AutoRepair>Авторемонт</APM_Gizmo_AutoRepair>
@@ -26,5 +30,44 @@
   <APM_CommandCancelRepair>Отменить ремонт</APM_CommandCancelRepair>
   <!-- EN: Stop repairing and eject the mechanoid. -->
   <APM_CommandCancelRepairDesc>Прекратить ремонт и убрать механоида.</APM_CommandCancelRepairDesc>
+  <!-- EN: Insert mechanoid -->
+  <APM_InsertMech>Поместить механоида</APM_InsertMech>
+  <!-- EN: No available mechanoids. -->
+  <APM_NoMechsAvailable>Нет доступных механоидов.</APM_NoMechsAvailable>
+
+  <!-- EN: Arm editor -->
+  <APM_RepairStation_ArmEditor_GizmoLabel>Редактор манипуляторов</APM_RepairStation_ArmEditor_GizmoLabel>
+  <!-- EN: Open the repair station arm offset editor. -->
+  <APM_RepairStation_ArmEditor_GizmoDesc>Открыть инструмент настройки смещений манипуляторов ремонтной станции.</APM_RepairStation_ArmEditor_GizmoDesc>
+  <!-- EN: No repair station arm data available. -->
+  <APM_RepairStation_ArmEditor_NoStation>Данные манипуляторов ремонтной станции недоступны.</APM_RepairStation_ArmEditor_NoStation>
+  <!-- EN: Repair station arm editor -->
+  <APM_RepairStation_ArmEditor_Title>Редактор манипуляторов ремонтной станции</APM_RepairStation_ArmEditor_Title>
+  <!-- EN: Current rotation: {0} -->
+  <APM_RepairStation_ArmEditor_CurrentRotation>Текущий поворот: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
+  <!-- EN: Arm -->
+  <APM_RepairStation_ArmEditor_Arm>Манип.</APM_RepairStation_ArmEditor_Arm>
+  <!-- EN: View -->
+  <APM_RepairStation_ArmEditor_View>Вид</APM_RepairStation_ArmEditor_View>
+  <!-- EN: Use current -->
+  <APM_RepairStation_ArmEditor_UseCurrent>Текущий</APM_RepairStation_ArmEditor_UseCurrent>
+  <!-- EN: Step -->
+  <APM_RepairStation_ArmEditor_Step>Шаг</APM_RepairStation_ArmEditor_Step>
+  <!-- EN: Live preview: current rotation -->
+  <APM_RepairStation_ArmEditor_LivePreviewOn>Предпросмотр: текущий поворот</APM_RepairStation_ArmEditor_LivePreviewOn>
+  <!-- EN: Previewing {0}; live preview is off -->
+  <APM_RepairStation_ArmEditor_LivePreviewOff>Предпросмотр: {0}; live-просмотр выключен</APM_RepairStation_ArmEditor_LivePreviewOff>
+  <!-- EN: Offset for {0}, arm {1} -->
+  <APM_RepairStation_ArmEditor_SelectedOffset>Смещение для {0}, манипулятор {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+  <!-- EN: Reset offset -->
+  <APM_RepairStation_ArmEditor_ResetView>Сбросить смещение</APM_RepairStation_ArmEditor_ResetView>
+  <!-- EN: Copy arm XML -->
+  <APM_RepairStation_ArmEditor_CopyArmXml>Копировать XML манипулятора</APM_RepairStation_ArmEditor_CopyArmXml>
+  <!-- EN: Copy all XML -->
+  <APM_RepairStation_ArmEditor_CopyAllXml>Копировать весь XML</APM_RepairStation_ArmEditor_CopyAllXml>
+  <!-- EN: Edits affect this spawned station. Copy XML to save the offsets in defs. -->
+  <APM_RepairStation_ArmEditor_Footer>Правки применяются только к этой станции. Скопируйте XML, чтобы сохранить смещения в defs.</APM_RepairStation_ArmEditor_Footer>
+  <!-- EN: Copied XML to clipboard. -->
+  <APM_RepairStation_ArmEditor_Copied>XML скопирован в буфер обмена.</APM_RepairStation_ArmEditor_Copied>
 
 </LanguageData>
