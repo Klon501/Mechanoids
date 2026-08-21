@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Select mechanoid... -->
+	<APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>选择机械体{0}</APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>
+	<!-- EN: Contains an unidentified mechanoid. -->
+	<APM.MechanoidContainer.ContainsUnknown>内含一个未知机械体。</APM.MechanoidContainer.ContainsUnknown>
+
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: handle -->
+  <APM_LasherHandling.labelShort>管理</APM_LasherHandling.labelShort>
+  <!-- EN: Handler -->
+  <APM_LasherHandling.pawnLabel>管理员</APM_LasherHandling.pawnLabel>
+  <!-- EN: handling -->
+  <APM_LasherHandling.gerundLabel>管理中</APM_LasherHandling.gerundLabel>
+  <!-- EN: Tame, train, harvest resources from and slaughter animals. -->
+  <APM_LasherHandling.description>驯服、训练、采集资源并屠宰动物。</APM_LasherHandling.description>
+  <!-- EN: Handle -->
+  <APM_LasherHandling.verb>管理</APM_LasherHandling.verb>
+
+</LanguageData>

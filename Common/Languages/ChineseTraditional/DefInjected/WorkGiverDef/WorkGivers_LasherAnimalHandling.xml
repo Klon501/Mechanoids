@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: rope roaming animals -->
+  <APM_LasherTakeRoamingAnimalsToPen.label>牽引遊蕩動物</APM_LasherTakeRoamingAnimalsToPen.label>
+  <!-- EN: rope -->
+  <APM_LasherTakeRoamingAnimalsToPen.verb>牽引</APM_LasherTakeRoamingAnimalsToPen.verb>
+  <!-- EN: roping -->
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>牽引中</APM_LasherTakeRoamingAnimalsToPen.gerund>
+
+  <!-- EN: feed animals -->
+  <APM_LasherFeedPatientAnimals.label>餵養動物</APM_LasherFeedPatientAnimals.label>
+  <!-- EN: feed -->
+  <APM_LasherFeedPatientAnimals.verb>餵養</APM_LasherFeedPatientAnimals.verb>
+  <!-- EN: feeding -->
+  <APM_LasherFeedPatientAnimals.gerund>餵養中</APM_LasherFeedPatientAnimals.gerund>
+
+  <!-- EN: rope animals -->
+  <APM_LasherTakeToPen.label>牽引動物</APM_LasherTakeToPen.label>
+  <!-- EN: rope -->
+  <APM_LasherTakeToPen.verb>牽引</APM_LasherTakeToPen.verb>
+  <!-- EN: roping -->
+  <APM_LasherTakeToPen.gerund>牽引中</APM_LasherTakeToPen.gerund>
+
+  <!-- EN: slaughter animals -->
+  <APM_LasherSlaughter.label>屠宰動物</APM_LasherSlaughter.label>
+  <!-- EN: slaughter -->
+  <APM_LasherSlaughter.verb>屠宰</APM_LasherSlaughter.verb>
+  <!-- EN: slaughtering -->
+  <APM_LasherSlaughter.gerund>屠宰中</APM_LasherSlaughter.gerund>
+
+  <!-- EN: release to wild -->
+  <APM_LasherReleaseToWild.label>放歸野外</APM_LasherReleaseToWild.label>
+  <!-- EN: release -->
+  <APM_LasherReleaseToWild.verb>放歸</APM_LasherReleaseToWild.verb>
+  <!-- EN: releasing -->
+  <APM_LasherReleaseToWild.gerund>放歸中</APM_LasherReleaseToWild.gerund>
+
+  <!-- EN: milk animals -->
+  <APM_LasherMilk.label>擠奶動物</APM_LasherMilk.label>
+  <!-- EN: milk -->
+  <APM_LasherMilk.verb>擠奶</APM_LasherMilk.verb>
+  <!-- EN: milking -->
+  <APM_LasherMilk.gerund>擠奶中</APM_LasherMilk.gerund>
+
+  <!-- EN: shear animals -->
+  <APM_LasherShear.label>剪毛動物</APM_LasherShear.label>
+  <!-- EN: shear -->
+  <APM_LasherShear.verb>剪毛</APM_LasherShear.verb>
+  <!-- EN: shearing -->
+  <APM_LasherShear.gerund>剪毛中</APM_LasherShear.gerund>
+
+  <!-- EN: tame animals -->
+  <APM_LasherTame.label>馴服動物</APM_LasherTame.label>
+  <!-- EN: tame -->
+  <APM_LasherTame.verb>馴服</APM_LasherTame.verb>
+  <!-- EN: taming -->
+  <APM_LasherTame.gerund>馴服中</APM_LasherTame.gerund>
+
+  <!-- EN: train animals -->
+  <APM_LasherTrain.label>訓練動物</APM_LasherTrain.label>
+  <!-- EN: train -->
+  <APM_LasherTrain.verb>訓練</APM_LasherTrain.verb>
+  <!-- EN: training -->
+  <APM_LasherTrain.gerund>訓練中</APM_LasherTrain.gerund>
+
+  <!-- EN: rebalance penned animals -->
+  <APM_LasherRebalanceAnimalsInPens.label>重新平衡圈養動物</APM_LasherRebalanceAnimalsInPens.label>
+  <!-- EN: rope -->
+  <APM_LasherRebalanceAnimalsInPens.verb>牽引</APM_LasherRebalanceAnimalsInPens.verb>
+  <!-- EN: roping -->
+  <APM_LasherRebalanceAnimalsInPens.gerund>牽引中</APM_LasherRebalanceAnimalsInPens.gerund>
+
+</LanguageData>

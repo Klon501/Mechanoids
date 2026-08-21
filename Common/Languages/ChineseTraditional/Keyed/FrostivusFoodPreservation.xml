@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: Unload preserved food -->
+  <APM.FrostivusFoodPreservation.ManualUnload.Label>卸下保鮮食物</APM.FrostivusFoodPreservation.ManualUnload.Label>
+  <!-- EN: Choose a cell where Frostivus should unload all preserved food. Manually unloaded food will be forbidden. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.Desc>選擇霜語者卸下全部保鮮食物的格子。手動卸下的食物會被禁止拾取。</APM.FrostivusFoodPreservation.ManualUnload.Desc>
+  <!-- EN: No preserved food carried. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.NoFood>未攜帶保鮮食物。</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
+  <!-- EN: Frostivus cannot reach that cell. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.NoPath>霜語者無法到達該格子。</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
+  <!-- EN: Frostivus cannot use preservation commands right now. -->
+  <APM.FrostivusFoodPreservation.CommandUnavailable>霜語者目前無法使用保鮮指令。</APM.FrostivusFoodPreservation.CommandUnavailable>
+  <!-- EN: Release from cryo-chamber -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>從低溫艙釋放</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
+  <!-- EN: Choose a cell where Frostivus should release devoured pawns or corpses. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>選擇霜語者釋放被吞入的殖民者或屍體的格子。</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
+  <!-- EN: No devoured pawn or corpse inside. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>內部沒有可釋放的殖民者或屍體。</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
+  <!-- EN: Frostivus cannot reach that cell. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>霜語者無法到達該格子。</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
+  <!-- EN: Frostivus can only swallow a spawned humanlike pawn or corpse on its map. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>霜語者只能吞下其所在地圖上已生成的類人生物或屍體。</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
+  <!-- EN: Frostivus can swallow any humanlike corpse or downed pawn, but only colonists, prisoners, or slaves while alive. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>霜語者可吞下任意類人屍體或倒地的殖民者，但活體僅限殖民者、囚犯或奴隸。</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
+  <!-- EN: Frostivus cannot swallow itself. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.Self>霜語者無法吞下自己。</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
+
+</LanguageData>

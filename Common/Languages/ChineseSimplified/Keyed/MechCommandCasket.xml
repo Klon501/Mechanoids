@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Remote control uplink is active for {PAWN} -->
+	<APM.CommandCasket.Inspection>远程控制链路已对 {PAWN} 激活</APM.CommandCasket.Inspection>
+	<!-- EN: not mechanitor -->
+	<APM.CommandCasket.FailReason.NotMechanitor>非机械师</APM.CommandCasket.FailReason.NotMechanitor>
+
+	<!-- EN: Eject mechanitor -->
+	<APM.CommandCasket.Gizmo.CancelLink.Label>弹出机械师</APM.CommandCasket.Gizmo.CancelLink.Label>
+	<!-- EN: Cancel the remote link for the current occupant. The occupant will be ejected. -->
+	<APM.CommandCasket.Gizmo.CancelLink.Desc>取消当前占用者的远程链路。占用者将被弹出。</APM.CommandCasket.Gizmo.CancelLink.Desc>
+
+	<!-- EN: remote shield -->
+	<APM.CommandCasket.Gizmo.Shield.Label>远程护盾</APM.CommandCasket.Gizmo.Shield.Label>
+	<!-- EN: shield a friendly mechanoid, can target the whole map.\nPower scales with the remote shielder implant. -->
+	<APM.CommandCasket.Gizmo.Shield.Desc>为友方机械体提供护盾，可指定整个地图。\n护盾强度随远程护盾植入体提升。</APM.CommandCasket.Gizmo.Shield.Desc>
+	<!-- EN: shield the selected mechanoid.\nPower scales with the remote shielder implant. -->
+	<APM.CommandCasket.Gizmo.ShieldSelf.Desc>为所选机械体提供护盾。\n护盾强度随远程护盾植入体提升。</APM.CommandCasket.Gizmo.ShieldSelf.Desc>
+
+	<!-- EN: remote repair -->
+	<APM.CommandCasket.Gizmo.Repair.Label>远程修复</APM.CommandCasket.Gizmo.Repair.Label>
+	<!-- EN: repair a friendly mechanoid until it is fully repaired or has no energy remaining. Can target the whole map. -->
+	<APM.CommandCasket.Gizmo.Repair.Desc>修复友方机械体直至完全修好或能量耗尽。可指定整个地图。</APM.CommandCasket.Gizmo.Repair.Desc>
+	<!-- EN: repair the selected mechanoid until it is fully repaired or has no energy remaining. -->
+	<APM.CommandCasket.Gizmo.RepairSelf.Desc>修复所选机械体直至完全修好或能量耗尽。</APM.CommandCasket.Gizmo.RepairSelf.Desc>
+
+	<!-- EN: remote disconnect -->
+	<APM.CommandCasket.Gizmo.Disconnect.Label>远程断开</APM.CommandCasket.Gizmo.Disconnect.Label>
+	<!-- EN: remotely disconnect from a controlled mech. Can target mechs on the same map. -->
+	<APM.CommandCasket.Gizmo.Disconnect.Desc>远程断开与受控机甲的连接。可指定同一地图上的机甲。</APM.CommandCasket.Gizmo.Disconnect.Desc>
+
+	<!-- EN: remote connect -->
+	<APM.CommandCasket.Gizmo.Connect.Label>远程连接</APM.CommandCasket.Gizmo.Connect.Label>
+	<!-- EN: remotely connect to a friendly mech. Can target mechs on the same map. Time depends on the targeted mechanoid. -->
+	<APM.CommandCasket.Gizmo.Connect.Desc>远程连接到友方机甲。可指定同一地图上的机甲。耗时取决于目标机械体。</APM.CommandCasket.Gizmo.Connect.Desc>
+
+	<!-- EN: bandwidth used: -->
+	<APM.CommandCasket.Inspection.Bandwidth>占用带宽：</APM.CommandCasket.Inspection.Bandwidth>
+
+	<!-- EN: remote reconnect -->
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Label>远程重连</APM.CommandCasket.Mech.Gizmo.Reconnect.Label>
+	<!-- EN: remotely connect this mech to a mechanitor inside a mech command casket. -->
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>将此机甲远程连接到机械指挥舱内的机械师。</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
+
+	<!-- EN:  (missing bandwidth) -->
+	<APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>（带宽不足）</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
+
+	<!-- EN: currently -->
+	<APM.CommandCasket.Inspect.CurrentAction>当前</APM.CommandCasket.Inspect.CurrentAction>
+
+	<!-- EN: connecting -->
+	<APM.CommandCasket.Inspect.CurrentAction.Connect>连接中</APM.CommandCasket.Inspect.CurrentAction.Connect>
+
+	<!-- EN: disconnecting -->
+	<APM.CommandCasket.Inspect.CurrentAction.Disconnect>断开中</APM.CommandCasket.Inspect.CurrentAction.Disconnect>
+
+	<!-- EN: shielding -->
+	<APM.CommandCasket.Inspect.CurrentAction.Shield>护盾中</APM.CommandCasket.Inspect.CurrentAction.Shield>
+
+	<!-- EN: repairing -->
+	<APM.CommandCasket.Inspect.CurrentAction.Repair>修复中</APM.CommandCasket.Inspect.CurrentAction.Repair>
+
+	<!-- EN: idle -->
+	<APM.CommandCasket.Inspect.CurrentAction.Idle>空闲</APM.CommandCasket.Inspect.CurrentAction.Idle>
+
+	<!-- EN: \nLeftclick = choose target\nShift = target self\nCtrl = que action\nRightclick = cancel -->
+	<APM.CommandCasket.Gizmo.ControlsInfo>\n左键 = 选择目标\nShift = 指定自身\nCtrl = 排队动作\n右键 = 取消</APM.CommandCasket.Gizmo.ControlsInfo>
+
+</LanguageData>

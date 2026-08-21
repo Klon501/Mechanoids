@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Recycle Biomass -->
+  <APM_Absorb.label>回收生物质</APM_Absorb.label>
+  <!-- EN: Grind up a fresh organic corpse or ingestible material, and slowly process it into chemfuel. -->
+  <APM_Absorb.description>将新鲜有机尸体或可摄入材料磨碎，并缓慢加工成化学燃料。</APM_Absorb.description>
+
+  <!-- EN: Power Plant Mode -->
+  <APM_SwitchToPowerPlantMode.label>发电厂模式</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: ... -->
+  <APM_SwitchToPowerPlantMode.description>切换至发电厂模式，将不能移动。</APM_SwitchToPowerPlantMode.description>
+
+  <!-- EN: Blinding Laser -->
+  <APM_BlindingLaser.label>致盲激光</APM_BlindingLaser.label>
+  <!-- EN: Fire a laser at a target, sharply reducing sight for a short time. -->
+  <APM_BlindingLaser.description>向目标发射激光，短时间内大幅削弱其视野。</APM_BlindingLaser.description>
+
+  <!-- EN: Defence Matrix -->
+  <APM_DefenceMatrix.label>防御矩阵</APM_DefenceMatrix.label>
+  <!-- EN: Project a personal defense shield onto a same-faction pawn. The shield stops incoming damage and prevents the target from shooting out. -->
+  <APM_DefenceMatrix.description>为同派系殖民者投射个人防御护盾。护盾阻挡外来伤害，并阻止目标向外射击。</APM_DefenceMatrix.description>
+
+</LanguageData>

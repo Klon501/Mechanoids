@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Tinker -->
+  <APM_Mech_Tinker.label>修補匠</APM_Mech_Tinker.label>
+  <!-- EN: The tinker is a support mechanoid built to repair same-faction buildings and mechanoids. It cannot construct new structures, but it can project a defensive matrix onto allies and blind enemies with a targeted laser. -->
+  <APM_Mech_Tinker.description>修補匠是一台用於維修同派系建築與機械體的支援型機械體。它無法建造新結構，但可向盟友投射防禦矩陣，並用定向雷射致盲敵人。</APM_Mech_Tinker.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Tinker.tools.0.label>左拳</APM_Mech_Tinker.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Tinker.tools.1.label>右拳</APM_Mech_Tinker.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Tinker.tools.2.label>頭部</APM_Mech_Tinker.tools.2.label>
+
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: repair -->
+  <APM_TinkerRepair.labelShort>维修</APM_TinkerRepair.labelShort>
+  <!-- EN: Tinker -->
+  <APM_TinkerRepair.pawnLabel>修补匠</APM_TinkerRepair.pawnLabel>
+  <!-- EN: repairing buildings and mechs -->
+  <APM_TinkerRepair.gerundLabel>维修建筑与机甲</APM_TinkerRepair.gerundLabel>
+  <!-- EN: Repair same-faction buildings and mechanoids. -->
+  <APM_TinkerRepair.description>维修同派系建筑与机械体。</APM_TinkerRepair.description>
+  <!-- EN: Repair -->
+  <APM_TinkerRepair.verb>维修</APM_TinkerRepair.verb>
+
+</LanguageData>
