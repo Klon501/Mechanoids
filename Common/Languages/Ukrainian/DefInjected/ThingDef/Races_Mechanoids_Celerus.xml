@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+  <!-- EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Japan during its Sengoku period, the swift and stealthy Celerus is not any weaker for its speed. It has the ability to skip itself short distances around it as well as create a smokescreen to hinder enemies perception of it and anything around it, additionally becoming psychically imperceptible in this area. On top of those effects, enemies will receive periodic. -->
+  <APM_Mech_Celerus.description>Розум Архотеха створив три могутні моделі механоїдів у спробі зробити універсального командира для всіх механоїдних сил. Целеруса надихнула Японія Старої Землі доби Сенґоку. Цей механоїд швидкий і непомітний, але це не робить його слабшим. Целерус здатен телепортуватися на короткі відстані, а також створювати димову завісу, що заважає ворогам бачити його й усе довкола, і стає психічно невловимим у межах завіси. Крім того, вороги всередині завіси отримуватимуть періодичний урон.</APM_Mech_Celerus.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Celerus.tools.0.label>ліва рука</APM_Mech_Celerus.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Celerus.tools.1.label>права рука</APM_Mech_Celerus.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+
+</LanguageData>

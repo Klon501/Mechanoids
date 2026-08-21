@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: dynamo -->
+  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
+  <!-- EN: dynamos -->
+  <APM_Mech_Dynamo.labelPlural>динамо</APM_Mech_Dynamo.labelPlural>
+
+</LanguageData>

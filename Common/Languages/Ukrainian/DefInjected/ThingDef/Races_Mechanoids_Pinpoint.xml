@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Pinpoint -->
+  <APM_Mech_Pinpoint.label>навідник</APM_Mech_Pinpoint.label>
+  <!-- EN: The pinpoint wasn't designed for direct confrontations... -->
+  <APM_Mech_Pinpoint.description>Навідник не створений для прямих бойових зіткнень. Натомість він допомагає союзникам із прицілюванням, наведенням і вказуванням цілі за допомогою свого основного датчика. Доки ціль позначена, усі союзники отримують бонус до точності для атак по ній. Постарайтеся не зустріти цього механоїда в супроводі копійників. А для ворогів, що норовлять випасти з поля зору, його датчики здатні виявляти невидимих противників поблизу.</APM_Mech_Pinpoint.description>
+  <!-- EN: head -->
+  <APM_Mech_Pinpoint.tools.0.label>голова</APM_Mech_Pinpoint.tools.0.label>
+
+</LanguageData>

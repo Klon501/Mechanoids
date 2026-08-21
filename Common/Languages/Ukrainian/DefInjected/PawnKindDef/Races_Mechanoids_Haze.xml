@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: haze -->
+  <APM_Mech_Haze.label>завіса</APM_Mech_Haze.label>
+  <!-- EN: hazes -->
+  <APM_Mech_Haze.labelPlural>завіси</APM_Mech_Haze.labelPlural>
+
+</LanguageData>

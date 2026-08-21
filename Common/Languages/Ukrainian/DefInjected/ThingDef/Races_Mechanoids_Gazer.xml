@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Gazer -->
+  <APM_Mech_Gazer.label>спостерігач</APM_Mech_Gazer.label>
+  <!-- EN: A different application of hellsphere technology... -->
+  <APM_Mech_Gazer.description>Інше застосування технології дезінтегратора породило Спостерігача — механоїда, що його легко впізнати за очною променевою установкою. Ця зброя настільки потужна, що під час стрільби Спостерігачеві доводиться фіксуватися на місці, спрямовуючи всі рухові функції на власну стабілізацію. Та навіть тоді потрібен чималий час на заряджання. Випромінюваний промінь здатен спопелити все перед собою, завдаючи при цьому відчутної шкоди навіть спорудам. А опинившись у ближньому бою з ворогом, Спостерігач може натомість вивільнити накопичену енергію у вигляді потужної ударної хвилі довкола себе, що відкидає нападників і виводить з ладу ближніх механоїдів.</APM_Mech_Gazer.description>
+  <!-- EN: head -->
+  <APM_Mech_Gazer.tools.0.label>голова</APM_Mech_Gazer.tools.0.label>
+  <!-- EN: front left paw -->
+  <APM_Mech_Gazer.tools.1.label>ліва передня лапа</APM_Mech_Gazer.tools.1.label>
+  <!-- EN: front right paw -->
+  <APM_Mech_Gazer.tools.2.label>права передня лапа</APM_Mech_Gazer.tools.2.label>
+
+</LanguageData>

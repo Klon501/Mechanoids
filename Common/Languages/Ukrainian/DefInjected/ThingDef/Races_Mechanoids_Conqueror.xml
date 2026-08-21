@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: DMR Conqueror -->
+  <APM_Mech_Conqueror_DMR.label>завойовник (карабін)</APM_Mech_Conqueror_DMR.label>
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit's physical components.\nThis one is armed with a highly powered Charge Carbine. -->
+  <APM_Mech_Conqueror_DMR.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним енергокарабіном.</APM_Mech_Conqueror_DMR.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_DMR.tools.0.label>ліва рука</APM_Mech_Conqueror_DMR.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_DMR.tools.1.label>права рука</APM_Mech_Conqueror_DMR.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
+
+  <!-- EN: AR Conqueror -->
+  <APM_Mech_Conqueror_AR.label>завойовник (гвинтівка)</APM_Mech_Conqueror_AR.label>
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. ... This one is armed with a powerful Charge Blaster. -->
+  <APM_Mech_Conqueror_AR.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним бластером.</APM_Mech_Conqueror_AR.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_AR.tools.0.label>ліва рука</APM_Mech_Conqueror_AR.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_AR.tools.1.label>права рука</APM_Mech_Conqueror_AR.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
+
+  <!-- EN: LMG Conqueror -->
+  <APM_Mech_Conqueror_LMG.label>завойовник (кулемет)</APM_Mech_Conqueror_LMG.label>
+  <!-- EN: ... This one is armed with a powerful Charge Spitter. -->
+  <APM_Mech_Conqueror_LMG.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним енергокулеметом.</APM_Mech_Conqueror_LMG.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_LMG.tools.0.label>ліва рука</APM_Mech_Conqueror_LMG.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_LMG.tools.1.label>права рука</APM_Mech_Conqueror_LMG.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_LMG.tools.2.label>голова</APM_Mech_Conqueror_LMG.tools.2.label>
+
+</LanguageData>

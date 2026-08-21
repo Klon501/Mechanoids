@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: pulse shotgun -->
+  <APM_Gun_Pulse_Shotgun.label>імпульсний дробовик</APM_Gun_Pulse_Shotgun.label>
+  <!-- EN: A pulse-charged shotgun that fires two heavy bursts, releasing unstable energy on impact. -->
+  <APM_Gun_Pulse_Shotgun.description>Енергетичний дробовик, що робить два потужні залпи, вивільняючи нестабільну енергію при влучанні.</APM_Gun_Pulse_Shotgun.description>
+  <!-- EN: barrel -->
+  <APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
+
+  <!-- EN: pulse bullet -->
+  <APM_Pulse_Proj.label>імпульсний снаряд</APM_Pulse_Proj.label>
+
+</LanguageData>

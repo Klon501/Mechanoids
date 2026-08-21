@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: repair station -->
+  <APM_RepairStation_Small.label>ремонтна станція</APM_RepairStation_Small.label>
+  <!-- EN: A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs. -->
+  <APM_RepairStation_Small.description>Станція, яка автоматично ремонтує малих і середніх механоїдів. Механоїд має зайти всередину станції, щоб пройти ремонт.</APM_RepairStation_Small.description>
+
+  <!-- EN: advanced repair station -->
+  <APM_RepairStation_Advanced.label>удосконалена ремонтна станція</APM_RepairStation_Advanced.label>
+  <!-- EN: A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs. -->
+  <APM_RepairStation_Advanced.description>Станція, яка автоматично ремонтує великих механоїдів. Механоїд має зайти всередину станції, щоб пройти ремонт.</APM_RepairStation_Advanced.description>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Bashing into TargetA. -->
+  <APM_BashDamage.reportString>врізається в TargetA</APM_BashDamage.reportString>
+  <!-- EN: operating remote uplink. -->
+  <APM_RemoteControlUplink.reportString>під'єднується до віддаленого каналу зв'язку</APM_RemoteControlUplink.reportString>
+  <!-- EN: retracting grappling hook towards TargetA. -->
+  <APM_HookPawn.reportString>притягується до TargetA</APM_HookPawn.reportString>
+
+</LanguageData>

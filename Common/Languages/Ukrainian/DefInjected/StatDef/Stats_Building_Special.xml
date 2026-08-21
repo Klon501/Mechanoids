@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: mech gestation speed factor -->
+  <APM_GestationFactor.label>коефіцієнт швидкості гестації</APM_GestationFactor.label>
+  <!-- EN: Mech gestation speed is multiplied by this value. -->
+  <APM_GestationFactor.description>Швидкість вирощування механоїдів множиться на це значення.</APM_GestationFactor.description>
+
+</LanguageData>

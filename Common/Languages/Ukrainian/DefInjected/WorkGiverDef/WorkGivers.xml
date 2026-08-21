@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: enter repair station -->
+  <APM_EnterRepairStation.label>зайти до ремонтної станції</APM_EnterRepairStation.label>
+  <!-- EN: enter -->
+  <APM_EnterRepairStation.verb>зайти до</APM_EnterRepairStation.verb>
+  <!-- EN: entering -->
+  <APM_EnterRepairStation.gerund>зайти до</APM_EnterRepairStation.gerund>
+
+  <!-- EN: carry to repair station -->
+  <APM_CarryToRepairStation.label>нести до ремонтної станції</APM_CarryToRepairStation.label>
+  <!-- EN: carry -->
+  <APM_CarryToRepairStation.verb>нести</APM_CarryToRepairStation.verb>
+  <!-- EN: carrying -->
+  <APM_CarryToRepairStation.gerund>нести</APM_CarryToRepairStation.gerund>
+
+</LanguageData>

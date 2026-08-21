@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Dominus' Spear -->
+  <APM_Weapon_DominusSpear.label>спис Домінуса</APM_Weapon_DominusSpear.label>
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpear.tools.0.label>руків'я</APM_Weapon_DominusSpear.tools.0.label>
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpear.tools.1.label>вістря</APM_Weapon_DominusSpear.tools.1.label>
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpear.tools.2.label>лезо</APM_Weapon_DominusSpear.tools.2.label>
+
+  <!-- EN: Dominus' Spear (Boss) -->
+  <APM_Weapon_DominusSpearBoss.label>спис Домінуса (бос)</APM_Weapon_DominusSpearBoss.label>
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpearBoss.tools.0.label>руків'я</APM_Weapon_DominusSpearBoss.tools.0.label>
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpearBoss.tools.1.label>вістря</APM_Weapon_DominusSpearBoss.tools.1.label>
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpearBoss.tools.2.label>лезо</APM_Weapon_DominusSpearBoss.tools.2.label>
+
+</LanguageData>
