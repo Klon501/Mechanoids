@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Auto laser -->
+	<APM_Gazer_AutoLaser_Label>自動雷射</APM_Gazer_AutoLaser_Label>
+	<!-- EN: Allow this gazer to automatically fire its laser weapon and Sun Ray ability while under player control. Manual attack orders still fire once at the selected target. -->
+	<APM_Gazer_AutoLaser_Desc>允許該凝視者在玩家控制下自動發射其雷射武器與日光射線能力。手動攻擊指令仍會朝選定目標開火一次。</APM_Gazer_AutoLaser_Desc>
+	<!-- EN: Auto laser: disabled. -->
+	<APM_Gazer_Inspect_AutoLaserDisabled>自動雷射：已停用。</APM_Gazer_Inspect_AutoLaserDisabled>
+
+</LanguageData>

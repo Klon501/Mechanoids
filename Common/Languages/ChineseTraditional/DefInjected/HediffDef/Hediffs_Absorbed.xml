@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: recycling biomass -->
+  <APM_AbsorbedThing.label>回收生物質中</APM_AbsorbedThing.label>
+  <!-- EN: Processing absorbed biomass into chemfuel. -->
+  <APM_AbsorbedThing.description>將吸收的生物質加工成化學燃料。</APM_AbsorbedThing.description>
+</LanguageData>

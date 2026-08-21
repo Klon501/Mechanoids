@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: singing to TargetA. -->
+  <APM_SirenChatWithPrisoner.reportString>正在对 TargetA 唱歌。</APM_SirenChatWithPrisoner.reportString>
+  <!-- EN: singing. -->
+  <APM_SirenLureChannel.reportString>正在唱歌。</APM_SirenLureChannel.reportString>
+
+</LanguageData>

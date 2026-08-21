@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: release prisoners -->
+  <APM_SirenReleasePrisoner.label>釋放囚犯</APM_SirenReleasePrisoner.label>
+  <!-- EN: release -->
+  <APM_SirenReleasePrisoner.verb>釋放</APM_SirenReleasePrisoner.verb>
+  <!-- EN: releasing -->
+  <APM_SirenReleasePrisoner.gerund>釋放中</APM_SirenReleasePrisoner.gerund>
+  <!-- EN: take prisoners to bed -->
+  <APM_SirenTakePrisonerToBed.label>帶囚犯上床</APM_SirenTakePrisonerToBed.label>
+  <!-- EN: take to bed -->
+  <APM_SirenTakePrisonerToBed.verb>帶上床</APM_SirenTakePrisonerToBed.verb>
+  <!-- EN: taking to bed -->
+  <APM_SirenTakePrisonerToBed.gerund>帶往床鋪中</APM_SirenTakePrisonerToBed.gerund>
+  <!-- EN: feed prisoners -->
+  <APM_SirenFeedPrisoner.label>餵養囚犯</APM_SirenFeedPrisoner.label>
+  <!-- EN: feed -->
+  <APM_SirenFeedPrisoner.verb>餵養</APM_SirenFeedPrisoner.verb>
+  <!-- EN: feeding -->
+  <APM_SirenFeedPrisoner.gerund>餵養中</APM_SirenFeedPrisoner.gerund>
+  <!-- EN: deliver food to prisoners -->
+  <APM_SirenDeliverFoodToPrisoner.label>為囚犯送餐</APM_SirenDeliverFoodToPrisoner.label>
+  <!-- EN: deliver food for -->
+  <APM_SirenDeliverFoodToPrisoner.verb>為{0}送餐</APM_SirenDeliverFoodToPrisoner.verb>
+  <!-- EN: delivering food for -->
+  <APM_SirenDeliverFoodToPrisoner.gerund>為{0}送餐中</APM_SirenDeliverFoodToPrisoner.gerund>
+  <!-- EN: chat with prisoners -->
+  <APM_SirenChatWithPrisoner.label>與囚犯交談</APM_SirenChatWithPrisoner.label>
+  <!-- EN: chat with -->
+  <APM_SirenChatWithPrisoner.verb>與{0}交談</APM_SirenChatWithPrisoner.verb>
+  <!-- EN: chatting with -->
+  <APM_SirenChatWithPrisoner.gerund>與{0}交談中</APM_SirenChatWithPrisoner.gerund>
+
+</LanguageData>

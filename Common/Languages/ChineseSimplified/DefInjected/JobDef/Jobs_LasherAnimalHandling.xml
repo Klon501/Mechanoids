@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: taming TargetA. -->
+  <APM_LasherTame.reportString>正在驯服 TargetA。</APM_LasherTame.reportString>
+  <!-- EN: training TargetA. -->
+  <APM_LasherTrain.reportString>正在训练 TargetA。</APM_LasherTrain.reportString>
+  <!-- EN: milking TargetA. -->
+  <APM_LasherMilk.reportString>正在挤奶 TargetA。</APM_LasherMilk.reportString>
+  <!-- EN: shearing TargetA. -->
+  <APM_LasherShear.reportString>正在剪毛 TargetA。</APM_LasherShear.reportString>
+  <!-- EN: slaughtering TargetA. -->
+  <APM_LasherSlaughter.reportString>正在屠宰 TargetA。</APM_LasherSlaughter.reportString>
+  <!-- EN: releasing TargetA. -->
+  <APM_LasherReleaseToWild.reportString>正在放归 TargetA。</APM_LasherReleaseToWild.reportString>
+
+</LanguageData>

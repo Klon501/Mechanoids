@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: solus -->
+  <APM_Solus.label>索拉斯</APM_Solus.label>
+  <!-- EN: PLACEHOLDER -->
+  <APM_Solus.description>占位符</APM_Solus.description>
+
+  <!-- EN: solus orb -->
+  <APM_SolusOrb.label>索拉斯宝珠</APM_SolusOrb.label>
+
+</LanguageData>

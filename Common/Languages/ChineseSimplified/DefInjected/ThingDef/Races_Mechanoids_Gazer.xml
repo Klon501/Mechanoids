@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Gazer -->
+  <APM_Mech_Gazer.label>凝视者</APM_Mech_Gazer.label>
+  <!-- EN: A different application of hellsphere technology resulted in the Gazer, a mechanoid clearly identified by its primary ocular beam emitter. This weapon is strong enough that the gazer must lock itself in place and divert all motor functions to stabilizing itself when firing. Even then, a significant charge time is required. The resultant beam can obliterate anything in front of it, even doing decent damage to structures. When pressed in close quarters, the Gazer can instead discharge the accumulated energy outward as a violent shockwave that hurls attackers back and disrupts nearby mechanized targets. -->
+  <APM_Mech_Gazer.description>地狱球技术的另一种应用造就了凝视者——一台以主眼光束发射器为显著特征的机械体。其武器威力强大，开火时凝视者必须锁定自身，并将全部运动机能转移到稳定姿态上，即便如此仍需较长的蓄能时间。所发射的光束能摧毁前方的一切，甚至对建筑造成可观伤害。在近距离受迫时，凝视者会将蓄积的能量向外释放为猛烈冲击波，将攻击者击退并扰乱附近机械化目标。</APM_Mech_Gazer.description>
+</LanguageData>

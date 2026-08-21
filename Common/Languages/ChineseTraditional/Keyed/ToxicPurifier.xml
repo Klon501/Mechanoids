@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Fall per day -->
+  <APM_ToxicPurifier_RecoveryPerDay>每日污染恢復</APM_ToxicPurifier_RecoveryPerDay>
+
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect the globe, relations with other faction will deteriorate. -->
+  <APM_ToxicPurifier_LevelToAffectRelation>當地大氣中污染已達 {0} 的臨界點，將影響全球，與其他派系的關係將惡化。</APM_ToxicPurifier_LevelToAffectRelation>
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect nearby tiles. -->
+  <APM_ToxicPurifier_LevelToStartSpreading>當地大氣中污染已達 {0} 的臨界點，將影響附近地塊。</APM_ToxicPurifier_LevelToStartSpreading>
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} which would affect nearby tiles and critical point of {1} which would affect faction relations. -->
+  <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>當地大氣中污染已達 {0} 的臨界點（將影響附近地塊），以及 {1} 的臨界點（將影響派系關係）。</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
+
+  <!-- EN: Mode -->
+  <APM_ToxicPurifier_ModeChangeLabel>模式</APM_ToxicPurifier_ModeChangeLabel>
+  <!-- EN: Change purifier station mode. -->
+  <APM_ToxicPurifier_ModeChangeDesc>更改淨化站模式。</APM_ToxicPurifier_ModeChangeDesc>
+
+  <!-- EN: Ground only -->
+  <APM_ToxicPurifier_Mode_OnlyGround>僅地面</APM_ToxicPurifier_Mode_OnlyGround>
+  <!-- EN: Wastepacks only -->
+  <APM_ToxicPurifier_Mode_OnlyWastepacks>僅廢包</APM_ToxicPurifier_Mode_OnlyWastepacks>
+  <!-- EN: Wastepacks over ground -->
+  <APM_ToxicPurifier_Mode_WastepacksOverGround>廢包優先於地面</APM_ToxicPurifier_Mode_WastepacksOverGround>
+  <!-- EN: Ground over wastepacks -->
+  <APM_ToxicPurifier_Mode_GroundOverWastepacks>地面優先於廢包</APM_ToxicPurifier_Mode_GroundOverWastepacks>
+
+</LanguageData>

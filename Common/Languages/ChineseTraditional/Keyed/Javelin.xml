@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: Rocket: {0} -->
+  <APM.Javelin.SwitchRocket.Label>火箭彈：{0}</APM.Javelin.SwitchRocket.Label>
+  <!-- EN: Choose which warhead this javelin loads. Every rocket but the basic one is drawn from the mech's uranium as it fires, and the rack drops back to the basic rocket when that runs out. -->
+  <APM.Javelin.SwitchRocket.Desc>選擇該標槍裝載的彈頭。除基礎彈外，每發火箭都會在發射時從機甲的鈾中汲取，鈾耗盡後發射架會回落到基礎火箭彈。</APM.Javelin.SwitchRocket.Desc>
+
+  <!-- EN: {0} (free) -->
+  <APM.Javelin.RocketFree>{0}（免費）</APM.Javelin.RocketFree>
+  <!-- EN: {0} ({1} uranium per shot) -->
+  <APM.Javelin.RocketCost>{0}（每發消耗 {1} 鈾）</APM.Javelin.RocketCost>
+  <!-- EN: (not enough uranium) -->
+  <APM.Javelin.NoUranium>（鈾不足）</APM.Javelin.NoUranium>
+
+  <!-- EN: Rocket: {0} -->
+  <APM.Javelin.LoadedRocket>火箭彈：{0}</APM.Javelin.LoadedRocket>
+  <!-- EN: {0} has run out of uranium for its {1} and has fallen back to basic rockets. -->
+  <APM.Javelin.OutOfUranium>{0} 的 {1} 已耗盡鈾，已回落到基礎火箭彈。</APM.Javelin.OutOfUranium>
+
+</LanguageData>

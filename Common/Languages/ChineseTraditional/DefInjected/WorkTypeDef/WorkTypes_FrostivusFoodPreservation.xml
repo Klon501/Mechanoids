@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- EN: preserve -->
+  <APM_FrostivusFoodPreservation.labelShort>保鮮</APM_FrostivusFoodPreservation.labelShort>
+  <!-- EN: Preserver -->
+  <APM_FrostivusFoodPreservation.pawnLabel>保鮮者</APM_FrostivusFoodPreservation.pawnLabel>
+  <!-- EN: preserving food -->
+  <APM_FrostivusFoodPreservation.gerundLabel>保鮮食物</APM_FrostivusFoodPreservation.gerundLabel>
+  <!-- EN: Rescue temperature-spoiling food and unload it to cold storage. -->
+  <APM_FrostivusFoodPreservation.description>搶救會因溫度而腐壞的食物，並卸到冷藏處。</APM_FrostivusFoodPreservation.description>
+  <!-- EN: Preserve -->
+  <APM_FrostivusFoodPreservation.verb>保鮮</APM_FrostivusFoodPreservation.verb>
+
+</LanguageData>

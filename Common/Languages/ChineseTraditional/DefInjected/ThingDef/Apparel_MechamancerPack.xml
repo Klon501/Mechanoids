@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: mechamancer pack -->
+  <APM_Apparel_MechamancerPack.label>機械法師背包</APM_Apparel_MechamancerPack.label>
+  <!-- EN: A compact mechanitor support pack that can deploy temporary satellite mechanoids. Each satellite requires a steel recharge before deployment. -->
+  <APM_Apparel_MechamancerPack.description>一個緊湊的機械師支援背包，可部署臨時衛星機甲。每個衛星在部署前都需要用鋼材充能。</APM_Apparel_MechamancerPack.description>
+
+</LanguageData>

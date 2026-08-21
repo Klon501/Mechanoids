@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Enable stripping -->
+  <APM_Ingestor_StripMode_Enable_Label>啟用剝離</APM_Ingestor_StripMode_Enable_Label>
+  <!-- EN: Click to strip apparel, equipment and inventory from corpses before recycling them. Current mode: recycle corpses intact; carried items are destroyed with the corpse. -->
+  <APM_Ingestor_StripMode_Enable_Desc>點擊以在回收屍體前剝離其衣物、裝備與隨身物品。目前模式：屍體完整回收，攜帶物品隨屍體一起銷毀。</APM_Ingestor_StripMode_Enable_Desc>
+  <!-- EN: Disable stripping -->
+  <APM_Ingestor_StripMode_Disable_Label>停用剝離</APM_Ingestor_StripMode_Disable_Label>
+  <!-- EN: Click to recycle corpses intact and destroy apparel, equipment and inventory with the corpse. Current mode: strip carried items before recycling. -->
+  <APM_Ingestor_StripMode_Disable_Desc>點擊以完整回收屍體並將衣物、裝備與隨身物品隨屍體一起銷毀。目前模式：回收前先剝離攜帶物品。</APM_Ingestor_StripMode_Disable_Desc>
+  <!-- EN: Recycle all valid corpses -->
+  <APM_Ingestor_ProcessMode_All_Label>回收所有有效屍體</APM_Ingestor_ProcessMode_All_Label>
+  <!-- EN: Click to let the ingestor recycle any reachable fresh organic corpse. Current mode: only marked corpses are recycled. -->
+  <APM_Ingestor_ProcessMode_All_Desc>點擊以讓攝入者回收任何可到達的新鮮有機屍體。目前模式：僅回收被標記的屍體。</APM_Ingestor_ProcessMode_All_Desc>
+  <!-- EN: Use marked corpses only -->
+  <APM_Ingestor_ProcessMode_Marked_Label>僅使用被標記的屍體</APM_Ingestor_ProcessMode_Marked_Label>
+  <!-- EN: Click to make the ingestor recycle only corpses marked for biomass recycling. Current mode: all reachable fresh organic corpses are recycled. -->
+  <APM_Ingestor_ProcessMode_Marked_Desc>點擊以讓攝入者僅回收被標記為生物質回收的屍體。目前模式：回收所有可到達的新鮮有機屍體。</APM_Ingestor_ProcessMode_Marked_Desc>
+  <!-- EN: Mark for biomass recycling -->
+  <APM_Ingestor_MarkCorpses_Label>標記為生物質回收</APM_Ingestor_MarkCorpses_Label>
+  <!-- EN: Mark fresh organic corpses for ingestor recycling. -->
+  <APM_Ingestor_MarkCorpses_Desc>將新鮮有機屍體標記為攝入者回收目標。</APM_Ingestor_MarkCorpses_Desc>
+  <!-- EN: Must target a fresh organic corpse. -->
+  <APM_IngestorAbsorb_MustTargetCorpse>必須選擇新鮮有機屍體。</APM_IngestorAbsorb_MustTargetCorpse>
+  <!-- EN: Must target a fresh organic corpse or ingestible material. -->
+  <APM_IngestorAbsorb_InvalidTarget>必須選擇新鮮有機屍體或可被攝入的材料。</APM_IngestorAbsorb_InvalidTarget>
+  <!-- EN: Invalid corpse. -->
+  <APM_IngestorAbsorb_InvalidCorpse>無效屍體。</APM_IngestorAbsorb_InvalidCorpse>
+  <!-- EN: Target is not organic biomass. -->
+  <APM_IngestorAbsorb_NotOrganic>目標不是有機生物質。</APM_IngestorAbsorb_NotOrganic>
+  <!-- EN: Cannot recycle a burning corpse. -->
+  <APM_IngestorAbsorb_Burning>無法回收燃燒中的屍體。</APM_IngestorAbsorb_Burning>
+  <!-- EN: Cannot recycle a rotted or desiccated corpse. -->
+  <APM_IngestorAbsorb_NotFresh>無法回收腐爛或風乾的屍體。</APM_IngestorAbsorb_NotFresh>
+  <!-- EN: Already marked for biomass recycling. -->
+  <APM_IngestorAbsorb_AlreadyMarked>已標記為生物質回收。</APM_IngestorAbsorb_AlreadyMarked>
+  <!-- EN: {0} {1} in {2} -->
+  <APM_IngestorBiomass_LabelSingle>{0} {1}，位於 {2}</APM_IngestorBiomass_LabelSingle>
+  <!-- EN: {0} batches, {1} {2}, next in {3} -->
+  <APM_IngestorBiomass_LabelMultiple>{0} 批，{1} {2}，下一波在 {3}</APM_IngestorBiomass_LabelMultiple>
+  <!-- EN: Pending output: -->
+  <APM_IngestorBiomass_TooltipHeader>待產出：</APM_IngestorBiomass_TooltipHeader>
+  <!-- EN: {0} {1} in {2} -->
+  <APM_IngestorBiomass_TooltipBatch>{0} {1}，位於 {2}</APM_IngestorBiomass_TooltipBatch>
+  <!-- EN: ...and {0} more. -->
+  <APM_IngestorBiomass_TooltipMore>{0}另有 {0} 項。</APM_IngestorBiomass_TooltipMore>
+  <!-- EN: unknown output -->
+  <APM_IngestorBiomass_UnknownOutput>未知產出</APM_IngestorBiomass_UnknownOutput>
+</LanguageData>
