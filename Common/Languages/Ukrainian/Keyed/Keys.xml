@@ -70,4 +70,13 @@
   <!-- EN: Copied XML to clipboard. -->
   <APM_RepairStation_ArmEditor_Copied>XML скопійовано в буфер обміну.</APM_RepairStation_ArmEditor_Copied>
 
+  <!-- EN: Shield integrity -->
+  <APM_ShieldIntegrity>Цілісність щита</APM_ShieldIntegrity>
+  <!-- EN: Vampiric charges: {0}/{1} ({2} ticks of healing) -->
+  <APM_VampiricCharges>Вампірські заряди: {0}/{1} ({2} тіків лікування)</APM_VampiricCharges>
+  <!-- EN: Show repair station auto-repair messages -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Показувати повідомлення про авторемонт станції</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+  <!-- EN: Display notifications when the repair station automatically assigns repairs. -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Показувати сповіщення, коли ремонтна станція автоматично призначає ремонт.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
 </LanguageData>

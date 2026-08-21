@@ -37,4 +37,9 @@
   <APM_RepairStation_ArmEditor_Footer>Edits affect this spawned station. Copy XML to save the offsets in defs.</APM_RepairStation_ArmEditor_Footer>
   <APM_RepairStation_ArmEditor_Copied>Copied XML to clipboard.</APM_RepairStation_ArmEditor_Copied>
 
+  <APM_ShieldIntegrity>Shield integrity</APM_ShieldIntegrity>
+  <APM_VampiricCharges>Vampiric charges: {0}/{1} ({2} ticks of healing)</APM_VampiricCharges>
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Show repair station auto-repair messages</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Display notifications when the repair station automatically assigns repairs.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
 </LanguageData>
