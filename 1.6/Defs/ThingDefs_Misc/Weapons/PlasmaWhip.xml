@@ -5,7 +5,7 @@
 		<label>plasma whip</label>
 		<description>Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/Whip</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Pawn_Whip</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.9, 0.9)</drawSize>
 		</graphicData>
@@ -64,28 +64,5 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
-				<weaponDraftedDrawOffsets>
-					<north>
-						<drawOffset>(-0.10, 0.00, 0.10)</drawOffset>
-						<angleOffset>120</angleOffset>
-					</north>
-					<east>
-						<drawOffset>(0.00, 0.00, 0.10)</drawOffset>
-						<angleOffset>-40</angleOffset>
-					</east>
-					<south>
-						<drawOffset>(0.10, 0.00, 0.10)</drawOffset>
-						<angleOffset>-40</angleOffset>
-					</south>
-					<west>
-						<drawOffset>(0.00, 0.00, 0.10)</drawOffset>
-						<angleOffset>40</angleOffset>
-					</west>
-				</weaponDraftedDrawOffsets>
-			</li>
-		</modExtensions>
 	</ThingDef>
 </Defs>
