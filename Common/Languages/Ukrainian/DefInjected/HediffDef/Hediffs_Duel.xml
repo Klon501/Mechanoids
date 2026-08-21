@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: in duel -->
+  <APM_InDuel.label>у поєдинку</APM_InDuel.label>
+  <!-- EN: The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks) -->
+  <APM_InDuel.description>«Випробування поєдинком» кидає виклик вибраному ворожому персонажу, змушуючи опонентів на короткий час вступити в ближній бій. Здібності та далекі атаки вимикаються. Навколо учасників поєдинку на час дії здібності автоматично створюється візуальна «арена». Інші персонажі не можуть обирати учасників поєдинку своєю ціллю. Якщо один із опонентів гине в поєдинку, переможець отримує потужний тимчасовий бонус. Якщо поєдинок не завершується смертю (час вийшов), обидва учасники отримують значний штраф. Учасники поєдинку отримують періодичний урон кожну секунду поєдинку. Це заохочує агресію й гарантує, що поєдинок рідко закінчується «нічиєю» за часом. Будь-яке відновлення здоров'я учасників під час поєдинку заблоковано (за винятком можливого вампіризму від атак).</APM_InDuel.description>
+
+  <!-- EN: duel winner -->
+  <APM_DuelWinner.label>переможець поєдинку</APM_DuelWinner.label>
+  <!-- EN: wins: 1 -->
+  <APM_DuelWinner.stages.0.label>перемог: 1</APM_DuelWinner.stages.0.label>
+  <!-- EN: wins: 2 -->
+  <APM_DuelWinner.stages.1.label>перемог: 2</APM_DuelWinner.stages.1.label>
+  <!-- EN: wins: 3 -->
+  <APM_DuelWinner.stages.2.label>перемог: 3</APM_DuelWinner.stages.2.label>
+  <!-- EN: wins: 4 -->
+  <APM_DuelWinner.stages.3.label>перемог: 4</APM_DuelWinner.stages.3.label>
+  <!-- EN: wins: 5 -->
+  <APM_DuelWinner.stages.4.label>перемог: 5</APM_DuelWinner.stages.4.label>
+  <!-- EN: wins: 6 -->
+  <APM_DuelWinner.stages.5.label>перемог: 6</APM_DuelWinner.stages.5.label>
+  <!-- EN: wins: 7 -->
+  <APM_DuelWinner.stages.6.label>перемог: 7</APM_DuelWinner.stages.6.label>
+
+  <!-- EN: duel draw -->
+  <APM_DuelDraw.label>нічия в поєдинку</APM_DuelDraw.label>
+
+</LanguageData>

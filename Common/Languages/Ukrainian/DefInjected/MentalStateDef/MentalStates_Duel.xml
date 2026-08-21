@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: dueling -->
+  <APM_Duel.label>поєдинок</APM_Duel.label>
+  <!-- EN: Mental state: Duel -->
+  <APM_Duel.baseInspectLine>Душевний стан: поєдинок</APM_Duel.baseInspectLine>
+  <!-- EN: {0} is dueling {1}. -->
+  <APM_Duel.beginLetter>{0} викликає {1} на поєдинок.</APM_Duel.beginLetter>
+  <!-- EN: dueling -->
+  <APM_Duel.beginLetterLabel>поєдинок</APM_Duel.beginLetterLabel>
+  <!-- EN: {0}'s duel has come to an end. -->
+  <APM_Duel.recoveryMessage>Поєдинок {0} добіг кінця.</APM_Duel.recoveryMessage>
+
+</LanguageData>

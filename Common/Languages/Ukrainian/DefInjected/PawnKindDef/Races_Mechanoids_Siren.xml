@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: siren -->
+  <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+  <!-- EN: sirens -->
+  <APM_Mech_Siren.labelPlural>сирени</APM_Mech_Siren.labelPlural>
+
+</LanguageData>

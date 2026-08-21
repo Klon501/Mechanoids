@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: pulse wave -->
+  <APM_PulseWave.label>імпульсна хвиля</APM_PulseWave.label>
+  <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
+  <APM_PulseWave.description>Механоїд випустить від себе осліплювальний акустичний імпульс, що оглушує й тимчасово осліплює всіх персонажів із плоті й крові.</APM_PulseWave.description>
+
+</LanguageData>

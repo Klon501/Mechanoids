@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
+  <!-- EN: Celeruss -->
+  <APM_Mech_Celerus_Boss.labelPlural>целеруси</APM_Mech_Celerus_Boss.labelPlural>
+
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+  <!-- EN: Celeruss -->
+  <APM_Mech_Celerus.labelPlural>целеруси</APM_Mech_Celerus.labelPlural>
+
+</LanguageData>

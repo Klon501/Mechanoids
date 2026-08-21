@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Haze -->
+  <APM_Mech_Haze.label>завіса</APM_Mech_Haze.label>
+  <!-- EN: A mechanoid experiment into organic area denial... -->
+  <APM_Mech_Haze.description>Результат експерименту механоїдів із зачищення території від органічних форм життя. Завіса здатна наповнювати довкілля токсичним газом. Її атаки в ближньому бою особливо смертоносні, адже кожне влучання викликає отруєння токсинами. Справді, розум мехрою не знає меж, знаходячи застосування навіть власним відходам для досягнення своїх цілей.</APM_Mech_Haze.description>
+  <!-- EN: head -->
+  <APM_Mech_Haze.tools.0.label>голова</APM_Mech_Haze.tools.0.label>
+
+</LanguageData>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: {0} has been fully repaired. -->
+  <APM_MechRepaired>{0} 已完全修復。</APM_MechRepaired>
+  <!-- EN: Repairing {0} -->
+  <APM_Repairing>正在修復 {0}</APM_Repairing>
+  <!-- EN: Only mechanoids can be repaired here. -->
+  <APM_NotMechanoid>此處只能修復機械族。</APM_NotMechanoid>
+  <!-- EN: Only friendly mechanoids can be repaired. -->
+  <APM_NotPlayerFaction>只能修復友好的機械族。</APM_NotPlayerFaction>
+  <!-- EN: Mechanoid size must be {0} for this station. -->
+  <APM_WrongSize>機械族體型必須為 {0} 才能使用此工作站。</APM_WrongSize>
+  <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
+  <APM_AutoRepairOrdered>修復工作站掃描發現 {0}，已下達修復指令。</APM_AutoRepairOrdered>
+  <!-- EN: The repair station stopped working and ejected {0}. -->
+  <APM_RepairStation_InactiveEjected>修復工作站停止工作並彈出了 {0}。</APM_RepairStation_InactiveEjected>
+  <!-- EN: Satellites cannot be repaired at a repair station. -->
+  <APM_RepairStation_CannotRepairSatellite>衛星無法在修復工作站中修復。</APM_RepairStation_CannotRepairSatellite>
+
+  <!-- EN: Auto-Repair -->
+  <APM_Gizmo_AutoRepair>自動修復</APM_Gizmo_AutoRepair>
+  <!-- EN: Automatically scan for damaged mechanoids and assign them to the station. -->
+  <APM_Gizmo_AutoRepair_Desc>自動掃描受損的機械族並將其分配至工作站。</APM_Gizmo_AutoRepair_Desc>
+  <!-- EN: Interval: {0} -->
+  <APM_Gizmo_SetInterval>間隔：{0}</APM_Gizmo_SetInterval>
+  <!-- EN: This mechanoid is already at full health. -->
+  <APM_FullHealth>該機械族已處於完整生命值。</APM_FullHealth>
+  <!-- EN: Cancel repair -->
+  <APM_CommandCancelRepair>取消修復</APM_CommandCancelRepair>
+  <!-- EN: Stop repairing and eject the mechanoid. -->
+  <APM_CommandCancelRepairDesc>停止修復並彈出機械族。</APM_CommandCancelRepairDesc>
+  <!-- EN: Insert mechanoid -->
+  <APM_InsertMech>放入機械族</APM_InsertMech>
+  <!-- EN: No available mechanoids. -->
+  <APM_NoMechsAvailable>沒有可用的機械族。</APM_NoMechsAvailable>
+
+  <!-- EN: Arm editor -->
+  <APM_RepairStation_ArmEditor_GizmoLabel>機械臂編輯器</APM_RepairStation_ArmEditor_GizmoLabel>
+  <!-- EN: Open the repair station arm offset editor. -->
+  <APM_RepairStation_ArmEditor_GizmoDesc>打開修復工作站機械臂偏移編輯器。</APM_RepairStation_ArmEditor_GizmoDesc>
+  <!-- EN: No repair station arm data available. -->
+  <APM_RepairStation_ArmEditor_NoStation>沒有可用的修復工作站機械臂資料。</APM_RepairStation_ArmEditor_NoStation>
+  <!-- EN: Repair station arm editor -->
+  <APM_RepairStation_ArmEditor_Title>修復工作站機械臂編輯器</APM_RepairStation_ArmEditor_Title>
+  <!-- EN: Current rotation: {0} -->
+  <APM_RepairStation_ArmEditor_CurrentRotation>目前旋轉：{0}</APM_RepairStation_ArmEditor_CurrentRotation>
+  <!-- EN: Arm -->
+  <APM_RepairStation_ArmEditor_Arm>機械臂</APM_RepairStation_ArmEditor_Arm>
+  <!-- EN: View -->
+  <APM_RepairStation_ArmEditor_View>視圖</APM_RepairStation_ArmEditor_View>
+  <!-- EN: Use current -->
+  <APM_RepairStation_ArmEditor_UseCurrent>使用目前</APM_RepairStation_ArmEditor_UseCurrent>
+  <!-- EN: Step -->
+  <APM_RepairStation_ArmEditor_Step>步長</APM_RepairStation_ArmEditor_Step>
+  <!-- EN: Live preview: current rotation -->
+  <APM_RepairStation_ArmEditor_LivePreviewOn>即時預覽：目前旋轉</APM_RepairStation_ArmEditor_LivePreviewOn>
+  <!-- EN: Previewing {0}; live preview is off -->
+  <APM_RepairStation_ArmEditor_LivePreviewOff>正在預覽 {0}；即時預覽已關閉</APM_RepairStation_ArmEditor_LivePreviewOff>
+  <!-- EN: Offset for {0}, arm {1} -->
+  <APM_RepairStation_ArmEditor_SelectedOffset>{0} 的偏移，機械臂 {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+  <!-- EN: Reset offset -->
+  <APM_RepairStation_ArmEditor_ResetView>重設偏移</APM_RepairStation_ArmEditor_ResetView>
+  <!-- EN: Copy arm XML -->
+  <APM_RepairStation_ArmEditor_CopyArmXml>複製機械臂 XML</APM_RepairStation_ArmEditor_CopyArmXml>
+  <!-- EN: Copy all XML -->
+  <APM_RepairStation_ArmEditor_CopyAllXml>複製全部 XML</APM_RepairStation_ArmEditor_CopyAllXml>
+  <!-- EN: Edits affect this spawned station. Copy XML to save the offsets in defs. -->
+  <APM_RepairStation_ArmEditor_Footer>編輯僅影響此已生成的站點。複製 XML 以將偏移儲存到定義中。</APM_RepairStation_ArmEditor_Footer>
+  <!-- EN: Copied XML to clipboard. -->
+  <APM_RepairStation_ArmEditor_Copied>已複製 XML 到剪貼板。</APM_RepairStation_ArmEditor_Copied>
+
+  <!-- EN: Shield integrity -->
+  <APM_ShieldIntegrity>護盾完整度</APM_ShieldIntegrity>
+  <!-- EN: Vampiric charges: {0}/{1} ({2} ticks of healing) -->
+  <APM_VampiricCharges>吸血充能：{0}/{1}（可治療 {2} tick）</APM_VampiricCharges>
+  <!-- EN: Show repair station auto-repair messages -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Label>顯示修復工作站自動修復訊息</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+  <!-- EN: Display notifications when the repair station automatically assigns repairs. -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>當修復工作站自動分配修復任務時顯示通知。</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
+</LanguageData>

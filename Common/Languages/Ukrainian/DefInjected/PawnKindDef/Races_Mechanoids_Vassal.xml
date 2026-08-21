@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: vassal -->
+  <APM_Mech_Vassal.label>васал</APM_Mech_Vassal.label>
+  <!-- EN: vassals -->
+  <APM_Mech_Vassal.labelPlural>васали</APM_Mech_Vassal.labelPlural>
+
+</LanguageData>

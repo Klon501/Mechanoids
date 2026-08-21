@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: {0} has been fully repaired. -->
+  <APM_MechRepaired>{0} повністю відремонтовано.</APM_MechRepaired>
+  <!-- EN: Repairing {0} -->
+  <APM_Repairing>Ремонтує {0}</APM_Repairing>
+  <!-- EN: Only mechanoids can be repaired here. -->
+  <APM_NotMechanoid>Тут можна ремонтувати лише механоїдів.</APM_NotMechanoid>
+  <!-- EN: Only friendly mechanoids can be repaired. -->
+  <APM_NotPlayerFaction>Можна ремонтувати лише дружніх механоїдів.</APM_NotPlayerFaction>
+  <!-- EN: Mechanoid size must be {0} for this station. -->
+  <APM_WrongSize>Лише механоїди розміру {0} можуть використовувати цю станцію.</APM_WrongSize>
+  <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
+  <APM_AutoRepairOrdered>Ремонтна станція виявила, що {0} потребує ремонту, і почала роботу.</APM_AutoRepairOrdered>
+  <!-- EN: The repair station stopped working and ejected {0}. -->
+  <APM_RepairStation_InactiveEjected>Ремонтна станція припинила роботу й вивантажила {0}.</APM_RepairStation_InactiveEjected>
+  <!-- EN: Satellites cannot be repaired at a repair station. -->
+  <APM_RepairStation_CannotRepairSatellite>Супутники не можуть бути відремонтовані на ремонтній станції.</APM_RepairStation_CannotRepairSatellite>
+
+  <!-- EN: Auto-Repair -->
+  <APM_Gizmo_AutoRepair>Авторемонт</APM_Gizmo_AutoRepair>
+  <!-- EN: Automatically scan for damaged mechs and assign them to the station. -->
+  <APM_Gizmo_AutoRepair_Desc>Дозволяє автоматично сканувати місцевість у пошуку пошкоджених механоїдів і спрямовувати їх на станцію.</APM_Gizmo_AutoRepair_Desc>
+  <!-- EN: Interval: {0} -->
+  <APM_Gizmo_SetInterval>Періодичність: {0}</APM_Gizmo_SetInterval>
+  <!-- EN: This mechanoid is already at full health. -->
+  <APM_FullHealth>Цей механоїд не має пошкоджень.</APM_FullHealth>
+  <!-- EN: Cancel repair -->
+  <APM_CommandCancelRepair>Скасувати ремонт</APM_CommandCancelRepair>
+  <!-- EN: Stop repairing and eject the mechanoid. -->
+  <APM_CommandCancelRepairDesc>Припинити ремонт і прибрати механоїда.</APM_CommandCancelRepairDesc>
+  <!-- EN: Insert mechanoid -->
+  <APM_InsertMech>Помістити механоїда</APM_InsertMech>
+  <!-- EN: No available mechanoids. -->
+  <APM_NoMechsAvailable>Немає доступних механоїдів.</APM_NoMechsAvailable>
+
+  <!-- EN: Arm editor -->
+  <APM_RepairStation_ArmEditor_GizmoLabel>Редактор маніпуляторів</APM_RepairStation_ArmEditor_GizmoLabel>
+  <!-- EN: Open the repair station arm offset editor. -->
+  <APM_RepairStation_ArmEditor_GizmoDesc>Відкрити інструмент налаштування зміщень маніпуляторів ремонтної станції.</APM_RepairStation_ArmEditor_GizmoDesc>
+  <!-- EN: No repair station arm data available. -->
+  <APM_RepairStation_ArmEditor_NoStation>Дані маніпуляторів ремонтної станції недоступні.</APM_RepairStation_ArmEditor_NoStation>
+  <!-- EN: Repair station arm editor -->
+  <APM_RepairStation_ArmEditor_Title>Редактор маніпуляторів ремонтної станції</APM_RepairStation_ArmEditor_Title>
+  <!-- EN: Current rotation: {0} -->
+  <APM_RepairStation_ArmEditor_CurrentRotation>Поточний поворот: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
+  <!-- EN: Arm -->
+  <APM_RepairStation_ArmEditor_Arm>Маніп.</APM_RepairStation_ArmEditor_Arm>
+  <!-- EN: View -->
+  <APM_RepairStation_ArmEditor_View>Вигляд</APM_RepairStation_ArmEditor_View>
+  <!-- EN: Use current -->
+  <APM_RepairStation_ArmEditor_UseCurrent>Поточний</APM_RepairStation_ArmEditor_UseCurrent>
+  <!-- EN: Step -->
+  <APM_RepairStation_ArmEditor_Step>Крок</APM_RepairStation_ArmEditor_Step>
+  <!-- EN: Live preview: current rotation -->
+  <APM_RepairStation_ArmEditor_LivePreviewOn>Попередній перегляд: поточний поворот</APM_RepairStation_ArmEditor_LivePreviewOn>
+  <!-- EN: Previewing {0}; live preview is off -->
+  <APM_RepairStation_ArmEditor_LivePreviewOff>Попередній перегляд: {0}; live-перегляд вимкнено</APM_RepairStation_ArmEditor_LivePreviewOff>
+  <!-- EN: Offset for {0}, arm {1} -->
+  <APM_RepairStation_ArmEditor_SelectedOffset>Зміщення для {0}, маніпулятор {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+  <!-- EN: Reset offset -->
+  <APM_RepairStation_ArmEditor_ResetView>Скинути зміщення</APM_RepairStation_ArmEditor_ResetView>
+  <!-- EN: Copy arm XML -->
+  <APM_RepairStation_ArmEditor_CopyArmXml>Копіювати XML маніпулятора</APM_RepairStation_ArmEditor_CopyArmXml>
+  <!-- EN: Copy all XML -->
+  <APM_RepairStation_ArmEditor_CopyAllXml>Копіювати весь XML</APM_RepairStation_ArmEditor_CopyAllXml>
+  <!-- EN: Edits affect this spawned station. Copy XML to save the offsets in defs. -->
+  <APM_RepairStation_ArmEditor_Footer>Зміни застосовуються лише до цієї станції. Скопіюйте XML, щоб зберегти зміщення у defs.</APM_RepairStation_ArmEditor_Footer>
+  <!-- EN: Copied XML to clipboard. -->
+  <APM_RepairStation_ArmEditor_Copied>XML скопійовано в буфер обміну.</APM_RepairStation_ArmEditor_Copied>
+
+  <!-- EN: Shield integrity -->
+  <APM_ShieldIntegrity>Цілісність щита</APM_ShieldIntegrity>
+  <!-- EN: Vampiric charges: {0}/{1} ({2} ticks of healing) -->
+  <APM_VampiricCharges>Вампірські заряди: {0}/{1} ({2} тіків лікування)</APM_VampiricCharges>
+  <!-- EN: Show repair station auto-repair messages -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Показувати повідомлення про авторемонт станції</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+  <!-- EN: Display notifications when the repair station automatically assigns repairs. -->
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Показувати сповіщення, коли ремонтна станція автоматично призначає ремонт.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
+</LanguageData>

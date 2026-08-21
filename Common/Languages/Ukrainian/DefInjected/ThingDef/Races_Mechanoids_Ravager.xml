@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Ravager -->
+  <APM_Mech_Ravager.label>спустошувач</APM_Mech_Ravager.label>
+  <!-- EN: The dreaded auto mortar was not enough... -->
+  <APM_Mech_Ravager.description>Вселяючого жах автоміномета виявилося недостатньо, щоб вгамувати жагу руйнування розуму механоїдів. Що їм спало на думку? Спустошувач — мобільна артилерійська установка. Він здатен накопичувати надлишкову енергію в резервних батареях, а потім використати її для перезаряджання свого знаряддя й випустити снаряд, що розпадається в польоті на три менші, але досі руйнівні снаряди.</APM_Mech_Ravager.description>
+  <!-- EN: head -->
+  <APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
+
+</LanguageData>
