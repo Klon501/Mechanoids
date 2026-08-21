@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<!-- EN: Mobile Mode -->
-	<APM.Dynamo.Command.SwithcToMobileMode.Label>機動模式</APM.Dynamo.Command.SwithcToMobileMode.Label>
-	<!-- EN: ... -->
-	<APM.Dynamo.Command.SwithcToMobileMode.Desc>切換回機動模式</APM.Dynamo.Command.SwithcToMobileMode.Desc>
-
-</LanguageData>

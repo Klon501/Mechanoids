@@ -1,82 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <APM.Dynamo.Command.SwithcToMobileMode.Label>Мобільний режим</APM.Dynamo.Command.SwithcToMobileMode.Label>
+
+  <APM.Dynamo.Command.SwithcToMobileMode.Desc>...</APM.Dynamo.Command.SwithcToMobileMode.Desc>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.Label>Вивантажити збережену їжу</APM.FrostivusFoodPreservation.ManualUnload.Label>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.Desc>Оберіть клітинку, куди Frostivus вивантажить усю збережену їжу. Вручну вивантажена їжа буде заборонена.</APM.FrostivusFoodPreservation.ManualUnload.Desc>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.NoFood>Збережена їжа відсутня.</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
+
+  <APM.FrostivusFoodPreservation.ManualUnload.NoPath>Frostivus не може дістатися цієї клітинки.</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
+
+  <APM.FrostivusFoodPreservation.CommandUnavailable>Frostivus зараз не може виконувати накази збереження.</APM.FrostivusFoodPreservation.CommandUnavailable>
+
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>Випустити з кріокамери</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
+
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>Оберіть клітинку, куди Frostivus випустить проковтнутих пішок або тіла.</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
+
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>Усередині немає проковтнутої пішки чи тіла.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
+
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>Frostivus не може дістатися цієї клітинки.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
+
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>Frostivus може поглинути лише заспавнену людиноподібну пішку або тіло на своїй карті.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
+
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>Frostivus може поглинути будь-який людиноподібний труп або повалену пішку, але з живих — лише колоністів, полонених або рабів.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
+
+  <APM.FrostivusFoodPreservation.CryptoSwallow.Self>Frostivus не може поглинути самого себе.</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
+
+  <APM_Gazer_AutoLaser_Label>Автолазер</APM_Gazer_AutoLaser_Label>
+
+  <APM_Gazer_AutoLaser_Desc>Дозволити цьому спостерігачу автоматично стріляти звичайним лазером і здібністю «Сонячний промінь» під керуванням гравця. Ручні накази атаки все одно виконують один постріл по вибраній цілі.</APM_Gazer_AutoLaser_Desc>
+
+  <APM_Gazer_Inspect_AutoLaserDisabled>Автолазер: вимкнено.</APM_Gazer_Inspect_AutoLaserDisabled>
+
+  <APM_Ingestor_StripMode_Enable_Label>Увімкнути роздягання</APM_Ingestor_StripMode_Enable_Label>
+
+  <APM_Ingestor_StripMode_Enable_Desc>Натисніть, щоб інґестор знімав одяг, спорядження та інвентар із трупів перед переробкою. Поточний режим: переробка як є; речі знищуються разом із трупом.</APM_Ingestor_StripMode_Enable_Desc>
+
+  <APM_Ingestor_StripMode_Disable_Label>Вимкнути роздягання</APM_Ingestor_StripMode_Disable_Label>
+
+  <APM_Ingestor_StripMode_Disable_Desc>Натисніть, щоб інґестор переробляв трупи як є, знищуючи одяг, спорядження та інвентар разом із трупом. Поточний режим: речі знімаються перед переробкою.</APM_Ingestor_StripMode_Disable_Desc>
+
+  <APM_Ingestor_ProcessMode_All_Label>Переробляти всі придатні</APM_Ingestor_ProcessMode_All_Label>
+
+  <APM_Ingestor_ProcessMode_All_Desc>Натисніть, щоб інґестор переробляв будь-який доступний свіжий органічний труп. Поточний режим: переробляються лише позначені трупи.</APM_Ingestor_ProcessMode_All_Desc>
+
+  <APM_Ingestor_ProcessMode_Marked_Label>Лише позначені трупи</APM_Ingestor_ProcessMode_Marked_Label>
+
+  <APM_Ingestor_ProcessMode_Marked_Desc>Натисніть, щоб інґестор переробляв лише трупи, позначені для переробки біомаси. Поточний режим: переробляються всі доступні свіжі органічні трупи.</APM_Ingestor_ProcessMode_Marked_Desc>
+
+  <APM_Ingestor_MarkCorpses_Label>Позначити для переробки біомаси</APM_Ingestor_MarkCorpses_Label>
+
+  <APM_Ingestor_MarkCorpses_Desc>Позначити свіжі органічні трупи для переробки інґестором.</APM_Ingestor_MarkCorpses_Desc>
+
+  <APM_IngestorAbsorb_MustTargetCorpse>Потрібен свіжий органічний труп.</APM_IngestorAbsorb_MustTargetCorpse>
+
+  <APM_IngestorAbsorb_InvalidTarget>Потрібен свіжий органічний труп або їстівний матеріал.</APM_IngestorAbsorb_InvalidTarget>
+
+  <APM_IngestorAbsorb_InvalidCorpse>Непідходящий труп.</APM_IngestorAbsorb_InvalidCorpse>
+
+  <APM_IngestorAbsorb_NotOrganic>Ціль не є органічною біомасою.</APM_IngestorAbsorb_NotOrganic>
+
+  <APM_IngestorAbsorb_Burning>Не можна переробити труп, що горить.</APM_IngestorAbsorb_Burning>
+
+  <APM_IngestorAbsorb_NotFresh>Не можна переробити гнилий або висохлий труп.</APM_IngestorAbsorb_NotFresh>
+
+  <APM_IngestorAbsorb_AlreadyMarked>Вже позначено для переробки біомаси.</APM_IngestorAbsorb_AlreadyMarked>
+
+  <APM_IngestorBiomass_LabelSingle>{0} {1} через {2}</APM_IngestorBiomass_LabelSingle>
+
+  <APM_IngestorBiomass_LabelMultiple>{0} партій, {1} {2}, найближча через {3}</APM_IngestorBiomass_LabelMultiple>
+
+  <APM_IngestorBiomass_TooltipHeader>Очікуваний вихід:</APM_IngestorBiomass_TooltipHeader>
+
+  <APM_IngestorBiomass_TooltipBatch>{0} {1} через {2}</APM_IngestorBiomass_TooltipBatch>
+
+  <APM_IngestorBiomass_TooltipMore>...і ще {0}.</APM_IngestorBiomass_TooltipMore>
+
+  <APM_IngestorBiomass_UnknownOutput>невідомий вихід</APM_IngestorBiomass_UnknownOutput>
+
+  <!-- CompJavelinRocketRack gizmo -->
+  <APM.Javelin.SwitchRocket.Label>Ракета: {0}</APM.Javelin.SwitchRocket.Label>
+
+  <APM.Javelin.SwitchRocket.Desc>Виберіть боєголовку, яку заряджає ця пускова установка. Усі ракети, крім базової, беруть уран із меха під час пострілу, а установка повертається до базової ракети, коли уран закінчується.</APM.Javelin.SwitchRocket.Desc>
+
+  <!-- CompJavelinRocketRack float menu -->
+  <APM.Javelin.RocketFree>{0} (безкоштовно)</APM.Javelin.RocketFree>
+
+  <APM.Javelin.RocketCost>{0} ({1} урану за постріл)</APM.Javelin.RocketCost>
+
+  <APM.Javelin.NoUranium>(недостатньо урану)</APM.Javelin.NoUranium>
+
+  <!-- CompJavelinRocketRack inspect pane and messages -->
+  <APM.Javelin.LoadedRocket>Ракета: {0}</APM.Javelin.LoadedRocket>
+
+  <APM.Javelin.OutOfUranium>У {0} закінчився уран для {1}, і він повернувся до базових ракет.</APM.Javelin.OutOfUranium>
+
   <!-- EN: {0} has been fully repaired. -->
   <APM_MechRepaired>{0} повністю відремонтовано.</APM_MechRepaired>
+
   <!-- EN: Repairing {0} -->
   <APM_Repairing>Ремонтує {0}</APM_Repairing>
+
   <!-- EN: Only mechanoids can be repaired here. -->
   <APM_NotMechanoid>Тут можна ремонтувати лише механоїдів.</APM_NotMechanoid>
+
   <!-- EN: Only friendly mechanoids can be repaired. -->
   <APM_NotPlayerFaction>Можна ремонтувати лише дружніх механоїдів.</APM_NotPlayerFaction>
+
   <!-- EN: Mechanoid size must be {0} for this station. -->
   <APM_WrongSize>Лише механоїди розміру {0} можуть використовувати цю станцію.</APM_WrongSize>
+
   <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
   <APM_AutoRepairOrdered>Ремонтна станція виявила, що {0} потребує ремонту, і почала роботу.</APM_AutoRepairOrdered>
+
   <!-- EN: The repair station stopped working and ejected {0}. -->
   <APM_RepairStation_InactiveEjected>Ремонтна станція припинила роботу й вивантажила {0}.</APM_RepairStation_InactiveEjected>
+
   <!-- EN: Satellites cannot be repaired at a repair station. -->
   <APM_RepairStation_CannotRepairSatellite>Супутники не можуть бути відремонтовані на ремонтній станції.</APM_RepairStation_CannotRepairSatellite>
 
   <!-- EN: Auto-Repair -->
   <APM_Gizmo_AutoRepair>Авторемонт</APM_Gizmo_AutoRepair>
+
   <!-- EN: Automatically scan for damaged mechs and assign them to the station. -->
   <APM_Gizmo_AutoRepair_Desc>Дозволяє автоматично сканувати місцевість у пошуку пошкоджених механоїдів і спрямовувати їх на станцію.</APM_Gizmo_AutoRepair_Desc>
+
   <!-- EN: Interval: {0} -->
   <APM_Gizmo_SetInterval>Періодичність: {0}</APM_Gizmo_SetInterval>
+
   <!-- EN: This mechanoid is already at full health. -->
   <APM_FullHealth>Цей механоїд не має пошкоджень.</APM_FullHealth>
+
   <!-- EN: Cancel repair -->
   <APM_CommandCancelRepair>Скасувати ремонт</APM_CommandCancelRepair>
+
   <!-- EN: Stop repairing and eject the mechanoid. -->
   <APM_CommandCancelRepairDesc>Припинити ремонт і прибрати механоїда.</APM_CommandCancelRepairDesc>
+
   <!-- EN: Insert mechanoid -->
   <APM_InsertMech>Помістити механоїда</APM_InsertMech>
+
   <!-- EN: No available mechanoids. -->
   <APM_NoMechsAvailable>Немає доступних механоїдів.</APM_NoMechsAvailable>
 
   <!-- EN: Arm editor -->
   <APM_RepairStation_ArmEditor_GizmoLabel>Редактор маніпуляторів</APM_RepairStation_ArmEditor_GizmoLabel>
+
   <!-- EN: Open the repair station arm offset editor. -->
   <APM_RepairStation_ArmEditor_GizmoDesc>Відкрити інструмент налаштування зміщень маніпуляторів ремонтної станції.</APM_RepairStation_ArmEditor_GizmoDesc>
+
   <!-- EN: No repair station arm data available. -->
   <APM_RepairStation_ArmEditor_NoStation>Дані маніпуляторів ремонтної станції недоступні.</APM_RepairStation_ArmEditor_NoStation>
+
   <!-- EN: Repair station arm editor -->
   <APM_RepairStation_ArmEditor_Title>Редактор маніпуляторів ремонтної станції</APM_RepairStation_ArmEditor_Title>
+
   <!-- EN: Current rotation: {0} -->
   <APM_RepairStation_ArmEditor_CurrentRotation>Поточний поворот: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
+
   <!-- EN: Arm -->
   <APM_RepairStation_ArmEditor_Arm>Маніп.</APM_RepairStation_ArmEditor_Arm>
+
   <!-- EN: View -->
   <APM_RepairStation_ArmEditor_View>Вигляд</APM_RepairStation_ArmEditor_View>
+
   <!-- EN: Use current -->
   <APM_RepairStation_ArmEditor_UseCurrent>Поточний</APM_RepairStation_ArmEditor_UseCurrent>
+
   <!-- EN: Step -->
   <APM_RepairStation_ArmEditor_Step>Крок</APM_RepairStation_ArmEditor_Step>
+
   <!-- EN: Live preview: current rotation -->
   <APM_RepairStation_ArmEditor_LivePreviewOn>Попередній перегляд: поточний поворот</APM_RepairStation_ArmEditor_LivePreviewOn>
+
   <!-- EN: Previewing {0}; live preview is off -->
   <APM_RepairStation_ArmEditor_LivePreviewOff>Попередній перегляд: {0}; live-перегляд вимкнено</APM_RepairStation_ArmEditor_LivePreviewOff>
+
   <!-- EN: Offset for {0}, arm {1} -->
   <APM_RepairStation_ArmEditor_SelectedOffset>Зміщення для {0}, маніпулятор {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+
   <!-- EN: Reset offset -->
   <APM_RepairStation_ArmEditor_ResetView>Скинути зміщення</APM_RepairStation_ArmEditor_ResetView>
+
   <!-- EN: Copy arm XML -->
   <APM_RepairStation_ArmEditor_CopyArmXml>Копіювати XML маніпулятора</APM_RepairStation_ArmEditor_CopyArmXml>
+
   <!-- EN: Copy all XML -->
   <APM_RepairStation_ArmEditor_CopyAllXml>Копіювати весь XML</APM_RepairStation_ArmEditor_CopyAllXml>
+
   <!-- EN: Edits affect this spawned station. Copy XML to save the offsets in defs. -->
   <APM_RepairStation_ArmEditor_Footer>Зміни застосовуються лише до цієї станції. Скопіюйте XML, щоб зберегти зміщення у defs.</APM_RepairStation_ArmEditor_Footer>
+
   <!-- EN: Copied XML to clipboard. -->
   <APM_RepairStation_ArmEditor_Copied>XML скопійовано в буфер обміну.</APM_RepairStation_ArmEditor_Copied>
 
   <!-- EN: Shield integrity -->
   <APM_ShieldIntegrity>Цілісність щита</APM_ShieldIntegrity>
+
   <!-- EN: Vampiric charges: {0}/{1} ({2} ticks of healing) -->
   <APM_VampiricCharges>Вампірські заряди: {0}/{1} ({2} тіків лікування)</APM_VampiricCharges>
+
   <!-- EN: Show repair station auto-repair messages -->
   <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Показувати повідомлення про авторемонт станції</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+
   <!-- EN: Display notifications when the repair station automatically assigns repairs. -->
   <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Показувати сповіщення, коли ремонтна станція автоматично призначає ремонт.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
+  <APM.CommandCasket.Inspection>Канал дистанційного керування активний для {PAWN}</APM.CommandCasket.Inspection>
+
+  <APM.CommandCasket.FailReason.NotMechanitor>не механістор</APM.CommandCasket.FailReason.NotMechanitor>
+
+  <APM.CommandCasket.Gizmo.CancelLink.Label>Висунути механістора</APM.CommandCasket.Gizmo.CancelLink.Label>
+
+  <APM.CommandCasket.Gizmo.CancelLink.Desc>Скасувати віддалений зв'язок із поточним мешканцем. Мешканця буде висунуто.</APM.CommandCasket.Gizmo.CancelLink.Desc>
+
+  <APM.CommandCasket.Gizmo.Shield.Label>дистанційний щит</APM.CommandCasket.Gizmo.Shield.Label>
+
+  <APM.CommandCasket.Gizmo.Shield.Desc>захистити дружнього меха, можна націлюватися на всю мапу.\nПотужність залежить від імпланта дистанційного щитоносця.</APM.CommandCasket.Gizmo.Shield.Desc>
+
+  <APM.CommandCasket.Gizmo.ShieldSelf.Desc>захистити вибраного меха.\nПотужність залежить від імпланта дистанційного щитоносця.</APM.CommandCasket.Gizmo.ShieldSelf.Desc>
+
+  <APM.CommandCasket.Gizmo.Repair.Label>дистанційний ремонт</APM.CommandCasket.Gizmo.Repair.Label>
+
+  <APM.CommandCasket.Gizmo.Repair.Desc>відремонтувати дружнього меха, доки він не буде повністю відновлений або не закінчиться енергія. Можна націлюватися на всю мапу.</APM.CommandCasket.Gizmo.Repair.Desc>
+
+  <APM.CommandCasket.Gizmo.RepairSelf.Desc>відремонтувати вибраного меха, доки він не буде повністю відновлений або не закінчиться енергія.</APM.CommandCasket.Gizmo.RepairSelf.Desc>
+
+  <APM.CommandCasket.Gizmo.Disconnect.Label>дистанційне відключення</APM.CommandCasket.Gizmo.Disconnect.Label>
+
+  <APM.CommandCasket.Gizmo.Disconnect.Desc>віддалено відключитися від керованого меха. Можна націлюватися на мехів на тій самій мапі.</APM.CommandCasket.Gizmo.Disconnect.Desc>
+
+  <APM.CommandCasket.Gizmo.Connect.Label>дистанційне підключення</APM.CommandCasket.Gizmo.Connect.Label>
+
+  <APM.CommandCasket.Gizmo.Connect.Desc>віддалено підключитися до дружнього меха. Можна націлюватися на мехів на тій самій мапі. Час залежить від цільового меха.</APM.CommandCasket.Gizmo.Connect.Desc>
+
+  <APM.CommandCasket.Inspection.Bandwidth>використано пропускної здатності:</APM.CommandCasket.Inspection.Bandwidth>
+
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Label>дистанційне перепідключення</APM.CommandCasket.Mech.Gizmo.Reconnect.Label>
+
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>віддалено підключити цього меха до механістора всередині командного капсуля меха.</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
+
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>(нестача пропускної здатності)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
+
+  <APM.CommandCasket.Inspect.CurrentAction>зараз</APM.CommandCasket.Inspect.CurrentAction>
+
+  <APM.CommandCasket.Inspect.CurrentAction.Connect>підключення</APM.CommandCasket.Inspect.CurrentAction.Connect>
+
+  <APM.CommandCasket.Inspect.CurrentAction.Disconnect>відключення</APM.CommandCasket.Inspect.CurrentAction.Disconnect>
+
+  <APM.CommandCasket.Inspect.CurrentAction.Shield>щитування</APM.CommandCasket.Inspect.CurrentAction.Shield>
+
+  <APM.CommandCasket.Inspect.CurrentAction.Repair>ремонт</APM.CommandCasket.Inspect.CurrentAction.Repair>
+
+  <APM.CommandCasket.Inspect.CurrentAction.Idle>бездія</APM.CommandCasket.Inspect.CurrentAction.Idle>
+
+  <APM.CommandCasket.Gizmo.ControlsInfo>\nЛКМ = вибрати ціль\nShift = націлитися на себе\nCtrl = поставити в чергу\nПКМ = скасувати</APM.CommandCasket.Gizmo.ControlsInfo>
+
+  <APM.MechamancerPack.MaxSatellites>Цей набір уже підтримує розгорнутих супутників: {0}.</APM.MechamancerPack.MaxSatellites>
+
+  <APM.MechamancerPack.NoValidSpawnCell>Не знайдено підходящу клітинку для розгортання супутника.</APM.MechamancerPack.NoValidSpawnCell>
+
+  <APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>Обрати меха...</APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>
+
+  <APM.MechanoidContainer.ContainsUnknown>Містить неідентифікованого меха.</APM.MechanoidContainer.ContainsUnknown>
+
+  <APM_Ravager_AutoArtillery_Label>Автоартилерія</APM_Ravager_AutoArtillery_Label>
+
+  <APM_Ravager_AutoArtillery_Desc>Дозволити цьому спустошувачу автоматично обирати ворожих пішок як цілі для артилерії під керуванням гравця. Ручні накази атаки завжди виконують один постріл по вибраній клітинці.</APM_Ravager_AutoArtillery_Desc>
+
+  <APM_Ravager_Inspect_AutoArtilleryDisabled>Автоартилерія: вимкнена.</APM_Ravager_Inspect_AutoArtilleryDisabled>
+
+  <APM_Ravager_Inspect_AutoArtilleryBlockedRoof>Автоартилерія: не можна стріляти з-під даху.</APM_Ravager_Inspect_AutoArtilleryBlockedRoof>
+
+  <APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>Автоартилерія: поточна ціль під товстим дахом.</APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>
+
+  <APM_Ravager_Inspect_AutoArtilleryCannotHit>Автоартилерія: поточну ціль не можна обстріляти з цієї позиції.</APM_Ravager_Inspect_AutoArtilleryCannotHit>
+
+  <APM_ToxicPurifier_RecoveryPerDay>Спад за день</APM_ToxicPurifier_RecoveryPerDay>
+
+  <APM_ToxicPurifier_LevelToAffectRelation>Токсичність в атмосфері локальної зони досягла критичної точки {0}, що вплине на весь світ, стосунки з іншими фракціями погіршаться.</APM_ToxicPurifier_LevelToAffectRelation>
+
+  <APM_ToxicPurifier_LevelToStartSpreading>Токсичність в атмосфері локальної зони досягла критичної точки {0}, що вплине на сусідні ділянки.</APM_ToxicPurifier_LevelToStartSpreading>
+
+  <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>Токсичність в атмосфері локальної зони досягла критичної точки {0}, що вплине на сусідні ділянки, і критичної точки {1}, що вплине на стосунки з фракціями.</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
+
+  <APM_ToxicPurifier_ModeChangeLabel>Режим</APM_ToxicPurifier_ModeChangeLabel>
+
+  <APM_ToxicPurifier_ModeChangeDesc>Змінити режим станції очисника.</APM_ToxicPurifier_ModeChangeDesc>
+
+  <APM_ToxicPurifier_Mode_OnlyGround>Лише земля</APM_ToxicPurifier_Mode_OnlyGround>
+
+  <APM_ToxicPurifier_Mode_OnlyWastepacks>Лише відходи</APM_ToxicPurifier_Mode_OnlyWastepacks>
+
+  <APM_ToxicPurifier_Mode_WastepacksOverGround>Відходи над землею</APM_ToxicPurifier_Mode_WastepacksOverGround>
+
+  <APM_ToxicPurifier_Mode_GroundOverWastepacks>Земля над відходами</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
 </LanguageData>

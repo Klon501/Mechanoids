@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!-- EN: mech longjump -->
-  <APM_PulseLongjump.label>機甲遠跳</APM_PulseLongjump.label>
-  <!-- EN: Jump to a distant location using special ultrafast mechanoid muscles. -->
-  <APM_PulseLongjump.description>使用特殊的超高速機械肌跳向遠處位置。</APM_PulseLongjump.description>
-</LanguageData>

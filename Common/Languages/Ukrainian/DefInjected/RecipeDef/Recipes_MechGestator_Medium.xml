@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: gestate frostivus -->
-  <APM_Frostivus.label>виростити морозуса</APM_Frostivus.label>
-  <!-- EN: Gestate a frostivus mechanoid. -->
-  <APM_Frostivus.description>Вирощує механоїда-морозуса.</APM_Frostivus.description>
-
-</LanguageData>

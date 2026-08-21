@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: lasher -->
-  <APM_Mech_Lasher.label>погонич</APM_Mech_Lasher.label>
-  <!-- EN: lashers -->
-  <APM_Mech_Lasher.labelPlural>погоничі</APM_Mech_Lasher.labelPlural>
-
-</LanguageData>

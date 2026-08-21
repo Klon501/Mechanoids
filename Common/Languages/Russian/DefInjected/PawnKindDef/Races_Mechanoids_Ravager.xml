@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: ravager -->
-  <APM_Mech_Ravager.label>разоритель</APM_Mech_Ravager.label>
-  <!-- EN: ravagers -->
-  <APM_Mech_Ravager.labelPlural>разорители</APM_Mech_Ravager.labelPlural>
-
-</LanguageData>

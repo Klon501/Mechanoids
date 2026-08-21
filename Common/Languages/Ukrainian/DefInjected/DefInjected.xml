@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Recycle Biomess -->
+  <APM_Absorb.label>переробка біомаси</APM_Absorb.label>
+
+  <!-- EN: Grind up target corpse, and slowly process them into chem fuel. -->
+  <APM_Absorb.description>Перемолоти вказаний труп і почати процес поступової переробки його на хімпаливо.</APM_Absorb.description>
+
+  <!-- EN: Power Plant Mode -->
+  <APM_SwitchToPowerPlantMode.label>режим електростанції</APM_SwitchToPowerPlantMode.label>
+
+  <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
+  <APM_SwitchToPowerPlantMode.description>Перемкнутися в режим електростанції, пожертвувавши рухливістю й щитом заради живлення місцевої енергомережі.</APM_SwitchToPowerPlantMode.description>
+
+  <!-- EN: "Blink" -->
+  <APM_CelerusBlink.label>стрибок</APM_CelerusBlink.label>
+
+  <!-- EN: Active onboard "blink" micro skip drive, skip to target loction. -->
+  <APM_CelerusBlink.description>Активувати бортовий мініатюрний стрибковий двигун і миттєво переміститися у вибрану точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Sun Ray -->
+  <APM_SunRay.label>сонячний промінь</APM_SunRay.label>
+
+  <!-- EN: Fire beam at full output towards target postion, burning everything in the way. -->
+  <APM_SunRay.description>Вистрілити променем на повну потужність у вибрану точку, випалюючи все на своєму шляху.</APM_SunRay.description>
+
+  <!-- EN: Mark Target -->
+  <ApexMechanoids_Ability_GiveAccuracyHediff.label>позначити ціль</ApexMechanoids_Ability_GiveAccuracyHediff.label>
+
+  <!-- EN: Mark target and share live location info to allies, make hitting said target eaiser. -->
+  <ApexMechanoids_Ability_GiveAccuracyHediff.description>Позначити ціль і почати передавати союзникам дані про її місцезнаходження в реальному часі, що полегшить влучання по ній.</ApexMechanoids_Ability_GiveAccuracyHediff.description>
+
+  <!-- EN: Scanner Sweep -->
+  <ApexMechanoids_Ability_RevealInvisible.label>сканування околиць</ApexMechanoids_Ability_RevealInvisible.label>
+
+  <!-- EN: Scanner sweep the area, revealing invisible targets caught in sweep. -->
+  <ApexMechanoids_Ability_RevealInvisible.description>Провести сканування області й розкрити невидимі цілі, що потрапили в її радіус.</ApexMechanoids_Ability_RevealInvisible.description>
+
+  <!-- EN: Aluring Song -->
+  <ApexMechanoids_Ability_SirenLure.label>чарівна пісня</ApexMechanoids_Ability_SirenLure.label>
+
+  <!-- EN: Sing a aluring song to compel the target pawn to walk towards the caster. -->
+  <ApexMechanoids_Ability_SirenLure.description>Заспівати чарівну пісню, що змушує вибраного персонажа йти до того, хто закликає.</ApexMechanoids_Ability_SirenLure.description>
+
+  <!-- EN: Grappling Hook -->
+  <APM_HookPawn.label>гачок-кішка</APM_HookPawn.label>
+
+  <!-- EN: Fire a grappling hook at a target, and quickly retract the hook to effectively launch caster to the target, can be used on buildings and pawns. -->
+  <APM_HookPawn.description>Вистрілити гачком-кішкою по цілі й швидко втягнути трос, тим самим притягнувшись до цілі. Можна застосовувати як на споруди, так і на персонажів.</APM_HookPawn.description>
+
+  <!-- EN: Shield Charge -->
+  <APM_ShieldCharge.label>щитовий таран</APM_ShieldCharge.label>
+
+  <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
+  <APM_ShieldCharge.description>Здійснити таранний ривок до персонажа, оглушуючи все на своєму шляху.</APM_ShieldCharge.description>
+
+  <!-- EN: Bladehopp -->
+  <APM_Bladehopp.label>клинковий стрибок</APM_Bladehopp.label>
+
+  <!-- EN: Dash to a target followed by a quick attack. -->
+  <APM_Bladehopp.description>Стрімко кинутися до цілі з подальшою швидкою атакою.</APM_Bladehopp.description>
+
+  <!-- EN: Blinding Laser -->
+  <APM_BlindingLaser.label>осліплювальний лазер</APM_BlindingLaser.label>
+
+  <!-- EN: Fire a laser at target, effectively binding them for a short time. -->
+  <APM_BlindingLaser.description>Вистрілити лазером по цілі, щоб на короткий час осліпити її.</APM_BlindingLaser.description>
+
+  <!-- EN: Defence Matrix -->
+  <APM_DefenceMatrix.label>захисна матриця</APM_DefenceMatrix.label>
+
+  <!-- EN: Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even when cast on enemies. The tinker will be focused on projecting the shield. -->
+  <APM_DefenceMatrix.description>Віддалено спроєктувати персональний захисний щит на дружнього персонажа. Щит зупиняє вхідний урон, але при цьому не дозволяє вести вогонь назовні. Це може бути корисним, навіть якщо щит накладено на ворога. При цьому Майстер буде повністю зосереджений на підтримці щита.</APM_DefenceMatrix.description>
+
+  <!-- EN: Shockwave -->
+  <APM_Shockwave.label>ударна хвиля</APM_Shockwave.label>
+
+  <!-- EN: combat command -->
+  <APM_PinpointCombatCommand.label>бойове командування</APM_PinpointCombatCommand.label>
+
+  <!-- EN: Pinpoint projects a tactical targeting aura that improves the ranged accuracy of nearby allies. -->
+  <APM_PinpointCombatCommand.description>Встановити мітку, яка створить навколо себе зону тактичного наведення, що підвищує точність стрільби союзників поруч.</APM_PinpointCombatCommand.description>
+
+  <!-- EN: pulse wave -->
+  <APM_PulseWave.label>імпульсна хвиля</APM_PulseWave.label>
+
+  <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
+  <APM_PulseWave.description>Механоїд випустить від себе осліплювальний акустичний імпульс, що оглушує й тимчасово осліплює всіх персонажів із плоті й крові.</APM_PulseWave.description>
+
+  <!-- EN: starfall -->
+  <APM_Starfall.label>зорепад</APM_Starfall.label>
+
+  <!-- EN: Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight. -->
+  <APM_Starfall.description>Спустошувач перезаряджає своє знаряддя й випускає один важкий снаряд, який у польоті розпадається на три менші енергетичні снаряди.</APM_Starfall.description>
+
+  <!-- EN: power beam -->
+  <APM_PowerBeam.label>енергетичний промінь</APM_PowerBeam.label>
+
+  <!-- EN: ultimate sacrifice -->
+  <APM_UltimateSacrifice.label>остання жертва</APM_UltimateSacrifice.label>
+
+  <!-- EN: One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius -->
+  <APM_UltimateSacrifice.description>Один із Завойовників може пожертвувати собою, щоб дати потужне підсилення всім союзним Завойовникам у радіусі дії.</APM_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
+  <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
+
+  <!-- EN: the duel trial -->
+  <APM_Mech_Duel.label>випробування поєдинком</APM_Mech_Duel.label>
+
+  <APM_Ability_CryptoSwallow.label>кріопоглинання</APM_Ability_CryptoSwallow.label>
+
+  <APM_Ability_CryptoSwallow.description>Поглинути живу пішку або тіло й запечатати всередині внутрішньої кріокамери до випуску.</APM_Ability_CryptoSwallow.description>
+
+  <APM_PulseLongjump.label>мех-далекий стрибок</APM_PulseLongjump.label>
+
+  <APM_PulseLongjump.description>Дозволяє механоїду стрибнути у віддалену точку за допомогою особливих надшвидких механічних м'язів.</APM_PulseLongjump.description>
+
+  <!-- EN: siren's song -->
+  <APM_SirenSong.label>пісня сирени</APM_SirenSong.label>
+
+  <!-- EN: The Siren emits a pleasant tune that lifts the spirits of nearby organic allies and briefly helps them recover recreation. -->
+  <APM_SirenSong.description>Сирена видає приємну мелодію, що підіймає настрій органічним союзникам поруч і дає їм змогу трохи перепочити та розважитися.</APM_SirenSong.description>
+
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive.label>перевантаження</APM_TerminusOverdrive.label>
+
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive.description>Термінус спрямовує енергію всередину себе і ненадовго входить у перевантажений бойовий стан. Поки він активний, скидає плащ, б'є сильніше, частіше й стає стійкішим до збивання з ніг.</APM_TerminusOverdrive.description>
+
+  <!-- EN: severing edge -->
+  <SeveringEdge.label>розсікаюче лезо</SeveringEdge.label>
+
+  <!-- EN: heavy mech with dual shields -->
+  <APM_Aegis.label>важкий мех із парними щитами</APM_Aegis.label>
+
+  <!-- EN: central sight sensor -->
+  <APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>центральний оптичний датчик</APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>лівий звуковий датчик</APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>правий звуковий датчик</APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left shoulder -->
+  <APM_Aegis.corePart.parts.1.customLabel>ліве плече</APM_Aegis.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Aegis.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Aegis.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left shield -->
+  <APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>лівий щит</APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: right shoulder -->
+  <APM_Aegis.corePart.parts.2.customLabel>праве плече</APM_Aegis.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Aegis.corePart.parts.2.parts.0.customLabel>права рука</APM_Aegis.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right shield -->
+  <APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>правий щит</APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Aegis.corePart.parts.3.customLabel>ліва нога</APM_Aegis.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Aegis.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Aegis.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Aegis.corePart.parts.4.customLabel>права нога</APM_Aegis.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Aegis.corePart.parts.4.parts.0.customLabel>права ступня</APM_Aegis.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: conqueror -->
+  <APM_Conqueror.label>завойовник</APM_Conqueror.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Conqueror.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Conqueror.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Conqueror.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Conqueror.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Conqueror.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Conqueror.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Conqueror.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Conqueror.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: left mechanical shoulder -->
+  <APM_Conqueror.corePart.parts.1.customLabel>ліве механічне плече</APM_Conqueror.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Conqueror.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Conqueror.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left hand -->
+  <APM_Conqueror.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Conqueror.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: left pinky -->
+  <APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: left middle finger -->
+  <APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left index finger -->
+  <APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left thumb -->
+  <APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Conqueror.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right mechanical shoulder -->
+  <APM_Conqueror.corePart.parts.2.customLabel>праве механічне плече</APM_Conqueror.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Conqueror.corePart.parts.2.parts.0.customLabel>права рука</APM_Conqueror.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right hand -->
+  <APM_Conqueror.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Conqueror.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: right pinky -->
+  <APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: right middle finger -->
+  <APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right index finger -->
+  <APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right thumb -->
+  <APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Conqueror.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Conqueror.corePart.parts.3.customLabel>ліва нога</APM_Conqueror.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Conqueror.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Conqueror.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Conqueror.corePart.parts.4.customLabel>права нога</APM_Conqueror.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Conqueror.corePart.parts.4.parts.0.customLabel>права ступня</APM_Conqueror.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: dominus -->
+  <APM_Dominus.label>домінус</APM_Dominus.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: left mechanical shoulder -->
+  <APM_Dominus.corePart.parts.1.customLabel>ліве механічне плече</APM_Dominus.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Dominus.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Dominus.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left hand -->
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: left pinky -->
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: left middle finger -->
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left index finger -->
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left thumb -->
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right mechanical shoulder -->
+  <APM_Dominus.corePart.parts.2.customLabel>праве механічне плече</APM_Dominus.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Dominus.corePart.parts.2.parts.0.customLabel>права рука</APM_Dominus.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right hand -->
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: right pinky -->
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: right middle finger -->
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right index finger -->
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right thumb -->
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Dominus.corePart.parts.3.customLabel>ліва нога</APM_Dominus.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Dominus.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Dominus.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Dominus.corePart.parts.4.customLabel>права нога</APM_Dominus.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Dominus.corePart.parts.4.parts.0.customLabel>права ступня</APM_Dominus.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: frostivus -->
+  <APM_Frostivus.label>морозус</APM_Frostivus.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>лівий зоровий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>правий зоровий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: front left leg -->
+  <APM_Frostivus.corePart.parts.1.customLabel>ліва передня нога</APM_Frostivus.corePart.parts.1.customLabel>
+
+  <!-- EN: front left foot -->
+  <APM_Frostivus.corePart.parts.1.parts.0.customLabel>ліва передня ступня</APM_Frostivus.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: front right leg -->
+  <APM_Frostivus.corePart.parts.2.customLabel>права передня нога</APM_Frostivus.corePart.parts.2.customLabel>
+
+  <!-- EN: front right foot -->
+  <APM_Frostivus.corePart.parts.2.parts.0.customLabel>права передня ступня</APM_Frostivus.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: rear left leg -->
+  <APM_Frostivus.corePart.parts.3.customLabel>ліва задня нога</APM_Frostivus.corePart.parts.3.customLabel>
+
+  <!-- EN: rear left foot -->
+  <APM_Frostivus.corePart.parts.3.parts.0.customLabel>ліва задня ступня</APM_Frostivus.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: rear right leg -->
+  <APM_Frostivus.corePart.parts.4.customLabel>права задня нога</APM_Frostivus.corePart.parts.4.customLabel>
+
+  <!-- EN: rear right foot -->
+  <APM_Frostivus.corePart.parts.4.parts.0.customLabel>права задня ступня</APM_Frostivus.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: cryo chamber -->
+  <APM_Frostivus.corePart.parts.5.customLabel>кріокамера</APM_Frostivus.corePart.parts.5.customLabel>
+
+  <!-- EN: gazer -->
+  <APM_Gazer.label>спостерігач</APM_Gazer.label>
+
+  <!-- EN: left cooling system -->
+  <APM_Gazer.corePart.parts.0.parts.1.customLabel>ліва система охолодження</APM_Gazer.corePart.parts.0.parts.1.customLabel>
+
+  <!-- EN: right cooling system -->
+  <APM_Gazer.corePart.parts.0.parts.2.customLabel>права система охолодження</APM_Gazer.corePart.parts.0.parts.2.customLabel>
+
+  <!-- EN: laser focus -->
+  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусуюча лінза</APM_Gazer.corePart.parts.0.parts.3.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Gazer.corePart.parts.0.parts.4.customLabel>лівий звуковий датчик</APM_Gazer.corePart.parts.0.parts.4.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правий звуковий датчик</APM_Gazer.corePart.parts.0.parts.5.customLabel>
+
+  <!-- EN: front left leg -->
+  <APM_Gazer.corePart.parts.3.customLabel>ліва передня нога</APM_Gazer.corePart.parts.3.customLabel>
+
+  <!-- EN: front left paw -->
+  <APM_Gazer.corePart.parts.3.parts.0.customLabel>ліва передня лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: front right leg -->
+  <APM_Gazer.corePart.parts.4.customLabel>права передня нога</APM_Gazer.corePart.parts.4.customLabel>
+
+  <!-- EN: front left paw -->
+  <APM_Gazer.corePart.parts.4.parts.0.customLabel>права передня лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: pulse -->
+  <APM_Pulse.label>імпульс</APM_Pulse.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: left mechanical shoulder -->
+  <APM_Pulse.corePart.parts.1.customLabel>ліве механічне плече</APM_Pulse.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Pulse.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Pulse.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left hand -->
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: left pinky -->
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: left middle finger -->
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left index finger -->
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left thumb -->
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right mechanical shoulder -->
+  <APM_Pulse.corePart.parts.2.customLabel>праве механічне плече</APM_Pulse.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Pulse.corePart.parts.2.parts.0.customLabel>права рука</APM_Pulse.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right hand -->
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: right pinky -->
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: right middle finger -->
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right index finger -->
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right thumb -->
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Pulse.corePart.parts.3.customLabel>ліва нога</APM_Pulse.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Pulse.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Pulse.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Pulse.corePart.parts.4.customLabel>права нога</APM_Pulse.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Pulse.corePart.parts.4.parts.0.customLabel>права ступня</APM_Pulse.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: ravager -->
+  <APM_Ravager.label>спустошувач</APM_Ravager.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: front left leg -->
+  <APM_Ravager.corePart.parts.1.customLabel>ліва передня нога</APM_Ravager.corePart.parts.1.customLabel>
+
+  <!-- EN: front left foot -->
+  <APM_Ravager.corePart.parts.1.parts.0.customLabel>ліва передня ступня</APM_Ravager.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: front right leg -->
+  <APM_Ravager.corePart.parts.2.customLabel>права передня нога</APM_Ravager.corePart.parts.2.customLabel>
+
+  <!-- EN: front right foot -->
+  <APM_Ravager.corePart.parts.2.parts.0.customLabel>права передня ступня</APM_Ravager.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: rear left leg -->
+  <APM_Ravager.corePart.parts.3.customLabel>ліва задня нога</APM_Ravager.corePart.parts.3.customLabel>
+
+  <!-- EN: rear left foot -->
+  <APM_Ravager.corePart.parts.3.parts.0.customLabel>ліва задня ступня</APM_Ravager.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: rear right leg -->
+  <APM_Ravager.corePart.parts.4.customLabel>права задня нога</APM_Ravager.corePart.parts.4.customLabel>
+
+  <!-- EN: rear right foot -->
+  <APM_Ravager.corePart.parts.4.parts.0.customLabel>права задня ступня</APM_Ravager.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Siren.label>резонансний корпус сирени</APM_Siren.label>
+
+  <!-- EN: terminus -->
+  <APM_Terminus.label>термінус</APM_Terminus.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: left mechanical shoulder -->
+  <APM_Terminus.corePart.parts.1.customLabel>ліве механічне плече</APM_Terminus.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Terminus.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Terminus.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left hand -->
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: left pinky -->
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: left middle finger -->
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left index finger -->
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left thumb -->
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right mechanical shoulder -->
+  <APM_Terminus.corePart.parts.2.customLabel>праве механічне плече</APM_Terminus.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Terminus.corePart.parts.2.parts.0.customLabel>права рука</APM_Terminus.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right hand -->
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: right pinky -->
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: right middle finger -->
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right index finger -->
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right thumb -->
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Terminus.corePart.parts.3.customLabel>ліва нога</APM_Terminus.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Terminus.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Terminus.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Terminus.corePart.parts.4.customLabel>права нога</APM_Terminus.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Terminus.corePart.parts.4.parts.0.customLabel>права ступня</APM_Terminus.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Tinker.label>механік</APM_Tinker.label>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>лівий акустичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>правий акустичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Tinker.corePart.parts.1.customLabel>ліве механічне плече</APM_Tinker.corePart.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Tinker.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.2.customLabel>праве механічне плече</APM_Tinker.corePart.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.customLabel>права рука</APM_Tinker.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.3.customLabel>ремонтний модуль</APM_Tinker.corePart.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.4.customLabel>ліва нога</APM_Tinker.corePart.parts.4.customLabel>
+
+  <APM_Tinker.corePart.parts.4.parts.0.customLabel>ліва ступня</APM_Tinker.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.5.customLabel>права нога</APM_Tinker.corePart.parts.5.customLabel>
+
+  <APM_Tinker.corePart.parts.5.parts.0.customLabel>права ступня</APM_Tinker.corePart.parts.5.parts.0.customLabel>
+
+  <!-- EN: vassal -->
+  <APM_Vassal.label>васал</APM_Vassal.label>
+
+  <!-- EN: left sight sensor -->
+  <APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <!-- EN: left mechanical shoulder -->
+  <APM_Vassal.corePart.parts.1.customLabel>ліве механічне плече</APM_Vassal.corePart.parts.1.customLabel>
+
+  <!-- EN: left arm -->
+  <APM_Vassal.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Vassal.corePart.parts.1.parts.0.customLabel>
+
+  <!-- EN: left hand -->
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <!-- EN: left pinky -->
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: left middle finger -->
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: left index finger -->
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: left thumb -->
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: right mechanical shoulder -->
+  <APM_Vassal.corePart.parts.2.customLabel>праве механічне плече</APM_Vassal.corePart.parts.2.customLabel>
+
+  <!-- EN: right arm -->
+  <APM_Vassal.corePart.parts.2.parts.0.customLabel>права рука</APM_Vassal.corePart.parts.2.parts.0.customLabel>
+
+  <!-- EN: right hand -->
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <!-- EN: right pinky -->
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <!-- EN: right middle finger -->
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <!-- EN: right index finger -->
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <!-- EN: right thumb -->
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <!-- EN: left leg -->
+  <APM_Vassal.corePart.parts.3.customLabel>ліва нога</APM_Vassal.corePart.parts.3.customLabel>
+
+  <!-- EN: left foot -->
+  <APM_Vassal.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Vassal.corePart.parts.3.parts.0.customLabel>
+
+  <!-- EN: right leg -->
+  <APM_Vassal.corePart.parts.4.customLabel>права нога</APM_Vassal.corePart.parts.4.customLabel>
+
+  <!-- EN: right foot -->
+  <APM_Vassal.corePart.parts.4.parts.0.customLabel>права ступня</APM_Vassal.corePart.parts.4.parts.0.customLabel>
+
+  <!-- EN: shield -->
+  <APM_AegisShield.label>щит</APM_AegisShield.label>
+
+  <!-- EN: body -->
+  <APM_FrostivusBody.label>корпус</APM_FrostivusBody.label>
+
+  <!-- EN: cryo chamber -->
+  <APM_FrostivusCryo.label>кріокамера</APM_FrostivusCryo.label>
+
+  <!-- EN: head -->
+  <APM_GazerHead.label>голова</APM_GazerHead.label>
+
+  <!-- EN: cooling system -->
+  <APM_GazerCoolingSystem.label>система охолодження</APM_GazerCoolingSystem.label>
+
+  <!-- EN: laser focus -->
+  <APM_GazerLaserFocus.label>фокусуюча лінза</APM_GazerLaserFocus.label>
+
+  <!-- EN: thorax -->
+  <APM_GazerThorax.label>грудний відділ</APM_GazerThorax.label>
+
+  <!-- EN: leg -->
+  <APM_GazerPaw.label>нога</APM_GazerPaw.label>
+
+  <!-- EN: body -->
+  <APM_RavagerBody.label>корпус</APM_RavagerBody.label>
+
+  <APM_SirenHead.label>резонансна корона</APM_SirenHead.label>
+
+  <APM_VocalSynthesizer.label>голосовий синтезатор</APM_VocalSynthesizer.label>
+
+  <APM_PsychicResonator.label>психічний резонатор</APM_PsychicResonator.label>
+
+  <APM_SirenResonanceCore.label>резонансне ядро</APM_SirenResonanceCore.label>
+
+  <APM_BroadcastArray.label>мовний масив</APM_BroadcastArray.label>
+
+  <APM_TinkerRepairModule.label>ремонтний модуль</APM_TinkerRepairModule.label>
+
+  <!-- EN: left shield -->
+  <APM_LeftAegisShield.label>лівий щит</APM_LeftAegisShield.label>
+
+  <!-- EN: shield -->
+  <APM_LeftAegisShield.labelShort>щит</APM_LeftAegisShield.labelShort>
+
+  <!-- EN: right shield -->
+  <APM_RightAegisShield.label>правий щит</APM_RightAegisShield.label>
+
+  <!-- EN: shield -->
+  <APM_RightAegisShield.labelShort>щит</APM_RightAegisShield.labelShort>
+
+  <!-- EN: {0} has been killed. -->
+  <APM_SunRay.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRay.deathMessage>
+
+  <!-- EN: sun ray -->
+  <APM_SunRayGun.label>сонячний промінь</APM_SunRayGun.label>
+
+  <!-- EN: {0} has been killed. -->
+  <APM_SunRayGun.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRayGun.deathMessage>
+
+  <!-- EN: push damage -->
+  <Push.label>поштовх</Push.label>
+
+  <!-- EN: {0} has been ... to death. -->
+  <Push.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</Push.deathMessage>
+
+  <!-- EN: {0} was annihilated by a shockwave. -->
+  <APM_Shockwave.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито} ударною хвилею.</APM_Shockwave.deathMessage>
+
+  <!-- EN: mega beam -->
+  <MegaBeam.label>мегапромінь</MegaBeam.label>
+
+  <!-- EN: {0} has been killed. -->
+  <MegaBeam.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</MegaBeam.deathMessage>
+
+  <APM_IngestorAbsorbCorpse.label>переробити біомасу</APM_IngestorAbsorbCorpse.label>
+
+  <!-- EN: toxicity level -->
+  <APM_Toxicity.label>рівень забруднення</APM_Toxicity.label>
+
+  <!-- EN: toxic level in local atmosphere. -->
+  <APM_Toxicity.description>Рівень забруднення повітря на цій карті.</APM_Toxicity.description>
+
+  <!-- EN: blinded by laser -->
+  <APM_LaserBlind.label>осліплений лазером</APM_LaserBlind.label>
+
+  <!-- EN: vastly reduced sight capacity due to been blinded by laser. -->
+  <APM_LaserBlind.description>Здатність бачити сильно знижена через осліплення лазерним променем.</APM_LaserBlind.description>
+
+  <APM_Hediff_Devoured.label>поглинання</APM_Hediff_Devoured.label>
+
+  <APM_Hediff_Devoured.description>Запечатаний усередині кріокамери Frostivus. Біологічні процеси призупинені до випуску.</APM_Hediff_Devoured.description>
+
+  <APM_AbsorbedThing.label>переробка біомаси</APM_AbsorbedThing.label>
+
+  <APM_AbsorbedThing.description>Переробка поглинутої біомаси на хімпаливо.</APM_AbsorbedThing.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_CelerusSmokescreenBuff.label>димова завіса</APM_CelerusSmokescreenBuff.label>
+
+  <!-- EN: in duel -->
+  <APM_InDuel.label>у поєдинку</APM_InDuel.label>
+
+  <!-- EN: The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks) -->
+  <APM_InDuel.description>«Випробування поєдинком» кидає виклик вибраному ворожому персонажу, змушуючи опонентів на короткий час вступити в ближній бій. Здібності та далекі атаки вимикаються. Навколо учасників поєдинку на час дії здібності автоматично створюється візуальна «арена». Інші персонажі не можуть обирати учасників поєдинку своєю ціллю. Якщо один із опонентів гине в поєдинку, переможець отримує потужний тимчасовий бонус. Якщо поєдинок не завершується смертю (час вийшов), обидва учасники отримують значний штраф. Учасники поєдинку отримують періодичний урон кожну секунду поєдинку. Це заохочує агресію й гарантує, що поєдинок рідко закінчується «нічиєю» за часом. Будь-яке відновлення здоров'я учасників під час поєдинку заблоковано (за винятком можливого вампіризму від атак).</APM_InDuel.description>
+
+  <!-- EN: duel winner -->
+  <APM_DuelWinner.label>переможець поєдинку</APM_DuelWinner.label>
+
+  <!-- EN: wins: 1 -->
+  <APM_DuelWinner.stages.0.label>перемог: 1</APM_DuelWinner.stages.0.label>
+
+  <!-- EN: wins: 2 -->
+  <APM_DuelWinner.stages.1.label>перемог: 2</APM_DuelWinner.stages.1.label>
+
+  <!-- EN: wins: 3 -->
+  <APM_DuelWinner.stages.2.label>перемог: 3</APM_DuelWinner.stages.2.label>
+
+  <!-- EN: wins: 4 -->
+  <APM_DuelWinner.stages.3.label>перемог: 4</APM_DuelWinner.stages.3.label>
+
+  <!-- EN: wins: 5 -->
+  <APM_DuelWinner.stages.4.label>перемог: 5</APM_DuelWinner.stages.4.label>
+
+  <!-- EN: wins: 6 -->
+  <APM_DuelWinner.stages.5.label>перемог: 6</APM_DuelWinner.stages.5.label>
+
+  <!-- EN: wins: 7 -->
+  <APM_DuelWinner.stages.6.label>перемог: 7</APM_DuelWinner.stages.6.label>
+
+  <!-- EN: duel draw -->
+  <APM_DuelDraw.label>нічия в поєдинку</APM_DuelDraw.label>
+
+  <!-- EN: targeting uplink -->
+  <APM_PinpointCombatCommandBuff.label>канал наведення</APM_PinpointCombatCommandBuff.label>
+
+  <!-- EN: This pawn is receiving targeting data from a nearby Pinpoint. -->
+  <APM_PinpointCombatCommandBuff.description>Цей персонаж отримує дані для наведення від Навідника неподалік.</APM_PinpointCombatCommandBuff.description>
+
+  <!-- EN: flash-blinded -->
+  <APM_PulseWaveBlind.label>осліплення спалахом</APM_PulseWaveBlind.label>
+
+  <!-- EN: An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time. -->
+  <APM_PulseWaveBlind.description>Яскравий спалах і різкий стрибок тиску перевантажили датчики цього персонажа, різко знизивши його зір на короткий час.</APM_PulseWaveBlind.description>
+
+  <!-- EN: rampage -->
+  <APM_Rampage.label>шаленство</APM_Rampage.label>
+
+  <!-- EN: ultimate sacrifice -->
+  <APM_Hediff_UltimateSacrifice.label>вища жертва</APM_Hediff_UltimateSacrifice.label>
+
+  <!-- EN: Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius. -->
+  <APM_Hediff_UltimateSacrifice.description>Один із Завойовників може пожертвувати собою, щоб дати потужне підсилення всім союзним Завойовникам у радіусі дії.</APM_Hediff_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
+  <APM_Hediff_PressTheAttack.label>натиск</APM_Hediff_PressTheAttack.label>
+
+  <!-- EN: siren's song -->
+  <APM_Hediff_SirenSong.label>пісня сирени</APM_Hediff_SirenSong.label>
+
+  <!-- EN: This pawn is carried by a soothing mechanical chorus, feeling lighter and more energized. -->
+  <APM_Hediff_SirenSong.description>Цього персонажа огортає заспокійливий механічний хор, відчуває себе легшим і бадьорішим.</APM_Hediff_SirenSong.description>
+
+  <!-- EN: overdrive -->
+  <APM_Hediff_TerminusOverdrive.label>перевантаження</APM_Hediff_TerminusOverdrive.label>
+
+  <!-- EN: Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression. -->
+  <APM_Hediff_TerminusOverdrive.description>Термінус спрямовує потужний потік енергії на підвищення бойових характеристик, скидаючи плащ і стриманість заради короткого спалаху нестримної агресії.</APM_Hediff_TerminusOverdrive.description>
+
+  <!-- EN: Bashing into TargetA. -->
+  <APM_BashStun.reportString>врізається в TargetA</APM_BashStun.reportString>
+
+  <!-- EN: Bashing into TargetA. -->
+  <APM_BashDamage.reportString>врізається в TargetA</APM_BashDamage.reportString>
+
+  <!-- EN: operating remote uplink. -->
+  <APM_RemoteControlUplink.reportString>під'єднується до віддаленого каналу зв'язку</APM_RemoteControlUplink.reportString>
+
+  <!-- EN: retracting grappling hook towards TargetA. -->
+  <APM_HookPawn.reportString>притягується до TargetA</APM_HookPawn.reportString>
+
+  <APM_FrostivusTakeFoodToInventory.reportString>зберігає TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+
+  <APM_FrostivusUnloadFoodToStorage.reportString>вивантажує TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+
+  <APM_FrostivusManualUnloadFood.reportString>вивантажує збережену їжу.</APM_FrostivusManualUnloadFood.reportString>
+
+  <APM_FrostivusReleaseDevouredContents.reportString>випускає збережену істоту.</APM_FrostivusReleaseDevouredContents.reportString>
+
+  <!-- EN: dueling -->
+  <APM_Duel.label>поєдинок</APM_Duel.label>
+
+  <!-- EN: Mental state: Duel -->
+  <APM_Duel.baseInspectLine>Душевний стан: поєдинок</APM_Duel.baseInspectLine>
+
+  <!-- EN: {0} is dueling {1}. -->
+  <APM_Duel.beginLetter>{0} викликає {1} на поєдинок.</APM_Duel.beginLetter>
+
+  <!-- EN: dueling -->
+  <APM_Duel.beginLetterLabel>поєдинок</APM_Duel.beginLetterLabel>
+
+  <!-- EN: {0}'s duel has come to an end. -->
+  <APM_Duel.recoveryMessage>Поєдинок {0} добіг кінця.</APM_Duel.recoveryMessage>
+
+  <!-- EN: Aegis -->
+  <APM_Mech_Aegis.label>егіда</APM_Mech_Aegis.label>
+
+  <!-- EN: Aegiss -->
+  <APM_Mech_Aegis.labelPlural>егіди</APM_Mech_Aegis.labelPlural>
+
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
+
+  <!-- EN: Celeruss -->
+  <APM_Mech_Celerus_Boss.labelPlural>целеруси</APM_Mech_Celerus_Boss.labelPlural>
+
+  <!-- EN: Celerus -->
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+
+  <!-- EN: Celeruss -->
+  <APM_Mech_Celerus.labelPlural>целеруси</APM_Mech_Celerus.labelPlural>
+
+  <!-- EN: DMR conqueror -->
+  <APM_Mech_Conqueror_DMR.label>завойовник (карабін)</APM_Mech_Conqueror_DMR.label>
+
+  <!-- EN: DMR conquerors -->
+  <APM_Mech_Conqueror_DMR.labelPlural>завойовники (карабін)</APM_Mech_Conqueror_DMR.labelPlural>
+
+  <!-- EN: AR onqueror -->
+  <APM_Mech_Conqueror_AR.label>завойовник (гвинтівка)</APM_Mech_Conqueror_AR.label>
+
+  <!-- EN: AR onquerors -->
+  <APM_Mech_Conqueror_AR.labelPlural>завойовники (гвинтівка)</APM_Mech_Conqueror_AR.labelPlural>
+
+  <!-- EN: LMG conqueror -->
+  <APM_Mech_Conqueror_LMG.label>завойовник (кулемет)</APM_Mech_Conqueror_LMG.label>
+
+  <!-- EN: LMG conquerors -->
+  <APM_Mech_Conqueror_LMG.labelPlural>завойовники (кулемет)</APM_Mech_Conqueror_LMG.labelPlural>
+
+  <!-- EN: dominus -->
+  <APM_Mech_Dominus.label>домінус</APM_Mech_Dominus.label>
+
+  <!-- EN: dominuss -->
+  <APM_Mech_Dominus.labelPlural>домінуси</APM_Mech_Dominus.labelPlural>
+
+  <!-- EN: dominus -->
+  <APM_Mech_Dominus_Boss.label>домінус</APM_Mech_Dominus_Boss.label>
+
+  <!-- EN: dominuss -->
+  <APM_Mech_Dominus_Boss.labelPlural>домінуси</APM_Mech_Dominus_Boss.labelPlural>
+
+  <!-- EN: dynamo -->
+  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
+
+  <!-- EN: dynamos -->
+  <APM_Mech_Dynamo.labelPlural>динамо</APM_Mech_Dynamo.labelPlural>
+
+  <!-- EN: frostivus -->
+  <APM_Mech_Frostivus.label>морозус</APM_Mech_Frostivus.label>
+
+  <!-- EN: frostivuss -->
+  <APM_Mech_Frostivus.labelPlural>морозуси</APM_Mech_Frostivus.labelPlural>
+
+  <!-- EN: gazer -->
+  <APM_Mech_Gazer.label>спостерігач</APM_Mech_Gazer.label>
+
+  <!-- EN: gazers -->
+  <APM_Mech_Gazer.labelPlural>спостерігачі</APM_Mech_Gazer.labelPlural>
+
+  <!-- EN: haze -->
+  <APM_Mech_Haze.label>завіса</APM_Mech_Haze.label>
+
+  <!-- EN: hazes -->
+  <APM_Mech_Haze.labelPlural>завіси</APM_Mech_Haze.labelPlural>
+
+  <!-- EN: ingestor -->
+  <APM_Mech_Ingestor.label>поглинач</APM_Mech_Ingestor.label>
+
+  <!-- EN: ingestors -->
+  <APM_Mech_Ingestor.labelPlural>поглиначі</APM_Mech_Ingestor.labelPlural>
+
+  <!-- EN: lasher -->
+  <APM_Mech_Lasher.label>погонич</APM_Mech_Lasher.label>
+
+  <!-- EN: lashers -->
+  <APM_Mech_Lasher.labelPlural>погоничі</APM_Mech_Lasher.labelPlural>
+
+  <!-- EN: mantis -->
+  <APM_Mech_Mantis.label>богомол</APM_Mech_Mantis.label>
+
+  <!-- EN: mantiss -->
+  <APM_Mech_Mantis.labelPlural>богомоли</APM_Mech_Mantis.labelPlural>
+
+  <!-- EN: maul -->
+  <APM_Mech_Maul.label>кришитель</APM_Mech_Maul.label>
+
+  <!-- EN: mauls -->
+  <APM_Mech_Maul.labelPlural>кришителі</APM_Mech_Maul.labelPlural>
+
+  <!-- EN: pinpoint -->
+  <APM_Mech_Pinpoint.label>навідник</APM_Mech_Pinpoint.label>
+
+  <!-- EN: pinpoints -->
+  <APM_Mech_Pinpoint.labelPlural>навідники</APM_Mech_Pinpoint.labelPlural>
+
+  <!-- EN: pulse -->
+  <APM_Mech_Pulse.label>імпульс</APM_Mech_Pulse.label>
+
+  <!-- EN: pulses -->
+  <APM_Mech_Pulse.labelPlural>імпульси</APM_Mech_Pulse.labelPlural>
+
+  <!-- EN: ravager -->
+  <APM_Mech_Ravager.label>спустошувач</APM_Mech_Ravager.label>
+
+  <!-- EN: ravagers -->
+  <APM_Mech_Ravager.labelPlural>спустошувачі</APM_Mech_Ravager.labelPlural>
+
+  <!-- EN: satellite -->
+  <APM_Mech_Satellite.label>супутник</APM_Mech_Satellite.label>
+
+  <!-- EN: satellites -->
+  <APM_Mech_Satellite.labelPlural>супутники</APM_Mech_Satellite.labelPlural>
+
+  <!-- EN: siren -->
+  <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+
+  <!-- EN: sirens -->
+  <APM_Mech_Siren.labelPlural>сирени</APM_Mech_Siren.labelPlural>
+
+  <!-- EN: terminus -->
+  <APM_Mech_Terminus.label>термінус</APM_Mech_Terminus.label>
+
+  <!-- EN: terminuss -->
+  <APM_Mech_Terminus.labelPlural>термінуси</APM_Mech_Terminus.labelPlural>
+
+  <!-- EN: terminus boss -->
+  <APM_Mech_Terminus_Boss.label>термінус</APM_Mech_Terminus_Boss.label>
+
+  <!-- EN: terminus bosss -->
+  <APM_Mech_Terminus_Boss.labelPlural>термінуси</APM_Mech_Terminus_Boss.labelPlural>
+
+  <!-- EN: tinker -->
+  <APM_Mech_Tinker.label>майстер</APM_Mech_Tinker.label>
+
+  <!-- EN: tinkers -->
+  <APM_Mech_Tinker.labelPlural>майстри</APM_Mech_Tinker.labelPlural>
+
+  <!-- EN: vassal -->
+  <APM_Mech_Vassal.label>васал</APM_Mech_Vassal.label>
+
+  <!-- EN: vassals -->
+  <APM_Mech_Vassal.labelPlural>васали</APM_Mech_Vassal.labelPlural>
+
+  <!-- EN: Gestate a frostivus mechanoid. -->
+  <APM_Frostivus.description>Вирощує механоїда-морозуса.</APM_Frostivus.description>
+
+  <!-- EN: mech gestation speed factor -->
+  <APM_GestationFactor.label>коефіцієнт швидкості гестації</APM_GestationFactor.label>
+
+  <!-- EN: Mech gestation speed is multiplied by this value. -->
+  <APM_GestationFactor.description>Швидкість вирощування механоїдів множиться на це значення.</APM_GestationFactor.description>
+
+  <!-- EN: hook -->
+  <APM_Projectile_Hook.label>гак</APM_Projectile_Hook.label>
+
+  <!-- EN: mechmancer suit -->
+  <APM_Apparel_MechamancerSuit.label>костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+
+  <!-- EN: A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor. -->
+  <APM_Apparel_MechamancerSuit.description>Силовий бронекостюм, начинений спорядженням для допомоги механітові. Костюм мехаманта значно збільшує пропускну здатність (bandwidth) механітера, забезпечуючи персональний енергетичний щит і стійкість до ушкоджень, порівнянну зі спеціалізованою силовою бронею.</APM_Apparel_MechamancerSuit.description>
+
+  <!-- EN: mechamancer helmet -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>шолом мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+
+  <!-- EN: Mechamancer Pack -->
+  <APM_Apparel_MechamancerPack.label>ранцевий мехамант</APM_Apparel_MechamancerPack.label>
+
+  <!-- EN: Mechband Node -->
+  <APM_MechbandAntenna_Dominus.label>механоїдний вузол</APM_MechbandAntenna_Dominus.label>
+
+  <!-- EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
+  <APM_MechbandAntenna_Dominus.description>Сигнальний пристрій механоїдної мережі, потужніший за механоїдний масив. Під час активації випромінює сигнальний імпульс найвищого рівня, що привертає механоїда-командира з його охороною. Якщо ви його переможете, з тіла можна зібрати особливі технології. Сигнальний імпульс спалює антену, тож споруду можна використати лише один раз.</APM_MechbandAntenna_Dominus.description>
+
+  <!-- EN: Summon dominus threat -->
+  <APM_MechbandAntenna_Dominus.comps.0.useLabel>Прикликати загрозу Домінуса</APM_MechbandAntenna_Dominus.comps.0.useLabel>
+
+  <!-- EN: Mechband Conduit -->
+  <APM_MechbandAntenna_Terminus.label>механоїдний канал</APM_MechbandAntenna_Terminus.label>
+
+  <!-- EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
+  <APM_MechbandAntenna_Terminus.description>Сигнальний пристрій механоїдної мережі, потужніший за механоїдний масив. Під час активації випромінює сигнальний імпульс найвищого рівня, що привертає механоїда-командира з його охороною. Якщо ви його переможете, з тіла можна зібрати особливі технології. Сигнальний імпульс спалює антену, тож споруду можна використати лише один раз.</APM_MechbandAntenna_Terminus.description>
+
+  <!-- EN: Summon dominus threat -->
+  <APM_MechbandAntenna_Terminus.comps.0.useLabel>Прикликати загрозу Домінуса</APM_MechbandAntenna_Terminus.comps.0.useLabel>
+
+  <!-- EN: Mechband Pylon -->
+  <APM_MechbandAntenna_Celerus.label>механоїдний пілон</APM_MechbandAntenna_Celerus.label>
+
+  <!-- EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
+  <APM_MechbandAntenna_Celerus.description>Сигнальний пристрій механоїдної мережі, потужніший за механоїдний вузол. Під час активації випромінює сигнальний імпульс найвищого рівня, що привертає механоїда-командира з його охороною. Якщо ви його переможете, з тіла можна зібрати особливі технології. Сигнальний імпульс спалює антену, тож споруду можна використати лише один раз.</APM_MechbandAntenna_Celerus.description>
+
+  <!-- EN: Summon dominus threat -->
+  <APM_MechbandAntenna_Celerus.comps.0.useLabel>Прикликати загрозу Домінуса</APM_MechbandAntenna_Celerus.comps.0.useLabel>
+
+  <!-- EN: Mechband Array -->
+  <APM_MechbandAntenna_Gazer.label>механоїдний масив</APM_MechbandAntenna_Gazer.label>
+
+  <!-- EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
+  <APM_MechbandAntenna_Gazer.description>Сигнальний пристрій механоїдної мережі, потужніший за механоїдний вузол. Під час активації випромінює сигнальний імпульс найвищого рівня, що привертає механоїда-командира з його охороною. Якщо ви його переможете, з тіла можна зібрати особливі технології. Сигнальний імпульс спалює антену, тож споруду можна використати лише один раз.</APM_MechbandAntenna_Gazer.description>
+
+  <!-- EN: Summon dominus threat -->
+  <APM_MechbandAntenna_Gazer.comps.0.useLabel>Прикликати загрозу Домінуса</APM_MechbandAntenna_Gazer.comps.0.useLabel>
+
+  <!-- EN: purifier station -->
+  <APM_Building_ToxicPurifier.label>станція очищення</APM_Building_ToxicPurifier.label>
+
+  <!-- EN: The pollution reclaimer is an imperfect solution to a disastrous problem. It cleans pollution from a large area around it in addition to vaporizing toxic wastepacks. Its function is imperfect due to the drastic rate it runs at and It has a constant chance to cause several severe ecological events such as the following: Releasing toxic waste into the air, causing a toxic downpour, generating a toxic smog in the local area up to several world tiles around where it is placed and spoiling relations over time with local neighboring factions. While it works well, ecologists and mechanitors alike still argue whether the side effects are worth the hassle. -->
+  <APM_Building_ToxicPurifier.description>Ця споруда для відновлення від забруднення є недосконалим розв'язанням катастрофічної проблеми. Вона очищає забруднення на великій території навколо себе, а також випаровує токсичні відходи. Її робота вважається недосконалою через надмірно високу інтенсивність, з якою вона функціонує. Таким чином, робота пов'язана з постійним ризиком спричинити низку серйозних екологічних подій, а саме: викид токсичних відходів просто в небо з наступними токсичними опадами, утворення токсичного смогу на карті світу в радіусі кількох клітинок навколо місця встановлення, а також поступове погіршення стосунків із сусідніми фракціями. Попри те, що пристрій непогано справляється зі своїм завданням, екологи й механітери досі сперечаються, чи варті побічні ефекти таких клопотів.</APM_Building_ToxicPurifier.description>
+
+  <!-- EN: Dynamo powered generator -->
+  <APM_DynamoPoweredGenerator.label>динамо-генератор</APM_DynamoPoweredGenerator.label>
+
+  <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <APM_DynamoPoweredGenerator.description>Виробляє енергію, споживаючи хімпаливо. Час від часу потрібно заправляти вручну.</APM_DynamoPoweredGenerator.description>
+
+  <!-- EN: Gazer Emplacement -->
+  <APM_GazerBeam.label>вогнева позиція Спостерігача</APM_GazerBeam.label>
+
+  <!-- EN: The grazer emplacement is mainly composed of the primary ocular beam emitter of a Gazer mechanoid ripped off and attached to a reinforced metal base. While extremely inefficient, it can emit a massive beam of energy in a single direction, destroying foe and fortification alike in its path. It is not capable of moving in any direction. -->
+  <APM_GazerBeam.description>Вогнева позиція Спостерігача складається з очної лазерної установки, вирваної з механоїда-Спостерігача й закріпленої на підсиленій металевій основі. Попри крайню неефективність, вона здатна випускати в одному напрямку потужний промінь енергії, що знищує на своєму шляху і ворогів, і укріплення. Пересуватися вона не здатна.</APM_GazerBeam.description>
+
+  <!-- EN: charge blaster -->
+  <APM_Gun_Conqueror_AR.label>бластер</APM_Gun_Conqueror_AR.label>
+
+  <!-- EN: A charged-shot assault rifle. Weaker than a charge rifle, but more accurate. -->
+  <APM_Gun_Conqueror_AR.description>Енергетична штурмова гвинтівка. Слабша за енергогвинтівку, але точніша.</APM_Gun_Conqueror_AR.description>
+
+  <!-- EN: stock -->
+  <APM_Gun_Conqueror_AR.tools.0.label>приклад</APM_Gun_Conqueror_AR.tools.0.label>
+
+  <!-- EN: barrel -->
+  <APM_Gun_Conqueror_AR.tools.1.label>ствол</APM_Gun_Conqueror_AR.tools.1.label>
+
+  <!-- EN: charge carbine -->
+  <APM_Gun_Conqueror_DMR.label>енергокарабін</APM_Gun_Conqueror_DMR.label>
+
+  <!-- EN: A stronger, faster, but less accurate Charge Lance. -->
+  <APM_Gun_Conqueror_DMR.description>Потужніша, швидкострільніша, але менш точна версія енергосписа.</APM_Gun_Conqueror_DMR.description>
+
+  <!-- EN: barrel -->
+  <APM_Gun_Conqueror_DMR.tools.0.label>ствол</APM_Gun_Conqueror_DMR.tools.0.label>
+
+  <!-- EN: charge spitter shot -->
+  <Bullet_ChargeSpitter.label>постріл енергокулемета</Bullet_ChargeSpitter.label>
+
+  <!-- EN: charge spitter -->
+  <APM_Gun_Conqueror_LMG.label>енергокулемет</APM_Gun_Conqueror_LMG.label>
+
+  <!-- EN: A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate. -->
+  <APM_Gun_Conqueror_LMG.description>Енергетичний скорострільний бластер для вогню на придушення. Легший за важкий бластер, але точніший.</APM_Gun_Conqueror_LMG.description>
+
+  <!-- EN: barrel -->
+  <APM_Gun_Conqueror_LMG.tools.0.label>ствол</APM_Gun_Conqueror_LMG.tools.0.label>
+
+  <!-- EN: Dominus' Spear -->
+  <APM_Weapon_DominusSpear.label>спис Домінуса</APM_Weapon_DominusSpear.label>
+
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpear.tools.0.label>руків'я</APM_Weapon_DominusSpear.tools.0.label>
+
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpear.tools.1.label>вістря</APM_Weapon_DominusSpear.tools.1.label>
+
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpear.tools.2.label>лезо</APM_Weapon_DominusSpear.tools.2.label>
+
+  <!-- EN: Dominus' Spear (Boss) -->
+  <APM_Weapon_DominusSpearBoss.label>спис Домінуса (бос)</APM_Weapon_DominusSpearBoss.label>
+
+  <!-- EN: handle -->
+  <APM_Weapon_DominusSpearBoss.tools.0.label>руків'я</APM_Weapon_DominusSpearBoss.tools.0.label>
+
+  <!-- EN: point -->
+  <APM_Weapon_DominusSpearBoss.tools.1.label>вістря</APM_Weapon_DominusSpearBoss.tools.1.label>
+
+  <!-- EN: edge -->
+  <APM_Weapon_DominusSpearBoss.tools.2.label>лезо</APM_Weapon_DominusSpearBoss.tools.2.label>
+
+  <!-- EN: duel spot -->
+  <APM_DuelSpot.label>місце для поєдинку</APM_DuelSpot.label>
+
+  <!-- EN: smokescreen gas -->
+  <APM_Smokescreen.label>газ димової завіси</APM_Smokescreen.label>
+
+  <!-- EN: gazer emplacement -->
+  <APM_GazerEmplacement.label>вогнева позиція Спостерігача</APM_GazerEmplacement.label>
+
+  <!-- EN: A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost. -->
+  <APM_GazerEmplacement.description>Укріплена нерухома лазерна вогнева точка, збудована навколо відновленої очної лазерної установки Спостерігача. Після встановлення не може переміщатися. За ручного наведення в межах свого сектора стрільби здатна випускати руйнівний «Сонячний промінь», як у Спостерігача, випалюючи все на своєму шляху ціною величезних витрат енергії.</APM_GazerEmplacement.description>
+
+  <!-- EN: laser -->
+  <APM_Gazer_Laser.label>лазер</APM_Gazer_Laser.label>
+
+  <!-- EN: mech command casket -->
+  <APM_MechCommandCasket.label>командна капсула</APM_MechCommandCasket.label>
+
+  <!-- EN: The mech command casket is a fusion of mechlink and cryptosleep casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them. -->
+  <APM_MechCommandCasket.description>Командна капсула механоїдів — поєднання технологій мехлінка та капсули кріосну, що дозволяє ув'язненому всередині механітерові керувати своїми механоїдами з відносної безпеки капсули. Підсилювач сигналу цієї машини дає змогу механітерові керувати своїми мехами навіть на інших клітинках карти світу.</APM_MechCommandCasket.description>
+
+  <!-- EN: mech gestator amplifier -->
+  <APM_GestatorAmplifier.label>підсилювач гестатора механоїдів</APM_GestatorAmplifier.label>
+
+  <!-- EN: Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to. -->
+  <APM_GestatorAmplifier.description>Військові технології рою механоїдів було викрадено, і вони потрапили до рук органіків. Це призвело до появи цього підсилювача гестації. Він збільшує швидкість роботи будь-яких гестаторів механоїдів, розташованих поруч.</APM_GestatorAmplifier.description>
+
+  <!-- EN: pulse shotgun -->
+  <APM_Gun_Pulse_Shotgun.label>імпульсний дробовик</APM_Gun_Pulse_Shotgun.label>
+
+  <!-- EN: A pulse-charged shotgun that fires two heavy bursts, releasing unstable energy on impact. -->
+  <APM_Gun_Pulse_Shotgun.description>Енергетичний дробовик, що робить два потужні залпи, вивільняючи нестабільну енергію при влучанні.</APM_Gun_Pulse_Shotgun.description>
+
+  <!-- EN: barrel -->
+  <APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
+
+  <!-- EN: pulse bullet -->
+  <APM_Pulse_Proj.label>імпульсний снаряд</APM_Pulse_Proj.label>
+
+  <!-- EN: "The Aegis is a mighty mechanoid that sacrifices offensive capabilities for defensive mastery. The phrase 'The best defense is a good offense' rings true with the Aegis' dual shields." -->
+  <APM_Mech_Aegis.description>Егіда — це могутній механоїд, що жертвує наступальною потужністю заради неперевершеної майстерності оборони. Фраза «Найкращий захист — це напад» якнайкраще описує його парні щити.</APM_Mech_Aegis.description>
+
+  <!-- EN: left shield -->
+  <APM_Mech_Aegis.tools.0.label>лівий щит</APM_Mech_Aegis.tools.0.label>
+
+  <!-- EN: right shield -->
+  <APM_Mech_Aegis.tools.1.label>правий щит</APM_Mech_Aegis.tools.1.label>
+
+  <!-- EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Japan during its Sengoku period, the swift and stealthy Celerus is not any weaker for its speed. It has the ability to skip itself short distances around it as well as create a smokescreen to hinder enemies perception of it and anything around it, additionally becoming psychically imperceptible in this area. On top of those effects, enemies will receive periodic. -->
+  <APM_Mech_Celerus.description>Розум Архотеха створив три могутні моделі механоїдів у спробі зробити універсального командира для всіх механоїдних сил. Целеруса надихнула Японія Старої Землі доби Сенґоку. Цей механоїд швидкий і непомітний, але це не робить його слабшим. Целерус здатен телепортуватися на короткі відстані, а також створювати димову завісу, що заважає ворогам бачити його й усе довкола, і стає психічно невловимим у межах завіси. Крім того, вороги всередині завіси отримуватимуть періодичний урон.</APM_Mech_Celerus.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Celerus.tools.0.label>ліва рука</APM_Mech_Celerus.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Celerus.tools.1.label>права рука</APM_Mech_Celerus.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit's physical components.\nThis one is armed with a highly powered Charge Carbine. -->
+  <APM_Mech_Conqueror_DMR.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним енергокарабіном.</APM_Mech_Conqueror_DMR.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_DMR.tools.0.label>ліва рука</APM_Mech_Conqueror_DMR.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_DMR.tools.1.label>права рука</APM_Mech_Conqueror_DMR.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
+
+  <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. ... This one is armed with a powerful Charge Blaster. -->
+  <APM_Mech_Conqueror_AR.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним бластером.</APM_Mech_Conqueror_AR.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_AR.tools.0.label>ліва рука</APM_Mech_Conqueror_AR.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_AR.tools.1.label>права рука</APM_Mech_Conqueror_AR.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
+
+  <!-- EN: ... This one is armed with a powerful Charge Spitter. -->
+  <APM_Mech_Conqueror_LMG.description>Завойовник — універсальний піхотний механоїд, створений, щоб заповнити порожню нішу між наявними женцями та уланами. Його сила в кількості: системи завойовників здатні об'єднуватися одна з одною в певному радіусі й підвищувати обчислювальну потужність, а отже, і бойову ефективність. Крім того, один із бойової групи може перегрузити свій спільний обчислювальний блок понад міру, щоб дати ближнім завойовникам більший приріст ціною повного спалення власних фізичних компонентів.\nЦей механоїд озброєний потужним енергокулеметом.</APM_Mech_Conqueror_LMG.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Conqueror_LMG.tools.0.label>ліва рука</APM_Mech_Conqueror_LMG.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Conqueror_LMG.tools.1.label>права рука</APM_Mech_Conqueror_LMG.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Conqueror_LMG.tools.2.label>голова</APM_Mech_Conqueror_LMG.tools.2.label>
+
+  <!-- EN: Three powerful mechanoid types were created... -->
+  <APM_Mech_Dominus.description>Розум Архотеха створив три могутні моделі механоїдів у спробі зробити універсального командира для всіх механоїдних сил. Домінуса надихнув Давній Рим Старої Землі. Цей механоїд підсилює союзників поруч і особисто кидає виклик поміченим ворогам, вступаючи з ними в поєдинок один на один. Чиста сила його рішучості виявляється у вигляді психічного вихору, що виникає навколо арени поєдинку. Усередині нього з'являється генератор щита, а отримуваний урон зростає, доки один із опонентів не переможе або Домінус не вичерпає свою рішучість через певний час. Якщо це станеться, обидва дуелянти будуть значно послаблені на деякий час. Якщо ж переможець визначиться — станеться протилежне. Як альтернативу, Домінус може спрямувати свою рішучість у короткочасну хвилю енергії для союзників. Крім того, якщо цей механоїд перебуває під керуванням механітера, той може розширити свій командний радіус на зону навколо Домінуса.</APM_Mech_Dominus.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Dominus.tools.0.label>голова</APM_Mech_Dominus.tools.0.label>
+
+  <!-- EN: A combat support mechanoid with a wide-range bullet shield and mid-range needle gun. Designed to support other mechanoids, the legionary is vulnerable to anyone who can get inside its shield. -->
+  <APM_Mech_Dynamo.description>Бойовий механоїд підтримки з широким кулепробивним щитом і голкоподібною гарматою середньої дальності. Створений для підтримки інших механоїдів, динамо вразливе для будь-кого, хто зможе пробратися під його щит.</APM_Mech_Dynamo.description>
+
+  <!-- EN: A very unique mechanoid... -->
+  <APM_Mech_Frostivus.description>Вельми незвичайний механоїд, морозус — це мобільна кріогенна камера. Він поглинає органічні матеріали, наприклад харчі, щоб зберігати, заморожувати й видавати їх на вимогу. Йому можна наказати запечатати всередині себе вибраного персонажа, щоб мехрій згодом використав його у своїх спотворених задумах. Та морозус придатний не лише як інструмент: він здатен поширювати свої охолодні властивості на кінцівки, викликаючи гіпотермію при повторюваних атаках.</APM_Mech_Frostivus.description>
+
+  <!-- EN: front left leg -->
+  <APM_Mech_Frostivus.tools.0.label>ліва передня нога</APM_Mech_Frostivus.tools.0.label>
+
+  <!-- EN: front right leg -->
+  <APM_Mech_Frostivus.tools.1.label>права передня нога</APM_Mech_Frostivus.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Frostivus.tools.2.label>голова</APM_Mech_Frostivus.tools.2.label>
+
+  <!-- EN: A different application of hellsphere technology... -->
+  <APM_Mech_Gazer.description>Інше застосування технології дезінтегратора породило Спостерігача — механоїда, що його легко впізнати за очною променевою установкою. Ця зброя настільки потужна, що під час стрільби Спостерігачеві доводиться фіксуватися на місці, спрямовуючи всі рухові функції на власну стабілізацію. Та навіть тоді потрібен чималий час на заряджання. Випромінюваний промінь здатен спопелити все перед собою, завдаючи при цьому відчутної шкоди навіть спорудам. А опинившись у ближньому бою з ворогом, Спостерігач може натомість вивільнити накопичену енергію у вигляді потужної ударної хвилі довкола себе, що відкидає нападників і виводить з ладу ближніх механоїдів.</APM_Mech_Gazer.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Gazer.tools.0.label>голова</APM_Mech_Gazer.tools.0.label>
+
+  <!-- EN: front left paw -->
+  <APM_Mech_Gazer.tools.1.label>ліва передня лапа</APM_Mech_Gazer.tools.1.label>
+
+  <!-- EN: front right paw -->
+  <APM_Mech_Gazer.tools.2.label>права передня лапа</APM_Mech_Gazer.tools.2.label>
+
+  <!-- EN: A mechanoid experiment into organic area denial... -->
+  <APM_Mech_Haze.description>Результат експерименту механоїдів із зачищення території від органічних форм життя. Завіса здатна наповнювати довкілля токсичним газом. Її атаки в ближньому бою особливо смертоносні, адже кожне влучання викликає отруєння токсинами. Справді, розум мехрою не знає меж, знаходячи застосування навіть власним відходам для досягнення своїх цілей.</APM_Mech_Haze.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Haze.tools.0.label>голова</APM_Mech_Haze.tools.0.label>
+
+  <!-- EN: While mechtech devices typically rely on internal power cells... -->
+  <APM_Mech_Ingestor.description>Зазвичай механоїди та їхня техніка покладаються на внутрішні батареї, але під'єднання до електромережі чи горюче паливо їм усе ж потрібні. Поглинач прочісує поля битв у пошуках тих, що вижили, щоб добити їх, і органічних матеріалів, часто просто трупів. Він здатен поглинати їх і переробляти на хімпаливо всередині себе.</APM_Mech_Ingestor.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.0.label>голова</APM_Mech_Ingestor.tools.0.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.1.label>голова</APM_Mech_Ingestor.tools.1.label>
+
+  <!-- EN: Wielding a plasma charged whip... -->
+  <APM_Mech_Lasher.description>Цей механоїд створений для того, щоб керувати тваринами, приручати й дресирувати їх. Погонич озброєний плазмовим хлистом, і це дозволяє йому відігравати нестандартну роль у складі сил механоїдів: він може вражати ворогів у ближньому бою, завдаючи ЕМІ-урону.\n\nЦей механоїд може вдарити хлистом, завдаючи урону й уражаючи електрикою все в невеликій зоні навколо удару.</APM_Mech_Lasher.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Lasher.tools.0.label>ліва рука</APM_Mech_Lasher.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Lasher.tools.1.label>права рука</APM_Mech_Lasher.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Lasher.tools.2.label>голова</APM_Mech_Lasher.tools.2.label>
+
+  <!-- EN: Descended from the well known and well feared scyther mechanoid... -->
+  <APM_Mech_Mantis.description>Богомол є розвитком ідей добре відомого й такого, що наводить жах, механоїда-женця. Цей механоїд створений, щоб розривати ворогів на шматки в ближньому бою. Поєднуючи механоїдні компоненти зі синтезованими штучними м'язами, гнучкою, але міцною бронею та парою резонансних пласталевих кігтів, богомол значно перевершує свого попередника. Коли він стикається з цілями поза радіусом досяжності, то може стрімко кинутися вперед одним різким ривком і завдати блискавичного удару. Мало того, що його фізичні можливості й так лякають, богомол активно аналізує поле бою довкола, обираючи слушний момент, щоб запустити вбудований рій ремонтних механітів, що зцілює й підживлює його здібності після знищення достатньої кількості цілей.</APM_Mech_Mantis.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Mantis.tools.0.label>голова</APM_Mech_Mantis.tools.0.label>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Maul.tools.0.label>ліва рука</APM_Mech_Maul.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Maul.tools.1.label>права рука</APM_Mech_Maul.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Maul.tools.2.label>голова</APM_Mech_Maul.tools.2.label>
+
+  <!-- EN: The pinpoint wasn't designed for direct confrontations... -->
+  <APM_Mech_Pinpoint.description>Навідник не створений для прямих бойових зіткнень. Натомість він допомагає союзникам із прицілюванням, наведенням і вказуванням цілі за допомогою свого основного датчика. Доки ціль позначена, усі союзники отримують бонус до точності для атак по ній. Постарайтеся не зустріти цього механоїда в супроводі копійників. А для ворогів, що норовлять випасти з поля зору, його датчики здатні виявляти невидимих противників поблизу.</APM_Mech_Pinpoint.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Pinpoint.tools.0.label>голова</APM_Mech_Pinpoint.tools.0.label>
+
+  <!-- EN: The latest in mechanoid urban warfare tactics... -->
+  <APM_Mech_Pulse.description>Останнім словом механоїдної тактики міського бою є механоїд «Імпульс». Він створений, щоб заставати ворогів зненацька своєю особливою технікою, коли проривається крізь перешкоди. Імпульси, що випускаються з плечових установок цього меха, не просто оглушають вибуховим звуком, а й осліплюють поруч розташованих противників яскравим спалахом. позбавлена чуттів ціль не має шансів проти невпинного наступу рою механоїдів. А вбудований стрибковий ранець швидко доставить меха до наступної цілі.</APM_Mech_Pulse.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Pulse.tools.0.label>голова</APM_Mech_Pulse.tools.0.label>
+
+  <!-- EN: The dreaded auto mortar was not enough... -->
+  <APM_Mech_Ravager.description>Вселяючого жах автоміномета виявилося недостатньо, щоб вгамувати жагу руйнування розуму механоїдів. Що їм спало на думку? Спустошувач — мобільна артилерійська установка. Він здатен накопичувати надлишкову енергію в резервних батареях, а потім використати її для перезаряджання свого знаряддя й випустити снаряд, що розпадається в польоті на три менші, але досі руйнівні снаряди.</APM_Mech_Ravager.description>
+
+  <!-- EN: head -->
+  <APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
+
+  <!-- EN: Equipped with a hover pack... -->
+  <APM_Mech_Satellite.description>Супутника часто можна побачити, як він вилітає з ранця мехаманта, щоб допомогти союзникам або супроводжувати механоїдних командирів у бою. Це штурмовий механоїд із літаючим ранцем, завдяки якому він легко пересувається пересіченою місцевістю.</APM_Mech_Satellite.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Satellite.tools.0.label>ліва рука</APM_Mech_Satellite.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Satellite.tools.1.label>права рука</APM_Mech_Satellite.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Satellite.tools.2.label>голова</APM_Mech_Satellite.tools.2.label>
+
+  <!-- EN: Taking advantage of the fact that mechanoids have a psychic presence... -->
+  <APM_Mech_Siren.description>Скориставшись тим, що механоїди здатні до психічного впливу, механоїд «Сирена» може принаджувати поселенців до себе, підставляючи їх під вогонь. Перебуваючи під керуванням механітера, цей механоїд здатен підіймати настрій і розважати оточуючих.</APM_Mech_Siren.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Siren.tools.0.label>ліва рука</APM_Mech_Siren.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Siren.tools.1.label>права рука</APM_Mech_Siren.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Siren.tools.2.label>голова</APM_Mech_Siren.tools.2.label>
+
+  <!-- EN: Three powerful mechanoid types were created... -->
+  <APM_Mech_Terminus.description>Розум Архотеха створив три могутні моделі механоїдів у спробі зробити універсального командира для всіх механоїдних сил. Термінуса надихнула Європа Старої Землі. Цей механоїд прорубується крізь хвилі ворогів, і навіть відстань не здатна пом'якшити його гнів. Його зброя здатна широким розмахом накрити велику ділянку перед собою. Термінус також може спрямувати власний психічний вплив усередину себе, посилюючи завданий урон і стійкість до збивання з ніг. Для тих ворогів, що намагаються вирватися з його хватки, Термінус оснащений гаком-кішкою, що притягує противників здалеку, щоб прикінчити їх. Крім того, якщо цей механоїд перебуває під керуванням механітера, той може розширити свій командний радіус на зону навколо Термінуса.</APM_Mech_Terminus.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Terminus.tools.0.label>ліва рука</APM_Mech_Terminus.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Terminus.tools.1.label>права рука</APM_Mech_Terminus.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+
+  <!-- EN: The tinker is a mechanoid that is suited for repair... -->
+  <APM_Mech_Tinker.description>Майстер — це механоїд, призначений для проведення ремонту. Він здатен допомагати поселенню в ремонті споруд, а також у ремонті механоїдів, що перебувають під керуванням механітера. У крайньому разі він може прикрити щитом союзника, а також осліпити лазером ворогів.</APM_Mech_Tinker.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Tinker.tools.0.label>ліва рука</APM_Mech_Tinker.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Tinker.tools.1.label>права рука</APM_Mech_Tinker.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Tinker.tools.2.label>голова</APM_Mech_Tinker.tools.2.label>
+
+  <!-- EN: The mechhive's mind isn't a rage filled abyss... -->
+  <APM_Mech_Vassal.description>Розум рою механоїдів не є такою собі безоднею люті до будь-якого органічного життя. Це дещо підступне й розважливе. Рій усвідомлює необхідність координації всередині своїх сил, і саме в цьому полягає призначення Васала. Він дає союзникам поруч приріст до швидкості. А для тих, хто зумів вирощувати власного васала поза владою мехрою, він ще здатен взаємодіяти з місцевими системами зв'язку, підіймаючи настрій союзників і знижуючи поріг нервового зриву на 25%. Крім того, якщо цей механоїд перебуває під керуванням механітера, той може розширити свій командний радіус на зону навколо Васала.</APM_Mech_Vassal.description>
+
+  <!-- EN: left fist -->
+  <APM_Mech_Vassal.tools.0.label>ліва рука</APM_Mech_Vassal.tools.0.label>
+
+  <!-- EN: right fist -->
+  <APM_Mech_Vassal.tools.1.label>права рука</APM_Mech_Vassal.tools.1.label>
+
+  <!-- EN: head -->
+  <APM_Mech_Vassal.tools.2.label>голова</APM_Mech_Vassal.tools.2.label>
+
+  <!-- EN: sun ray projector -->
+  <APM_Gazer_SunRayGun.label>проєктор «Сонячний промінь»</APM_Gazer_SunRayGun.label>
+
+  <!-- EN: ravager artillery -->
+  <APM_Ravager_Artillery.label>артилерія Спустошувача</APM_Ravager_Artillery.label>
+
+  <!-- EN: launch frag grenade -->
+  <APM_Ravager_Artillery.verbs.0.label>випустити гранату</APM_Ravager_Artillery.verbs.0.label>
+
+  <!-- EN: starfall carrier -->
+  <APM_StarfallCarrier.label>носій «Зорепаду»</APM_StarfallCarrier.label>
+
+  <!-- EN: starfall split projectile -->
+  <APM_StarfallSplitProjectile.label>уламок «Зорепаду»</APM_StarfallSplitProjectile.label>
+
+  <!-- EN: artillery projectile -->
+  <APM_ArtilleryProjectile.label>артилерійський снаряд</APM_ArtilleryProjectile.label>
+
+  <!-- EN: repair station -->
+  <APM_RepairStation_Small.label>ремонтна станція</APM_RepairStation_Small.label>
+
+  <!-- EN: A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs. -->
+  <APM_RepairStation_Small.description>Станція, яка автоматично ремонтує малих і середніх механоїдів. Механоїд має зайти всередину станції, щоб пройти ремонт.</APM_RepairStation_Small.description>
+
+  <!-- EN: advanced repair station -->
+  <APM_RepairStation_Advanced.label>удосконалена ремонтна станція</APM_RepairStation_Advanced.label>
+
+  <!-- EN: A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs. -->
+  <APM_RepairStation_Advanced.description>Станція, яка автоматично ремонтує великих механоїдів. Механоїд має зайти всередину станції, щоб пройти ремонт.</APM_RepairStation_Advanced.description>
+
+  <!-- EN: terminus' sword -->
+  <APM_Weapon_TerminusSword.label>меч Термінуса</APM_Weapon_TerminusSword.label>
+
+  <!-- EN: handle -->
+  <APM_Weapon_TerminusSword.tools.0.label>руків'я</APM_Weapon_TerminusSword.tools.0.label>
+
+  <!-- EN: point -->
+  <APM_Weapon_TerminusSword.tools.1.label>вістря</APM_Weapon_TerminusSword.tools.1.label>
+
+  <!-- EN: blade -->
+  <APM_Weapon_TerminusSword.tools.2.label>лезо</APM_Weapon_TerminusSword.tools.2.label>
+
+  <!-- EN: charge sword rifle -->
+  <APM_Gun_Vassal_SwordRifle.label>енергомеч-гвинтівка</APM_Gun_Vassal_SwordRifle.label>
+
+  <!-- EN: A charged-shot sword rifle. Weaker than a charge rifle, but more accurate and melee capable. -->
+  <APM_Gun_Vassal_SwordRifle.description>Енергетична гвинтівка-меч. Слабша за звичайну енергогвинтівку, але точніша й може слугувати зброєю ближнього бою.</APM_Gun_Vassal_SwordRifle.description>
+
+  <!-- EN: stock -->
+  <APM_Gun_Vassal_SwordRifle.tools.0.label>приклад</APM_Gun_Vassal_SwordRifle.tools.0.label>
+
+  <!-- EN: point -->
+  <APM_Gun_Vassal_SwordRifle.tools.1.label>вістря</APM_Gun_Vassal_SwordRifle.tools.1.label>
+
+  <!-- EN: blade -->
+  <APM_Gun_Vassal_SwordRifle.tools.2.label>лезо</APM_Gun_Vassal_SwordRifle.tools.2.label>
+
+  <!-- EN: charge shot -->
+  <APM_Bullet_ChargeSwordRifle.label>енергетичний постріл</APM_Bullet_ChargeSwordRifle.label>
+
+  <!-- EN: solus -->
+  <APM_Solus.label>солус</APM_Solus.label>
+
+  <!-- EN: A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage. -->
+  <APM_Solus.description>Посилений випромінювач гамма-променів, здатний генерувати щільну, сфокусовану кулю руйнівної енергії. Пролітаючи повз цілей, куля розряджається в них і підпалює довкілля. Це особливо руйнівна зброя проти груп ворогів. Величезна вихідна потужність вимагає протоколів стабілізації, щоб запобігти самопошкодженню.</APM_Solus.description>
+
+  <!-- EN: solus orb -->
+  <APM_SolusOrb.label>сфера солуса</APM_SolusOrb.label>
+
+  <!-- EN: whip -->
+  <APM_Weapon_MechWhip.label>хлист</APM_Weapon_MechWhip.label>
+
+  <!-- EN: A small burst-oriented flamethrower used by mechanoids. -->
+  <APM_Weapon_MechWhip.description>Невеликий залповий вогнемет механоїдів.</APM_Weapon_MechWhip.description>
+
+  <!-- EN: edge -->
+  <APM_Weapon_MechWhip.tools.0.label>наконечник</APM_Weapon_MechWhip.tools.0.label>
+
+  <!-- EN: Press The Attack -->
+  <APM_Thought_PressTheAttack.stages.0.label>натиск</APM_Thought_PressTheAttack.stages.0.label>
+
+  <!-- EN: Siren's song -->
+  <APM_Thought_SirenSong.stages.0.label>пісня сирени</APM_Thought_SirenSong.stages.0.label>
+
+  <!-- EN: The Siren's impossible melody still echoes in your head, washing away stress for a while. -->
+  <APM_Thought_SirenSong.stages.0.description>Неймовірна мелодія сирени відлунює в моїй голові, дозволяючи ненадовго забути пережитий стрес.</APM_Thought_SirenSong.stages.0.description>
+
+  <!-- EN: whip -->
+  <APM_Whip.label>хлист</APM_Whip.label>
+
+  <!-- EN: enter repair station -->
+  <APM_EnterRepairStation.label>зайти до ремонтної станції</APM_EnterRepairStation.label>
+
+  <!-- EN: enter -->
+  <APM_EnterRepairStation.verb>зайти до</APM_EnterRepairStation.verb>
+
+  <!-- EN: entering -->
+  <APM_EnterRepairStation.gerund>зайти до</APM_EnterRepairStation.gerund>
+
+  <!-- EN: carry to repair station -->
+  <APM_CarryToRepairStation.label>нести до ремонтної станції</APM_CarryToRepairStation.label>
+
+  <!-- EN: carry -->
+  <APM_CarryToRepairStation.verb>нести</APM_CarryToRepairStation.verb>
+
+  <!-- EN: carrying -->
+  <APM_CarryToRepairStation.gerund>нести</APM_CarryToRepairStation.gerund>
+
+  <APM_FrostivusFoodPreservation.labelShort>зберігання</APM_FrostivusFoodPreservation.labelShort>
+
+  <APM_FrostivusFoodPreservation.pawnLabel>Хранитель</APM_FrostivusFoodPreservation.pawnLabel>
+
+  <APM_FrostivusFoodPreservation.gerundLabel>зберігання їжі</APM_FrostivusFoodPreservation.gerundLabel>
+
+  <APM_FrostivusFoodPreservation.description>Рятує їжу з небезпечного зберігання чи з вулиці й вивантажує її до холодного сховища, якщо таке доступне.</APM_FrostivusFoodPreservation.description>
+
+  <APM_FrostivusFoodPreservation.verb>Зберігати</APM_FrostivusFoodPreservation.verb>
+
+  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
+
+  <APM_TinkerRepair.pawnLabel>Механік</APM_TinkerRepair.pawnLabel>
+
+  <APM_TinkerRepair.gerundLabel>ремонтуючи будівлі й мехів</APM_TinkerRepair.gerundLabel>
+
+  <APM_TinkerRepair.description>Ремонт будівель і механоїдів своєї фракції.</APM_TinkerRepair.description>
+
+  <APM_TinkerRepair.verb>Ремонтувати</APM_TinkerRepair.verb>
+
+
+  <!-- EN: (added from English DefInjected aggregation) -->
+  <APM_Apparel_MechamancerPack.description>Компактний допоміжний ранець механістора, здатний розгортати тимчасових супутників-мехів. Кожен супутник потребує сталевої підзарядки перед розгортанням.</APM_Apparel_MechamancerPack.description>
+  <APM_IngestorCorpseProcessing.description>Переробляє органічні трупи на хімотопливо.</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.gerundLabel>поглинання трупів</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.labelShort>поглинути</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>Поглинач</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_IngestorCorpseProcessing.verb>Поглинути</APM_IngestorCorpseProcessing.verb>
+  <APM_IngestorProcessCorpses.gerund>перероблення</APM_IngestorProcessCorpses.gerund>
+  <APM_IngestorProcessCorpses.label>переробляти трупи</APM_IngestorProcessCorpses.label>
+  <APM_IngestorProcessCorpses.verb>переробити</APM_IngestorProcessCorpses.verb>
+  <APM_LasherFeedPatientAnimals.gerund>годування</APM_LasherFeedPatientAnimals.gerund>
+  <APM_LasherFeedPatientAnimals.label>годувати тварин</APM_LasherFeedPatientAnimals.label>
+  <APM_LasherFeedPatientAnimals.verb>годувати</APM_LasherFeedPatientAnimals.verb>
+  <APM_LasherHandling.description>Приручати, тренувати, збирати ресурси з тварин і забивати їх.</APM_LasherHandling.description>
+  <APM_LasherHandling.gerundLabel>поводження</APM_LasherHandling.gerundLabel>
+  <APM_LasherHandling.labelShort>поводитися</APM_LasherHandling.labelShort>
+  <APM_LasherHandling.pawnLabel>Гандлер</APM_LasherHandling.pawnLabel>
+  <APM_LasherHandling.verb>Поводитися</APM_LasherHandling.verb>
+  <APM_LasherMilk.gerund>доїння</APM_LasherMilk.gerund>
+  <APM_LasherMilk.label>доїти тварин</APM_LasherMilk.label>
+  <APM_LasherMilk.reportString>доїть TargetA.</APM_LasherMilk.reportString>
+  <APM_LasherMilk.verb>доїти</APM_LasherMilk.verb>
+  <APM_LasherRebalanceAnimalsInPens.gerund>прив'язування</APM_LasherRebalanceAnimalsInPens.gerund>
+  <APM_LasherRebalanceAnimalsInPens.label>перебалансувати загінних тварин</APM_LasherRebalanceAnimalsInPens.label>
+  <APM_LasherRebalanceAnimalsInPens.verb>прив'язати</APM_LasherRebalanceAnimalsInPens.verb>
+  <APM_LasherReleaseToWild.gerund>випуск</APM_LasherReleaseToWild.gerund>
+  <APM_LasherReleaseToWild.label>випустити на волю</APM_LasherReleaseToWild.label>
+  <APM_LasherReleaseToWild.reportString>випускає TargetA.</APM_LasherReleaseToWild.reportString>
+  <APM_LasherReleaseToWild.verb>випустити</APM_LasherReleaseToWild.verb>
+  <APM_LasherShear.gerund>стрижка</APM_LasherShear.gerund>
+  <APM_LasherShear.label>стригти тварин</APM_LasherShear.label>
+  <APM_LasherShear.reportString>стриже TargetA.</APM_LasherShear.reportString>
+  <APM_LasherShear.verb>стригти</APM_LasherShear.verb>
+  <APM_LasherSlaughter.gerund>забій</APM_LasherSlaughter.gerund>
+  <APM_LasherSlaughter.label>забивати тварин</APM_LasherSlaughter.label>
+  <APM_LasherSlaughter.reportString>забиває TargetA.</APM_LasherSlaughter.reportString>
+  <APM_LasherSlaughter.verb>забити</APM_LasherSlaughter.verb>
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>прив'язування</APM_LasherTakeRoamingAnimalsToPen.gerund>
+  <APM_LasherTakeRoamingAnimalsToPen.label>прив'язати бродячих тварин</APM_LasherTakeRoamingAnimalsToPen.label>
+  <APM_LasherTakeRoamingAnimalsToPen.verb>прив'язати</APM_LasherTakeRoamingAnimalsToPen.verb>
+  <APM_LasherTakeToPen.gerund>прив'язування</APM_LasherTakeToPen.gerund>
+  <APM_LasherTakeToPen.label>прив'язати тварин</APM_LasherTakeToPen.label>
+  <APM_LasherTakeToPen.verb>прив'язати</APM_LasherTakeToPen.verb>
+  <APM_LasherTame.gerund>приручення</APM_LasherTame.gerund>
+  <APM_LasherTame.label>приручати тварин</APM_LasherTame.label>
+  <APM_LasherTame.reportString>приручає TargetA.</APM_LasherTame.reportString>
+  <APM_LasherTame.verb>приручити</APM_LasherTame.verb>
+  <APM_LasherTrain.gerund>тренування</APM_LasherTrain.gerund>
+  <APM_LasherTrain.label>тренувати тварин</APM_LasherTrain.label>
+  <APM_LasherTrain.reportString>тренує TargetA.</APM_LasherTrain.reportString>
+  <APM_LasherTrain.verb>тренувати</APM_LasherTrain.verb>
+  <APM_Shockwave.description>Поглядач вивільняє частину накопиченої енергії у вигляді ударної хвилі, відкидаючи та приголомшуючи все, що поруч.</APM_Shockwave.description>
+  <APM_SirenChatWithPrisoner.gerund>розмова з</APM_SirenChatWithPrisoner.gerund>
+  <APM_SirenChatWithPrisoner.label>розмовляти з в'язнями</APM_SirenChatWithPrisoner.label>
+  <APM_SirenChatWithPrisoner.reportString>співає для TargetA.</APM_SirenChatWithPrisoner.reportString>
+  <APM_SirenChatWithPrisoner.verb>розмовляти з</APM_SirenChatWithPrisoner.verb>
+  <APM_SirenDeliverFoodToPrisoner.gerund>доставлення їжі для</APM_SirenDeliverFoodToPrisoner.gerund>
+  <APM_SirenDeliverFoodToPrisoner.label>носити їжу в'язням</APM_SirenDeliverFoodToPrisoner.label>
+  <APM_SirenDeliverFoodToPrisoner.verb>носити їжу для</APM_SirenDeliverFoodToPrisoner.verb>
+  <APM_SirenFeedPrisoner.gerund>годування</APM_SirenFeedPrisoner.gerund>
+  <APM_SirenFeedPrisoner.label>годувати в'язнів</APM_SirenFeedPrisoner.label>
+  <APM_SirenFeedPrisoner.verb>годувати</APM_SirenFeedPrisoner.verb>
+  <APM_SirenLureChannel.reportString>спів.</APM_SirenLureChannel.reportString>
+  <APM_SirenReleasePrisoner.gerund>випуск</APM_SirenReleasePrisoner.gerund>
+  <APM_SirenReleasePrisoner.label>випустити в'язнів</APM_SirenReleasePrisoner.label>
+  <APM_SirenReleasePrisoner.verb>випустити</APM_SirenReleasePrisoner.verb>
+  <APM_SirenTakePrisonerToBed.gerund>відведення до ліжка</APM_SirenTakePrisonerToBed.gerund>
+  <APM_SirenTakePrisonerToBed.label>відводити в'язнів до ліжка</APM_SirenTakePrisonerToBed.label>
+  <APM_SirenTakePrisonerToBed.verb>відвести до ліжка</APM_SirenTakePrisonerToBed.verb>
+  <APM_SirenWarden.description>Керувати в'язнями, годувати їх, розмовляти з ними та вербувати.</APM_SirenWarden.description>
+  <APM_SirenWarden.gerundLabel>нагляд</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.labelShort>наглядач</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>Наглядач</APM_SirenWarden.pawnLabel>
+  <APM_SirenWarden.verb>Поводитися</APM_SirenWarden.verb>
+  <APM_TinkerRepairBuilding.gerund>ремонтування</APM_TinkerRepairBuilding.gerund>
+  <APM_TinkerRepairBuilding.label>ремонтувати будівлю</APM_TinkerRepairBuilding.label>
+  <APM_TinkerRepairBuilding.verb>ремонтувати</APM_TinkerRepairBuilding.verb>
+  <APM_TinkerRepairMech.gerund>ремонтування</APM_TinkerRepairMech.gerund>
+  <APM_TinkerRepairMech.label>ремонтувати меха</APM_TinkerRepairMech.label>
+  <APM_TinkerRepairMech.verb>ремонтувати</APM_TinkerRepairMech.verb>
+
+</LanguageData>

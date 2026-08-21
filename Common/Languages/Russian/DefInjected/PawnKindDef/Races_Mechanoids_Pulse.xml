@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: pulse -->
-  <APM_Mech_Pulse.label>импульс</APM_Mech_Pulse.label>
-  <!-- EN: pulses -->
-  <APM_Mech_Pulse.labelPlural>импульсы</APM_Mech_Pulse.labelPlural>
-
-</LanguageData>

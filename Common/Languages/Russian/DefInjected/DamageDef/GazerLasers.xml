@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: mega beam -->
-  <MegaBeam.label>мегалуч</MegaBeam.label>
-  <!-- EN: {0} has been killed. -->
-  <MegaBeam.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</MegaBeam.deathMessage>
-
-</LanguageData>

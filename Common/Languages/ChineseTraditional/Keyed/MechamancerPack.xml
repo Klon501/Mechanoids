@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: This pack is already maintaining {0} deployed satellites. -->
-  <APM.MechamancerPack.MaxSatellites>該背包已在維持 {0} 個已部署的衛星。</APM.MechamancerPack.MaxSatellites>
-  <!-- EN: No valid satellite deployment cell found. -->
-  <APM.MechamancerPack.NoValidSpawnCell>未找到有效的衛星部署格。</APM.MechamancerPack.NoValidSpawnCell>
-
-</LanguageData>

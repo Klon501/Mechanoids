@@ -1,82 +1,391 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- EN: Mobile Mode -->
+  <APM.Dynamo.Command.SwithcToMobileMode.Label>機動模式</APM.Dynamo.Command.SwithcToMobileMode.Label>
+
+  <!-- EN: ... -->
+  <APM.Dynamo.Command.SwithcToMobileMode.Desc>切換回機動模式</APM.Dynamo.Command.SwithcToMobileMode.Desc>
+
+  <!-- EN: Unload preserved food -->
+  <APM.FrostivusFoodPreservation.ManualUnload.Label>卸下保鮮食物</APM.FrostivusFoodPreservation.ManualUnload.Label>
+
+  <!-- EN: Choose a cell where Frostivus should unload all preserved food. Manually unloaded food will be forbidden. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.Desc>選擇霜語者卸下全部保鮮食物的格子。手動卸下的食物會被禁止拾取。</APM.FrostivusFoodPreservation.ManualUnload.Desc>
+
+  <!-- EN: No preserved food carried. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.NoFood>未攜帶保鮮食物。</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
+
+  <!-- EN: Frostivus cannot reach that cell. -->
+  <APM.FrostivusFoodPreservation.ManualUnload.NoPath>霜語者無法到達該格子。</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
+
+  <!-- EN: Frostivus cannot use preservation commands right now. -->
+  <APM.FrostivusFoodPreservation.CommandUnavailable>霜語者目前無法使用保鮮指令。</APM.FrostivusFoodPreservation.CommandUnavailable>
+
+  <!-- EN: Release from cryo-chamber -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>從低溫艙釋放</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
+
+  <!-- EN: Choose a cell where Frostivus should release devoured pawns or corpses. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>選擇霜語者釋放被吞入的殖民者或屍體的格子。</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
+
+  <!-- EN: No devoured pawn or corpse inside. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>內部沒有可釋放的殖民者或屍體。</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
+
+  <!-- EN: Frostivus cannot reach that cell. -->
+  <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>霜語者無法到達該格子。</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
+
+  <!-- EN: Frostivus can only swallow a spawned humanlike pawn or corpse on its map. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>霜語者只能吞下其所在地圖上已生成的類人生物或屍體。</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
+
+  <!-- EN: Frostivus can swallow any humanlike corpse or downed pawn, but only colonists, prisoners, or slaves while alive. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>霜語者可吞下任意類人屍體或倒地的殖民者，但活體僅限殖民者、囚犯或奴隸。</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
+
+  <!-- EN: Frostivus cannot swallow itself. -->
+  <APM.FrostivusFoodPreservation.CryptoSwallow.Self>霜語者無法吞下自己。</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
+
+  <!-- EN: Auto laser -->
+  <APM_Gazer_AutoLaser_Label>自動發射雷射</APM_Gazer_AutoLaser_Label>
+
+  <!-- EN: Allow this gazer to automatically fire its laser weapon and Sun Ray ability while under player control. Manual attack orders still fire once at the selected target. -->
+  <APM_Gazer_AutoLaser_Desc>允許該凝視者在玩家控制下自動發射其雷射武器與日光射線能力。手動攻擊指令仍會朝選定目標開火一次。</APM_Gazer_AutoLaser_Desc>
+
+  <!-- EN: Auto laser: disabled. -->
+  <APM_Gazer_Inspect_AutoLaserDisabled>自動雷射：已停用。</APM_Gazer_Inspect_AutoLaserDisabled>
+
+  <!-- EN: Enable stripping -->
+  <APM_Ingestor_StripMode_Enable_Label>啟用剝離</APM_Ingestor_StripMode_Enable_Label>
+
+  <!-- EN: Click to strip apparel, equipment and inventory from corpses before recycling them. Current mode: recycle corpses intact; carried items are destroyed with the corpse. -->
+  <APM_Ingestor_StripMode_Enable_Desc>點擊以在回收屍體前剝離其衣物、裝備與隨身物品。目前模式：屍體完整回收，攜帶物品隨屍體一起銷毀。</APM_Ingestor_StripMode_Enable_Desc>
+
+  <!-- EN: Disable stripping -->
+  <APM_Ingestor_StripMode_Disable_Label>停用剝離</APM_Ingestor_StripMode_Disable_Label>
+
+  <!-- EN: Click to recycle corpses intact and destroy apparel, equipment and inventory with the corpse. Current mode: strip carried items before recycling. -->
+  <APM_Ingestor_StripMode_Disable_Desc>點擊以完整回收屍體並將衣物、裝備與隨身物品隨屍體一起銷毀。目前模式：回收前先剝離攜帶物品。</APM_Ingestor_StripMode_Disable_Desc>
+
+  <!-- EN: Recycle all valid corpses -->
+  <APM_Ingestor_ProcessMode_All_Label>回收所有有效屍體</APM_Ingestor_ProcessMode_All_Label>
+
+  <!-- EN: Click to let the ingestor recycle any reachable fresh organic corpse. Current mode: only marked corpses are recycled. -->
+  <APM_Ingestor_ProcessMode_All_Desc>點擊以讓攝入者回收任何可到達的新鮮有機屍體。目前模式：僅回收被標記的屍體。</APM_Ingestor_ProcessMode_All_Desc>
+
+  <!-- EN: Use marked corpses only -->
+  <APM_Ingestor_ProcessMode_Marked_Label>僅使用被標記的屍體</APM_Ingestor_ProcessMode_Marked_Label>
+
+  <!-- EN: Click to make the ingestor recycle only corpses marked for biomass recycling. Current mode: all reachable fresh organic corpses are recycled. -->
+  <APM_Ingestor_ProcessMode_Marked_Desc>點擊以讓攝入者僅回收被標記為生物質回收的屍體。目前模式：回收所有可到達的新鮮有機屍體。</APM_Ingestor_ProcessMode_Marked_Desc>
+
+  <!-- EN: Mark for biomass recycling -->
+  <APM_Ingestor_MarkCorpses_Label>標記為生物質回收</APM_Ingestor_MarkCorpses_Label>
+
+  <!-- EN: Mark fresh organic corpses for ingestor recycling. -->
+  <APM_Ingestor_MarkCorpses_Desc>將新鮮有機屍體標記為攝入者回收目標。</APM_Ingestor_MarkCorpses_Desc>
+
+  <!-- EN: Must target a fresh organic corpse. -->
+  <APM_IngestorAbsorb_MustTargetCorpse>必須選擇新鮮有機屍體。</APM_IngestorAbsorb_MustTargetCorpse>
+
+  <!-- EN: Must target a fresh organic corpse or ingestible material. -->
+  <APM_IngestorAbsorb_InvalidTarget>必須選擇新鮮有機屍體或可被攝入的材料。</APM_IngestorAbsorb_InvalidTarget>
+
+  <!-- EN: Invalid corpse. -->
+  <APM_IngestorAbsorb_InvalidCorpse>無效屍體。</APM_IngestorAbsorb_InvalidCorpse>
+
+  <!-- EN: Target is not organic biomass. -->
+  <APM_IngestorAbsorb_NotOrganic>目標不是有機生物質。</APM_IngestorAbsorb_NotOrganic>
+
+  <!-- EN: Cannot recycle a burning corpse. -->
+  <APM_IngestorAbsorb_Burning>無法回收燃燒中的屍體。</APM_IngestorAbsorb_Burning>
+
+  <!-- EN: Cannot recycle a rotted or desiccated corpse. -->
+  <APM_IngestorAbsorb_NotFresh>無法回收腐爛或風乾的屍體。</APM_IngestorAbsorb_NotFresh>
+
+  <!-- EN: Already marked for biomass recycling. -->
+  <APM_IngestorAbsorb_AlreadyMarked>已標記為生物質回收。</APM_IngestorAbsorb_AlreadyMarked>
+
+  <!-- EN: {0} {1} in {2} -->
+  <APM_IngestorBiomass_LabelSingle>{0} {1}，位於 {2}</APM_IngestorBiomass_LabelSingle>
+
+  <!-- EN: {0} batches, {1} {2}, next in {3} -->
+  <APM_IngestorBiomass_LabelMultiple>{0} 批，{1} {2}，下一波在 {3}</APM_IngestorBiomass_LabelMultiple>
+
+  <!-- EN: Pending output: -->
+  <APM_IngestorBiomass_TooltipHeader>待產出：</APM_IngestorBiomass_TooltipHeader>
+
+  <!-- EN: {0} {1} in {2} -->
+  <APM_IngestorBiomass_TooltipBatch>{0} {1}，位於 {2}</APM_IngestorBiomass_TooltipBatch>
+
+  <!-- EN: ...and {0} more. -->
+  <APM_IngestorBiomass_TooltipMore>{0}另有 {0} 項。</APM_IngestorBiomass_TooltipMore>
+
+  <!-- EN: unknown output -->
+  <APM_IngestorBiomass_UnknownOutput>未知產出</APM_IngestorBiomass_UnknownOutput>
+
+  <!-- EN: Rocket: {0} -->
+  <APM.Javelin.SwitchRocket.Label>火箭彈：{0}</APM.Javelin.SwitchRocket.Label>
+
+  <!-- EN: Choose which warhead this javelin loads. Every rocket but the basic one is drawn from the mech's uranium as it fires, and the rack drops back to the basic rocket when that runs out. -->
+  <APM.Javelin.SwitchRocket.Desc>選擇該標槍裝載的彈頭。除基礎彈外，每發火箭都會在發射時從機甲的鈾中汲取，鈾耗盡後發射架會回落到基礎火箭彈。</APM.Javelin.SwitchRocket.Desc>
+
+  <!-- EN: {0} (free) -->
+  <APM.Javelin.RocketFree>{0}（免費）</APM.Javelin.RocketFree>
+
+  <!-- EN: {0} ({1} uranium per shot) -->
+  <APM.Javelin.RocketCost>{0}（每發消耗 {1} 鈾）</APM.Javelin.RocketCost>
+
+  <!-- EN: (not enough uranium) -->
+  <APM.Javelin.NoUranium>（鈾不足）</APM.Javelin.NoUranium>
+
+  <!-- EN: Rocket: {0} -->
+  <APM.Javelin.LoadedRocket>火箭彈：{0}</APM.Javelin.LoadedRocket>
+
+  <!-- EN: {0} has run out of uranium for its {1} and has fallen back to basic rockets. -->
+  <APM.Javelin.OutOfUranium>{0} 的 {1} 已耗盡鈾，已回落到基礎火箭彈。</APM.Javelin.OutOfUranium>
+
   <!-- EN: {0} has been fully repaired. -->
   <APM_MechRepaired>{0} 已完全修復。</APM_MechRepaired>
+
   <!-- EN: Repairing {0} -->
   <APM_Repairing>正在修復 {0}</APM_Repairing>
+
   <!-- EN: Only mechanoids can be repaired here. -->
   <APM_NotMechanoid>此處只能修復機械族。</APM_NotMechanoid>
+
   <!-- EN: Only friendly mechanoids can be repaired. -->
   <APM_NotPlayerFaction>只能修復友好的機械族。</APM_NotPlayerFaction>
+
   <!-- EN: Mechanoid size must be {0} for this station. -->
   <APM_WrongSize>機械族體型必須為 {0} 才能使用此工作站。</APM_WrongSize>
+
   <!-- EN: Repair station scanning found {0}. Repairs ordered. -->
   <APM_AutoRepairOrdered>修復工作站掃描發現 {0}，已下達修復指令。</APM_AutoRepairOrdered>
+
   <!-- EN: The repair station stopped working and ejected {0}. -->
   <APM_RepairStation_InactiveEjected>修復工作站停止工作並彈出了 {0}。</APM_RepairStation_InactiveEjected>
+
   <!-- EN: Satellites cannot be repaired at a repair station. -->
   <APM_RepairStation_CannotRepairSatellite>衛星無法在修復工作站中修復。</APM_RepairStation_CannotRepairSatellite>
 
   <!-- EN: Auto-Repair -->
   <APM_Gizmo_AutoRepair>自動修復</APM_Gizmo_AutoRepair>
+
   <!-- EN: Automatically scan for damaged mechanoids and assign them to the station. -->
   <APM_Gizmo_AutoRepair_Desc>自動掃描受損的機械族並將其分配至工作站。</APM_Gizmo_AutoRepair_Desc>
+
   <!-- EN: Interval: {0} -->
   <APM_Gizmo_SetInterval>間隔：{0}</APM_Gizmo_SetInterval>
+
   <!-- EN: This mechanoid is already at full health. -->
   <APM_FullHealth>該機械族已處於完整生命值。</APM_FullHealth>
+
   <!-- EN: Cancel repair -->
   <APM_CommandCancelRepair>取消修復</APM_CommandCancelRepair>
+
   <!-- EN: Stop repairing and eject the mechanoid. -->
   <APM_CommandCancelRepairDesc>停止修復並彈出機械族。</APM_CommandCancelRepairDesc>
+
   <!-- EN: Insert mechanoid -->
   <APM_InsertMech>放入機械族</APM_InsertMech>
+
   <!-- EN: No available mechanoids. -->
   <APM_NoMechsAvailable>沒有可用的機械族。</APM_NoMechsAvailable>
 
   <!-- EN: Arm editor -->
   <APM_RepairStation_ArmEditor_GizmoLabel>機械臂編輯器</APM_RepairStation_ArmEditor_GizmoLabel>
+
   <!-- EN: Open the repair station arm offset editor. -->
   <APM_RepairStation_ArmEditor_GizmoDesc>打開修復工作站機械臂偏移編輯器。</APM_RepairStation_ArmEditor_GizmoDesc>
+
   <!-- EN: No repair station arm data available. -->
   <APM_RepairStation_ArmEditor_NoStation>沒有可用的修復工作站機械臂資料。</APM_RepairStation_ArmEditor_NoStation>
+
   <!-- EN: Repair station arm editor -->
   <APM_RepairStation_ArmEditor_Title>修復工作站機械臂編輯器</APM_RepairStation_ArmEditor_Title>
+
   <!-- EN: Current rotation: {0} -->
   <APM_RepairStation_ArmEditor_CurrentRotation>目前旋轉：{0}</APM_RepairStation_ArmEditor_CurrentRotation>
+
   <!-- EN: Arm -->
   <APM_RepairStation_ArmEditor_Arm>機械臂</APM_RepairStation_ArmEditor_Arm>
+
   <!-- EN: View -->
   <APM_RepairStation_ArmEditor_View>視圖</APM_RepairStation_ArmEditor_View>
+
   <!-- EN: Use current -->
   <APM_RepairStation_ArmEditor_UseCurrent>使用目前</APM_RepairStation_ArmEditor_UseCurrent>
+
   <!-- EN: Step -->
   <APM_RepairStation_ArmEditor_Step>步長</APM_RepairStation_ArmEditor_Step>
+
   <!-- EN: Live preview: current rotation -->
   <APM_RepairStation_ArmEditor_LivePreviewOn>即時預覽：目前旋轉</APM_RepairStation_ArmEditor_LivePreviewOn>
+
   <!-- EN: Previewing {0}; live preview is off -->
   <APM_RepairStation_ArmEditor_LivePreviewOff>正在預覽 {0}；即時預覽已關閉</APM_RepairStation_ArmEditor_LivePreviewOff>
+
   <!-- EN: Offset for {0}, arm {1} -->
   <APM_RepairStation_ArmEditor_SelectedOffset>{0} 的偏移，機械臂 {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+
   <!-- EN: Reset offset -->
   <APM_RepairStation_ArmEditor_ResetView>重設偏移</APM_RepairStation_ArmEditor_ResetView>
+
   <!-- EN: Copy arm XML -->
   <APM_RepairStation_ArmEditor_CopyArmXml>複製機械臂 XML</APM_RepairStation_ArmEditor_CopyArmXml>
+
   <!-- EN: Copy all XML -->
   <APM_RepairStation_ArmEditor_CopyAllXml>複製全部 XML</APM_RepairStation_ArmEditor_CopyAllXml>
+
   <!-- EN: Edits affect this spawned station. Copy XML to save the offsets in defs. -->
   <APM_RepairStation_ArmEditor_Footer>編輯僅影響此已生成的站點。複製 XML 以將偏移儲存到定義中。</APM_RepairStation_ArmEditor_Footer>
+
   <!-- EN: Copied XML to clipboard. -->
   <APM_RepairStation_ArmEditor_Copied>已複製 XML 到剪貼板。</APM_RepairStation_ArmEditor_Copied>
 
   <!-- EN: Shield integrity -->
   <APM_ShieldIntegrity>護盾完整度</APM_ShieldIntegrity>
+
   <!-- EN: Vampiric charges: {0}/{1} ({2} ticks of healing) -->
   <APM_VampiricCharges>吸血充能：{0}/{1}（可治療 {2} tick）</APM_VampiricCharges>
+
   <!-- EN: Show repair station auto-repair messages -->
   <APM_Settings_ShowRepairStationAutoRepairMessages_Label>顯示修復工作站自動修復訊息</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+
   <!-- EN: Display notifications when the repair station automatically assigns repairs. -->
   <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>當修復工作站自動分配修復任務時顯示通知。</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+
+  <!-- EN: Remote control uplink is active for {PAWN} -->
+  <APM.CommandCasket.Inspection>遠端控制鏈路已對 {PAWN} 啟用</APM.CommandCasket.Inspection>
+
+  <!-- EN: not mechanitor -->
+  <APM.CommandCasket.FailReason.NotMechanitor>非機械師</APM.CommandCasket.FailReason.NotMechanitor>
+
+  <!-- EN: Eject mechanitor -->
+  <APM.CommandCasket.Gizmo.CancelLink.Label>彈出機械師</APM.CommandCasket.Gizmo.CancelLink.Label>
+
+  <!-- EN: Cancel the remote link for the current occupant. The occupant will be ejected. -->
+  <APM.CommandCasket.Gizmo.CancelLink.Desc>取消目前佔用者的遠端鏈路。佔用者將被彈出。</APM.CommandCasket.Gizmo.CancelLink.Desc>
+
+  <!-- EN: remote shield -->
+  <APM.CommandCasket.Gizmo.Shield.Label>遠端護盾</APM.CommandCasket.Gizmo.Shield.Label>
+
+  <!-- EN: shield a friendly mechanoid, can target the whole map.\nPower scales with the remote shielder implant. -->
+  <APM.CommandCasket.Gizmo.Shield.Desc>為友方機械體提供護盾，可指定整張地圖。\n護盾強度隨遠端護盾植入體提升。</APM.CommandCasket.Gizmo.Shield.Desc>
+
+  <!-- EN: shield the selected mechanoid.\nPower scales with the remote shielder implant. -->
+  <APM.CommandCasket.Gizmo.ShieldSelf.Desc>為所選機械體提供護盾。\n護盾強度隨遠端護盾植入體提升。</APM.CommandCasket.Gizmo.ShieldSelf.Desc>
+
+  <!-- EN: remote repair -->
+  <APM.CommandCasket.Gizmo.Repair.Label>遠端修復</APM.CommandCasket.Gizmo.Repair.Label>
+
+  <!-- EN: repair a friendly mechanoid until it is fully repaired or has no energy remaining. Can target the whole map. -->
+  <APM.CommandCasket.Gizmo.Repair.Desc>修復友方機械體直至完全修好或能量耗盡。可指定整張地圖。</APM.CommandCasket.Gizmo.Repair.Desc>
+
+  <!-- EN: repair the selected mechanoid until it is fully repaired or has no energy remaining. -->
+  <APM.CommandCasket.Gizmo.RepairSelf.Desc>修復所選機械體直至完全修好或能量耗盡。</APM.CommandCasket.Gizmo.RepairSelf.Desc>
+
+  <!-- EN: remote disconnect -->
+  <APM.CommandCasket.Gizmo.Disconnect.Label>遠端斷開</APM.CommandCasket.Gizmo.Disconnect.Label>
+
+  <!-- EN: remotely disconnect from a controlled mech. Can target mechs on the same map. -->
+  <APM.CommandCasket.Gizmo.Disconnect.Desc>遠端斷開與受控機甲的連接。可指定同一張地圖上的機甲。</APM.CommandCasket.Gizmo.Disconnect.Desc>
+
+  <!-- EN: remote connect -->
+  <APM.CommandCasket.Gizmo.Connect.Label>遠端連接</APM.CommandCasket.Gizmo.Connect.Label>
+
+  <!-- EN: remotely connect to a friendly mech. Can target mechs on the same map. Time depends on the targeted mechanoid. -->
+  <APM.CommandCasket.Gizmo.Connect.Desc>遠端連接到友方機甲。可指定同一張地圖上的機甲。耗時取決於目標機械體。</APM.CommandCasket.Gizmo.Connect.Desc>
+
+  <!-- EN: bandwidth used: -->
+  <APM.CommandCasket.Inspection.Bandwidth>佔用頻寬：</APM.CommandCasket.Inspection.Bandwidth>
+
+  <!-- EN: remote reconnect -->
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Label>遠端重連</APM.CommandCasket.Mech.Gizmo.Reconnect.Label>
+
+  <!-- EN: remotely connect this mech to a mechanitor inside a mech command casket. -->
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>將此機甲遠端連接到機械指揮艙內的機械師。</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
+
+  <!-- EN:  (missing bandwidth) -->
+  <APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>（頻寬不足）</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
+
+  <!-- EN: currently -->
+  <APM.CommandCasket.Inspect.CurrentAction>目前</APM.CommandCasket.Inspect.CurrentAction>
+
+  <!-- EN: connecting -->
+  <APM.CommandCasket.Inspect.CurrentAction.Connect>連接中</APM.CommandCasket.Inspect.CurrentAction.Connect>
+
+  <!-- EN: disconnecting -->
+  <APM.CommandCasket.Inspect.CurrentAction.Disconnect>斷開中</APM.CommandCasket.Inspect.CurrentAction.Disconnect>
+
+  <!-- EN: shielding -->
+  <APM.CommandCasket.Inspect.CurrentAction.Shield>護盾中</APM.CommandCasket.Inspect.CurrentAction.Shield>
+
+  <!-- EN: repairing -->
+  <APM.CommandCasket.Inspect.CurrentAction.Repair>修復中</APM.CommandCasket.Inspect.CurrentAction.Repair>
+
+  <!-- EN: idle -->
+  <APM.CommandCasket.Inspect.CurrentAction.Idle>閒置</APM.CommandCasket.Inspect.CurrentAction.Idle>
+
+  <!-- EN: \nLeftclick = choose target\nShift = target self\nCtrl = que action\nRightclick = cancel -->
+  <APM.CommandCasket.Gizmo.ControlsInfo>\n左鍵 = 選擇目標\nShift = 指定自身\nCtrl = 排隊動作\n右鍵 = 取消</APM.CommandCasket.Gizmo.ControlsInfo>
+
+  <!-- EN: This pack is already maintaining {0} deployed satellites. -->
+  <APM.MechamancerPack.MaxSatellites>該背包已在維持 {0} 個已部署的衛星。</APM.MechamancerPack.MaxSatellites>
+
+  <!-- EN: No valid satellite deployment cell found. -->
+  <APM.MechamancerPack.NoValidSpawnCell>未找到有效的衛星部署格。</APM.MechamancerPack.NoValidSpawnCell>
+
+  <!-- EN: Select mechanoid... -->
+  <APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>選擇機械體{0}</APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>
+
+  <!-- EN: Contains an unidentified mechanoid. -->
+  <APM.MechanoidContainer.ContainsUnknown>內含一個未知機械體。</APM.MechanoidContainer.ContainsUnknown>
+
+  <!-- EN: Auto artillery -->
+  <APM_Ravager_AutoArtillery_Label>自動火砲</APM_Ravager_AutoArtillery_Label>
+
+  <!-- EN: Allow this ravager to automatically choose hostile pawns as artillery targets while under player control. Manual attack orders always fire once at the selected cell. -->
+  <APM_Ravager_AutoArtillery_Desc>允許該破壞者在玩家控制下自動選擇敵對殖民者作為火砲目標。手動攻擊指令始終朝選定格子開火一次。</APM_Ravager_AutoArtillery_Desc>
+
+  <!-- EN: Auto artillery: disabled. -->
+  <APM_Ravager_Inspect_AutoArtilleryDisabled>自動火砲：已停用。</APM_Ravager_Inspect_AutoArtilleryDisabled>
+
+  <!-- EN: Auto artillery: cannot fire from under a roof. -->
+  <APM_Ravager_Inspect_AutoArtilleryBlockedRoof>自動火砲：無法在屋頂下開火。</APM_Ravager_Inspect_AutoArtilleryBlockedRoof>
+
+  <!-- EN: Auto artillery: current target is under thick roof. -->
+  <APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>自動火砲：目前目標處於厚屋頂下。</APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>
+
+  <!-- EN: Auto artillery: current target cannot be hit from this position. -->
+  <APM_Ravager_Inspect_AutoArtilleryCannotHit>自動火砲：從此位置無法擊中目前目標。</APM_Ravager_Inspect_AutoArtilleryCannotHit>
+
+  <!-- EN: Fall per day -->
+  <APM_ToxicPurifier_RecoveryPerDay>每日污染恢復</APM_ToxicPurifier_RecoveryPerDay>
+
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect the globe, relations with other faction will deteriorate. -->
+  <APM_ToxicPurifier_LevelToAffectRelation>當地大氣中污染已達 {0} 的臨界點，將影響全球，與其他派系的關係將惡化。</APM_ToxicPurifier_LevelToAffectRelation>
+
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect nearby tiles. -->
+  <APM_ToxicPurifier_LevelToStartSpreading>當地大氣中污染已達 {0} 的臨界點，將影響附近地塊。</APM_ToxicPurifier_LevelToStartSpreading>
+
+  <!-- EN: Toxicity in the atmosphere in local area has reach the critical point of {0} which would affect nearby tiles and critical point of {1} which would affect faction relations. -->
+  <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>當地大氣中污染已達 {0} 的臨界點（將影響附近地塊），以及 {1} 的臨界點（將影響派系關係）。</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
+
+  <!-- EN: Mode -->
+  <APM_ToxicPurifier_ModeChangeLabel>模式</APM_ToxicPurifier_ModeChangeLabel>
+
+  <!-- EN: Change purifier station mode. -->
+  <APM_ToxicPurifier_ModeChangeDesc>更改淨化站模式。</APM_ToxicPurifier_ModeChangeDesc>
+
+  <!-- EN: Ground only -->
+  <APM_ToxicPurifier_Mode_OnlyGround>僅地面</APM_ToxicPurifier_Mode_OnlyGround>
+
+  <!-- EN: Wastepacks only -->
+  <APM_ToxicPurifier_Mode_OnlyWastepacks>僅廢包</APM_ToxicPurifier_Mode_OnlyWastepacks>
+
+  <!-- EN: Wastepacks over ground -->
+  <APM_ToxicPurifier_Mode_WastepacksOverGround>廢包優先於地面</APM_ToxicPurifier_Mode_WastepacksOverGround>
+
+  <!-- EN: Ground over wastepacks -->
+  <APM_ToxicPurifier_Mode_GroundOverWastepacks>地面優先於廢包</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
 </LanguageData>
