@@ -271,8 +271,6 @@
 
   <APM_Ravager_AutoArtillery_Desc>Разрешить этому опустошителю автоматически выбирать враждебных пешек в качестве целей для артиллерии под управлением игрока. Ручные приказы атаки всегда совершают один выстрел по выбранной клетке.</APM_Ravager_AutoArtillery_Desc>
 
-  <APM_Ravager_Inspect_AutoArtInstallerDisabled>Автоартиллерия: отключена.</APM_Ravager_Inspect_AutoArtilleryDisabled>
-
   <APM_Ravager_Inspect_AutoArtilleryDisabled>Автоартиллерия: отключена.</APM_Ravager_Inspect_AutoArtilleryDisabled>
 
   <APM_Ravager_Inspect_AutoArtilleryBlockedRoof>Автоартиллерия: нельзя вести огонь из-под крыши.</APM_Ravager_Inspect_AutoArtilleryBlockedRoof>

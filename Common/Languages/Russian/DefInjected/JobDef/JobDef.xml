@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Absorb.description>Перемалывает выбранный труп и постепенно перерабатывает его в химтопливо.</APM_Absorb.description>
+
+  <APM_Absorb.label>переработка биомассы</APM_Absorb.label>
+
+  <APM_BashDamage.reportString>таранит TargetA.</APM_BashDamage.reportString>
+
+  <APM_BashStun.reportString>таранит TargetA.</APM_BashStun.reportString>
+
+  <APM_FrostivusManualUnloadFood.reportString>выгружает запасы еды.</APM_FrostivusManualUnloadFood.reportString>
+
+  <APM_FrostivusReleaseDevouredContents.reportString>освобождает поглощённое существо.</APM_FrostivusReleaseDevouredContents.reportString>
+
+  <APM_FrostivusTakeFoodToInventory.reportString>запасает TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+
+  <APM_FrostivusUnloadFoodToStorage.reportString>выгружает TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+
+  <APM_HookPawn.description>Выстрелить крюком по цели и быстро втянуть трос, чтобы притянуться к ней. Можно применять как к постройкам, так и к персонажам.</APM_HookPawn.description>
+
+  <APM_HookPawn.label>крюк-кошка</APM_HookPawn.label>
+
+  <APM_HookPawn.reportString>притягивается к TargetA.</APM_HookPawn.reportString>
+
+  <APM_SirenLureChannel.reportString>пение.</APM_SirenLureChannel.reportString>
+
+</LanguageData>

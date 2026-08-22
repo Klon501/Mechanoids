@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Aegis.label>埃癸斯</APM_Mech_Aegis.label>
+
+  <APM_Mech_Conqueror_AR.label>爆破征服者</APM_Mech_Conqueror_AR.label>
+
+  <APM_Mech_Conqueror_DMR.label>卡賓征服者</APM_Mech_Conqueror_DMR.label>
+
+  <APM_Mech_Conqueror_LMG.label>噴吐征服者</APM_Mech_Conqueror_LMG.label>
+
+  <APM_Mech_Dynamo.label>迪納摩</APM_Mech_Dynamo.label>
+
+  <APM_Mech_Frostivus.description>一台移動低溫艙，可保存易腐食物，並能在釋放前將類人殖民者或屍體封入休眠狀態。</APM_Mech_Frostivus.description>
+
+  <APM_Mech_Frostivus.label>霜語者</APM_Mech_Frostivus.label>
+
+  <APM_Mech_Frostivus.tools.0.label>左前腿</APM_Mech_Frostivus.tools.0.label>
+
+  <APM_Mech_Frostivus.tools.1.label>右前腿</APM_Mech_Frostivus.tools.1.label>
+
+  <APM_Mech_Frostivus.tools.2.label>頭部</APM_Mech_Frostivus.tools.2.label>
+
+  <APM_Mech_Gazer.description>地獄球技術的另一種應用造就凝視者——一台以主眼光束發射器為顯著特徵的機械體。其武器威力強大，開火時凝視者必須鎖定自身，並將全部運動機能轉移到穩定姿態上，即便如此仍需較長的蓄能時間。所發射的光束能摧毀前方的一切，甚至對建築造成可觀傷害。在近距離受迫時，凝視者會將蓄積的能量向外釋放為猛烈衝擊波，將攻擊者擊退並擾亂附近機械化目標。</APM_Mech_Gazer.description>
+
+  <APM_Mech_Gazer.label>凝視者</APM_Mech_Gazer.label>
+
+  <APM_Mech_Haze.label>迷霧</APM_Mech_Haze.label>
+
+  <APM_Mech_Ingestor.label>吞噬者</APM_Mech_Ingestor.label>
+
+  <APM_Mech_Javelin.label>標槍</APM_Mech_Javelin.label>
+
+  <APM_Mech_Lasher.label>鞭撻者</APM_Mech_Lasher.label>
+
+  <APM_Mech_Mantis.label>螳螂</APM_Mech_Mantis.label>
+
+  <APM_Mech_Maul.label>巨錘</APM_Mech_Maul.label>
+
+  <APM_Mech_Pulse.label>脈衝</APM_Mech_Pulse.label>
+
+  <APM_Mech_Ravager.label>蹂躪者</APM_Mech_Ravager.label>
+
+  <APM_Mech_Satellite.label>衛星</APM_Mech_Satellite.label>
+
+  <APM_Mech_Siren.label>海妖</APM_Mech_Siren.label>
+
+  <APM_Mech_Tinker.description>修補匠是一台用於維修同派系建築與機械體的支援型機械體。它無法建造新結構，但可向盟友投射防禦矩陣，並用定向雷射致盲敵人。</APM_Mech_Tinker.description>
+
+  <APM_Mech_Tinker.label>修補匠</APM_Mech_Tinker.label>
+
+  <APM_Mech_Vassal.label>附庸</APM_Mech_Vassal.label>
+
+  <APM_Mechanitor_Ancient.label>古代機械師</APM_Mechanitor_Ancient.label>
+
+  <APM_Mechanitor_Nomad.label>遊牧機械師</APM_Mechanitor_Nomad.label>
+
+</LanguageData>

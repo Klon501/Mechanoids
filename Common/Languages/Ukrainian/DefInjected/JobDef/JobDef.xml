@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Absorb.description>Перемолоти вказаний труп і почати процес поступової переробки його на хімпаливо.</APM_Absorb.description>
+
+  <APM_Absorb.label>переробка біомаси</APM_Absorb.label>
+
+  <APM_BashDamage.reportString>врізається в TargetA</APM_BashDamage.reportString>
+
+  <APM_BashStun.reportString>врізається в TargetA</APM_BashStun.reportString>
+
+  <APM_FrostivusManualUnloadFood.reportString>вивантажує збережену їжу.</APM_FrostivusManualUnloadFood.reportString>
+
+  <APM_FrostivusReleaseDevouredContents.reportString>випускає збережену істоту.</APM_FrostivusReleaseDevouredContents.reportString>
+
+  <APM_FrostivusTakeFoodToInventory.reportString>зберігає TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+
+  <APM_FrostivusUnloadFoodToStorage.reportString>вивантажує TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+
+  <APM_HookPawn.description>Вистрілити гачком-кішкою по цілі й швидко втягнути трос, тим самим притягнувшись до цілі. Можна застосовувати як на споруди, так і на персонажів.</APM_HookPawn.description>
+
+  <APM_HookPawn.label>гачок-кішка</APM_HookPawn.label>
+
+  <APM_HookPawn.reportString>притягується до TargetA</APM_HookPawn.reportString>
+
+  <APM_SirenLureChannel.reportString>спів.</APM_SirenLureChannel.reportString>
+
+</LanguageData>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_AbsorbedThing.description>将吸收的生物质加工成化学燃料。</APM_AbsorbedThing.description>
+
+  <APM_AbsorbedThing.label>回收生物质中</APM_AbsorbedThing.label>
+
+  <APM_ApexMechanoid_Floating.label>悬浮</APM_ApexMechanoid_Floating.label>
+
+  <APM_ApexMechanoid_HealOnKills.label>嗜血机械微粒</APM_ApexMechanoid_HealOnKills.label>
+
+  <APM_CelerusSmokescreenBuff.label>烟幕</APM_CelerusSmokescreenBuff.label>
+
+  <APM_DuelDraw.label>决斗平局</APM_DuelDraw.label>
+
+  <APM_DuelWinner.label>决斗胜利者</APM_DuelWinner.label>
+
+  <APM_Hediff_Devoured.description>被封入霜语者低温舱内。生物进程暂停，直到被释放。</APM_Hediff_Devoured.description>
+
+  <APM_Hediff_Devoured.label>被吞噬</APM_Hediff_Devoured.label>
+
+  <APM_Hediff_JavelinMissileLock.label>导弹锁定</APM_Hediff_JavelinMissileLock.label>
+
+  <APM_Hediff_SirenSong.label>海妖之歌</APM_Hediff_SirenSong.label>
+
+  <APM_Hediff_SteelDiscipline.label>钢铁纪律</APM_Hediff_SteelDiscipline.label>
+
+  <APM_Hediff_TerminusOverdrive.label>超载</APM_Hediff_TerminusOverdrive.label>
+
+  <APM_Hediff_UltimateSacrifice.label>终极牺牲</APM_Hediff_UltimateSacrifice.label>
+
+  <APM_Hediff_Unity.label>统合连接</APM_Hediff_Unity.label>
+
+  <APM_InDuel.label>决斗中</APM_InDuel.label>
+
+  <APM_LaserBlind.description>暴露于致盲激光后，视野大幅减弱。</APM_LaserBlind.description>
+
+  <APM_LaserBlind.label>被激光致盲</APM_LaserBlind.label>
+
+  <APM_MechCommandCasketBoost.label>机械指挥舱强化</APM_MechCommandCasketBoost.label>
+
+  <APM_PulseWaveBlind.label>闪光致盲</APM_PulseWaveBlind.label>
+
+</LanguageData>

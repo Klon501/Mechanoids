@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Absorb.description>将新鲜有机尸体或可摄入材料磨碎，并缓慢加工成化学燃料。</APM_Absorb.description>
+
+  <APM_Absorb.label>回收生物质</APM_Absorb.label>
+
+  <APM_FrostivusManualUnloadFood.reportString>正在卸下保鲜食物。</APM_FrostivusManualUnloadFood.reportString>
+
+  <APM_FrostivusReleaseDevouredContents.reportString>正在释放被保存的生物。</APM_FrostivusReleaseDevouredContents.reportString>
+
+  <APM_FrostivusTakeFoodToInventory.reportString>正在保鲜 TargetA。</APM_FrostivusTakeFoodToInventory.reportString>
+
+  <APM_FrostivusUnloadFoodToStorage.reportString>正在卸下 TargetA。</APM_FrostivusUnloadFoodToStorage.reportString>
+
+  <APM_SirenLureChannel.reportString>正在唱歌。</APM_SirenLureChannel.reportString>
+
+</LanguageData>
