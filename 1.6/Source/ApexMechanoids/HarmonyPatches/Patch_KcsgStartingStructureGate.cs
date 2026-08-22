@@ -51,28 +51,49 @@ namespace ApexMechanoids
 
         private static void Prefix(object __instance)
         {
-            if (!OptedIn())
+            IList chooseFrom = AccessTools.Field(__instance.GetType(), "chooseFrom").GetValue(__instance) as IList;
+
+            if (!OptedIn(chooseFrom))
             {
                 return;
             }
 
-            if (!(AccessTools.Field(AccessTools.TypeByName(UtilTypeName), "pcScenariosSave")
-                    .GetValue(null) is IDictionary save)
-                || save.Count > 0)
+            IDictionary save = AccessTools.Field(AccessTools.TypeByName(UtilTypeName), "pcScenariosSave")
+                .GetValue(null) as IDictionary;
+
+            if (save != null && save.Count == 0 && chooseFrom != null && chooseFrom.Count > 0)
+            {
+                bool nearMapCenter =
+                    AccessTools.Field(__instance.GetType(), "nearMapCenter").GetValue(__instance) is bool near && near;
+                save.Add(chooseFrom[0], nearMapCenter);
+            }
+
+            WarnIfStillGated(save, chooseFrom);
+        }
+
+        /// <summary>
+        /// Says so in the log when the structure is about to be skipped for a reason this patch
+        /// cannot seed its way past.
+        ///
+        /// KCSG returns from that guard in silence, which is why "the domain sometimes isn't there"
+        /// has never come with anything to go on. The two remaining causes look nothing alike -- a
+        /// game already running when the map is made, against a part with no layouts to choose from
+        /// -- and a single line saying which one it was turns the next report into something that
+        /// can be answered.
+        /// </summary>
+        private static void WarnIfStillGated(IDictionary save, IList chooseFrom)
+        {
+            int ticks = Find.TickManager?.TicksGame ?? 0;
+            if (ticks <= 5 && chooseFrom != null && chooseFrom.Count > 0 && save != null && save.Count > 0)
             {
                 return;
             }
 
-            if (!(AccessTools.Field(__instance.GetType(), "chooseFrom").GetValue(__instance) is IList chooseFrom)
-                || chooseFrom.Count == 0)
-            {
-                return;
-            }
-
-            bool nearMapCenter =
-                AccessTools.Field(__instance.GetType(), "nearMapCenter").GetValue(__instance) is bool near && near;
-
-            save.Add(chooseFrom[0], nearMapCenter);
+            Log.Warning("[Apex Mechanoids] The starting structure will not be built. KCSG's gate is closed: "
+                + "ticksGame=" + ticks + " (must be 5 or less), "
+                + "layouts=" + (chooseFrom?.Count.ToString() ?? "unreadable") + " (must be at least 1), "
+                + "prepareCarefullyEntries=" + (save?.Count.ToString() ?? "unreadable") + " (must be at least 1). "
+                + "A map generated after the game has started ticking is the usual cause.");
         }
 
         /// <summary>
@@ -89,14 +110,37 @@ namespace ApexMechanoids
         }
 
         /// <summary>
-        /// Only for our own scenarios: they are the ones that declare the site-preparation part.
+        /// Only for our own starts, never another mod's KCSG scenario.
+        ///
+        /// The shipped scenario is recognised by the site-preparation part it declares. A scenario
+        /// somebody built themselves in the editor out of our domain layouts will not have that
+        /// part, and used to fall straight through this and build nothing, so the layouts being
+        /// built are the second way in.
         /// </summary>
-        private static bool OptedIn()
+        private static bool OptedIn(IList chooseFrom)
         {
             Scenario scenario = Find.Scenario;
-            return scenario != null
-                && scenario.AllParts.Any(part =>
-                    part?.def != null && part.def.defName == "APM_PrepareStructureSite");
+            if (scenario != null && scenario.AllParts.Any(part =>
+                part?.def != null && part.def.defName == "APM_PrepareStructureSite"))
+            {
+                return true;
+            }
+
+            if (chooseFrom == null)
+            {
+                return false;
+            }
+
+            foreach (object layout in chooseFrom)
+            {
+                if (layout is Def def && def.defName != null && def.defName.StartsWith(OurLayoutPrefix))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
+
+        private const string OurLayoutPrefix = "APM_";
     }
 }
