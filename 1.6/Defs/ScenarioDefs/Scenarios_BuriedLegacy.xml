@@ -124,19 +124,21 @@
           <project>Batteries</project>
         </li>
 
-        <!-- Starting mechs -->
-       <li Class="ScenPart_StartingMech">
-          <def>StartingMech</def>
+        <!-- Starting mechs. Ours rather than vanilla's ScenPart_StartingMech, which asks the
+             generator for a newborn and hands over machines that read as zero years old. These come
+             out of the same 3 to 10 year band as the ones the stasis containers hold. -->
+        <li Class="ApexMechanoids.ScenPart_StartingMechAged">
+          <def>APM_StartingMech</def>
           <mechKind>Mech_Lifter</mechKind>
           <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
         </li>
-        <li Class="ScenPart_StartingMech">
-          <def>StartingMech</def>
+        <li Class="ApexMechanoids.ScenPart_StartingMechAged">
+          <def>APM_StartingMech</def>
           <mechKind>Mech_Constructoid</mechKind>
           <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
         </li>
-                <li Class="ScenPart_StartingMech">
-          <def>StartingMech</def>
+        <li Class="ApexMechanoids.ScenPart_StartingMechAged">
+          <def>APM_StartingMech</def>
           <mechKind>Mech_Fabricor</mechKind>
           <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
         </li>
