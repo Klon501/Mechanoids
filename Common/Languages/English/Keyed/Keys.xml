@@ -230,6 +230,8 @@
 
   <APM.MechanoidContainer.ContainsUnknown>Contains an unidentified mechanoid.</APM.MechanoidContainer.ContainsUnknown>
 
+  <APM.MechanoidContainer.ForcedOpen>{0} forced {1} open without the bandwidth to hold what was inside. {2} is loose and answers to nobody until a mechanitor takes control of it.</APM.MechanoidContainer.ForcedOpen>
+
   <APM_Ravager_AutoArtillery_Label>Auto artillery</APM_Ravager_AutoArtillery_Label>
 
   <APM_Ravager_AutoArtillery_Desc>Allow this ravager to automatically choose hostile pawns as artillery targets while under player control. Manual attack orders always fire once at the selected cell.</APM_Ravager_AutoArtillery_Desc>
