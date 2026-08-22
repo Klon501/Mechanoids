@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: ultimate sacrifice -->
+  <APM_UltimateSacrifice.label>остання жертва</APM_UltimateSacrifice.label>
+  <!-- EN: One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius -->
+  <APM_UltimateSacrifice.description>Один із Завойовників може пожертвувати собою, щоб дати потужне підсилення всім союзним Завойовникам у радіусі дії.</APM_UltimateSacrifice.description>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- CompJavelinRocketRack gizmo -->
+  <APM.Javelin.SwitchRocket.Label>Ракета: {0}</APM.Javelin.SwitchRocket.Label>
+  <APM.Javelin.SwitchRocket.Desc>Виберіть боєголовку, яку заряджає ця пускова установка. Усі ракети, крім базової, беруть уран із меха під час пострілу, а установка повертається до базової ракети, коли уран закінчується.</APM.Javelin.SwitchRocket.Desc>
+
+  <!-- CompJavelinRocketRack float menu -->
+  <APM.Javelin.RocketFree>{0} (безкоштовно)</APM.Javelin.RocketFree>
+  <APM.Javelin.RocketCost>{0} ({1} урану за постріл)</APM.Javelin.RocketCost>
+  <APM.Javelin.NoUranium>(недостатньо урану)</APM.Javelin.NoUranium>
+
+  <!-- CompJavelinRocketRack inspect pane and messages -->
+  <APM.Javelin.LoadedRocket>Ракета: {0}</APM.Javelin.LoadedRocket>
+  <APM.Javelin.OutOfUranium>У {0} закінчився уран для {1}, і він повернувся до базових ракет.</APM.Javelin.OutOfUranium>
+
+</LanguageData>

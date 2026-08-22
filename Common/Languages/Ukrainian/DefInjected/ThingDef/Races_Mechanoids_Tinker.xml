@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Tinker -->
+  <APM_Mech_Tinker.label>майстер</APM_Mech_Tinker.label>
+  <!-- EN: The tinker is a mechanoid that is suited for repair... -->
+  <APM_Mech_Tinker.description>Майстер — це механоїд, призначений для проведення ремонту. Він здатен допомагати поселенню в ремонті споруд, а також у ремонті механоїдів, що перебувають під керуванням механітера. У крайньому разі він може прикрити щитом союзника, а також осліпити лазером ворогів.</APM_Mech_Tinker.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Tinker.tools.0.label>ліва рука</APM_Mech_Tinker.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Tinker.tools.1.label>права рука</APM_Mech_Tinker.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Tinker.tools.2.label>голова</APM_Mech_Tinker.tools.2.label>
+
+</LanguageData>

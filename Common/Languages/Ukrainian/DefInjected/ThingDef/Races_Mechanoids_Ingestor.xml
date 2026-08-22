@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Ingestor -->
+  <APM_Mech_Ingestor.label>поглинач</APM_Mech_Ingestor.label>
+  <!-- EN: While mechtech devices typically rely on internal power cells... -->
+  <APM_Mech_Ingestor.description>Зазвичай механоїди та їхня техніка покладаються на внутрішні батареї, але під'єднання до електромережі чи горюче паливо їм усе ж потрібні. Поглинач прочісує поля битв у пошуках тих, що вижили, щоб добити їх, і органічних матеріалів, часто просто трупів. Він здатен поглинати їх і переробляти на хімпаливо всередині себе.</APM_Mech_Ingestor.description>
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.0.label>голова</APM_Mech_Ingestor.tools.0.label>
+  <!-- EN: head -->
+  <APM_Mech_Ingestor.tools.1.label>голова</APM_Mech_Ingestor.tools.1.label>
+
+</LanguageData>

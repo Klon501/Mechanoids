@@ -4,6 +4,9 @@
   <!-- EN: solus -->
   <APM_Solus.label>солус</APM_Solus.label>
 
+  <!-- EN: A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage. -->
+  <APM_Solus.description>Усиленный излучатель гамма-лучей, способный генерировать плотный, сфокусированный шар разрушительной энергии. Пролетая мимо целей, шар разряжается в них и поджигает окружение. Это особенно смертоносное оружие против групп врагов. Огромная выходная мощность требует протоколов стабилизации для предотвращения самоповреждения.</APM_Solus.description>
+
   <!-- EN: solus orb -->
   <APM_SolusOrb.label>сфера солуса</APM_SolusOrb.label>
 

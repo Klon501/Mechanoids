@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Satellite -->
+  <APM_Mech_Satellite.label>супутник</APM_Mech_Satellite.label>
+  <!-- EN: Equipped with a hover pack... -->
+  <APM_Mech_Satellite.description>Супутника часто можна побачити, як він вилітає з ранця мехаманта, щоб допомогти союзникам або супроводжувати механоїдних командирів у бою. Це штурмовий механоїд із літаючим ранцем, завдяки якому він легко пересувається пересіченою місцевістю.</APM_Mech_Satellite.description>
+  <!-- EN: left fist -->
+  <APM_Mech_Satellite.tools.0.label>ліва рука</APM_Mech_Satellite.tools.0.label>
+  <!-- EN: right fist -->
+  <APM_Mech_Satellite.tools.1.label>права рука</APM_Mech_Satellite.tools.1.label>
+  <!-- EN: head -->
+  <APM_Mech_Satellite.tools.2.label>голова</APM_Mech_Satellite.tools.2.label>
+
+</LanguageData>

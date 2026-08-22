@@ -12,8 +12,8 @@
   <APM_Mech_Conqueror_AR.labelPlural>завоеватели (винтовка)</APM_Mech_Conqueror_AR.labelPlural>
 
   <!-- EN: LMG conqueror -->
-  <APM_Mech_Conqueror_LMG.label>завоеватель (пулемёт)</APM_Mech_Conqueror_LMG.label>
+  <APM_Mech_Conqueror_LMG.label>завоеватель (пистолет-пулемёт)</APM_Mech_Conqueror_LMG.label>
   <!-- EN: LMG conquerors -->
-  <APM_Mech_Conqueror_LMG.labelPlural>завоеватели (пулемёт)</APM_Mech_Conqueror_LMG.labelPlural>
+  <APM_Mech_Conqueror_LMG.labelPlural>завоеватели (пистолет-пулемёт)</APM_Mech_Conqueror_LMG.labelPlural>
 
 </LanguageData>

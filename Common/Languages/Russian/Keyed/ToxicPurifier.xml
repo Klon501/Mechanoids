@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_ToxicPurifier_RecoveryPerDay>Падение в день</APM_ToxicPurifier_RecoveryPerDay>
+  
+  <APM_ToxicPurifier_LevelToAffectRelation>Токсичность в атмосфере локальной зоны достигла критической точки {0}, которая повлияет на весь мир, отношения с другими фракциями ухудшатся.</APM_ToxicPurifier_LevelToAffectRelation>
+  <APM_ToxicPurifier_LevelToStartSpreading>Токсичность в атмосфере локальной зоны достигла критической точки {0}, которая повлияет на соседние участки.</APM_ToxicPurifier_LevelToStartSpreading>
+  <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>Токсичность в атмосфере локальной зоны достигла критической точки {0}, которая повлияет на соседние участки, и критической точки {1}, которая повлияет на отношения с фракциями.</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
+
+  <APM_ToxicPurifier_ModeChangeLabel>Режим</APM_ToxicPurifier_ModeChangeLabel>
+  <APM_ToxicPurifier_ModeChangeDesc>Сменить режим станции очистителя.</APM_ToxicPurifier_ModeChangeDesc>
+
+  <APM_ToxicPurifier_Mode_OnlyGround>Только земля</APM_ToxicPurifier_Mode_OnlyGround>
+  <APM_ToxicPurifier_Mode_OnlyWastepacks>Только отходы</APM_ToxicPurifier_Mode_OnlyWastepacks>
+  <APM_ToxicPurifier_Mode_WastepacksOverGround>Отходы поверх земли</APM_ToxicPurifier_Mode_WastepacksOverGround>
+  <APM_ToxicPurifier_Mode_GroundOverWastepacks>Земля поверх отходов</APM_ToxicPurifier_Mode_GroundOverWastepacks>
+  
+</LanguageData>

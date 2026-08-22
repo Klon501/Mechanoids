@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: satellite -->
+  <APM_Mech_Satellite.label>супутник</APM_Mech_Satellite.label>
+  <!-- EN: satellites -->
+  <APM_Mech_Satellite.labelPlural>супутники</APM_Mech_Satellite.labelPlural>
+</LanguageData>

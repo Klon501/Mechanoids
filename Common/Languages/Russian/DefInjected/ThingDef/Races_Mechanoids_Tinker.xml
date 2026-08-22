@@ -2,9 +2,9 @@
 <LanguageData>
 
   <!-- EN: Tinker -->
-  <APM_Mech_Tinker.label>Мастер</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.label>Тинкер</APM_Mech_Tinker.label>
   <!-- EN: The tinker is a mechanoid that is suited for repair. It can aid in fixing buildings, as well as assist in repair jobs for mechanitor controlled mechs. In a pinch, it can project a shield on a nearby ally as well as blind enemies in a radius around a laser it can cast. -->
-  <APM_Mech_Tinker.description>Мастер это механоид, предназначенный для проведения ремонта. Он способен помогать поселению в починке построек, а также в ремонте механоидов, подконтрольных механитору. В крайнем случае он может прикрыть щитом союзника, а также ослепить лазером врагов.</APM_Mech_Tinker.description>
+  <APM_Mech_Tinker.description>Тинкер это механоид, предназначенный для проведения ремонта. Он способен помогать поселению в починке построек, а также в ремонте механоидов, подконтрольных механитору. В крайнем случае он может прикрыть щитом союзника, а также ослепить лазером врагов.</APM_Mech_Tinker.description>
   <!-- EN: left fist -->
   <APM_Mech_Tinker.tools.0.label>левый кулак</APM_Mech_Tinker.tools.0.label>
   <!-- EN: right fist -->
