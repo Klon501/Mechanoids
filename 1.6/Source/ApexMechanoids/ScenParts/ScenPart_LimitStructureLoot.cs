@@ -204,10 +204,5 @@ namespace ApexMechanoids
             comp.SetQuality(wanted, ArtGenerationContext.Outsider);
             return true;
         }
-
-        public override string Summary(Scenario scen)
-        {
-            return def.description;
-        }
     }
 }
