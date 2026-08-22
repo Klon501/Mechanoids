@@ -5,96 +5,88 @@
   <APM_Absorb.label>переработка биомассы</APM_Absorb.label>
 
   <!-- EN: Grind up target corpse, and slowly process them into chem fuel. -->
-  <APM_Absorb.description>Перемолоть труп указанный труп и начать процесс постепенной переработки его в химтопливо.</APM_Absorb.description>
+  <APM_Absorb.description>Перемалывает выбранный труп и постепенно перерабатывает его в химтопливо.</APM_Absorb.description>
 
   <!-- EN: Power Plant Mode -->
   <APM_SwitchToPowerPlantMode.label>режим электростанции</APM_SwitchToPowerPlantMode.label>
 
   <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
-  <APM_SwitchToPowerPlantMode.description>Переключиться в режим электростанции, пожертвовав подвижностью и щитом ради питания местной энергосети.</APM_SwitchToPowerPlantMode.description>
+  <APM_SwitchToPowerPlantMode.description>Переключиться в режим электростанции, жертвуя подвижностью и щитом ради питания местной энергосети.</APM_SwitchToPowerPlantMode.description>
 
   <!-- EN: "Blink" -->
   <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
 
   <!-- EN: Active onboard "blink" micro skip drive, skip to target loction. -->
-  <APM_CelerusBlink.description>Активировать бортовой миниатюрный скачковый двигатель и мгновенно переместиться в выбранную точку.</APM_CelerusBlink.description>
+  <APM_CelerusBlink.description>Активировать бортовой микро-прыжковый двигатель для мгновенного перемещения в выбранную точку.</APM_CelerusBlink.description>
 
   <!-- EN: Sun Ray -->
   <APM_SunRay.label>солнечный луч</APM_SunRay.label>
 
   <!-- EN: Fire beam at full output towards target postion, burning everything in the way. -->
-  <APM_SunRay.description>Выстрелить лучом на полной мощности в выбранную точку, выжигая всё на своём пути.</APM_SunRay.description>
+  <APM_SunRay.description>Выстрелить лучом на полной мощности, выжигая всё на своём пути.</APM_SunRay.description>
 
   <!-- EN: Mark Target -->
   <ApexMechanoids_Ability_GiveAccuracyHediff.label>отметить цель</ApexMechanoids_Ability_GiveAccuracyHediff.label>
 
   <!-- EN: Mark target and share live location info to allies, make hitting said target eaiser. -->
-  <ApexMechanoids_Ability_GiveAccuracyHediff.description>Отметить цель и начать передавать союзникам данные о её местоположении в реальном времени, что облегчит попадание по ней.</ApexMechanoids_Ability_GiveAccuracyHediff.description>
+  <ApexMechanoids_Ability_GiveAccuracyHediff.description>Отметить цель и передать её точные координаты союзникам, облегчая попадание по ней.</ApexMechanoids_Ability_GiveAccuracyHediff.description>
 
   <!-- EN: Scanner Sweep -->
   <ApexMechanoids_Ability_RevealInvisible.label>сканирование окружения</ApexMechanoids_Ability_RevealInvisible.label>
 
   <!-- EN: Scanner sweep the area, revealing invisible targets caught in sweep. -->
-  <ApexMechanoids_Ability_RevealInvisible.description>Провести сканирование области и раскрыть невидимые цели, попавшие в её радиус.</ApexMechanoids_Ability_RevealInvisible.description>
+  <ApexMechanoids_Ability_RevealInvisible.description>Просканировать область и раскрыть невидимые цели, находящиеся в радиусе действия.</ApexMechanoids_Ability_RevealInvisible.description>
 
   <!-- EN: Aluring Song -->
   <ApexMechanoids_Ability_SirenLure.label>манящая песнь</ApexMechanoids_Ability_SirenLure.label>
 
   <!-- EN: Sing a aluring song to compel the target pawn to walk towards the caster. -->
-  <ApexMechanoids_Ability_SirenLure.description>Запустить манящую песнь, вынуждающую выбранного персонажа идти к призывающему.</ApexMechanoids_Ability_SirenLure.description>
+  <ApexMechanoids_Ability_SirenLure.description>Исполнить манящую песнь, заставляющую выбранного персонажа двигаться к источнику звука.</ApexMechanoids_Ability_SirenLure.description>
 
   <!-- EN: Grappling Hook -->
   <APM_HookPawn.label>крюк-кошка</APM_HookPawn.label>
 
   <!-- EN: Fire a grappling hook at a target, and quickly retract the hook to effectively launch caster to the target, can be used on buildings and pawns. -->
-  <APM_HookPawn.description>Выстрелить крюком-кошкой по цели и быстро втянуть трос, тем самым притянуться к цели. Можно применять как на постройки, так и на персонажей.</APM_HookPawn.description>
+  <APM_HookPawn.description>Выстрелить крюком по цели и быстро втянуть трос, чтобы притянуться к ней. Можно применять как к постройкам, так и к персонажам.</APM_HookPawn.description>
 
   <!-- EN: Shield Charge -->
   <APM_ShieldCharge.label>щитовой таран</APM_ShieldCharge.label>
 
   <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
-  <APM_ShieldCharge.description>Совершить таранный рывок к персонажу, оглушая всё на своём пути.</APM_ShieldCharge.description>
+  <APM_ShieldCharge.description>Совершить таранный рывок, оглушая всех, кто окажется на пути.</APM_ShieldCharge.description>
 
   <!-- EN: Bladehopp -->
   <APM_Bladehopp.label>клинковый скачок</APM_Bladehopp.label>
 
   <!-- EN: Dash to a target followed by a quick attack. -->
-  <APM_Bladehopp.description>Стремительно броситься к цели с последующей быстрой атакой.</APM_Bladehopp.description>
+  <APM_Bladehopp.description>Стремительно броситься к цели, нанося быструю атаку по прибытии.</APM_Bladehopp.description>
 
   <!-- EN: Blinding Laser -->
   <APM_BlindingLaser.label>ослепляющий лазер</APM_BlindingLaser.label>
 
   <!-- EN: Fire a laser at target, effectively binding them for a short time. -->
-  <APM_BlindingLaser.description>Выстрелить лазером по цели, чтобы на короткое время ослепить её.</APM_BlindingLaser.description>
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, чтобы временно её ослепить.</APM_BlindingLaser.description>
 
   <!-- EN: Defence Matrix -->
   <APM_DefenceMatrix.label>защитная матрица</APM_DefenceMatrix.label>
 
-  <!-- EN: Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even
-    when cast
-    on enemies. The tinker will be focused on projecting the shield. -->
-  <APM_DefenceMatrix.description>Удалённо спроецировать персональный защитный щит на дружественного персонажа. Щит останавливает входящий урон, но при этом не позволяет вести огонь изнутри. Это может быть полезно, даже если щит наложен на врага. При этом Мастер при этом будет полностью сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+  <!-- EN: Remotely project a personal defense shield onto a friendly pawn. The shield stops incoming damage, but also prevents shooting out, so this can be useful even when cast on enemies. The tinker will be focused on projecting the shield. -->
+  <APM_DefenceMatrix.description>Удалённо проецирует персональный защитный щит на дружественного персонажа. Щит останавливает входящий урон, но не позволяет вести огонь изнутри. Это может быть полезно, даже если щит наложен на врага. Тинкер будет полностью сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
 
   <!-- EN: Shockwave -->
   <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
-
-  <!-- EN: combat command -->
-  <APM_PinpointCombatCommand.label>боевое командование</APM_PinpointCombatCommand.label>
-
-  <!-- EN: Pinpoint projects a tactical targeting aura that improves the ranged accuracy of nearby allies. -->
-  <APM_PinpointCombatCommand.description>Установить метку, которая создаст вокруг себя зону тактического наведения, повышающую точность стрельбы союзников поблизости.</APM_PinpointCombatCommand.description>
 
   <!-- EN: pulse wave -->
   <APM_PulseWave.label>импульсная волна</APM_PulseWave.label>
 
   <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
-  <APM_PulseWave.description>Механоид выпустит от себя ослепляющий акустический импульс, который оглушает и временно ослепляет всех персонажей из плоти и крови.</APM_PulseWave.description>
+  <APM_PulseWave.description>Механоид выпускает ослепляющий акустический импульс, который оглушает и временно ослепляет всех существ из плоти и крови в радиусе действия.</APM_PulseWave.description>
 
   <!-- EN: starfall -->
   <APM_Starfall.label>звездопад</APM_Starfall.label>
 
   <!-- EN: Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight. -->
-  <APM_Starfall.description>Разоритель перегружает своё орудие и выпускает один тяжёлый снаряд, который в полёте распадается на три меньших энергетических снаряда.</APM_Starfall.description>
+  <APM_Starfall.description>Разоритель перегружает свою артиллерийскую установку и выпускает тяжёлый снаряд, который в полёте распадается на три энергетических заряда.</APM_Starfall.description>
 
   <!-- EN: power beam -->
   <APM_PowerBeam.label>энергетический луч</APM_PowerBeam.label>
@@ -103,7 +95,7 @@
   <APM_UltimateSacrifice.label>последняя жертва</APM_UltimateSacrifice.label>
 
   <!-- EN: One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius -->
-  <APM_UltimateSacrifice.description>Один из Завоевателей может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_UltimateSacrifice.description>
+  <APM_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_UltimateSacrifice.description>
 
   <!-- EN: Press The Attack -->
   <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
@@ -113,23 +105,23 @@
 
   <APM_Ability_CryptoSwallow.label>криопоглощение</APM_Ability_CryptoSwallow.label>
 
-  <APM_Ability_CryptoSwallow.description>Поглотить живую пешку или тело и запечатать внутри внутренней криокамеры до выпуска.</APM_Ability_CryptoSwallow.description>
+  <APM_Ability_CryptoSwallow.description>Поглощает живого персонажа или труп и запечатывает его во внутренней криокамере.</APM_Ability_CryptoSwallow.description>
 
   <APM_PulseLongjump.label>мех-дальний прыжок</APM_PulseLongjump.label>
 
-  <APM_PulseLongjump.description>Позволяет механоиду прыгнуть в отдалённую точку с помощью особых сверхбыстрых механических мышц.</APM_PulseLongjump.description>
+  <APM_PulseLongjump.description>Позволяет механоиду совершить прыжок на большую дистанцию, используя сверхбыстрые механические приводы.</APM_PulseLongjump.description>
 
   <!-- EN: siren's song -->
   <APM_SirenSong.label>песнь сирены</APM_SirenSong.label>
 
   <!-- EN: The Siren emits a pleasant tune that lifts the spirits of nearby organic allies and briefly helps them recover recreation. -->
-  <APM_SirenSong.description>Сирена издаёт приятную мелодию, поднимающую настроение органическим союзникам поблизости и дающую им возможность немного передохнуть и развлечься.</APM_SirenSong.description>
+  <APM_SirenSong.description>Сирена транслирует приятную мелодию, поднимающую настроение органическим союзникам и дающую им возможность передохнуть.</APM_SirenSong.description>
 
   <!-- EN: overdrive -->
   <APM_TerminusOverdrive.label>перегрузка</APM_TerminusOverdrive.label>
 
   <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
-  <APM_TerminusOverdrive.description>Терминус направляет энергию внутрь себя и ненадолго входит в перегруженное боевое состояние. Пока оно активно, он сбрасывает плащ, бьёт сильнее, чаще и становится устойчивее к сбиванию с ног.</APM_TerminusOverdrive.description>
+  <APM_TerminusOverdrive.description>Терминус направляет энергию внутрь себя и входит в состояние боевой перегрузки. Пока эффект активен, он сбрасывает плащ, бьёт сильнее, быстрее восстанавливается между ударами и становится устойчивее к оглушению.</APM_TerminusOverdrive.description>
 
   <!-- EN: severing edge -->
   <SeveringEdge.label>рассекающее лезвие</SeveringEdge.label>
@@ -357,7 +349,7 @@
   <APM_Frostivus.corePart.parts.5.customLabel>криокамера</APM_Frostivus.corePart.parts.5.customLabel>
 
   <!-- EN: gazer -->
-  <APM_Gazer.label>соглядатай</APM_Gazer.label>
+  <APM_Gazer.label>созерцатель</APM_Gazer.label>
 
   <!-- EN: left cooling system -->
   <APM_Gazer.corePart.parts.0.parts.1.customLabel>левая система охлаждения</APM_Gazer.corePart.parts.0.parts.1.customLabel>
@@ -565,7 +557,7 @@
   <!-- EN: right foot -->
   <APM_Terminus.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Terminus.corePart.parts.4.parts.0.customLabel>
 
-  <APM_Tinker.label>механик</APM_Tinker.label>
+  <APM_Tinker.label>тинкер</APM_Tinker.label>
 
   <APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>
 
@@ -734,28 +726,28 @@
   <APM_RightAegisShield.labelShort>щит</APM_RightAegisShield.labelShort>
 
   <!-- EN: {0} has been killed. -->
-  <APM_SunRay.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRay.deathMessage>
+  <APM_SunRay.deathMessage>{PAWN_nameDef} погиб(а).</APM_SunRay.deathMessage>
 
   <!-- EN: sun ray -->
   <APM_SunRayGun.label>солнечный луч</APM_SunRayGun.label>
 
   <!-- EN: {0} has been killed. -->
-  <APM_SunRayGun.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</APM_SunRayGun.deathMessage>
+  <APM_SunRayGun.deathMessage>{PAWN_nameDef} погиб(а).</APM_SunRayGun.deathMessage>
 
   <!-- EN: push damage -->
   <Push.label>толчок</Push.label>
 
   <!-- EN: {0} has been ... to death. -->
-  <Push.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</Push.deathMessage>
+  <Push.deathMessage>{PAWN_nameDef} погиб(а).</Push.deathMessage>
 
   <!-- EN: {0} was annihilated by a shockwave. -->
-  <APM_Shockwave.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито} ударной волной.</APM_Shockwave.deathMessage>
+  <APM_Shockwave.deathMessage>{PAWN_nameDef} был(а) уничтожен(а) ударной волной.</APM_Shockwave.deathMessage>
 
   <!-- EN: mega beam -->
   <MegaBeam.label>мегалуч</MegaBeam.label>
 
   <!-- EN: {0} has been killed. -->
-  <MegaBeam.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита : убито}.</MegaBeam.deathMessage>
+  <MegaBeam.deathMessage>{PAWN_nameDef} погиб(а).</MegaBeam.deathMessage>
 
   <APM_IngestorAbsorbCorpse.label>переработать биомассу</APM_IngestorAbsorbCorpse.label>
 
@@ -763,21 +755,21 @@
   <APM_Toxicity.label>уровень загрязнения</APM_Toxicity.label>
 
   <!-- EN: toxic level in local atmosphere. -->
-  <APM_Toxicity.description>Уровень загрязнения воздуха на этой карте.</APM_Toxicity.description>
+  <APM_Toxicity.description>Уровень загрязнения атмосферы в данной локации.</APM_Toxicity.description>
 
   <!-- EN: blinded by laser -->
   <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
 
   <!-- EN: vastly reduced sight capacity due to been blinded by laser. -->
-  <APM_LaserBlind.description>Способность видеть сильно снижена из-за ослепления лазерным лучом.</APM_LaserBlind.description>
+  <APM_LaserBlind.description>Зрение сильно ограничено из-за воздействия лазерного луча.</APM_LaserBlind.description>
 
   <APM_Hediff_Devoured.label>поглощение</APM_Hediff_Devoured.label>
 
-  <APM_Hediff_Devoured.description>Запечатан внутри криокамеры Frostivus. Биологические процессы приостановлены до выпуска.</APM_Hediff_Devoured.description>
+  <APM_Hediff_Devoured.description>Запечатан внутри криокамеры «Морозуса». Жизненные показатели приостановлены.</APM_Hediff_Devoured.description>
 
   <APM_AbsorbedThing.label>переработка биомассы</APM_AbsorbedThing.label>
 
-  <APM_AbsorbedThing.description>Переработка поглощенной биомассы в химтопливо.</APM_AbsorbedThing.description>
+  <APM_AbsorbedThing.description>Перерабатывает поглощённую биомассу в химтопливо.</APM_AbsorbedThing.description>
 
   <!-- EN: Smokescreen -->
   <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
@@ -786,7 +778,7 @@
   <APM_InDuel.label>в поединке</APM_InDuel.label>
 
   <!-- EN: The Duel Trial - Challenges the chosen enemy pawn to a duel, forcing both opponents into close combat for a brief period. Abilities and ranged attacks are deactivated. A visual ""arena"" is automatically created around the participants of the duel for the duration of the ability. Other characters cannot target the duel participants. If one combatant dies in the duel, the victor gains a potent temporary buff. If the duel does not end with death (time has expired), both participants receive a significant penalty. The participants of the duel receive periodic damage every second of the duel. This encourages aggression and ensures that the duel rarely ends in a ""draw"" in time. Any recovery of the participants' health during the duel is blocked (except for possible lifestyles from attacks) -->
-  <APM_InDuel.description>«Испытание поединком» бросает вызов выбранному вражескому персонажу, вынуждая оппонентов на короткое время вступить в ближний бой. Способности и дальние атаки отключаются. Вокруг участников поединка на время действия способности автоматически создаётся визуальная «арена». Другие персонажи не могут выбирать участников поединка целью. Если один из оппонентов погибает в поединке, победитель получает мощный временный бонус. Если поединок не завершается смертью (истекло время), оба участника получают значительный штраф. Участники поединка получают периодический урон каждую секунду поединка. Это поощряет агрессию и гарантирует, что поединок будет редко заканчиваться ничьей по истечении времени. Любое восстановление здоровья участников во время поединка блокируется (за исключением возможного вампиризма от атак).</APM_InDuel.description>
+  <APM_InDuel.description>«Испытание поединком» бросает вызов выбранному врагу, вынуждая оппонентов на короткое время вступить в ближний бой. Способности и дальние атаки отключаются. Вокруг участников автоматически создаётся визуальная «арена», вне которой их нельзя выбрать целью. Если один из противников погибает, победитель получает мощный бонус. Если поединок не заканчивается смертью, оба участника получают значительный штраф. Постоянный периодический урон поощряет агрессивную игру. Восстановление здоровья (кроме вампиризма) во время поединка заблокировано.</APM_InDuel.description>
 
   <!-- EN: duel winner -->
   <APM_DuelWinner.label>победитель поединка</APM_DuelWinner.label>
@@ -815,17 +807,11 @@
   <!-- EN: duel draw -->
   <APM_DuelDraw.label>ничья в поединке</APM_DuelDraw.label>
 
-  <!-- EN: targeting uplink -->
-  <APM_PinpointCombatCommandBuff.label>канал наведения</APM_PinpointCombatCommandBuff.label>
-
-  <!-- EN: This pawn is receiving targeting data from a nearby Pinpoint. -->
-  <APM_PinpointCombatCommandBuff.description>Этот персонаж получает данные для наведения от находящегося поблизости Наводчика.</APM_PinpointCombatCommandBuff.description>
-
   <!-- EN: flash-blinded -->
   <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
 
   <!-- EN: An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time. -->
-  <APM_PulseWaveBlind.description>Яркая вспышка и резкий скачок давления перегрузили датчики этого персонажа, резко снизив его зрение на короткое время.</APM_PulseWaveBlind.description>
+  <APM_PulseWaveBlind.description>Яркая вспышка и скачок давления перегрузили датчики персонажа, резко ограничив его зрение на короткое время.</APM_PulseWaveBlind.description>
 
   <!-- EN: rampage -->
   <APM_Rampage.label>неистовство</APM_Rampage.label>
@@ -834,7 +820,7 @@
   <APM_Hediff_UltimateSacrifice.label>высшая жертва</APM_Hediff_UltimateSacrifice.label>
 
   <!-- EN: Ultimate Sacrifice - One conqueror can sacrifice himself to give a powerful buff to all allied conquerors in radius. -->
-  <APM_Hediff_UltimateSacrifice.description>Один из Завоевателей может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
+  <APM_Hediff_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы наделить всех союзных Завоевателей в радиусе действия мощным усилением.</APM_Hediff_UltimateSacrifice.description>
 
   <!-- EN: Press The Attack -->
   <APM_Hediff_PressTheAttack.label>натиск</APM_Hediff_PressTheAttack.label>
@@ -843,33 +829,33 @@
   <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
 
   <!-- EN: This pawn is carried by a soothing mechanical chorus, feeling lighter and more energized. -->
-  <APM_Hediff_SirenSong.description>Этот персонаж охвачен убаюкивающим механическим хором, чувствуя себя легче и бодрее.</APM_Hediff_SirenSong.description>
+  <APM_Hediff_SirenSong.description>Персонаж охвачен умиротворяющим механическим хором, чувствуя прилив бодрости и лёгкости.</APM_Hediff_SirenSong.description>
 
   <!-- EN: overdrive -->
   <APM_Hediff_TerminusOverdrive.label>перегрузка</APM_Hediff_TerminusOverdrive.label>
 
   <!-- EN: Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression. -->
-  <APM_Hediff_TerminusOverdrive.description>Терминус направляет мощный поток энергии на повышение своих боевых характеристик, отбрасывая плащ и сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_TerminusOverdrive.description>Терминус направляет поток энергии на повышение боевой эффективности, отбрасывая сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
 
   <!-- EN: Bashing into TargetA. -->
-  <APM_BashStun.reportString>врезается в TargetA</APM_BashStun.reportString>
+  <APM_BashStun.reportString>таранит TargetA.</APM_BashStun.reportString>
 
   <!-- EN: Bashing into TargetA. -->
-  <APM_BashDamage.reportString>врезается в TargetA</APM_BashDamage.reportString>
+  <APM_BashDamage.reportString>таранит TargetA.</APM_BashDamage.reportString>
 
   <!-- EN: operating remote uplink. -->
-  <APM_RemoteControlUplink.reportString>соединяется с удалённым каналом связи</APM_RemoteControlUplink.reportString>
+  <APM_RemoteControlUplink.reportString>устанавливает удалённую связь.</APM_RemoteControlUplink.reportString>
 
   <!-- EN: retracting grappling hook towards TargetA. -->
-  <APM_HookPawn.reportString>притягивается к TargetA</APM_HookPawn.reportString>
+  <APM_HookPawn.reportString>притягивается к TargetA.</APM_HookPawn.reportString>
 
-  <APM_FrostivusTakeFoodToInventory.reportString>сохраняет TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+  <APM_FrostivusTakeFoodToInventory.reportString>запасает TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
 
   <APM_FrostivusUnloadFoodToStorage.reportString>выгружает TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
 
-  <APM_FrostivusManualUnloadFood.reportString>выгружает сохраненную еду.</APM_FrostivusManualUnloadFood.reportString>
+  <APM_FrostivusManualUnloadFood.reportString>выгружает запасы еды.</APM_FrostivusManualUnloadFood.reportString>
 
-  <APM_FrostivusReleaseDevouredContents.reportString>выпускает сохраненное существо.</APM_FrostivusReleaseDevouredContents.reportString>
+  <APM_FrostivusReleaseDevouredContents.reportString>освобождает поглощённое существо.</APM_FrostivusReleaseDevouredContents.reportString>
 
   <!-- EN: dueling -->
   <APM_Duel.label>поединок</APM_Duel.label>
@@ -884,7 +870,7 @@
   <APM_Duel.beginLetterLabel>поединок</APM_Duel.beginLetterLabel>
 
   <!-- EN: {0}'s duel has come to an end. -->
-  <APM_Duel.recoveryMessage>Поединок {0} подошёл к концу.</APM_Duel.recoveryMessage>
+  <APM_Duel.recoveryMessage>Поединок {0} завершён.</APM_Duel.recoveryMessage>
 
   <!-- EN: Aegis -->
   <APM_Mech_Aegis.label>эгида</APM_Mech_Aegis.label>
@@ -947,10 +933,10 @@
   <APM_Mech_Frostivus.labelPlural>морозусы</APM_Mech_Frostivus.labelPlural>
 
   <!-- EN: gazer -->
-  <APM_Mech_Gazer.label>соглядатай</APM_Mech_Gazer.label>
+  <APM_Mech_Gazer.label>созерцатель</APM_Mech_Gazer.label>
 
   <!-- EN: gazers -->
-  <APM_Mech_Gazer.labelPlural>соглядатаи</APM_Mech_Gazer.labelPlural>
+  <APM_Mech_Gazer.labelPlural>созерцатели</APM_Mech_Gazer.labelPlural>
 
   <!-- EN: haze -->
   <APM_Mech_Haze.label>завеса</APM_Mech_Haze.label>
@@ -982,12 +968,6 @@
   <!-- EN: mauls -->
   <APM_Mech_Maul.labelPlural>крушители</APM_Mech_Maul.labelPlural>
 
-  <!-- EN: pinpoint -->
-  <APM_Mech_Pinpoint.label>наводчик</APM_Mech_Pinpoint.label>
-
-  <!-- EN: pinpoints -->
-  <APM_Mech_Pinpoint.labelPlural>наводчики</APM_Mech_Pinpoint.labelPlural>
-
   <!-- EN: pulse -->
   <APM_Mech_Pulse.label>импульс</APM_Mech_Pulse.label>
 
@@ -995,7 +975,7 @@
   <APM_Mech_Pulse.labelPlural>импульсы</APM_Mech_Pulse.labelPlural>
 
   <!-- EN: ravager -->
-  <APM_Mech_Ravager.label>разоритель</APM_Mech_Ravager.label>
+  <APM_Mech_Ravager.label>разоритель</APM_Ravager.label>
 
   <!-- EN: ravagers -->
   <APM_Mech_Ravager.labelPlural>разорители</APM_Mech_Ravager.labelPlural>
@@ -1025,10 +1005,10 @@
   <APM_Mech_Terminus_Boss.labelPlural>терминусы</APM_Mech_Terminus_Boss.labelPlural>
 
   <!-- EN: tinker -->
-  <APM_Mech_Tinker.label>мастер</APM_Mech_Tinker.label>
+  <APM_Mech_Tinker.label>тинкер</APM_Mech_Tinker.label>
 
   <!-- EN: tinkers -->
-  <APM_Mech_Tinker.labelPlural>мастера</APM_Mech_Tinker.labelPlural>
+  <APM_Mech_Tinker.labelPlural>тинкеры</APM_Mech_Tinker.labelPlural>
 
   <!-- EN: vassal -->
   <APM_Mech_Vassal.label>вассал</APM_Mech_Vassal.label>
@@ -1037,7 +1017,7 @@
   <APM_Mech_Vassal.labelPlural>вассалы</APM_Mech_Vassal.labelPlural>
 
   <!-- EN: Gestate a frostivus mechanoid. -->
-  <APM_Frostivus.description>Вырастить механоида-морозуса.</APM_Frostivus.description>
+  <APM_Frostivus.description>Вырастить механоида «Морозус».</APM_Frostivus.description>
 
   <!-- EN: mech gestation speed factor -->
   <APM_GestationFactor.label>коэффициент скорости гестации</APM_GestationFactor.label>
@@ -1052,7 +1032,7 @@
   <APM_Apparel_MechamancerSuit.label>костюм мехаманта</APM_Apparel_MechamancerSuit.label>
 
   <!-- EN: A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor. -->
-  <APM_Apparel_MechamancerSuit.description>Силовой бронекостюм, полный разного снаряжения для помощи механитору. Костюм мехаманта значительно увеличивает пропускную способность механитора, обеспечивая при этом персональный энергетический щит и сопротивление урону, сравнимое с обычной силовой бронёй.</APM_Apparel_MechamancerSuit.description>
+  <APM_Apparel_MechamancerSuit.description>Силовой бронекостюм со встроенным вспомогательным оборудованием для механитора. Костюм значительно увеличивает пропускную способность канала управления, а также обеспечивает работу персонального энергетического щита и уровень защиты, сравнимый с тяжёлой силовой бронёй.</APM_Apparel_MechamancerSuit.description>
 
   <!-- EN: mechamancer helmet -->
   <APM_Apparel_ArmorHelmetMechamancerHelmet.label>шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
@@ -1064,63 +1044,61 @@
   <APM_MechbandAntenna_Dominus.label>механоидный узел</APM_MechbandAntenna_Dominus.label>
 
   <!-- EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
-  <APM_MechbandAntenna_Dominus.description>Сигнальное устройство механоидной сети, более мощное, чем механоидный массив. При активации издаёт мощный сигнальный импульс, который привлекает дикого сверхтяжёлого механоида, атакующего вместе со своей охраной. Если вы сможете победить его, то в награду получите специальные технологии с его тела. Сигнальный импульс сжигает передатчик, поэтому его можно использовать лишь один раз.</APM_MechbandAntenna_Dominus.description>
+  <APM_MechbandAntenna_Dominus.description>Более мощное сигнальное устройство, чем стандартный массив. При активации издаёт импульс сверхвысокой мощности, привлекающий механоида-командира с охраной. Победив его, можно изъять уникальные технологии. Сигнальный импульс сжигает устройство, поэтому оно одноразовое.</APM_MechbandAntenna_Dominus.description>
 
   <!-- EN: Summon dominus threat -->
-  <APM_MechbandAntenna_Dominus.comps.0.useLabel>Призвать угрозу Доминуса</APM_MechbandAntenna_Dominus.comps.0.useLabel>
+  <APM_MechbandAntenna_Dominus.comps.0.useLabel>Призвать угрозу «Доминуса»</APM_MechbandAntenna_Dominus.comps.0.useLabel>
 
   <!-- EN: Mechband Conduit -->
   <APM_MechbandAntenna_Terminus.label>механоидный канал</APM_MechbandAntenna_Terminus.label>
 
   <!-- EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
-  <APM_MechbandAntenna_Terminus.description>Сигнальное устройство механоидной сети, более мощное, чем механоидный массив. При активации издаёт мощный сигнальный импульс, который привлекает дикого сверхтяжёлого механоида, атакующего вместе со своей охраной. Если вы сможете победить его, то в награду получите специальные технологии с его тела. Сигнальный импульс сжигает передатчик, поэтому его можно использовать лишь один раз.</APM_MechbandAntenna_Terminus.description>
+  <APM_MechbandAntenna_Terminus.description>Более мощное сигнальное устройство, чем стандартный массив. При активации издаёт импульс сверхвысокой мощности, привлекающий механоида-командира с охраной. Победив его, можно изъять уникальные технологии. Сигнальный импульс сжигает устройство, поэтому оно одноразовое.</APM_MechbandAntenna_Terminus.description>
 
   <!-- EN: Summon dominus threat -->
-  <APM_MechbandAntenna_Terminus.comps.0.useLabel>Призвать угрозу Доминуса</APM_MechbandAntenna_Terminus.comps.0.useLabel>
+  <APM_MechbandAntenna_Terminus.comps.0.useLabel>Призвать угрозу «Терминуса»</APM_MechbandAntenna_Terminus.comps.0.useLabel>
 
   <!-- EN: Mechband Pylon -->
   <APM_MechbandAntenna_Celerus.label>механоидный пилон</APM_MechbandAntenna_Celerus.label>
 
   <!-- EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
-  <APM_MechbandAntenna_Celerus.description>Сигнальное устройство механоидной сети, более мощное, чем механоидный узел. При активации издаёт мощный сигнальный импульс, который привлекает дикого сверхтяжёлого механоида, атакующего вместе со своей охраной. Если вы сможете победить его, то в награду получите специальные технологии с его тела. Сигнальный импульс сжигает передатчик, поэтому его можно использовать лишь один раз.</APM_MechbandAntenna_Celerus.description>
+  <APM_MechbandAntenna_Celerus.description>Более мощное сигнальное устройство, чем механоидный узел. При активации издаёт импульс сверхвысокой мощности, привлекающий механоида-командира с охраной. Победив его, можно изъять уникальные технологии. Сигнальный импульс сжигает устройство, поэтому оно одноразовое.</APM_MechbandAntenna_Celerus.description>
 
   <!-- EN: Summon dominus threat -->
-  <APM_MechbandAntenna_Celerus.comps.0.useLabel>Призвать угрозу Доминуса</APM_MechbandAntenna_Celerus.comps.0.useLabel>
+  <APM_MechbandAntenna_Celerus.comps.0.useLabel>Призвать угрозу «Целеруса»</APM_MechbandAntenna_Celerus.comps.0.useLabel>
 
   <!-- EN: Mechband Array -->
   <APM_MechbandAntenna_Gazer.label>механоидный массив</APM_MechbandAntenna_Gazer.label>
 
   <!-- EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
-  <APM_MechbandAntenna_Gazer.description>Сигнальное устройство механоидной сети, более мощное, чем механоидный узел. При активации издаёт мощный сигнальный импульс, который привлекает дикого сверхтяжёлого механоида, атакующего вместе со своей охраной. Если вы сможете победить его, то в награду получите специальные технологии с его тела. Сигнальный импульс сжигает передатчик, поэтому его можно использовать лишь один раз.</APM_MechbandAntenna_Gazer.description>
+  <APM_MechbandAntenna_Gazer.description>Более мощное сигнальное устройство, чем механоидный узел. При активации издаёт импульс сверхвысокой мощности, привлекающий механоида-командира с охраной. Победив его, можно изъять уникальные технологии. Сигнальный импульс сжигает устройство, поэтому оно одноразовое.</APM_MechbandAntenna_Gazer.description>
 
   <!-- EN: Summon dominus threat -->
-  <APM_MechbandAntenna_Gazer.comps.0.useLabel>Призвать угрозу Доминуса</APM_MechbandAntenna_Gazer.comps.0.useLabel>
+  <APM_MechbandAntenna_Gazer.comps.0.useLabel>Призвать угрозу Созерцателя</APM_MechbandAntenna_Gazer.comps.0.useLabel>
 
   <!-- EN: purifier station -->
   <APM_Building_ToxicPurifier.label>станция очистки</APM_Building_ToxicPurifier.label>
 
   <!-- EN: The pollution reclaimer is an imperfect solution to a disastrous problem. It cleans pollution from a large area around it in addition to vaporizing toxic wastepacks. Its function is imperfect due to the drastic rate it runs at and It has a constant chance to cause several severe ecological events such as the following: Releasing toxic waste into the air, causing a toxic downpour, generating a toxic smog in the local area up to several world tiles around where it is placed and spoiling relations over time with local neighboring factions. While it works well, ecologists and mechanitors alike still argue whether the side effects are worth the hassle. -->
-  <APM_Building_ToxicPurifier.description>Эта постройка для восстановления от загрязнения является несовершенным решением катастрофической проблемы. Она очищает загрязнение на большой территории вокруг себя, а также испаряет отходны. Её работа считается несовершенной из-за чрезмерно высокой интенсивности, с которой она функционирует. Таким образом, работа сопряжена с постоянным риском вызвать ряд серьёзных экологических событий, таких как: выброс токсичных отходов прямо в небо с последующим токсичными осадками, образование токсичного смога на карте мира в радиусе нескольких клеток вокруг места установки, а также постепенное ухудшение отношений с соседними фракциями. Несмотря на то, что устройство неплохо справляется со своей задачей, экологи и механиторы до сих пор спорят, стоят ли побочные эффекты таких проблем.</APM_Building_ToxicPurifier.description>
+  <APM_Building_ToxicPurifier.description>Постройка для рекультивации загрязнённых земель — неидеальное решение катастрофической проблемы. Она очищает обширную область и испаряет токсичные пакеты отходов. Из-за крайне высокой интенсивности работы устройство постоянно рискует вызвать экологические бедствия: токсичные ливни, ядовитый смог в радиусе нескольких клеток карты мира, а также постепенное ухудшение отношений с соседними фракциями. Учёные и механиторы до сих пор спорят, стоят ли выгоды от работы станции таких рисков.</APM_Building_ToxicPurifier.description>
 
   <!-- EN: Dynamo powered generator -->
   <APM_DynamoPoweredGenerator.label>динамо-генератор</APM_DynamoPoweredGenerator.label>
 
   <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
-  <APM_DynamoPoweredGenerator.description>Производит энергию, потребляя химическое топливо. Необходимо заправлять вручную.</APM_DynamoPoweredGenerator.description>
+  <APM_DynamoPoweredGenerator.description>Вырабатывает энергию за счёт сжигания химтоплива. Требует ручной дозаправки.</APM_DynamoPoweredGenerator.description>
 
   <!-- EN: Gazer Emplacement -->
-  <APM_GazerBeam.label>огневая позиция Соглядатая</APM_GazerBeam.label>
+  <APM_GazerBeam.label>огневая позиция Созерцателя</APM_GazerBeam.label>
 
-  <!-- EN: The grazer emplacement is mainly composed of the primary ocular beam emitter of a Gazer mechanoid ripped off and attached to a reinforced metal base. While
-    extremely inefficient, it can emit a massive beam of energy in a single direction, destroying foe and fortification alike in its path. It is not capable of moving in
-    any direction. -->
-  <APM_GazerBeam.description>Огневая позиция Соглядатая состоит из глазной лазерной установки, вырванной из механоида-Соглядатая и закреплённой на усиленном металлическом основании. Несмотря на крайнюю неэффективность, она способна испускать в одном направлении мощный луч энергии, уничтожающий на своём пути и врагов, и укрепления. Передвигаться она не способна.</APM_GazerBeam.description>
+  <!-- EN: The grazer emplacement is mainly composed of the primary ocular beam emitter of a Gazer mechanoid ripped off and attached to a reinforced metal base. While extremely inefficient, it can emit a massive beam of energy in a single direction, destroying foe and fortification alike in its path. It is not capable of moving in any direction. -->
+  <APM_GazerBeam.description>Огневая позиция Созерцателя состоит из лазерного эмиттера, демонтированного с механоида-Созерцателя и установленного на усиленное основание. Крайне неэффективна в обслуживании, но способна испускать мощный луч, уничтожающий всё на своём пути. Передвигаться не может.</APM_GazerBeam.description>
 
   <!-- EN: charge blaster -->
   <APM_Gun_Conqueror_AR.label>бластер</APM_Gun_Conqueror_AR.label>
 
   <!-- EN: A charged-shot assault rifle. Weaker than a charge rifle, but more accurate. -->
-  <APM_Gun_Conqueror_AR.description>Энергетическая штурмовая винтовка. Слабее энерговинтовки, но точнее.</APM_Gun_Conqueror_AR.description>
+  <APM_Gun_Conqueror_AR.description>Энергетическая штурмовая винтовка. Уступает в мощности стандартной энерговинтовке, но превосходит её в точности.</APM_Gun_Conqueror_AR.description>
 
   <!-- EN: stock -->
   <APM_Gun_Conqueror_AR.tools.0.label>приклад</APM_Gun_Conqueror_AR.tools.0.label>
@@ -1144,7 +1122,7 @@
   <APM_Gun_Conqueror_LMG.label>энергопулемёт</APM_Gun_Conqueror_LMG.label>
 
   <!-- EN: A pulse-charged rapid-fire blaster for area suppressive fire. Lighter than the heavy charge blaster but more accurate. -->
-  <APM_Gun_Conqueror_LMG.description>Энергетический скорострельный бластер для ведения огня на подавление. Легче тяжёлого бластера, но точнее.</APM_Gun_Conqueror_LMG.description>
+  <APM_Gun_Conqueror_LMG.description>Скорострельный бластер для ведения подавляющего огня. Легче тяжёлого бластера, но более точен.</APM_Gun_Conqueror_LMG.description>
 
   <!-- EN: barrel -->
   <APM_Gun_Conqueror_LMG.tools.0.label>ствол</APM_Gun_Conqueror_LMG.tools.0.label>
@@ -1162,13 +1140,13 @@
   <APM_Weapon_DominusSpear.tools.2.label>лезвие</APM_Weapon_DominusSpear.tools.2.label>
 
   <!-- EN: Dominus' Spear (Boss) -->
-  <APM_Weapon_DominusSpearBoss.label>копьё Доминуса (босса)</APM_Weapon_DominusSpearBoss.label>
+  <APM_Weapon_DominusSpearBoss.label>копьё Доминуса (босс)</APM_Weapon_DominusSpearBoss.label>
 
   <!-- EN: handle -->
   <APM_Weapon_DominusSpearBoss.tools.0.label>рукоять</APM_Weapon_DominusSpearBoss.tools.0.label>
 
   <!-- EN: point -->
-  <APM_Weapon_DominusSpearBoss.tools.1.label>остриё</APM_Weapon_DominusSpearBoss.tools.1.label>
+  <APM_Weapon_DominusSpearBoss.tools.1.label>остриё</APM_Weapon_DominusSpearBoss.tools.1.castableLabel>
 
   <!-- EN: edge -->
   <APM_Weapon_DominusSpearBoss.tools.2.label>лезвие</APM_Weapon_DominusSpearBoss.tools.2.label>
@@ -1180,10 +1158,10 @@
   <APM_Smokescreen.label>газ дымовой завесы</APM_Smokescreen.label>
 
   <!-- EN: gazer emplacement -->
-  <APM_GazerEmplacement.label>огневая позиция Соглядатая</APM_GazerEmplacement.label>
+  <APM_GazerEmplacement.label>огневая позиция Созерцателя</APM_GazerEmplacement.label>
 
   <!-- EN: A reinforced fixed laser emplacement built around a salvaged Gazer ocular emitter. It cannot traverse after deployment. When manually aimed within its frontal firing arc, it releases the same devastating Sun Ray beam used by a Gazer and burns through everything caught in its path, at an extreme power cost. -->
-  <APM_GazerEmplacement.description>Укреплённая неподвижная лазерная огневая точка, организованная вокруг восстановленной лазерной установки Соглядатая. После установки не может быть перемещена. При ручном наведении в пределах своего сектора стрельбы способна выпускать разрушительный «Солнечный луч», аналогичный тому, что использует Соглядатай, выжигая всё на своём пути ценой огромных затрат энергии.</APM_GazerEmplacement.description>
+  <APM_GazerEmplacement.description>Укреплённая огневая точка, созданная на основе восстановленного эмиттера Созерцателя. После установки не может поворачиваться. При ручном наведении в пределах своего сектора выпускает разрушительный «Солнечный луч», выжигающий всё на своём пути ценой огромных энергозатрат.</APM_GazerEmplacement.description>
 
   <!-- EN: laser -->
   <APM_Gazer_Laser.label>лазер</APM_Gazer_Laser.label>
@@ -1192,19 +1170,19 @@
   <APM_MechCommandCasket.label>командная капсула</APM_MechCommandCasket.label>
 
   <!-- EN: The mech command casket is a fusion of mechlink and cryptosleep casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them. -->
-  <APM_MechCommandCasket.description>Командная капсула механоидов представляет собой слияние технологий мехлинка и капсулы криптосна, позволяющее находящемуся внутри механитору управлять своими механоидами из относительной безопасности капсулы. Усиливающие сигнал возможности этой машины позволяют осуществлять контроль над механоидами даже за много клеток карты мира от них.</APM_MechCommandCasket.description>
+  <APM_MechCommandCasket.description>Командная капсула — гибрид технологий мехлинка и криптосна, позволяющий механитору управлять своими механоидами из относительной безопасности. Усилитель сигнала позволяет контролировать юниты, находясь за несколько клеток карты мира от них.</APM_MechCommandCasket.description>
 
   <!-- EN: mech gestator amplifier -->
   <APM_GestatorAmplifier.label>усилитель гестатора механоидов</APM_GestatorAmplifier.label>
 
   <!-- EN: Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to. -->
-  <APM_GestatorAmplifier.description>Военные технологии роя механоидов были украдены и попали в органические руки. Это привело к созданию данного усилителя. Он увеличивает скорость работы во всех гестаторах механоидов поблизости.</APM_GestatorAmplifier.description>
+  <APM_GestatorAmplifier.description>Украденная военная технология Роя, попавшая в органические руки. Увеличивает скорость гестации у всех расположенных поблизости гестаторов.</APM_GestatorAmplifier.description>
 
   <!-- EN: pulse shotgun -->
   <APM_Gun_Pulse_Shotgun.label>импульсный дробовик</APM_Gun_Pulse_Shotgun.label>
 
   <!-- EN: A pulse-charged shotgun that fires two heavy bursts, releasing unstable energy on impact. -->
-  <APM_Gun_Pulse_Shotgun.description>Энергетический дробовик, выпускающий сразу два мощных залпа, высвобождающих нестабильную энергию при попадании.</APM_Gun_Pulse_Shotgun.description>
+  <APM_Gun_Pulse_Shotgun.description>Энергетический дробовик, выпускающий два мощных залпа, высвобождающих нестабильную энергию при попадании.</APM_Gun_Pulse_Shotgun.description>
 
   <!-- EN: barrel -->
   <APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
@@ -1213,7 +1191,7 @@
   <APM_Pulse_Proj.label>импульсный снаряд</APM_Pulse_Proj.label>
 
   <!-- EN: "The Aegis is a mighty mechanoid that sacrifices offensive capabilities for defensive mastery. The phrase 'The best defense is a good offense' rings true with the Aegis' dual shields." -->
-  <APM_Mech_Aegis.description>Эгида является могучим механоидом, жертвующим наступательной мощью ради непревзойдённого мастерства обороны. Фраза «Лучшая защита — это нападение» как нельзя точно описывает его парные щиты.</APM_Mech_Aegis.description>
+  <APM_Mech_Aegis.description>«Эгида» — могучий механоид, жертвующий наступательной мощью ради непревзойдённого мастерства защиты. С парными щитами этого юнита фраза «Лучшая защита — это нападение» обретает новый смысл.</APM_Mech_Aegis.description>
 
   <!-- EN: left shield -->
   <APM_Mech_Aegis.tools.0.label>левый щит</APM_Mech_Aegis.tools.0.label>
@@ -1222,7 +1200,7 @@
   <APM_Mech_Aegis.tools.1.label>правый щит</APM_Mech_Aegis.tools.1.label>
 
   <!-- EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Japan during its Sengoku period, the swift and stealthy Celerus is not any weaker for its speed. It has the ability to skip itself short distances around it as well as create a smokescreen to hinder enemies perception of it and anything around it, additionally becoming psychically imperceptible in this area. On top of those effects, enemies will receive periodic. -->
-  <APM_Mech_Celerus.description>Разум Архотека создал три могущественных модели механоидов в попытках создать универсального командира для всех механоидных сил. Целерус был вдохновлён Японией Старой Земли эпохи Сэнгоку. Этот механоид быстр и скрытен, но это не делает его слабее. Целерус способен телепортироваться на короткие расстояния, а также создавать дымовую завесу, мешающую врагам видеть его и что-либо вокруг, и становясь психически неразличимым внутри завесы. Вдобавок ко всему враги внутри завесы будут получать периодический урон.</APM_Mech_Celerus.description>
+  <APM_Mech_Celerus.description>Разум Архотеков создал три модели механоидов, пытаясь вывести идеального командира. Целерус, вдохновлённый эпохой Сэнгоку, быстр и скрытен. Он способен телепортироваться на короткие дистанции и создавать дымовую завесу, скрывающую его и союзников от обнаружения, становясь при этом психически незаметным. Кроме того, противники в зоне завесы получают периодический урон.</APM_Mech_Celerus.description>
 
   <!-- EN: left fist -->
   <APM_Mech_Celerus.tools.0.label>левый кулак</APM_Mech_Celerus.tools.0.label>
@@ -1234,7 +1212,7 @@
   <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
 
   <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a highly powered Charge Carbine. -->
-  <APM_Mech_Conqueror_DMR.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным энергокарабином.</APM_Mech_Conqueror_DMR.description>
+  <APM_Mech_Conqueror_DMR.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным энергокарабином.</APM_Mech_Conqueror_DMR.description>
 
   <!-- EN: left fist -->
   <APM_Mech_Conqueror_DMR.tools.0.label>левый кулак</APM_Mech_Conqueror_DMR.tools.0.label>
@@ -1246,7 +1224,7 @@
   <APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
 
   <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Blaster. -->
-  <APM_Mech_Conqueror_AR.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным бластером.</APM_Mech_Conqueror_AR.description>
+  <APM_Mech_Conqueror_AR.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным бластером.</APM_Mech_Conqueror_AR.description>
 
   <!-- EN: left fist -->
   <APM_Mech_Conqueror_AR.tools.0.label>левый кулак</APM_Mech_Conqueror_AR.tools.0.label>
@@ -1258,7 +1236,7 @@
   <APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
 
   <!-- EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter. -->
-  <APM_Mech_Conqueror_LMG.description>Завоеватель является универсальным пехотным механоидом, созданным, чтобы занять пустующую нишу между существующими жнецом и уланом. Его сила в количестве: системы Завоевателей способны объединяться друг с другом определённом радиусе и повышать вычислительную мощность и, соответственно, боевую эффективность. Кроме того, один из членов боевой группы может перегрузить собственный вычислительный блок сверх меры, чтобы дать ближайшим Завоевателям больший прирост ценой полного выгорания собственных физических компонентов.\nЭтот механоид вооружён мощным энергопулемётом.</APM_Mech_Conqueror_LMG.description>
+  <APM_Mech_Conqueror_LMG.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным энергопулемётом.</APM_Mech_Conqueror_LMG.description>
 
   <!-- EN: left fist -->
   <APM_Mech_Conqueror_LMG.tools.0.label>левый кулак</APM_Mech_Conqueror_LMG.tools.0.label>
@@ -1343,12 +1321,6 @@
 
   <!-- EN: head -->
   <APM_Mech_Maul.tools.2.label>голова</APM_Mech_Maul.tools.2.label>
-
-  <!-- EN: The pinpoint wasn’t designed for direct confrontations in battle. It instead assists its allies with their aiming, targeting and designating an enemy with its primary sensor. When targeted, all allied forces get a bonus to accuracy on that target. Be sure not to encounter this mech with an entourage of pikemen. For those foes who keep slipping out of sight, its sensors can also detect invisible enemies nearby itself. -->
-  <APM_Mech_Pinpoint.description>Наводчик не создан для прямых боевых столкновений. Вместо этого он помогает союзникам с прицеливанием, наведением и указанием цели с помощью своего основного датчика. Пока цель отмечена, все союзники получают бонус к точности для атак по ней. Постарайтесь не встретить этого механоида в сопровождении копейщиков. А для врагов, что всё норовят ускользнуть из виду, его датчики способны обнаруживать невидимых противников поблизости от себя.</APM_Mech_Pinpoint.description>
-
-  <!-- EN: head -->
-  <APM_Mech_Pinpoint.tools.0.label>голова</APM_Mech_Pinpoint.tools.0.label>
 
   <!-- EN: The latest in mechanoid urban warfare tactics is the pulse mechanoid. Designed to catch enemies off guard by breaching structures, it can then discharge its signature ability. Impulses fired from this mech’s shoulder mounts not only blast out with deafening sound, but blind nearby opponents with intense light. A sensory deprived target stands no chance against the mechhive’s ever continuous march. For those who still stand afterwards, an installed jump pack quickly sends this mech to its next target. -->
   <APM_Mech_Pulse.description>Последним словом механоидной тактики городского боя является механоид «Импульс». Он создан, чтобы заставать врагов врасплох своей особой техникой, когда прорывается сквозь преграды. Импульсы, выпускаемые из плечевых установок этого меха, не просто оглушают взрывным звуком, но и ослепляют находящихся рядом противников ярчайшей вспышкой. Лишённая чувств цель не имеет шансов против неудержимого наступления роя механоидов. А встроенный прыжковый ранец быстро доставит меха к следующей цели.</APM_Mech_Pulse.description>
