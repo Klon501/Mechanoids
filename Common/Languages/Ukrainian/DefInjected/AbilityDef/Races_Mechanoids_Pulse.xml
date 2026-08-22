@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <APM_PulseLongjump.label>мех-далекий стрибок</APM_PulseLongjump.label>
-  <APM_PulseLongjump.description>Дозволяє механоїду стрибнути у віддалену точку за допомогою особливих надшвидких механічних м'язів.</APM_PulseLongjump.description>
-  <APM_PulseWave.label>імпульсна хвиля</APM_PulseWave.label>
-  <APM_PulseWave.description>Випускає осліплювальну акустичну хвилю, що розходиться від меха назовні, оглушуючи й тимчасово осліплюючи ворожих пішок.</APM_PulseWave.description>
-</LanguageData>

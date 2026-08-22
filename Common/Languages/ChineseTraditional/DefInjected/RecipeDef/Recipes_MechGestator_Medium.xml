@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-  <!-- EN: gestate frostivus -->
-  <APM_Frostivus.label>孵化霜語者</APM_Frostivus.label>
-  <!-- EN: Gestate a frostivus mechanoid. -->
-  <APM_Frostivus.description>孵化一台霜語者機械體。</APM_Frostivus.description>
-
-</LanguageData>

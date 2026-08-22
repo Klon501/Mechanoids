@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: mech command casket -->
-  <APM_MechCommandCasket.label>командна капсула</APM_MechCommandCasket.label>
-  <!-- EN: The mech command casket is a fusion of mechlink and cryptosleep casket technology, allowing the enclosed user to control their mechanoids from the relative safety of the casket. The signal boosting capabilities of this machine allow the mechanitor to control their mechs even when world tiles away from them. -->
-  <APM_MechCommandCasket.description>Командна капсула механоїдів — поєднання технологій мехлінка та капсули кріосну, що дозволяє ув'язненому всередині механітерові керувати своїми механоїдами з відносної безпеки капсули. Підсилювач сигналу цієї машини дає змогу механітерові керувати своїми мехами навіть на інших клітинках карти світу.</APM_MechCommandCasket.description>
-
-</LanguageData>

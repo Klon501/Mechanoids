@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-  <!-- EN: devoured -->
-  <APM_Hediff_Devoured.label>被吞噬</APM_Hediff_Devoured.label>
-  <!-- EN: Sealed inside a Frostivus cryo-chamber. Biological processes are suspended until release. -->
-  <APM_Hediff_Devoured.description>被封入霜语者低温舱内。生物进程暂停，直到被释放。</APM_Hediff_Devoured.description>
-
-</LanguageData>

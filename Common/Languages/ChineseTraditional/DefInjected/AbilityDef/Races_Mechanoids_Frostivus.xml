@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-  <!-- EN: crypto swallow -->
-  <APM_Ability_CryptoSwallow.label>低溫吞噬</APM_Ability_CryptoSwallow.label>
-  <!-- EN: Engulf a living pawn or corpse and seal it inside an internal cryo-chamber until released. -->
-  <APM_Ability_CryptoSwallow.description>吞沒活體殖民者或屍體，並將其封入內部低溫艙，直到被釋放。</APM_Ability_CryptoSwallow.description>
-
-</LanguageData>

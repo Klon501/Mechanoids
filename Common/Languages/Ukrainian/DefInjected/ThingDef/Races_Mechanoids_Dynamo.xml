@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: dynamo -->
-  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
-  <!-- EN: A combat support mechanoid with a wide-range bullet shield and mid-range needle gun. Designed to support other mechanoids, the legionary is vulnerable to anyone who can get inside its shield. -->
-  <APM_Mech_Dynamo.description>Бойовий механоїд підтримки з широким кулепробивним щитом і голкоподібною гарматою середньої дальності. Створений для підтримки інших механоїдів, динамо вразливе для будь-кого, хто зможе пробратися під його щит.</APM_Mech_Dynamo.description>
-
-</LanguageData>

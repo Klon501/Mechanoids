@@ -95,13 +95,26 @@ namespace ApexMechanoids
     {
         public static void Postfix(Pawn mech, ref AcceptanceReport __result)
         {
-            if ((bool)__result || mech.DeadOrDowned || (!mech.IsColonyMech && mech.HostFaction == null))
+            if ((bool)__result || mech.DeadOrDowned || (!mech.IsColonyMech && mech.HostFaction == null) || (mech.needs.energy != null && mech.needs.energy.IsLowEnergySelfShutdown))
             {
                 return;
             }
             else if (mech.HostFaction == Faction.OfPlayer)
             {
                 __result = true;
+            }
+            Pawn overseer = mech.GetOverseer();
+            if (overseer != null)
+            {
+                AcceptanceReport canControlMechs = overseer.mechanitor.CanControlMechs;
+                if (!canControlMechs)
+                {
+                    return;
+                }
+                if (!overseer.mechanitor.ControlledPawns.Contains(mech))
+                {
+                    return;
+                }
             }
             if (mech.kindDef.race.HasComp(typeof(CompMechanitorRangeExtender)))
             {

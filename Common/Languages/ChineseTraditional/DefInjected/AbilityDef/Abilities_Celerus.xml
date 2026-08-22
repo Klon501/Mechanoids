@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!-- EN: Blink -->
-  <APM_CelerusBlink.label>閃爍</APM_CelerusBlink.label>
-  <!-- EN: Folds space around the caster and instantly blinks it to a nearby selected position, leaving unstable dark fragments behind. -->
-  <APM_CelerusBlink.description>摺疊施法者周圍的空間，並瞬間將其閃爍到附近所選位置，留下不穩定的暗影碎片。</APM_CelerusBlink.description>
-</LanguageData>

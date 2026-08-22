@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <!-- EN: body -->
-  <APM_FrostivusBody.label>корпус</APM_FrostivusBody.label>
-  <!-- EN: cryo chamber -->
-  <APM_FrostivusCryo.label>кріокамера</APM_FrostivusCryo.label>
-
-</LanguageData>
