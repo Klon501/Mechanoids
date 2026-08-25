@@ -89,7 +89,7 @@
         <shockwaveAbilityDef>APM_Shockwave</shockwaveAbilityDef>
         <checkIntervalTicks>30</checkIntervalTicks>
         <meleeThreatRadius>4.0</meleeThreatRadius>
-        <minHostilesToTrigger>2</minHostilesToTrigger>
+        <minHostilesToTrigger>1</minHostilesToTrigger>
       </li>
       <li Class="ApexMechanoids.CompProperties_GazerLaserController">
         <autoLaserEnabledDefault>true</autoLaserEnabledDefault>

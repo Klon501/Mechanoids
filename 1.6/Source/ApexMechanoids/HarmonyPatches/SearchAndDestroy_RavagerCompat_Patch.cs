@@ -26,6 +26,12 @@ namespace ApexMechanoids.HarmonyPatches
             Job currentJob = __result.Job;
             if (IsRavagerStarfallJob(currentJob))
             {
+                if (!currentJob.playerForced && pawn.stances?.FullBodyBusy == true)
+                {
+                    __result = ThinkResult.NoJob;
+                    return;
+                }
+
                 if (!currentJob.playerForced && RavagerArtilleryUtility.TryMakeBestStarfallJob(pawn, 80f, out Job scoredStarfallJob))
                 {
                     AllowStarfallWarmup(scoredStarfallJob);

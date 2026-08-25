@@ -312,7 +312,7 @@ namespace ApexMechanoids
         public string ringFleckDefName = "PsycastPsychicEffect";
         public string castSoundDefName = "PsycastPsychicPulse";
         public float aiThreatRadius = 4f;
-        public int aiMinHostilesToTrigger = 2;
+        public int aiMinHostilesToTrigger = 1;
     }
 
     public static class ShockwaveAIUtility

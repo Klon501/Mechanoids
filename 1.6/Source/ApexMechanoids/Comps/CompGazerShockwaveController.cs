@@ -1,6 +1,7 @@
 using RimWorld;
 using System.Collections.Generic;
 using Verse;
+using Verse.AI;
 
 namespace ApexMechanoids
 {
@@ -9,7 +10,7 @@ namespace ApexMechanoids
         public AbilityDef shockwaveAbilityDef;
         public int checkIntervalTicks = 30;
         public float meleeThreatRadius = 4f;
-        public int minHostilesToTrigger = 2;
+        public int minHostilesToTrigger = 1;
 
         public CompProperties_GazerShockwaveController()
         {
@@ -51,6 +52,11 @@ namespace ApexMechanoids
                 return;
             }
 
+            if (pawn.CurJob?.playerForced == true)
+            {
+                return;
+            }
+
             if (!ShouldAutoCast(pawn))
             {
                 return;
@@ -62,7 +68,7 @@ namespace ApexMechanoids
                 return;
             }
 
-            if (pawn.CurJobDef == ability.def.jobDef)
+            if (pawn.CurJob?.ability == ability)
             {
                 return;
             }
@@ -73,7 +79,15 @@ namespace ApexMechanoids
                 return;
             }
 
-            ability.QueueCastingJob(selfTarget, selfTarget);
+            Job job = ability.GetJob(selfTarget, selfTarget);
+            if (job == null)
+            {
+                return;
+            }
+
+            job.expiryInterval = 300;
+            job.checkOverrideOnExpire = true;
+            pawn.jobs.StartJob(job, JobCondition.InterruptForced, cancelBusyStances: true);
         }
 
         private void EnsureAbility()

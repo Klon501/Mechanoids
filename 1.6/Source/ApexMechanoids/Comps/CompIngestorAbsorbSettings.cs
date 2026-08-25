@@ -55,7 +55,7 @@ namespace ApexMechanoids
             {
                 defaultLabel = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_All_Label" : "APM_Ingestor_ProcessMode_Marked_Label").Translate(),
                 defaultDesc = (onlyProcessMarkedCorpses ? "APM_Ingestor_ProcessMode_All_Desc" : "APM_Ingestor_ProcessMode_Marked_Desc").Translate(),
-                icon = ContentFinder<Texture2D>.Get(onlyProcessMarkedCorpses ? Props.processMarkedIconPath : Props.processAnyIconPath),
+                icon = ContentFinder<Texture2D>.Get(onlyProcessMarkedCorpses ? Props.processAnyIconPath : Props.processMarkedIconPath),
                 isActive = () => onlyProcessMarkedCorpses,
                 toggleAction = delegate
                 {

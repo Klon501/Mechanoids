@@ -686,7 +686,7 @@
 				<empDamageAmount>8</empDamageAmount>
 				<castSoundDefName>Explosion_EMP</castSoundDefName>
 				<aiThreatRadius>4.0</aiThreatRadius>
-				<aiMinHostilesToTrigger>2</aiMinHostilesToTrigger>
+				<aiMinHostilesToTrigger>1</aiMinHostilesToTrigger>
 			</li>
 		</comps>
 	</AbilityDef>

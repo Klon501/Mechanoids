@@ -14,6 +14,7 @@ namespace ApexMechanoids
             }
 
             FrostivusUtility.RemoveDevouredHediff(item);
+            FrostivusUtility.ApplyCryptosleepSickness(item);
         }
     }
 }
