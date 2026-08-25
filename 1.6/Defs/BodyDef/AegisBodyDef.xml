@@ -3,7 +3,7 @@
 
 	<BodyDef>
 		<defName>APM_Aegis</defName>
-		<label>heavy mech with dual shields</label>
+		<label>Aegis</label>
 		<corePart>
 			<def>MechanicalThorax</def>
 			<height>Middle</height>

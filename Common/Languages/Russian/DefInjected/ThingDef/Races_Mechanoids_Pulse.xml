@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- APM_Mech_Pulse -->
+  <APM_Mech_Pulse.label>импульс</APM_Mech_Pulse.label>
+  <APM_Mech_Pulse.description>Передовое решение для городских боёв. Разработан для внезапного прорыва сквозь стены и сооружения с последующим применением уникальной способности. Импульсы из его плечевых орудий не только оглушают оглушительным звуком, но и ослепляют противников вспышками света. Оглушённая цель не имеет шансов против наступления улья, а встроенный прыжковый ранец позволяет импульсу мгновенно сокращать дистанцию до следующего врага.</APM_Mech_Pulse.description>
+  <APM_Mech_Pulse.tools.head.label>голова</APM_Mech_Pulse.tools.head.label>
+
+  <!-- PawnKindDef -->
+  <APM_Mech_Pulse.kindLabel>импульс</APM_Mech_Pulse.kindLabel>
+</LanguageData>

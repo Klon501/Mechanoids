@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ==================== Apparel ==================== -->
+
+  <!-- EN: mechamancer suit -->
+  <APM_Apparel_MechamancerSuit.label>костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+  <!-- EN: A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor. -->
+  <APM_Apparel_MechamancerSuit.description>Силовой защитный костюм, оснащённый оборудованием для помощи механитору. Костюм мехаманта значительно увеличивает пропускную способность механитора, предоставляя персональный энергетический щит и сопротивление урону, сравнимое со специализированной силовой бронёй.</APM_Apparel_MechamancerSuit.description>
+
+  <!-- EN: mechamancer helmet -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+  <!-- EN: A heavy plasteel-weave helmet integrated with mechanoid-coordination systems. Enhances the wearer’s general control over of allied mechanoids, increasing mechanitor bandwidth and command groups while providing moderate protection. -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.description>Тяжёлый шлем из пласталевого плетения со встроенными системами координации механоидов. Улучшает общий контроль носителя над союзными механоидами, увеличивая пропускную способность и количество групп контроля механитора, а также обеспечивая умеренную защиту.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+
+  <!-- EN: Mechamancer Pack -->
+  <APM_Apparel_MechamancerPack.label>рюкзак мехаманта</APM_Apparel_MechamancerPack.label>
+  <!-- EN: A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously. -->
+  <APM_Apparel_MechamancerPack.description>Рюкзак, содержащий продвинутый компьютер расширения пропускной способности и антенну. Увеличивает максимальную пропускную способность и количество групп контроля механитора. При заправке сталью позволяет конструировать малых механоидов, действующих независимо и не потребляющих пропускную способность. Каждый механитор может развернуть до двух механоидов-сателлитов одновременно.</APM_Apparel_MechamancerPack.description>
+
+
+  <!-- ==================== Gases ==================== -->
+
+  <!-- EN: smokescreen gas -->
+  <APM_Smokescreen.label>дымовая завеса</APM_Smokescreen.label>
+
+  <!-- EN: smokescreen gas -->
+  <APM_Smokescreen_Boss.label>дымовая завеса</APM_Smokescreen_Boss.label>
+
+
+  <!-- ==================== Chips & Resources ==================== -->
+
+  <!-- EN: ocular harmonizer chip -->
+  <APM_OcularChip.label>окулярный чип-гармонизатор</APM_OcularChip.label>
+  <!-- EN: A stabilization matrix that synchronizes hellsphere turbulence into a coherent firing pattern. Without one, any ocular beam platform would tear itself apart. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <APM_OcularChip.description>Матрица стабилизации, синхронизирующая турбулентность адской сферы в согласованный поток стрельбы. Без неё любая платформа окулярного луча развалилась бы на части. Необходим для производства некоторых продвинутых типов механоидов и снаряжения. Механитор может изучить этот чип, чтобы разблокировать более высокие уровни исследований мехатехники.</APM_OcularChip.description>
+
+  <!-- EN: psionic coordination chip -->
+  <APM_PsionicChip.label>чип пси-координации</APM_PsionicChip.label>
+  <!-- EN: A psychic-command mechanoid micro-organ infused with an Archotech echo of martial authority. Generates localized command fields, amplifying allied effectiveness. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <APM_PsionicChip.description>Пси-командный микроорган механоидов, наполненный архотековым эхом военной власти. Создаёт локализованные командные поля, повышая эффективность союзников. Необходим для производства некоторых продвинутых типов механоидов и снаряжения. Механитор может изучить этот чип, чтобы разблокировать более высокие уровни исследований мехатехники.</APM_PsionicChip.description>
+
+  <!-- EN: extrasensory amplification chip -->
+  <APM_ExtraChip.label>чип усиления чувствительности</APM_ExtraChip.label>
+  <!-- EN: A emotion weaving mechanoid micro-organ engineered to magnify and regulate extrasensory mental force. It artificially amplifies emotions and the resulting psychic energy while limiting damage to the mind. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <APM_ExtraChip.description>Микроорган механоидов, сплетающий эмоции, разработанный для усиления и регулирования внечувственной ментальной силы. Он искусственно усиливает эмоции и возникающую пси-энергию, ограничивая при этом урон для разума. Необходим для производства некоторых продвинутых типов механоидов и снаряжения. Механитор может изучить этот чип, чтобы разблокировать более высокие уровни исследований мехатехники.</APM_ExtraChip.description>
+
+  <!-- EN: psyflux projection chip -->
+  <APM_PsyfluxChip.label>чип проекции пси-потока</APM_PsyfluxChip.label>
+  <!-- EN: A perception-warping mechanoid micro-organ that regulates rapid displacement, charged-particle emissions, and brief periods of psychic imperceptibility. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <APM_PsyfluxChip.description>Искажающий восприятие микроорган механоидов, регулирующий быстрое перемещение, испускание заряженных частиц и короткие периоды пси-невидимости. Необходим для производства некоторых продвинутых типов механоидов и снаряжения. Механитор может изучить этот чип, чтобы разблокировать более высокие уровни исследований мехатехники.</APM_PsyfluxChip.description>
+
+</LanguageData>

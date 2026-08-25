@@ -1,368 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>центральный оптический датчик</APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>левый звуковой датчик</APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>правый звуковой датчик</APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Aegis.corePart.parts.1.customLabel>левое плечо</APM_Aegis.corePart.parts.1.customLabel>
-
-  <APM_Aegis.corePart.parts.1.parts.0.customLabel>левая рука</APM_Aegis.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>левый щит</APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Aegis.corePart.parts.2.customLabel>правое плечо</APM_Aegis.corePart.parts.2.customLabel>
-
-  <APM_Aegis.corePart.parts.2.parts.0.customLabel>правая рука</APM_Aegis.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>правый щит</APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Aegis.corePart.parts.3.customLabel>левая нога</APM_Aegis.corePart.parts.3.customLabel>
-
-  <APM_Aegis.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Aegis.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Aegis.corePart.parts.4.customLabel>правая нога</APM_Aegis.corePart.parts.4.customLabel>
-
-  <APM_Aegis.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Aegis.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Aegis.label>тяжёлый мех с парными щитами</APM_Aegis.label>
-
-  <APM_Celerus.label>целерус</APM_Celerus.label>
-
-  <APM_Conqueror_AR.label>завоеватель-бластер</APM_Conqueror_AR.label>
-
-  <APM_Conqueror_DMR.label>завоеватель-карабин</APM_Conqueror_DMR.label>
-
-  <APM_Conqueror_LMG.label>завоеватель-спиттер</APM_Conqueror_LMG.label>
-
-  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Dominus.corePart.parts.1.customLabel>левое механическое плечо</APM_Dominus.corePart.parts.1.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.customLabel>левая рука</APM_Dominus.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Dominus.corePart.parts.2.customLabel>правое механическое плечо</APM_Dominus.corePart.parts.2.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.customLabel>правая рука</APM_Dominus.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Dominus.corePart.parts.3.customLabel>левая нога</APM_Dominus.corePart.parts.3.customLabel>
-
-  <APM_Dominus.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Dominus.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Dominus.corePart.parts.4.customLabel>правая нога</APM_Dominus.corePart.parts.4.customLabel>
-
-  <APM_Dominus.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Dominus.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Dominus.label>доминус</APM_Dominus.label>
-
-  <APM_Dynamo.label>динамо</APM_Dynamo.label>
-
-  <APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>левый зрительный датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>правый зрительный датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Frostivus.corePart.parts.1.customLabel>левая передняя нога</APM_Frostivus.corePart.parts.1.customLabel>
-
-  <APM_Frostivus.corePart.parts.1.parts.0.customLabel>левая передняя стопа</APM_Frostivus.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Frostivus.corePart.parts.2.customLabel>правая передняя нога</APM_Frostivus.corePart.parts.2.customLabel>
-
-  <APM_Frostivus.corePart.parts.2.parts.0.customLabel>правая передняя стопа</APM_Frostivus.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Frostivus.corePart.parts.3.customLabel>левая задняя нога</APM_Frostivus.corePart.parts.3.customLabel>
-
-  <APM_Frostivus.corePart.parts.3.parts.0.customLabel>левая задняя стопа</APM_Frostivus.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Frostivus.corePart.parts.4.customLabel>правая задняя нога</APM_Frostivus.corePart.parts.4.customLabel>
-
-  <APM_Frostivus.corePart.parts.4.parts.0.customLabel>правая задняя стопа</APM_Frostivus.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Frostivus.corePart.parts.5.customLabel>криокамера</APM_Frostivus.corePart.parts.5.customLabel>
-
-  <APM_Frostivus.description>Вырастить механоида «Морозус».</APM_Frostivus.description>
-
-  <APM_Frostivus.label>морозус</APM_Frostivus.label>
-
-  <APM_Gazer.corePart.parts.0.parts.1.customLabel>левая система охлаждения</APM_Gazer.corePart.parts.0.parts.1.customLabel>
-
-  <APM_Gazer.corePart.parts.0.parts.2.customLabel>правая система охлаждения</APM_Gazer.corePart.parts.0.parts.2.customLabel>
-
-  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусирующая линза</APM_Gazer.corePart.parts.0.parts.3.customLabel>
-
-  <APM_Gazer.corePart.parts.0.parts.4.customLabel>левый звуковой датчик</APM_Gazer.corePart.parts.0.parts.4.customLabel>
-
-  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правый звуковой датчик</APM_Gazer.corePart.parts.0.parts.5.customLabel>
-
-  <APM_Gazer.corePart.parts.3.customLabel>левая передняя нога</APM_Gazer.corePart.parts.3.customLabel>
-
-  <APM_Gazer.corePart.parts.3.parts.0.customLabel>левая передняя лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Gazer.corePart.parts.4.customLabel>правая передняя нога</APM_Gazer.corePart.parts.4.customLabel>
-
-  <APM_Gazer.corePart.parts.4.parts.0.customLabel>правая передняя лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Gazer.label>созерцатель</APM_Gazer.label>
-
-  <APM_Haze.label>завеса</APM_Haze.label>
-
-  <APM_Ingestor.label>поглотитель</APM_Ingestor.label>
-
-  <APM_Javelin.label>джавелин</APM_Javelin.label>
-
-  <APM_Lasher.label>погонщик</APM_Lasher.label>
-
-  <APM_Mantis.label>богомол</APM_Mantis.label>
-
-  <APM_Maul.label>крушитель</APM_Maul.label>
-
-  <APM_MechamancerPack.label>изготовить ранец мехаманта</APM_MechamancerPack.label>
-
-  <APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Pulse.corePart.parts.1.customLabel>левое механическое плечо</APM_Pulse.corePart.parts.1.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.customLabel>левая рука</APM_Pulse.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Pulse.corePart.parts.2.customLabel>правое механическое плечо</APM_Pulse.corePart.parts.2.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.customLabel>правая рука</APM_Pulse.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Pulse.corePart.parts.3.customLabel>левая нога</APM_Pulse.corePart.parts.3.customLabel>
-
-  <APM_Pulse.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Pulse.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Pulse.corePart.parts.4.customLabel>правая нога</APM_Pulse.corePart.parts.4.customLabel>
-
-  <APM_Pulse.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Pulse.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Pulse.label>импульс</APM_Pulse.label>
-
-  <APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Ravager.corePart.parts.1.customLabel>левая передняя нога</APM_Ravager.corePart.parts.1.customLabel>
-
-  <APM_Ravager.corePart.parts.1.parts.0.customLabel>левая передняя ступня</APM_Ravager.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Ravager.corePart.parts.2.customLabel>правая передняя нога</APM_Ravager.corePart.parts.2.customLabel>
-
-  <APM_Ravager.corePart.parts.2.parts.0.customLabel>правая передняя ступня</APM_Ravager.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Ravager.corePart.parts.3.customLabel>левая задняя нога</APM_Ravager.corePart.parts.3.customLabel>
-
-  <APM_Ravager.corePart.parts.3.parts.0.customLabel>левая задняя ступня</APM_Ravager.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Ravager.corePart.parts.4.customLabel>правая задняя нога</APM_Ravager.corePart.parts.4.customLabel>
-
-  <APM_Ravager.corePart.parts.4.parts.0.customLabel>правая задняя ступня</APM_Ravager.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Ravager.label>разоритель</APM_Ravager.label>
-
-  <APM_Siren.label>резонансный корпус сирены</APM_Siren.label>
-
-  <APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Terminus.corePart.parts.1.customLabel>левое механическое плечо</APM_Terminus.corePart.parts.1.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.customLabel>левая рука</APM_Terminus.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Terminus.corePart.parts.2.customLabel>правое механическое плечо</APM_Terminus.corePart.parts.2.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.customLabel>правая рука</APM_Terminus.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Terminus.corePart.parts.3.customLabel>левая нога</APM_Terminus.corePart.parts.3.customLabel>
-
-  <APM_Terminus.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Terminus.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Terminus.corePart.parts.4.customLabel>правая нога</APM_Terminus.corePart.parts.4.customLabel>
-
-  <APM_Terminus.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Terminus.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Terminus.label>терминус</APM_Terminus.label>
-
-  <APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>левый акустический сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>правый акустический сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Tinker.corePart.parts.1.customLabel>левое механическое плечо</APM_Tinker.corePart.parts.1.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.customLabel>левая рука</APM_Tinker.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Tinker.corePart.parts.2.customLabel>правое механическое плечо</APM_Tinker.corePart.parts.2.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.customLabel>правая рука</APM_Tinker.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Tinker.corePart.parts.3.customLabel>ремонтный модуль</APM_Tinker.corePart.parts.3.customLabel>
-
-  <APM_Tinker.corePart.parts.4.customLabel>левая нога</APM_Tinker.corePart.parts.4.customLabel>
-
-  <APM_Tinker.corePart.parts.4.parts.0.customLabel>левая стопа</APM_Tinker.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Tinker.corePart.parts.5.customLabel>правая нога</APM_Tinker.corePart.parts.5.customLabel>
-
-  <APM_Tinker.corePart.parts.5.parts.0.customLabel>правая стопа</APM_Tinker.corePart.parts.5.parts.0.customLabel>
-
-  <APM_Tinker.label>тинкер</APM_Tinker.label>
-
-  <APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>левый оптический датчик</APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>правый оптический датчик</APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>левый звуковой датчик</APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>правый звуковой датчик</APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>
-
-  <APM_Vassal.corePart.parts.1.customLabel>левое механическое плечо</APM_Vassal.corePart.parts.1.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.customLabel>левая рука</APM_Vassal.corePart.parts.1.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>левая кисть</APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>левый мизинец</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>левый средний палец</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>левый указательный палец</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>левый большой палец</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Vassal.corePart.parts.2.customLabel>правое механическое плечо</APM_Vassal.corePart.parts.2.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.customLabel>правая рука</APM_Vassal.corePart.parts.2.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>правая кисть</APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правый мизинец</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правый средний палец</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правый указательный палец</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
-
-  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правый большой палец</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
-
-  <APM_Vassal.corePart.parts.3.customLabel>левая нога</APM_Vassal.corePart.parts.3.customLabel>
-
-  <APM_Vassal.corePart.parts.3.parts.0.customLabel>левая ступня</APM_Vassal.corePart.parts.3.parts.0.customLabel>
-
-  <APM_Vassal.corePart.parts.4.customLabel>правая нога</APM_Vassal.corePart.parts.4.customLabel>
-
-  <APM_Vassal.corePart.parts.4.parts.0.customLabel>правая ступня</APM_Vassal.corePart.parts.4.parts.0.customLabel>
-
-  <APM_Vassal.label>вассал</APM_Vassal.label>
-
-  <Make_DuelistPsyspear.label>изготовить пси-копьё дуэлянта</Make_DuelistPsyspear.label>
+  <!-- APM_Aegis -->
+  <!-- EN: gestate aegis -->
+  <APM_Aegis.label>вырастить эгиду</APM_Aegis.label>
+  <!-- EN: Gestate an aegis mechanoid. -->
+  <APM_Aegis.description>Вырастить механоида эгида.</APM_Aegis.description>
+
+  <!-- APM_Terminus -->
+  <!-- EN: gestate terminus -->
+  <APM_Terminus.label>вырастить терминуса</APM_Terminus.label>
+  <!-- EN: Gestate a terminus archotech-commander mechanoid. -->
+  <APM_Terminus.description>Вырастить архотек-командира механоидов терминус.</APM_Terminus.description>
+
+  <!-- APM_Maul -->
+  <!-- EN: gestate maul -->
+  <APM_Maul.label>вырастить молота</APM_Maul.label>
+  <!-- EN: Gestate a maul mechanoid. -->
+  <APM_Maul.description>Вырастить механоида молот.</APM_Maul.description>
+
+  <!-- APM_Mantis -->
+  <!-- EN: gestate mantis -->
+  <APM_Mantis.label>вырастить богомола</APM_Mantis.label>
+  <!-- EN: Gestate a mantis mechanoid. -->
+  <APM_Mantis.description>Вырастить механоида богомол.</APM_Mantis.description>
+
+  <!-- APM_Dynamo -->
+  <!-- EN: gestate dynamo -->
+  <APM_Dynamo.label>вырастить динамо</APM_Dynamo.label>
+  <!-- EN: Gestate a dynamo mechanoid. -->
+  <APM_Dynamo.description>Вырастить механоида динамо.</APM_Dynamo.description>
+
+  <!-- APM_Haze -->
+  <!-- EN: gestate haze -->
+  <APM_Haze.label>вырастить мглу</APM_Haze.label>
+  <!-- EN: Gestate a haze area-denial mechanoid. -->
+  <APM_Haze.description>Вырастить механоида мгла.</APM_Haze.description>
+
+  <!-- APM_Celerus -->
+  <!-- EN: gestate celerus -->
+  <APM_Celerus.label>вырастить целеруса</APM_Celerus.label>
+  <!-- EN: Gestate a celerus archotech-commander mechanoid. -->
+  <APM_Celerus.description>Вырастить архотек-командира механоида целерус.</APM_Celerus.description>
+
+  <!-- APM_Dominus -->
+  <!-- EN: gestate dominus -->
+  <APM_Dominus.label>вырастить доминуса</APM_Dominus.label>
+  <!-- EN: Gestate a dominus archotech-commander mechanoid. -->
+  <APM_Dominus.description>Вырастить архотек-командира механоида доминус.</APM_Dominus.description>
+
+  <!-- APM_Conqueror_DMR -->
+  <!-- EN: gestate carabine conqueror -->
+  <APM_Conqueror_DMR.label>вырастить завоевателя с карабином</APM_Conqueror_DMR.label>
+  <!-- EN: Gestate a Charge Carbine-equipped conqueror mechanoid. -->
+  <APM_Conqueror_DMR.description>Вырастить механоида завоеватель, оснащённого бластерным карабином.</APM_Conqueror_DMR.description>
+  <!-- EN: Gestating conqueror (DMR). -->
+  <APM_Conqueror_DMR.jobString>Выращивание завоевателя (марксман).</APM_Conqueror_DMR.jobString>
+
+  <!-- APM_Conqueror_AR -->
+  <!-- EN: gestate blaster conqueror -->
+  <APM_Conqueror_AR.label>вырастить завоевателя с винтовкой</APM_Conqueror_AR.label>
+  <!-- EN: Gestate a Blaster rifle-equipped conqueror mechanoid. -->
+  <APM_Conqueror_AR.description>Вырастить механоида завоеватель, оснащённого бластерной винтовкой.</APM_Conqueror_AR.description>
+  <!-- EN: Gestating conqueror (AR). -->
+  <APM_Conqueror_AR.jobString>Выращивание завоевателя (винтовка).</APM_Conqueror_AR.jobString>
+
+  <!-- APM_Conqueror_LMG -->
+  <!-- EN: gestate spitter conqueror -->
+  <APM_Conqueror_LMG.label>вырастить завоевателя с плевателем</APM_Conqueror_LMG.label>
+  <!-- EN: Gestate a Charge Spitter-equipped conqueror mechanoid. -->
+  <APM_Conqueror_LMG.description>Вырастить механоида завоеватель, оснащённого бластерным плевателем.</APM_Conqueror_LMG.description>
+  <!-- EN: Gestating conqueror (LMG). -->
+  <APM_Conqueror_LMG.jobString>Выращивание завоевателя (пистолет-пулемёт).</APM_Conqueror_LMG.jobString>
+
+  <!-- APM_Lasher -->
+  <!-- EN: gestate lasher -->
+  <APM_Lasher.label>вырастить плеть</APM_Lasher.label>
+  <!-- EN: Gestate a lasher mechanoid. -->
+  <APM_Lasher.description>Вырастить механоида плеть.</APM_Lasher.description>
+
+  <!-- APM_Pulse -->
+  <!-- EN: gestate pulse -->
+  <APM_Pulse.label>вырастить импульса</APM_Pulse.label>
+  <!-- EN: Gestate a pulse mechanoid. -->
+  <APM_Pulse.description>Вырастить механоида импульс.</APM_Pulse.description>
+
+  <!-- APM_Vassal -->
+  <!-- EN: gestate vassal -->
+  <APM_Vassal.label>вырастить вассала</APM_Vassal.label>
+  <!-- EN: Gestate a vassal mechanoid. -->
+  <APM_Vassal.description>Вырастить механоида вассал.</APM_Vassal.description>
+
+  <!-- APM_Tinker -->
+  <!-- EN: gestate tinker -->
+  <APM_Tinker.label>вырастить тинкера</APM_Tinker.label>
+  <!-- EN: Gestate a tinker mechanoid. -->
+  <APM_Tinker.description>Вырастить механоида тинкер.</APM_Tinker.description>
+
+  <!-- APM_Siren -->
+  <!-- EN: gestate siren -->
+  <APM_Siren.label>вырастить сирену</APM_Siren.label>
+  <!-- EN: Gestate a siren mechanoid. -->
+  <APM_Siren.description>Вырастить механоида сирена.</APM_Siren.description>
+
+  <!-- APM_Frostivus -->
+  <!-- EN: gestate frostivus -->
+  <APM_Frostivus.label>вырастить морозуса</APM_Frostivus.label>
+  <!-- EN: Gestate a frostivus mechanoid. -->
+  <APM_Frostivus.description>Вырастить механоида морозус.</APM_Frostivus.description>
+
+  <!-- APM_Javelin -->
+  <!-- EN: gestate javelin -->
+  <APM_Javelin.label>вырастить джавелина</APM_Javelin.label>
+  <!-- EN: Gestate a javelin mechanoid. -->
+  <APM_Javelin.description>Вырастить механоида джавелин.</APM_Javelin.description>
+
+  <!-- APM_Ravager -->
+  <!-- EN: gestate ravager -->
+  <APM_Ravager.label>вырастить разорителя</APM_Ravager.label>
+  <!-- EN: Gestate a ravager mechanoid. -->
+  <APM_Ravager.description>Вырастить механоида разоритель.</APM_Ravager.description>
+
+  <!-- APM_Ingestor -->
+  <!-- EN: gestate ingestor -->
+  <APM_Ingestor.label>вырастить поглотителя</APM_Ingestor.label>
+  <!-- EN: Gestate an ingestor mechanoid. -->
+  <APM_Ingestor.description>Вырастить механоида поглотитель.</APM_Ingestor.description>
+
+  <!-- APM_Gazer -->
+  <!-- EN: gestate gazer -->
+  <APM_Gazer.label>вырастить созерцателя</APM_Gazer.label>
+  <!-- EN: Gestate a gazer mechanoid. -->
+  <APM_Gazer.description>Вырастить механоида созерцатель.</APM_Gazer.description>
+
+  <!-- Make_DuelistPsyspear -->
+  <!-- EN: make duelist psyspear -->
+  <Make_DuelistPsyspear.label>сделать пси-копьё дуэлянта</Make_DuelistPsyspear.label>
+  <!-- EN: Make a duelist psyspear. -->
+  <Make_DuelistPsyspear.description>Создать пси-копьё дуэлянта.</Make_DuelistPsyspear.description>
+  <!-- EN: Making duelist psyspear. -->
+  <Make_DuelistPsyspear.jobString>Создание пси-копья дуэлянта.</Make_DuelistPsyspear.jobString>
+
+  <!-- APM_Weapon_SeveringBlade -->
+  <!-- EN: make severing blade -->
+  <APM_Weapon_SeveringBlade.label>сделать рассекающий клинок</APM_Weapon_SeveringBlade.label>
+  <!-- EN: Make a severing blade. -->
+  <APM_Weapon_SeveringBlade.description>Создать рассекающий клинок.</APM_Weapon_SeveringBlade.description>
+  <!-- EN: Making severing blade. -->
+  <APM_Weapon_SeveringBlade.jobString>Создание рассекающего клинка.</APM_Weapon_SeveringBlade.jobString>
+
+  <!-- APM_Weapon_Skipblade -->
+  <!-- EN: make skipblade -->
+  <APM_Weapon_Skipblade.label>сделать скачковый клинок</APM_Weapon_Skipblade.label>
+  <!-- EN: Make a skipblade. -->
+  <APM_Weapon_Skipblade.description>Создать скачковый клинок.</APM_Weapon_Skipblade.description>
+  <!-- EN: Making skipblade. -->
+  <APM_Weapon_Skipblade.jobString>Создание скачкового клинка.</APM_Weapon_Skipblade.jobString>
+
+  <!-- APM_Weapon_PlasmaWhip -->
+  <!-- EN: make plasma whip -->
+  <APM_Weapon_PlasmaWhip.label>сделать плазменный кнут</APM_Weapon_PlasmaWhip.label>
+  <!-- EN: Make a plasma whip. -->
+  <APM_Weapon_PlasmaWhip.description>Создать плазменный кнут.</APM_Weapon_PlasmaWhip.description>
+  <!-- EN: Making plasma whip. -->
+  <APM_Weapon_PlasmaWhip.jobString>Создание плазменного кнута.</APM_Weapon_PlasmaWhip.jobString>
+
+  <!-- APM_Solus -->
+  <!-- EN: make solus -->
+  <APM_Solus.label>сделать «Солус»</APM_Solus.label>
+  <!-- EN: Make a solus. -->
+  <APM_Solus.description>Создать орудие «Солус».</APM_Solus.description>
+  <!-- EN: Making solus. -->
+  <APM_Solus.jobString>Создание орудия «Солус».</APM_Solus.jobString>
+
+  <!-- APM_MechamancerPack -->
+  <!-- EN: make mechamancer pack -->
+  <APM_MechamancerPack.label>сделать ранец мехаманта</APM_MechamancerPack.label>
+  <!-- EN: Make a mechamancer pack. -->
+  <APM_MechamancerPack.description>Создать ранец мехаманта.</APM_MechamancerPack.description>
+  <!-- EN: Making mechamancer pack. -->
+  <APM_MechamancerPack.jobString>Создание ранца мехаманта.</APM_MechamancerPack.jobString>
+
+  <!-- APM_Apparel_MechamancerSuit -->
+  <!-- EN: make mechamancer suit -->
+  <APM_Apparel_MechamancerSuit.label>сделать костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+  <!-- EN: Make a mechamancer suit. -->
+  <APM_Apparel_MechamancerSuit.description>Создать костюм мехаманта.</APM_Apparel_MechamancerSuit.description>
+  <!-- EN: Making mechamancer suit. -->
+  <APM_Apparel_MechamancerSuit.jobString>Создание костюма мехаманта.</APM_Apparel_MechamancerSuit.jobString>
+
+  <!-- APM_Apparel_ArmorHelmetMechamancerHelmet -->
+  <!-- EN: make mechamancer helmet -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>сделать шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+  <!-- EN: Make a mechamancer helmet. -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.description>Создать шлем мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+  <!-- EN: Making mechamancer helmet. -->
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>Создание шлема мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
 
 </LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- APM_IncidentDef_TrioBoss -->
+  <!-- EN: Three Lords -->
+  <APM_IncidentDef_TrioBoss.label>Три владыки</APM_IncidentDef_TrioBoss.label>
+  <!-- EN: Three Lords arrived -->
+  <APM_IncidentDef_TrioBoss.letterLabel>Прибыли Три Владыки</APM_IncidentDef_TrioBoss.letterLabel>
+  <!-- EN: An ultra-heavy mechs from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking. -->
+  <APM_IncidentDef_TrioBoss.letterText>Сверхтяжёлые механоиды фракции {0} прибыли уничтожить вас в сопровождении эскорта.\n\nТри владыки механоидов были созданы Архотеком в попытке сотворить могущественного командира над всеми механоидами.\n\nШтурмовая группа состоит из следующих {1}:\n\n{2}\n\nНекоторое время они будут готовиться, прежде чем пойти в атаку.</APM_IncidentDef_TrioBoss.letterText>
+
+</LanguageData>

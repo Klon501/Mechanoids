@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ust-8"?>
+<LanguageData>
+	<APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+	<APM_Mech_Siren.description>Используя тот факт, что механоиды обладают психическим присутствием, механоид-сирена способен притягивать поселенцев к себе, подвергая их опасности жаркого боя. При управлении через механітора этот мех может поднимать настроение и удовлетворять потребность в развлечениях у находящихся рядом людей.</APM_Mech_Siren.description>
+	<APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+	<APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+	<APM_Ability_SirenLure.label>маниакальная песня</APM_Ability_SirenLure.label>
+	<APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
+	<APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
+	<APM_Hediff_SirenSong.description>Этот пешка находится под воздействием успокаивающего механического хора, чувствуя себя легче и полнее сил.</APM_Hediff_SirenSong.description>
+	<APM_Thought_SirenSong.label>Песнь сирены</APM_Thought_SirenSong.label>
+	<APM_Thought_SirenSong.description>Невероятная мелодия сирены все еще звучит у вас в голове, на время смывая весь стресс.</APM_Thought_SirenSong.description>
+	<APM_Mech_Siren.tools.left_fist.label>левый кулак</APM_Mech_Siren.tools.left_fist.label>
+	<APM_Mech_Siren.tools.right_fist.label>правый кулак</APM_Mech_Siren.tools.right_fist.label>
+	<APM_Mech_Siren.tools.head.label>голова</APM_Mech_Siren.tools.head.label>
+</LanguageData>

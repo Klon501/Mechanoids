@@ -1,46 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Ability_CryptoSwallow.description>Поглощает живого персонажа или труп и запечатывает его во внутренней криокамере.</APM_Ability_CryptoSwallow.description>
+  <!-- EN: Recycle Biomass -->
+  <APM_Absorb.label>Переработка биомассы</APM_Absorb.label>
+  <!-- EN: Grind up a fresh organic corpse or ingestible material, and slowly process it into chemfuel. -->
+  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал, постепенно перерабатывая его в химическое топливо.</APM_Absorb.description>
 
-  <APM_Ability_CryptoSwallow.label>криопоглощение</APM_Ability_CryptoSwallow.label>
+  <!-- EN: Power Plant Mode -->
+  <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
+  <APM_SwitchToPowerPlantMode.description>Переключение в режим электростанции, пожертвовав мобильностью и щитом ради питания местной электросети.</APM_SwitchToPowerPlantMode.description>
 
-  <APM_Ability_SirenLure.label>обольстительная песнь</APM_Ability_SirenLure.label>
+  <!-- EN: Sun Ray -->
+  <APM_SunRay.label>Солнечный луч</APM_SunRay.label>
+  <!-- EN: The gazer blasts a devastating beam from itself, remaining stationary to keep the beam on target. Anything within reach of the beam takes heavy damage. -->
+  <APM_SunRay.description>Созерцатель испускает разрушительный луч, оставаясь неподвижным для удержания цели на мушке. Все, до чего достает луч, получает огромный урон.</APM_SunRay.description>
 
-  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+  <!-- EN: pulse wave -->
+  <APM_PulseWave.label>Импульсная волна</APM_PulseWave.label>
+  <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
+  <APM_PulseWave.description>Высвобождает ослепляющий акустический импульс, расходящийся от меха и оглушающий вместе с ослеплением всех попавших в зону действия существ из крови и плоти.</APM_PulseWave.description>
 
-  <APM_Ability_SteelDiscipline.label>стальная дисциплина</APM_Ability_SteelDiscipline.label>
+  <!-- EN: dashing -->
+  <ApexMechanoids_DashingPawn.label>рывок</ApexMechanoids_DashingPawn.label>
 
-  <APM_Ability_ToxicMist.label>токсичный туман</APM_Ability_ToxicMist.label>
+  <!-- EN: Grappling Hook -->
+  <APM_HookPawn.label>Крюк-кошка</APM_HookPawn.label>
+  <!-- EN: The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target. -->
+  <APM_HookPawn.description>«Терминус» выпускает крюк-кошку: в зависимости от размера цели, либо притягивает врага к себе, либо притягивается к врагу сам.</APM_HookPawn.description>
 
-  <APM_CelerusBlink.description>Активировать бортовой микро-прыжковый двигатель для мгновенного перемещения в выбранную точку.</APM_CelerusBlink.description>
+  <!-- EN: APM_PawnFlyer_Hooked -->
+  <APM_PawnFlyer_Hooked.label>притянутая цель</APM_PawnFlyer_Hooked.label>
 
-  <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+  <!-- EN: hook -->
+  <APM_Projectile_Hook.label>крюк</APM_Projectile_Hook.label>
 
-  <APM_DefenceMatrix.description>Удалённо проецирует персональный защитный щит на дружественного персонажа. Щит останавливает входящий урон, но не позволяет вести огонь изнутри. Это может быть полезно, даже если щит наложен на врага. Тинкер будет полностью сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+  <!-- EN: APM_Mote_HookRope -->
+  <APM_Mote_HookRope.label>трос крюка</APM_Mote_HookRope.label>
 
-  <APM_DefenceMatrix.label>защитная матрица</APM_DefenceMatrix.label>
+  <!-- EN: Shield Charge -->
+  <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
+  <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
+  <APM_ShieldCharge.description>Броситься на пешку, оглушая все на своем пути.</APM_ShieldCharge.description>
 
-  <APM_Mech_Duel.label>испытание поединком</APM_Mech_Duel.label>
+  <!-- EN: Bashing into TargetA. -->
+  <APM_BashStun.reportString>Таранит цель TargetA.</APM_BashStun.reportString>
 
-  <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
+  <!-- EN: Bladehopp -->
+  <APM_Bladehopp.label>Прорыв лезвий</APM_Bladehopp.label>
+  <!-- EN: Dash to a target followed by a quick attack. -->
+  <APM_Bladehopp.description>Совершить рывок к цели с последующей быстрой атакой.</APM_Bladehopp.description>
 
-  <APM_PulseLongjump.description>Позволяет механоиду совершить прыжок на большую дистанцию, используя сверхбыстрые механические приводы.</APM_PulseLongjump.description>
+  <!-- EN: Blinding Laser -->
+  <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
+  <!-- EN: Fire a laser at target, effectively blinding them for a short time. -->
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, эффективно ослепляя ее на короткое время.</APM_BlindingLaser.description>
 
-  <APM_PulseLongjump.label>мех-дальний прыжок</APM_PulseLongjump.label>
+  <!-- EN: blinded by laser -->
+  <APM_LaserBlind.label>ослеплен лазером</APM_LaserBlind.label>
+  <!-- EN: Vastly reduced sight capacity due to been blinded by laser. -->
+  <APM_LaserBlind.description>Сильно сниженная способность зрения из-за ослепления лазером.</APM_LaserBlind.description>
 
-  <APM_SkipbladeBlink.label>телепорт</APM_SkipbladeBlink.label>
+  <!-- EN: Starfall -->
+  <APM_Starfall.label>Звездопад</APM_Starfall.label>
+  <!-- EN: Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight. -->
+  <APM_Starfall.description>Опустошитель перегружает свою артиллерию и выпускает единый тяжелый снаряд, который прямо в полете разделяется на три энергетических взрыва.</APM_Starfall.description>
 
-  <APM_SwitchToPowerPlantMode.description>Переключиться в режим электростанции, жертвуя подвижностью и щитом ради питания местной энергосети.</APM_SwitchToPowerPlantMode.description>
+  <!-- EN: Defence Matrix -->
+  <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
+  <!-- EN: Remotely project a personal defense shield onto a same-faction pawn. The shield stops incoming damage, but also prevents shooting out. The tinker will be focused on projecting the shield. -->
+  <APM_DefenceMatrix.description>Удаленно проецирует персональный защитный щит на пешку своей фракции. Щит останавливает входящий урон, но также мешает вести стрельбу изнутри. Тинкер будет сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
 
-  <APM_SwitchToPowerPlantMode.label>режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: Steel Discipline -->
+  <APM_Ability_SteelDiscipline.label>Стальная дисциплина</APM_Ability_SteelDiscipline.label>
+  <!-- EN: In a radius around the Vassal, its allies gain a speed boost and their mental break chance is reduced if organic. The Vassal's commanding presence inspires those nearby with renewed purpose and fortitude. -->
+  <APM_Ability_SteelDiscipline.description>В радиусе вокруг Вассала его союзники получают бонус к скорости, а их шанс нервного срыва снижается (если они органические). Командующее присутствие Вассала вдохновляет окружающих новыми силами и стойкостью.</APM_Ability_SteelDiscipline.description>
 
-  <APM_TerminusOverdrive.description>Терминус направляет энергию внутрь себя и входит в состояние боевой перегрузки. Пока эффект активен, он сбрасывает плащ, бьёт сильнее, быстрее восстанавливается между ударами и становится устойчивее к оглушению.</APM_TerminusOverdrive.description>
+  <!-- EN: Toxic Mist -->
+  <APM_Ability_ToxicMist.label>Токсичный туман</APM_Ability_ToxicMist.label>
+  <!-- EN: Similar to a tox pack, the haze releases tox gas around itself, enveloping the surrounding area in a toxic cloud. -->
+  <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
 
-  <APM_TerminusOverdrive.label>перегрузка</APM_TerminusOverdrive.label>
-
-  <APM_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_UltimateSacrifice.description>
-
-  <APM_UltimateSacrifice.label>последняя жертва</APM_UltimateSacrifice.label>
+  <!-- EN: Shockwave -->
+  <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
+  <!-- EN: An explosive wave that throws enemies within a radius for a certain distance -->
+  <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
 
 </LanguageData>

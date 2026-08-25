@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_FrostivusFoodPreservation.description>Спасает еду из небезопасного хранения или с улицы и выгружает ее в холодное хранилище, если оно доступно.</APM_FrostivusFoodPreservation.description>
+	<!-- APM_FrostivusFoodPreservation -->
+	<APM_FrostivusFoodPreservation.labelShort>консервировать</APM_FrostivusFoodPreservation.labelShort>
+	<APM_FrostivusFoodPreservation.pawnLabel>консервант</APM_FrostivusFoodPreservation.pawnLabel>
+	<APM_FrostivusFoodPreservation.gerundLabel>консервация еды</APM_FrostivusFoodPreservation.gerundLabel>
+	<APM_FrostivusFoodPreservation.description>Спасение уязвимой еды из небезопасного хранения или от порчи на улице с последующей разгрузкой в холодильник при наличии возможности.</APM_FrostivusFoodPreservation.description>
+	<APM_FrostivusFoodPreservation.verb>Консервировать</APM_FrostivusFoodPreservation.verb>
 
-  <APM_FrostivusFoodPreservation.gerundLabel>сохранение еды</APM_FrostivusFoodPreservation.gerundLabel>
+	<!-- APM_IngestorCorpseProcessing -->
+	<APM_IngestorCorpseProcessing.labelShort>поглощать</APM_IngestorCorpseProcessing.labelShort>
+	<APM_IngestorCorpseProcessing.pawnLabel>поглотитель</APM_IngestorCorpseProcessing.pawnLabel>
+	<APM_IngestorCorpseProcessing.gerundLabel>поглощение трупов</APM_IngestorCorpseProcessing.gerundLabel>
+	<APM_IngestorCorpseProcessing.description>Переработка органических трупов в биотопливо.</APM_IngestorCorpseProcessing.description>
+	<APM_IngestorCorpseProcessing.verb>Поглощать</APM_IngestorCorpseProcessing.verb>
 
-  <APM_FrostivusFoodPreservation.labelShort>сохранение</APM_FrostivusFoodPreservation.labelShort>
+	<!-- APM_LasherHandling -->
+	<APM_LasherHandling.labelShort>управлять</APM_LasherHandling.labelShort>
+	<APM_LasherHandling.pawnLabel>животновод</APM_LasherHandling.pawnLabel>
+	<APM_LasherHandling.gerundLabel>обращение с животными</APM_LasherHandling.gerundLabel>
+	<APM_LasherHandling.description>Приручение, тренировка, стрижка/дойка и забой животных.</APM_LasherHandling.description>
+	<APM_LasherHandling.verb>Управлять</APM_LasherHandling.verb>
 
-  <APM_FrostivusFoodPreservation.pawnLabel>Хранитель</APM_FrostivusFoodPreservation.pawnLabel>
+	<!-- APM_SirenWarden -->
+	<APM_SirenWarden.labelShort>надзирать</APM_SirenWarden.labelShort>
+	<APM_SirenWarden.pawnLabel>надзиратель</APM_SirenWarden.pawnLabel>
+	<APM_SirenWarden.gerundLabel>надзор за заключенными</APM_SirenWarden.gerundLabel>
+	<APM_SirenWarden.description>Управление, кормление, общение и вербовка заключенных.</APM_SirenWarden.description>
+	<APM_SirenWarden.verb>Надзирать</APM_SirenWarden.verb>
 
-  <APM_FrostivusFoodPreservation.verb>Сохранять</APM_FrostivusFoodPreservation.verb>
-
-  <APM_IngestorCorpseProcessing.description>Перерабатывает органические трупы в химтопливо.</APM_IngestorCorpseProcessing.description>
-
-  <APM_IngestorCorpseProcessing.gerundLabel>поглощение трупов</APM_IngestorCorpseProcessing.gerundLabel>
-
-  <APM_IngestorCorpseProcessing.labelShort>поглотить</APM_IngestorCorpseProcessing.labelShort>
-
-  <APM_IngestorCorpseProcessing.pawnLabel>Поглотитель</APM_IngestorCorpseProcessing.pawnLabel>
-
-  <APM_IngestorCorpseProcessing.verb>Поглотить</APM_IngestorCorpseProcessing.verb>
-
-  <APM_LasherHandling.description>Приручать, тренировать, собирать ресурсы с животных и забивать их.</APM_LasherHandling.description>
-
-  <APM_LasherHandling.gerundLabel>обращение</APM_LasherHandling.gerundLabel>
-
-  <APM_LasherHandling.labelShort>обращаться</APM_LasherHandling.labelShort>
-
-  <APM_LasherHandling.pawnLabel>Хендлер</APM_LasherHandling.pawnLabel>
-
-  <APM_LasherHandling.verb>Обращаться</APM_LasherHandling.verb>
-
-  <APM_SirenWarden.description>Управлять заключёнными, кормить их, болтать с ними и вербовать.</APM_SirenWarden.description>
-
-  <APM_SirenWarden.gerundLabel>надзор</APM_SirenWarden.gerundLabel>
-
-  <APM_SirenWarden.labelShort>надзиратель</APM_SirenWarden.labelShort>
-
-  <APM_SirenWarden.pawnLabel>Надзиратель</APM_SirenWarden.pawnLabel>
-
-  <APM_SirenWarden.verb>Обращаться</APM_SirenWarden.verb>
-
-  <APM_TinkerRepair.description>Ремонт зданий и механоидов своей фракции.</APM_TinkerRepair.description>
-
-  <APM_TinkerRepair.gerundLabel>ремонтируя здания и мехов</APM_TinkerRepair.gerundLabel>
-
-  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
-
-  <APM_TinkerRepair.pawnLabel>Механик</APM_TinkerRepair.pawnLabel>
-
-  <APM_TinkerRepair.verb>Ремонтировать</APM_TinkerRepair.verb>
+	<!-- APM_TinkerRepair -->
+	<APM_TinkerRepair.labelShort>чинить</APM_TinkerRepair.labelShort>
+	<APM_TinkerRepair.pawnLabel>ремонтник</APM_TinkerRepair.pawnLabel>
+	<APM_TinkerRepair.gerundLabel>ремонт построек и мехов</APM_TinkerRepair.gerundLabel>
+	<APM_TinkerRepair.description>Ремонт построек и механоидов своей фракции.</APM_TinkerRepair.description>
+	<APM_TinkerRepair.verb>Чинить</APM_TinkerRepair.verb>
 
 </LanguageData>
