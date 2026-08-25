@@ -115,11 +115,14 @@
 			<!--
 				The four warheads behind the switch gizmo. Order matters: the first is what the rack
 				falls back to when it cannot pay for anything else, so it has to be the free one.
-				Costs are per shot, drawn from the magazine above, and only the player is charged -
-				a raid has no stockpile to haul from, so an enemy javelin is handed one of the
-				non-playerOnly warheads when it spawns and fires it for nothing.
+				Costs are per shot and drawn from the magazine above, whoever owns the launcher. A
+				raid has no stockpile to haul from, so an enemy javelin is handed one of the
+				non-playerOnly warheads when it spawns along with enemyRocketCharges shots worth of
+				uranium for it; three incendiary rounds, or two high explosive ones once the 60
+				capacity above clips the third. After that it is dry and fights on basic rockets.
 			-->
 			<li Class="ApexMechanoids.CompProperties_JavelinRocketRack">
+				<enemyRocketCharges>3</enemyRocketCharges>
 				<rockets>
 					<li>
 						<key>basic</key>

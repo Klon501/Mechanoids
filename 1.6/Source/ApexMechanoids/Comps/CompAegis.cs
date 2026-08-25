@@ -89,6 +89,27 @@ namespace ApexMechanoids
             return group != null && (group == Props.leftShieldGroup || group == Props.rightShieldGroup);
         }
 
+        // Whether a part is one of this mech's shields. Asked by the damage patch that keeps vanilla
+        // from sparing a shield it has decided to break.
+        public bool IsShieldPart(BodyPartRecord part)
+        {
+            if (part == null)
+            {
+                return false;
+            }
+
+            List<BodyPartRecord> parts = ShieldParts;
+            for (int i = 0; i < parts.Count; i++)
+            {
+                if (parts[i] == part)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         // ---- Hit interception ----
 
         // The shield that catches an attack coming from attacker, or null if the attack gets
@@ -144,13 +165,18 @@ namespace ApexMechanoids
 
         // ---- Regeneration ----
 
-        public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
-            base.PostPostApplyDamage(dinfo, totalDamageDealt);
+            base.PostPreApplyDamage(ref dinfo, out absorbed);
 
-            // Restart the peace timer, but leave the regen throttle alone so a steady trickle of
-            // chip damage cannot stall regeneration forever.
-            if (totalDamageDealt > 0f)
+            // Being shot at is what holds regeneration off, not the damage that got through.
+            // Reading the result instead meant a hit that armour swallowed - or one vanilla trimmed
+            // away to spare a body part - left the mech counting as undisturbed while it was under
+            // fire, which is exactly when a shield must not be climbing back up.
+            //
+            // The regen throttle is deliberately left alone, so a steady trickle of chip damage
+            // cannot stall regeneration forever once the shooting does stop.
+            if (dinfo.Def != null && dinfo.Def.harmsHealth)
             {
                 ticksSinceDamage = 0;
             }
