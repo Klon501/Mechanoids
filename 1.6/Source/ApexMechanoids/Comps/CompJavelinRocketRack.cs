@@ -19,6 +19,11 @@ namespace ApexMechanoids
     /// magazine turning the mech into a spectator: it keeps shooting, just without the warhead the
     /// player asked for, and the rack says so and reverts rather than pretending otherwise.
     ///
+    /// A launcher the player does not own pays out of the same magazine and by the same rule. It has
+    /// no stockpile to haul from, so it is stocked once when it spawns with enough uranium for a
+    /// handful of the warhead it rolled; after that it is on basic rockets like any other dry
+    /// launcher.
+    ///
     /// Which rockets may be loaded at all is <see cref="JavelinRocketSelection"/>, kept free of
     /// Verse types so the rules can be checked outside the game.
     /// </summary>
@@ -26,8 +31,9 @@ namespace ApexMechanoids
     {
         private string loadedKey;
 
-        // A launcher the player does not own is handed one warhead the first time it spawns and
-        // keeps it. Latched so reloading a save does not roll it a new one.
+        // A launcher the player does not own is handed one warhead and the uranium for a few shots
+        // of it the first time it spawns. Latched so reloading a save does not roll it a new one or
+        // top the magazine back up.
         private bool loadoutAssigned;
 
         public CompProperties_JavelinRocketRack Props => (CompProperties_JavelinRocketRack)props;
@@ -105,7 +111,7 @@ namespace ApexMechanoids
         {
             return rocket != null
                    && rocket.projectile != null
-                   && JavelinRocketSelection.CanFire(rocket.uraniumCost, UraniumHeld, IsPlayerLauncher);
+                   && JavelinRocketSelection.CanFire(rocket.uraniumCost, UraniumHeld);
         }
 
         private bool CanSelect(JavelinRocketOption rocket)
@@ -147,7 +153,32 @@ namespace ApexMechanoids
                 playerOnly[i] = rockets[i].playerOnly;
             }
 
-            loadedKey = rockets[JavelinRocketSelection.RandomEnemyRocket(playerOnly, Rand.Value)].key;
+            JavelinRocketOption rolled = rockets[JavelinRocketSelection.RandomEnemyRocket(playerOnly, Rand.Value)];
+            loadedKey = rolled.key;
+
+            StockMagazineFor(rolled);
+        }
+
+        // The raid's whole supply line, paid out once at spawn. Without it a launcher that is not the
+        // player's would arrive on an empty magazine and revert to the basic rocket on its first
+        // shot, which is the opposite failure to the one this replaces.
+        private void StockMagazineFor(JavelinRocketOption rolled)
+        {
+            CompRefuelable magazine = Magazine;
+            if (magazine == null)
+            {
+                return;
+            }
+
+            float stock = JavelinRocketSelection.StartingUranium(
+                rolled.uraniumCost,
+                Props.enemyRocketCharges,
+                magazine.Props.fuelCapacity);
+
+            if (stock > 0f)
+            {
+                magazine.Refuel(stock);
+            }
         }
 
         /// <summary>
@@ -156,7 +187,7 @@ namespace ApexMechanoids
         public void Notify_ShotFired()
         {
             JavelinRocketOption fired = Firing;
-            if (fired != null && JavelinRocketSelection.ChargesFor(fired.uraniumCost, IsPlayerLauncher))
+            if (fired != null && JavelinRocketSelection.ChargesFor(fired.uraniumCost))
             {
                 Magazine?.ConsumeFuel(fired.uraniumCost);
             }

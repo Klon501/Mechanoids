@@ -6,9 +6,13 @@ namespace ApexMechanoids
     ///
     /// The launcher carries a uranium magazine. The basic rocket costs nothing and is always
     /// available, so the mech is never left unable to shoot; every other warhead is drawn from that
-    /// magazine and falls back to basic once it runs dry. A launcher that is not the player's pays
-    /// nothing at all - a raid has no colony stockpile to haul from - and is instead handed one
-    /// rocket type when it spawns and keeps it.
+    /// magazine and falls back to basic once it runs dry.
+    ///
+    /// That applies to every launcher, the player's or not. A raid has no stockpile to haul from, so
+    /// rather than exempt it from the cost it is handed one rocket type and a finite magazine when it
+    /// spawns: it opens with the warhead it rolled, spends the magazine, and fights on basic rockets
+    /// from there. Exempting it instead is what let an enemy javelin field high explosive warheads
+    /// indefinitely for nothing.
     /// </summary>
     public static class JavelinRocketSelection
     {
@@ -23,23 +27,40 @@ namespace ApexMechanoids
         }
 
         /// <summary>
-        /// Whether firing this rocket draws on the launcher's uranium magazine.
+        /// Whether firing this rocket draws on the launcher's uranium magazine. Only the cost decides
+        /// it; who owns the launcher does not.
         /// </summary>
-        public static bool ChargesFor(int uraniumCost, bool launcherIsPlayerFaction)
+        public static bool ChargesFor(int uraniumCost)
         {
-            // Uranium is a colony logistics cost. Charging a raid for it would mean simulating a
-            // supply line that does not exist, and the only visible effect would be every enemy
-            // javelin quietly reverting to the basic rocket on its first shot.
-            return uraniumCost > 0 && launcherIsPlayerFaction;
+            return uraniumCost > 0;
         }
 
         /// <summary>
         /// Whether the launcher can fire this rocket right now. A launcher that cannot falls back to
         /// the basic rocket rather than refusing the shot.
         /// </summary>
-        public static bool CanFire(int uraniumCost, float uraniumHeld, bool launcherIsPlayerFaction)
+        public static bool CanFire(int uraniumCost, float uraniumHeld)
         {
-            return !ChargesFor(uraniumCost, launcherIsPlayerFaction) || uraniumHeld >= uraniumCost;
+            return !ChargesFor(uraniumCost) || uraniumHeld >= uraniumCost;
+        }
+
+        /// <summary>
+        /// How much uranium a launcher the player does not own spawns holding: enough for
+        /// <paramref name="charges"/> shots of the warhead it rolled, and no more than its magazine
+        /// can take.
+        /// </summary>
+        /// <param name="uraniumCost">Per shot cost of the rolled warhead. Free warheads need no stock.</param>
+        /// <param name="charges">How many paid shots the launcher is stocked for.</param>
+        /// <param name="capacity">The magazine's capacity.</param>
+        public static float StartingUranium(int uraniumCost, int charges, float capacity)
+        {
+            if (uraniumCost <= 0 || charges <= 0 || capacity <= 0f)
+            {
+                return 0f;
+            }
+
+            float wanted = uraniumCost * charges;
+            return wanted > capacity ? capacity : wanted;
         }
 
         /// <summary>
