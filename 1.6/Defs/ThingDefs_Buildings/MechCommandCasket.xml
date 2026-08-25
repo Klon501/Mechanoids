@@ -122,6 +122,7 @@
 			<ComponentSpacer>8</ComponentSpacer>
 			<SubcoreHigh>3</SubcoreHigh>
 			<APM_PsionicChip>1</APM_PsionicChip>
+			<APM_PsyfluxChip>1</APM_PsyfluxChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -147,7 +148,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>1000</basePowerConsumption>
 				<idlePowerDraw>80</idlePowerDraw>
 			</li>
@@ -206,20 +206,25 @@
 			<Steel>250</Steel>
 			<ComponentSpacer>2</ComponentSpacer>
 			<SubcoreHigh>1</SubcoreHigh>
-			<APM_OcularChip>1</APM_OcularChip>
+			<APM_ExtraChip>1</APM_ExtraChip>
 		</costList>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
-			<li>AdvancedMechtech</li>
+			<li>ApexMechtech</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
-					<APM_CasketBandwidth>6</APM_CasketBandwidth>
+					<APM_CasketBandwidth>8</APM_CasketBandwidth>
 				</statOffsets>
-				<maxSimultaneous>2</maxSimultaneous>
+				<maxSimultaneous>4</maxSimultaneous>
 				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
 				<!-- 2 is adjacent  -->
+			</li>
+						<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+				<idlePowerDraw>80</idlePowerDraw>
 			</li>
 		</comps>
 		<placeWorkers>
