@@ -2,8 +2,8 @@
 <Defs>
 	<ThingDef ParentName="BaseGun">
 		<defName>APM_Gun_Pulse_Shotgun</defName>
-		<label>pulse shotgun</label>
-		<description>A pulse-charged shotgun that fires two heavy bursts, releasing unstable energy on impact.</description>
+		<label>Charge Scattershot</label>
+		<description>Close quarters combat with mechanized foes is never a good idea, and the introduction of the charge scattershot turns that idea into a death wish. This shotgun uses pulse munitions and the result is a prime emplacement breaching tool. Enemy forces are typically less armored than defense emplacements and even a militor could determine the results of that matchup.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/PulseChargeScattershot</texPath>

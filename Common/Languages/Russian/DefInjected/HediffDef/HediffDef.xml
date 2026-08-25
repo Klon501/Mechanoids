@@ -1,70 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_AbsorbedThing.description>Перерабатывает поглощённую биомассу в химтопливо.</APM_AbsorbedThing.description>
+  <!-- APM_ApexMechanoid_HealOnKills -->
+  <!-- EN: Vampiric Mechanites -->
+  <APM_ApexMechanoid_HealOnKills.label>вампирические механиты</APM_ApexMechanoid_HealOnKills.label>
+  <!-- EN: Vampiric -->
+  <APM_ApexMechanoid_HealOnKills.labelNoun>вампиризм</APM_ApexMechanoid_HealOnKills.labelNoun>
+  <!-- EN: These mechanites bank charges whenever their host downs or kills a target, then spend those charges to self-repair when the host is damaged. -->
+  <APM_ApexMechanoid_HealOnKills.description>Эти механиты накапливают заряды каждый раз, когда их носитель низвергает или убивает цель, а затем расходуют их на саморемонт при получении урона.</APM_ApexMechanoid_HealOnKills.description>
 
+  <!-- APM_AbsorbedThing -->
+  <!-- EN: recycling biomass -->
   <APM_AbsorbedThing.label>переработка биомассы</APM_AbsorbedThing.label>
+  <!-- EN: Processing absorbed biomass into chemfuel. -->
+  <APM_AbsorbedThing.description>Переработка поглощённой биомассы в химтопливо.</APM_AbsorbedThing.description>
 
-  <APM_ApexMechanoid_Floating.label>левитация</APM_ApexMechanoid_Floating.label>
-
-  <APM_ApexMechanoid_HealOnKills.label>вампирические механайты</APM_ApexMechanoid_HealOnKills.label>
-
+  <!-- APM_CelerusSmokescreenBuff -->
+  <!-- EN: Smokescreen -->Ну 
   <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
+  <!-- EN: Celerus hiding in smoke -->
+  <APM_CelerusSmokescreenBuff.description>Целерус скрывается в дыму.</APM_CelerusSmokescreenBuff.description>
 
-  <APM_DuelDraw.label>ничья в поединке</APM_DuelDraw.label>
+  <!-- APM_InDuel -->
+  <!-- EN: in duel -->
+  <APM_InDuel.label>в дуэли</APM_InDuel.label>
+  <!-- EN: Locked in a duel. A shield arena has been conjured around both combatants, blocking all ranged attacks and abilities for the duration. Incoming damage is greatly increased to force decisive action — the duel is meant to end quickly and brutally. All healing is suppressed within the arena, save for what little may be drawn from striking the enemy. Should either combatant be downed or slain, the survivor claims victory. Should time expire with both still standing, the duel ends in a draw — and both pay the price. -->
+  <APM_InDuel.description>Учавствует(а) в дуэли. Вокруг обоих бойцов сотворен защитный купол, блокирующий все дальние атаки и способности на время поединка. Входящий урон значительно увеличен, чтобы принудить к решительным действиям — дуэль должна завершиться быстро и жестоко. Любое лечение внутри арены подавлено, за исключением того малого количества, что высасывается при ударах по врагу. Если один из участников повержен или убит, выживший побеждает. Если время истечет, а оба всё еще стоят на ногах, дуэль закончится ничьей — и оба заплатят свою цену.</APM_InDuel.description>
 
-  <APM_DuelWinner.label>победитель поединка</APM_DuelWinner.label>
+  <!-- APM_DuelWinner -->
+  <!-- EN: duel winner -->
+  <APM_DuelWinner.label>победитель дуэли</APM_DuelWinner.label>
+  <!-- EN: This combatant has emerged victorious from the arena. Each duel won sharpens their edge — reflexes quicken, strikes land harder and the enemy's blows are turned aside with growing ease. The longer this warrior's unbroken winning streak the more formidable they become. The glory fades with time but the memory of victory lingers. -->
+  <APM_DuelWinner.description>Этот боец вышел победителем из арены. Каждая выигранная дуэль оттачивает его мастерство — рефлексы ускоряются, удары становятся сильнее, а вражеские выпады отражаются всё проще. Чем длиннее неразрывная серия побед, тем опаснее становится этот воин. Слава со временем угасает, но память о победе остается.</APM_DuelWinner.description>
+  <!-- EN: stolen thread (1 win) -->
+  <APM_DuelWinner.stages.0.label>похищенная нить (1 победа)</APM_DuelWinner.stages.0.label>
+  <!-- EN: array expansion (2 wins) -->
+  <APM_DuelWinner.stages.1.label>расширение матрицы (2 победы)</APM_DuelWinner.stages.1.label>
+  <!-- EN: grid dominance (3 wins) -->
+  <APM_DuelWinner.stages.2.label>доминирование в сети (3 победы)</APM_DuelWinner.stages.2.label>
+  <!-- EN: kinetic overclock (4 wins) -->
+  <APM_DuelWinner.stages.3.label>кинетический разгон (4 победы)</APM_DuelWinner.stages.3.label>
+  <!-- EN: core assimilation (5 wins) -->
+  <APM_DuelWinner.stages.4.label>ассимиляция ядра (5 побед)</APM_DuelWinner.stages.4.label>
+  <!-- EN: neural saturation (6 wins) -->
+  <APM_DuelWinner.stages.5.label>нейронное насыщение (6 побед)</APM_DuelWinner.stages.5.label>
+  <!-- EN: algorithmic apex (7 wins) -->
+  <APM_DuelWinner.stages.6.label>алгоритмическое возвышение (7 побед)</APM_DuelWinner.stages.6.label>
+  <!-- EN: singularity vector (8 wins) -->
+  <APM_DuelWinner.stages.7.label>вектор сингулярности (8 побед)</APM_DuelWinner.stages.7.label>
+  <!-- EN: network monarch (9 wins) -->
+  <APM_DuelWinner.stages.8.label>повелитель сети (9 побед)</APM_DuelWinner.stages.8.label>
+  <!-- EN: absolute supremacy (10 wins) -->
+  <APM_DuelWinner.stages.9.label>абсолютное превосходство (10 побед)</APM_DuelWinner.stages.9.label>
 
-  <APM_DuelWinner.stages.0.label>побед: 1</APM_DuelWinner.stages.0.label>
+  <!-- APM_DuelDraw -->
+  <!-- EN: duel draw -->
+  <APM_DuelDraw.label>ничья в дуэли</APM_DuelDraw.label>
+  <!-- EN: The duel ended without a victor. Both combatants stood when the arena fell — a dishonor neither can easily shake. Movement is sluggish as though the shame of an unresolved contest weighs heavily on the body. The debuff will lift in time but the stigma of a draw is not quickly forgotten. -->
+  <APM_DuelDraw.description>Дуэль закончилась без победителя. Оба бойца остались на ногах когда пал барьер — позор, от которого не так просто избавиться. Движения скованы, словно тяжесть незавершенного поединка давит на тело. Штраф со временем спадет, но клеймо ничьей забудется не сразу.</APM_DuelDraw.description>
 
-  <APM_DuelWinner.stages.1.label>побед: 2</APM_DuelWinner.stages.1.label>
-
-  <APM_DuelWinner.stages.2.label>побед: 3</APM_DuelWinner.stages.2.label>
-
-  <APM_DuelWinner.stages.3.label>побед: 4</APM_DuelWinner.stages.3.label>
-
-  <APM_DuelWinner.stages.4.label>побед: 5</APM_DuelWinner.stages.4.label>
-
-  <APM_DuelWinner.stages.5.label>побед: 6</APM_DuelWinner.stages.5.label>
-
-  <APM_DuelWinner.stages.6.label>побед: 7</APM_DuelWinner.stages.6.label>
-
-  <APM_Hediff_Devoured.description>Запечатан внутри криокамеры «Морозуса». Жизненные показатели приостановлены.</APM_Hediff_Devoured.description>
-
-  <APM_Hediff_Devoured.label>поглощение</APM_Hediff_Devoured.label>
-
-  <APM_Hediff_JavelinMissileLock.label>ракетный захват цели</APM_Hediff_JavelinMissileLock.label>
-
-  <APM_Hediff_PressTheAttack.label>натиск</APM_Hediff_PressTheAttack.label>
-
-  <APM_Hediff_SirenSong.description>Персонаж охвачен умиротворяющим механическим хором, чувствуя прилив бодрости и лёгкости.</APM_Hediff_SirenSong.description>
-
-  <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
-
-  <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
-
-  <APM_Hediff_TerminusOverdrive.description>Терминус направляет поток энергии на повышение боевой эффективности, отбрасывая сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
-
-  <APM_Hediff_TerminusOverdrive.label>перегрузка</APM_Hediff_TerminusOverdrive.label>
-
-  <APM_Hediff_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы наделить всех союзных Завоевателей в радиусе действия мощным усилением.</APM_Hediff_UltimateSacrifice.description>
-
-  <APM_Hediff_UltimateSacrifice.label>высшая жертва</APM_Hediff_UltimateSacrifice.label>
-
-  <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>
-
-  <APM_InDuel.description>«Испытание поединком» бросает вызов выбранному врагу, вынуждая оппонентов на короткое время вступить в ближний бой. Способности и дальние атаки отключаются. Вокруг участников автоматически создаётся визуальная «арена», вне которой их нельзя выбрать целью. Если один из противников погибает, победитель получает мощный бонус. Если поединок не заканчивается смертью, оба участника получают значительный штраф. Постоянный периодический урон поощряет агрессивную игру. Восстановление здоровья (кроме вампиризма) во время поединка заблокировано.</APM_InDuel.description>
-
-  <APM_InDuel.label>в поединке</APM_InDuel.label>
-
-  <APM_LaserBlind.description>Зрение сильно ограничено из-за воздействия лазерного луча.</APM_LaserBlind.description>
-
-  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
-
-  <APM_MechCommandCasketBoost.label>усиление командной капсулы</APM_MechCommandCasketBoost.label>
-
-  <APM_PulseWaveBlind.description>Яркая вспышка и скачок давления перегрузили датчики персонажа, резко ограничив его зрение на короткое время.</APM_PulseWaveBlind.description>
-
+  <!-- APM_PulseWaveBlind -->
+  <!-- EN: flash-blinded -->
   <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
+  <!-- EN: An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time. -->
+  <APM_PulseWaveBlind.description>Интенсивная вспышка и скачок давления перегрузили сенсоры, резко снизив зрение на короткое время.</APM_PulseWaveBlind.description>
+
+  <!-- APM_ApexMechanoid_Floating -->
+  <!-- EN: Floating -->
+  <APM_ApexMechanoid_Floating.label>парение</APM_ApexMechanoid_Floating.label>
+  <!-- EN: Floating -->
+  <APM_ApexMechanoid_Floating.labelNoun>парение</APM_ApexMechanoid_Floating.labelNoun>
+  <!-- EN: This mechanoid hovers above the ground, ignoring all terrain movement penalties. -->
+  <APM_ApexMechanoid_Floating.description>Этот механоид парит над землей, игнорируя любые штрафы к скорости от ландшафта.</APM_ApexMechanoid_Floating.description>
+
+  <!-- APM_Hediff_Devoured -->
+  <!-- EN: devoured -->
+  <APM_Hediff_Devoured.label>поглощён(а)</APM_Hediff_Devoured.label>
+  <!-- EN: Sealed inside a Frostivus cryo-chamber. All biological processes are suspended - no bleeding, no sickness progression, no needs. -->
+  <APM_Hediff_Devoured.description>Запечатан(а) внутри криокамеры Фростивуса. Все биологические процессы приостановлены — нет кровотечения, развития болезней и потребностей.</APM_Hediff_Devoured.description>
+
+  <!-- APM_Hediff_JavelinMissileLock -->
+  <!-- EN: missile lock -->
+  <APM_Hediff_JavelinMissileLock.label>захват цели</APM_Hediff_JavelinMissileLock.label>
+  <!-- EN: Seeker heads from a javelin missile rack have logged this target's hull profile. Every rocket that finds it again is fused to bite deeper than the last, until the lock fades. -->
+  <APM_Hediff_JavelinMissileLock.description>Головки самонаведения ракетной установки «Джавелина» зафиксировали профиль корпуса этой цели. Каждая следующая попавшая ракета проникает глубже предыдущей, пока захват не спадёт.</APM_Hediff_JavelinMissileLock.description>
+  <!-- EN: missile lock -->
+  <APM_Hediff_JavelinMissileLock.stages.0.label>захват цели</APM_Hediff_JavelinMissileLock.stages.0.label>
+
+  <!-- APM_Hediff_SteelDiscipline -->
+  <!-- EN: steel discipline -->
+  <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
+  <!-- EN: Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude. -->
+  <APM_Hediff_SteelDiscipline.description>Вдохновленная присутствием Вассала, эта единица двигается с новой целеустремленностью и стойкостью духа.</APM_Hediff_SteelDiscipline.description>
+
+  <!-- APM_Hediff_Unity -->
+  <!-- EN: unity uplink -->
+  <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>
+  <!-- EN: Conquerors are by default installed with processing units that automatically attempt to link with those of allies in the vicinity to assist each other with internal calculations, boosting their efficiency the more nearby. -->
+  <APM_Hediff_Unity.description>Завоеватели по умолчанию оснащены вычислительными блоками, которые автоматически пытаются связываться с блоками находящихся поблизости союзников для совместных внутренних вычислений, повышая свою эффективность с каждым соседним соратником.</APM_Hediff_Unity.description>
+  <!-- EN: calculation link (minimal) -->
+  <APM_Hediff_Unity.stages.1.label>вычислительная связь (минимальная)</APM_Hediff_Unity.stages.1.label>
+  <!-- EN: calculation link (low sync) -->
+  <APM_Hediff_Unity.stages.2.label>вычислительная связь (слабая синхронизация)</APM_Hediff_Unity.stages.2.label>
+  <!-- EN: calculation link (medium sync) -->
+  <APM_Hediff_Unity.stages.3.label>вычислительная связь (средняя синхронизация)</APM_Hediff_Unity.stages.3.label>
+  <!-- EN: calculation link (distributed) -->
+  <APM_Hediff_Unity.stages.4.label>вычислительная связь (распределенная)</APM_Hediff_Unity.stages.4.label>
+  <!-- EN: calculation link (high sync) -->
+  <APM_Hediff_Unity.stages.5.label>вычислительная связь (высокая синхронизация)</APM_Hediff_Unity.stages.5.label>
+  <!-- EN: calculation link (optimized) -->
+  <APM_Hediff_Unity.stages.6.label>вычислительная связь (оптимизированная)</APM_Hediff_Unity.stages.6.label>
+  <!-- EN: calculation link (peak efficiency) -->
+  <APM_Hediff_Unity.stages.7.label>вычислительная связь (пиковая эффективность)</APM_Hediff_Unity.stages.7.label>
 
 </LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- APM_Mech_Haze -->
+  <APM_Mech_Haze.label>мгла</APM_Mech_Haze.label>
+  <APM_Mech_Haze.description>Эксперимент улья по органическому сдерживанию территорий. Мгла способна накачивать токсичный газ в окружающее пространство. Её атаки ближнего боя смертоносны и отравляют цель при каждом ударе. Разум улья не знает границ, находят применение даже собственным токсичным отходам.</APM_Mech_Haze.description>
+  <APM_Mech_Haze.tools.head.label>голова</APM_Mech_Haze.tools.head.label>
+  <APM_Mech_Haze.tools.front_left_paw.label>передняя левая лапа</APM_Mech_Haze.tools.front_left_paw.label>
+  <APM_Mech_Haze.tools.front_right_paw.label>передняя правая лапа</APM_Mech_Haze.tools.front_right_paw.label>
+
+  <!-- PawnKindDef -->
+  <APM_Mech_Haze.kindLabel>мгла</APM_Mech_Haze.kindLabel>
+</LanguageData>

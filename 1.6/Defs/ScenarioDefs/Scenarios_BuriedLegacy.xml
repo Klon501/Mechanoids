@@ -106,7 +106,7 @@
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Years of searching led you to the buried domain of a long-dead mechanitor. Guided by a faint signal, you step into a silent base where a skeleton rots inside a locked command casket, undone by his own mistakes. The hive-mind never recalled the garrison, leaving mindless mechanoids patrolling the empty halls under an unfinished directive. The base, the machinery, and the dormant army are now yours. All that remains is to take the throne.</text>
+          <text>Years of searching led you to the buried domain of a long-dead mechanitor. Guided by a faint signal, you step into a silent base where a skeleton rots inside a locked command casket, undone by his own mistakes. The base, the machinery, and the dormant army are now yours. All that remains is to take the throne.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         

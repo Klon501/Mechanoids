@@ -103,7 +103,7 @@
 	<!-- ===== Weapon Def ===== -->
 	<ThingDef ParentName="BaseGun">
 		<defName>APM_Haze_BeamGun</defName>
-		<label>haze graser cannon</label>
+		<label>Beam Witherer</label>
 		<description>A tesseron's beam grazer twisted into a machine that spews toxic waste in addition to plasma, the products of this cannon are monstrously hazardous to organic life. Fear is only another foothold of the mechanoid superintelligence.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/HazeBeamWitherer</texPath>
