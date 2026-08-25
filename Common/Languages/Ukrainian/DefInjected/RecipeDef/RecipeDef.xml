@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>центральний оптичний датчик</APM_Aegis.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>лівий звуковий датчик</APM_Aegis.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>правий звуковий датчик</APM_Aegis.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Aegis.corePart.parts.1.customLabel>ліве плече</APM_Aegis.corePart.parts.1.customLabel>
+
+  <APM_Aegis.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Aegis.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>лівий щит</APM_Aegis.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Aegis.corePart.parts.2.customLabel>праве плече</APM_Aegis.corePart.parts.2.customLabel>
+
+  <APM_Aegis.corePart.parts.2.parts.0.customLabel>права рука</APM_Aegis.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>правий щит</APM_Aegis.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Aegis.corePart.parts.3.customLabel>ліва нога</APM_Aegis.corePart.parts.3.customLabel>
+
+  <APM_Aegis.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Aegis.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Aegis.corePart.parts.4.customLabel>права нога</APM_Aegis.corePart.parts.4.customLabel>
+
+  <APM_Aegis.corePart.parts.4.parts.0.customLabel>права ступня</APM_Aegis.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Aegis.label>важкий мех із парними щитами</APM_Aegis.label>
+
+  <APM_Celerus.label>целерус</APM_Celerus.label>
+
+  <APM_Conqueror_AR.label>завойовник-бластер</APM_Conqueror_AR.label>
+
+  <APM_Conqueror_DMR.label>завойовник-карабін</APM_Conqueror_DMR.label>
+
+  <APM_Conqueror_LMG.label>завойовник-спітер</APM_Conqueror_LMG.label>
+
+  <APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Dominus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Dominus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Dominus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Dominus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Dominus.corePart.parts.1.customLabel>ліве механічне плече</APM_Dominus.corePart.parts.1.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Dominus.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Dominus.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Dominus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Dominus.corePart.parts.2.customLabel>праве механічне плече</APM_Dominus.corePart.parts.2.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.customLabel>права рука</APM_Dominus.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Dominus.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Dominus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Dominus.corePart.parts.3.customLabel>ліва нога</APM_Dominus.corePart.parts.3.customLabel>
+
+  <APM_Dominus.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Dominus.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Dominus.corePart.parts.4.customLabel>права нога</APM_Dominus.corePart.parts.4.customLabel>
+
+  <APM_Dominus.corePart.parts.4.parts.0.customLabel>права ступня</APM_Dominus.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Dominus.label>домінус</APM_Dominus.label>
+
+  <APM_Dynamo.label>динамо</APM_Dynamo.label>
+
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>лівий зоровий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>правий зоровий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Frostivus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Frostivus.corePart.parts.1.customLabel>ліва передня нога</APM_Frostivus.corePart.parts.1.customLabel>
+
+  <APM_Frostivus.corePart.parts.1.parts.0.customLabel>ліва передня ступня</APM_Frostivus.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Frostivus.corePart.parts.2.customLabel>права передня нога</APM_Frostivus.corePart.parts.2.customLabel>
+
+  <APM_Frostivus.corePart.parts.2.parts.0.customLabel>права передня ступня</APM_Frostivus.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Frostivus.corePart.parts.3.customLabel>ліва задня нога</APM_Frostivus.corePart.parts.3.customLabel>
+
+  <APM_Frostivus.corePart.parts.3.parts.0.customLabel>ліва задня ступня</APM_Frostivus.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Frostivus.corePart.parts.4.customLabel>права задня нога</APM_Frostivus.corePart.parts.4.customLabel>
+
+  <APM_Frostivus.corePart.parts.4.parts.0.customLabel>права задня ступня</APM_Frostivus.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Frostivus.corePart.parts.5.customLabel>кріокамера</APM_Frostivus.corePart.parts.5.customLabel>
+
+  <APM_Frostivus.description>Вирощує механоїда-морозуса.</APM_Frostivus.description>
+
+  <APM_Frostivus.label>морозус</APM_Frostivus.label>
+
+  <APM_Gazer.corePart.parts.0.parts.1.customLabel>ліва система охолодження</APM_Gazer.corePart.parts.0.parts.1.customLabel>
+
+  <APM_Gazer.corePart.parts.0.parts.2.customLabel>права система охолодження</APM_Gazer.corePart.parts.0.parts.2.customLabel>
+
+  <APM_Gazer.corePart.parts.0.parts.3.customLabel>фокусуюча лінза</APM_Gazer.corePart.parts.0.parts.3.customLabel>
+
+  <APM_Gazer.corePart.parts.0.parts.4.customLabel>лівий звуковий датчик</APM_Gazer.corePart.parts.0.parts.4.customLabel>
+
+  <APM_Gazer.corePart.parts.0.parts.5.customLabel>правий звуковий датчик</APM_Gazer.corePart.parts.0.parts.5.customLabel>
+
+  <APM_Gazer.corePart.parts.3.customLabel>ліва передня нога</APM_Gazer.corePart.parts.3.customLabel>
+
+  <APM_Gazer.corePart.parts.3.parts.0.customLabel>ліва передня лапа</APM_Gazer.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Gazer.corePart.parts.4.customLabel>права передня нога</APM_Gazer.corePart.parts.4.customLabel>
+
+  <APM_Gazer.corePart.parts.4.parts.0.customLabel>права передня лапа</APM_Gazer.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Gazer.label>спостерігач</APM_Gazer.label>
+
+  <APM_Haze.label>завіса</APM_Haze.label>
+
+  <APM_Ingestor.label>поглинач</APM_Ingestor.label>
+
+  <APM_Javelin.label>джавелін</APM_Javelin.label>
+
+  <APM_Lasher.label>погонич</APM_Lasher.label>
+
+  <APM_Mantis.label>богомол</APM_Mantis.label>
+
+  <APM_Maul.label>кришитель</APM_Maul.label>
+
+  <APM_MechamancerPack.label>виготовити ранець мехаманта</APM_MechamancerPack.label>
+
+  <APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Pulse.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Pulse.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Pulse.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Pulse.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Pulse.corePart.parts.1.customLabel>ліве механічне плече</APM_Pulse.corePart.parts.1.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Pulse.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Pulse.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Pulse.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Pulse.corePart.parts.2.customLabel>праве механічне плече</APM_Pulse.corePart.parts.2.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.customLabel>права рука</APM_Pulse.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Pulse.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Pulse.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Pulse.corePart.parts.3.customLabel>ліва нога</APM_Pulse.corePart.parts.3.customLabel>
+
+  <APM_Pulse.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Pulse.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Pulse.corePart.parts.4.customLabel>права нога</APM_Pulse.corePart.parts.4.customLabel>
+
+  <APM_Pulse.corePart.parts.4.parts.0.customLabel>права ступня</APM_Pulse.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Pulse.label>імпульс</APM_Pulse.label>
+
+  <APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Ravager.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Ravager.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Ravager.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Ravager.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Ravager.corePart.parts.1.customLabel>ліва передня нога</APM_Ravager.corePart.parts.1.customLabel>
+
+  <APM_Ravager.corePart.parts.1.parts.0.customLabel>ліва передня ступня</APM_Ravager.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Ravager.corePart.parts.2.customLabel>права передня нога</APM_Ravager.corePart.parts.2.customLabel>
+
+  <APM_Ravager.corePart.parts.2.parts.0.customLabel>права передня ступня</APM_Ravager.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Ravager.corePart.parts.3.customLabel>ліва задня нога</APM_Ravager.corePart.parts.3.customLabel>
+
+  <APM_Ravager.corePart.parts.3.parts.0.customLabel>ліва задня ступня</APM_Ravager.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Ravager.corePart.parts.4.customLabel>права задня нога</APM_Ravager.corePart.parts.4.customLabel>
+
+  <APM_Ravager.corePart.parts.4.parts.0.customLabel>права задня ступня</APM_Ravager.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Ravager.label>спустошувач</APM_Ravager.label>
+
+  <APM_Siren.label>резонансний корпус сирени</APM_Siren.label>
+
+  <APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Terminus.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Terminus.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Terminus.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Terminus.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Terminus.corePart.parts.1.customLabel>ліве механічне плече</APM_Terminus.corePart.parts.1.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Terminus.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Terminus.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Terminus.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Terminus.corePart.parts.2.customLabel>праве механічне плече</APM_Terminus.corePart.parts.2.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.customLabel>права рука</APM_Terminus.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Terminus.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Terminus.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Terminus.corePart.parts.3.customLabel>ліва нога</APM_Terminus.corePart.parts.3.customLabel>
+
+  <APM_Terminus.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Terminus.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Terminus.corePart.parts.4.customLabel>права нога</APM_Terminus.corePart.parts.4.customLabel>
+
+  <APM_Terminus.corePart.parts.4.parts.0.customLabel>права ступня</APM_Terminus.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Terminus.label>термінус</APM_Terminus.label>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>лівий акустичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>правий акустичний сенсор</APM_Tinker.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Tinker.corePart.parts.1.customLabel>ліве механічне плече</APM_Tinker.corePart.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Tinker.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Tinker.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Tinker.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.2.customLabel>праве механічне плече</APM_Tinker.corePart.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.customLabel>права рука</APM_Tinker.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Tinker.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Tinker.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.3.customLabel>ремонтний модуль</APM_Tinker.corePart.parts.3.customLabel>
+
+  <APM_Tinker.corePart.parts.4.customLabel>ліва нога</APM_Tinker.corePart.parts.4.customLabel>
+
+  <APM_Tinker.corePart.parts.4.parts.0.customLabel>ліва ступня</APM_Tinker.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Tinker.corePart.parts.5.customLabel>права нога</APM_Tinker.corePart.parts.5.customLabel>
+
+  <APM_Tinker.corePart.parts.5.parts.0.customLabel>права ступня</APM_Tinker.corePart.parts.5.parts.0.customLabel>
+
+  <APM_Tinker.label>механік</APM_Tinker.label>
+
+  <APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>лівий оптичний датчик</APM_Vassal.corePart.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>правий оптичний датчик</APM_Vassal.corePart.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>лівий звуковий датчик</APM_Vassal.corePart.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>правий звуковий датчик</APM_Vassal.corePart.parts.0.parts.0.parts.4.customLabel>
+
+  <APM_Vassal.corePart.parts.1.customLabel>ліве механічне плече</APM_Vassal.corePart.parts.1.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.customLabel>ліва рука</APM_Vassal.corePart.parts.1.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>ліва кисть</APM_Vassal.corePart.parts.1.parts.0.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>лівий мізинець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>лівий середній палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>лівий вказівний палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>лівий великий палець</APM_Vassal.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Vassal.corePart.parts.2.customLabel>праве механічне плече</APM_Vassal.corePart.parts.2.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.customLabel>права рука</APM_Vassal.corePart.parts.2.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>права кисть</APM_Vassal.corePart.parts.2.parts.0.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>правий мізинець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>правий середній палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>правий вказівний палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+
+  <APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>правий великий палець</APM_Vassal.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+
+  <APM_Vassal.corePart.parts.3.customLabel>ліва нога</APM_Vassal.corePart.parts.3.customLabel>
+
+  <APM_Vassal.corePart.parts.3.parts.0.customLabel>ліва ступня</APM_Vassal.corePart.parts.3.parts.0.customLabel>
+
+  <APM_Vassal.corePart.parts.4.customLabel>права нога</APM_Vassal.corePart.parts.4.customLabel>
+
+  <APM_Vassal.corePart.parts.4.parts.0.customLabel>права ступня</APM_Vassal.corePart.parts.4.parts.0.customLabel>
+
+  <APM_Vassal.label>васал</APM_Vassal.label>
+
+  <Make_DuelistPsyspear.label>виготовити пси-спис дуелянта</Make_DuelistPsyspear.label>
+
+</LanguageData>

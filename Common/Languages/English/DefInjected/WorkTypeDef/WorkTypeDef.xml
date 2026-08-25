@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_FrostivusFoodPreservation.description>Rescue temperature-spoiling food and unload it to cold storage.</APM_FrostivusFoodPreservation.description>
+
+  <APM_FrostivusFoodPreservation.gerundLabel>preserving food</APM_FrostivusFoodPreservation.gerundLabel>
+
+  <APM_FrostivusFoodPreservation.labelShort>preserve</APM_FrostivusFoodPreservation.labelShort>
+
+  <APM_FrostivusFoodPreservation.pawnLabel>Preserver</APM_FrostivusFoodPreservation.pawnLabel>
+
+  <APM_FrostivusFoodPreservation.verb>Preserve</APM_FrostivusFoodPreservation.verb>
+
+  <APM_IngestorCorpseProcessing.description>Process organic corpses into chemfuel.</APM_IngestorCorpseProcessing.description>
+
+  <APM_IngestorCorpseProcessing.gerundLabel>ingesting corpses</APM_IngestorCorpseProcessing.gerundLabel>
+
+  <APM_IngestorCorpseProcessing.labelShort>ingest</APM_IngestorCorpseProcessing.labelShort>
+
+  <APM_IngestorCorpseProcessing.pawnLabel>Ingestor</APM_IngestorCorpseProcessing.pawnLabel>
+
+  <APM_IngestorCorpseProcessing.verb>Ingest</APM_IngestorCorpseProcessing.verb>
+
+  <APM_LasherHandling.description>Tame, train, harvest resources from and slaughter animals.</APM_LasherHandling.description>
+
+  <APM_LasherHandling.gerundLabel>handling</APM_LasherHandling.gerundLabel>
+
+  <APM_LasherHandling.labelShort>handle</APM_LasherHandling.labelShort>
+
+  <APM_LasherHandling.pawnLabel>Handler</APM_LasherHandling.pawnLabel>
+
+  <APM_LasherHandling.verb>Handle</APM_LasherHandling.verb>
+
+  <APM_SirenWarden.description>Manage, feed, chat with, and recruit prisoners.</APM_SirenWarden.description>
+
+  <APM_SirenWarden.gerundLabel>wardening</APM_SirenWarden.gerundLabel>
+
+  <APM_SirenWarden.labelShort>warden</APM_SirenWarden.labelShort>
+
+  <APM_SirenWarden.pawnLabel>Warden</APM_SirenWarden.pawnLabel>
+
+  <APM_SirenWarden.verb>Handle</APM_SirenWarden.verb>
+
+  <APM_TinkerRepair.description>Repair same-faction buildings and mechanoids.</APM_TinkerRepair.description>
+
+  <APM_TinkerRepair.gerundLabel>repairing buildings and mechs</APM_TinkerRepair.gerundLabel>
+
+  <APM_TinkerRepair.labelShort>repair</APM_TinkerRepair.labelShort>
+
+  <APM_TinkerRepair.pawnLabel>Tinker</APM_TinkerRepair.pawnLabel>
+
+  <APM_TinkerRepair.verb>Repair</APM_TinkerRepair.verb>
+
+</LanguageData>

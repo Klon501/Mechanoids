@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_CarryToRepairStation.gerund>нести</APM_CarryToRepairStation.gerund>
+
+  <APM_CarryToRepairStation.label>относить к ремонтной станции</APM_CarryToRepairStation.label>
+
+  <APM_CarryToRepairStation.verb>нести</APM_CarryToRepairStation.verb>
+
+  <APM_EnterRepairStation.gerund>войти в</APM_EnterRepairStation.gerund>
+
+  <APM_EnterRepairStation.label>входить в ремонтную станцию</APM_EnterRepairStation.label>
+
+  <APM_EnterRepairStation.verb>войти в</APM_EnterRepairStation.verb>
+
+  <APM_HaulToMechCommandCasket.label>перенести к командной капсуле</APM_HaulToMechCommandCasket.label>
+
+  <APM_HaulToToxicPurifier.label>перенести отходы на станцию очистки</APM_HaulToToxicPurifier.label>
+
+  <APM_IngestorProcessCorpses.gerund>переработка</APM_IngestorProcessCorpses.gerund>
+
+  <APM_IngestorProcessCorpses.label>перерабатывать трупы</APM_IngestorProcessCorpses.label>
+
+  <APM_IngestorProcessCorpses.verb>переработать</APM_IngestorProcessCorpses.verb>
+
+  <APM_LasherFeedPatientAnimals.gerund>кормление</APM_LasherFeedPatientAnimals.gerund>
+
+  <APM_LasherFeedPatientAnimals.label>кормить животных</APM_LasherFeedPatientAnimals.label>
+
+  <APM_LasherFeedPatientAnimals.verb>кормить</APM_LasherFeedPatientAnimals.verb>
+
+  <APM_LasherMilk.gerund>дойка</APM_LasherMilk.gerund>
+
+  <APM_LasherMilk.label>доить животных</APM_LasherMilk.label>
+
+  <APM_LasherMilk.verb>доить</APM_LasherMilk.verb>
+
+  <APM_LasherRebalanceAnimalsInPens.gerund>привязывание</APM_LasherRebalanceAnimalsInPens.gerund>
+
+  <APM_LasherRebalanceAnimalsInPens.label>перебалансировать загонных животных</APM_LasherRebalanceAnimalsInPens.label>
+
+  <APM_LasherRebalanceAnimalsInPens.verb>привязать</APM_LasherRebalanceAnimalsInPens.verb>
+
+  <APM_LasherReleaseToWild.gerund>выпуск</APM_LasherReleaseToWild.gerund>
+
+  <APM_LasherReleaseToWild.label>выпустить на волю</APM_LasherReleaseToWild.label>
+
+  <APM_LasherReleaseToWild.verb>выпустить</APM_LasherReleaseToWild.verb>
+
+  <APM_LasherShear.gerund>стрижка</APM_LasherShear.gerund>
+
+  <APM_LasherShear.label>стричь животных</APM_LasherShear.label>
+
+  <APM_LasherShear.verb>стричь</APM_LasherShear.verb>
+
+  <APM_LasherSlaughter.gerund>забой</APM_LasherSlaughter.gerund>
+
+  <APM_LasherSlaughter.label>забивать животных</APM_LasherSlaughter.label>
+
+  <APM_LasherSlaughter.verb>забить</APM_LasherSlaughter.verb>
+
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>привязывание</APM_LasherTakeRoamingAnimalsToPen.gerund>
+
+  <APM_LasherTakeRoamingAnimalsToPen.label>привязать бродячих животных</APM_LasherTakeRoamingAnimalsToPen.label>
+
+  <APM_LasherTakeRoamingAnimalsToPen.verb>привязать</APM_LasherTakeRoamingAnimalsToPen.verb>
+
+  <APM_LasherTakeToPen.gerund>привязывание</APM_LasherTakeToPen.gerund>
+
+  <APM_LasherTakeToPen.label>привязать животных</APM_LasherTakeToPen.label>
+
+  <APM_LasherTakeToPen.verb>привязать</APM_LasherTakeToPen.verb>
+
+  <APM_LasherTame.gerund>приручение</APM_LasherTame.gerund>
+
+  <APM_LasherTame.label>приручать животных</APM_LasherTame.label>
+
+  <APM_LasherTame.verb>приручить</APM_LasherTame.verb>
+
+  <APM_LasherTrain.gerund>дрессировка</APM_LasherTrain.gerund>
+
+  <APM_LasherTrain.label>дрессировать животных</APM_LasherTrain.label>
+
+  <APM_LasherTrain.verb>дрессировать</APM_LasherTrain.verb>
+
+  <APM_SirenChatWithPrisoner.gerund>болтовня с</APM_SirenChatWithPrisoner.gerund>
+
+  <APM_SirenChatWithPrisoner.label>болтать с заключёнными</APM_SirenChatWithPrisoner.label>
+
+  <APM_SirenChatWithPrisoner.verb>болтать с</APM_SirenChatWithPrisoner.verb>
+
+  <APM_SirenDeliverFoodToPrisoner.gerund>доставка еды для</APM_SirenDeliverFoodToPrisoner.gerund>
+
+  <APM_SirenDeliverFoodToPrisoner.label>носить еду заключённым</APM_SirenDeliverFoodToPrisoner.label>
+
+  <APM_SirenDeliverFoodToPrisoner.verb>носить еду для</APM_SirenDeliverFoodToPrisoner.verb>
+
+  <APM_SirenFeedPrisoner.gerund>кормление</APM_SirenFeedPrisoner.gerund>
+
+  <APM_SirenFeedPrisoner.label>кормить заключённых</APM_SirenFeedPrisoner.label>
+
+  <APM_SirenFeedPrisoner.verb>кормить</APM_SirenFeedPrisoner.verb>
+
+  <APM_SirenReleasePrisoner.gerund>выпуск</APM_SirenReleasePrisoner.gerund>
+
+  <APM_SirenReleasePrisoner.label>выпустить заключённых</APM_SirenReleasePrisoner.label>
+
+  <APM_SirenReleasePrisoner.verb>выпустить</APM_SirenReleasePrisoner.verb>
+
+  <APM_SirenTakePrisonerToBed.gerund>отводить в кровать</APM_SirenTakePrisonerToBed.gerund>
+
+  <APM_SirenTakePrisonerToBed.label>отводить заключённых в кровать</APM_SirenTakePrisonerToBed.label>
+
+  <APM_SirenTakePrisonerToBed.verb>отвести в кровать</APM_SirenTakePrisonerToBed.verb>
+
+  <APM_TinkerRepairBuilding.gerund>ремонт</APM_TinkerRepairBuilding.gerund>
+
+  <APM_TinkerRepairBuilding.label>ремонтировать здание</APM_TinkerRepairBuilding.label>
+
+  <APM_TinkerRepairBuilding.verb>ремонтировать</APM_TinkerRepairBuilding.verb>
+
+  <APM_TinkerRepairMech.gerund>ремонт</APM_TinkerRepairMech.gerund>
+
+  <APM_TinkerRepairMech.label>ремонтировать меха</APM_TinkerRepairMech.label>
+
+  <APM_TinkerRepairMech.verb>ремонтировать</APM_TinkerRepairMech.verb>
+
+</LanguageData>

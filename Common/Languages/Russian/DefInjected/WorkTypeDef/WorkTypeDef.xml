@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_FrostivusFoodPreservation.description>Спасает еду из небезопасного хранения или с улицы и выгружает ее в холодное хранилище, если оно доступно.</APM_FrostivusFoodPreservation.description>
+
+  <APM_FrostivusFoodPreservation.gerundLabel>сохранение еды</APM_FrostivusFoodPreservation.gerundLabel>
+
+  <APM_FrostivusFoodPreservation.labelShort>сохранение</APM_FrostivusFoodPreservation.labelShort>
+
+  <APM_FrostivusFoodPreservation.pawnLabel>Хранитель</APM_FrostivusFoodPreservation.pawnLabel>
+
+  <APM_FrostivusFoodPreservation.verb>Сохранять</APM_FrostivusFoodPreservation.verb>
+
+  <APM_IngestorCorpseProcessing.description>Перерабатывает органические трупы в химтопливо.</APM_IngestorCorpseProcessing.description>
+
+  <APM_IngestorCorpseProcessing.gerundLabel>поглощение трупов</APM_IngestorCorpseProcessing.gerundLabel>
+
+  <APM_IngestorCorpseProcessing.labelShort>поглотить</APM_IngestorCorpseProcessing.labelShort>
+
+  <APM_IngestorCorpseProcessing.pawnLabel>Поглотитель</APM_IngestorCorpseProcessing.pawnLabel>
+
+  <APM_IngestorCorpseProcessing.verb>Поглотить</APM_IngestorCorpseProcessing.verb>
+
+  <APM_LasherHandling.description>Приручать, тренировать, собирать ресурсы с животных и забивать их.</APM_LasherHandling.description>
+
+  <APM_LasherHandling.gerundLabel>обращение</APM_LasherHandling.gerundLabel>
+
+  <APM_LasherHandling.labelShort>обращаться</APM_LasherHandling.labelShort>
+
+  <APM_LasherHandling.pawnLabel>Хендлер</APM_LasherHandling.pawnLabel>
+
+  <APM_LasherHandling.verb>Обращаться</APM_LasherHandling.verb>
+
+  <APM_SirenWarden.description>Управлять заключёнными, кормить их, болтать с ними и вербовать.</APM_SirenWarden.description>
+
+  <APM_SirenWarden.gerundLabel>надзор</APM_SirenWarden.gerundLabel>
+
+  <APM_SirenWarden.labelShort>надзиратель</APM_SirenWarden.labelShort>
+
+  <APM_SirenWarden.pawnLabel>Надзиратель</APM_SirenWarden.pawnLabel>
+
+  <APM_SirenWarden.verb>Обращаться</APM_SirenWarden.verb>
+
+  <APM_TinkerRepair.description>Ремонт зданий и механоидов своей фракции.</APM_TinkerRepair.description>
+
+  <APM_TinkerRepair.gerundLabel>ремонтируя здания и мехов</APM_TinkerRepair.gerundLabel>
+
+  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
+
+  <APM_TinkerRepair.pawnLabel>Механик</APM_TinkerRepair.pawnLabel>
+
+  <APM_TinkerRepair.verb>Ремонтировать</APM_TinkerRepair.verb>
+
+</LanguageData>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Aegis.description>«Эгида» — могучий механоид, жертвующий наступательной мощью ради непревзойдённого мастерства защиты. С парными щитами этого юнита фраза «Лучшая защита — это нападение» обретает новый смысл.</APM_Mech_Aegis.description>
+
+  <APM_Mech_Aegis.label>эгида</APM_Mech_Aegis.label>
+
+  <APM_Mech_Aegis.labelPlural>эгиды</APM_Mech_Aegis.labelPlural>
+
+  <APM_Mech_Aegis.tools.0.label>левый щит</APM_Mech_Aegis.tools.0.label>
+
+  <APM_Mech_Aegis.tools.1.label>правый щит</APM_Mech_Aegis.tools.1.label>
+
+  <APM_Mech_Celerus.description>Разум Архотеков создал три модели механоидов, пытаясь вывести идеального командира. Целерус, вдохновлённый эпохой Сэнгоку, быстр и скрытен. Он способен телепортироваться на короткие дистанции и создавать дымовую завесу, скрывающую его и союзников от обнаружения, становясь при этом психически незаметным. Кроме того, противники в зоне завесы получают периодический урон.</APM_Mech_Celerus.description>
+
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+
+  <APM_Mech_Celerus.labelPlural>целерусы</APM_Mech_Celerus.labelPlural>
+
+  <APM_Mech_Celerus.tools.0.label>левый кулак</APM_Mech_Celerus.tools.0.label>
+
+  <APM_Mech_Celerus.tools.1.label>правый кулак</APM_Mech_Celerus.tools.1.label>
+
+  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+
+  <APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
+
+  <APM_Mech_Celerus_Boss.labelPlural>целерусы</APM_Mech_Celerus_Boss.labelPlural>
+
+  <APM_Mech_Conqueror_AR.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным бластером.</APM_Mech_Conqueror_AR.description>
+
+  <APM_Mech_Conqueror_AR.label>завоеватель (винтовка)</APM_Mech_Conqueror_AR.label>
+
+  <APM_Mech_Conqueror_AR.labelPlural>завоеватели (винтовка)</APM_Mech_Conqueror_AR.labelPlural>
+
+  <APM_Mech_Conqueror_AR.tools.0.label>левый кулак</APM_Mech_Conqueror_AR.tools.0.label>
+
+  <APM_Mech_Conqueror_AR.tools.1.label>правый кулак</APM_Mech_Conqueror_AR.tools.1.label>
+
+  <APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
+
+  <APM_Mech_Conqueror_DMR.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным энергокарабином.</APM_Mech_Conqueror_DMR.description>
+
+  <APM_Mech_Conqueror_DMR.label>завоеватель (карабин)</APM_Mech_Conqueror_DMR.label>
+
+  <APM_Mech_Conqueror_DMR.labelPlural>завоеватели (карабин)</APM_Mech_Conqueror_DMR.labelPlural>
+
+  <APM_Mech_Conqueror_DMR.tools.0.label>левый кулак</APM_Mech_Conqueror_DMR.tools.0.label>
+
+  <APM_Mech_Conqueror_DMR.tools.1.label>правый кулак</APM_Mech_Conqueror_DMR.tools.1.label>
+
+  <APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
+
+  <APM_Mech_Conqueror_LMG.description>Универсальный пехотный механоид, призванный заполнить нишу между жнецами и уланами. Его сила в единстве: Завоеватели связываются друг с другом в радиусе действия, повышая суммарную вычислительную мощность. Один юнит может перегрузить общую сеть, чтобы дать усиление остальным ценой собственной гибели.\nВооружён мощным энергопулемётом.</APM_Mech_Conqueror_LMG.description>
+
+  <APM_Mech_Conqueror_LMG.label>завоеватель (пулемёт)</APM_Mech_Conqueror_LMG.label>
+
+  <APM_Mech_Conqueror_LMG.labelPlural>завоеватели (пулемёт)</APM_Mech_Conqueror_LMG.labelPlural>
+
+  <APM_Mech_Conqueror_LMG.tools.0.label>левый кулак</APM_Mech_Conqueror_LMG.tools.0.label>
+
+  <APM_Mech_Conqueror_LMG.tools.1.label>правый кулак</APM_Mech_Conqueror_LMG.tools.1.label>
+
+  <APM_Mech_Conqueror_LMG.tools.2.label>голова</APM_Mech_Conqueror_LMG.tools.2.label>
+
+  <APM_Mech_Dominus.description>Разум Архотека создал три могущественных модели механоидов в попытках создать универсального командира для всех механоидных сил. Доминус был вдохновлён Древним Римом Старой Земли. Этот механоид усиливает союзников поблизости и лично бросает вызов замеченным врагам, вступая с ними в поединок один на один. Чистая сила его решимости проявляется в виде психического вихря, возникающего вокруг арены поединка. Внутри него появляется генератор щита, а получаемый урон возрастает до тех пор, пока один из оппонентов не одержит победу, либо пока Доминус не исчерпает свою решимость через некоторое время. Если это произойдёт, оба дуэлянта будут значительно ослаблены на некоторое время. Если же победитель определится, произойдёт обратное. В качестве альтернативы Доминус может направить свою решимость в кратковременную волну энергии для союзников. Кроме того, если этот механоид находится под контролем механитора, тот может расширить свой командный радиус на зону вокруг Доминуса.</APM_Mech_Dominus.description>
+
+  <APM_Mech_Dominus.label>доминус</APM_Mech_Dominus.label>
+
+  <APM_Mech_Dominus.labelPlural>доминусы</APM_Mech_Dominus.labelPlural>
+
+  <APM_Mech_Dominus.tools.0.label>голова</APM_Mech_Dominus.tools.0.label>
+
+  <APM_Mech_Dominus_Boss.label>доминус</APM_Mech_Dominus_Boss.label>
+
+  <APM_Mech_Dominus_Boss.labelPlural>доминусы</APM_Mech_Dominus_Boss.labelPlural>
+
+  <APM_Mech_Dynamo.description>Боевой механоид поддержки с широким пуленепробиваемым щитом и иглопушкой. Он создан для поддержки других механоидов и уязвим для любого, кто сумеет прорваться сквозь его щит.</APM_Mech_Dynamo.description>
+
+  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
+
+  <APM_Mech_Dynamo.labelPlural>динамо</APM_Mech_Dynamo.labelPlural>
+
+  <APM_Mech_Frostivus.description>Весьма необычный механоид, Морозус представляет собой мобильную криогенную камеру. Он поглощает органические материалы, например, продукты питания, чтобы хранить, замораживать и выдавать их по запросу. Ему можно приказать запечатать внутри себя выбранного персонажа, чтобы мехрой впоследствии использовал его в своих извращённых целях. Но не Морозус годится не только в качестве инструмента: он способен распространять свои охлаждающие свойства на конечности, вызывая гипотермию при повторяющихся атаках.</APM_Mech_Frostivus.description>
+
+  <APM_Mech_Frostivus.label>морозус</APM_Mech_Frostivus.label>
+
+  <APM_Mech_Frostivus.tools.0.label>левая передняя нога</APM_Mech_Frostivus.tools.0.label>
+
+  <APM_Mech_Frostivus.tools.1.label>правая передняя нога</APM_Mech_Frostivus.tools.1.label>
+
+  <APM_Mech_Frostivus.tools.2.label>голова</APM_Mech_Frostivus.tools.2.label>
+
+  <APM_Mech_Gazer.description>Разработкам, положенным в начало дезинтегратора нашлось и другое применение. Им стала модель «Соглядатай» с узнаваемой лучевой установкой на месте глаз. Эта установка настолько мощная, что Соглядатаю во время стрельбы приходится фиксироваться на месте, направляя все двигательные функции на собственную стабилизацию. Но даже так требуется значительное время на зарядку. Выпускаемый луч способен испепелить всё перед собой, нанося при этом значительный урон даже постройкам. А встретившийся в ближнем бою с врагом Соглядатай может вместо луча высвободить накопленную энергию в виде мощной ударной волны вокруг себя, отбрасывающей атакующих и выводящей из строя ближайших механоидов.</APM_Mech_Gazer.description>
+
+  <APM_Mech_Gazer.label>созерцатель</APM_Mech_Gazer.label>
+
+  <APM_Mech_Gazer.labelPlural>созерцатели</APM_Mech_Gazer.labelPlural>
+
+  <APM_Mech_Gazer.tools.0.label>голова</APM_Mech_Gazer.tools.0.label>
+
+  <APM_Mech_Gazer.tools.1.label>левая передняя лапа</APM_Mech_Gazer.tools.1.label>
+
+  <APM_Mech_Gazer.tools.2.label>правая передняя лапа</APM_Mech_Gazer.tools.2.label>
+
+  <APM_Mech_Haze.description>Результат эксперимента механоидов по зачистке от органических форм жизни территории. Завеса способна заполнять окружающее пространство токсичным газом. Её атаки в ближнем бою особенно смертоносны, так как каждое попадание вызывает отравление токсинами. Воистину разум мехроя не знает границ, находя применение даже собственным отходам для достижения собственных целей.</APM_Mech_Haze.description>
+
+  <APM_Mech_Haze.label>завеса</APM_Mech_Haze.label>
+
+  <APM_Mech_Haze.labelPlural>завесы</APM_Mech_Haze.labelPlural>
+
+  <APM_Mech_Haze.tools.0.label>голова</APM_Mech_Haze.tools.0.label>
+
+  <APM_Mech_Ingestor.description>Обычно механоиды и их техника полагаются на внутренние батареи, но подключение к электросети или горючее топливо им всё же необходимы. Поглотитель прочёсывает поля после сражений для добивания выживших и поиска органических материалов, чаще всего просто трупов. Он способен поглощать их и перерабатывать в химтопливо внутри себя.</APM_Mech_Ingestor.description>
+
+  <APM_Mech_Ingestor.label>поглотитель</APM_Mech_Ingestor.label>
+
+  <APM_Mech_Ingestor.labelPlural>поглотители</APM_Mech_Ingestor.labelPlural>
+
+  <APM_Mech_Ingestor.tools.0.label>голова</APM_Mech_Ingestor.tools.0.label>
+
+  <APM_Mech_Ingestor.tools.1.label>голова</APM_Mech_Ingestor.tools.1.label>
+
+  <APM_Mech_Javelin.label>джавелин</APM_Mech_Javelin.label>
+
+  <APM_Mech_Lasher.description>Этот механоид создан для того, чтобы управлять животными, приручать и дрессировать их. Погонщик вооружён плазменным хлыстом и это позволяет играть нестандартную роль в составе сил механоидов: он может поражать врагов в ближнем бою, нанося ЭМИ-урон.\n\nЭтот механоид может ударить хлыстом, нанося урон и поражая электричеством всё в небольшой области вокруг удара.</APM_Mech_Lasher.description>
+
+  <APM_Mech_Lasher.label>погонщик</APM_Mech_Lasher.label>
+
+  <APM_Mech_Lasher.labelPlural>погонщики</APM_Mech_Lasher.labelPlural>
+
+  <APM_Mech_Lasher.tools.0.label>левый кулак</APM_Mech_Lasher.tools.0.label>
+
+  <APM_Mech_Lasher.tools.1.label>правый кулак</APM_Mech_Lasher.tools.1.label>
+
+  <APM_Mech_Lasher.tools.2.label>голова</APM_Mech_Lasher.tools.2.label>
+
+  <APM_Mech_Mantis.description>Богомол является развитием идей хорошо известного и внушающего страх механоида-жнеца. Этот механоид создан для того, чтобы рвать врагов на части в ближнем бою. Сочетая механоидные компоненты с синтезированными искусственными мышцами, гибкими, но прочными бронепластинами и парой резонирующих пласталевых клешней, Богомол значительно превосходит своего предшественника. Когда он встречает цели, находящихся вне радиуса досягаемости, то может стремительно рвануться вперёд одним резким рывком и нанести молниеносный удар. Мало того, что его физические возможности и без того устрашают, Богомол активно анализирует поле боя вокруг, выбирая удобный момент, чтобы запустить встроенный рой ремонтных механитов, исцеляющий и подпитывающий его способности после уничтожения достаточного количества целей.</APM_Mech_Mantis.description>
+
+  <APM_Mech_Mantis.label>богомол</APM_Mech_Mantis.label>
+
+  <APM_Mech_Mantis.labelPlural>богомолы</APM_Mech_Mantis.labelPlural>
+
+  <APM_Mech_Mantis.tools.0.label>голова</APM_Mech_Mantis.tools.0.label>
+
+  <APM_Mech_Maul.label>крушитель</APM_Mech_Maul.label>
+
+  <APM_Mech_Maul.labelPlural>крушители</APM_Mech_Maul.labelPlural>
+
+  <APM_Mech_Maul.tools.0.label>левый кулак</APM_Mech_Maul.tools.0.label>
+
+  <APM_Mech_Maul.tools.1.label>правый кулак</APM_Mech_Maul.tools.1.label>
+
+  <APM_Mech_Maul.tools.2.label>голова</APM_Mech_Maul.tools.2.label>
+
+  <APM_Mech_Pulse.description>Последним словом механоидной тактики городского боя является механоид «Импульс». Он создан, чтобы заставать врагов врасплох своей особой техникой, когда прорывается сквозь преграды. Импульсы, выпускаемые из плечевых установок этого меха, не просто оглушают взрывным звуком, но и ослепляют находящихся рядом противников ярчайшей вспышкой. Лишённая чувств цель не имеет шансов против неудержимого наступления роя механоидов. А встроенный прыжковый ранец быстро доставит меха к следующей цели.</APM_Mech_Pulse.description>
+
+  <APM_Mech_Pulse.label>импульс</APM_Mech_Pulse.label>
+
+  <APM_Mech_Pulse.labelPlural>импульсы</APM_Mech_Pulse.labelPlural>
+
+  <APM_Mech_Pulse.tools.0.label>голова</APM_Mech_Pulse.tools.0.label>
+
+  <APM_Mech_Ravager.description>Внушающего страх автоминомёта оказалось недостаточно, чтобы утолить жажду разрушения разума механоидов. что пришло им в голову? Разоритель — мобильная артиллерийская установка. Он способен накапливать избыточную энергию в резервных батареях, а потом использовать её для перегрузки своего орудия и выпустить снаряд, распадающийся в полёте на три меньших, но всё ещё разрушительных снаряда.</APM_Mech_Ravager.description>
+
+  <APM_Mech_Ravager.label>разоритель</APM_Mech_Ravager.label>
+
+  <APM_Mech_Ravager.labelPlural>разорители</APM_Mech_Ravager.labelPlural>
+
+  <APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
+
+  <APM_Mech_Satellite.description>Спутника часто можно увидеть вылетающим из ранца мехаманта, чтобы помочь союзникам или сопровождать механоидных командиров в бою. Это штурмовой механоид с воздушным ранцем, благодаря которому он легко перемещается по пересечённой местности.</APM_Mech_Satellite.description>
+
+  <APM_Mech_Satellite.label>спутник</APM_Mech_Satellite.label>
+
+  <APM_Mech_Satellite.labelPlural>спутники</APM_Mech_Satellite.labelPlural>
+
+  <APM_Mech_Satellite.tools.0.label>левый кулак</APM_Mech_Satellite.tools.0.label>
+
+  <APM_Mech_Satellite.tools.1.label>правый кулак</APM_Mech_Satellite.tools.1.label>
+
+  <APM_Mech_Satellite.tools.2.label>голова</APM_Mech_Satellite.tools.2.label>
+
+  <APM_Mech_Siren.description>Пользуясь тем, что механоиды обладают способностью к психическому воздействию, механоид «Сирена» способен приманивать поселенцев к себе, подставляя их под огонь. Находясь под управлением механитора, этот механоид способен поднимать настроение и развлекать окружающих.</APM_Mech_Siren.description>
+
+  <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+
+  <APM_Mech_Siren.labelPlural>сирены</APM_Mech_Siren.labelPlural>
+
+  <APM_Mech_Siren.tools.0.label>левый кулак</APM_Mech_Siren.tools.0.label>
+
+  <APM_Mech_Siren.tools.1.label>правый кулак</APM_Mech_Siren.tools.1.label>
+
+  <APM_Mech_Siren.tools.2.label>голова</APM_Mech_Siren.tools.2.label>
+
+  <APM_Mech_Terminus.description>Разум Архотека создал три могущественных модели механоидов в попытках создать универсального командира для всех механоидных сил. Терминус был вдохновлён Европой Старой Земли. Этот механоид прорубается сквозь волны врагов, и даже расстояние не способно смягчить его гнев. Его оружие способно широким взмахом накрыть большую область перед собой. Терминус также может направить собственное психическое воздействие внутрь себя, усиливая наносимый урон и сопротивление сбиванию с ног. Для тех врагов, что пытаются ускользнуть от него, Терминус оснащён крюком-кошкой, притягивающим противников издалека, чтобы прикончить их. Кроме того, если этот механоид находится под контролем механитора, тот может расширить свой командный радиус на зону вокруг Терминуса.</APM_Mech_Terminus.description>
+
+  <APM_Mech_Terminus.label>терминус</APM_Mech_Terminus.label>
+
+  <APM_Mech_Terminus.labelPlural>терминусы</APM_Mech_Terminus.labelPlural>
+
+  <APM_Mech_Terminus.tools.0.label>левый кулак</APM_Mech_Terminus.tools.0.label>
+
+  <APM_Mech_Terminus.tools.1.label>правый кулак</APM_Mech_Terminus.tools.1.label>
+
+  <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+
+  <APM_Mech_Terminus_Boss.label>терминус</APM_Mech_Terminus_Boss.label>
+
+  <APM_Mech_Terminus_Boss.labelPlural>терминусы</APM_Mech_Terminus_Boss.labelPlural>
+
+  <APM_Mech_Tinker.description>Мастер это механоид, предназначенный для проведения ремонта. Он способен помогать поселению в починке построек, а также в ремонте механоидов, подконтрольных механитору. В крайнем случае он может прикрыть щитом союзника, а также ослепить лазером врагов.</APM_Mech_Tinker.description>
+
+  <APM_Mech_Tinker.label>тинкер</APM_Mech_Tinker.label>
+
+  <APM_Mech_Tinker.labelPlural>тинкеры</APM_Mech_Tinker.labelPlural>
+
+  <APM_Mech_Vassal.description>Разум роя механоидов не является бушующей бездной ненависти к любой органической жизни. Это нечто коварное и расчётливое. Рой осознаёт необходимость координации внутри своих сил, и именно в этом заключается предназначение Вассала. Он даёт союзникам поблизости прирост к скорости. А для тех, кто сумел вырастить собственного Вассала вне власти мехроя, он ещё способен взаимодействовать с местными системами связи, поднимая настроение союзников и снижая порог нервного срыва на 25%. Кроме того, если этот механоид находится под контролем механитора, тот может расширить свой командный радиус на зону вокруг Вассала.</APM_Mech_Vassal.description>
+
+  <APM_Mech_Vassal.label>вассал</APM_Mech_Vassal.label>
+
+  <APM_Mech_Vassal.labelPlural>вассалы</APM_Mech_Vassal.labelPlural>
+
+  <APM_Mech_Vassal.tools.0.label>левый кулак</APM_Mech_Vassal.tools.0.label>
+
+  <APM_Mech_Vassal.tools.1.label>правый кулак</APM_Mech_Vassal.tools.1.label>
+
+  <APM_Mech_Vassal.tools.2.label>голова</APM_Mech_Vassal.tools.2.label>
+
+  <APM_Mechanitor_Ancient.label>древний механистор</APM_Mechanitor_Ancient.label>
+
+  <APM_Mechanitor_Nomad.label>кочевой механистор</APM_Mechanitor_Nomad.label>
+
+</LanguageData>

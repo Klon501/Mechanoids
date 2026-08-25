@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Bladehopp.description>Стрімко кинутися до цілі з подальшою швидкою атакою.</APM_Bladehopp.description>
+
+  <APM_Bladehopp.label>клинковий стрибок</APM_Bladehopp.label>
+
+  <APM_BlindingLaser.description>Вистрілити лазером по цілі, щоб на короткий час осліпити її.</APM_BlindingLaser.description>
+
+  <APM_BlindingLaser.label>осліплювальний лазер</APM_BlindingLaser.label>
+
+  <APM_PulseWave.description>Механоїд випустить від себе осліплювальний акустичний імпульс, що оглушує й тимчасово осліплює всіх персонажів із плоті й крові.</APM_PulseWave.description>
+
+  <APM_PulseWave.label>імпульсна хвиля</APM_PulseWave.label>
+
+  <APM_ShieldCharge.description>Здійснити таранний ривок до персонажа, оглушуючи все на своєму шляху.</APM_ShieldCharge.description>
+
+  <APM_ShieldCharge.label>щитовий таран</APM_ShieldCharge.label>
+
+  <APM_Starfall.description>Спустошувач перезаряджає своє знаряддя й випускає один важкий снаряд, який у польоті розпадається на три менші енергетичні снаряди.</APM_Starfall.description>
+
+  <APM_Starfall.label>зорепад</APM_Starfall.label>
+
+</LanguageData>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_CarryToRepairStation.label>carry to repair station</APM_CarryToRepairStation.label>
+
+  <APM_EnterRepairStation.label>enter repair station</APM_EnterRepairStation.label>
+
+  <APM_HaulToMechCommandCasket.label>carry to mech command casket</APM_HaulToMechCommandCasket.label>
+
+  <APM_HaulToToxicPurifier.label>haul wastepacks to purifier station</APM_HaulToToxicPurifier.label>
+
+  <APM_IngestorProcessCorpses.gerund>processing</APM_IngestorProcessCorpses.gerund>
+
+  <APM_IngestorProcessCorpses.label>process corpses</APM_IngestorProcessCorpses.label>
+
+  <APM_IngestorProcessCorpses.verb>process</APM_IngestorProcessCorpses.verb>
+
+  <APM_LasherFeedPatientAnimals.gerund>feeding</APM_LasherFeedPatientAnimals.gerund>
+
+  <APM_LasherFeedPatientAnimals.label>feed animals</APM_LasherFeedPatientAnimals.label>
+
+  <APM_LasherFeedPatientAnimals.verb>feed</APM_LasherFeedPatientAnimals.verb>
+
+  <APM_LasherMilk.gerund>milking</APM_LasherMilk.gerund>
+
+  <APM_LasherMilk.label>milk animals</APM_LasherMilk.label>
+
+  <APM_LasherMilk.verb>milk</APM_LasherMilk.verb>
+
+  <APM_LasherRebalanceAnimalsInPens.gerund>roping</APM_LasherRebalanceAnimalsInPens.gerund>
+
+  <APM_LasherRebalanceAnimalsInPens.label>rebalance penned animals</APM_LasherRebalanceAnimalsInPens.label>
+
+  <APM_LasherRebalanceAnimalsInPens.verb>rope</APM_LasherRebalanceAnimalsInPens.verb>
+
+  <APM_LasherReleaseToWild.gerund>releasing</APM_LasherReleaseToWild.gerund>
+
+  <APM_LasherReleaseToWild.label>release to wild</APM_LasherReleaseToWild.label>
+
+  <APM_LasherReleaseToWild.verb>release</APM_LasherReleaseToWild.verb>
+
+  <APM_LasherShear.gerund>shearing</APM_LasherShear.gerund>
+
+  <APM_LasherShear.label>shear animals</APM_LasherShear.label>
+
+  <APM_LasherShear.verb>shear</APM_LasherShear.verb>
+
+  <APM_LasherSlaughter.gerund>slaughtering</APM_LasherSlaughter.gerund>
+
+  <APM_LasherSlaughter.label>slaughter animals</APM_LasherSlaughter.label>
+
+  <APM_LasherSlaughter.verb>slaughter</APM_LasherSlaughter.verb>
+
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>roping</APM_LasherTakeRoamingAnimalsToPen.gerund>
+
+  <APM_LasherTakeRoamingAnimalsToPen.label>rope roaming animals</APM_LasherTakeRoamingAnimalsToPen.label>
+
+  <APM_LasherTakeRoamingAnimalsToPen.verb>rope</APM_LasherTakeRoamingAnimalsToPen.verb>
+
+  <APM_LasherTakeToPen.gerund>roping</APM_LasherTakeToPen.gerund>
+
+  <APM_LasherTakeToPen.label>rope animals</APM_LasherTakeToPen.label>
+
+  <APM_LasherTakeToPen.verb>rope</APM_LasherTakeToPen.verb>
+
+  <APM_LasherTame.gerund>taming</APM_LasherTame.gerund>
+
+  <APM_LasherTame.label>tame animals</APM_LasherTame.label>
+
+  <APM_LasherTame.verb>tame</APM_LasherTame.verb>
+
+  <APM_LasherTrain.gerund>training</APM_LasherTrain.gerund>
+
+  <APM_LasherTrain.label>train animals</APM_LasherTrain.label>
+
+  <APM_LasherTrain.verb>train</APM_LasherTrain.verb>
+
+  <APM_SirenChatWithPrisoner.gerund>chatting with</APM_SirenChatWithPrisoner.gerund>
+
+  <APM_SirenChatWithPrisoner.label>chat with prisoners</APM_SirenChatWithPrisoner.label>
+
+  <APM_SirenChatWithPrisoner.verb>chat with</APM_SirenChatWithPrisoner.verb>
+
+  <APM_SirenDeliverFoodToPrisoner.gerund>delivering food for</APM_SirenDeliverFoodToPrisoner.gerund>
+
+  <APM_SirenDeliverFoodToPrisoner.label>deliver food to prisoners</APM_SirenDeliverFoodToPrisoner.label>
+
+  <APM_SirenDeliverFoodToPrisoner.verb>deliver food for</APM_SirenDeliverFoodToPrisoner.verb>
+
+  <APM_SirenFeedPrisoner.gerund>feeding</APM_SirenFeedPrisoner.gerund>
+
+  <APM_SirenFeedPrisoner.label>feed prisoners</APM_SirenFeedPrisoner.label>
+
+  <APM_SirenFeedPrisoner.verb>feed</APM_SirenFeedPrisoner.verb>
+
+  <APM_SirenReleasePrisoner.gerund>releasing</APM_SirenReleasePrisoner.gerund>
+
+  <APM_SirenReleasePrisoner.label>release prisoners</APM_SirenReleasePrisoner.label>
+
+  <APM_SirenReleasePrisoner.verb>release</APM_SirenReleasePrisoner.verb>
+
+  <APM_SirenTakePrisonerToBed.gerund>taking to bed</APM_SirenTakePrisonerToBed.gerund>
+
+  <APM_SirenTakePrisonerToBed.label>take prisoners to bed</APM_SirenTakePrisonerToBed.label>
+
+  <APM_SirenTakePrisonerToBed.verb>take to bed</APM_SirenTakePrisonerToBed.verb>
+
+  <APM_TinkerRepairBuilding.gerund>repairing</APM_TinkerRepairBuilding.gerund>
+
+  <APM_TinkerRepairBuilding.label>repair building</APM_TinkerRepairBuilding.label>
+
+  <APM_TinkerRepairBuilding.verb>repair</APM_TinkerRepairBuilding.verb>
+
+  <APM_TinkerRepairMech.gerund>repairing</APM_TinkerRepairMech.gerund>
+
+  <APM_TinkerRepairMech.label>repair mech</APM_TinkerRepairMech.label>
+
+  <APM_TinkerRepairMech.verb>repair</APM_TinkerRepairMech.verb>
+
+</LanguageData>

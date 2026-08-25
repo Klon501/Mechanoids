@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Ability_CryptoSwallow.description>Поглощает живого персонажа или труп и запечатывает его во внутренней криокамере.</APM_Ability_CryptoSwallow.description>
+
+  <APM_Ability_CryptoSwallow.label>криопоглощение</APM_Ability_CryptoSwallow.label>
+
+  <APM_Ability_SirenLure.label>обольстительная песнь</APM_Ability_SirenLure.label>
+
+  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+
+  <APM_Ability_SteelDiscipline.label>стальная дисциплина</APM_Ability_SteelDiscipline.label>
+
+  <APM_Ability_ToxicMist.label>токсичный туман</APM_Ability_ToxicMist.label>
+
+  <APM_CelerusBlink.description>Активировать бортовой микро-прыжковый двигатель для мгновенного перемещения в выбранную точку.</APM_CelerusBlink.description>
+
+  <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+
+  <APM_DefenceMatrix.description>Удалённо проецирует персональный защитный щит на дружественного персонажа. Щит останавливает входящий урон, но не позволяет вести огонь изнутри. Это может быть полезно, даже если щит наложен на врага. Тинкер будет полностью сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+
+  <APM_DefenceMatrix.label>защитная матрица</APM_DefenceMatrix.label>
+
+  <APM_Mech_Duel.label>испытание поединком</APM_Mech_Duel.label>
+
+  <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
+
+  <APM_PulseLongjump.description>Позволяет механоиду совершить прыжок на большую дистанцию, используя сверхбыстрые механические приводы.</APM_PulseLongjump.description>
+
+  <APM_PulseLongjump.label>мех-дальний прыжок</APM_PulseLongjump.label>
+
+  <APM_SkipbladeBlink.label>телепорт</APM_SkipbladeBlink.label>
+
+  <APM_SwitchToPowerPlantMode.description>Переключиться в режим электростанции, жертвуя подвижностью и щитом ради питания местной энергосети.</APM_SwitchToPowerPlantMode.description>
+
+  <APM_SwitchToPowerPlantMode.label>режим электростанции</APM_SwitchToPowerPlantMode.label>
+
+  <APM_TerminusOverdrive.description>Терминус направляет энергию внутрь себя и входит в состояние боевой перегрузки. Пока эффект активен, он сбрасывает плащ, бьёт сильнее, быстрее восстанавливается между ударами и становится устойчивее к оглушению.</APM_TerminusOverdrive.description>
+
+  <APM_TerminusOverdrive.label>перегрузка</APM_TerminusOverdrive.label>
+
+  <APM_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы дать мощное усиление всем союзным Завоевателям в радиусе действия.</APM_UltimateSacrifice.description>
+
+  <APM_UltimateSacrifice.label>последняя жертва</APM_UltimateSacrifice.label>
+
+</LanguageData>

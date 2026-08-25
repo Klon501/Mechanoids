@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_CasketBandwidth.label>пропускная способность командной капсулы</APM_CasketBandwidth.label>
+
+  <APM_GestationFactor.description>Скорость выращивания механоидов умножается на это значение.</APM_GestationFactor.description>
+
+  <APM_GestationFactor.label>коэффициент скорости гестации</APM_GestationFactor.label>
+
+</LanguageData>

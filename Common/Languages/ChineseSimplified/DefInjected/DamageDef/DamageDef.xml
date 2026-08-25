@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_GazerBeam.label>凝视者光束</APM_GazerBeam.label>
+
+  <APM_HazeAcidBeam.label>迷雾酸液光束</APM_HazeAcidBeam.label>
+
+  <APM_JavelinWarhead.label>标枪弹头</APM_JavelinWarhead.label>
+
+  <APM_Shockwave.description>凝视者释放出部分储存的能量，形成一道冲击波，将周围的一切击飞并使其陷入眩晕状态。</APM_Shockwave.description>
+
+  <APM_Shockwave.label>冲击波</APM_Shockwave.label>
+
+  <APM_SonicVibration.label>声波震荡</APM_SonicVibration.label>
+
+  <APM_SunRay.label>太阳光线</APM_SunRay.label>
+
+  <MegaBeam.label>巨型光束</MegaBeam.label>
+
+  <Push.label>冲击伤害</Push.label>
+
+</LanguageData>

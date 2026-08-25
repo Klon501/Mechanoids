@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_AbsorbedThing.description>Перерабатывает поглощённую биомассу в химтопливо.</APM_AbsorbedThing.description>
+
+  <APM_AbsorbedThing.label>переработка биомассы</APM_AbsorbedThing.label>
+
+  <APM_ApexMechanoid_Floating.label>левитация</APM_ApexMechanoid_Floating.label>
+
+  <APM_ApexMechanoid_HealOnKills.label>вампирические механайты</APM_ApexMechanoid_HealOnKills.label>
+
+  <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
+
+  <APM_DuelDraw.label>ничья в поединке</APM_DuelDraw.label>
+
+  <APM_DuelWinner.label>победитель поединка</APM_DuelWinner.label>
+
+  <APM_DuelWinner.stages.0.label>побед: 1</APM_DuelWinner.stages.0.label>
+
+  <APM_DuelWinner.stages.1.label>побед: 2</APM_DuelWinner.stages.1.label>
+
+  <APM_DuelWinner.stages.2.label>побед: 3</APM_DuelWinner.stages.2.label>
+
+  <APM_DuelWinner.stages.3.label>побед: 4</APM_DuelWinner.stages.3.label>
+
+  <APM_DuelWinner.stages.4.label>побед: 5</APM_DuelWinner.stages.4.label>
+
+  <APM_DuelWinner.stages.5.label>побед: 6</APM_DuelWinner.stages.5.label>
+
+  <APM_DuelWinner.stages.6.label>побед: 7</APM_DuelWinner.stages.6.label>
+
+  <APM_Hediff_Devoured.description>Запечатан внутри криокамеры «Морозуса». Жизненные показатели приостановлены.</APM_Hediff_Devoured.description>
+
+  <APM_Hediff_Devoured.label>поглощение</APM_Hediff_Devoured.label>
+
+  <APM_Hediff_JavelinMissileLock.label>ракетный захват цели</APM_Hediff_JavelinMissileLock.label>
+
+  <APM_Hediff_PressTheAttack.label>натиск</APM_Hediff_PressTheAttack.label>
+
+  <APM_Hediff_SirenSong.description>Персонаж охвачен умиротворяющим механическим хором, чувствуя прилив бодрости и лёгкости.</APM_Hediff_SirenSong.description>
+
+  <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
+
+  <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
+
+  <APM_Hediff_TerminusOverdrive.description>Терминус направляет поток энергии на повышение боевой эффективности, отбрасывая сдержанность ради короткого всплеска подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
+
+  <APM_Hediff_TerminusOverdrive.label>перегрузка</APM_Hediff_TerminusOverdrive.label>
+
+  <APM_Hediff_UltimateSacrifice.description>Завоеватель может пожертвовать собой, чтобы наделить всех союзных Завоевателей в радиусе действия мощным усилением.</APM_Hediff_UltimateSacrifice.description>
+
+  <APM_Hediff_UltimateSacrifice.label>высшая жертва</APM_Hediff_UltimateSacrifice.label>
+
+  <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>
+
+  <APM_InDuel.description>«Испытание поединком» бросает вызов выбранному врагу, вынуждая оппонентов на короткое время вступить в ближний бой. Способности и дальние атаки отключаются. Вокруг участников автоматически создаётся визуальная «арена», вне которой их нельзя выбрать целью. Если один из противников погибает, победитель получает мощный бонус. Если поединок не заканчивается смертью, оба участника получают значительный штраф. Постоянный периодический урон поощряет агрессивную игру. Восстановление здоровья (кроме вампиризма) во время поединка заблокировано.</APM_InDuel.description>
+
+  <APM_InDuel.label>в поединке</APM_InDuel.label>
+
+  <APM_LaserBlind.description>Зрение сильно ограничено из-за воздействия лазерного луча.</APM_LaserBlind.description>
+
+  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
+
+  <APM_MechCommandCasketBoost.label>усиление командной капсулы</APM_MechCommandCasketBoost.label>
+
+  <APM_PulseWaveBlind.description>Яркая вспышка и скачок давления перегрузили датчики персонажа, резко ограничив его зрение на короткое время.</APM_PulseWaveBlind.description>
+
+  <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
+
+</LanguageData>

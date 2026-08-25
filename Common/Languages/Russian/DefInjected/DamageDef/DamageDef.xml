@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_GazerBeam.description>Огневая позиция Созерцателя состоит из лазерного эмиттера, демонтированного с механоида-Созерцателя и установленного на усиленное основание. Крайне неэффективна в обслуживании, но способна испускать мощный луч, уничтожающий всё на своём пути. Передвигаться не может.</APM_GazerBeam.description>
+
+  <APM_GazerBeam.label>огневая позиция Созерцателя</APM_GazerBeam.label>
+
+  <APM_HazeAcidBeam.label>кислотный луч завесы</APM_HazeAcidBeam.label>
+
+  <APM_JavelinWarhead.label>боеголовка джавелина</APM_JavelinWarhead.label>
+
+  <APM_Shockwave.deathMessage>{PAWN_nameDef} был(а) уничтожен(а) ударной волной.</APM_Shockwave.deathMessage>
+
+  <APM_Shockwave.description>Взглядатель высвобождает часть накопленной энергии в виде ударной волны, отбрасывая и оглушая всё, что находится рядом.</APM_Shockwave.description>
+
+  <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
+
+  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
+
+  <APM_SunRay.deathMessage>{PAWN_nameDef} погиб(а).</APM_SunRay.deathMessage>
+
+  <APM_SunRay.description>Выстрелить лучом на полной мощности, выжигая всё на своём пути.</APM_SunRay.description>
+
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+
+  <MegaBeam.deathMessage>{PAWN_nameDef} погиб(а).</MegaBeam.deathMessage>
+
+  <MegaBeam.label>мегалуч</MegaBeam.label>
+
+  <Push.deathMessage>{PAWN_nameDef} погиб(а).</Push.deathMessage>
+
+  <Push.label>толчок</Push.label>
+
+</LanguageData>
