@@ -6,7 +6,4 @@
   <APM_Mech_Haze.tools.head.label>голова</APM_Mech_Haze.tools.head.label>
   <APM_Mech_Haze.tools.front_left_paw.label>передняя левая лапа</APM_Mech_Haze.tools.front_left_paw.label>
   <APM_Mech_Haze.tools.front_right_paw.label>передняя правая лапа</APM_Mech_Haze.tools.front_right_paw.label>
-
-  <!-- PawnKindDef -->
-  <APM_Mech_Haze.kindLabel>мгла</APM_Mech_Haze.kindLabel>
 </LanguageData>

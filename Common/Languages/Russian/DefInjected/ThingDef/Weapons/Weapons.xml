@@ -122,11 +122,6 @@
   <!-- EN: EMP impactor projectile -->
   <APM_Proj_EMP_Impactor.label>снаряд ЭМИ-импактора</APM_Proj_EMP_Impactor.label>
 
-  <!-- EN: mega beam -->
-  <MegaBeam.label>мега-луч</MegaBeam.label>
-
-  <!-- EN: haze acid beam -->
-  <APM_HazeAcidBeam.label>кислотный луч мглы</APM_HazeAcidBeam.label>
   <!-- EN: haze acid beam -->
   <APM_Proj_HazeToxicRepeater.label>кислотный луч мглы</APM_Proj_HazeToxicRepeater.label>
   <!-- EN: acid residue -->
@@ -140,9 +135,6 @@
   <APM_Proj_JavelinMissile_HighExplosive.label>фугасная ракета «Джавелин»</APM_Proj_JavelinMissile_HighExplosive.label>
   <!-- EN: javelin EMP missile -->
   <APM_Proj_JavelinMissile_EMP.label>ЭМИ-ракета «Джавелин»</APM_Proj_JavelinMissile_EMP.label>
-
-  <!-- EN: whip -->
-  <APM_Whip.label>хлыст</APM_Whip.label>
 
   <!-- EN: heavy charge burst shot -->
   <APM_Bullet_MaulBlaster.label>тяжёлый плазменный заряд</APM_Bullet_MaulBlaster.label>
@@ -223,11 +215,6 @@
   <!-- EN: light charge burst shot -->
   <APM_Bullet_SatelliteBlaster.label>лёгкий импульсный заряд</APM_Bullet_SatelliteBlaster.label>
 
-  <!-- EN: sonic vibration -->
-  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
-  <!-- EN: {0} has been killed by sonic vibration. -->
-  <APM_SonicVibration.deathMessage>{0} погибает от звуковой вибрации.</APM_SonicVibration.deathMessage>
-
   <!-- EN: sonic pulse -->
   <APM_Proj_SirenChargeEmitter.label>звуковой импульс</APM_Proj_SirenChargeEmitter.label>
 
@@ -236,10 +223,5 @@
 
   <!-- EN: solus orb -->
   <APM_SolusOrb.label>сфера «Солус»</APM_SolusOrb.label>
-
-  <!-- EN: skip -->
-  <APM_SkipbladeBlink.label>скачок</APM_SkipbladeBlink.label>
-  <!-- EN: Channel the displacement technology embedded in the skipblade to instantly skip to a nearby location. -->
-  <APM_SkipbladeBlink.description>Использовать встроенную в клинок технологию пространственного смещения, чтобы мгновенно переместиться в указанную точку.</APM_SkipbladeBlink.description>
 
 </LanguageData>

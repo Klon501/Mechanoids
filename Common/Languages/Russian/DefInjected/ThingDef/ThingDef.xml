@@ -75,19 +75,11 @@
 
   <APM_Gun_Pulse_Shotgun.label>импульсный дробовик</APM_Gun_Pulse_Shotgun.label>
 
-  <APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
-
   <APM_Gun_Satellite.label>лёгкий энергоподавитель</APM_Gun_Satellite.label>
 
   <APM_Gun_Vassal_SwordRifle.description>Энергетическая винтовка-меч. Слабее обычной энерговинтовки, но точнее и может быть оружием ближнего боя.</APM_Gun_Vassal_SwordRifle.description>
 
   <APM_Gun_Vassal_SwordRifle.label>энергомеч-винтовка</APM_Gun_Vassal_SwordRifle.label>
-
-  <APM_Gun_Vassal_SwordRifle.tools.0.label>приклад</APM_Gun_Vassal_SwordRifle.tools.0.label>
-
-  <APM_Gun_Vassal_SwordRifle.tools.1.label>остриё</APM_Gun_Vassal_SwordRifle.tools.1.label>
-
-  <APM_Gun_Vassal_SwordRifle.tools.2.label>клинок</APM_Gun_Vassal_SwordRifle.tools.2.label>
 
   <APM_HazeToxicPuddle.label>кислотный осадок</APM_HazeToxicPuddle.label>
 
@@ -159,8 +151,6 @@
 
   <APM_Ravager_Artillery.label>артиллерия Разорителя</APM_Ravager_Artillery.label>
 
-  <APM_Ravager_Artillery.verbs.0.label>выстрелить гранатой</APM_Ravager_Artillery.verbs.0.label>
-
   <APM_RepairStation_Advanced.description>Станция, которая автоматически ремонтирует крупных механоидов. Механоид должен зайти внутрь станции, чтобы пройти ремонт.</APM_RepairStation_Advanced.description>
 
   <APM_RepairStation_Advanced.label>продвинутая ремонтная станция</APM_RepairStation_Advanced.label>
@@ -197,12 +187,6 @@
 
   <APM_Weapon_DuelistsPsySpear.label>пси-копьё владычества</APM_Weapon_DuelistsPsySpear.label>
 
-  <APM_Weapon_MechWhip.description>Небольшой залповый огнемёт механоидов.</APM_Weapon_MechWhip.description>
-
-  <APM_Weapon_MechWhip.label>хлыст</APM_Weapon_MechWhip.label>
-
-  <APM_Weapon_MechWhip.tools.0.label>наконечник</APM_Weapon_MechWhip.tools.0.label>
-
   <APM_Weapon_PlasmaWhip.label>плазменный хлыст</APM_Weapon_PlasmaWhip.label>
 
   <APM_Weapon_SeveringBlade.label>рассекающий клинок</APM_Weapon_SeveringBlade.label>
@@ -212,8 +196,6 @@
   <APM_Weapon_TerminusApexExoblade.label>вершинный экзоклинок терминуса</APM_Weapon_TerminusApexExoblade.label>
 
   <APM_Weapon_TerminusExoblade.label>экзоклинок терминуса</APM_Weapon_TerminusExoblade.label>
-
-  <ApexMechanoids_DashingPawn.label>стремительный</ApexMechanoids_DashingPawn.label>
 
   <Bullet_ChargeSpitter.label>выстрел энергопулемёта</Bullet_ChargeSpitter.label>
 

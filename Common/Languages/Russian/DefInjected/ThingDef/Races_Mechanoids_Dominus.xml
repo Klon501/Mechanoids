@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<APM_Mech_Dominus.label>доминус</APM_Mech_Dominus.label>
-	<APM_Mech_Dominus_Boss.label>доминус</APM_Mech_Dominus_Boss.label>
 	<APM_Mech_Dominus.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов. Надохновленный римской нацией Старой Земли, доминус предоставляет значительные усиления ближайшим союзникам и лично бросает вызов воспринимаемым угрозам в рукопашном бою 1 на 1. Чистая сила его решимости материализуется в виде психического водоворота вокруг тех, кому брошен вызов, призывая генератор щита и увеличивая получаемый урон, пока один из них не одержит победу или воля не исчерпает себя по истечении времени. В этом случае оба дуэлянта на время значительно ослабнут. Если же появится победитель, произойдет обратное. В качестве альтернативы доминус может направить свою волю в временную волну энергии для поддержки союзников. Кроме того, под управлением механітора этот мех расширяет радиус его командной зоны.</APM_Mech_Dominus.description>
-	<APM_PressTheAttack.label>надавить на врага</APM_PressTheAttack.label>
-	<APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
-	<APM_Hediff_PressTheAttack.label>псионный прилив</APM_Hediff_PressTheAttack.label>
-	<APM_Hediff_PressTheAttack.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack.description>
-	<APM_Thought_PressTheAttack_Base.stages.0.label>Натиск</APM_Thought_PressTheAttack_Base.stages.0.label>
-	<APM_Thought_PressTheAttack_Base.stages.0.description>Я готов к бою.</APM_Thought_PressTheAttack_Base.stages.0.description>
-	<APM_Mech_Duel_Base.label>испытание дуэлью</APM_Mech_Duel_Base.label>
-	<APM_Mech_Duel_Base.description>Выбранная цель вызывается на дуэль, вокруг дуэлянтов генерируется защитный купол. На время дуэли дальность стрельбы, способности и входящий урон увеличиваются. Кроме того, если дуэль не завершается за определенное время, участники получают суровый штраф. Если один из бойцов погибает или падает, победитель вместо этого получает мощное временное усиление.</APM_Mech_Duel_Base.description>
 	<APM_Mech_Dominus.tools.head.label>голова</APM_Mech_Dominus.tools.head.label>
 </LanguageData>

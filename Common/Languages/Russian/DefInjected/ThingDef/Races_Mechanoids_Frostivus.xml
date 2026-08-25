@@ -6,11 +6,4 @@
   <APM_Mech_Frostivus.tools.front_left_leg.label>передняя левая нога</APM_Mech_Frostivus.tools.front_left_leg.label>
   <APM_Mech_Frostivus.tools.front_right_leg.label>передняя правая нога</APM_Mech_Frostivus.tools.front_right_leg.label>
   <APM_Mech_Frostivus.tools.head.label>голова</APM_Mech_Frostivus.tools.head.label>
-
-  <!-- PawnKindDef -->
-  <APM_Mech_Frostivus.kindLabel>морозус</APM_Mech_Frostivus.kindLabel>
-
-  <!-- Ability -->
-  <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
-  <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
 </LanguageData>

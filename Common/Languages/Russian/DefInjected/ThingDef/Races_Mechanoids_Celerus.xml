@@ -3,16 +3,6 @@
 	<APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
 	<APM_Mech_CelerusB.label>целерус</APM_Mech_CelerusB.label>
 	<APM_Mech_Celerus.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов. Надохновленный регионом Японии эпохи Сэнгоку Старой Земли, стремительный и скрытный целерус ничуть не слабеет от своей скорости. Он обладает способностью совершать короткие скрытые скачки вокруг себя, а также создавать дымовую завесу, затрудняющую врагам восприятие его самого и всего вокруг, дополнительно становясь невосприимчивым к псионическому сканированию в этой области.</APM_Mech_Celerus.description>
-	<APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
-	<APM_Ability_SmokeScreen.label>дымовая завеса</APM_Ability_SmokeScreen.label>
-	<APM_Ability_SmokeScreen.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen.description>
-	<APM_Ability_SmokeScreen_Boss.label>дымовая завеса</APM_Ability_SmokeScreen_Boss.label>
-	<APM_Ability_SmokeScreen_Boss.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen_Boss.description>
 	<APM_Projectile_CelerusSmokescreen.label>дымовая граната</APM_Projectile_CelerusSmokescreen.label>
 	<APM_Projectile_CelerusSmokescreen_Boss.label>дымовая граната</APM_Projectile_CelerusSmokescreen_Boss.label>
-	<APM_CelerusBlink.label>«Скачок»</APM_CelerusBlink.label>
-	<APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
-	<APM_Mech_Celerus_Base.tools.left_fist.label>левый кулак</APM_Mech_Celerus_Base.tools.left_fist.label>
-	<APM_Mech_Celerus_Base.tools.right_fist.label>правый кулак</APM_Mech_Celerus_Base.tools.right_fist.label>
-	<APM_Mech_Celerus_Base.tools.head.label>голова</APM_Mech_Celerus_Base.tools.head.label>
 </LanguageData>
