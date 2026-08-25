@@ -3,7 +3,7 @@
 
   <APM.Dynamo.Command.SwithcToMobileMode.Label>Mobile Mode</APM.Dynamo.Command.SwithcToMobileMode.Label>
 
-  <APM.Dynamo.Command.SwithcToMobileMode.Desc>...</APM.Dynamo.Command.SwithcToMobileMode.Desc>
+  <APM.Dynamo.Command.SwithcToMobileMode.Desc>Switch to mobile mode</APM.Dynamo.Command.SwithcToMobileMode.Desc>
 
   <APM.FrostivusFoodPreservation.ManualUnload.Label>Unload preserved food</APM.FrostivusFoodPreservation.ManualUnload.Label>
 
@@ -29,11 +29,11 @@
 
   <APM.FrostivusFoodPreservation.CryptoSwallow.Self>Frostivus cannot swallow itself.</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
 
-  <APM_Gazer_AutoLaser_Label>Auto laser</APM_Gazer_AutoLaser_Label>
+  <APM_Gazer_AutoLaser_Label>Autocast laser</APM_Gazer_AutoLaser_Label>
 
   <APM_Gazer_AutoLaser_Desc>Allow this gazer to automatically fire its laser weapon and Sun Ray ability while under player control. Manual attack orders still fire once at the selected target.</APM_Gazer_AutoLaser_Desc>
 
-  <APM_Gazer_Inspect_AutoLaserDisabled>Auto laser: disabled.</APM_Gazer_Inspect_AutoLaserDisabled>
+  <APM_Gazer_Inspect_AutoLaserDisabled>Autocast laser: disabled.</APM_Gazer_Inspect_AutoLaserDisabled>
 
   <APM_Ingestor_StripMode_Enable_Label>Enable stripping</APM_Ingestor_StripMode_Enable_Label>
 
@@ -112,7 +112,7 @@
 
   <APM_RepairStation_InactiveEjected>The repair station stopped working and ejected {0}.</APM_RepairStation_InactiveEjected>
 
-  <APM_RepairStation_CannotRepairSatellite>Satellites cannot be repaired at a repair station.</APM_RepairStation_CannotRepairSatellite>
+  <APM_RepairStation_CannotRepairSatellite>Mechanoid with limited life cannot be repaired at repair stations.</APM_RepairStation_CannotRepairSatellite>
 
   <APM_Gizmo_AutoRepair>Auto-repair</APM_Gizmo_AutoRepair>
 
@@ -166,7 +166,7 @@
 
   <APM_ShieldIntegrity>Shield integrity</APM_ShieldIntegrity>
 
-  <APM_VampiricCharges>Vampiric charges: {0}/{1} ({2} ticks of healing)</APM_VampiricCharges>
+  <APM_VampiricCharges>Vampiric charges: {0}/{1} </APM_VampiricCharges>
 
   <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Show repair station auto-repair messages</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
 
@@ -242,7 +242,7 @@
 
   <APM_Ravager_Inspect_AutoArtilleryCannotHit>Auto artillery: current target cannot be hit from this position.</APM_Ravager_Inspect_AutoArtilleryCannotHit>
 
-  <APM_ToxicPurifier_RecoveryPerDay>Fall per day</APM_ToxicPurifier_RecoveryPerDay>
+  <APM_ToxicPurifier_RecoveryPerDay>Toxicity recovey per day</APM_ToxicPurifier_RecoveryPerDay>
 
   <APM_ToxicPurifier_LevelToAffectRelation>Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect the globe, relations with other faction will deteriorate.</APM_ToxicPurifier_LevelToAffectRelation>
 
