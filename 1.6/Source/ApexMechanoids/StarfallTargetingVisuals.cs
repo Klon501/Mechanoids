@@ -84,11 +84,22 @@ namespace ApexMechanoids
                 return;
             }
 
-            Stance_Cooldown cooldownStance = new Stance_Cooldown(cooldownTicks, currentTarget, primaryVerb)
+            Stance_Cooldown cooldownStance = new Stance_Cooldown(cooldownTicks, CooldownFocusTarget(casterPawn), primaryVerb)
             {
                 neverAimWeapon = true
             };
             casterPawn.stances?.SetStance(cooldownStance);
+        }
+
+        private static LocalTargetInfo CooldownFocusTarget(Pawn casterPawn)
+        {
+            Thing enemyTarget = casterPawn?.mindState?.enemyTarget;
+            if (enemyTarget == null || enemyTarget.Destroyed || !enemyTarget.Spawned || enemyTarget.Map != casterPawn.Map)
+            {
+                return LocalTargetInfo.Invalid;
+            }
+
+            return enemyTarget;
         }
 
     }

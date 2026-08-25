@@ -65,7 +65,7 @@ namespace ApexMechanoids
                 return;
             }
 
-            if (pawn.CurJobDef == ability.def.jobDef)
+            if (pawn.CurJob?.ability == ability)
             {
                 return;
             }

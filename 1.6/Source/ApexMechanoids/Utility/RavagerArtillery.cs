@@ -12,6 +12,7 @@ namespace ApexMechanoids
         private const float TargetEnemyHitScore = 1000f;
         private const float TargetDistanceScore = 4f;
         private const float TargetFriendlyHitPenalty = 5000f;
+        private const int AutonomousArtilleryJobExpiryTicks = 240;
 
         private static readonly List<Pawn> tmpTargetPawns = new List<Pawn>();
         private static AbilityDef cachedStarfallDef;
@@ -77,14 +78,22 @@ namespace ApexMechanoids
             return target.IsValid ? new LocalTargetInfo(target.Cell) : LocalTargetInfo.Invalid;
         }
 
-        public static Job MakeArtilleryAttackJob(LocalTargetInfo targetCell, Verb verb)
+        public static Job MakeArtilleryAttackJob(LocalTargetInfo targetCell, Verb verb, bool autonomousTargetRefresh = false)
         {
             Job job = JobMaker.MakeJob(ApexDefsOf.APM_RavagerArtilleryAttack, TargetCell(targetCell));
             job.verbToUse = verb;
             job.maxNumStaticAttacks = 1;
             job.endIfCantShootTargetFromCurPos = true;
-            job.expiryInterval = 0;
-            job.checkOverrideOnExpire = false;
+            if (autonomousTargetRefresh)
+            {
+                job.expiryInterval = AutonomousArtilleryJobExpiryTicks;
+                job.checkOverrideOnExpire = true;
+            }
+            else
+            {
+                job.expiryInterval = 0;
+                job.checkOverrideOnExpire = false;
+            }
             return job;
         }
 
@@ -324,6 +333,7 @@ namespace ApexMechanoids
                 && ability.def.aiCanUse
                 && ability.CanCast
                 && ability.verb != null
+                && pawn.stances?.FullBodyBusy != true
                 && !AutoAbilityBlockedByArtilleryToggle(pawn, ability);
         }
 
@@ -614,6 +624,12 @@ namespace ApexMechanoids
 
                 Verb verb = job.verbToUse ?? pawn.TryGetAttackVerb(null, !pawn.IsColonist && !pawn.IsColonySubhuman);
                 LocalTargetInfo targetCell = RavagerArtilleryUtility.TargetCell(job.targetA);
+                if (numAttacksMade == 0 && !job.playerForced && !TryRefreshAutonomousTargetCell(verb, out targetCell))
+                {
+                    EndJobWith(JobCondition.Incompletable);
+                    return;
+                }
+
                 if (!RavagerArtilleryUtility.CanFireAtCell(pawn, targetCell, verb))
                 {
                     EndJobWith(JobCondition.Incompletable);
@@ -632,6 +648,23 @@ namespace ApexMechanoids
             attack.defaultCompleteMode = ToilCompleteMode.Never;
             attack.activeSkill = () => Toils_Combat.GetActiveSkillForToil(attack);
             yield return attack;
+        }
+
+        private bool TryRefreshAutonomousTargetCell(Verb verb, out LocalTargetInfo targetCell)
+        {
+            targetCell = LocalTargetInfo.Invalid;
+            if (verb == null)
+            {
+                return false;
+            }
+
+            if (!RavagerArtilleryUtility.TryFindBestArtilleryTarget(pawn, verb, verb.EffectiveRange, out targetCell))
+            {
+                return false;
+            }
+
+            job.targetA = targetCell;
+            return true;
         }
     }
 

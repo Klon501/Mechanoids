@@ -1,3 +1,4 @@
+using RimWorld;
 using Verse;
 
 namespace ApexMechanoids
@@ -67,6 +68,24 @@ namespace ApexMechanoids
         public static void RemoveDevouredHediff(Thing thing)
         {
             RemoveDevouredHediff(ContainedPawn(thing));
+        }
+
+        // Released from the internal cryo-chamber: same after-effect a vanilla cryptosleep casket gives on eject.
+        // Corpses and non-flesh pawns are skipped. Re-applying merges into the existing hediff and keeps the
+        // longer remaining duration, so repeated swallow/release refreshes the timer instead of stacking.
+        public static void ApplyCryptosleepSickness(Thing thing)
+        {
+            if (!(thing is Pawn pawn) || pawn.Dead || pawn.health == null)
+            {
+                return;
+            }
+
+            if (!(pawn.RaceProps?.IsFlesh ?? false))
+            {
+                return;
+            }
+
+            pawn.health.AddHediff(HediffDefOf.CryptosleepSickness);
         }
     }
 }

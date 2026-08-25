@@ -28,11 +28,6 @@ namespace ApexMechanoids
         {
         }
 
-        public override bool CanApplyOn(LocalTargetInfo target)
-        {
-            return PulseWaveUtility.HasHostileAffectedPawnInRadius(pawn, PulseWaveUtility.GetProps(def));
-        }
-
         public override Job GetJob(LocalTargetInfo target, LocalTargetInfo destination)
         {
             LocalTargetInfo selfTarget = pawn != null ? new LocalTargetInfo(pawn.Position) : target;
@@ -44,11 +39,6 @@ namespace ApexMechanoids
     {
         public override bool TryStartCastOn(LocalTargetInfo castTarg, LocalTargetInfo destTarg, bool surpriseAttack = false, bool canHitNonTargetPawns = true, bool preventFriendlyFire = false, bool nonInterruptingSelfCast = false)
         {
-            if (CasterIsPawn && !PulseWaveUtility.HasHostileAffectedPawnInRadius(CasterPawn, PulseWaveUtility.GetProps(ability?.def)))
-            {
-                return false;
-            }
-
             if (CasterIsPawn)
             {
                 LocalTargetInfo selfTarget = new LocalTargetInfo(CasterPawn.Position);
@@ -109,14 +99,11 @@ namespace ApexMechanoids
             PulseWaveUtility.TryApply(parent.pawn, Props);
         }
 
+        // Manual player casts are never blocked by target availability.
+        // The hostile-in-radius gate lives in AICanTargetNow, which only the AI paths use.
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            if (target.Pawn != null && !base.CanApplyOn(target, dest))
-            {
-                return false;
-            }
-
-            return PulseWaveUtility.HasHostileAffectedPawnInRadius(parent?.pawn, Props);
+            return target.Pawn == null || base.CanApplyOn(target, dest);
         }
 
         public override bool AICanTargetNow(LocalTargetInfo target)

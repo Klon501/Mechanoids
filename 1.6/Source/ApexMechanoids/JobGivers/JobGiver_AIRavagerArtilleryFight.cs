@@ -13,6 +13,11 @@ namespace ApexMechanoids
                 return null;
             }
 
+            if (pawn.stances?.FullBodyBusy == true)
+            {
+                return null;
+            }
+
             UpdateEnemyTarget(pawn);
             Thing enemyTarget = pawn.mindState.enemyTarget;
             if (enemyTarget == null)
@@ -48,7 +53,7 @@ namespace ApexMechanoids
             }
 
             pawn.pather?.StopDead();
-            return RavagerArtilleryUtility.MakeArtilleryAttackJob(targetCell, verb);
+            return RavagerArtilleryUtility.MakeArtilleryAttackJob(targetCell, verb, true);
         }
 
         public override Thing FindAttackTarget(Pawn pawn)
