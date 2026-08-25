@@ -68,10 +68,5 @@ namespace ApexMechanoids
 
             return new IntVec3(x / pawns.Count, 0, z / pawns.Count);
         }
-
-        public override string Summary(Scenario scen)
-        {
-            return def.description;
-        }
     }
 }

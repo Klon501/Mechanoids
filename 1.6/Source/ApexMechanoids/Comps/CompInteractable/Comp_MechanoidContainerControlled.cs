@@ -69,14 +69,25 @@ namespace ApexMechanoids
             {
                 return Props.onCooldownString + " (" + "DurationLeft".Translate(cooldownTicks.ToStringTicksToPeriod()) + ")";
             }
-            if (mech != null)
+            if (mech != null && !CanBeSentInside(mech))
             {
-                if (!mech.IsColonyMech)
-                {
-                    return false;
-                }
+                return false;
             }
             return true;
+        }
+
+        /// <summary>
+        /// Whether this mech may be walked into the container. Whether it currently has an overseer,
+        /// and whether anyone has the bandwidth for it, are deliberately not part of the answer:
+        /// a mech nobody is holding is the one the player most wants put away.
+        /// </summary>
+        public static bool CanBeSentInside(Pawn mech)
+        {
+            return MechContainerAccessRules.CanBeSentInside(
+                playerFaction: mech.Faction == Faction.OfPlayer && mech.RaceProps.IsMechanoid,
+                everControllable: MechanitorUtility.EverControllable(mech),
+                downed: mech.Downed,
+                dead: mech.Dead);
         }
 
         public void TryAcceptPawn(Pawn mech)
@@ -122,7 +133,7 @@ namespace ApexMechanoids
                 Pawn mech = null;
                 if (mechKind != null)
                 {
-                    mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
+                    mech = PawnGenerator.GeneratePawn(MechAgeRules.RequestFor(mechKind, mechanitor.Faction));
                     GenSpawn.Spawn(mech, loc, parent.Map);
                     // The kind was the container's one sealed occupant, not a recipe it keeps. Leaving
                     // it set would hand out a fresh mech every time the container was refilled and
@@ -141,7 +152,7 @@ namespace ApexMechanoids
                         GenSpawn.Spawn(innerContainer.Take(mech), result, parent.MapHeld);
                     }
                 }
-                mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                TakeControlIfPossible(mechanitor, mech);
                 IsEmpty = true;
             }
         }
@@ -157,25 +168,11 @@ namespace ApexMechanoids
             {
                 return "CommandPodEjectFailEmpty".Translate();
             }
-            if (activateBy != null)
+            // Bandwidth is deliberately not tested here. It decides how the container opens, not
+            // whether it opens; see Comp_MechanoidContainer.TakeControlIfPossible.
+            if (activateBy != null && !MechanitorUtility.IsMechanitor(activateBy))
             {
-                if (!MechanitorUtility.IsMechanitor(activateBy))
-                {
-                    return "NotAMechanitor".Translate();
-                }
-                float bandwidthCost = 0;
-                if (mechKind != null)
-                {
-                    bandwidthCost = mechKind.race.GetStatValueAbstract(StatDefOf.BandwidthCost);
-                }
-                else if (isContaining)
-                {
-                    bandwidthCost = innerContainer.First().GetStatValue(StatDefOf.BandwidthCost);
-                }
-                if (activateBy.mechanitor.TotalBandwidth < activateBy.mechanitor.UsedBandwidth + bandwidthCost)
-                {
-                    return "NotEnoughBandwidth".Translate();
-                }
+                return "NotAMechanitor".Translate();
             }
             return true;
         }
@@ -220,10 +217,15 @@ namespace ApexMechanoids
                     {
                         TargetingParameters targetingParameters = TargetingParameters.ForPawns();
                         targetingParameters.mapBoundsContractedBy = 1;
-                        targetingParameters.validator = (TargetInfo t) => t.Thing is Pawn pawn && pawn.IsColonyMech && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Moving) && pawn.CanReach(parent, PathEndMode.Touch, Danger.Deadly);
+                        targetingParameters.validator = (TargetInfo t) => t.Thing is Pawn pawn && CanBeSentInside(pawn) && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Moving) && pawn.CanReach(parent, PathEndMode.Touch, Danger.Deadly);
                         Find.Targeter.BeginTargeting(targetingParameters, delegate (LocalTargetInfo target)
                         {
-                            (target.Thing as Pawn).jobs.TryTakeOrderedJob(JobMaker.MakeJob(Props.enterJobDef, parent), JobTag.Misc);
+                            Pawn chosen = target.Thing as Pawn;
+                            // Forcibly, which is the point of it: a mech that has stopped taking
+                            // orders is exactly the one worth putting away, and it will not walk
+                            // anywhere while the state is still running.
+                            chosen.MentalState?.RecoverFromState();
+                            chosen.jobs.TryTakeOrderedJob(JobMaker.MakeJob(Props.enterJobDef, parent), JobTag.Misc);
                         }, delegate
                         {
                             Widgets.MouseAttachedLabel("APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel".Translate());

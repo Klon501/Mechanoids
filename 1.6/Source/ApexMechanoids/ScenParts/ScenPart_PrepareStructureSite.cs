@@ -299,10 +299,5 @@ namespace ApexMechanoids
 
             return width > 0 && height > 0;
         }
-
-        public override string Summary(Scenario scen)
-        {
-            return def.description;
-        }
     }
 }
