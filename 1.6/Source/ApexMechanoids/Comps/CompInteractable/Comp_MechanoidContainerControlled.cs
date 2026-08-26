@@ -238,6 +238,105 @@ namespace ApexMechanoids
                     disabledReason = acceptanceReport.Reason.CapitalizeFirst()
                 };
             }
+            else
+            {
+                // open with casket when Pawn is inside
+                if (!innerContainer.NullOrEmpty() && innerContainer.First() is Pawn mech && mech.RaceProps.IsMechanoid)
+                {
+                    List<Pawn> tmpMechanitorsInCaskets = Utils.MechanitorsInCommandCaskets();
+                    if (!tmpMechanitorsInCaskets.NullOrEmpty())
+                    {
+                        Command_Action command_Action_HackStasisContainer = new Command_Action();
+                        command_Action_HackStasisContainer.defaultLabel = "APM.CommandCasket.Gizmo.OpenStasisContainer.Label".Translate().CapitalizeFirst();
+                        command_Action_HackStasisContainer.icon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_OpenStasisContainer");
+                        command_Action_HackStasisContainer.action = delegate
+                        {
+                            List<FloatMenuOption> floatlist = new List<FloatMenuOption>();
+                            foreach (Pawn mechanitor in tmpMechanitorsInCaskets)
+                            {
+                                string label = mechanitor.LabelShortCap;
+
+                                if (mech.GetStatValue(StatDefOf.BandwidthCost) > mechanitor.mechanitor.TotalBandwidth - mechanitor.mechanitor.UsedBandwidth)
+                                {
+                                    label += "APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu".Translate();
+                                }
+                                floatlist.Add(new FloatMenuOption(label, delegate
+                                {
+                                    if (Utils.IsUplinkActiveFor(mechanitor, out Building_MechCommandCasket casketBuilding))
+                                    {
+                                        if (casketBuilding.CompAbilities != null)
+                                        {
+                                            casketBuilding.CompAbilities.ForceSetTargetThing(parent, out LocalTargetInfo target);
+                                            if (Event.current.control)
+                                            {
+                                                casketBuilding.CompAbilities.AddQuedActionOpenStasisContainer(target);
+                                            }
+                                            else
+                                            {
+                                                casketBuilding.CompAbilities.StartToHackStasisContainer(target);
+                                            }
+                                        }
+                                    }
+                                }));
+                            }
+                            if (floatlist.Any())
+                            {
+                                Find.WindowStack.Add(new FloatMenu(floatlist));
+                            }
+                        };
+                        yield return command_Action_HackStasisContainer;
+                    }
+                }
+                // sealed mechanoid stasis container
+                else if (!IsEmpty && parent.def != ApexDefsOf.APM_MechanoidContainer_Cluster)  //open with casket when undefined PawnKind is inside
+                {
+                    List<Pawn> tmpMechanitorsInCaskets = Utils.MechanitorsInCommandCaskets();
+                    if (!tmpMechanitorsInCaskets.NullOrEmpty())
+                    {
+                        Command_Action command_Action_HackStasisContainer = new Command_Action();
+                        command_Action_HackStasisContainer.defaultLabel = "APM.CommandCasket.Gizmo.HackStasisContainer.Label".Translate().CapitalizeFirst();
+                        command_Action_HackStasisContainer.icon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_OpenStasisContainer");
+                        command_Action_HackStasisContainer.action = delegate
+                        {
+                            List<FloatMenuOption> floatlist = new List<FloatMenuOption>();
+                            foreach (Pawn mechanitor in tmpMechanitorsInCaskets)
+                            {
+                                string label = mechanitor.LabelShortCap;
+
+                                if (mechKind.race.GetStatValueAbstract(StatDefOf.BandwidthCost) > mechanitor.mechanitor.TotalBandwidth - mechanitor.mechanitor.UsedBandwidth)
+                                {
+                                    label += "APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu".Translate();
+                                }
+                                floatlist.Add(new FloatMenuOption(label, delegate
+                                {
+                                    if (Utils.IsUplinkActiveFor(mechanitor, out Building_MechCommandCasket casketBuilding))
+                                    {
+                                        if (casketBuilding.CompAbilities != null)
+                                        {
+                                            casketBuilding.CompAbilities.ForceSetTargetThing(parent, out LocalTargetInfo target);
+                                            if (Event.current.control)
+                                            {
+                                                casketBuilding.CompAbilities.AddQuedActionOpenStasisContainer(target);
+                                            }
+                                            else
+                                            {
+                                                casketBuilding.CompAbilities.StartToHackStasisContainer(target);
+                                            }  
+                                        }
+                                    }
+                                }));
+                            }
+                            if (floatlist.Any())
+                            {
+                                Find.WindowStack.Add(new FloatMenu(floatlist));
+                            }
+                        };
+                        yield return command_Action_HackStasisContainer;
+                    }
+
+
+                }
+            }
         }
 
         public override void PostExposeData()

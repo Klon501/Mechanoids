@@ -111,7 +111,7 @@ namespace ApexMechanoids
                             }
                             else
                             {
-                                abilityComp.ForceSetTarget(mech, out LocalTargetInfo target);
+                                abilityComp.ForceSetTargetPawn(mech, out LocalTargetInfo target);
                                 abilityComp.StartToDisconnect(target);
                             }
                         }
@@ -153,7 +153,7 @@ namespace ApexMechanoids
                                 }
                                 else
                                 {
-                                    abilityComp.ForceSetTarget(mech, out LocalTargetInfo target);
+                                    abilityComp.ForceSetTargetPawn(mech, out LocalTargetInfo target);
                                     abilityComp.StartToRepair(target);
                                 }
                             }
@@ -196,7 +196,7 @@ namespace ApexMechanoids
                                 }
                                 else
                                 {
-                                    abilityComp.ForceSetTarget(mech, out LocalTargetInfo target);
+                                    abilityComp.ForceSetTargetPawn(mech, out LocalTargetInfo target);
                                     abilityComp.StartToShield(target);
                                 }
                             }

@@ -79,8 +79,8 @@ namespace ApexMechanoids
             {
                 Rect barRect = new Rect(thingRect.x, thingRect.y + thingRect.height + 7.5f, thingRect.width - 1f, 12f);
                 barRect.y -= 4f; // offset to not conflict with the label
-
-                Widgets.FillableBar(barRect, casket.NutritionPercent, BarTex, EmptyBarTex, true);
+                
+                Widgets.FillableBar(barRect, Mathf.Clamp01(casket.NutritionPercent), BarTex, EmptyBarTex, true);
             }
             
             DrawVanillalikeLabel(mainLabelRect, abilityComp.Props.labelShort.CapitalizeFirst());
