@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- APM_GazerBeam -->
+  <APM_GazerBeam.label>луч созерцателя</APM_GazerBeam.label>
+
+  <!-- APM_SunRay -->
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+
+  <!-- Push -->
+  <Push.label>урон от толчка</Push.label>
+  <Push.deathMessage>{0} был(а) забит(а) до смерти.</Push.deathMessage>
+
+  <!-- APM_Shockwave -->
+  <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
+  <APM_Shockwave.deathMessage>{0} был(а) уничтожен(а) ударной волной.</APM_Shockwave.deathMessage>
+
+  <!-- APM_JavelinWarhead -->
+  <APM_JavelinWarhead.label>боеголовка «Джавелина»</APM_JavelinWarhead.label>
+
+  <!-- APM_HazeAcidBeam -->
+  <APM_HazeAcidBeam.label>кислотный луч мглы</APM_HazeAcidBeam.label>
+
+  <!-- APM_SonicVibration -->
+  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
+  <APM_SonicVibration.deathMessage>{0} разорван(а) звуковой вибрацией.</APM_SonicVibration.deathMessage>
+
+</LanguageData>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>mechamancer helmet</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+
+  <APM_Apparel_MechamancerPack.description>A compact mechanitor support pack that can deploy temporary satellite mechanoids. Each satellite requires a steel recharge before deployment.</APM_Apparel_MechamancerPack.description>
+
+  <APM_Apparel_MechamancerPack.label>mechamancer pack</APM_Apparel_MechamancerPack.label>
+
+  <APM_Apparel_MechamancerSuit.label>mechamancer suit</APM_Apparel_MechamancerSuit.label>
+
+  <APM_ArtilleryProjectile.label>artillery projectile</APM_ArtilleryProjectile.label>
+
+  <APM_Building_ToxicPurifier.label>purifier station</APM_Building_ToxicPurifier.label>
+
+  <APM_Bullet_ChargeCarbine.label>charge carbine shot</APM_Bullet_ChargeCarbine.label>
+
+  <APM_Bullet_ChargeSwordRifle.label>charge shot</APM_Bullet_ChargeSwordRifle.label>
+
+  <APM_Bullet_MaulBlaster.label>heavy charge burst shot</APM_Bullet_MaulBlaster.label>
+
+  <APM_Bullet_SatelliteBlaster.label>light charge burst shot</APM_Bullet_SatelliteBlaster.label>
+
+  <APM_CasketBandwidthAmplifier.label>subcore signal booster</APM_CasketBandwidthAmplifier.label>
+
+  <APM_DynamoPoweredGenerator.label>Dynamo powered generator</APM_DynamoPoweredGenerator.label>
+
+  <APM_ExtraChip.label>extrasensory amplification chip</APM_ExtraChip.label>
+
+  <APM_GazerEmplacement.label>gazer emplacement</APM_GazerEmplacement.label>
+
+  <APM_Gazer_Laser.label>laser</APM_Gazer_Laser.label>
+
+  <APM_GestatorAmplifier.label>mech gestator amplifier</APM_GestatorAmplifier.label>
+
+  <APM_Gun_Conqueror_AR.label>charge blaster rifle</APM_Gun_Conqueror_AR.label>
+
+  <APM_Gun_Conqueror_DMR.label>charge carbine</APM_Gun_Conqueror_DMR.label>
+
+  <APM_Gun_Conqueror_LMG.label>charge spitter</APM_Gun_Conqueror_LMG.label>
+
+  <APM_Gun_EMP_Impactor.label>EMP impactor</APM_Gun_EMP_Impactor.label>
+
+  <APM_Gun_JavelinRocketLauncher.label>javelin rocket launcher</APM_Gun_JavelinRocketLauncher.label>
+
+  <APM_Gun_Maul.label>heavy sledge blaster</APM_Gun_Maul.label>
+
+  <APM_Gun_Pulse_Shotgun.label>pulse shotgun</APM_Gun_Pulse_Shotgun.label>
+
+  <APM_Gun_Satellite.label>light charge suppressor</APM_Gun_Satellite.label>
+
+  <APM_Gun_Vassal_SwordRifle.label>charge sword rifle</APM_Gun_Vassal_SwordRifle.label>
+
+  <APM_HazeToxicPuddle.label>acid residue</APM_HazeToxicPuddle.label>
+
+  <APM_Haze_BeamGun.label>haze graser cannon</APM_Haze_BeamGun.label>
+
+  <APM_MechCommandCasket.label>command casket</APM_MechCommandCasket.label>
+
+  <APM_MechCommandCasket_Ancient.label>command casket</APM_MechCommandCasket_Ancient.label>
+
+  <APM_MechanoidContainer_Ancient.label>abandoned mechanoid stasis container</APM_MechanoidContainer_Ancient.label>
+
+  <APM_MechanoidContainer_Cluster.label>ancient mechanoid stasis container</APM_MechanoidContainer_Cluster.label>
+
+  <APM_MechanoidContainer_Player.label>mechanoid stasis container</APM_MechanoidContainer_Player.label>
+
+  <APM_MechbandAntenna_Celerus.label>Mechband Pylon</APM_MechbandAntenna_Celerus.label>
+
+  <APM_MechbandAntenna_Dominus.label>Mechband Node</APM_MechbandAntenna_Dominus.label>
+
+  <APM_MechbandAntenna_Gazer.label>Mechband Array</APM_MechbandAntenna_Gazer.label>
+
+  <APM_MechbandAntenna_Terminus.label>Mechband Conduit</APM_MechbandAntenna_Terminus.label>
+
+  <APM_MechbandAntenna_United.label>Mechband Invoker</APM_MechbandAntenna_United.label>
+
+  <APM_OcularChip.label>ocular harmonizer chip</APM_OcularChip.label>
+
+  <APM_Proj_EMP_Impactor.label>EMP impactor projectile</APM_Proj_EMP_Impactor.label>
+
+  <APM_Proj_HazeToxicRepeater.label>haze acid beam</APM_Proj_HazeToxicRepeater.label>
+
+  <APM_Proj_JavelinMissile.label>javelin missile</APM_Proj_JavelinMissile.label>
+
+  <APM_Proj_JavelinMissile_EMP.label>javelin EMP missile</APM_Proj_JavelinMissile_EMP.label>
+
+  <APM_Proj_JavelinMissile_HighExplosive.label>javelin high-explosive missile</APM_Proj_JavelinMissile_HighExplosive.label>
+
+  <APM_Proj_JavelinMissile_Incendiary.label>javelin incendiary missile</APM_Proj_JavelinMissile_Incendiary.label>
+
+  <APM_Proj_SirenChargeEmitter.label>sonic pulse</APM_Proj_SirenChargeEmitter.label>
+
+  <APM_Projectile_Hook.label>hook</APM_Projectile_Hook.label>
+
+  <APM_PsionicChip.label>psionic coordination chip</APM_PsionicChip.label>
+
+  <APM_PsyfluxChip.label>psyflux projection chip</APM_PsyfluxChip.label>
+
+  <APM_PulseWaveBlindFlash.label>pulse wave flash</APM_PulseWaveBlindFlash.label>
+
+  <APM_Pulse_Proj.label>pulse bullet</APM_Pulse_Proj.label>
+
+  <APM_Ravager_Artillery.label>ravager artillery</APM_Ravager_Artillery.label>
+
+  <APM_RepairStation_Advanced.label>advanced mech repair station</APM_RepairStation_Advanced.label>
+
+  <APM_RepairStation_Small.label>mech repair station</APM_RepairStation_Small.label>
+
+  <APM_ShockwaveFlash.label>shockwave flash</APM_ShockwaveFlash.label>
+
+  <APM_Siren_ChargeEmitter.label>charge emitter</APM_Siren_ChargeEmitter.label>
+
+  <APM_Smokescreen.label>smokescreen gas</APM_Smokescreen.label>
+
+  <APM_Smokescreen_Boss.label>smokescreen gas</APM_Smokescreen_Boss.label>
+
+  <APM_Solus.description>A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage.</APM_Solus.description>
+
+  <APM_Solus.label>solus</APM_Solus.label>
+
+  <APM_SolusOrb.label>solus orb</APM_SolusOrb.label>
+
+  <APM_StarfallCarrier.label>starfall carrier</APM_StarfallCarrier.label>
+
+  <APM_StarfallSplitProjectile.label>starfall split projectile</APM_StarfallSplitProjectile.label>
+
+  <APM_Weapon_CelerusApexVoltana.label>celerus apex voltana</APM_Weapon_CelerusApexVoltana.label>
+
+  <APM_Weapon_CelerusVoltana.label>celerus voltana</APM_Weapon_CelerusVoltana.label>
+
+  <APM_Weapon_DominusApexMechlance.label>Dominus apex mechlance</APM_Weapon_DominusApexMechlance.label>
+
+  <APM_Weapon_DominusMechlance.label>Dominus mechlance</APM_Weapon_DominusMechlance.label>
+
+  <APM_Weapon_DuelistsPsySpear.label>dominion psy-spear</APM_Weapon_DuelistsPsySpear.label>
+
+  <APM_Weapon_MechWhip.label>mech whip</APM_Weapon_MechWhip.label>
+
+  <APM_Weapon_PlasmaWhip.label>plasma whip</APM_Weapon_PlasmaWhip.label>
+
+  <APM_Weapon_SeveringBlade.label>severing blade</APM_Weapon_SeveringBlade.label>
+
+  <APM_Weapon_Skipblade.label>skipblade</APM_Weapon_Skipblade.label>
+
+  <APM_Weapon_TerminusApexExoblade.label>terminus apex exoblade</APM_Weapon_TerminusApexExoblade.label>
+
+  <APM_Weapon_TerminusExoblade.label>terminus exoblade</APM_Weapon_TerminusExoblade.label>
+
+  <ApexMechanoids_DashingPawn.label>dashing</ApexMechanoids_DashingPawn.label>
+
+  <Bullet_ChargeSpitter.label>charge spitter shot</Bullet_ChargeSpitter.label>
+
+</LanguageData>

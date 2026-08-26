@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Recycle Biomass -->
+  <APM_Absorb.label>Переработка биомассы</APM_Absorb.label>
+  <!-- EN: Grind up a fresh organic corpse or ingestible material, and slowly process it into chemfuel. -->
+  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал, постепенно перерабатывая его в химическое топливо.</APM_Absorb.description>
+
+  <!-- EN: Power Plant Mode -->
+  <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <!-- EN: Switch to power plant mode, trade mobility and shield to power local power grid. -->
+  <APM_SwitchToPowerPlantMode.description>Переключение в режим электростанции, пожертвовав мобильностью и щитом ради питания местной электросети.</APM_SwitchToPowerPlantMode.description>
+
+  <!-- EN: Sun Ray -->
+  <APM_SunRay.label>Солнечный луч</APM_SunRay.label>
+  <!-- EN: The gazer blasts a devastating beam from itself, remaining stationary to keep the beam on target. Anything within reach of the beam takes heavy damage. -->
+  <APM_SunRay.description>Созерцатель испускает разрушительный луч, оставаясь неподвижным для удержания цели на мушке. Все, до чего достает луч, получает огромный урон.</APM_SunRay.description>
+
+  <!-- EN: pulse wave -->
+  <APM_PulseWave.label>Импульсная волна</APM_PulseWave.label>
+  <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
+  <APM_PulseWave.description>Высвобождает ослепляющий акустический импульс, расходящийся от меха и оглушающий вместе с ослеплением всех попавших в зону действия существ из крови и плоти.</APM_PulseWave.description>
+
+  <!-- EN: Grappling Hook -->
+  <APM_HookPawn.label>Крюк-кошка</APM_HookPawn.label>
+  <!-- EN: The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target. -->
+  <APM_HookPawn.description>«Терминус» выпускает крюк-кошку: в зависимости от размера цели, либо притягивает врага к себе, либо притягивается к врагу сам.</APM_HookPawn.description>
+
+  <!-- EN: Shield Charge -->
+  <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
+  <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
+  <APM_ShieldCharge.description>Броситься на пешку, оглушая все на своем пути.</APM_ShieldCharge.description>
+
+  <!-- EN: Bladehopp -->
+  <APM_Bladehopp.label>Прорыв лезвий</APM_Bladehopp.label>
+  <!-- EN: Dash to a target followed by a quick attack. -->
+  <APM_Bladehopp.description>Совершить рывок к цели с последующей быстрой атакой.</APM_Bladehopp.description>
+
+  <!-- EN: Blinding Laser -->
+  <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
+  <!-- EN: Fire a laser at target, effectively blinding them for a short time. -->
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, эффективно ослепляя ее на короткое время.</APM_BlindingLaser.description>
+
+  <!-- EN: Starfall -->
+  <APM_Starfall.label>Звездопад</APM_Starfall.label>
+  <!-- EN: Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight. -->
+  <APM_Starfall.description>Опустошитель перегружает свою артиллерию и выпускает единый тяжелый снаряд, который прямо в полете разделяется на три энергетических взрыва.</APM_Starfall.description>
+
+  <!-- EN: Defence Matrix -->
+  <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
+  <!-- EN: Remotely project a personal defense shield onto a same-faction pawn. The shield stops incoming damage, but also prevents shooting out. The tinker will be focused on projecting the shield. -->
+  <APM_DefenceMatrix.description>Удаленно проецирует персональный защитный щит на пешку своей фракции. Щит останавливает входящий урон, но также мешает вести стрельбу изнутри. Тинкер будет сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+
+  <!-- EN: Steel Discipline -->
+  <APM_Ability_SteelDiscipline.label>Стальная дисциплина</APM_Ability_SteelDiscipline.label>
+  <!-- EN: In a radius around the Vassal, its allies gain a speed boost and their mental break chance is reduced if organic. The Vassal's commanding presence inspires those nearby with renewed purpose and fortitude. -->
+  <APM_Ability_SteelDiscipline.description>В радиусе вокруг Вассала его союзники получают бонус к скорости, а их шанс нервного срыва снижается (если они органические). Командующее присутствие Вассала вдохновляет окружающих новыми силами и стойкостью.</APM_Ability_SteelDiscipline.description>
+
+  <!-- EN: Toxic Mist -->
+  <APM_Ability_ToxicMist.label>Токсичный туман</APM_Ability_ToxicMist.label>
+  <!-- EN: Similar to a tox pack, the haze releases tox gas around itself, enveloping the surrounding area in a toxic cloud. -->
+  <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
+
+  <!-- EN: Shockwave -->
+  <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
+  <!-- EN: An explosive wave that throws enemies within a radius for a certain distance -->
+  <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen.label>дымовая завеса</APM_Ability_SmokeScreen.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen_Boss.label>дымовая завеса</APM_Ability_SmokeScreen_Boss.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen_Boss.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen_Boss.description>
+
+  <!-- EN: Celerus Blink -->
+  <APM_CelerusBlink.label>«Скачок»</APM_CelerusBlink.label>
+  <!-- EN: Celerus instantly teleports to a target, leaving a smokescreen behind. -->
+  <APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Ultimate Sacrifice -->
+  <APM_UltimateSacrifice.label>абсолютная жертва</APM_UltimateSacrifice.label>
+  <!-- EN: The Conqueror gives its life to unleash a devastating barrage from all weapons at once. -->
+  <APM_UltimateSacrifice.description>Быстро выполняя сложные расчеты прицеливания, движения и логистики до тех пор, пока их процессорные блоки не расплавятся от жары, этот механоид наделяет ближайших союзников временным усилением характеристик.</APM_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
+  <APM_PressTheAttack.label>надавить на врага</APM_PressTheAttack.label>
+  <!-- EN: Dominus urges its allies to press the attack, boosting their speed and damage. -->
+  <APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
+
+  <!-- EN: Crypto Swallow -->
+  <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
+  <!-- EN: Frostivus engulfs a target into its cryo-chamber, freezing it. -->
+  <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
+
+  <!-- EN: Siren Song -->
+  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+  <!-- EN: The Siren sings an alluring song, drawing enemies toward her. -->
+  <APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+
+  <!-- EN: Siren Lure -->
+  <APM_Ability_SirenLure.label>маниакальная песня</APM_Ability_SirenLure.label>
+  <!-- EN: The Siren creates a lure mimicking her song. -->
+  <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
+
+  <!-- EN: Skipblade Blink -->
+  <APM_SkipbladeBlink.label>Скачок клинка</APM_SkipbladeBlink.label>
+  <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
+  <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
+
+</LanguageData>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- APM_EnterMechanoidContainer -->
+  <!-- EN: entering TargetA. -->
+  <APM_EnterMechanoidContainer.reportString>входит в TargetA.</APM_EnterMechanoidContainer.reportString>
+
+  <!-- APM_SirenChatWithPrisoner -->
+  <!-- EN: singing to TargetA. -->
+  <APM_SirenChatWithPrisoner.reportString>поёт для TargetA.</APM_SirenChatWithPrisoner.reportString>
+
+  <!-- APM_BashDamage -->
+  <!-- EN: Bashing into TargetA. -->
+  <APM_BashDamage.reportString>врезается в TargetA.</APM_BashDamage.reportString>
+
+  <!-- APM_HookPawn -->
+  <!-- EN: retracting grappling hook towards TargetA. -->
+  <APM_HookPawn.reportString>притягивает крюк-кошку к TargetA.</APM_HookPawn.reportString>
+
+  <!-- APM_HaulToToxicPurifier -->
+  <!-- EN: hauling wastepacks to TargetA. -->
+  <APM_HaulToToxicPurifier.reportString>несёт токсичные отходы к TargetA.</APM_HaulToToxicPurifier.reportString>
+
+  <!-- APM_CastPulseJump -->
+  <!-- EN: jumping to TargetA. -->
+  <APM_CastPulseJump.reportString>прыгает к TargetA.</APM_CastPulseJump.reportString>
+
+  <!-- APM_SirenLureChannel -->
+  <!-- EN: singing. -->
+  <APM_SirenLureChannel.reportString>поёт.</APM_SirenLureChannel.reportString>
+
+  <!-- APM_RavagerArtilleryAttack -->
+  <!-- EN: firing artillery at TargetA. -->
+  <APM_RavagerArtilleryAttack.reportString>ведёт артиллерийский огонь по TargetA.</APM_RavagerArtilleryAttack.reportString>
+
+  <!-- APM_FrostivusTakeFoodToInventory -->
+  <!-- EN: preserving TargetA. -->
+  <APM_FrostivusTakeFoodToInventory.reportString>замораживает TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+
+  <!-- APM_FrostivusUnloadFoodToStorage -->
+  <!-- EN: unloading TargetA. -->
+  <APM_FrostivusUnloadFoodToStorage.reportString>разгружает TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+
+  <!-- APM_FrostivusManualUnloadFood -->
+  <!-- EN: unloading preserved food. -->
+  <APM_FrostivusManualUnloadFood.reportString>разгружает сохранённую еду.</APM_FrostivusManualUnloadFood.reportString>
+
+  <!-- APM_FrostivusReleaseDevouredContents -->
+  <!-- EN: releasing preserved creature. -->
+  <APM_FrostivusReleaseDevouredContents.reportString>выпускает сохранённое существо.</APM_FrostivusReleaseDevouredContents.reportString>
+
+  <!-- APM_LasherTame -->
+  <!-- EN: taming TargetA. -->
+  <APM_LasherTame.reportString>приручает TargetA.</APM_LasherTame.reportString>
+
+  <!-- APM_LasherTrain -->
+  <!-- EN: training TargetA. -->
+  <APM_LasherTrain.reportString>обучает TargetA.</APM_LasherTrain.reportString>
+
+  <!-- APM_LasherMilk -->
+  <!-- EN: milking TargetA. -->
+  <APM_LasherMilk.reportString>доит TargetA.</APM_LasherMilk.reportString>
+
+  <!-- APM_LasherShear -->
+  <!-- EN: shearing TargetA. -->
+  <APM_LasherShear.reportString>стрижёт TargetA.</APM_LasherShear.reportString>
+
+  <!-- APM_LasherSlaughter -->
+  <!-- EN: slaughtering TargetA. -->
+  <APM_LasherSlaughter.reportString>забивает TargetA.</APM_LasherSlaughter.reportString>
+
+  <!-- APM_LasherReleaseToWild -->
+  <!-- EN: releasing TargetA. -->
+  <APM_LasherReleaseToWild.reportString>отпускает TargetA.</APM_LasherReleaseToWild.reportString>
+
+</LanguageData>

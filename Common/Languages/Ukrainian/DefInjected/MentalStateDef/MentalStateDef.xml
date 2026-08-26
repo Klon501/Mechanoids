@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Duel.baseInspectLine>Душевний стан: поєдинок</APM_Duel.baseInspectLine>
+
+  <APM_Duel.beginLetter>{0} викликає {1} на поєдинок.</APM_Duel.beginLetter>
+
+  <APM_Duel.beginLetterLabel>поєдинок</APM_Duel.beginLetterLabel>
+
+  <APM_Duel.label>поєдинок</APM_Duel.label>
+
+  <APM_Duel.recoveryMessage>Поєдинок {0} добіг кінця.</APM_Duel.recoveryMessage>
+
+</LanguageData>

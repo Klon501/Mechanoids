@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APM_EnterRepairStation.label>войти в ремонтную станцию</APM_EnterRepairStation.label>
+	<APM_CarryToRepairStation.label>отнести на ремонтную станцию</APM_CarryToRepairStation.label>
+	<APM_TinkerRepairMech.label>ремонтировать механоида</APM_TinkerRepairMech.label>
+	<APM_TinkerRepairBuilding.label>ремонтировать постройку</APM_TinkerRepairBuilding.label>
+	<APM_HaulToToxicPurifier.label>отнести отходы на станцию очистки</APM_HaulToToxicPurifier.label>
+
+	<APM_IngestorProcessCorpses.label>переработать трупы</APM_IngestorProcessCorpses.label>
+
+	<APM_LasherTakeRoamingAnimalsToPen.label>привязать бродящих животных</APM_LasherTakeRoamingAnimalsToPen.label>
+	<APM_LasherFeedPatientAnimals.label>покормить животных</APM_LasherFeedPatientAnimals.label>
+	<APM_LasherTakeToPen.label>привязать животных</APM_LasherTakeToPen.label>
+	<APM_LasherSlaughter.label>забить животных</APM_LasherSlaughter.label>
+	<APM_LasherReleaseToWild.label>выпустить на волю</APM_LasherReleaseToWild.label>
+	<APM_LasherMilk.label>подоить животных</APM_LasherMilk.label>
+	<APM_LasherShear.label>постричь животных</APM_LasherShear.label>
+	<APM_LasherTame.label>приручить животных</APM_LasherTame.label>
+	<APM_LasherTrain.label>обучить животных</APM_LasherTrain.label>
+	<APM_LasherRebalanceAnimalsInPens.label>перераспределить животных по загонам</APM_LasherRebalanceAnimalsInPens.label>
+
+	<APM_SirenReleasePrisoner.label>освободить заключенных</APM_SirenReleasePrisoner.label>
+	<APM_SirenTakePrisonerToBed.label>отвести заключенных в кровать</APM_SirenTakePrisonerToBed.label>
+	<APM_SirenFeedPrisoner.label>покормить заключенных</APM_SirenFeedPrisoner.label>
+	<APM_SirenDeliverFoodToPrisoner.label>доставить еду заключенным</APM_SirenDeliverFoodToPrisoner.label>
+	<APM_SirenChatWithPrisoner.label>поговорить с заключенными</APM_SirenChatWithPrisoner.label>
+
+</LanguageData>

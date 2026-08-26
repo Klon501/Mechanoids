@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_AbsorbedThing.description>Processing absorbed biomass into chemfuel.</APM_AbsorbedThing.description>
+
+  <APM_AbsorbedThing.label>recycling biomass</APM_AbsorbedThing.label>
+
+  <APM_ApexMechanoid_Floating.label>Floating</APM_ApexMechanoid_Floating.label>
+
+  <APM_ApexMechanoid_HealOnKills.label>Vampiric Mechanites</APM_ApexMechanoid_HealOnKills.label>
+
+  <APM_CelerusSmokescreenBuff.label>Smokescreen</APM_CelerusSmokescreenBuff.label>
+
+  <APM_DuelDraw.label>duel draw</APM_DuelDraw.label>
+
+  <APM_DuelWinner.label>duel winner</APM_DuelWinner.label>
+
+  <APM_Hediff_Devoured.description>Sealed inside a Frostivus cryo-chamber. Biological processes are suspended until release.</APM_Hediff_Devoured.description>
+
+  <APM_Hediff_Devoured.label>devoured</APM_Hediff_Devoured.label>
+
+  <APM_Hediff_JavelinMissileLock.label>missile lock</APM_Hediff_JavelinMissileLock.label>
+
+  <APM_Hediff_SirenSong.label>siren's song</APM_Hediff_SirenSong.label>
+
+  <APM_Hediff_SteelDiscipline.label>steel discipline</APM_Hediff_SteelDiscipline.label>
+
+  <APM_Hediff_TerminusOverdrive.label>overdrive</APM_Hediff_TerminusOverdrive.label>
+
+  <APM_Hediff_UltimateSacrifice.label>ultimate sacrifice</APM_Hediff_UltimateSacrifice.label>
+
+  <APM_Hediff_Unity.label>unity uplink</APM_Hediff_Unity.label>
+
+  <APM_InDuel.label>in duel</APM_InDuel.label>
+
+  <APM_LaserBlind.description>Sight is sharply reduced after exposure to a blinding laser.</APM_LaserBlind.description>
+
+  <APM_LaserBlind.label>blinded by laser</APM_LaserBlind.label>
+
+  <APM_MechCommandCasketBoost.label>mech command casket boost</APM_MechCommandCasketBoost.label>
+
+  <APM_PulseWaveBlind.label>flash-blinded</APM_PulseWaveBlind.label>
+
+</LanguageData>

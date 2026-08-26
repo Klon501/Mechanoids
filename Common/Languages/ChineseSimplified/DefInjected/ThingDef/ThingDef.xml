@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>机械法师头盔</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+
+  <APM_Apparel_MechamancerPack.description>一个紧凑的机械师支援背包，可部署临时卫星机甲。每个卫星在部署前都需要用钢材充能。</APM_Apparel_MechamancerPack.description>
+
+  <APM_Apparel_MechamancerPack.label>机械法师背包</APM_Apparel_MechamancerPack.label>
+
+  <APM_Apparel_MechamancerSuit.label>机械法师套装</APM_Apparel_MechamancerSuit.label>
+
+  <APM_ArtilleryProjectile.label>火炮炮弹</APM_ArtilleryProjectile.label>
+
+  <APM_Building_ToxicPurifier.label>净化站</APM_Building_ToxicPurifier.label>
+
+  <APM_Bullet_ChargeCarbine.label>电荷卡宾枪射击</APM_Bullet_ChargeCarbine.label>
+
+  <APM_Bullet_ChargeSwordRifle.label>电荷射击</APM_Bullet_ChargeSwordRifle.label>
+
+  <APM_Bullet_MaulBlaster.label>重型电荷连射弹</APM_Bullet_MaulBlaster.label>
+
+  <APM_Bullet_SatelliteBlaster.label>轻型电荷连射弹</APM_Bullet_SatelliteBlaster.label>
+
+  <APM_CasketBandwidthAmplifier.label>子核心信号增强器</APM_CasketBandwidthAmplifier.label>
+
+  <APM_DynamoPoweredGenerator.label>迪纳摩动力发电机</APM_DynamoPoweredGenerator.label>
+
+  <APM_ExtraChip.label>超感官增幅芯片</APM_ExtraChip.label>
+
+  <APM_GazerEmplacement.label>凝视者炮台</APM_GazerEmplacement.label>
+
+  <APM_Gazer_Laser.label>激光</APM_Gazer_Laser.label>
+
+  <APM_GestatorAmplifier.label>机械体培育增幅器</APM_GestatorAmplifier.label>
+
+  <APM_Gun_Conqueror_AR.label>电荷爆破步枪</APM_Gun_Conqueror_AR.label>
+
+  <APM_Gun_Conqueror_DMR.label>电荷卡宾枪</APM_Gun_Conqueror_DMR.label>
+
+  <APM_Gun_Conqueror_LMG.label>电荷喷吐枪</APM_Gun_Conqueror_LMG.label>
+
+  <APM_Gun_EMP_Impactor.label>电磁脉冲冲击器</APM_Gun_EMP_Impactor.label>
+
+  <APM_Gun_JavelinRocketLauncher.label>标枪火箭发射器</APM_Gun_JavelinRocketLauncher.label>
+
+  <APM_Gun_Maul.label>重型锤击爆能枪</APM_Gun_Maul.label>
+
+  <APM_Gun_Pulse_Shotgun.label>脉冲霰弹枪</APM_Gun_Pulse_Shotgun.label>
+
+  <APM_Gun_Satellite.label>轻型电荷压制枪</APM_Gun_Satellite.label>
+
+  <APM_Gun_Vassal_SwordRifle.label>电荷剑刃步枪</APM_Gun_Vassal_SwordRifle.label>
+
+  <APM_HazeToxicPuddle.label>酸性残留物</APM_HazeToxicPuddle.label>
+
+  <APM_Haze_BeamGun.label>迷雾伽马激光炮</APM_Haze_BeamGun.label>
+
+  <APM_MechCommandCasket.label>机械指挥舱</APM_MechCommandCasket.label>
+
+  <APM_MechCommandCasket_Ancient.label>机械指挥舱</APM_MechCommandCasket_Ancient.label>
+
+  <APM_MechanoidContainer_Ancient.label>被遗弃的机械体停滞容器</APM_MechanoidContainer_Ancient.label>
+
+  <APM_MechanoidContainer_Cluster.label>古代机械体停滞容器</APM_MechanoidContainer_Cluster.label>
+
+  <APM_MechanoidContainer_Player.label>机械体停滞容器</APM_MechanoidContainer_Player.label>
+
+  <APM_MechbandAntenna_Celerus.label>机械频带塔</APM_MechbandAntenna_Celerus.label>
+
+  <APM_MechbandAntenna_Dominus.label>机械频带节点</APM_MechbandAntenna_Dominus.label>
+
+  <APM_MechbandAntenna_Gazer.label>机械频带阵列</APM_MechbandAntenna_Gazer.label>
+
+  <APM_MechbandAntenna_Terminus.label>机械频带导管</APM_MechbandAntenna_Terminus.label>
+
+  <APM_MechbandAntenna_United.label>机械频带召唤器</APM_MechbandAntenna_United.label>
+
+  <APM_OcularChip.label>眼部协调芯片</APM_OcularChip.label>
+
+  <APM_Proj_EMP_Impactor.label>电磁脉冲冲击弹</APM_Proj_EMP_Impactor.label>
+
+  <APM_Proj_HazeToxicRepeater.label>迷雾酸液光束</APM_Proj_HazeToxicRepeater.label>
+
+  <APM_Proj_JavelinMissile.label>标枪导弹</APM_Proj_JavelinMissile.label>
+
+  <APM_Proj_JavelinMissile_EMP.label>标枪电磁脉冲导弹</APM_Proj_JavelinMissile_EMP.label>
+
+  <APM_Proj_JavelinMissile_HighExplosive.label>标枪高爆导弹</APM_Proj_JavelinMissile_HighExplosive.label>
+
+  <APM_Proj_JavelinMissile_Incendiary.label>标枪燃烧导弹</APM_Proj_JavelinMissile_Incendiary.label>
+
+  <APM_Proj_SirenChargeEmitter.label>声波脉冲</APM_Proj_SirenChargeEmitter.label>
+
+  <APM_Projectile_Hook.label>钩爪</APM_Projectile_Hook.label>
+
+  <APM_PsionicChip.label>灵能协调芯片</APM_PsionicChip.label>
+
+  <APM_PsyfluxChip.label>灵能通量投射芯片</APM_PsyfluxChip.label>
+
+  <APM_PulseWaveBlindFlash.label>脉冲波闪光</APM_PulseWaveBlindFlash.label>
+
+  <APM_Pulse_Proj.label>脉冲子弹</APM_Pulse_Proj.label>
+
+  <APM_Ravager_Artillery.label>蹂躏者火炮</APM_Ravager_Artillery.label>
+
+  <APM_RepairStation_Advanced.label>高级机械修复工作站</APM_RepairStation_Advanced.label>
+
+  <APM_RepairStation_Small.label>机械修复工作站</APM_RepairStation_Small.label>
+
+  <APM_ShockwaveFlash.label>冲击波闪光</APM_ShockwaveFlash.label>
+
+  <APM_Siren_ChargeEmitter.label>电荷发射器</APM_Siren_ChargeEmitter.label>
+
+  <APM_Smokescreen.label>烟幕气体</APM_Smokescreen.label>
+
+  <APM_Smokescreen_Boss.label>烟幕气体</APM_Smokescreen_Boss.label>
+
+  <APM_Solus.description>一台经过强化的伽马射线发射器，能够产生致密且高度集中的毁灭性能量球。能量球掠过目标时会向其放电并点燃周围环境。它是对付成群敌人的极具毁灭性的武器。巨大的能量输出需要稳定协议来防止自伤。</APM_Solus.description>
+
+  <APM_Solus.label>索拉斯</APM_Solus.label>
+
+  <APM_SolusOrb.label>索拉斯宝珠</APM_SolusOrb.label>
+
+  <APM_StarfallCarrier.label>星陨运载弹</APM_StarfallCarrier.label>
+
+  <APM_StarfallSplitProjectile.label>星陨分裂弹</APM_StarfallSplitProjectile.label>
+
+  <APM_Weapon_CelerusApexVoltana.label>塞勒鲁斯巅峰伏特剑</APM_Weapon_CelerusApexVoltana.label>
+
+  <APM_Weapon_CelerusVoltana.label>塞勒鲁斯伏特剑</APM_Weapon_CelerusVoltana.label>
+
+  <APM_Weapon_DominusApexMechlance.label>多米纳斯巅峰机械长枪</APM_Weapon_DominusApexMechlance.label>
+
+  <APM_Weapon_DominusMechlance.label>多米纳斯机械长枪</APM_Weapon_DominusMechlance.label>
+
+  <APM_Weapon_DuelistsPsySpear.label>统御灵能长矛</APM_Weapon_DuelistsPsySpear.label>
+
+  <APM_Weapon_MechWhip.label>机械鞭</APM_Weapon_MechWhip.label>
+
+  <APM_Weapon_PlasmaWhip.label>等离子鞭</APM_Weapon_PlasmaWhip.label>
+
+  <APM_Weapon_SeveringBlade.label>切割刃</APM_Weapon_SeveringBlade.label>
+
+  <APM_Weapon_Skipblade.label>传送刃</APM_Weapon_Skipblade.label>
+
+  <APM_Weapon_TerminusApexExoblade.label>终结者巅峰外骨骼刃</APM_Weapon_TerminusApexExoblade.label>
+
+  <APM_Weapon_TerminusExoblade.label>终结者外骨骼刃</APM_Weapon_TerminusExoblade.label>
+
+  <ApexMechanoids_DashingPawn.label>冲锋</ApexMechanoids_DashingPawn.label>
+
+  <Bullet_ChargeSpitter.label>电荷喷吐枪射击</Bullet_ChargeSpitter.label>
+
+</LanguageData>

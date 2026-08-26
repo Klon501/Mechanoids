@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--
+    None of these carry a description on purpose. ScenPart.Summary returns def.description and
+    Scenario.GetFullInformationText prints every non empty one, so a description here becomes a
+    bullet on the scenario page. These four are plumbing the player does not need narrated, and
+    listing them made the page read like a changelog. The label is still what the scenario editor
+    shows, so that stays.
+  -->
+
   <ScenPartDef>
     <defName>APM_SpawnScenarioCorpses</defName>
     <label>ancient corpses</label>
-    <description>The map contains the bodies of the ancients</description>
     <scenPartClass>ApexMechanoids.ScenPart_SpawnScenarioCorpses</scenPartClass>
     <category>Fixed</category>
     <maxUses>1</maxUses>
@@ -32,6 +39,19 @@
     <scenPartClass>ApexMechanoids.ScenPart_CameraOnPlayerStart</scenPartClass>
     <category>Fixed</category>
     <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <!--
+    This one does carry its summary, because it is the line that tells the player which mechs they
+    are getting, and it is the same line vanilla's own starting mech part prints.
+  -->
+  <ScenPartDef>
+    <defName>APM_StartingMech</defName>
+    <label>start with mechanoid</label>
+    <scenPartClass>ApexMechanoids.ScenPart_StartingMechAged</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>0</selectionWeight>
+    <summaryPriority>100</summaryPriority>
   </ScenPartDef>
 
 </Defs>

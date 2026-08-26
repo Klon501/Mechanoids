@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_GazerBeam.label>gazer beam</APM_GazerBeam.label>
+
+  <APM_HazeAcidBeam.label>haze acid beam</APM_HazeAcidBeam.label>
+
+  <APM_JavelinWarhead.label>javelin warhead</APM_JavelinWarhead.label>
+
+  <APM_Shockwave.description>The Gazer releases some of its stored energy as a shockwave, throwing and stunning anything near it far back.</APM_Shockwave.description>
+
+  <APM_Shockwave.label>Shockwave</APM_Shockwave.label>
+
+  <APM_SonicVibration.label>sonic vibration</APM_SonicVibration.label>
+
+  <APM_SunRay.label>sun ray</APM_SunRay.label>
+
+  <MegaBeam.label>mega beam</MegaBeam.label>
+
+  <Push.label>push damage</Push.label>
+
+</LanguageData>

@@ -189,10 +189,5 @@ namespace ApexMechanoids
                 thing.HitPoints = Rand.RangeInclusive(1, Mathf.Max(1, Mathf.RoundToInt(thing.MaxHitPoints * 0.75f)));
             }
         }
-
-        public override string Summary(Scenario scen)
-        {
-            return def.description;
-        }
     }
 }

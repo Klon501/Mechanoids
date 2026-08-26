@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Mech_Aegis.label>神盾</APM_Mech_Aegis.label>
+
+  <APM_Mech_Conqueror_AR.label>爆破征服者</APM_Mech_Conqueror_AR.label>
+
+  <APM_Mech_Conqueror_DMR.label>卡宾征服者</APM_Mech_Conqueror_DMR.label>
+
+  <APM_Mech_Conqueror_LMG.label>喷吐征服者</APM_Mech_Conqueror_LMG.label>
+
+  <APM_Mech_Celerus.label>司鲁丝</APM_Mech_Celerus.label>
+
+  <APM_Mech_CelerusB.label>司鲁丝</APM_Mech_CelerusB.label>
+
+  <APM_Mech_Dynamo.label>迪纳摩</APM_Mech_Dynamo.label>
+
+  <APM_Mech_Frostivus.description>一台移动低温舱，可保存易腐食物，并能在释放前将类人殖民者或尸体封入休眠状态。</APM_Mech_Frostivus.description>
+
+  <APM_Mech_Frostivus.label>霜语者</APM_Mech_Frostivus.label>
+
+  <APM_Mech_Frostivus.tools.0.label>左前腿</APM_Mech_Frostivus.tools.0.label>
+
+  <APM_Mech_Frostivus.tools.1.label>右前腿</APM_Mech_Frostivus.tools.1.label>
+
+  <APM_Mech_Frostivus.tools.2.label>头部</APM_Mech_Frostivus.tools.2.label>
+
+  <APM_Mech_Gazer.description>地狱球技术的另一种应用造就了凝视者——一台以主眼光束发射器为显著特征的机械体。其武器威力强大，开火时凝视者必须锁定自身，并将全部运动机能转移到稳定姿态上，即便如此仍需较长的蓄能时间。所发射的光束能摧毁前方的一切，甚至对建筑造成可观伤害。在近距离受迫时，凝视者会将蓄积的能量向外释放为猛烈冲击波，将攻击者击退并扰乱附近机械化目标。</APM_Mech_Gazer.description>
+
+  <APM_Mech_Gazer.label>凝视者</APM_Mech_Gazer.label>
+
+  <APM_Mech_Haze.label>迷雾</APM_Mech_Haze.label>
+
+  <APM_Mech_Ingestor.label>吞噬者</APM_Mech_Ingestor.label>
+
+  <APM_Mech_Javelin.label>标枪</APM_Mech_Javelin.label>
+
+  <APM_Mech_Lasher.label>鞭挞者</APM_Mech_Lasher.label>
+
+  <APM_Mech_Mantis.label>螳螂</APM_Mech_Mantis.label>
+
+  <APM_Mech_Maul.label>巨锤</APM_Mech_Maul.label>
+
+  <APM_Mech_Pulse.label>脉冲</APM_Mech_Pulse.label>
+
+  <APM_Mech_Ravager.label>蹂躏者</APM_Mech_Ravager.label>
+
+  <APM_Mech_Satellite.label>卫星</APM_Mech_Satellite.label>
+
+  <APM_Mech_Siren.label>海妖</APM_Mech_Siren.label>
+
+  <APM_Mech_Tinker.description>修补匠是一台用于维修同派系建筑与机械体的支援型机械体。它无法建造新结构，但可向盟友投射防御矩阵，并用定向激光致盲敌人。</APM_Mech_Tinker.description>
+
+  <APM_Mech_Tinker.label>修补匠</APM_Mech_Tinker.label>
+
+  <APM_Mech_Vassal.label>附庸</APM_Mech_Vassal.label>
+
+  <APM_Mechanitor_Ancient.label>古代机械师</APM_Mechanitor_Ancient.label>
+
+  <APM_Mechanitor_Nomad.label>游牧机械师</APM_Mechanitor_Nomad.label>
+
+</LanguageData>

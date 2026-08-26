@@ -166,7 +166,7 @@
   <!-- EN: Satellites cannot be repaired at a repair station. -->
   <APM_RepairStation_CannotRepairSatellite>衛星無法在修復工作站中修復。</APM_RepairStation_CannotRepairSatellite>
 
-  <!-- EN: Auto-Repair -->
+  <!-- EN: Auto-repair -->
   <APM_Gizmo_AutoRepair>自動修復</APM_Gizmo_AutoRepair>
 
   <!-- EN: Automatically scan for damaged mechanoids and assign them to the station. -->

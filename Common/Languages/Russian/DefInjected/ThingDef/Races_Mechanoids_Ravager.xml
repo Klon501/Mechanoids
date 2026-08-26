@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<APM_Mech_Ravager.label>разоритель</APM_Mech_Ravager.label>
+	<APM_Mech_Ravager.description>Ужасного автоматического миномета оказалось недостаточно, чтобы утолить жажду разрушений механоидов. Их решение? Разоритель — мобильная артиллерийская установка. Способный накапливать избыточную энергию в резервных батареях, он может временно перегрузить свое орудие и выпустить снаряд, который в полете разделяется на три разрушительных взрыва.</APM_Mech_Ravager.description>
+	<APM_Mech_Ravager.tools.head.label>голова</APM_Mech_Ravager.tools.head.label>
+</LanguageData>

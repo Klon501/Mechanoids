@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_CarryToRepairStation.label>搬运至修复工作站</APM_CarryToRepairStation.label>
+
+  <APM_EnterRepairStation.label>进入修复工作站</APM_EnterRepairStation.label>
+
+  <APM_HaulToMechCommandCasket.label>搬运至机械指挥舱</APM_HaulToMechCommandCasket.label>
+
+  <APM_HaulToToxicPurifier.label>搬运废料包至净化站</APM_HaulToToxicPurifier.label>
+
+  <APM_IngestorProcessCorpses.gerund>处理中</APM_IngestorProcessCorpses.gerund>
+
+  <APM_IngestorProcessCorpses.label>处理尸体</APM_IngestorProcessCorpses.label>
+
+  <APM_IngestorProcessCorpses.verb>处理</APM_IngestorProcessCorpses.verb>
+
+  <APM_LasherFeedPatientAnimals.gerund>喂养中</APM_LasherFeedPatientAnimals.gerund>
+
+  <APM_LasherFeedPatientAnimals.label>喂养动物</APM_LasherFeedPatientAnimals.label>
+
+  <APM_LasherFeedPatientAnimals.verb>喂养</APM_LasherFeedPatientAnimals.verb>
+
+  <APM_LasherMilk.gerund>挤奶中</APM_LasherMilk.gerund>
+
+  <APM_LasherMilk.label>挤奶动物</APM_LasherMilk.label>
+
+  <APM_LasherMilk.verb>挤奶</APM_LasherMilk.verb>
+
+  <APM_LasherRebalanceAnimalsInPens.gerund>牵引中</APM_LasherRebalanceAnimalsInPens.gerund>
+
+  <APM_LasherRebalanceAnimalsInPens.label>重新平衡圈养动物</APM_LasherRebalanceAnimalsInPens.label>
+
+  <APM_LasherRebalanceAnimalsInPens.verb>牵引</APM_LasherRebalanceAnimalsInPens.verb>
+
+  <APM_LasherReleaseToWild.gerund>放归中</APM_LasherReleaseToWild.gerund>
+
+  <APM_LasherReleaseToWild.label>放归野外</APM_LasherReleaseToWild.label>
+
+  <APM_LasherReleaseToWild.verb>放归</APM_LasherReleaseToWild.verb>
+
+  <APM_LasherShear.gerund>剪毛中</APM_LasherShear.gerund>
+
+  <APM_LasherShear.label>剪毛动物</APM_LasherShear.label>
+
+  <APM_LasherShear.verb>剪毛</APM_LasherShear.verb>
+
+  <APM_LasherSlaughter.gerund>屠宰中</APM_LasherSlaughter.gerund>
+
+  <APM_LasherSlaughter.label>屠宰动物</APM_LasherSlaughter.label>
+
+  <APM_LasherSlaughter.verb>屠宰</APM_LasherSlaughter.verb>
+
+  <APM_LasherTakeRoamingAnimalsToPen.gerund>牵引中</APM_LasherTakeRoamingAnimalsToPen.gerund>
+
+  <APM_LasherTakeRoamingAnimalsToPen.label>牵引游荡动物</APM_LasherTakeRoamingAnimalsToPen.label>
+
+  <APM_LasherTakeRoamingAnimalsToPen.verb>牵引</APM_LasherTakeRoamingAnimalsToPen.verb>
+
+  <APM_LasherTakeToPen.gerund>牵引中</APM_LasherTakeToPen.gerund>
+
+  <APM_LasherTakeToPen.label>牵引动物</APM_LasherTakeToPen.label>
+
+  <APM_LasherTakeToPen.verb>牵引</APM_LasherTakeToPen.verb>
+
+  <APM_LasherTame.gerund>驯服中</APM_LasherTame.gerund>
+
+  <APM_LasherTame.label>驯服动物</APM_LasherTame.label>
+
+  <APM_LasherTame.verb>驯服</APM_LasherTame.verb>
+
+  <APM_LasherTrain.gerund>训练中</APM_LasherTrain.gerund>
+
+  <APM_LasherTrain.label>训练动物</APM_LasherTrain.label>
+
+  <APM_LasherTrain.verb>训练</APM_LasherTrain.verb>
+
+  <APM_SirenChatWithPrisoner.gerund>与{0}交谈中</APM_SirenChatWithPrisoner.gerund>
+
+  <APM_SirenChatWithPrisoner.label>与囚犯交谈</APM_SirenChatWithPrisoner.label>
+
+  <APM_SirenChatWithPrisoner.verb>与{0}交谈</APM_SirenChatWithPrisoner.verb>
+
+  <APM_SirenDeliverFoodToPrisoner.gerund>为{0}送餐中</APM_SirenDeliverFoodToPrisoner.gerund>
+
+  <APM_SirenDeliverFoodToPrisoner.label>为囚犯送餐</APM_SirenDeliverFoodToPrisoner.label>
+
+  <APM_SirenDeliverFoodToPrisoner.verb>为{0}送餐</APM_SirenDeliverFoodToPrisoner.verb>
+
+  <APM_SirenFeedPrisoner.gerund>喂养中</APM_SirenFeedPrisoner.gerund>
+
+  <APM_SirenFeedPrisoner.label>喂养囚犯</APM_SirenFeedPrisoner.label>
+
+  <APM_SirenFeedPrisoner.verb>喂养</APM_SirenFeedPrisoner.verb>
+
+  <APM_SirenReleasePrisoner.gerund>释放中</APM_SirenReleasePrisoner.gerund>
+
+  <APM_SirenReleasePrisoner.label>释放囚犯</APM_SirenReleasePrisoner.label>
+
+  <APM_SirenReleasePrisoner.verb>释放</APM_SirenReleasePrisoner.verb>
+
+  <APM_SirenTakePrisonerToBed.gerund>带往床铺中</APM_SirenTakePrisonerToBed.gerund>
+
+  <APM_SirenTakePrisonerToBed.label>带囚犯上床</APM_SirenTakePrisonerToBed.label>
+
+  <APM_SirenTakePrisonerToBed.verb>带上床</APM_SirenTakePrisonerToBed.verb>
+
+  <APM_TinkerRepairBuilding.gerund>维修中</APM_TinkerRepairBuilding.gerund>
+
+  <APM_TinkerRepairBuilding.label>维修建筑</APM_TinkerRepairBuilding.label>
+
+  <APM_TinkerRepairBuilding.verb>维修</APM_TinkerRepairBuilding.verb>
+
+  <APM_TinkerRepairMech.gerund>维修中</APM_TinkerRepairMech.gerund>
+
+  <APM_TinkerRepairMech.label>维修机甲</APM_TinkerRepairMech.label>
+
+  <APM_TinkerRepairMech.verb>维修</APM_TinkerRepairMech.verb>
+
+</LanguageData>

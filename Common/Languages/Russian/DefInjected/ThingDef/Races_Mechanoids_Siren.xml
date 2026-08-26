@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+	<APM_Mech_Siren.description>Используя тот факт, что механоиды обладают психическим присутствием, механоид-сирена способен притягивать поселенцев к себе, подвергая их опасности жаркого боя. При управлении через механітора этот мех может поднимать настроение и удовлетворять потребность в развлечениях у находящихся рядом людей.</APM_Mech_Siren.description>
+	<APM_Mech_Siren.tools.left_fist.label>левый кулак</APM_Mech_Siren.tools.left_fist.label>
+	<APM_Mech_Siren.tools.right_fist.label>правый кулак</APM_Mech_Siren.tools.right_fist.label>
+	<APM_Mech_Siren.tools.head.label>голова</APM_Mech_Siren.tools.head.label>
+</LanguageData>

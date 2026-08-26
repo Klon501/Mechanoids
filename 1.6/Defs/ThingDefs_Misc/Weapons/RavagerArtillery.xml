@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BaseGun">
 		<defName>APM_Ravager_Artillery</defName>
-		<label>ravager artillery</label>
+		<label>Starspewer</label>
 		<description>A moveable auto-mortar with integrated hellsphere adjacent technology, this mechanoid siege weapon was intended to be emplaced on larger mechanoid frames. One can almost feel the mechhive’s hate in every blast of the cannon.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RavagerArtillery</texPath>

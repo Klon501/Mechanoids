@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_AegisShield.label>盾牌</APM_AegisShield.label>
+
+  <APM_BroadcastArray.label>广播阵列</APM_BroadcastArray.label>
+
+  <APM_DynamoBody.label>机身</APM_DynamoBody.label>
+
+  <APM_DynamoReactor.label>动力核心</APM_DynamoReactor.label>
+
+  <APM_FrostivusBody.label>躯体</APM_FrostivusBody.label>
+
+  <APM_FrostivusCryo.label>低温舱</APM_FrostivusCryo.label>
+
+  <APM_GazerCoolingSystem.label>冷却系统</APM_GazerCoolingSystem.label>
+
+  <APM_GazerHead.label>头部</APM_GazerHead.label>
+
+  <APM_GazerLaserFocus.label>激光聚焦器</APM_GazerLaserFocus.label>
+
+  <APM_GazerPaw.label>腿</APM_GazerPaw.label>
+
+  <APM_GazerThorax.label>胸腔</APM_GazerThorax.label>
+
+  <APM_HazeBody.label>机身</APM_HazeBody.label>
+
+  <APM_HazeGasVent.label>毒气排放口</APM_HazeGasVent.label>
+
+  <APM_IngestorBody.label>机身</APM_IngestorBody.label>
+
+  <APM_IngestorMaw.label>巨口</APM_IngestorMaw.label>
+
+  <APM_IngestorRefinery.label>有机物精炼器</APM_IngestorRefinery.label>
+
+  <APM_JavelinBody.label>机身</APM_JavelinBody.label>
+
+  <APM_JavelinHead.label>头部</APM_JavelinHead.label>
+
+  <APM_JavelinRefinery.label>有机物精炼器</APM_JavelinRefinery.label>
+
+  <APM_MantisBlade.label>切割爪</APM_MantisBlade.label>
+
+  <APM_MantisBody.label>机身</APM_MantisBody.label>
+
+  <APM_PsychicResonator.label>灵能共鸣器</APM_PsychicResonator.label>
+
+  <APM_RavagerBody.label>机身</APM_RavagerBody.label>
+
+  <APM_SatelliteHoverPack.label>悬浮背包</APM_SatelliteHoverPack.label>
+
+  <APM_SirenHead.label>共鸣王冠</APM_SirenHead.label>
+
+  <APM_SirenResonanceCore.label>共鸣核心</APM_SirenResonanceCore.label>
+
+  <APM_TinkerRepairModule.label>维修模块</APM_TinkerRepairModule.label>
+
+  <APM_VocalSynthesizer.label>声学合成器</APM_VocalSynthesizer.label>
+
+</LanguageData>
