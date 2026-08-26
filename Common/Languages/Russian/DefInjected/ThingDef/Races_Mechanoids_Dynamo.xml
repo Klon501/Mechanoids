@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- APM_Mech_Dynamo -->
+
   <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
   <APM_Mech_Dynamo.description>Гибрид механоида и инфраструктуры улья, динамо оснащён мощным внутренним реактором. Вырабатываемая им колоссальная энергия требует уранового топлива для поддержания работы, поэтому ванометрических элементов ему недостаточно. Динамо способен укореняться в земле, подсоединяясь к существующей энергосети, а также использовать свою энергию как мобильный генератор щита, перерабатывая излишки урана для восстановления его прочности.</APM_Mech_Dynamo.description>
-  <APM_Mech_Dynamo.tools.head.label>голова</APM_Mech_Dynamo.tools.head.label>
+  <APM_Mech_Dynamo.tools.0.label>голова</APM_Mech_Dynamo.tools.0.label>
+
 </LanguageData>

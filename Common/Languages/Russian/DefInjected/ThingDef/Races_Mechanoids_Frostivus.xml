@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- APM_Mech_Frostivus -->
+
   <APM_Mech_Frostivus.label>морозус</APM_Mech_Frostivus.label>
   <APM_Mech_Frostivus.description>Очень необычный механоид, представляющий собой мобильную криогенную камеру. Он поглощает органические материалы и продукты питания для хранения, заморозки и выдачи по требованию. Ему также можно приказать запечатать внутри себя цель для последующего использования ульем механоидов в своих зловещих целях.</APM_Mech_Frostivus.description>
-  <APM_Mech_Frostivus.tools.front_left_leg.label>передняя левая нога</APM_Mech_Frostivus.tools.front_left_leg.label>
-  <APM_Mech_Frostivus.tools.front_right_leg.label>передняя правая нога</APM_Mech_Frostivus.tools.front_right_leg.label>
-  <APM_Mech_Frostivus.tools.head.label>голова</APM_Mech_Frostivus.tools.head.label>
+  <APM_Mech_Frostivus.tools.0.label>передняя левая нога</APM_Mech_Frostivus.tools.0.label>
+  <APM_Mech_Frostivus.tools.1.label>передняя правая нога</APM_Mech_Frostivus.tools.1.label>
+  <APM_Mech_Frostivus.tools.2.label>голова</APM_Mech_Frostivus.tools.2.label>
+
 </LanguageData>

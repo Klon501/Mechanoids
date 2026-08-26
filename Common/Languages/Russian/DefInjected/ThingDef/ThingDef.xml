@@ -201,4 +201,7 @@
 
   <SeveringEdge.label>рассекающее лезвие</SeveringEdge.label>
 
+  <!-- EN: dashing -->
+  <ApexMechanoids_DashingPawn.label>стремительный</ApexMechanoids_DashingPawn.label>
+
 </LanguageData>

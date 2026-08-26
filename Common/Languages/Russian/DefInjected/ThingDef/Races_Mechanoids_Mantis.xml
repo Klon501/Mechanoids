@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- APM_Mech_Mantis -->
+
   <APM_Mech_Mantis.label>богомол</APM_Mech_Mantis.label>
   <APM_Mech_Mantis.description>Созданный на основе известных жнецов, богомол предназначен для кромсания врагов в ближнем бою. Комбинация узлов механоида, синтетических искусственных мышц, гибких бронепластин и лезвий из резонирующей пластистали делает его намного опаснее предшественников. Богомол способен совершать стремительные рывки к дальним целям. Кроме того, он анализирует поле боя и активирует рой ремонтных механитов после уничтожения достаточного количества врагов для самолечения и подзарядки.</APM_Mech_Mantis.description>
-  <APM_Mech_Mantis.tools.head.label>голова</APM_Mech_Mantis.tools.head.label>
+  <APM_Mech_Mantis.tools.0.label>голова</APM_Mech_Mantis.tools.0.label>
+
 </LanguageData>

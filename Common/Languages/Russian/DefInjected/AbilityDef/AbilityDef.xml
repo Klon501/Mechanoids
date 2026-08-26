@@ -111,4 +111,11 @@
   <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
   <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
 
+
+  <!-- EN: mech longjump -->
+  <APM_PulseLongjump.label>дальний прыжок меха</APM_PulseLongjump.label>
+
+  <!-- EN: Jump to a distant location using special ultrafast mechanoid muscles. -->
+  <APM_PulseLongjump.description>Прыжок на дальнее расстояние с использованием особых сверхбыстрых мышц механоида.</APM_PulseLongjump.description>
+
 </LanguageData>
