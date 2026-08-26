@@ -13,9 +13,9 @@ namespace ApexMechanoids
     {
         private static CachedTexture SelectOverseerIcon = new CachedTexture("UI/Icons/SelectOverseer");
 
-        private static List<Map> tmpAllMaps = new List<Map>();
+        //private static List<Map> tmpAllMaps = new List<Map>();
 
-        private static List<Pawn> tmpMechanitorsInCaskets = new List<Pawn>();
+        //private static List<Pawn> tmpMechanitorsInCaskets = new List<Pawn>();
 
         [HarmonyPostfix]
         public static void GetGizmos(ref IEnumerable<Gizmo> __result, Pawn mech)
@@ -95,20 +95,7 @@ namespace ApexMechanoids
 
                 if (mech.IsColonyMechRequiringMechanitor())    //connected but uncontrolled
                 {
-                    tmpAllMaps.Clear();
-                    tmpMechanitorsInCaskets.Clear();
-
-                    tmpAllMaps.AddRange(Find.Maps);
-                    for (int i = 0; i < tmpAllMaps.Count; i++)
-                    {
-                        foreach (Pawn p in tmpAllMaps[i].mapPawns.FreeColonists)
-                        {
-                            if (p != null && !tmpMechanitorsInCaskets.Contains(p) && Utils.IsUplinkActiveFor(p))
-                            {
-                                tmpMechanitorsInCaskets.Add(p);
-                            }
-                        }
-                    }
+                    List<Pawn> tmpMechanitorsInCaskets = Utils.MechanitorsInCommandCaskets();
 
                     if (!tmpMechanitorsInCaskets.NullOrEmpty())
                     {
@@ -134,7 +121,7 @@ namespace ApexMechanoids
                                     {
                                         if (casketBuilding.CompAbilities != null)
                                         {
-                                            casketBuilding.CompAbilities.ForceSetTarget(mech, out LocalTargetInfo target);
+                                            casketBuilding.CompAbilities.ForceSetTargetPawn(mech, out LocalTargetInfo target);
                                             casketBuilding.CompAbilities.StartToConnect(target);
                                         }
                                     }

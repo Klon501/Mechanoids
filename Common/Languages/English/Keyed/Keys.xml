@@ -208,6 +208,10 @@
 
   <APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>(missing bandwidth)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
 
+  <APM.CommandCasket.Gizmo.OpenStasisContainer.Label>Open remotely</APM.CommandCasket.Gizmo.OpenStasisContainer.Label>
+
+  <APM.CommandCasket.Gizmo.HackStasisContainer.Label>Hack remotely</APM.CommandCasket.Gizmo.HackStasisContainer.Label>
+
   <APM.CommandCasket.Inspect.CurrentAction>currently</APM.CommandCasket.Inspect.CurrentAction>
 
   <APM.CommandCasket.Inspect.CurrentAction.Connect>connecting</APM.CommandCasket.Inspect.CurrentAction.Connect>
@@ -219,6 +223,8 @@
   <APM.CommandCasket.Inspect.CurrentAction.Repair>repairing</APM.CommandCasket.Inspect.CurrentAction.Repair>
 
   <APM.CommandCasket.Inspect.CurrentAction.Idle>idle</APM.CommandCasket.Inspect.CurrentAction.Idle>
+
+  <APM.CommandCasket.Inspect.CurrentAction.StasisContainer>opening stasis container</APM.CommandCasket.Inspect.CurrentAction.StasisContainer>
 
   <APM.CommandCasket.Gizmo.ControlsInfo>\nLeftclick = choose target\nShift = target self\nCtrl = que action\nRightclick = cancel</APM.CommandCasket.Gizmo.ControlsInfo>
 

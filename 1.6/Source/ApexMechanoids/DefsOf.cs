@@ -50,6 +50,7 @@ namespace ApexMechanoids
         public static ThingDef APM_Gun_JavelinRocketLauncher;
         public static ThingDef APM_Proj_JavelinMissile;
 
+        public static ThingDef APM_MechanoidContainer_Cluster;
         public static HediffDef RemoteRepairerImplant;  //from Biotech
         public static HediffDef RemoteShielderImplant;  //from Biotech
         public static HediffDef APM_Hediff_Devoured;

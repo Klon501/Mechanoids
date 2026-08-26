@@ -8,6 +8,7 @@ using Verse.AI;
 using Verse.Sound;
 using PipeSystem;
 using static ApexMechanoids.CompRemoteMechCasketAbilities;
+using Unity.Burst.Intrinsics;
 
 namespace ApexMechanoids
 {
@@ -575,7 +576,7 @@ namespace ApexMechanoids
                     string temp = "APM.CommandCasket.Inspect.CurrentAction".Translate() + " ";
                     if (CompAbilities.IsBusy == (int)MechCasketAction.idle)
                     {
-                        temp += "APM.CommandCasket.Inspect.CurrentAction".Translate() + " ";
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.Idle".Translate() + " ";
                         return temp;
                     }
                     if (CompAbilities.IsBusy == (int)MechCasketAction.connecting)
@@ -593,6 +594,10 @@ namespace ApexMechanoids
                     else if (CompAbilities.IsBusy == (int)MechCasketAction.repair)
                     {
                         temp += "APM.CommandCasket.Inspect.CurrentAction.Repair".Translate() + " ";
+                    }
+                    else if (CompAbilities.IsBusy == (int)MechCasketAction.openStasisContainer)
+                    {
+                        temp += "APM.CommandCasket.Inspect.CurrentAction.StasisContainer".Translate() + " ";
                     }
                     if (CompAbilities.HasQuedAction)
                     {

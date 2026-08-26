@@ -161,6 +161,35 @@ namespace ApexMechanoids
             return false;
         }
 
+        public static Pawn UplinkedMechanitor(Building_MechCommandCasket casket)
+        {
+            if(casket !=null)
+            {
+                return casket.selectedPawn;
+            }
+            return null;
+        }
+
+
+
+        public static List<Pawn> MechanitorsInCommandCaskets()
+        {
+            List<Map> tmpAllMaps = new List<Map>();
+            List<Pawn> tmpMechanitorsInCaskets = new List<Pawn>();
+
+            tmpAllMaps.AddRange(Find.Maps);
+            for (int i = 0; i < tmpAllMaps.Count; i++)
+            {
+                foreach (Pawn p in tmpAllMaps[i].mapPawns.FreeColonists)
+                {
+                    if (p != null && !tmpMechanitorsInCaskets.Contains(p) && Utils.IsUplinkActiveFor(p))
+                    {
+                        tmpMechanitorsInCaskets.Add(p);
+                    }
+                }
+            }
+            return tmpMechanitorsInCaskets;
+        }
 
         public static void ReplaceBuilding(Building oldBuilding, ThingDef NewBuildingDef)
         {
