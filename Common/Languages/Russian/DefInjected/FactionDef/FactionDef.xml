@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+
+  <!-- EN: Mechanitor's Domain -->
+  <APM_DomainPlayerFaction.label>Домен механитора</APM_DomainPlayerFaction.label>
+
 </LanguageData>

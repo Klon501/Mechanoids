@@ -7,4 +7,8 @@
 
   <APM_PrepareStructureSite.label>твёрдая земля под владением</APM_PrepareStructureSite.label>
 
+
+  <!-- EN: ancient corpses -->
+  <APM_SpawnScenarioCorpses.label>древние трупы</APM_SpawnScenarioCorpses.label>
+
 </LanguageData>

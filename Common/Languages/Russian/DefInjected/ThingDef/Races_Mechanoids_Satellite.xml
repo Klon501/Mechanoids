@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<APM_Mech_Satellite.label>сателлит</APM_Mech_Satellite.label>
-	<APM_Mech_Satellite.description>Оснащенный парящим ранцем, этот штурмовой механоид с легкостью преодолевает большинство типов местности. Сателлита можно вызвать из ранца мехаманчера для поддержки союзников или в качестве эскорта командиров механоидов в бою.</APM_Mech_Satellite.description>
-	<APM_Mech_Satellite.tools.left_fist.label>левый кулак</APM_Mech_Satellite.tools.left_fist.label>
-	<APM_Mech_Satellite.tools.right_fist.label>правый кулак</APM_Mech_Satellite.tools.right_fist.label>
-	<APM_Mech_Satellite.tools.head.label>голова</APM_Mech_Satellite.tools.head.label>
+
+  <APM_Mech_Satellite.label>сателлит</APM_Mech_Satellite.label>
+  <APM_Mech_Satellite.description>Оснащенный парящим ранцем, этот штурмовой механоид с легкостью преодолевает большинство типов местности. Сателлита можно вызвать из ранца мехаманчера для поддержки союзников или в качестве эскорта командиров механоидов в бою.</APM_Mech_Satellite.description>
+  <APM_Mech_Satellite.tools.0.label>левый кулак</APM_Mech_Satellite.tools.0.label>
+  <APM_Mech_Satellite.tools.1.label>правый кулак</APM_Mech_Satellite.tools.1.label>
+  <APM_Mech_Satellite.tools.2.label>голова</APM_Mech_Satellite.tools.2.label>
+
 </LanguageData>

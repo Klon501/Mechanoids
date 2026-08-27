@@ -135,4 +135,17 @@
   <!-- EN: The Siren's entrancing song is driving me mad. -->
   <APM_Hediff_SirenSong.description>Этот пешка находится под воздействием успокаивающего механического хора, чувствуя себя легче и полнее сил.</APM_Hediff_SirenSong.description>
 
+
+  <!-- EN: overdrive -->
+  <APM_Hediff_TerminusOverdrive.label>форсаж</APM_Hediff_TerminusOverdrive.label>
+
+  <!-- EN: blinded by laser -->
+  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
+
+  <!-- EN: Sight is sharply reduced after exposure to a blinding laser. -->
+  <APM_LaserBlind.description>Зрение резко ухудшается после воздействия ослепляющего лазера.</APM_LaserBlind.description>
+
+  <!-- EN: mech command casket boost -->
+  <APM_MechCommandCasketBoost.label>усиление командного капсулой</APM_MechCommandCasketBoost.label>
+
 </LanguageData>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- APM_Mech_Lasher -->
+
   <APM_Mech_Lasher.label>плеть</APM_Mech_Lasher.label>
   <APM_Mech_Lasher.description>Вооружённый плазменным хлыстом, этот механоид изначально разрабатывался для укрощения и дрессировки животных. В боевых условиях его хлыст эффективно применяется в ближнем бою, позволяя наносить удары с ЭМИ-уроном по небольшой площади.</APM_Mech_Lasher.description>
-  <APM_Mech_Lasher.tools.left_fist.label>левый кулак</APM_Mech_Lasher.tools.left_fist.label>
-  <APM_Mech_Lasher.tools.right_fist.label>правый кулак</APM_Mech_Lasher.tools.right_fist.label>
-  <APM_Mech_Lasher.tools.head.label>голова</APM_Mech_Lasher.tools.head.label>
+  <APM_Mech_Lasher.tools.0.label>левый кулак</APM_Mech_Lasher.tools.0.label>
+  <APM_Mech_Lasher.tools.1.label>правый кулак</APM_Mech_Lasher.tools.1.label>
+  <APM_Mech_Lasher.tools.2.label>голова</APM_Mech_Lasher.tools.2.label>
+
 </LanguageData>
