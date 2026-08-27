@@ -65,13 +65,13 @@
   <!-- EN: Gestating conqueror (AR). -->
   <APM_Conqueror_AR.jobString>Выращивание завоевателя (винтовка).</APM_Conqueror_AR.jobString>
 
-  <!-- APM_Conqueror_LMG -->
+  <!-- APM_Conqueror_SMG -->
   <!-- EN: gestate spitter conqueror -->
-  <APM_Conqueror_LMG.label>вырастить завоевателя с плевателем</APM_Conqueror_LMG.label>
+  <APM_Conqueror_SMG.label>вырастить завоевателя с плевателем</APM_Conqueror_SMG.label>
   <!-- EN: Gestate a Charge Spitter-equipped conqueror mechanoid. -->
-  <APM_Conqueror_LMG.description>Вырастить механоида завоеватель, оснащённого бластерным плевателем.</APM_Conqueror_LMG.description>
-  <!-- EN: Gestating conqueror (LMG). -->
-  <APM_Conqueror_LMG.jobString>Выращивание завоевателя (пистолет-пулемёт).</APM_Conqueror_LMG.jobString>
+  <APM_Conqueror_SMG.description>Вырастить механоида завоеватель, оснащённого бластерным плевателем.</APM_Conqueror_SMG.description>
+  <!-- EN: Gestating conqueror (SMG). -->
+  <APM_Conqueror_SMG.jobString>Выращивание завоевателя (пистолет-пулемёт).</APM_Conqueror_SMG.jobString>
 
   <!-- APM_Lasher -->
   <!-- EN: gestate lasher -->

@@ -69,7 +69,7 @@
 				<kindDefs>
 					<li>APM_Mech_Conqueror_DMR</li>
 					<li>APM_Mech_Conqueror_AR</li>
-					<li>APM_Mech_Conqueror_LMG</li>
+					<li>APM_Mech_Conqueror_SMG</li>
 				</kindDefs>
 				<hediff>APM_Hediff_Unity</hediff>
 				<checkInterval>250</checkInterval>
@@ -84,7 +84,7 @@
 				<kindDefs>
 					<li>APM_Mech_Conqueror_DMR</li>
 					<li>APM_Mech_Conqueror_AR</li>
-					<li>APM_Mech_Conqueror_LMG</li>
+					<li>APM_Mech_Conqueror_SMG</li>
 				</kindDefs>
 				<checkIntervalTicks>120</checkIntervalTicks>
 				<aiMaxHealthPct>0.30</aiMaxHealthPct>
@@ -213,7 +213,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="APM_Mech_ConquerorBase">
-		<defName>APM_Mech_Conqueror_LMG</defName>
+		<defName>APM_Mech_Conqueror_SMG</defName>
 		<label>spitter conqueror</label>
 		<description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter.</description>
 		<statBases>
@@ -223,15 +223,15 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>APM_Mech_Conqueror_LMG</defName>
+		<defName>APM_Mech_Conqueror_SMG</defName>
 		<label>spitter conqueror</label>
-		<race>APM_Mech_Conqueror_LMG</race>
+		<race>APM_Mech_Conqueror_SMG</race>
 		<combatPower>190</combatPower>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Conqueror/LMG/ConquerorLMG</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/LMG/Mech_ConquerorLMG</maskPath>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/SMG/ConquerorSMG</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/SMG/Mech_ConquerorSMG</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.5</drawSize>
@@ -243,8 +243,8 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Conqueror/LMG/ConquerorLMGAncient</texPath>
-					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/LMG/Mech_ConquerorLMG</maskPath>
+					<texPath>Things/Pawn/Mechanoid/Conqueror/SMG/ConquerorSMGAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Conqueror/SMG/Mech_ConquerorSMG</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.5</drawSize>
@@ -258,7 +258,7 @@
 		<weaponMoney>9999~9999</weaponMoney>
 		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags>
-			<li>APM_WeaponConquerorLMG</li>
+			<li>APM_WeaponConquerorSMG</li>
 		</weaponTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
@@ -302,7 +302,7 @@
 				<kindDefs>
 					<li>APM_Mech_Conqueror_DMR</li>
 					<li>APM_Mech_Conqueror_AR</li>
-					<li>APM_Mech_Conqueror_LMG</li>
+					<li>APM_Mech_Conqueror_SMG</li>
 				</kindDefs>
 			</li>
 			<li Class="ApexMechanoids.CompProperties_KillCaster">

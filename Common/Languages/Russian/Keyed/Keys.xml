@@ -299,4 +299,18 @@
 
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Земля поверх отходов</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
+  <!-- Уникальные строки из второго файла[cite: 43] -->
+  <!-- EN: Hack remotely -->
+  <APM.CommandCasket.Gizmo.HackStasisContainer.Label>Взломать удалённо</APM.CommandCasket.Gizmo.HackStasisContainer.Label>
+
+  <!-- EN: Open remotely -->
+  <APM.CommandCasket.Gizmo.OpenStasisContainer.Label>Открыть удалённо</APM.CommandCasket.Gizmo.OpenStasisContainer.Label>
+
+  <!-- EN: opening stasis container -->
+  <APM.CommandCasket.Inspect.CurrentAction.StasisContainer>открывает стазис-контейнер</APM.CommandCasket.Inspect.CurrentAction.StasisContainer>
+
+  <!-- EN: {0} forced {1} open without the bandwidth to hold what was inside. {2} is loose and answers to nobody until a mechanitor takes control of it. -->
+  <APM.MechanoidContainer.ForcedOpen>{0} вскрыл(а) {1} насильно, не имея пропускной способности, чтобы удержать то, что было внутри. {2} вырвался на свободу и не подчиняется никому, пока механитор не возьмёт его под контроль.</APM.MechanoidContainer.ForcedOpen>
+
+  <APM_UnityTooltip_Current>Текущие статы (с каналом единства):</APM_UnityTooltip_Current>
 </LanguageData>

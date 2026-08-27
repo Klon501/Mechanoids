@@ -93,6 +93,10 @@
   <!-- EN: Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude. -->
   <APM_Hediff_SteelDiscipline.description>Вдохновленная присутствием Вассала, эта единица двигается с новой целеустремленностью и стойкостью духа.</APM_Hediff_SteelDiscipline.description>
 
+  <!-- Усиление командного саркофага (гедифф) -->
+	<APM_MechCommandCasketBoost.label>усиление командного саркофага</APM_MechCommandCasketBoost.label>
+	<APM_MechCommandCasketBoost.description>Пропускная способность этого механитора увеличена, пока он находится внутри командного саркофага.</APM_MechCommandCasketBoost.description>
+
   <!-- APM_Hediff_Unity -->
   <!-- EN: unity uplink -->
   <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>

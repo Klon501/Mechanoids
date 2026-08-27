@@ -59,11 +59,11 @@
 
   <APM_Gun_Conqueror_DMR.tools.0.label>ствол</APM_Gun_Conqueror_DMR.tools.0.label>
 
-  <APM_Gun_Conqueror_LMG.description>Енергетичний скорострільний бластер для вогню на придушення. Легший за важкий бластер, але точніший.</APM_Gun_Conqueror_LMG.description>
+  <APM_Gun_Conqueror_SMG.description>Енергетичний скорострільний бластер для вогню на придушення. Легший за важкий бластер, але точніший.</APM_Gun_Conqueror_SMG.description>
 
-  <APM_Gun_Conqueror_LMG.label>енергокулемет</APM_Gun_Conqueror_LMG.label>
+  <APM_Gun_Conqueror_SMG.label>енергокулемет</APM_Gun_Conqueror_SMG.label>
 
-  <APM_Gun_Conqueror_LMG.tools.0.label>ствол</APM_Gun_Conqueror_LMG.tools.0.label>
+  <APM_Gun_Conqueror_SMG.tools.0.label>ствол</APM_Gun_Conqueror_SMG.tools.0.label>
 
   <APM_Gun_EMP_Impactor.label>ЕМП-імпактор</APM_Gun_EMP_Impactor.label>
 

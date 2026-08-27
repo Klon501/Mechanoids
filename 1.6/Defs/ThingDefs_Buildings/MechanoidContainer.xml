@@ -114,7 +114,7 @@
 					<Mech_Lancer>6</Mech_Lancer>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Frostivus>5</APM_Mech_Frostivus>
 					<APM_Mech_Siren>5</APM_Mech_Siren>
 					<APM_Mech_Pulse>4</APM_Mech_Pulse>
@@ -373,7 +373,7 @@
 					<Mech_Lancer>6</Mech_Lancer>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Frostivus>5</APM_Mech_Frostivus>
 					<APM_Mech_Siren>5</APM_Mech_Siren>
 					<APM_Mech_Pulse>4</APM_Mech_Pulse>
