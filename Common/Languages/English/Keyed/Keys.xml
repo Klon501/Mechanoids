@@ -1,273 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- Dynamo & Frostivus / General -->
   <APM.Dynamo.Command.SwithcToMobileMode.Label>Mobile Mode</APM.Dynamo.Command.SwithcToMobileMode.Label>
-
   <APM.Dynamo.Command.SwithcToMobileMode.Desc>Switch to mobile mode</APM.Dynamo.Command.SwithcToMobileMode.Desc>
 
   <APM.FrostivusFoodPreservation.ManualUnload.Label>Unload preserved food</APM.FrostivusFoodPreservation.ManualUnload.Label>
-
   <APM.FrostivusFoodPreservation.ManualUnload.Desc>Choose a cell where Frostivus should unload all preserved food. Manually unloaded food will be forbidden.</APM.FrostivusFoodPreservation.ManualUnload.Desc>
-
   <APM.FrostivusFoodPreservation.ManualUnload.NoFood>No preserved food carried.</APM.FrostivusFoodPreservation.ManualUnload.NoFood>
-
   <APM.FrostivusFoodPreservation.ManualUnload.NoPath>Frostivus cannot reach that cell.</APM.FrostivusFoodPreservation.ManualUnload.NoPath>
-
   <APM.FrostivusFoodPreservation.CommandUnavailable>Frostivus cannot use preservation commands right now.</APM.FrostivusFoodPreservation.CommandUnavailable>
 
   <APM.FrostivusFoodPreservation.ReleaseDevoured.Label>Release from cryo-chamber</APM.FrostivusFoodPreservation.ReleaseDevoured.Label>
-
   <APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>Choose a cell where Frostivus should release devoured pawns or corpses.</APM.FrostivusFoodPreservation.ReleaseDevoured.Desc>
-
   <APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>No devoured pawn or corpse inside.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoContents>
-
   <APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>Frostivus cannot reach that cell.</APM.FrostivusFoodPreservation.ReleaseDevoured.NoPath>
 
   <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>Frostivus can only swallow a spawned humanlike pawn or corpse on its map.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidTarget>
-
   <APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>Frostivus can swallow any humanlike corpse or downed pawn, but only colonists, prisoners, or slaves while alive.</APM.FrostivusFoodPreservation.CryptoSwallow.InvalidPawn>
-
   <APM.FrostivusFoodPreservation.CryptoSwallow.Self>Frostivus cannot swallow itself.</APM.FrostivusFoodPreservation.CryptoSwallow.Self>
 
+  <!-- Gazer -->
   <APM_Gazer_AutoLaser_Label>Autocast laser</APM_Gazer_AutoLaser_Label>
-
   <APM_Gazer_AutoLaser_Desc>Allow this gazer to automatically fire its laser weapon and Sun Ray ability while under player control. Manual attack orders still fire once at the selected target.</APM_Gazer_AutoLaser_Desc>
-
   <APM_Gazer_Inspect_AutoLaserDisabled>Autocast laser: disabled.</APM_Gazer_Inspect_AutoLaserDisabled>
 
+  <!-- Ingestor -->
   <APM_Ingestor_StripMode_Enable_Label>Enable stripping</APM_Ingestor_StripMode_Enable_Label>
-
   <APM_Ingestor_StripMode_Enable_Desc>Click to strip apparel, equipment and inventory from corpses before recycling them. Current mode: recycle corpses intact; carried items are destroyed with the corpse.</APM_Ingestor_StripMode_Enable_Desc>
-
   <APM_Ingestor_StripMode_Disable_Label>Disable stripping</APM_Ingestor_StripMode_Disable_Label>
-
   <APM_Ingestor_StripMode_Disable_Desc>Click to recycle corpses intact and destroy apparel, equipment and inventory with the corpse. Current mode: strip carried items before recycling.</APM_Ingestor_StripMode_Disable_Desc>
-
   <APM_Ingestor_ProcessMode_All_Label>Recycle all valid corpses</APM_Ingestor_ProcessMode_All_Label>
-
   <APM_Ingestor_ProcessMode_All_Desc>Click to let the ingestor recycle any reachable fresh organic corpse. Current mode: only marked corpses are recycled.</APM_Ingestor_ProcessMode_All_Desc>
-
   <APM_Ingestor_ProcessMode_Marked_Label>Use marked corpses only</APM_Ingestor_ProcessMode_Marked_Label>
-
   <APM_Ingestor_ProcessMode_Marked_Desc>Click to make the ingestor recycle only corpses marked for biomass recycling. Current mode: all reachable fresh organic corpses are recycled.</APM_Ingestor_ProcessMode_Marked_Desc>
-
   <APM_Ingestor_MarkCorpses_Label>Mark for biomass recycling</APM_Ingestor_MarkCorpses_Label>
-
   <APM_Ingestor_MarkCorpses_Desc>Mark fresh organic corpses for ingestor recycling.</APM_Ingestor_MarkCorpses_Desc>
 
   <APM_IngestorAbsorb_MustTargetCorpse>Must target a fresh organic corpse.</APM_IngestorAbsorb_MustTargetCorpse>
-
   <APM_IngestorAbsorb_InvalidTarget>Must target a fresh organic corpse or ingestible material.</APM_IngestorAbsorb_InvalidTarget>
-
   <APM_IngestorAbsorb_InvalidCorpse>Invalid corpse.</APM_IngestorAbsorb_InvalidCorpse>
-
   <APM_IngestorAbsorb_NotOrganic>Target is not organic biomass.</APM_IngestorAbsorb_NotOrganic>
-
   <APM_IngestorAbsorb_Burning>Cannot recycle a burning corpse.</APM_IngestorAbsorb_Burning>
-
   <APM_IngestorAbsorb_NotFresh>Cannot recycle a rotted or desiccated corpse.</APM_IngestorAbsorb_NotFresh>
-
   <APM_IngestorAbsorb_AlreadyMarked>Already marked for biomass recycling.</APM_IngestorAbsorb_AlreadyMarked>
 
   <APM_IngestorBiomass_LabelSingle>{0} {1} in {2}</APM_IngestorBiomass_LabelSingle>
-
   <APM_IngestorBiomass_LabelMultiple>{0} batches, {1} {2}, next in {3}</APM_IngestorBiomass_LabelMultiple>
-
   <APM_IngestorBiomass_TooltipHeader>Pending output:</APM_IngestorBiomass_TooltipHeader>
-
   <APM_IngestorBiomass_TooltipBatch>{0} {1} in {2}</APM_IngestorBiomass_TooltipBatch>
-
   <APM_IngestorBiomass_TooltipMore>...and {0} more.</APM_IngestorBiomass_TooltipMore>
-
   <APM_IngestorBiomass_UnknownOutput>unknown output</APM_IngestorBiomass_UnknownOutput>
 
-  <!-- CompJavelinRocketRack gizmo -->
+  <!-- CompJavelinRocketRack -->
   <APM.Javelin.SwitchRocket.Label>Rocket: {0}</APM.Javelin.SwitchRocket.Label>
-
   <APM.Javelin.SwitchRocket.Desc>Choose which warhead this javelin loads. Every rocket but the basic one is drawn from the mech's uranium as it fires, and the rack drops back to the basic rocket when that runs out.</APM.Javelin.SwitchRocket.Desc>
-
-  <!-- CompJavelinRocketRack float menu -->
   <APM.Javelin.RocketFree>{0} (free)</APM.Javelin.RocketFree>
-
   <APM.Javelin.RocketCost>{0} ({1} uranium per shot)</APM.Javelin.RocketCost>
-
   <APM.Javelin.NoUranium>(not enough uranium)</APM.Javelin.NoUranium>
-
-  <!-- CompJavelinRocketRack inspect pane and messages -->
   <APM.Javelin.LoadedRocket>Rocket: {0}</APM.Javelin.LoadedRocket>
-
   <APM.Javelin.OutOfUranium>{0} has run out of uranium for its {1} and has fallen back to basic rockets.</APM.Javelin.OutOfUranium>
 
+  <!-- Repair Station & Mechanics -->
   <APM_MechRepaired>{0} has been fully repaired.</APM_MechRepaired>
-
   <APM_Repairing>Repairing {0}</APM_Repairing>
-
+  <APM_RepairStation_InactiveEjected>{0} was released after the repair station stopped working.</APM_RepairStation_InactiveEjected>
   <APM_NotMechanoid>Only mechanoids can be repaired here.</APM_NotMechanoid>
-
+  <APM_RepairStation_CannotRepairSatellite>Satellites cannot be repaired in repair stations.</APM_RepairStation_CannotRepairSatellite>
   <APM_NotPlayerFaction>Only friendly mechanoids can be repaired.</APM_NotPlayerFaction>
-
   <APM_WrongSize>Mechanoid size must be {0} for this station.</APM_WrongSize>
-
   <APM_AutoRepairOrdered>Repair station scanning found {0}. Repairs ordered.</APM_AutoRepairOrdered>
-
-  <APM_RepairStation_InactiveEjected>The repair station stopped working and ejected {0}.</APM_RepairStation_InactiveEjected>
-
-  <APM_RepairStation_CannotRepairSatellite>Mechanoid with limited life cannot be repaired at repair stations.</APM_RepairStation_CannotRepairSatellite>
-
-  <APM_Gizmo_AutoRepair>Auto-repair</APM_Gizmo_AutoRepair>
-
-  <APM_Gizmo_AutoRepair_Desc>Automatically scan for damaged mechanoids and assign them to the station.</APM_Gizmo_AutoRepair_Desc>
-
+  <APM_Gizmo_AutoRepair>Auto-Repair</APM_Gizmo_AutoRepair>
+  <APM_Gizmo_AutoRepair_Desc>Automatically scan for damaged mechs and assign them to the station.</APM_Gizmo_AutoRepair_Desc>
   <APM_Gizmo_SetInterval>Interval: {0}</APM_Gizmo_SetInterval>
-
-  <APM_FullHealth>This mechanoid is already at full health.</APM_FullHealth>
-
-  <APM_CommandCancelRepair>Cancel repair</APM_CommandCancelRepair>
-
-  <APM_CommandCancelRepairDesc>Stop repairing and eject the mechanoid.</APM_CommandCancelRepairDesc>
-
-  <APM_InsertMech>Insert mechanoid</APM_InsertMech>
-
-  <APM_NoMechsAvailable>No available mechanoids.</APM_NoMechsAvailable>
-
-  <APM_RepairStation_ArmEditor_GizmoLabel>Arm editor</APM_RepairStation_ArmEditor_GizmoLabel>
-
-  <APM_RepairStation_ArmEditor_GizmoDesc>Open the repair station arm offset editor.</APM_RepairStation_ArmEditor_GizmoDesc>
-
-  <APM_RepairStation_ArmEditor_NoStation>No repair station arm data available.</APM_RepairStation_ArmEditor_NoStation>
-
-  <APM_RepairStation_ArmEditor_Title>Repair station arm editor</APM_RepairStation_ArmEditor_Title>
-
-  <APM_RepairStation_ArmEditor_CurrentRotation>Current rotation: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
-
-  <APM_RepairStation_ArmEditor_Arm>Arm</APM_RepairStation_ArmEditor_Arm>
-
-  <APM_RepairStation_ArmEditor_View>View</APM_RepairStation_ArmEditor_View>
-
-  <APM_RepairStation_ArmEditor_UseCurrent>Use current</APM_RepairStation_ArmEditor_UseCurrent>
-
-  <APM_RepairStation_ArmEditor_Step>Step</APM_RepairStation_ArmEditor_Step>
-
-  <APM_RepairStation_ArmEditor_LivePreviewOn>Live preview: current rotation</APM_RepairStation_ArmEditor_LivePreviewOn>
-
-  <APM_RepairStation_ArmEditor_LivePreviewOff>Previewing {0}; live preview is off</APM_RepairStation_ArmEditor_LivePreviewOff>
-
-  <APM_RepairStation_ArmEditor_SelectedOffset>Offset for {0}, arm {1}</APM_RepairStation_ArmEditor_SelectedOffset>
-
-  <APM_RepairStation_ArmEditor_ResetView>Reset offset</APM_RepairStation_ArmEditor_ResetView>
-
-  <APM_RepairStation_ArmEditor_CopyArmXml>Copy arm XML</APM_RepairStation_ArmEditor_CopyArmXml>
-
-  <APM_RepairStation_ArmEditor_CopyAllXml>Copy all XML</APM_RepairStation_ArmEditor_CopyAllXml>
-
-  <APM_RepairStation_ArmEditor_Footer>Edits affect this spawned station. Copy XML to save the offsets in defs.</APM_RepairStation_ArmEditor_Footer>
-
-  <APM_RepairStation_ArmEditor_Copied>Copied XML to clipboard.</APM_RepairStation_ArmEditor_Copied>
-
-  <APM_ShieldIntegrity>Shield integrity</APM_ShieldIntegrity>
-
-  <APM_VampiricCharges>Vampiric charges: {0}/{1} </APM_VampiricCharges>
-
   <APM_Settings_ShowRepairStationAutoRepairMessages_Label>Show repair station auto-repair messages</APM_Settings_ShowRepairStationAutoRepairMessages_Label>
+  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Show a message when a repair station automatically calls a mechanoid for repairs.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+  <APM_FullHealth>This mechanoid is already at full health.</APM_FullHealth>
+  <APM_CommandCancelRepair>Cancel repair</APM_CommandCancelRepair>
+  <APM_CommandCancelRepairDesc>Stop repairing and eject the mechanoid.</APM_CommandCancelRepairDesc>
+  <APM_InsertMech>Insert mech</APM_InsertMech>
+  <APM_NoMechsAvailable>No mechs available.</APM_NoMechsAvailable>
 
-  <APM_Settings_ShowRepairStationAutoRepairMessages_Desc>Display notifications when the repair station automatically assigns repairs.</APM_Settings_ShowRepairStationAutoRepairMessages_Desc>
+  <!-- Repair Station Arm Editor -->
+  <APM_RepairStation_ArmEditor_GizmoLabel>Dev: arm live editor</APM_RepairStation_ArmEditor_GizmoLabel>
+  <APM_RepairStation_ArmEditor_GizmoDesc>Open a live editor for repair station arm offsets.</APM_RepairStation_ArmEditor_GizmoDesc>
+  <APM_RepairStation_ArmEditor_Title>Repair station arm editor</APM_RepairStation_ArmEditor_Title>
+  <APM_RepairStation_ArmEditor_NoStation>No repair station arms are available.</APM_RepairStation_ArmEditor_NoStation>
+  <APM_RepairStation_ArmEditor_CurrentRotation>Station rotation: {0}</APM_RepairStation_ArmEditor_CurrentRotation>
+  <APM_RepairStation_ArmEditor_LivePreviewOn>Live preview is active for this view.</APM_RepairStation_ArmEditor_LivePreviewOn>
+  <APM_RepairStation_ArmEditor_LivePreviewOff>Editing {0}; live preview requires a station facing that way.</APM_RepairStation_ArmEditor_LivePreviewOff>
+  <APM_RepairStation_ArmEditor_Arm>Arm</APM_RepairStation_ArmEditor_Arm>
+  <APM_RepairStation_ArmEditor_View>View</APM_RepairStation_ArmEditor_View>
+  <APM_RepairStation_ArmEditor_UseCurrent>Use current view</APM_RepairStation_ArmEditor_UseCurrent>
+  <APM_RepairStation_ArmEditor_Step>Step</APM_RepairStation_ArmEditor_Step>
+  <APM_RepairStation_ArmEditor_SelectedOffset>{0} offset for arm {1}</APM_RepairStation_ArmEditor_SelectedOffset>
+  <APM_RepairStation_ArmEditor_ResetView>Reset view</APM_RepairStation_ArmEditor_ResetView>
+  <APM_RepairStation_ArmEditor_CopyArmXml>Copy arm XML</APM_RepairStation_ArmEditor_CopyArmXml>
+  <APM_RepairStation_ArmEditor_CopyAllXml>Copy all arms XML</APM_RepairStation_ArmEditor_CopyAllXml>
+  <APM_RepairStation_ArmEditor_Copied>Repair station arm XML copied.</APM_RepairStation_ArmEditor_Copied>
+  <APM_RepairStation_ArmEditor_Footer>Changes are applied live to this station's current in-memory def. Copy XML when the offsets look right.</APM_RepairStation_ArmEditor_Footer>
 
+  <!-- Misc Stats & Tooltips -->
+  <APM_ShieldIntegrity>Shield integrity</APM_ShieldIntegrity>
+  <APM_VampiricCharges>Vampiric charges: {0}/{1} </APM_VampiricCharges>
+  <APM_UnityTooltip_Current>Current stats (with unity uplink):</APM_UnityTooltip_Current>
+
+  <!-- Command Casket & Remote Links -->
   <APM.CommandCasket.Inspection>Remote control uplink is active for {PAWN}</APM.CommandCasket.Inspection>
-
   <APM.CommandCasket.FailReason.NotMechanitor>not mechanitor</APM.CommandCasket.FailReason.NotMechanitor>
-
   <APM.CommandCasket.Gizmo.CancelLink.Label>Eject mechanitor</APM.CommandCasket.Gizmo.CancelLink.Label>
-
   <APM.CommandCasket.Gizmo.CancelLink.Desc>Cancel the remote link for the current occupant. The occupant will be ejected.</APM.CommandCasket.Gizmo.CancelLink.Desc>
-
   <APM.CommandCasket.Gizmo.Shield.Label>remote shield</APM.CommandCasket.Gizmo.Shield.Label>
-
   <APM.CommandCasket.Gizmo.Shield.Desc>shield a friendly mechanoid, can target the whole map.\nPower scales with the remote shielder implant.</APM.CommandCasket.Gizmo.Shield.Desc>
-
   <APM.CommandCasket.Gizmo.ShieldSelf.Desc>shield the selected mechanoid.\nPower scales with the remote shielder implant.</APM.CommandCasket.Gizmo.ShieldSelf.Desc>
-
   <APM.CommandCasket.Gizmo.Repair.Label>remote repair</APM.CommandCasket.Gizmo.Repair.Label>
-
   <APM.CommandCasket.Gizmo.Repair.Desc>repair a friendly mechanoid until it is fully repaired or has no energy remaining. Can target the whole map.</APM.CommandCasket.Gizmo.Repair.Desc>
-
   <APM.CommandCasket.Gizmo.RepairSelf.Desc>repair the selected mechanoid until it is fully repaired or has no energy remaining.</APM.CommandCasket.Gizmo.RepairSelf.Desc>
-
   <APM.CommandCasket.Gizmo.Disconnect.Label>remote disconnect</APM.CommandCasket.Gizmo.Disconnect.Label>
-
   <APM.CommandCasket.Gizmo.Disconnect.Desc>remotely disconnect from a controlled mech. Can target mechs on the same map.</APM.CommandCasket.Gizmo.Disconnect.Desc>
-
   <APM.CommandCasket.Gizmo.Connect.Label>remote connect</APM.CommandCasket.Gizmo.Connect.Label>
-
   <APM.CommandCasket.Gizmo.Connect.Desc>remotely connect to a friendly mech. Can target mechs on the same map. Time depends on the targeted mechanoid.</APM.CommandCasket.Gizmo.Connect.Desc>
-
   <APM.CommandCasket.Inspection.Bandwidth>bandwidth used:</APM.CommandCasket.Inspection.Bandwidth>
-
   <APM.CommandCasket.Mech.Gizmo.Reconnect.Label>remote reconnect</APM.CommandCasket.Mech.Gizmo.Reconnect.Label>
-
   <APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>remotely connect this mech to a mechanitor inside a mech command casket.</APM.CommandCasket.Mech.Gizmo.Reconnect.Desc>
-
   <APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>(missing bandwidth)</APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu>
-
   <APM.CommandCasket.Gizmo.OpenStasisContainer.Label>Open remotely</APM.CommandCasket.Gizmo.OpenStasisContainer.Label>
-
   <APM.CommandCasket.Gizmo.HackStasisContainer.Label>Hack remotely</APM.CommandCasket.Gizmo.HackStasisContainer.Label>
-
   <APM.CommandCasket.Inspect.CurrentAction>currently</APM.CommandCasket.Inspect.CurrentAction>
-
   <APM.CommandCasket.Inspect.CurrentAction.Connect>connecting</APM.CommandCasket.Inspect.CurrentAction.Connect>
-
   <APM.CommandCasket.Inspect.CurrentAction.Disconnect>disconnecting</APM.CommandCasket.Inspect.CurrentAction.Disconnect>
-
   <APM.CommandCasket.Inspect.CurrentAction.Shield>shielding</APM.CommandCasket.Inspect.CurrentAction.Shield>
-
   <APM.CommandCasket.Inspect.CurrentAction.Repair>repairing</APM.CommandCasket.Inspect.CurrentAction.Repair>
-
   <APM.CommandCasket.Inspect.CurrentAction.Idle>idle</APM.CommandCasket.Inspect.CurrentAction.Idle>
-
   <APM.CommandCasket.Inspect.CurrentAction.StasisContainer>opening stasis container</APM.CommandCasket.Inspect.CurrentAction.StasisContainer>
-
   <APM.CommandCasket.Gizmo.ControlsInfo>\nLeftclick = choose target\nShift = target self\nCtrl = que action\nRightclick = cancel</APM.CommandCasket.Gizmo.ControlsInfo>
 
+  <!-- Mechamancer & Containers -->
   <APM.MechamancerPack.MaxSatellites>This pack is already maintaining {0} deployed satellites.</APM.MechamancerPack.MaxSatellites>
-
   <APM.MechamancerPack.NoValidSpawnCell>No valid satellite deployment cell found.</APM.MechamancerPack.NoValidSpawnCell>
-
   <APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>Select mechanoid...</APM.MechanoidContainer.Gizmo.ChooseMech.MouseLabel>
-
   <APM.MechanoidContainer.ContainsUnknown>Contains an unidentified mechanoid.</APM.MechanoidContainer.ContainsUnknown>
-
   <APM.MechanoidContainer.ForcedOpen>{0} forced {1} open without the bandwidth to hold what was inside. {2} is loose and answers to nobody until a mechanitor takes control of it.</APM.MechanoidContainer.ForcedOpen>
 
+  <!-- Ravager & Artillery -->
   <APM_Ravager_AutoArtillery_Label>Auto artillery</APM_Ravager_AutoArtillery_Label>
-
   <APM_Ravager_AutoArtillery_Desc>Allow this ravager to automatically choose hostile pawns as artillery targets while under player control. Manual attack orders always fire once at the selected cell.</APM_Ravager_AutoArtillery_Desc>
-
   <APM_Ravager_Inspect_AutoArtilleryDisabled>Auto artillery: disabled.</APM_Ravager_Inspect_AutoArtilleryDisabled>
-
   <APM_Ravager_Inspect_AutoArtilleryBlockedRoof>Auto artillery: cannot fire from under a roof.</APM_Ravager_Inspect_AutoArtilleryBlockedRoof>
-
   <APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>Auto artillery: current target is under thick roof.</APM_Ravager_Inspect_AutoArtilleryBlockedTargetRoof>
-
   <APM_Ravager_Inspect_AutoArtilleryCannotHit>Auto artillery: current target cannot be hit from this position.</APM_Ravager_Inspect_AutoArtilleryCannotHit>
 
+  <!-- Toxic Purifier -->
   <APM_ToxicPurifier_RecoveryPerDay>Toxicity recovey per day</APM_ToxicPurifier_RecoveryPerDay>
-
   <APM_ToxicPurifier_LevelToAffectRelation>Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect the globe, relations with other faction will deteriorate.</APM_ToxicPurifier_LevelToAffectRelation>
-
   <APM_ToxicPurifier_LevelToStartSpreading>Toxicity in the atmosphere in local area has reach the critical point of {0} that would affect nearby tiles.</APM_ToxicPurifier_LevelToStartSpreading>
-
   <APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>Toxicity in the atmosphere in local area has reach the critical point of {0} which would affect nearby tiles and critical point of {1} which would affect faction relations.</APM_ToxicPurifier_LevelToAffectRelationAndStartSpreading>
-
   <APM_ToxicPurifier_ModeChangeLabel>Mode</APM_ToxicPurifier_ModeChangeLabel>
-
   <APM_ToxicPurifier_ModeChangeDesc>Change purifier station mode.</APM_ToxicPurifier_ModeChangeDesc>
-
   <APM_ToxicPurifier_Mode_OnlyGround>Ground only</APM_ToxicPurifier_Mode_OnlyGround>
-
   <APM_ToxicPurifier_Mode_OnlyWastepacks>Wastepacks only</APM_ToxicPurifier_Mode_OnlyWastepacks>
-
   <APM_ToxicPurifier_Mode_WastepacksOverGround>Wastepacks over ground</APM_ToxicPurifier_Mode_WastepacksOverGround>
-
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Ground over wastepacks</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
 </LanguageData>
