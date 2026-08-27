@@ -5,4 +5,10 @@
 
   <APM_Mechanitor_Nomad.label>механитор кочевник</APM_Mechanitor_Nomad.label>
 
+  <!-- EN: Celerus Overlord -->
+  <APM_Mech_Celerus_Boss.label>Целерус-повелитель</APM_Mech_Celerus_Boss.label>
+
+  <!-- EN: Dominus Overlord -->
+  <APM_Mech_Dominus_Boss.label>Доминус-повелитель</APM_Mech_Dominus_Boss.label>
+
 </LanguageData>

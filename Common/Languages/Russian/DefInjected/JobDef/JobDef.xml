@@ -9,14 +9,6 @@
   <!-- EN: singing to TargetA. -->
   <APM_SirenChatWithPrisoner.reportString>поёт для TargetA.</APM_SirenChatWithPrisoner.reportString>
 
-  <!-- APM_HaulToMechCommandCasket -->
-  <!-- EN: carry to mech command casket -->
-  <APM_HaulToMechCommandCasket.label>отнести к капсуле управления мехами</APM_HaulToMechCommandCasket.label>
-  <!-- EN: fill -->
-  <APM_HaulToMechCommandCasket.verb>загрузить</APM_HaulToMechCommandCasket.verb>
-  <!-- EN: filling -->
-  <APM_HaulToMechCommandCasket.gerund>загрузка</APM_HaulToMechCommandCasket.gerund>
-
   <!-- APM_BashDamage -->
   <!-- EN: Bashing into TargetA. -->
   <APM_BashDamage.reportString>врезается в TargetA.</APM_BashDamage.reportString>

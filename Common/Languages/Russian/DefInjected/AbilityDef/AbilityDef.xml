@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: Recycle Biomass -->
@@ -22,30 +21,15 @@
   <!-- EN: Unleash a blinding acoustic pulse that expands out from the mech, stunning and flash-blinding living pawns caught in the wave. -->
   <APM_PulseWave.description>Высвобождает ослепляющий акустический импульс, расходящийся от меха и оглушающий вместе с ослеплением всех попавших в зону действия существ из крови и плоти.</APM_PulseWave.description>
 
-  <!-- EN: dashing -->
-  <ApexMechanoids_DashingPawn.label>рывок</ApexMechanoids_DashingPawn.label>
-
   <!-- EN: Grappling Hook -->
   <APM_HookPawn.label>Крюк-кошка</APM_HookPawn.label>
   <!-- EN: The Terminus launches its grappling hook, either pulling a foe towards it or itself towards a foe depending on the bodysize of the target. -->
   <APM_HookPawn.description>«Терминус» выпускает крюк-кошку: в зависимости от размера цели, либо притягивает врага к себе, либо притягивается к врагу сам.</APM_HookPawn.description>
 
-  <!-- EN: APM_PawnFlyer_Hooked -->
-  <APM_PawnFlyer_Hooked.label>притянутая цель</APM_PawnFlyer_Hooked.label>
-
-  <!-- EN: hook -->
-  <APM_Projectile_Hook.label>крюк</APM_Projectile_Hook.label>
-
-  <!-- EN: APM_Mote_HookRope -->
-  <APM_Mote_HookRope.label>трос крюка</APM_Mote_HookRope.label>
-
   <!-- EN: Shield Charge -->
   <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
   <!-- EN: Charge at a pawn, stunning everything hit on the way. -->
   <APM_ShieldCharge.description>Броситься на пешку, оглушая все на своем пути.</APM_ShieldCharge.description>
-
-  <!-- EN: Bashing into TargetA. -->
-  <APM_BashStun.reportString>Таранит цель TargetA.</APM_BashStun.reportString>
 
   <!-- EN: Bladehopp -->
   <APM_Bladehopp.label>Прорыв лезвий</APM_Bladehopp.label>
@@ -56,11 +40,6 @@
   <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
   <!-- EN: Fire a laser at target, effectively blinding them for a short time. -->
   <APM_BlindingLaser.description>Выстрелить лазером по цели, эффективно ослепляя ее на короткое время.</APM_BlindingLaser.description>
-
-  <!-- EN: blinded by laser -->
-  <APM_LaserBlind.label>ослеплен лазером</APM_LaserBlind.label>
-  <!-- EN: Vastly reduced sight capacity due to been blinded by laser. -->
-  <APM_LaserBlind.description>Сильно сниженная способность зрения из-за ослепления лазером.</APM_LaserBlind.description>
 
   <!-- EN: Starfall -->
   <APM_Starfall.label>Звездопад</APM_Starfall.label>
@@ -86,5 +65,50 @@
   <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
   <!-- EN: An explosive wave that throws enemies within a radius for a certain distance -->
   <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen.label>дымовая завеса</APM_Ability_SmokeScreen.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen_Boss.label>дымовая завеса</APM_Ability_SmokeScreen_Boss.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen_Boss.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen_Boss.description>
+
+  <!-- EN: Celerus Blink -->
+  <APM_CelerusBlink.label>«Скачок»</APM_CelerusBlink.label>
+  <!-- EN: Celerus instantly teleports to a target, leaving a smokescreen behind. -->
+  <APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Ultimate Sacrifice -->
+  <APM_UltimateSacrifice.label>абсолютная жертва</APM_UltimateSacrifice.label>
+  <!-- EN: The Conqueror gives its life to unleash a devastating barrage from all weapons at once. -->
+  <APM_UltimateSacrifice.description>Быстро выполняя сложные расчеты прицеливания, движения и логистики до тех пор, пока их процессорные блоки не расплавятся от жары, этот механоид наделяет ближайших союзников временным усилением характеристик.</APM_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
+  <APM_PressTheAttack.label>надавить на врага</APM_PressTheAttack.label>
+  <!-- EN: Dominus urges its allies to press the attack, boosting their speed and damage. -->
+  <APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
+
+  <!-- EN: Crypto Swallow -->
+  <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
+  <!-- EN: Frostivus engulfs a target into its cryo-chamber, freezing it. -->
+  <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
+
+  <!-- EN: Siren Song -->
+  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+  <!-- EN: The Siren sings an alluring song, drawing enemies toward her. -->
+  <APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+
+  <!-- EN: Siren Lure -->
+  <APM_Ability_SirenLure.label>маниакальная песня</APM_Ability_SirenLure.label>
+  <!-- EN: The Siren creates a lure mimicking her song. -->
+  <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
+
+  <!-- EN: Skipblade Blink -->
+  <APM_SkipbladeBlink.label>Скачок клинка</APM_SkipbladeBlink.label>
+  <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
+  <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
 
 </LanguageData>

@@ -21,7 +21,8 @@ namespace ApexMechanoids
             connecting,     //1
             disconnecting,  //2   
             repair,         //3 
-            shield          //4
+            shield,          //4
+            openStasisContainer //5
         }
 
         public Pawn User;
@@ -36,7 +37,11 @@ namespace ApexMechanoids
 
         public LocalTargetInfo curLocalTargetInfo = LocalTargetInfo.Invalid;    //invalid so it does not nullpoint
 
-        public Pawn curTarget;
+        public Thing curTarget;
+
+        public Building curTargetBuilding => curTarget as Building;
+
+        public Pawn curTargetPawn => curTarget as Pawn;
 
         private int ticksToTakeControl = 0;
 
@@ -66,8 +71,17 @@ namespace ApexMechanoids
 
                     yield return abilityGizmo;
                 }
-                if(Prefs.DevMode)
+                if(DebugSettings.ShowDevGizmos)
                 {
+                    Command_Action open_Action = new Command_Action();
+                    open_Action.defaultLabel = "DEV: " + "APM.CommandCasket.Gizmo.OpenStasisContainer.Label".Translate();
+                    open_Action.icon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_OpenStasisContainer");
+                    open_Action.action = delegate
+                    {
+                        Find.Targeter.BeginTargeting(StasisContainerTargetingParameters(), StartToHackStasisContainer, Highlight, IsStasisContainerWithContent);
+                    };
+                    yield return open_Action;
+
                     Command_Action LogQue_Action = new Command_Action();
                     LogQue_Action.defaultLabel = "DEV: Write Que in log";
                     LogQue_Action.action = delegate
@@ -89,8 +103,6 @@ namespace ApexMechanoids
 
         public IEnumerable<Gizmo> GetGizmosSingles()
         {
-            #region OldSingleGizmos
-
             #region Dis-/connect
 
             Command_Action remoteControll_Action = new Command_Action();
@@ -151,8 +163,6 @@ namespace ApexMechanoids
                 };
                 yield return shield_Action;
             }
-
-            #endregion
 
             #endregion
         }
@@ -220,6 +230,16 @@ namespace ApexMechanoids
             }
         }
 
+        public void AddQuedActionOpenStasisContainer(LocalTargetInfo curLocalTargetInfo)
+        {
+            if (ActionIsValid(curLocalTargetInfo, (int)MechCasketAction.openStasisContainer))
+            {
+                MechCasketQuedAction quedAction = new MechCasketQuedAction(curLocalTargetInfo, (int)MechCasketAction.openStasisContainer);
+                QuedActions.Add(quedAction);
+            }
+        }
+
+
         private bool ActionIsValid(LocalTargetInfo curLocalTargetInfo, int action)
         {
             if(curLocalTargetInfo.Pawn != null) // && action >= (int)MechCasketAction.connecting && action <= (int)MechCasketAction.shield)
@@ -234,6 +254,13 @@ namespace ApexMechanoids
                     {
                         return false;
                     }
+                    return true;
+                }
+            }
+            if(action == (int)MechCasketAction.openStasisContainer)
+            {
+                if(curLocalTargetInfo.Thing.TryGetComp<Comp_MechanoidContainer>() != null)
+                {
                     return true;
                 }
             }
@@ -257,7 +284,7 @@ namespace ApexMechanoids
 
                 if (ActionIsValid(quedAction))
                 {
-                    ForceSetTarget(quedAction.targetinfo.Pawn, out LocalTargetInfo target);
+                    ForceSetTargetPawn(quedAction.targetinfo.Pawn, out LocalTargetInfo target);
                     if (quedAction.action == (int)MechCasketAction.connecting)
                     {
                         StartToConnect(target);
@@ -421,16 +448,16 @@ namespace ApexMechanoids
                             connectEffecter.EffectTick(infoMech, TargetInfo.Invalid);
                         }
 
-                        if(connecMote == null)
+                        if(connectMote == null)
                         {
-                            connecMote = ((SubEffecter_ProgressBar)connectEffecter.children[0]).mote;
+                            connectMote = ((SubEffecter_ProgressBar)connectEffecter.children[0]).mote;
                         }
                         
-                        if (connecMote != null)
+                        if (connectMote != null)
                         {
-                            connecMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
-                            connecMote.offsetZ = -0.5f;
-                            connecMote.alwaysShow = true;
+                            connectMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
+                            connectMote.offsetZ = -0.5f;
+                            connectMote.alwaysShow = true;
                         }
 
                         if (actionTick >= ticksToTakeControl)
@@ -454,35 +481,6 @@ namespace ApexMechanoids
                             if (CanRemoteRepair(curLocalTargetInfo) && !curLocalTargetInfo.Pawn.Dead)
                             {
                                 Repair(curLocalTargetInfo, User, delta);
-
-                                /*
-                                if (repairEffecter == null )
-                                {
-                                    EffecterDef repair = EffecterDefOf.MechRepairing;
-                                    repairEffecter = repair.Spawn();
-                                    //repairEffecter.Trigger(new TargetInfo(thing: curLocalTargetInfo.Pawn), TargetInfo.Invalid);
-                                }
-                                if (repairEffecter != null)
-                                {
-                                    TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
-
-                                    repairEffecter.EffectTick(infoMech, TargetInfo.Invalid);
-                                }
-                                
-                                if (repairMote == null)
-                                {
-                                    repairMote = (((SubEffecter_SprayerChance)repairEffecter.children[2]).mote);
-                                }
-
-                                if (repairMote != null)
-                                {
-                                    //repairMote.Attach(curLocalTargetInfo.Pawn);
-                                    //repairMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick);
-                                    //repairMote.offsetZ = -0.5f;
-                                    //repairMote.alwaysShow = true;
-                                }
-                                */
-
 
                                 if (repairEffecter == null)
                                 {
@@ -520,6 +518,36 @@ namespace ApexMechanoids
                     {
                         ShieldTick();
                     }
+                    else if(IsBusy == (int)MechCasketAction.openStasisContainer)
+                    {
+                        if (hackContainerEffecter == null)
+                        {
+                            EffecterDef progressBar = EffecterDefOf.ProgressBar;
+                            hackContainerEffecter = progressBar.Spawn();
+                        }
+                        if (hackContainerEffecter != null)
+                        {
+                            TargetInfo infoContainer = new TargetInfo(thing: curLocalTargetInfo.Thing);
+
+                            hackContainerEffecter.EffectTick(infoContainer, TargetInfo.Invalid);
+                        }
+                        if (hackContainerMote == null)
+                        {
+                            hackContainerMote = ((SubEffecter_ProgressBar)hackContainerEffecter.children[0]).mote;
+                        }
+                        if (hackContainerMote != null)
+                        {
+                            hackContainerMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick);
+                            hackContainerMote.offsetZ = -0.5f;
+                            hackContainerMote.alwaysShow = true;
+                        }
+
+                        if (actionTick >= ticksToTakeControl)
+                        {
+                            HackStasisContainer(curLocalTargetInfo, User);
+                            EndAction();
+                        }
+                    }
                 }
                 else //idle
                 {
@@ -540,6 +568,7 @@ namespace ApexMechanoids
         {
             ResetConnectEffecter();
             ResetRepairEffecter();
+            ResetHackContainertEffecter();
         }
 
         public void ResetConnectEffecter()
@@ -548,7 +577,17 @@ namespace ApexMechanoids
             {
                 connectEffecter.Cleanup();
                 connectEffecter = null;
-                connecMote = null;
+                connectMote = null;
+            }
+        }
+
+        public void ResetHackContainertEffecter()
+        {
+            if (hackContainerEffecter != null)
+            {
+                hackContainerEffecter.Cleanup();
+                hackContainerEffecter = null;
+                hackContainerMote = null;
             }
         }
 
@@ -562,13 +601,16 @@ namespace ApexMechanoids
             }
         }
 
+        public Effecter hackContainerEffecter = null;
+
+        public MoteProgressBar hackContainerMote = null; 
+
         public Effecter connectEffecter = null;
 
-        public MoteProgressBar connecMote = null;
+        public MoteProgressBar connectMote = null;
 
         public Effecter repairEffecter = null;
 
-        //public Mote repairMote = null;
         public MoteProgressBar repairMote = null;
         
 
@@ -630,19 +672,32 @@ namespace ApexMechanoids
             }
         }
 
-        public void UpdateTarget(LocalTargetInfo target)
+        public void UpdateTargetThing(LocalTargetInfo target)
+        {
+            curLocalTargetInfo = target;
+            curTarget = curLocalTargetInfo.Thing;
+        }
+
+        public void UpdateTargetPawn(LocalTargetInfo target)
         {
             curLocalTargetInfo = target;
             curTarget = curLocalTargetInfo.Pawn;
         }
 
-        public void ForceSetTarget(LocalTargetInfo target)
+        public void ForceSetTargetPawn(LocalTargetInfo target)
         {
             curLocalTargetInfo = target;
             curTarget = curLocalTargetInfo.Pawn;
         }
 
-        public void ForceSetTarget(Pawn mech, out LocalTargetInfo target)
+        public void ForceSetTargetThing(Thing thing, out LocalTargetInfo target)
+        {
+            curLocalTargetInfo = new LocalTargetInfo(thing);
+            curTarget = curLocalTargetInfo.Thing;
+            target = curLocalTargetInfo;
+        }
+
+        public void ForceSetTargetPawn(Pawn mech, out LocalTargetInfo target)
         {
             curLocalTargetInfo = new LocalTargetInfo(mech);
             curTarget = curLocalTargetInfo.Pawn;
@@ -653,7 +708,7 @@ namespace ApexMechanoids
 
         private bool HasATarget()
         {
-            if (curTarget != null)
+            if (curTargetPawn != null)
             {
                 return true;
             }
@@ -664,7 +719,7 @@ namespace ApexMechanoids
         {
             if (HasATarget())
             {
-                if (curTarget.Map == User.Map)
+                if (curTargetPawn.Map == User.Map)
                 {
                     return true;
                 }
@@ -676,7 +731,7 @@ namespace ApexMechanoids
         {
             if (IsActing && TargetOnSameMap())
             {
-                GenDraw.DrawLineBetween(curTarget.TrueCenter(), parent.TrueCenter(), color);
+                GenDraw.DrawLineBetween(curTargetPawn.TrueCenter(), parent.TrueCenter(), color);
                 //GenDraw.DrawLineBetween(vec_target, vec_building, AltitudeLayer.BuildingBelowTop.AltitudeFor(), LineMatCyan, 3f); // if we need more control over the colors
             }
         }
@@ -751,7 +806,7 @@ namespace ApexMechanoids
 
         public void StartToConnect(LocalTargetInfo target)
         {
-            UpdateTarget(target);
+            UpdateTargetPawn(target);
 
             ticksToTakeControl = Mathf.RoundToInt(target.Pawn.GetStatValue(StatDefOf.ControlTakingTime) * 60f);
             PawnUtility.ForceWait(target.Pawn, ticksToTakeControl, null, maintainPosture: true, maintainSleep: true);
@@ -762,7 +817,7 @@ namespace ApexMechanoids
         private void Connect(LocalTargetInfo target, Pawn overseer)
         {
             SoundDef sound = SoundDefOf.ControlMech_Complete;
-            sound.PlayOneShot(new TargetInfo(curTarget.Position, curTarget.Map));
+            sound.PlayOneShot(new TargetInfo(curTargetPawn.Position, curTargetPawn.Map));
             ResetTarget();
             Pawn mech = target.Pawn;
             if (mech.Faction != User.Faction) //failsafe
@@ -808,7 +863,7 @@ namespace ApexMechanoids
 
         public void StartToDisconnect(LocalTargetInfo target)
         {
-            UpdateTarget(target);
+            UpdateTargetPawn(target);
             ticksToDisconnect = (int)(target.Pawn.GetStatValue(StatDefOf.ControlTakingTime) * 60);
 
             PawnUtility.ForceWait(target.Pawn, ticksToDisconnect, User, maintainPosture: true, maintainSleep: true);
@@ -870,7 +925,7 @@ namespace ApexMechanoids
 
         public void StartToRepair(LocalTargetInfo target)
         {
-            UpdateTarget(target);
+            UpdateTargetPawn(target);
             StartAction();
             IsBusy = (int)MechCasketAction.repair;
         }
@@ -960,7 +1015,7 @@ namespace ApexMechanoids
 
         public void StartToShield(LocalTargetInfo target)
         {
-            UpdateTarget(target);
+            UpdateTargetPawn(target);
             StartAction();
             IsBusy = (int)MechCasketAction.shield;
         }
@@ -995,7 +1050,7 @@ namespace ApexMechanoids
             ProjectileInterceptor.currentHitPoints = num;
 
             SoundDef sound = ApexDefsOf.ShieldMech_Start;
-            sound.PlayOneShot(new TargetInfo(curTarget.Position, curTarget.Map));
+            sound.PlayOneShot(new TargetInfo(curTargetPawn.Position, curTargetPawn.Map));
 
             TicksForShieldcooldown = Props.Shieldcooldown;
         }
@@ -1013,7 +1068,7 @@ namespace ApexMechanoids
                 if (HasATarget())
                 {
                     SoundDef sound = ApexDefsOf.ShieldMech_Complete;
-                    sound.PlayOneShot(new TargetInfo(curTarget.Position, curTarget.Map));
+                    sound.PlayOneShot(new TargetInfo(curTargetPawn.Position, curTargetPawn.Map));
                 }
             }
             if (IsBusy == (int)MechCasketAction.shield)
@@ -1022,6 +1077,66 @@ namespace ApexMechanoids
             }
         }
 
+
+        #endregion
+
+
+        #region OpenStasisContainer 
+
+        public TargetingParameters StasisContainerTargetingParameters()
+        {
+            return new TargetingParameters
+            {
+                canTargetPawns = false,
+                canTargetBuildings = true,
+                canTargetHumans = false,
+                canTargetMechs = true,
+                canTargetAnimals = false,
+                canTargetLocations = false,
+                validator = (TargetInfo x) => IsStasisContainerWithContent((LocalTargetInfo)x)
+            };
+        }
+
+        public bool IsStasisContainerWithContent(LocalTargetInfo target)
+        {
+            Comp_MechanoidContainer comp = target.thingInt?.TryGetComp<Comp_MechanoidContainer>();
+
+            if (comp != null && !comp.isEmpty)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void StartToHackStasisContainer(LocalTargetInfo target)
+        {
+            UpdateTargetThing(target);
+            
+            Comp_MechanoidContainer comp = target.thingInt?.TryGetComp<Comp_MechanoidContainer>();
+            if(comp != null)
+            {
+                try
+                {
+                    ticksToTakeControl = comp.TicksToActivate / 10; //Mathf.RoundToInt(comp.mechKind.race.GetStatValueAbstract(StatDefOf.ControlTakingTime) * 60f);
+                    StartAction();
+                    IsBusy = (int)MechCasketAction.openStasisContainer;
+                }
+                catch 
+                {
+                    Utils.LogError("Could not find mech inside mechanoid stasis container, skipping...");
+                }
+            }
+        }
+
+        private void HackStasisContainer(LocalTargetInfo target, Pawn overseer)
+        {
+            Comp_MechanoidContainer comp =  target.thingInt?.TryGetComp<Comp_MechanoidContainer>();
+
+            if(comp != null)
+            {
+                comp.OnInteracted(overseer);
+            }
+        }
 
         #endregion
 

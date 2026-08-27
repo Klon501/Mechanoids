@@ -6,7 +6,4 @@
   <APM_Mech_Lasher.tools.left_fist.label>левый кулак</APM_Mech_Lasher.tools.left_fist.label>
   <APM_Mech_Lasher.tools.right_fist.label>правый кулак</APM_Mech_Lasher.tools.right_fist.label>
   <APM_Mech_Lasher.tools.head.label>голова</APM_Mech_Lasher.tools.head.label>
-
-  <!-- PawnKindDef -->
-  <APM_Mech_Lasher.kindLabel>плеть</APM_Mech_Lasher.kindLabel>
 </LanguageData>

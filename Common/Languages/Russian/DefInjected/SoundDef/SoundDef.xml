@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_Bladehopp.description>Стремительно броситься к цели, нанося быструю атаку по прибытии.</APM_Bladehopp.description>
+
+  <APM_Bladehopp.label>клинковый скачок</APM_Bladehopp.label>
+
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, чтобы временно её ослепить.</APM_BlindingLaser.description>
+
+  <APM_BlindingLaser.label>ослепляющий лазер</APM_BlindingLaser.label>
+
+  <APM_PulseWave.description>Механоид выпускает ослепляющий акустический импульс, который оглушает и временно ослепляет всех существ из плоти и крови в радиусе действия.</APM_PulseWave.description>
+
+  <APM_PulseWave.label>импульсная волна</APM_PulseWave.label>
+
+  <APM_ShieldCharge.description>Совершить таранный рывок, оглушая всех, кто окажется на пути.</APM_ShieldCharge.description>
+
+  <APM_ShieldCharge.label>щитовой таран</APM_ShieldCharge.label>
+
+  <APM_Starfall.description>Разоритель перегружает свою артиллерийскую установку и выпускает тяжёлый снаряд, который в полёте распадается на три энергетических заряда.</APM_Starfall.description>
+
+  <APM_Starfall.label>звездопад</APM_Starfall.label>
+
+</LanguageData>

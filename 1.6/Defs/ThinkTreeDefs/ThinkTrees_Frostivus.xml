@@ -72,6 +72,7 @@
 									<subNodes>
 										<li Class="JobGiver_SeekAllowedArea" />
 										<li Class="JobGiver_GetEnergy_Charger" />
+										<li Class="ApexMechanoids.JobGiver_FrostivusRescuePawn" />
 										<li Class="ApexMechanoids.JobGiver_FrostivusPreserveFood" />
 										<li Class="ApexMechanoids.JobGiver_FrostivusUnloadFoodToStorage" />
 										<li Class="ThinkNode_ConditionalWorkMech">
@@ -117,6 +118,7 @@
 								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
 									<workMode>Escort</workMode>
 									<subNodes>
+										<li Class="ApexMechanoids.JobGiver_FrostivusRescuePawn" />
 										<li Class="ApexMechanoids.JobGiver_FrostivusPreserveFood" />
 										<li Class="ApexMechanoids.JobGiver_FrostivusUnloadFoodToStorage" />
 										<li Class="JobGiver_ExitMapFollowOverseer" />

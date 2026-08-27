@@ -11,16 +11,4 @@
   <!-- EN: Years of searching led you to the buried domain of a long-dead mechanitor. Guided by a faint signal, you step into a silent base where a skeleton rots inside a locked command casket, undone by his own mistakes. The base, the machinery, and the dormant army are now yours. All that remains is to take the throne. -->
   <APM_BuriedLegacy.scenario.parts.GameStartDialog.text>Годы поисков привели вас к погребённому домену давно мёртвого механитора. Следуя за слабым сигналом, вы вступаете на территорию безмолвной базы, где в запертом командном саркофаге гниёт скелет её создателя, сгубленного собственными ошибками. База, механизмы и спящая армия теперь принадлежат вам. Осталось только взойти на престол.</APM_BuriedLegacy.scenario.parts.GameStartDialog.text>
 
-  <!-- APM_DomainPlayerFaction -->
-  <!-- EN: Mechanitor's Domain -->
-  <APM_DomainPlayerFaction.label>Домен механитора</APM_DomainPlayerFaction.label>
-  <!-- EN: An ancient mechanitor's domain hiding a master's treasures. -->
-  <APM_DomainPlayerFaction.description>Владения древнего механитора, скрывающие сокровища своего мастера.</APM_DomainPlayerFaction.description>
-
-  <!-- APM_SpawnScenarioCorpses -->
-  <!-- EN: ancient corpses -->
-  <APM_SpawnScenarioCorpses.label>древние трупы</APM_SpawnScenarioCorpses.label>
-  <!-- EN: The map contains the bodies of the ancients -->
-  <APM_SpawnScenarioCorpses.description>На карте находятся тела древних</APM_SpawnScenarioCorpses.description>
-
 </LanguageData>

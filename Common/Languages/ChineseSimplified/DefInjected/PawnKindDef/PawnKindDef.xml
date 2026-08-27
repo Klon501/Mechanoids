@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Mech_Aegis.label>埃癸斯</APM_Mech_Aegis.label>
+  <APM_Mech_Aegis.label>神盾</APM_Mech_Aegis.label>
 
   <APM_Mech_Conqueror_AR.label>爆破征服者</APM_Mech_Conqueror_AR.label>
 
   <APM_Mech_Conqueror_DMR.label>卡宾征服者</APM_Mech_Conqueror_DMR.label>
 
   <APM_Mech_Conqueror_LMG.label>喷吐征服者</APM_Mech_Conqueror_LMG.label>
+
+  <APM_Mech_Celerus.label>司鲁丝</APM_Mech_Celerus.label>
+
+  <APM_Mech_CelerusB.label>司鲁丝</APM_Mech_CelerusB.label>
 
   <APM_Mech_Dynamo.label>迪纳摩</APM_Mech_Dynamo.label>
 

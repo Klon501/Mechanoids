@@ -225,7 +225,6 @@
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<warmupStartSound>APM_SmokeScreen</warmupStartSound>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
@@ -276,7 +275,7 @@
 			<damageDef>Smoke</damageDef>
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
+			<soundExplode>APM_SmokeScreen</soundExplode>
 		</projectile>
 	</ThingDef>
 

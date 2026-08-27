@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- APM_GazerBeam -->
@@ -18,5 +17,12 @@
 
   <!-- APM_JavelinWarhead -->
   <APM_JavelinWarhead.label>боеголовка «Джавелина»</APM_JavelinWarhead.label>
+
+  <!-- APM_HazeAcidBeam -->
+  <APM_HazeAcidBeam.label>кислотный луч мглы</APM_HazeAcidBeam.label>
+
+  <!-- APM_SonicVibration -->
+  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
+  <APM_SonicVibration.deathMessage>{0} разорван(а) звуковой вибрацией.</APM_SonicVibration.deathMessage>
 
 </LanguageData>

@@ -113,4 +113,22 @@
   <!-- EN: calculation link (peak efficiency) -->
   <APM_Hediff_Unity.stages.7.label>вычислительная связь (пиковая эффективность)</APM_Hediff_Unity.stages.7.label>
 
+  <!-- APM_Hediff_UltimateSacrifice -->
+  <!-- EN: ultimate sacrifice -->
+  <APM_Hediff_UltimateSacrifice.label>абсолютная жертва</APM_Hediff_UltimateSacrifice.label>
+  <!-- EN: The Conqueror gave itself in sacrifice to protect its allies. -->
+  <APM_Hediff_UltimateSacrifice.description>Абсолютная жертва — один из завоевателей жертвует собой, чтобы дать мощное усиление всем союзным завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
+
+  <!-- APM_Hediff_PressTheAttack -->
+  <!-- EN: press the attack -->
+  <APM_Hediff_PressTheAttack.label>псионный прилив</APM_Hediff_PressTheAttack.label>
+  <!-- EN: Dominus urges me to press the attack. -->
+  <APM_Hediff_PressTheAttack.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack.description>
+
+  <!-- APM_Hediff_SirenSong -->
+  <!-- EN: siren song -->
+  <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
+  <!-- EN: The Siren's entrancing song is driving me mad. -->
+  <APM_Hediff_SirenSong.description>Этот пешка находится под воздействием успокаивающего механического хора, чувствуя себя легче и полнее сил.</APM_Hediff_SirenSong.description>
+
 </LanguageData>

@@ -4,7 +4,4 @@
   <APM_Mech_Ingestor.label>поглотитель</APM_Mech_Ingestor.label>
   <APM_Mech_Ingestor.description>Хотя большинство механизмов полагается на ячейки питания, электроэнергия и химтопливо всё ещё необходимы. Поглотитель прочёсывает поля сражений в поисках выживших для их добивания, а также собирает органику и трупы, автоматически перерабатывая их в химтопливо прямо внутри своего корпуса.</APM_Mech_Ingestor.description>
   <APM_Mech_Ingestor.tools.head.label>голова</APM_Mech_Ingestor.tools.head.label>
-
-  <!-- PawnKindDef -->
-  <APM_Mech_Ingestor.kindLabel>поглотитель</APM_Mech_Ingestor.kindLabel>
 </LanguageData>

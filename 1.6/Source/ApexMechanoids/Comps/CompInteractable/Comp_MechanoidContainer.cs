@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace ApexMechanoids
@@ -86,12 +87,57 @@ namespace ApexMechanoids
             if (loc.IsValid)
             {
                 ScatterDebrisUtility.ScatterFilthAroundThing(parent, parent.Map, ThingDefOf.Filth_GestationFluid, CompMechGestatorTank.GestationFluidFilthRange);
-                Pawn mech = PawnGenerator.GeneratePawn(mechKind, mechanitor.Faction);
+                Pawn mech = PawnGenerator.GeneratePawn(MechAgeRules.RequestFor(mechKind, mechanitor.Faction));
                 GenSpawn.Spawn(mech, loc, parent.Map);
-                mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                TakeControlIfPossible(mechanitor, mech);
                 mechKind = null;
                 IsEmpty = true;
             }
+        }
+
+        /// <summary>
+        /// Hands the occupant to whoever opened the container, if they have the bandwidth for it.
+        ///
+        /// If they do not, the container has been forced rather than hacked and the mech comes out
+        /// with no overseer. Vanilla already knows what to do with one of those: it stands there
+        /// unusable, the "needs an overseer" alert names it, and its own feral timer starts running,
+        /// so forcing a container is a decision with a cost rather than a free extra mech.
+        /// </summary>
+        protected static void TakeControlIfPossible(Pawn mechanitor, Pawn mech)
+        {
+            if (mech == null || mechanitor?.mechanitor == null)
+            {
+                return;
+            }
+
+            if (ResolveOpening(mechanitor, BandwidthCostOf(mech)) == ContainerOpening.Controlled)
+            {
+                mechanitor.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
+                return;
+            }
+
+            Messages.Message(
+                "APM.MechanoidContainer.ForcedOpen".Translate(mechanitor.LabelShort, mech.def.label, mech.LabelShortCap),
+                new LookTargets(new Pawn[] { mech, mechanitor }),
+                MessageTypeDefOf.CautionInput);
+        }
+
+        protected static ContainerOpening ResolveOpening(Pawn mechanitor, float bandwidthCost)
+        {
+            if (mechanitor?.mechanitor == null)
+            {
+                return ContainerOpening.Blocked;
+            }
+            return MechContainerAccessRules.ResolveOpen(
+                hasOccupant: true,
+                isMechanitor: true,
+                freeBandwidth: mechanitor.mechanitor.TotalBandwidth - mechanitor.mechanitor.UsedBandwidth,
+                occupantBandwidthCost: bandwidthCost);
+        }
+
+        protected static float BandwidthCostOf(Pawn mech)
+        {
+            return mech == null ? 0f : mech.GetStatValue(StatDefOf.BandwidthCost);
         }
 
         public virtual void ChangeMechKindToSpawn(PawnKindDef kindDef = null)
@@ -267,16 +313,11 @@ namespace ApexMechanoids
             {
                 return "CommandPodEjectFailEmpty".Translate();
             }
-            if (activateBy != null)
+            // Bandwidth is deliberately not tested here. It decides how the container opens, not
+            // whether it opens; see TakeControlIfPossible.
+            if (activateBy != null && !MechanitorUtility.IsMechanitor(activateBy))
             {
-                if (!MechanitorUtility.IsMechanitor(activateBy))
-                {
-                    return "NotAMechanitor".Translate();
-                }
-                if (activateBy.mechanitor.TotalBandwidth < activateBy.mechanitor.UsedBandwidth + mechKind.race.GetStatValueAbstract(StatDefOf.BandwidthCost))
-                {
-                    return "NotEnoughBandwidth".Translate();
-                }
+                return "NotAMechanitor".Translate();
             }
             return true;
         }
@@ -300,6 +341,52 @@ namespace ApexMechanoids
                     disabled = !MechanitorUtility.AnyMechanitorInPlayerFaction(),
                     disabledReason = "No mechanitors"
                 };
+            }
+            if (!IsEmpty && parent.def == ApexDefsOf.APM_MechanoidContainer_Cluster)  //open with casket when undefined PawnKind is inside
+            {
+                List<Pawn> tmpMechanitorsInCaskets = Utils.MechanitorsInCommandCaskets();
+                if (!tmpMechanitorsInCaskets.NullOrEmpty())
+                {
+                    Command_Action command_Action_HackStasisContainer = new Command_Action();
+                    command_Action_HackStasisContainer.defaultLabel = "APM.CommandCasket.Gizmo.HackStasisContainer.Label".Translate().CapitalizeFirst();
+                    command_Action_HackStasisContainer.icon = ContentFinder<Texture2D>.Get("UI/Gizmos/APM_OpenStasisContainer");
+                    command_Action_HackStasisContainer.action = delegate
+                    {
+                        List<FloatMenuOption> floatlist = new List<FloatMenuOption>();
+                        foreach (Pawn mechanitor in tmpMechanitorsInCaskets)
+                        {
+                            string label = mechanitor.LabelShortCap;
+
+                            if (mechKind.race.GetStatValueAbstract(StatDefOf.BandwidthCost) > mechanitor.mechanitor.TotalBandwidth - mechanitor.mechanitor.UsedBandwidth)
+                            {
+                                label += "APM.CommandCasket.Mech.Gizmo.Reconnect.Floatmenu".Translate();
+                            }
+                            floatlist.Add(new FloatMenuOption(label, delegate
+                            {
+                                if (Utils.IsUplinkActiveFor(mechanitor, out Building_MechCommandCasket casketBuilding))
+                                {
+                                    if (casketBuilding.CompAbilities != null)
+                                    {
+                                        casketBuilding.CompAbilities.ForceSetTargetThing(parent, out LocalTargetInfo target);
+                                        if (Event.current.control)
+                                        {
+                                            casketBuilding.CompAbilities.AddQuedActionOpenStasisContainer(target);
+                                        }
+                                        else
+                                        {
+                                            casketBuilding.CompAbilities.StartToHackStasisContainer(target);
+                                        }
+                                    }
+                                }
+                            }));
+                        }
+                        if (floatlist.Any())
+                        {
+                            Find.WindowStack.Add(new FloatMenu(floatlist));
+                        }
+                    };
+                    yield return command_Action_HackStasisContainer;
+                }
             }
         }
 

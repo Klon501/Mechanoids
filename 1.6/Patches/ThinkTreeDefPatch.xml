@@ -20,7 +20,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>/Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[state="BerserkMechanoid"]</xpath>
+		<xpath>/Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech" and invert="true"]</xpath>
 		<value>
 			<li Class="ThinkNode_ConditionalMentalState">
 				<state>APM_Duel</state>

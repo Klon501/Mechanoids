@@ -35,6 +35,13 @@ namespace ApexMechanoids
         // pay for anything else, and what a launcher starts with.
         public List<JavelinRocketOption> rockets = new List<JavelinRocketOption>();
 
+        // How many shots of its rolled warhead a launcher the player does not own is stocked with
+        // when it spawns. It pays for every one of them out of that magazine and drops to the basic
+        // rocket once it is dry, so this is how many specialist warheads a raid gets to open with,
+        // not how long it can fight. Capped by the magazine's own capacity, so an expensive warhead
+        // gets fewer.
+        public int enemyRocketCharges = 3;
+
         public CompProperties_JavelinRocketRack()
         {
             compClass = typeof(CompJavelinRocketRack);

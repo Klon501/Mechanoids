@@ -4,9 +4,4 @@
   <APM_Mech_Javelin.label>джавелин</APM_Mech_Javelin.label>
   <APM_Mech_Javelin.description>В отличие от стандартных механоидов, полагающихся на прямое баллистическое воздействие, джавелин выступает в роли мобильной пусковой установки полуавтономных микроракет. Вместо обычной боевой части он запускает крошечные самонаводящиеся ракеты-механоиды, медленно летящие к цели.\n\nДжавелин оснащён переключаемой ракетной системой: стандартные ракеты ослабляют броню цели с каждым попаданием, а специализированные боеголовки требуют необработанный уран для стрельбы. Это позволяет ему запускать фугасные снаряды, создавать масштабные пожары или испускать мощные ЭМИ-импульсы в зависимости от тактической ситуации.</APM_Mech_Javelin.description>
   <APM_Mech_Javelin.tools.head.label>голова</APM_Mech_Javelin.tools.head.label>
-  <APM_Mech_Javelin.comps.CompProperties_Refuelable.fuelLabel>Ракетный уран</APM_Mech_Javelin.comps.CompProperties_Refuelable.fuelLabel>
-  <APM_Mech_Javelin.comps.CompProperties_Refuelable.fuelGizmoLabel>Ракетный уран</APM_Mech_Javelin.comps.CompProperties_Refuelable.fuelGizmoLabel>
-
-  <!-- PawnKindDef -->
-  <APM_Mech_Javelin.kindLabel>джавелин</APM_Mech_Javelin.kindLabel>
 </LanguageData>
