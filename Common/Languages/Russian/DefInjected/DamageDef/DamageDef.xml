@@ -25,4 +25,7 @@
   <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
   <APM_SonicVibration.deathMessage>{0} разорван(а) звуковой вибрацией.</APM_SonicVibration.deathMessage>
 
+  <!-- EN: mega beam -->
+  <MegaBeam.label>мега-луч</MegaBeam.label>
+
 </LanguageData>

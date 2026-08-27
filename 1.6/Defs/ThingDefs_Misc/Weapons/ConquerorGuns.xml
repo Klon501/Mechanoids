@@ -148,13 +148,13 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun" Name="APM_Gun_Conqueror_LMG">
-		<defName>APM_Gun_Conqueror_LMG</defName>
+	<ThingDef ParentName="BaseGun" Name="APM_Gun_Conqueror_SMG">
+		<defName>APM_Gun_Conqueror_SMG</defName>
 		<label>charge spitter</label>
 		<description>A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ConquerorLMG</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/ConquerorSMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -170,7 +170,7 @@
 			<RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>APM_WeaponConquerorLMG</li>
+			<li>APM_WeaponConquerorSMG</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>

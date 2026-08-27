@@ -51,4 +51,8 @@
 
   <APM_VocalSynthesizer.label>голосовой синтезатор</APM_VocalSynthesizer.label>
 
+
+  <!-- EN: broadcast array -->
+  <APM_BroadcastArray.label>вещательная матрица</APM_BroadcastArray.label>
+
 </LanguageData>

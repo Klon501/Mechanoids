@@ -58,7 +58,7 @@
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_AbilityGranter">
 				<abilities>
-					<li>SeveringEdge</li>
+					<li>APM_SeveringEdge</li>
 				</abilities>
 			</li>
 			<li>

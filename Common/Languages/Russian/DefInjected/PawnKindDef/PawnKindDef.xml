@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+<APM_Mech_Aegis.Label>эгида</APM_Mech_Aegis.Label>
+<APM_Mech_Celerus.Label>целерус</APM_Mech_Celerus.Label>
+<APM_Mech_Conqueror_DMR.Label>завоеватель с карабином</APM_Mech_Conqueror_DMR.Label>
+<APM_Mech_Conqueror_AR.Label>завоеватель с винтовкой</APM_Mech_Conqueror_AR.Label>
+<APM_Mech_Conqueror_SMG.Label>завоеватель с плевателем</APM_Mech_Conqueror_SMG.Label>
+<APM_Mech_Dominus.Label>доминус</APM_Mech_Dominus.Label>
+<APM_Mech_Dynamo.Label>динамо</APM_Mech_Dynamo.Label>
+<APM_Mech_Frostivus.Label>морозус</APM_Mech_Frostivus.Label>
+<APM_Mech_Gazer.Label>созерцатель</APM_Mech_Gazer.Label>
+<APM_Mech_Haze.Label>мгла</APM_Mech_Haze.Label>
+<APM_Mech_Javelin.Label>джавелин</APM_Mech_Javelin.Label>
+<APM_Mech_Terminus.Label>терминус</APM_Mech_Terminus.Label>
+<APM_Mech_Maul.Label>молот</APM_Mech_Maul.Label>
+<APM_Mech_Mantis.Label>богомол</APM_Mech_Mantis.Label>
+<APM_Mech_Lasher.Label>плеть</APM_Mech_Lasher.Label>
+<APM_Mech_Pulse.Label>импульс</APM_Mech_Pulse.Label>
+<APM_Mech_Tinker.Label>тинкер</APM_Mech_Tinker.Label>
+<APM_Mech_Vassal.Label>вассал</APM_Mech_Vassal.Label>
+<APM_Mech_Siren.Label>сирена</APM_Mech_Siren.Label>
+<APM_Mech_Satellite.Label>сателлит</APM_Mech_Satellite.Label>
+<APM_Mech_Ingestor.Label>поглотитель</APM_Mech_Ingestor.Label>
+<APM_Mech_Ravager.Label>разоритель</APM_Mech_Ravager.Label>
+
   <APM_Mechanitor_Ancient.label>древний механитор</APM_Mechanitor_Ancient.label>
 
   <APM_Mechanitor_Nomad.label>механитор кочевник</APM_Mechanitor_Nomad.label>
 
   <!-- EN: Celerus Overlord -->
-  <APM_Mech_Celerus_Boss.label>Целерус-повелитель</APM_Mech_Celerus_Boss.label>
+  <APM_Mech_Celerus_Boss.label>Целерус-владыка</APM_Mech_Celerus_Boss.label>
 
   <!-- EN: Dominus Overlord -->
-  <APM_Mech_Dominus_Boss.label>Доминус-повелитель</APM_Mech_Dominus_Boss.label>
+  <APM_Mech_Dominus_Boss.label>Доминус-владыка</APM_Mech_Dominus_Boss.label>
+  
+  <!-- EN: Terminus Overlord -->
+  <APM_Mech_Terminus_Boss.label>Терминус-владыка</APM_Mech_Terminus_Boss.label>
 
 </LanguageData>

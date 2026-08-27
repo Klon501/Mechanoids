@@ -46,6 +46,10 @@
   <!-- EN: Battlefield building projecting a projectile interception shield for combatants during a duel. -->
   <APM_DuelSpot.description>Постройка на поле боя, создающая защитное поле для перехвата снарядов во время проведения дуэли.</APM_DuelSpot.description>
 
+<!-- EN: Duel spot -->
+  <APM_DuelSpot_Boss.label>Место для дуэли</APM_DuelSpot_Boss.label>
+  <!-- EN: Battlefield building projecting a projectile interception shield for combatants during a duel. -->
+  <APM_DuelSpot_Boss.description>Постройка на поле боя, создающая защитное поле для перехвата снарядов во время проведения дуэли.</APM_DuelSpot_Boss.description>
 
   <!-- ==================== Defenses ==================== -->
 
@@ -58,33 +62,50 @@
   <!-- ==================== Stasis Containers ==================== -->
 
   <!-- EN: Ancient stasis container -->
-  <APM_MechanoidContainer_Cluster.label>Древний контейнер стазиса</APM_MechanoidContainer_Cluster.label>
+  <APM_MechanoidContainer_Cluster.label>Древний контейнер стазиса мехов</APM_MechanoidContainer_Cluster.label>
   <!-- EN: Spawns in mechanoid clusters containing a dormant mechanoid that pawns can hack to reprogram. -->
   <APM_MechanoidContainer_Cluster.description>Появляется в кластерах механоидов и содержит спящего механоида, которого поселенцы могут взломать и перепрограммировать.</APM_MechanoidContainer_Cluster.description>
 
   <!-- EN: Stasis container -->
-  <APM_MechanoidContainer_Player.label>Контейнер стазиса</APM_MechanoidContainer_Player.label>
+  <APM_MechanoidContainer_Player.label>Контейнер стазиса мехов</APM_MechanoidContainer_Player.label>
   <!-- EN: Player-buildable stasis pod to store mechanoids without consuming bandwidth or extra power while stored. -->
   <APM_MechanoidContainer_Player.description>Контейнер стазиса механиторов. Позволяет хранить механоида без расхода пропускной способности и дополнительной энергии во время нахождения внутри.</APM_MechanoidContainer_Player.description>
 
+  <!-- EN: Stasis container -->
+  <APM_MechanoidContainer_Ancient.label>Покинутый контейнер стазиса мехов</APM_MechanoidContainer_Ancient.label>
+  <!-- EN: Player-buildable stasis pod to store mechanoids without consuming bandwidth or extra power while stored. -->
+  <APM_MechanoidContainer_Ancient.description>Контейнер стазиса человеческого производства, который работал так долго, что тот, кто его построил, уже не сможет сказать, что находится внутри. Отсек хранения значится как занятый, а цикл консервации всё ещё работает на последних резервах. Взлом печати разбудит то, что там находится, а нейронная связь, которой оно некогда подчинялось, давно мертва, так что механитор сможет забрать его себе.</APM_MechanoidContainer_Ancient.description>
 
+<!-- APM_MechanoidContainer_Legacy_Lasher -->
+  <APM_MechanoidContainer_Legacy_Lasher.label>запечатанный контейнер стазиса мехов</APM_MechanoidContainer_Legacy_Lasher.label>
+  <APM_MechanoidContainer_Legacy_Lasher.description>Один из стазис-контейнеров гарнизона самого Домена. Он всё ещё запечатан и поддерживает цикл консервации на остатках энергии. Заполнивший его механитор давно мёртв, а нейронная связь, которой подчинялась машина, оборвалась вместе с его смертью. Тот, кто сорвёт печать, сможет забрать себе вырвавшегося наружу механоида.</APM_MechanoidContainer_Legacy_Lasher.description>
+
+  <!-- APM_MechanoidContainer_Legacy_Vassal -->
+  <APM_MechanoidContainer_Legacy_Vassal.label>запечатанный контейнер стазиса мехов</APM_MechanoidContainer_Legacy_Vassal.label>
+  <APM_MechanoidContainer_Legacy_Vassal.description>Один из стазис-контейнеров гарнизона самого Домена. Он всё ещё запечатан и поддерживает цикл консервации на остатках энергии. Заполнивший его механитор давно мёртв, а нейронная связь, которой подчинялась машина, оборвалась вместе с его смертью. Тот, кто сорвёт печать, сможет забрать себе вырвавшегося наружу механоида.</APM_MechanoidContainer_Legacy_Vassal.description>
+
+  <!-- APM_MechanoidContainer_Legacy_Tinker -->
+  <APM_MechanoidContainer_Legacy_Tinker.label>запечатанный контейнер стазиса мехов</APM_MechanoidContainer_Legacy_Tinker.label>
+  <APM_MechanoidContainer_Legacy_Tinker.description>Один из стазис-контейнеров гарнизона самого Домена. Он всё ещё запечатан и поддерживает цикл консервации на остатках энергии. Заполнивший его механитор давно мёртв, а нейронная связь, которой подчинялась машина, оборвалась вместе с его смертью. Тот, кто сорвёт печать, сможет забрать себе вырвавшегося наружу механоида.</APM_MechanoidContainer_Legacy_Tinker.description>
+ 
   <!-- ==================== Mechanitor Facilities ==================== -->
 
-  <!-- EN: Command casket -->
-  <APM_MechCommandCasket.label>Командный саркофаг</APM_MechCommandCasket.label>
-  <!-- EN: Sarcophagus linking a mechanitor to orbital networks for long-distance remote mech control. -->
-  <APM_MechCommandCasket.description>Саркофаг, связывающий механитора с орбитальными сетями для дальнего дистанционного управления механоидами.</APM_MechCommandCasket.description>
+  <!-- Командный саркофаг -->
+	<APM_MechCommandCasket.label>командный саркофаг</APM_MechCommandCasket.label>
+	<APM_MechCommandCasket.description>Вершина инженерной мысли механиторов, монументальный саркофаг, воплощающий абсолютную власть и технологическое величие. Объединяя технологии мехлинка и биоскульптора, он позволяет находящемуся внутри оператору командовать своими легионами из абсолютной безопасности. Однако его истинная сила кроется внутри: в ядро встроена сложнейшая копия мозга «Церебрекс». Это позволяет саркофагу преодолевать атмосферные помехи и подключаться напрямую к глобальной сети механоидов на орбите. Перехватывая вычислительную мощность этих орбитальных систем, механитор может транслировать свои приказы на колоссальные расстояния, управляя мехами даже из других точек глобальной карты.</APM_MechCommandCasket.description>
 
-  <!-- EN: Subcore signal booster -->
-  <APM_CasketBandwidthAmplifier.label>Субядерный усилитель сигнала</APM_CasketBandwidthAmplifier.label>
-  <!-- EN: Adjacent expansion module for the Command Casket providing additional bandwidth. -->
-  <APM_CasketBandwidthAmplifier.description>Прилегающий модуль расширения для командного саркофага, предоставляющий дополнительную пропускную способность.</APM_CasketBandwidthAmplifier.description>
+	<!-- Усилитель сигнала на субъядрах -->
+	<APM_CasketBandwidthAmplifier.label>усилитель сигнала на субъядрах</APM_CasketBandwidthAmplifier.label>
+	<APM_CasketBandwidthAmplifier.description>Вспомогательный модуль расширения, предназначенный для усиления командного саркофага с помощью вычислительной мощности высоких субъядер. Интегрируя высокоуровневые субъядра непосредственно во вспомогательную нейронную сеть саркофага, это устройство значительно увеличивает ментальную пропускную способность механитора. Оно расширяет доступный лимит каналов управления, позволяя оператору безопасно контролировать гораздо более крупный и сложный легион механоидов без перегрузки собственной неврологической связи.</APM_CasketBandwidthAmplifier.description>
 
-  <!-- EN: Gestator amplifier -->
-  <APM_GestatorAmplifier.label>Усилитель гестатора</APM_GestatorAmplifier.label>
-  <!-- EN: Facility placed adjacent to mech gestators that increases gestation speed. -->
-  <APM_GestatorAmplifier.description>Сооружение, размещаемое рядом с гестаторами механоидов для увеличения скорости выращивания.</APM_GestatorAmplifier.description>
+	<!-- Древний командный саркофаг -->
+	<APM_MechCommandCasket_Ancient.label>командный саркофаг</APM_MechCommandCasket_Ancient.label>
+	<APM_MechCommandCasket_Ancient.description>Вершина инженерной мысли механиторов, монументальный саркофаг, воплощающий абсолютную власть и технологическое величие. Объединяя технологии мехлинка и биоскульптора, он позволяет находящемуся внутри оператору командовать своими легионами из абсолютной безопасности. Однако его истинная сила кроется внутри: в ядро встроена сложнейшая копия мозга «Церебрекс». Это позволяет саркофагу преодолевать атмосферные помехи и подключаться напрямую к глобальной сети механоидов на орбите. Перехватывая вычислительную мощность этих орбитальных систем, механитор может транслировать свои приказы на колоссальные расстояния, управляя мехами даже из других точек глобальной карты.</APM_MechCommandCasket_Ancient.description>
 
+  <!-- EN: mech gestator amplifier -->
+  <APM_GestatorAmplifier.label>усилитель гестатора мехов</APM_GestatorAmplifier.label>
+  <!-- EN: Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to. -->
+  <APM_GestatorAmplifier.description>Украденные у улья механоидов военные технологии позволили этому усилителю инкубации попасть в руки органиков. Он увеличивает скорость создания механоидов в любых инкубаторах, установленных рядом с ним.</APM_GestatorAmplifier.description>
 
   <!-- ==================== Repair Stations ==================== -->
 

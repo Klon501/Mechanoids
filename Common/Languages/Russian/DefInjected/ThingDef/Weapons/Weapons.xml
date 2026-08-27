@@ -79,6 +79,23 @@
   <!-- EN: A weaker laser from Gazer's eye -->
   <APM_Gazer_Laser.description>Ослабленный лазерный луч из ока Созерцателя.</APM_Gazer_Laser.description>
 
+	<APM_Gun_Conqueror_AR.label>импульсная штурмовая винтовка</APM_Gun_Conqueror_AR.label>
+	<APM_Gun_Conqueror_AR.description>Универсальная штурмовая винтовка с импульсным зарядом, созданная для боя на средних дистанциях. Отличается высокой надежностью в любых боевых сценариях, сбалансированной скорострельностью и точностью.</APM_Gun_Conqueror_AR.description>
+	<APM_Gun_Conqueror_AR.tools.stock.label>приклад</APM_Gun_Conqueror_AR.tools.stock.label>
+	<APM_Gun_Conqueror_AR.tools.barrel.label>ствол</APM_Gun_Conqueror_AR.tools.barrel.label>
+
+	<APM_Bullet_ChargeCarbine.label>выстрел импульсного карабина</APM_Bullet_ChargeCarbine.label>
+
+	<APM_Gun_Conqueror_DMR.label>импульсный карабин</APM_Gun_Conqueror_DMR.label>
+	<APM_Gun_Conqueror_DMR.description>Марксманская винтовка, использующая технологию импульсного заряда. Наносит за один выстрел меньше структурного урона, чем полноценное зарядное копьё, но стреляет значительно быстрее и превосходно показывает себя на средних и дальних дистанциях.</APM_Gun_Conqueror_DMR.description>
+	<APM_Gun_Conqueror_DMR.tools.barrel.label>ствол</APM_Gun_Conqueror_DMR.tools.barrel.label>
+
+	<Bullet_ChargeSpitter.label>выстрел зарядного плевателя</Bullet_ChargeSpitter.label>
+
+	<APM_Gun_Conqueror_SMG.label>зарядный плеватель</APM_Gun_Conqueror_SMG.label>
+	<APM_Gun_Conqueror_SMG.description>Компактный пистолет-пулемет с высокой скорострельностью. Чрезвычайно смертоносен на ближней дистанции, но страдает от сильного падения точности с расстоянием.</APM_Gun_Conqueror_SMG.description>
+	<APM_Gun_Conqueror_SMG.tools.grip.label>рукоять</APM_Gun_Conqueror_SMG.tools.grip.label>
+
   <!-- EN: haze graser cannon -->
   <APM_Haze_BeamGun.label>лучевой иссушитель</APM_Haze_BeamGun.label>
   <!-- EN: A tesseron's beam grazer twisted into a machine that spews toxic waste in addition to plasma, the products of this cannon are monstrously hazardous to organic life. Fear is only another foothold of the mechanoid superintelligence. -->
