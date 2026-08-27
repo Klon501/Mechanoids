@@ -1,82 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<!-- ==================== Boss Melee Weapons ==================== -->
 
-  <!-- EN: Dominus mechlance -->
   <APM_Weapon_DominusMechlance.label>меха-копьё «Доминус»</APM_Weapon_DominusMechlance.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
   <APM_Weapon_DominusMechlance.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_DominusMechlance.description>
-  <!-- EN: handle -->
-  <APM_Weapon_DominusMechlance.tools.handle.label>рукоять</APM_Weapon_DominusMechlance.tools.handle.label>
-  <!-- EN: point -->
-  <APM_Weapon_DominusMechlance.tools.point.label>остриё</APM_Weapon_DominusMechlance.tools.point.label>
-  <!-- EN: edge -->
-  <APM_Weapon_DominusMechlance.tools.edge.label>лезвие</APM_Weapon_DominusMechlance.tools.edge.label>
-
-  <!-- EN: Dominus apex mechlance -->
+  <APM_Weapon_DominusMechlance.tools.0.label>рукоять</APM_Weapon_DominusMechlance.tools.0.label>
+  <APM_Weapon_DominusMechlance.tools.1.label>остриё</APM_Weapon_DominusMechlance.tools.1.label>
+  <APM_Weapon_DominusMechlance.tools.2.label>лезвие</APM_Weapon_DominusMechlance.tools.2.label>
   <APM_Weapon_DominusApexMechlance.label>высшее меха-копьё «Доминус»</APM_Weapon_DominusApexMechlance.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue. -->
   <APM_Weapon_DominusApexMechlance.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Из-за столь близкого контакта с Доминусом механиты в этом копье подверглись влиянию его пси-присутствия, из-за чего оно излучает красноватое свечение.</APM_Weapon_DominusApexMechlance.description>
-
-  <!-- EN: celerus voltana -->
   <APM_Weapon_CelerusVoltana.label>вольтана «Целерус»</APM_Weapon_CelerusVoltana.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
   <APM_Weapon_CelerusVoltana.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_CelerusVoltana.description>
-  <!-- EN: handle -->
-  <APM_Weapon_CelerusVoltana.tools.handle.label>рукоять</APM_Weapon_CelerusVoltana.tools.handle.label>
-  <!-- EN: tip -->
-  <APM_Weapon_CelerusVoltana.tools.tip.label>остриё</APM_Weapon_CelerusVoltana.tools.tip.label>
-  <!-- EN: blade -->
-  <APM_Weapon_CelerusVoltana.tools.blade.label>лезвие</APM_Weapon_CelerusVoltana.tools.blade.label>
-
-  <!-- EN: celerus apex voltana -->
+  <APM_Weapon_CelerusVoltana.tools.0.label>рукоять</APM_Weapon_CelerusVoltana.tools.0.label>
+  <APM_Weapon_CelerusVoltana.tools.1.label>остриё</APM_Weapon_CelerusVoltana.tools.1.label>
+  <APM_Weapon_CelerusVoltana.tools.2.label>лезвие</APM_Weapon_CelerusVoltana.tools.2.label>
   <APM_Weapon_CelerusApexVoltana.label>высшая вольтана «Целерус»</APM_Weapon_CelerusApexVoltana.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus. -->
   <APM_Weapon_CelerusApexVoltana.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Лезвие трещит от электрических разрядов столь мощных, что оно светится свирепым фиолетовым цветом — этот аномальный оттенок стал результатом каприза самого Целеруса.</APM_Weapon_CelerusApexVoltana.description>
-
-  <!-- EN: terminus exoblade -->
   <APM_Weapon_TerminusExoblade.label>экзо-клинок «Терминус»</APM_Weapon_TerminusExoblade.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it. -->
   <APM_Weapon_TerminusExoblade.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Этот экзо-клинок гудит от пси-энергии, будучи перегруженным своим владельцем-Терминусом.</APM_Weapon_TerminusExoblade.description>
-  <!-- EN: handle -->
-  <APM_Weapon_TerminusExoblade.tools.handle.label>рукоять</APM_Weapon_TerminusExoblade.tools.handle.label>
-  <!-- EN: point -->
-  <APM_Weapon_TerminusExoblade.tools.point.label>остриё</APM_Weapon_TerminusExoblade.tools.point.label>
-  <!-- EN: blade -->
-  <APM_Weapon_TerminusExoblade.tools.blade.label>лезвие</APM_Weapon_TerminusExoblade.tools.blade.label>
-
-  <!-- EN: terminus apex exoblade -->
+  <APM_Weapon_TerminusExoblade.tools.0.label>рукоять</APM_Weapon_TerminusExoblade.tools.0.label>
+  <APM_Weapon_TerminusExoblade.tools.1.label>остриё</APM_Weapon_TerminusExoblade.tools.1.label>
+  <APM_Weapon_TerminusExoblade.tools.2.label>лезвие</APM_Weapon_TerminusExoblade.tools.2.label>
   <APM_Weapon_TerminusApexExoblade.label>высший экзо-клинок «Терминус»</APM_Weapon_TerminusApexExoblade.label>
-  <!-- EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
   <APM_Weapon_TerminusApexExoblade.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_TerminusApexExoblade.description>
-  
-  
-  <!-- EN: mech whip -->
   <APM_Weapon_MechWhip.label>мех хлыст</APM_Weapon_MechWhip.label>
-  <!-- EN: The mechwhip can deal heavy damage and stun multiple targets in close proximity to the user. It appears the mechhive views sentient organic life akin to how we view cattle, and treats us as such. -->
   <APM_Weapon_MechWhip.description>Хлыст механоидов способна наносить тяжёлый урон и оглушать несколько целей в непосредственной близости от владельца. Похоже, улей механоидов относится к разумной органической жизни так же, как люди относятся к скоту, и поступает соотвествующе.</APM_Weapon_MechWhip.description>
-  <!-- EN: edge -->
-  <APM_Weapon_MechWhip.tools.edge.label>хлыст</APM_Weapon_MechWhip.tools.edge.label>
-
-  <!-- EN: plasma whip -->
+  <APM_Weapon_MechWhip.tools.0.label>хлыст</APM_Weapon_MechWhip.tools.0.label>
   <APM_Weapon_PlasmaWhip.label>плазменный хлыст</APM_Weapon_PlasmaWhip.label>
-  <!-- EN: Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range. -->
   <APM_Weapon_PlasmaWhip.description>Созданная по образу и подобию плети механоида-Плеточника, плазменная плеть способна наносить урон и оглушать сразу несколько целей, что делает её отличным средством для сдерживания групп врагов на близкой дистанции.</APM_Weapon_PlasmaWhip.description>
-  <!-- EN: edge -->
-  <APM_Weapon_PlasmaWhip.tools.edge.label>хлыст</APM_Weapon_PlasmaWhip.tools.edge.label>
-
-  <!-- EN: EMP impactor -->
+  <APM_Weapon_PlasmaWhip.tools.0.label>хлыст</APM_Weapon_PlasmaWhip.tools.0.label>
   <APM_Gun_EMP_Impactor.label>ЭМИ-импактор</APM_Gun_EMP_Impactor.label>
-  <!-- EN: A mechanoid grade electromagnetic grenade launcher, featuring better accuracy, a larger range and a bigger blast than more common variants of the same type. Organic life has many clear weaknesses, yet militaries still use said threats in their arsenals all the same. The mechhive is no different. -->
   <APM_Gun_EMP_Impactor.description>Электромагнитный гранатомёт военного уровня механоидов, обладающий повышенной точностью, большей дальностью и увеличенным радиусом взрыва по сравнению с обычными аналогами. У органической жизни много очевидных слабостей, однако армии всё равно используют подобные средства в своих арсеналах. Улей механоидов — не исключение.</APM_Gun_EMP_Impactor.description>
-  <!-- EN: stock -->
-  <APM_Gun_EMP_Impactor.tools.stock.label>приклад</APM_Gun_EMP_Impactor.tools.stock.label>
-  <!-- EN: barrel -->
-  <APM_Gun_EMP_Impactor.tools.barrel.label>ствол</APM_Gun_EMP_Impactor.tools.barrel.label>
-
-  <!-- EN: laser -->
+  <APM_Gun_EMP_Impactor.tools.0.label>приклад</APM_Gun_EMP_Impactor.tools.0.label>
+  <APM_Gun_EMP_Impactor.tools.1.label>ствол</APM_Gun_EMP_Impactor.tools.1.label>
   <APM_Gazer_Laser.label>лазер</APM_Gazer_Laser.label>
-  <!-- EN: A weaker laser from Gazer's eye -->
   <APM_Gazer_Laser.description>Ослабленный лазерный луч из ока Созерцателя.</APM_Gazer_Laser.description>
 
 	<APM_Gun_Conqueror_AR.label>импульсная штурмовая винтовка</APM_Gun_Conqueror_AR.label>
@@ -98,147 +54,65 @@
 
   <!-- EN: haze graser cannon -->
   <APM_Haze_BeamGun.label>лучевой иссушитель</APM_Haze_BeamGun.label>
-  <!-- EN: A tesseron's beam grazer twisted into a machine that spews toxic waste in addition to plasma, the products of this cannon are monstrously hazardous to organic life. Fear is only another foothold of the mechanoid superintelligence. -->
   <APM_Haze_BeamGun.description>Лучевое оружие Тессерона, переоборудованный в орудие, выплёскивающее токсичные отходы в дополнение к плазме. Результаты выстрелов этой пушки чудовищно опасны для органической жизни. Страх — лишь ещё один инструмент сверхразума механоидов.</APM_Haze_BeamGun.description>
-  <!-- EN: barrel -->
-  <APM_Haze_BeamGun.tools.barrel.label>ствол</APM_Haze_BeamGun.tools.barrel.label>
-
-  <!-- EN: javelin rocket launcher -->
+  <APM_Haze_BeamGun.tools.0.label>ствол</APM_Haze_BeamGun.tools.0.label>
   <APM_Gun_JavelinRocketLauncher.label>пусковая установка Джавелина</APM_Gun_JavelinRocketLauncher.label>
-  <!-- EN: A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs the damage profile of every creature and machine it opens up, and each rocket that finds the same one again is fused to bite deeper than the last. Structures give it nothing to read, and are hit at a flat rate. -->
   <APM_Gun_JavelinRocketLauncher.description>Ракетный контейнер механоидов с управляемыми снарядами. Каждая ракета вылетает из пусковой трубы по фиксированной траектории, прежде чем её головка самонаведения перехватит управление. Из-за этого установка не может поражать цели, находящиеся слишком близко. Головка наведения регистрирует профиль повреждений каждой цели, и каждая последующая ракета, попавшая в того же противника, наносит всё больше урона. Сооружения не дают профиля для анализа и получают фиксированный урон.</APM_Gun_JavelinRocketLauncher.description>
-  <!-- EN: stock -->
-  <APM_Gun_JavelinRocketLauncher.tools.stock.label>приклад</APM_Gun_JavelinRocketLauncher.tools.stock.label>
-  <!-- EN: barrel -->
-  <APM_Gun_JavelinRocketLauncher.tools.barrel.label>ствол</APM_Gun_JavelinRocketLauncher.tools.barrel.label>
-
-  <!-- EN: heavy sledge blaster -->
+  <APM_Gun_JavelinRocketLauncher.tools.0.label>приклад</APM_Gun_JavelinRocketLauncher.tools.0.label>
+  <APM_Gun_JavelinRocketLauncher.tools.1.label>ствол</APM_Gun_JavelinRocketLauncher.tools.1.label>
   <APM_Gun_Maul.label>тяжёлый молот-бластер</APM_Gun_Maul.label>
-  <!-- EN: An enhanced pulse-charged rapid-fire heavy machine gun built with an integrated kinetic hammer on its frame for devastating close-quarters bludgeoning. Heavy cooling allows long, deadly bursts, while additional interfacing technology lets certain mechanoid wielders continuously overclock and overheat the weapon's output, leading to potentially disastrous effects for both the user and anything caught in front of the barrel. -->
   <APM_Gun_Maul.description>Мощный импульсный скорстрельный тяжёлый пулемёт с интегрированным кинетическим молотом на раме для сокрушительных ударов в ближнем бою. Мощное охлаждение позволяет вести длинные смертоносные очереди, а интерфейсные технологии позволяют некоторым механоидам разогонять и перегревать оружие, что может привести к катастрофическим последствиям как для оператора, так и для всех перед стволом.</APM_Gun_Maul.description>
-  <!-- EN: butt -->
-  <APM_Gun_Maul.tools.butt.label>приклад</APM_Gun_Maul.tools.butt.label>
-  <!-- EN: sledge hammer -->
-  <APM_Gun_Maul.tools.sledge_hammer.label>кувалда</APM_Gun_Maul.tools.sledge_hammer.label>
-
-  <!-- EN: pulse shotgun -->
+  <APM_Gun_Maul.tools.0.label>приклад</APM_Gun_Maul.tools.0.label>
+  <APM_Gun_Maul.tools.1.label>кувалда</APM_Gun_Maul.tools.1.label>
   <APM_Gun_Pulse_Shotgun.label>импульсный рассеиватель</APM_Gun_Pulse_Shotgun.label>
-  <!-- EN: A pulse-charged shotgun that fires two heavy bursts, releasing unstable energy on impact. -->
   <APM_Gun_Pulse_Shotgun.description>Ближний бой с механизированными противниками - никогда не был хорошей идеей, а появление импульсного рассеивателя превращает эту мысль в смертельный приговор. Этот дробовик использует импульсные боеприпасы, и в результате получается первоклассный инструмент для прорыва укреплений. Вражеские силы обычно менее бронированы, чем оборонительные точки, и даже милитор смог бы предсказать исход такого столкновения.</APM_Gun_Pulse_Shotgun.description>
-  <!-- EN: barrel -->
-  <APM_Gun_Pulse_Shotgun.tools.barrel.label>ствол</APM_Gun_Pulse_Shotgun.tools.barrel.label>
-
-  <!-- EN: ravager artillery -->
+  <APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
   <APM_Ravager_Artillery.label>звездочёт</APM_Ravager_Artillery.label>
-  <!-- EN: A moveable auto-mortar with integrated hellsphere adjacent technology, this mechanoid siege weapon was intended to be emplaced on larger mechanoid frames. One can almost feel the mechhive’s hate in every blast of the cannon. -->
   <APM_Ravager_Artillery.description>Мобильный автоминомёт со встроенными технологиями адской сферы. Это осадочное орудие механоидов предназначалось для установки на крупные шасси. В каждом залпе этой пушки буквально ощущается ненависть улья механоидов.</APM_Ravager_Artillery.description>
-  <!-- EN: launch frag grenade -->
   <APM_Ravager_Artillery.verbs.launch_frag_grenade.label>запуск осколочного снаряда</APM_Ravager_Artillery.verbs.launch_frag_grenade.label>
-
-
-  <!-- EN: EMP impactor projectile -->
   <APM_Proj_EMP_Impactor.label>снаряд ЭМИ-импактора</APM_Proj_EMP_Impactor.label>
-
-  <!-- EN: haze acid beam -->
   <APM_Proj_HazeToxicRepeater.label>кислотный луч мглы</APM_Proj_HazeToxicRepeater.label>
-  <!-- EN: acid residue -->
   <APM_HazeToxicPuddle.label>кислотный осадок</APM_HazeToxicPuddle.label>
-
-  <!-- EN: javelin missile -->
   <APM_Proj_JavelinMissile.label>ракета «Джавелин»</APM_Proj_JavelinMissile.label>
-  <!-- EN: javelin incendiary missile -->
   <APM_Proj_JavelinMissile_Incendiary.label>зажигательная ракета «Джавелин»</APM_Proj_JavelinMissile_Incendiary.label>
-  <!-- EN: javelin high-explosive missile -->
   <APM_Proj_JavelinMissile_HighExplosive.label>фугасная ракета «Джавелин»</APM_Proj_JavelinMissile_HighExplosive.label>
-  <!-- EN: javelin EMP missile -->
   <APM_Proj_JavelinMissile_EMP.label>ЭМИ-ракета «Джавелин»</APM_Proj_JavelinMissile_EMP.label>
-
-  <!-- EN: heavy charge burst shot -->
   <APM_Bullet_MaulBlaster.label>тяжёлый плазменный заряд</APM_Bullet_MaulBlaster.label>
-
-  <!-- EN: pulse bullet -->
   <APM_Pulse_Proj.label>импульсный заряд</APM_Pulse_Proj.label>
-
-  <!-- EN: artillery projectile -->
   <APM_ArtilleryProjectile.label>артиллерийский снаряд</APM_ArtilleryProjectile.label>
-  <!-- EN: starfall carrier -->
   <APM_StarfallCarrier.label>снаряд-носитель «Звездопад»</APM_StarfallCarrier.label>
-  <!-- EN: starfall split projectile -->
   <APM_StarfallSplitProjectile.label>кассетный снаряд «Звездопад»</APM_StarfallSplitProjectile.label>
-
-  <!-- EN: severing blade -->
   <APM_Weapon_SeveringBlade.label>рассекающий клинок</APM_Weapon_SeveringBlade.label>
-  <!-- EN: A heavy combat blade integrated with Terminus-derived control matrices. Allows the wielder to channel psychic energy into wide sweeping strikes, cleaving through multiple foes at once. -->
   <APM_Weapon_SeveringBlade.description>Тяжёлый боевой клинок, оснащённый управляющими матрицами на основе технологий Терминуса. Позволяет владельцу направлять пси-энергию в широкие размашистые удары, рассекающие сразу нескольких врагов.</APM_Weapon_SeveringBlade.description>
-  <!-- EN: handle -->
-  <APM_Weapon_SeveringBlade.tools.handle.label>рукоять</APM_Weapon_SeveringBlade.tools.handle.label>
-  <!-- EN: point -->
-  <APM_Weapon_SeveringBlade.tools.point.label>остриё</APM_Weapon_SeveringBlade.tools.point.label>
-  <!-- EN: blade -->
-  <APM_Weapon_SeveringBlade.tools.blade.label>лезвие</APM_Weapon_SeveringBlade.tools.blade.label>
-
-  <!-- EN: skipblade -->
+  <APM_Weapon_SeveringBlade.tools.0.label>рукоять</APM_Weapon_SeveringBlade.tools.0.label>
+  <APM_Weapon_SeveringBlade.tools.1.label>остриё</APM_Weapon_SeveringBlade.tools.1.label>
+  <APM_Weapon_SeveringBlade.tools.2.label>лезвие</APM_Weapon_SeveringBlade.tools.2.label>
   <APM_Weapon_Skipblade.label>вспышка меч</APM_Weapon_Skipblade.label>
-  <!-- EN: A high-frequency katana integrated with Celerus-derived displacement technology. Enables the wielder to psychically “skip” short distances with each strike, closing gaps instantly or evading counterattacks. -->
   <APM_Weapon_Skipblade.description>Высокочастотная катана со встроенной технологией перемещения на основе разработок Целеруса. Позволяет владельцу ментально «совершать скачок» на небольшие расстояния при каждом ударе, мгновенно сокращая дистанцию или уклоняясь от контратак.</APM_Weapon_Skipblade.description>
-  <!-- EN: handle -->
-  <APM_Weapon_Skipblade.tools.handle.label>рукоять</APM_Weapon_Skipblade.tools.handle.label>
-  <!-- EN: point -->
-  <APM_Weapon_Skipblade.tools.point.label>остриё</APM_Weapon_Skipblade.tools.point.label>
-  <!-- EN: blade -->
-  <APM_Weapon_Skipblade.tools.blade.label>лезвие</APM_Weapon_Skipblade.tools.blade.label>
-
-  <!-- EN: dominion psy-spear -->
+  <APM_Weapon_Skipblade.tools.0.label>рукоять</APM_Weapon_Skipblade.tools.0.label>
+  <APM_Weapon_Skipblade.tools.1.label>остриё</APM_Weapon_Skipblade.tools.1.label>
+  <APM_Weapon_Skipblade.tools.2.label>лезвие</APM_Weapon_Skipblade.tools.2.label>
   <APM_Weapon_DuelistsPsySpear.label>пси-копьё владычества</APM_Weapon_DuelistsPsySpear.label>
-  <!-- EN: A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius. -->
   <APM_Weapon_DuelistsPsySpear.description>Усиленное копьё, пронизанное пси-цепями, созданными на основе технологий Доминуса. Позволяет владельцу вызвать одного противника на пси-дуэль, создавая направленный водоворот, усиливающий атаки внутри него. Копьё направляет волю владельца, проецируя щит вокруг места дуэли и увеличивая наносимый урон в её радиусе.</APM_Weapon_DuelistsPsySpear.description>
-  <!-- EN: handle -->
-  <APM_Weapon_DuelistsPsySpear.tools.handle.label>рукоять</APM_Weapon_DuelistsPsySpear.tools.handle.label>
-  <!-- EN: point -->
-  <APM_Weapon_DuelistsPsySpear.tools.point.label>остриё</APM_Weapon_DuelistsPsySpear.tools.point.label>
-  <!-- EN: edge -->
-  <APM_Weapon_DuelistsPsySpear.tools.edge.label>лезвие</APM_Weapon_DuelistsPsySpear.tools.edge.label>
-
-  <!-- EN: light charge suppressor -->
+  <APM_Weapon_DuelistsPsySpear.tools.0.label>рукоять</APM_Weapon_DuelistsPsySpear.tools.0.label>
+  <APM_Weapon_DuelistsPsySpear.tools.1.label>остриё</APM_Weapon_DuelistsPsySpear.tools.1.label>
+  <APM_Weapon_DuelistsPsySpear.tools.2.label>лезвие</APM_Weapon_DuelistsPsySpear.tools.2.label>
   <APM_Gun_Satellite.label>лёгкий импульсный подавитель</APM_Gun_Satellite.label>
-  <!-- EN: A compact pulse-charged rapid-fire blaster for area suppressive fire in tight spaces. Even better at area denial than its larger, more common sibling, the heavy charge blaster, at the cost of range and damage. -->
   <APM_Gun_Satellite.description>Компактный скорострельный импульсный бластер для подавления огнём в стеснённых условиях. Удерживает позицию ещё эффективнее, чем его крупный аналог — тяжёлый бластер, но уступает ему в дальности и уроне.</APM_Gun_Satellite.description>
-  <!-- EN: barrel -->
-  <APM_Gun_Satellite.tools.barrel.label>ствол</APM_Gun_Satellite.tools.barrel.label>
-
-  <!-- EN: charge emitter -->
+  <APM_Gun_Satellite.tools.0.label>ствол</APM_Gun_Satellite.tools.0.label>
   <APM_Siren_ChargeEmitter.label>звуковой излучатель</APM_Siren_ChargeEmitter.label>
-  <!-- EN: A wave emitting device that fires focused blasts of high frequency vibration at targets. It is capable of bypassing armor as with intense enough emissions, anything in this weapon's way inevitably becomes another medium of transmission. -->
   <APM_Siren_ChargeEmitter.description>Волновое устройство, ведущее огонь сфокусированными импульсами высокочастотных вибраций. Способно полностью игнорировать броню: при достаточной мощности излучения любая преграда на пути выстрела неизбежно сама становится проводником волны.</APM_Siren_ChargeEmitter.description>
-  <!-- EN: barrel -->
-  <APM_Siren_ChargeEmitter.tools.barrel.label>ствол</APM_Siren_ChargeEmitter.tools.barrel.label>
-
-  <!-- EN: charge sword rifle -->
+  <APM_Siren_ChargeEmitter.tools.0.label>ствол</APM_Siren_ChargeEmitter.tools.0.label>
   <APM_Gun_Vassal_SwordRifle.label>импульсная винтовка-клинок</APM_Gun_Vassal_SwordRifle.label>
-  <!-- EN: A charged-shot sword rifle. Weaker than a charge rifle, but more accurate and melee capable. -->
   <APM_Gun_Vassal_SwordRifle.description>Импульсная винтовка со встроенным лезвием. Слабее стандартной импульсной винтовки, но обладает лучшей точностью и эффективна в ближнем бою.</APM_Gun_Vassal_SwordRifle.description>
-  <!-- EN: stock -->
-  <APM_Gun_Vassal_SwordRifle.tools.stock.label>приклад</APM_Gun_Vassal_SwordRifle.tools.stock.label>
-  <!-- EN: point -->
-  <APM_Gun_Vassal_SwordRifle.tools.point.label>остриё</APM_Gun_Vassal_SwordRifle.tools.point.label>
-  <!-- EN: blade -->
-  <APM_Gun_Vassal_SwordRifle.tools.blade.label>лезвие</APM_Gun_Vassal_SwordRifle.tools.blade.label>
-
-  <!-- EN: solus -->
+  <APM_Gun_Vassal_SwordRifle.tools.0.label>приклад</APM_Gun_Vassal_SwordRifle.tools.0.label>
+  <APM_Gun_Vassal_SwordRifle.tools.1.label>остриё</APM_Gun_Vassal_SwordRifle.tools.1.label>
+  <APM_Gun_Vassal_SwordRifle.tools.2.label>лезвие</APM_Gun_Vassal_SwordRifle.tools.2.label>
   <APM_Solus.label>солус</APM_Solus.label>
-  <!-- EN: A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage. -->
   <APM_Solus.description>Усиленный излучатель гамма-лучей, способный создавать плотную концентрированную сферу разрушительной энергии. Пролетая мимо целей, сфера бьёт по ним электрическими разрядами и поджигает всё вокруг. Исключительно смертоносна против скоплений врагов. Огромное энерговыделение требует протоколов стабилизации для предотвращения самоповреждения.</APM_Solus.description>
-
-  <!-- EN: light charge burst shot -->
   <APM_Bullet_SatelliteBlaster.label>лёгкий импульсный заряд</APM_Bullet_SatelliteBlaster.label>
-
-  <!-- EN: sonic pulse -->
   <APM_Proj_SirenChargeEmitter.label>звуковой импульс</APM_Proj_SirenChargeEmitter.label>
-
-  <!-- EN: charge shot -->
   <APM_Bullet_ChargeSwordRifle.label>импульсный заряд</APM_Bullet_ChargeSwordRifle.label>
-
-  <!-- EN: solus orb -->
   <APM_SolusOrb.label>сфера «Солус»</APM_SolusOrb.label>
 
 </LanguageData>

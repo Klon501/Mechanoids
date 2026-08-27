@@ -1,0 +1,15 @@
+<LanguageData>
+	<!-- 1.6\Defs\JobDefs\Jobs_LasherAnimalHandling.xml -->
+	<!--                     EN: taming TargetA. -->
+	<APM_LasherTame.reportString>taming TargetA.</APM_LasherTame.reportString>
+	<!--                      EN: training TargetA. -->
+	<APM_LasherTrain.reportString>training TargetA.</APM_LasherTrain.reportString>
+	<!--                     EN: milking TargetA. -->
+	<APM_LasherMilk.reportString>milking TargetA.</APM_LasherMilk.reportString>
+	<!--                      EN: shearing TargetA. -->
+	<APM_LasherShear.reportString>shearing TargetA.</APM_LasherShear.reportString>
+	<!--                          EN: slaughtering TargetA. -->
+	<APM_LasherSlaughter.reportString>slaughtering TargetA.</APM_LasherSlaughter.reportString>
+	<!--                              EN: releasing TargetA. -->
+	<APM_LasherReleaseToWild.reportString>releasing TargetA.</APM_LasherReleaseToWild.reportString>
+</LanguageData>

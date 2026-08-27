@@ -1,0 +1,11 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\PlasmaWhip.xml -->
+	<!--                     EN: plasma whip -->
+	<APM_Weapon_PlasmaWhip.label>plasma whip</APM_Weapon_PlasmaWhip.label>
+	<!--                           EN: Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range. -->
+	<APM_Weapon_PlasmaWhip.description>Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range.</APM_Weapon_PlasmaWhip.description>
+	<!--                             EN: ㅤ -->
+	<APM_Weapon_PlasmaWhip.verbs.0.label>ㅤ</APM_Weapon_PlasmaWhip.verbs.0.label>
+	<!--                             EN: кромка -->
+	<APM_Weapon_PlasmaWhip.tools.0.label>кромка</APM_Weapon_PlasmaWhip.tools.0.label>
+</LanguageData>

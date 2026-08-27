@@ -1,0 +1,23 @@
+<LanguageData>
+	<!-- 1.6\Defs\RecipeDefs\Recipes_MechGestator_Ultraheavy.xml -->
+	<!--               EN: Gestating mech. -->
+	<APM_Ravager.jobString>Gestating mech.</APM_Ravager.jobString>
+	<!--           EN: gestate ravager -->
+	<APM_Ravager.label>gestate ravager</APM_Ravager.label>
+	<!--                 EN: Gestate a ravager mechanoid. -->
+	<APM_Ravager.description>Gestate a ravager mechanoid.</APM_Ravager.description>
+	
+	<!--                EN: Gestating mech. -->
+	<APM_Ingestor.jobString>Gestating mech.</APM_Ingestor.jobString>
+	<!--            EN: gestate ingestor -->
+	<APM_Ingestor.label>gestate ingestor</APM_Ingestor.label>
+	<!--                  EN: Gestate an ingestor mechanoid. -->
+	<APM_Ingestor.description>Gestate an ingestor mechanoid.</APM_Ingestor.description>
+	
+	<!--             EN: Gestating mech. -->
+	<APM_Gazer.jobString>Gestating mech.</APM_Gazer.jobString>
+	<!--         EN: gestate gazer -->
+	<APM_Gazer.label>gestate gazer</APM_Gazer.label>
+	<!--               EN: Gestate a gazer mechanoid. -->
+	<APM_Gazer.description>Gestate a gazer mechanoid.</APM_Gazer.description>
+</LanguageData>

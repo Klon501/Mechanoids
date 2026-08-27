@@ -1,0 +1,11 @@
+<LanguageData>
+	<!-- 1.6\Defs\JobDefs\Jobs_FrostivusFoodPreservation.xml -->
+	<!--                                       EN: preserving TargetA. -->
+	<APM_FrostivusTakeFoodToInventory.reportString>preserving TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+	<!--                                       EN: unloading TargetA. -->
+	<APM_FrostivusUnloadFoodToStorage.reportString>unloading TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+	<!--                                    EN: unloading preserved food. -->
+	<APM_FrostivusManualUnloadFood.reportString>unloading preserved food.</APM_FrostivusManualUnloadFood.reportString>
+	<!--                                           EN: releasing preserved creature. -->
+	<APM_FrostivusReleaseDevouredContents.reportString>releasing preserved creature.</APM_FrostivusReleaseDevouredContents.reportString>
+</LanguageData>

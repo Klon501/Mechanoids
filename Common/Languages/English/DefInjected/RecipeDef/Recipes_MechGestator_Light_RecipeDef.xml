@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\RecipeDefs\Recipes_MechGestator_Light.xml -->
+	<!--            EN: Gestating mech. -->
+	<APM_Haze.jobString>Gestating mech.</APM_Haze.jobString>
+	<!--        EN: gestate haze -->
+	<APM_Haze.label>gestate haze</APM_Haze.label>
+	<!--              EN: Gestate a haze area-denial mechanoid. -->
+	<APM_Haze.description>Gestate a haze area-denial mechanoid.</APM_Haze.description>
+</LanguageData>

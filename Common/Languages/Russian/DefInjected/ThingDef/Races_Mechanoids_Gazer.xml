@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- APM_Mech_Gazer -->
+
   <APM_Mech_Gazer.label>созерцатель</APM_Mech_Gazer.label>
   <APM_Mech_Gazer.description>Иное применение технологий адской сферы привело к созданию созерцателя — механоида, легко узнаваемого по его главному окулярному излучателю. Это оружие настолько мощное, что перед выстрелом механоид вынужден фиксировать корпус на месте и перенаправлять все моторные функции на стабилизацию. Но даже при этом требуется длительная зарядка. Итоговый луч способен испепелить всё на своём пути, нанося ощутимый урон даже постройкам. В ближнем бою созерцатель может высвободить накопленную энергию наружу в виде разрушительной ударной волны, отбрасывающей нападающих и выводящей из строя соседние механизмы.</APM_Mech_Gazer.description>
-  <APM_Mech_Gazer.tools.head.label>голова</APM_Mech_Gazer.tools.head.label>
-  <APM_Mech_Gazer.tools.front_left_paw.label>передняя левая лапа</APM_Mech_Gazer.tools.front_left_paw.label>
-  <APM_Mech_Gazer.tools.front_right_paw.label>передняя правая лапа</APM_Mech_Gazer.tools.front_right_paw.label>
+  <APM_Mech_Gazer.tools.0.label>голова</APM_Mech_Gazer.tools.0.label>
+  <APM_Mech_Gazer.tools.1.label>передняя левая лапа</APM_Mech_Gazer.tools.1.label>
+  <APM_Mech_Gazer.tools.2.label>передняя правая лапа</APM_Mech_Gazer.tools.2.label>
+
 </LanguageData>

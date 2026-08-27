@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\GazerLasers.xml -->
+	<!--               EN: laser -->
+	<APM_Gazer_Laser.label>laser</APM_Gazer_Laser.label>
+	<!--                     EN: A weaker laser from Gazer's eye -->
+	<APM_Gazer_Laser.description>A weaker laser from Gazer's eye</APM_Gazer_Laser.description>
+	<!--                       EN: ㅤ -->
+	<APM_Gazer_Laser.verbs.0.label>ㅤ</APM_Gazer_Laser.verbs.0.label>
+</LanguageData>

@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Siren.xml -->
+	
+	<!--                    EN: siren's song -->
+	<APM_Hediff_SirenSong.label>siren's song</APM_Hediff_SirenSong.label>
+	<!--                          EN: This pawn is carried by a soothing mechanical chorus, feeling lighter and more energized. -->
+	<APM_Hediff_SirenSong.description>This pawn is carried by a soothing mechanical chorus, feeling lighter and more energized.</APM_Hediff_SirenSong.description>
+</LanguageData>

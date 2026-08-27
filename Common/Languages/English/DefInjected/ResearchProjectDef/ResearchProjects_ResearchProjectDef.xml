@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- 1.6\Defs\ResearchProjectDefs\ResearchProjects.xml -->
+	<!--            EN: Apex Mechtech -->
+	<ApexMechtech.label>Apex Mechtech</ApexMechtech.label>
+	<!--                  EN: The technology needed for your mechanitor to create and control Apex-tier mechanoids. You can get chips by using a mechanitor to summon a Three Lords threat. They can also be summoned separately. -->
+	<ApexMechtech.description>The technology needed for your mechanitor to create and control Apex-tier mechanoids. You can get chips by using a mechanitor to summon a Three Lords threat. They can also be summoned separately.</ApexMechtech.description>
+	
+	<!--                EN: Advanced Mechtech -->
+	<AdvancedMechtech.label>Advanced Mechtech</AdvancedMechtech.label>
+	<!--                      EN: The technology needed for your mechanitor to create and control Advanced-tier mechanoids. You can get chips by using a mechanitor to summon a Gazer threat. -->
+	<AdvancedMechtech.description>The technology needed for your mechanitor to create and control Advanced-tier mechanoids. You can get chips by using a mechanitor to summon a Gazer threat.</AdvancedMechtech.description>
+</LanguageData>

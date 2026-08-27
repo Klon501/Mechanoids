@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Tinker.xml -->
+	<!--               EN: tinker -->
+	<APM_Mech_Tinker.label>tinker</APM_Mech_Tinker.label>
+	<!--                                  EN: Plural tinker -->
+	<APM_Mech_Tinker.lifeStages.1.labelPlural>Plural tinker</APM_Mech_Tinker.lifeStages.1.labelPlural>
+</LanguageData>

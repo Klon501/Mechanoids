@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Frostivus.xml -->
+	
+	<!--                         EN: Crypto Swallow -->
+	<APM_Ability_CryptoSwallow.label>Crypto Swallow</APM_Ability_CryptoSwallow.label>
+	<!--                               EN: Engulfs a humanlike pawn or corpse, sealing it within an internal cryo-chamber. Preserves the target in suspended animation until released. -->
+	<APM_Ability_CryptoSwallow.description>Engulfs a humanlike pawn or corpse, sealing it within an internal cryo-chamber. Preserves the target in suspended animation until released.</APM_Ability_CryptoSwallow.description>
+</LanguageData>

@@ -1,0 +1,35 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\MaulBodyDef.xml -->
+	<!--        EN: maul -->
+	<APM_Maul.label>maul</APM_Maul.label>
+	<!--                                                                                            EN: central sight sensor -->
+	<APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>central sight sensor</APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+	<!--                                                                                           EN: left hearing sensor -->
+	<APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+	<!--                                                                                            EN: right hearing sensor -->
+	<APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</APM_Maul.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+	<!--                                                      EN: left mechanical shoulder -->
+	<APM_Maul.corePart.parts.left_mechanical_shoulder.customLabel>left mechanical shoulder</APM_Maul.corePart.parts.left_mechanical_shoulder.customLabel>
+	<!--                                                                     EN: left arm -->
+	<APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>left arm</APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>
+	<!--                                                                                     EN: left fist -->
+	<APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_fist.customLabel>left fist</APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_fist.customLabel>
+	<!--                                                                                                     EN: left grip -->
+	<APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_fist.parts.left_grip.customLabel>left grip</APM_Maul.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_fist.parts.left_grip.customLabel>
+	<!--                                                       EN: right mechanical shoulder -->
+	<APM_Maul.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</APM_Maul.corePart.parts.right_mechanical_shoulder.customLabel>
+	<!--                                                                       EN: right arm -->
+	<APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+	<!--                                                                                        EN: right fist -->
+	<APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_fist.customLabel>right fist</APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_fist.customLabel>
+	<!--                                                                                                         EN: right grip -->
+	<APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_fist.parts.right_grip.customLabel>right grip</APM_Maul.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_fist.parts.right_grip.customLabel>
+	<!--                                      EN: left leg -->
+	<APM_Maul.corePart.parts.left_leg.customLabel>left leg</APM_Maul.corePart.parts.left_leg.customLabel>
+	<!--                                                      EN: left foot -->
+	<APM_Maul.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</APM_Maul.corePart.parts.left_leg.parts.left_foot.customLabel>
+	<!--                                       EN: right leg -->
+	<APM_Maul.corePart.parts.right_leg.customLabel>right leg</APM_Maul.corePart.parts.right_leg.customLabel>
+	<!--                                                        EN: right foot -->
+	<APM_Maul.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</APM_Maul.corePart.parts.right_leg.parts.right_foot.customLabel>
+</LanguageData>

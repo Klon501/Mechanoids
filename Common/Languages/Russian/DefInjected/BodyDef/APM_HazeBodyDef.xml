@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: central sight sensor -->
+  <APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>центральный зрительный датчик</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правый звуковой датчик</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+
+  <!-- EN: left gas vent -->
+  <APM_Haze.corePart.parts.left_gas_vent.customLabel>левый газоотвод</APM_Haze.corePart.parts.left_gas_vent.customLabel>
+
+  <!-- EN: right gas vent -->
+  <APM_Haze.corePart.parts.right_gas_vent.customLabel>правый газоотвод</APM_Haze.corePart.parts.right_gas_vent.customLabel>
+
+  <!-- EN: front left leg -->
+  <APM_Haze.corePart.parts.front_left_leg.customLabel>левая передняя нога</APM_Haze.corePart.parts.front_left_leg.customLabel>
+
+  <!-- EN: front left foot -->
+  <APM_Haze.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>левая передняя стопа</APM_Haze.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>
+
+  <!-- EN: front right leg -->
+  <APM_Haze.corePart.parts.front_right_leg.customLabel>правая передняя нога</APM_Haze.corePart.parts.front_right_leg.customLabel>
+
+  <!-- EN: front right foot -->
+  <APM_Haze.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>правая передняя стопа</APM_Haze.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>
+
+  <!-- EN: rear left leg -->
+  <APM_Haze.corePart.parts.rear_left_leg.customLabel>левая задняя нога</APM_Haze.corePart.parts.rear_left_leg.customLabel>
+
+  <!-- EN: rear left foot -->
+  <APM_Haze.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>левая задняя стопа</APM_Haze.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>
+
+  <!-- EN: rear right leg -->
+  <APM_Haze.corePart.parts.rear_right_leg.customLabel>правая задняя нога</APM_Haze.corePart.parts.rear_right_leg.customLabel>
+
+  <!-- EN: rear right foot -->
+  <APM_Haze.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>правая задняя стопа</APM_Haze.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>
+
+</LanguageData>

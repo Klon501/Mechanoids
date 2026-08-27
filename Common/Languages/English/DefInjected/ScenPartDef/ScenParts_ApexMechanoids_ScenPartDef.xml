@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\ScenarioDefs\ScenParts_ApexMechanoids.xml -->
+	<!--                        EN: ancient corpses -->
+	<APM_SpawnScenarioCorpses.label>ancient corpses</APM_SpawnScenarioCorpses.label>
+	<!--                        EN: solid ground under the domain -->
+	<APM_PrepareStructureSite.label>solid ground under the domain</APM_PrepareStructureSite.label>
+	<!--                      EN: picked over supplies -->
+	<APM_LimitStructureLoot.label>picked over supplies</APM_LimitStructureLoot.label>
+	<!--                       EN: start on your pawns -->
+	<APM_CameraOnPlayerStart.label>start on your pawns</APM_CameraOnPlayerStart.label>
+	<!--                EN: start with mechanoid -->
+	<APM_StartingMech.label>start with mechanoid</APM_StartingMech.label>
+</LanguageData>

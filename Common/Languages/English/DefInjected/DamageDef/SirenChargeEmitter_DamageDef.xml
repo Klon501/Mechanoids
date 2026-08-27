@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\SirenChargeEmitter.xml -->
+	<!--                  EN: sonic vibration -->
+	<APM_SonicVibration.label>sonic vibration</APM_SonicVibration.label>
+	<!--                         EN: {0} has been killed by sonic vibration. -->
+	<APM_SonicVibration.deathMessage>{0} has been killed by sonic vibration.</APM_SonicVibration.deathMessage>
+</LanguageData>

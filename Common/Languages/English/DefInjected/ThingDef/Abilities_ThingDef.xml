@@ -1,0 +1,15 @@
+<LanguageData>
+	<!-- 1.6\Defs\AbilityDefs\Abilities.xml -->
+	
+	<!--                          EN: dashing -->
+	<ApexMechanoids_DashingPawn.label>dashing</ApexMechanoids_DashingPawn.label>
+	
+	<!--                    EN: flying -->
+	<APM_PawnFlyer_Hooked.label>flying</APM_PawnFlyer_Hooked.label>
+	
+	<!--                   EN: hook -->
+	<APM_Projectile_Hook.label>hook</APM_Projectile_Hook.label>
+	
+	<!--                             EN: flying -->
+	<APM_PawnFlyer_ShockwaveThrown.label>flying</APM_PawnFlyer_ShockwaveThrown.label>
+</LanguageData>

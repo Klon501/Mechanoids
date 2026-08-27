@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\JobDefs\MechCommandCasket.xml -->
+	<!--                           EN: carry to mech command casket -->
+	<APM_HaulToMechCommandCasket.label>carry to mech command casket</APM_HaulToMechCommandCasket.label>
+	<!--                          EN: fill -->
+	<APM_HaulToMechCommandCasket.verb>fill</APM_HaulToMechCommandCasket.verb>
+	<!--                            EN: filling -->
+	<APM_HaulToMechCommandCasket.gerund>filling</APM_HaulToMechCommandCasket.gerund>
+</LanguageData>

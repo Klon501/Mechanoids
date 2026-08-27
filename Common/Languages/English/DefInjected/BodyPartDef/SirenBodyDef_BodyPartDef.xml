@@ -1,0 +1,18 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\SirenBodyDef.xml -->
+	
+	<!--             EN: resonance crown -->
+	<APM_SirenHead.label>resonance crown</APM_SirenHead.label>
+	
+	<!--                    EN: vocal synthesizer -->
+	<APM_VocalSynthesizer.label>vocal synthesizer</APM_VocalSynthesizer.label>
+	
+	<!--                    EN: psychic resonator -->
+	<APM_PsychicResonator.label>psychic resonator</APM_PsychicResonator.label>
+	
+	<!--                      EN: resonance core -->
+	<APM_SirenResonanceCore.label>resonance core</APM_SirenResonanceCore.label>
+	
+	<!--                  EN: broadcast array -->
+	<APM_BroadcastArray.label>broadcast array</APM_BroadcastArray.label>
+</LanguageData>

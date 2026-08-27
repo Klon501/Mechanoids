@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediffs_Pulse.xml -->
+	<!--                  EN: flash-blinded -->
+	<APM_PulseWaveBlind.label>flash-blinded</APM_PulseWaveBlind.label>
+	<!--                        EN: An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time. -->
+	<APM_PulseWaveBlind.description>An intense flash and pressure spike have overwhelmed this pawn's sensors, sharply reducing sight for a short time.</APM_PulseWaveBlind.description>
+</LanguageData>

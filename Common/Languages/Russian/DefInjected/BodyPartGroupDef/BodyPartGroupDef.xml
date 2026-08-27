@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_LeftAegisShield.label>левый щит</APM_LeftAegisShield.label>
+  <!-- APM_LeftMantisBlade.label -->
+  <APM_LeftMantisBlade.label>левая режущая клешня</APM_LeftMantisBlade.label>
 
-  <APM_LeftAegisShield.labelShort>щит</APM_LeftAegisShield.labelShort>
+  <!-- APM_LeftMantisBlade.labelShort -->
+  <APM_LeftMantisBlade.labelShort>клешня</APM_LeftMantisBlade.labelShort>
 
-  <APM_LeftMantisBlade.label>левый режущий коготь</APM_LeftMantisBlade.label>
+  <!-- APM_RightMantisBlade.label -->
+  <APM_RightMantisBlade.label>правая режущая клешня</APM_RightMantisBlade.label>
 
-  <APM_RightAegisShield.label>правый щит</APM_RightAegisShield.label>
+  <!-- APM_RightMantisBlade.labelShort -->
+  <APM_RightMantisBlade.labelShort>клешня</APM_RightMantisBlade.labelShort>
 
-  <APM_RightAegisShield.labelShort>щит</APM_RightAegisShield.labelShort>
+  <!-- LanguageData -->
+  <LanguageData>
 
-  <APM_RightMantisBlade.label>правый режущий коготь</APM_RightMantisBlade.label>
+  </LanguageData>
 
 </LanguageData>

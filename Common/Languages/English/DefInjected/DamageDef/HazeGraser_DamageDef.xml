@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\HazeGraser.xml -->
+	<!--                EN: haze acid beam -->
+	<APM_HazeAcidBeam.label>haze acid beam</APM_HazeAcidBeam.label>
+	<!--                       EN: {0} has been beamed to death. -->
+	<APM_HazeAcidBeam.deathMessage>{0} has been beamed to death.</APM_HazeAcidBeam.deathMessage>
+</LanguageData>

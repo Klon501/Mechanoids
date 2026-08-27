@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Mantis.xml -->
+	<!--               EN: mantis -->
+	<APM_Mech_Mantis.label>mantis</APM_Mech_Mantis.label>
+	<!--                                  EN: Plural mantis -->
+	<APM_Mech_Mantis.lifeStages.1.labelPlural>Plural mantis</APM_Mech_Mantis.lifeStages.1.labelPlural>
+</LanguageData>

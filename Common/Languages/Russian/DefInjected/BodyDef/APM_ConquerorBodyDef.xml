@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<APM_Conqueror.label>завоеватель</APM_Conqueror.label>
+
+  <!-- APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel -->
+  <APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel -->
+  <APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>левый зрительный датчик</APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel -->
+  <APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правый звуковой датчик</APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel -->
+  <APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>правый зрительный датчик</APM_Conqueror.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_leg.customLabel -->
+  <APM_Conqueror.corePart.parts.left_leg.customLabel>левая нога</APM_Conqueror.corePart.parts.left_leg.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_leg.parts.left_foot.customLabel -->
+  <APM_Conqueror.corePart.parts.left_leg.parts.left_foot.customLabel>левая стопа</APM_Conqueror.corePart.parts.left_leg.parts.left_foot.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.customLabel>левое механическое плечо</APM_Conqueror.corePart.parts.left_mechanical_shoulder.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>левая рука</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.customLabel>левая кисть</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>левый указательный палец</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>левый средний палец</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>левый мизинец</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel -->
+  <APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>левый большой палец</APM_Conqueror.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_leg.customLabel -->
+  <APM_Conqueror.corePart.parts.right_leg.customLabel>правая нога</APM_Conqueror.corePart.parts.right_leg.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_leg.parts.right_foot.customLabel -->
+  <APM_Conqueror.corePart.parts.right_leg.parts.right_foot.customLabel>правая стопа</APM_Conqueror.corePart.parts.right_leg.parts.right_foot.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.customLabel>правое механическое плечо</APM_Conqueror.corePart.parts.right_mechanical_shoulder.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>правая рука</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>правая кисть</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>правый указательный палец</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>правый средний палец</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>правый мизинец</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+
+  <!-- APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel -->
+  <APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>правый большой палец</APM_Conqueror.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+
+</LanguageData>

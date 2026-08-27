@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediff_Frostivus.xml -->
+	<!--                   EN: devoured -->
+	<APM_Hediff_Devoured.label>devoured</APM_Hediff_Devoured.label>
+	<!--                         EN: Sealed inside a Frostivus cryo-chamber. All biological processes are suspended - no bleeding, no sickness progression, no needs. -->
+	<APM_Hediff_Devoured.description>Sealed inside a Frostivus cryo-chamber. All biological processes are suspended - no bleeding, no sickness progression, no needs.</APM_Hediff_Devoured.description>
+</LanguageData>

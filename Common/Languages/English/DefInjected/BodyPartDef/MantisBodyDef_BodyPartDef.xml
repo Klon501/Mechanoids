@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\MantisBodyDef.xml -->
+	
+	<!--              EN: body -->
+	<APM_MantisBody.label>body</APM_MantisBody.label>
+	
+	<!--               EN: cutting claw -->
+	<APM_MantisBlade.label>cutting claw</APM_MantisBlade.label>
+</LanguageData>

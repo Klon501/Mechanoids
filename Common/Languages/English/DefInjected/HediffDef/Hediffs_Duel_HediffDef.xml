@@ -1,0 +1,37 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediffs_Duel.xml -->
+	<!--          EN: in duel -->
+	<APM_InDuel.label>in duel</APM_InDuel.label>
+	<!--                EN: Locked in a duel. A shield arena has been conjured around both combatants, blocking all ranged attacks and abilities for the duration. Incoming damage is greatly increased to force decisive action — the duel is meant to end quickly and brutally. All healing is suppressed within the arena, save for what little may be drawn from striking the enemy. Should either combatant be downed or slain, the survivor claims victory. Should time expire with both still standing, the duel ends in a draw — and both pay the price. -->
+	<APM_InDuel.description>Locked in a duel. A shield arena has been conjured around both combatants, blocking all ranged attacks and abilities for the duration. Incoming damage is greatly increased to force decisive action — the duel is meant to end quickly and brutally. All healing is suppressed within the arena, save for what little may be drawn from striking the enemy. Should either combatant be downed or slain, the survivor claims victory. Should time expire with both still standing, the duel ends in a draw — and both pay the price.</APM_InDuel.description>
+	
+	<!--              EN: duel winner -->
+	<APM_DuelWinner.label>duel winner</APM_DuelWinner.label>
+	<!--                    EN: This combatant has emerged victorious from the arena. Each duel won sharpens their edge — reflexes quicken, strikes land harder and the enemy's blows are turned aside with growing ease. The longer this warrior's unbroken winning streak the more formidable they become. The glory fades with time but the memory of victory lingers. -->
+	<APM_DuelWinner.description>This combatant has emerged victorious from the arena. Each duel won sharpens their edge — reflexes quicken, strikes land harder and the enemy's blows are turned aside with growing ease. The longer this warrior's unbroken winning streak the more formidable they become. The glory fades with time but the memory of victory lingers.</APM_DuelWinner.description>
+	<!--                       EN: stolen thread (1 win) -->
+	<APM_DuelWinner.stages.0.label>stolen thread (1 win)</APM_DuelWinner.stages.0.label>
+	<!--                       EN: array expansion (2 wins) -->
+	<APM_DuelWinner.stages.1.label>array expansion (2 wins)</APM_DuelWinner.stages.1.label>
+	<!--                       EN: grid dominance (3 wins) -->
+	<APM_DuelWinner.stages.2.label>grid dominance (3 wins)</APM_DuelWinner.stages.2.label>
+	<!--                       EN: kinetic overclock (4 wins) -->
+	<APM_DuelWinner.stages.3.label>kinetic overclock (4 wins)</APM_DuelWinner.stages.3.label>
+	<!--                       EN: core assimilation (5 wins) -->
+	<APM_DuelWinner.stages.4.label>core assimilation (5 wins)</APM_DuelWinner.stages.4.label>
+	<!--                       EN: neural saturation (6 wins) -->
+	<APM_DuelWinner.stages.5.label>neural saturation (6 wins)</APM_DuelWinner.stages.5.label>
+	<!--                       EN: algorithmic apex (7 wins) -->
+	<APM_DuelWinner.stages.6.label>algorithmic apex (7 wins)</APM_DuelWinner.stages.6.label>
+	<!--                       EN: singularity vector (8 wins) -->
+	<APM_DuelWinner.stages.7.label>singularity vector (8 wins)</APM_DuelWinner.stages.7.label>
+	<!--                       EN: network monarch (9 wins) -->
+	<APM_DuelWinner.stages.8.label>network monarch (9 wins)</APM_DuelWinner.stages.8.label>
+	<!--                       EN: absolute supremacy (10 wins) -->
+	<APM_DuelWinner.stages.9.label>absolute supremacy (10 wins)</APM_DuelWinner.stages.9.label>
+	
+	<!--            EN: duel draw -->
+	<APM_DuelDraw.label>duel draw</APM_DuelDraw.label>
+	<!--                  EN: The duel ended without a victor. Both combatants stood when the arena fell — a dishonor neither can easily shake. Movement is sluggish as though the shame of an unresolved contest weighs heavily on the body. The debuff will lift in time but the stigma of a draw is not quickly forgotten. -->
+	<APM_DuelDraw.description>The duel ended without a victor. Both combatants stood when the arena fell — a dishonor neither can easily shake. Movement is sluggish as though the shame of an unresolved contest weighs heavily on the body. The debuff will lift in time but the stigma of a draw is not quickly forgotten.</APM_DuelDraw.description>
+</LanguageData>

@@ -1,0 +1,33 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\JavelinBodyDef.xml -->
+	<!--           EN: javelin -->
+	<APM_Javelin.label>javelin</APM_Javelin.label>
+	<!--                                                          EN: head -->
+	<APM_Javelin.corePart.parts.MechanicalNeck.parts.head.customLabel>head</APM_Javelin.corePart.parts.MechanicalNeck.parts.head.customLabel>
+	<!--                                                                                  EN: left sight sensor -->
+	<APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.left_sight_sensor.customLabel>left sight sensor</APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.left_sight_sensor.customLabel>
+	<!--                                                                                   EN: right sight sensor -->
+	<APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.right_sight_sensor.customLabel>right sight sensor</APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.right_sight_sensor.customLabel>
+	<!--                                                                                    EN: left hearing sensor -->
+	<APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.left_hearing_sensor.customLabel>left hearing sensor</APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.left_hearing_sensor.customLabel>
+	<!--                                                                                     EN: right hearing sensor -->
+	<APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.right_hearing_sensor.customLabel>right hearing sensor</APM_Javelin.corePart.parts.MechanicalNeck.parts.head.parts.right_hearing_sensor.customLabel>
+	<!--                                                 EN: organic refinery -->
+	<APM_Javelin.corePart.parts.organic_refinery.customLabel>organic refinery</APM_Javelin.corePart.parts.organic_refinery.customLabel>
+	<!--                                               EN: front left leg -->
+	<APM_Javelin.corePart.parts.front_left_leg.customLabel>front left leg</APM_Javelin.corePart.parts.front_left_leg.customLabel>
+	<!--                                                                     EN: front left foot -->
+	<APM_Javelin.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>front left foot</APM_Javelin.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>
+	<!--                                                EN: front right leg -->
+	<APM_Javelin.corePart.parts.front_right_leg.customLabel>front right leg</APM_Javelin.corePart.parts.front_right_leg.customLabel>
+	<!--                                                                       EN: front right foot -->
+	<APM_Javelin.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>front right foot</APM_Javelin.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>
+	<!--                                              EN: rear left leg -->
+	<APM_Javelin.corePart.parts.rear_left_leg.customLabel>rear left leg</APM_Javelin.corePart.parts.rear_left_leg.customLabel>
+	<!--                                                                   EN: rear left foot -->
+	<APM_Javelin.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>rear left foot</APM_Javelin.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>
+	<!--                                               EN: rear right leg -->
+	<APM_Javelin.corePart.parts.rear_right_leg.customLabel>rear right leg</APM_Javelin.corePart.parts.rear_right_leg.customLabel>
+	<!--                                                                     EN: rear right foot -->
+	<APM_Javelin.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>rear right foot</APM_Javelin.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>
+</LanguageData>

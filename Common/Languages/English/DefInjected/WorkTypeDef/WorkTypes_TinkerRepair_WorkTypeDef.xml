@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkTypeDefs\WorkTypes_TinkerRepair.xml -->
+	<!--                     EN: repair -->
+	<APM_TinkerRepair.labelShort>repair</APM_TinkerRepair.labelShort>
+	<!--                    EN: Tinker -->
+	<APM_TinkerRepair.pawnLabel>Tinker</APM_TinkerRepair.pawnLabel>
+	<!--                      EN: repairing buildings and mechs -->
+	<APM_TinkerRepair.gerundLabel>repairing buildings and mechs</APM_TinkerRepair.gerundLabel>
+	<!--                      EN: Repair same-faction buildings and mechanoids. -->
+	<APM_TinkerRepair.description>Repair same-faction buildings and mechanoids.</APM_TinkerRepair.description>
+	<!--               EN: Repair -->
+	<APM_TinkerRepair.verb>Repair</APM_TinkerRepair.verb>
+</LanguageData>

@@ -54,7 +54,7 @@
   <!-- ==================== Defenses ==================== -->
 
   <!-- EN: Gazer emplacement -->
-  <APM_GazerEmplacement.label>Орудийная установка «Гейзер»</APM_GazerEmplacement.label>
+  <APM_GazerEmplacement.label>Орудийная установка «Созерцатель»</APM_GazerEmplacement.label>
   <!-- EN: Heavy fixed laser turret featuring a limited frontal firing arc that consumes high power during firing. -->
   <APM_GazerEmplacement.description>Тяжёлая стационарная лазерная турель с ограниченным фронтальным сектором обстрела, потребляющая большое количество энергии при стрельбе.</APM_GazerEmplacement.description>
 
@@ -95,7 +95,7 @@
 	<APM_MechCommandCasket.description>Вершина инженерной мысли механиторов, монументальный саркофаг, воплощающий абсолютную власть и технологическое величие. Объединяя технологии мехлинка и биоскульптора, он позволяет находящемуся внутри оператору командовать своими легионами из абсолютной безопасности. Однако его истинная сила кроется внутри: в ядро встроена сложнейшая копия мозга «Церебрекс». Это позволяет саркофагу преодолевать атмосферные помехи и подключаться напрямую к глобальной сети механоидов на орбите. Перехватывая вычислительную мощность этих орбитальных систем, механитор может транслировать свои приказы на колоссальные расстояния, управляя мехами даже из других точек глобальной карты.</APM_MechCommandCasket.description>
 
 	<!-- Усилитель сигнала на субъядрах -->
-	<APM_CasketBandwidthAmplifier.label>усилитель сигнала на субъядрах</APM_CasketBandwidthAmplifier.label>
+	<APM_CasketBandwidthAmplifier.label>субъядерный усилитель сигнала</APM_CasketBandwidthAmplifier.label>
 	<APM_CasketBandwidthAmplifier.description>Вспомогательный модуль расширения, предназначенный для усиления командного саркофага с помощью вычислительной мощности высоких субъядер. Интегрируя высокоуровневые субъядра непосредственно во вспомогательную нейронную сеть саркофага, это устройство значительно увеличивает ментальную пропускную способность механитора. Оно расширяет доступный лимит каналов управления, позволяя оператору безопасно контролировать гораздо более крупный и сложный легион механоидов без перегрузки собственной неврологической связи.</APM_CasketBandwidthAmplifier.description>
 
 	<!-- Древний командный саркофаг -->
@@ -115,7 +115,7 @@
   <APM_RepairStation_Small.description>Автоматическая станция для мелких и средних механоидов, постепенно ремонтирующая их со временем.</APM_RepairStation_Small.description>
 
   <!-- EN: Advanced mech repair station -->
-  <APM_RepairStation_Advanced.label>Продвинутая станция ремонта механойдов</APM_RepairStation_Advanced.label>
+  <APM_RepairStation_Advanced.label>Продвинутая станция ремонта механоидов</APM_RepairStation_Advanced.label>
   <!-- EN: Heavy repair station for large mechanoids healing them at high speed. -->
   <APM_RepairStation_Advanced.description>Тяжёлая ремонтная станция для крупных механоидов, чинящая их с высокой скоростью.</APM_RepairStation_Advanced.description>
 

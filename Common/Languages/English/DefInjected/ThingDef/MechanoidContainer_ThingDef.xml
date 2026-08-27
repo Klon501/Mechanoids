@@ -1,0 +1,124 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\MechanoidContainer.xml -->
+	<!--                              EN: ancient mechanoid stasis container -->
+	<APM_MechanoidContainer_Cluster.label>ancient mechanoid stasis container</APM_MechanoidContainer_Cluster.label>
+	<!--                                    EN: A heavy container equipped with autonomous activity-maintenance systems and archaic telemetry screens. Judging by the internal sensors, the mechanoid sealed inside was isolated from the hive mind immediately after its creation. The device is in deep preservation mode. Its mechanisms do not respond to external access codes, but the isolation saved the machine from forced deactivation. By breaking open this container, one can attempt to seize control of the forgotten mechanoid contained within. -->
+	<APM_MechanoidContainer_Cluster.description>A heavy container equipped with autonomous activity-maintenance systems and archaic telemetry screens. Judging by the internal sensors, the mechanoid sealed inside was isolated from the hive mind immediately after its creation. The device is in deep preservation mode. Its mechanisms do not respond to external access codes, but the isolation saved the machine from forced deactivation. By breaking open this container, one can attempt to seize control of the forgotten mechanoid contained within.</APM_MechanoidContainer_Cluster.description>
+	<!--                                                    EN: Hack -->
+	<APM_MechanoidContainer_Cluster.comps.0.activateLabelString>Hack</APM_MechanoidContainer_Cluster.comps.0.activateLabelString>
+	<!--                                                   EN: Will hack container to reprogram mechanoid inside. -->
+	<APM_MechanoidContainer_Cluster.comps.0.activateDescString>Will hack container to reprogram mechanoid inside.</APM_MechanoidContainer_Cluster.comps.0.activateDescString>
+	<!--                                               EN: Choose who should hack this. -->
+	<APM_MechanoidContainer_Cluster.comps.0.guiLabelString>Choose who should hack this.</APM_MechanoidContainer_Cluster.comps.0.guiLabelString>
+	<!--                                          EN: hack container -->
+	<APM_MechanoidContainer_Cluster.comps.0.jobString>hack container</APM_MechanoidContainer_Cluster.comps.0.jobString>
+	<!--                                                        EN: hacking {0} -->
+	<APM_MechanoidContainer_Cluster.comps.0.activatingStringPending>hacking {0}</APM_MechanoidContainer_Cluster.comps.0.activatingStringPending>
+	<!--                                                 EN: hacking {0}: {1}s -->
+	<APM_MechanoidContainer_Cluster.comps.0.activatingString>hacking {0}: {1}s</APM_MechanoidContainer_Cluster.comps.0.activatingString>
+	
+	<!--                             EN: mechanoid stasis container -->
+	<APM_MechanoidContainer_Player.label>mechanoid stasis container</APM_MechanoidContainer_Player.label>
+	<!--                                   EN: A specialized stasis container designed for the safe storage of mechanoids. Placing a mechanoid inside completely severs its active neural link with the mechanitor and puts its systems into deep suspended animation. In this state, the machine consumes no power and does not occupy the mechanitor's bandwidth, freeing up valuable network resources. The container allows you to keep an assault or worker squad in reserve, ready for deployment at a moment's notice without risking network overload. -->
+	<APM_MechanoidContainer_Player.description>A specialized stasis container designed for the safe storage of mechanoids. Placing a mechanoid inside completely severs its active neural link with the mechanitor and puts its systems into deep suspended animation. In this state, the machine consumes no power and does not occupy the mechanitor's bandwidth, freeing up valuable network resources. The container allows you to keep an assault or worker squad in reserve, ready for deployment at a moment's notice without risking network overload.</APM_MechanoidContainer_Player.description>
+	<!--                                                   EN: Extract -->
+	<APM_MechanoidContainer_Player.comps.2.activateLabelString>Extract</APM_MechanoidContainer_Player.comps.2.activateLabelString>
+	<!--                                                  EN: Extract mechanoid from stasis container. -->
+	<APM_MechanoidContainer_Player.comps.2.activateDescString>Extract mechanoid from stasis container.</APM_MechanoidContainer_Player.comps.2.activateDescString>
+	<!--                                              EN: Choose who should open this. -->
+	<APM_MechanoidContainer_Player.comps.2.guiLabelString>Choose who should open this.</APM_MechanoidContainer_Player.comps.2.guiLabelString>
+	<!--                                         EN: extract -->
+	<APM_MechanoidContainer_Player.comps.2.jobString>extract</APM_MechanoidContainer_Player.comps.2.jobString>
+	<!--                                                       EN: extracting from {0} -->
+	<APM_MechanoidContainer_Player.comps.2.activatingStringPending>extracting from {0}</APM_MechanoidContainer_Player.comps.2.activatingStringPending>
+	<!--                                                EN: extracting from {0}: {1}s -->
+	<APM_MechanoidContainer_Player.comps.2.activatingString>extracting from {0}: {1}s</APM_MechanoidContainer_Player.comps.2.activatingString>
+	<!--                                               EN: Choose mechanoid -->
+	<APM_MechanoidContainer_Player.comps.2.ChooseMechLabel>Choose mechanoid</APM_MechanoidContainer_Player.comps.2.ChooseMechLabel>
+	<!--                                              EN: Instruct mechanoid to enter stasis. -->
+	<APM_MechanoidContainer_Player.comps.2.ChooseMechDesc>Instruct mechanoid to enter stasis.</APM_MechanoidContainer_Player.comps.2.ChooseMechDesc>
+	
+	<!--                              EN: abandoned mechanoid stasis container -->
+	<APM_MechanoidContainer_Ancient.label>abandoned mechanoid stasis container</APM_MechanoidContainer_Ancient.label>
+	<!--                                    EN: A stasis container of human make, left running long enough that whoever built it is no longer around to say what is inside. The storage bay reads as occupied and the preservation cycle is still turning over on the last of its reserves. Breaking the seal will wake whatever is in there, and the neural link it once answered to is long dead, so a mechanitor should be able to claim it. -->
+	<APM_MechanoidContainer_Ancient.description>A stasis container of human make, left running long enough that whoever built it is no longer around to say what is inside. The storage bay reads as occupied and the preservation cycle is still turning over on the last of its reserves. Breaking the seal will wake whatever is in there, and the neural link it once answered to is long dead, so a mechanitor should be able to claim it.</APM_MechanoidContainer_Ancient.description>
+	<!--                                                    EN: Hack -->
+	<APM_MechanoidContainer_Ancient.comps.2.activateLabelString>Hack</APM_MechanoidContainer_Ancient.comps.2.activateLabelString>
+	<!--                                                   EN: Will hack container to reprogram mechanoid inside. -->
+	<APM_MechanoidContainer_Ancient.comps.2.activateDescString>Will hack container to reprogram mechanoid inside.</APM_MechanoidContainer_Ancient.comps.2.activateDescString>
+	<!--                                               EN: Choose who should hack this. -->
+	<APM_MechanoidContainer_Ancient.comps.2.guiLabelString>Choose who should hack this.</APM_MechanoidContainer_Ancient.comps.2.guiLabelString>
+	<!--                                          EN: hack container -->
+	<APM_MechanoidContainer_Ancient.comps.2.jobString>hack container</APM_MechanoidContainer_Ancient.comps.2.jobString>
+	<!--                                                        EN: hacking {0} -->
+	<APM_MechanoidContainer_Ancient.comps.2.activatingStringPending>hacking {0}</APM_MechanoidContainer_Ancient.comps.2.activatingStringPending>
+	<!--                                                 EN: hacking {0}: {1}s -->
+	<APM_MechanoidContainer_Ancient.comps.2.activatingString>hacking {0}: {1}s</APM_MechanoidContainer_Ancient.comps.2.activatingString>
+	<!--                                                EN: Choose mechanoid -->
+	<APM_MechanoidContainer_Ancient.comps.2.ChooseMechLabel>Choose mechanoid</APM_MechanoidContainer_Ancient.comps.2.ChooseMechLabel>
+	<!--                                               EN: Instruct mechanoid to enter stasis. -->
+	<APM_MechanoidContainer_Ancient.comps.2.ChooseMechDesc>Instruct mechanoid to enter stasis.</APM_MechanoidContainer_Ancient.comps.2.ChooseMechDesc>
+	
+	<!--                                    EN: sealed mechanoid stasis container -->
+	<APM_MechanoidContainer_Legacy_Lasher.label>sealed mechanoid stasis container</APM_MechanoidContainer_Legacy_Lasher.label>
+	<!--                                          EN: One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out. -->
+	<APM_MechanoidContainer_Legacy_Lasher.description>One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out.</APM_MechanoidContainer_Legacy_Lasher.description>
+	<!--                                                          EN: Hack -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.activateLabelString>Hack</APM_MechanoidContainer_Legacy_Lasher.comps.2.activateLabelString>
+	<!--                                                         EN: Will hack container to reprogram mechanoid inside. -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.activateDescString>Will hack container to reprogram mechanoid inside.</APM_MechanoidContainer_Legacy_Lasher.comps.2.activateDescString>
+	<!--                                                     EN: Choose who should hack this. -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.guiLabelString>Choose who should hack this.</APM_MechanoidContainer_Legacy_Lasher.comps.2.guiLabelString>
+	<!--                                                EN: hack container -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>hack container</APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>
+	<!--                                                              EN: hacking {0} -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.activatingStringPending>hacking {0}</APM_MechanoidContainer_Legacy_Lasher.comps.2.activatingStringPending>
+	<!--                                                       EN: hacking {0}: {1}s -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.activatingString>hacking {0}: {1}s</APM_MechanoidContainer_Legacy_Lasher.comps.2.activatingString>
+	<!--                                                      EN: Choose mechanoid -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.ChooseMechLabel>Choose mechanoid</APM_MechanoidContainer_Legacy_Lasher.comps.2.ChooseMechLabel>
+	<!--                                                     EN: Instruct mechanoid to enter stasis. -->
+	<APM_MechanoidContainer_Legacy_Lasher.comps.2.ChooseMechDesc>Instruct mechanoid to enter stasis.</APM_MechanoidContainer_Legacy_Lasher.comps.2.ChooseMechDesc>
+	
+	<!--                                    EN: sealed mechanoid stasis container -->
+	<APM_MechanoidContainer_Legacy_Vassal.label>sealed mechanoid stasis container</APM_MechanoidContainer_Legacy_Vassal.label>
+	<!--                                          EN: One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out. -->
+	<APM_MechanoidContainer_Legacy_Vassal.description>One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out.</APM_MechanoidContainer_Legacy_Vassal.description>
+	<!--                                                          EN: Hack -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.activateLabelString>Hack</APM_MechanoidContainer_Legacy_Vassal.comps.2.activateLabelString>
+	<!--                                                         EN: Will hack container to reprogram mechanoid inside. -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.activateDescString>Will hack container to reprogram mechanoid inside.</APM_MechanoidContainer_Legacy_Vassal.comps.2.activateDescString>
+	<!--                                                     EN: Choose who should hack this. -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.guiLabelString>Choose who should hack this.</APM_MechanoidContainer_Legacy_Vassal.comps.2.guiLabelString>
+	<!--                                                EN: hack container -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>hack container</APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>
+	<!--                                                              EN: hacking {0} -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.activatingStringPending>hacking {0}</APM_MechanoidContainer_Legacy_Vassal.comps.2.activatingStringPending>
+	<!--                                                       EN: hacking {0}: {1}s -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.activatingString>hacking {0}: {1}s</APM_MechanoidContainer_Legacy_Vassal.comps.2.activatingString>
+	<!--                                                      EN: Choose mechanoid -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.ChooseMechLabel>Choose mechanoid</APM_MechanoidContainer_Legacy_Vassal.comps.2.ChooseMechLabel>
+	<!--                                                     EN: Instruct mechanoid to enter stasis. -->
+	<APM_MechanoidContainer_Legacy_Vassal.comps.2.ChooseMechDesc>Instruct mechanoid to enter stasis.</APM_MechanoidContainer_Legacy_Vassal.comps.2.ChooseMechDesc>
+	
+	<!--                                    EN: sealed mechanoid stasis container -->
+	<APM_MechanoidContainer_Legacy_Tinker.label>sealed mechanoid stasis container</APM_MechanoidContainer_Legacy_Tinker.label>
+	<!--                                          EN: One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out. -->
+	<APM_MechanoidContainer_Legacy_Tinker.description>One of the stasis containers of the domain's own garrison, still sealed and still turning over its preservation cycle on the last of the reserves. The mechanitor who filled it is long dead and the neural link it answered to died with him, so whoever breaks the seal can claim what steps out.</APM_MechanoidContainer_Legacy_Tinker.description>
+	<!--                                                          EN: Hack -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.activateLabelString>Hack</APM_MechanoidContainer_Legacy_Tinker.comps.2.activateLabelString>
+	<!--                                                         EN: Will hack container to reprogram mechanoid inside. -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.activateDescString>Will hack container to reprogram mechanoid inside.</APM_MechanoidContainer_Legacy_Tinker.comps.2.activateDescString>
+	<!--                                                     EN: Choose who should hack this. -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.guiLabelString>Choose who should hack this.</APM_MechanoidContainer_Legacy_Tinker.comps.2.guiLabelString>
+	<!--                                                EN: hack container -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>hack container</APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>
+	<!--                                                              EN: hacking {0} -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.activatingStringPending>hacking {0}</APM_MechanoidContainer_Legacy_Tinker.comps.2.activatingStringPending>
+	<!--                                                       EN: hacking {0}: {1}s -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.activatingString>hacking {0}: {1}s</APM_MechanoidContainer_Legacy_Tinker.comps.2.activatingString>
+	<!--                                                      EN: Choose mechanoid -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.ChooseMechLabel>Choose mechanoid</APM_MechanoidContainer_Legacy_Tinker.comps.2.ChooseMechLabel>
+	<!--                                                     EN: Instruct mechanoid to enter stasis. -->
+	<APM_MechanoidContainer_Legacy_Tinker.comps.2.ChooseMechDesc>Instruct mechanoid to enter stasis.</APM_MechanoidContainer_Legacy_Tinker.comps.2.ChooseMechDesc>
+</LanguageData>

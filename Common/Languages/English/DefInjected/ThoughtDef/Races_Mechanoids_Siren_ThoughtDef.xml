@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Siren.xml -->
+	
+	<!--                              EN: Siren's song -->
+	<APM_Thought_SirenSong.stages.0.label>Siren's song</APM_Thought_SirenSong.stages.0.label>
+	<!--                                    EN: The Siren's impossible melody still echoes in your head, washing away stress for a while. -->
+	<APM_Thought_SirenSong.stages.0.description>The Siren's impossible melody still echoes in your head, washing away stress for a while.</APM_Thought_SirenSong.stages.0.description>
+</LanguageData>

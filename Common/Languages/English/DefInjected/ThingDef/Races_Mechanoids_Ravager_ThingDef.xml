@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Ravager.xml -->
+	<!--                EN: Ravager -->
+	<APM_Mech_Ravager.label>Ravager</APM_Mech_Ravager.label>
+	<!--                      EN: The dreaded auto mortar was not enough to sate the mechanoids’ hunger for destruction. Their solution? The ravager, a mobile artillery emplacement. Able to charge excess energy in its reserve power cells, it can temporarily overcharge its cannon and launch a shell that splits into three destructive blasts while still in flight. -->
+	<APM_Mech_Ravager.description>The dreaded auto mortar was not enough to sate the mechanoids’ hunger for destruction. Their solution? The ravager, a mobile artillery emplacement. Able to charge excess energy in its reserve power cells, it can temporarily overcharge its cannon and launch a shell that splits into three destructive blasts while still in flight.</APM_Mech_Ravager.description>
+	<!--                        EN: голова -->
+	<APM_Mech_Ravager.tools.0.label>голова</APM_Mech_Ravager.tools.0.label>
+</LanguageData>
