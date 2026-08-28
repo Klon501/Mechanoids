@@ -73,6 +73,20 @@
 							<repairSearchRadius>18</repairSearchRadius>
 							<repairTargetMinEnemyDistance>8</repairTargetMinEnemyDistance>
 							<maxRepositionDistance>12</maxRepositionDistance>
+							<shieldAimedAtScore>2500</shieldAimedAtScore>
+							<shieldRecentlyAttackedScore>1500</shieldRecentlyAttackedScore>
+							<shieldRecentHarmScore>1000</shieldRecentHarmScore>
+							<shieldMissingHealthScore>900</shieldMissingHealthScore>
+							<shieldMeleeAllyScore>1000</shieldMeleeAllyScore>
+							<shieldLockScore>400</shieldLockScore>
+							<shieldNoThreatFactor>0.35</shieldNoThreatFactor>
+							<shieldWeight>1</shieldWeight>
+							<repairMissingHealthScore>1200</repairMissingHealthScore>
+							<repairDownedScore>900</repairDownedScore>
+							<repairValueFactor>0.5</repairValueFactor>
+							<repairMaxSafetyScore>300</repairMaxSafetyScore>
+							<repairMinScore>200</repairMinScore>
+							<repairWeight>1</repairWeight>
 						</li>
 					</subNodes>
 				</li>
@@ -108,10 +122,6 @@
 										<li Class="ThinkNode_ConditionalWorkMech">
 											<invert>true</invert>
 											<subNodes>
-												<li Class="ApexMechanoids.JobGiver_AITinkerCombat">
-													<targetAcquireRadius>30</targetAcquireRadius>
-													<targetKeepRadius>35</targetKeepRadius>
-												</li>
 												<li Class="ThinkNode_Tagger">
 													<tagToGive>MiscWork</tagToGive>
 													<subNodes>

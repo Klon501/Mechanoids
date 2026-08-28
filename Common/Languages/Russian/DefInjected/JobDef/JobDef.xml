@@ -61,6 +61,9 @@
   <!-- APM_RavagerArtilleryAttack.reportString -->
   <APM_RavagerArtilleryAttack.reportString>ведёт артиллерийский огонь по TargetA.</APM_RavagerArtilleryAttack.reportString>
 
+  <!-- APM_RepairMech.reportString -->
+  <APM_RepairMech.reportString>ремонтирует TargetA.</APM_RepairMech.reportString>
+
   <!-- APM_SirenChatWithPrisoner.reportString -->
   <APM_SirenChatWithPrisoner.reportString>поёт для TargetA.</APM_SirenChatWithPrisoner.reportString>
 

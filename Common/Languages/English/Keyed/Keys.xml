@@ -162,4 +162,7 @@
   <APM_ToxicPurifier_Mode_WastepacksOverGround>Wastepacks over ground</APM_ToxicPurifier_Mode_WastepacksOverGround>
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Ground over wastepacks</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
+  <!-- Tinker -->
+  <APM.Tinker.Order.Repair>Repair {0}</APM.Tinker.Order.Repair>
+
 </LanguageData>

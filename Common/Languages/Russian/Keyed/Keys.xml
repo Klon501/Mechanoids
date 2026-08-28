@@ -313,4 +313,7 @@
   <APM.MechanoidContainer.ForcedOpen>{0} вскрыл(а) {1} насильно, не имея пропускной способности, чтобы удержать то, что было внутри. {2} вырвался на свободу и не подчиняется никому, пока механитор не возьмёт его под контроль.</APM.MechanoidContainer.ForcedOpen>
 
   <APM_UnityTooltip_Current>Текущие статы (с каналом единства):</APM_UnityTooltip_Current>
+
+  <!-- EN: Repair {0} -->
+  <APM.Tinker.Order.Repair>Ремонтировать {0}</APM.Tinker.Order.Repair>
 </LanguageData>
