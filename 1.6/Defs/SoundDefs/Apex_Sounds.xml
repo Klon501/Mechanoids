@@ -110,7 +110,7 @@
 				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>pre_UltSacrWarmUp_01</clipPath>
+						<clipPath>UltSacrWarmUp</clipPath>
 					</li>
 				</grains>
 				<pitchRange>0.99~1.01</pitchRange>
