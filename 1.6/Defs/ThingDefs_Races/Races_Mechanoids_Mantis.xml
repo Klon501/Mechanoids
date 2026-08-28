@@ -33,7 +33,7 @@
 			<body>APM_Mantis</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>2.82</baseHealthScale>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_DashMechanoid</thinkTreeMain>
 			<intelligence>ToolUser</intelligence>
 			<mechWeightClass>Heavy</mechWeightClass>
 			<hediffGiverSets>
