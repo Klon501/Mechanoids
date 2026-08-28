@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <APM_AegisShield.label>shield</APM_AegisShield.label>
+
+  <APM_BroadcastArray.label>broadcast array</APM_BroadcastArray.label>
+
+  <APM_DynamoBody.label>body</APM_DynamoBody.label>
+
+  <APM_DynamoReactor.label>power core</APM_DynamoReactor.label>
+
+  <APM_FrostivusBody.label>body</APM_FrostivusBody.label>
+
+  <APM_FrostivusCryo.label>cryo chamber</APM_FrostivusCryo.label>
+
+  <APM_GazerCoolingSystem.label>cooling system</APM_GazerCoolingSystem.label>
+
+  <APM_GazerHead.label>head</APM_GazerHead.label>
+
+  <APM_GazerLaserFocus.label>laser focus</APM_GazerLaserFocus.label>
+
+  <APM_GazerPaw.label>leg</APM_GazerPaw.label>
+
+  <APM_GazerThorax.label>thorax</APM_GazerThorax.label>
+
+  <APM_HazeBody.label>body</APM_HazeBody.label>
+
+  <APM_HazeGasVent.label>gas vent</APM_HazeGasVent.label>
+
+  <APM_IngestorBody.label>body</APM_IngestorBody.label>
+
+  <APM_IngestorMaw.label>maw</APM_IngestorMaw.label>
+
+  <APM_IngestorRefinery.label>organic refinery</APM_IngestorRefinery.label>
+
+  <APM_JavelinBody.label>body</APM_JavelinBody.label>
+
+  <APM_JavelinHead.label>head</APM_JavelinHead.label>
+
+  <APM_JavelinRefinery.label>organic refinery</APM_JavelinRefinery.label>
+
+  <APM_MantisBlade.label>cutting claw</APM_MantisBlade.label>
+
+  <APM_MantisBody.label>body</APM_MantisBody.label>
+
+  <APM_PsychicResonator.label>psychic resonator</APM_PsychicResonator.label>
+
+  <APM_RavagerBody.label>body</APM_RavagerBody.label>
+
+  <APM_SatelliteHoverPack.label>hover pack</APM_SatelliteHoverPack.label>
+
+  <APM_SirenHead.label>resonance crown</APM_SirenHead.label>
+
+  <APM_SirenResonanceCore.label>resonance core</APM_SirenResonanceCore.label>
+
+  <APM_TinkerRepairModule.label>repair module</APM_TinkerRepairModule.label>
+
+  <APM_VocalSynthesizer.label>vocal synthesizer</APM_VocalSynthesizer.label>
+
+  <APM_LeftAegisShield.label>left shield</APM_LeftAegisShield.label>
+
+  <APM_LeftMantisBlade.label>left cutting claw</APM_LeftMantisBlade.label>
+
+  <APM_RightAegisShield.label>right shield</APM_RightAegisShield.label>
+
+  <APM_RightMantisBlade.label>right cutting claw</APM_RightMantisBlade.label>
+
+</LanguageData>

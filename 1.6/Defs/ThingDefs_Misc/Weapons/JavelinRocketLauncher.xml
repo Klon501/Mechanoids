@@ -157,7 +157,7 @@
 			<li Class="ApexMechanoids.DefModExtension_JavelinMissile">
 				<!-- 3 deg/tick at 15 tiles/s gives a turn radius of 4.77 tiles, which is what closes the
 				     gap between minRange and the range the missile can actually come back round in. -->
-				<turnDegreesPerTick>3</turnDegreesPerTick>
+				<turnDegreesPerTick>2</turnDegreesPerTick>
 				<!-- 22 ticks of straight boost, 5.5 tiles, before the seeker takes over. This is the
 				     hard floor under minRange: no turn rate brings the mech's reach below about 6.5
 				     tiles while the missile leaves the tube blind for this long. -->
@@ -251,7 +251,7 @@
 		<defName>APM_Proj_JavelinMissile_HighExplosive</defName>
 		<label>javelin high-explosive missile</label>
 		<graphicData>
-			<color>(0.95, 0.8, 0.35)</color>
+			<color>(0.42, 0.84, 1.08)</color>
 		</graphicData>
 		<projectile>
 			<!-- Vanilla Bomb on purpose, unlike the basic rocket: its fragmentation across several

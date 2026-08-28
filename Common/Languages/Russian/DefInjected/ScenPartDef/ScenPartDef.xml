@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<!-- 1.6\Defs\ScenarioDefs\ScenParts_ApexMechanoids.xml -->
-	<!--                        EN: ancient corpses -->
-	<APM_SpawnScenarioCorpses.label>древние трупы</APM_SpawnScenarioCorpses.label>
-	<!--                        EN: solid ground under the domain -->
-	<APM_PrepareStructureSite.label>твёрдая земля под строением</APM_PrepareStructureSite.label>
-	<!--                      EN: picked over supplies -->
-	<APM_LimitStructureLoot.label>ограниченные припасы</APM_LimitStructureLoot.label>
-	<!--                       EN: start on your pawns -->
-	<APM_CameraOnPlayerStart.label>начать у своих подопечных</APM_CameraOnPlayerStart.label>
-	<!--                EN: start with mechanoid -->
-	<APM_StartingMech.label>начать с механоидами</APM_StartingMech.label>
+
+  <APM_CameraOnPlayerStart.label>начать у своих подопечных</APM_CameraOnPlayerStart.label>
+
+  <APM_LimitStructureLoot.label>перебранные припасы</APM_LimitStructureLoot.label>
+
+  <APM_PrepareStructureSite.label>твёрдая земля под владением</APM_PrepareStructureSite.label>
+
+
+  <!-- EN: ancient corpses -->
+  <APM_SpawnScenarioCorpses.label>древние трупы</APM_SpawnScenarioCorpses.label>
+
 </LanguageData>

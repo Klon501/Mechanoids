@@ -26,10 +26,6 @@
 	<APM_SirenDeliverFoodToPrisoner.label>доставить еду заключенным</APM_SirenDeliverFoodToPrisoner.label>
 	<APM_SirenChatWithPrisoner.label>поговорить с заключенными</APM_SirenChatWithPrisoner.label>
 
-
-  <!-- EN: carry to mech command casket -->
-  <APM_HaulToMechCommandCasket.label>отнести в командную капсулу</APM_HaulToMechCommandCasket.label>
-
   <!-- EN: processing -->
   <APM_IngestorProcessCorpses.gerund>переработка</APM_IngestorProcessCorpses.gerund>
 
@@ -137,5 +133,13 @@
 
   <!-- EN: repair -->
   <APM_TinkerRepairMech.verb>ремонтировать</APM_TinkerRepairMech.verb>
+
+	<!-- 1.6\Defs\JobDefs\MechCommandCasket.xml -->
+	<!--                           EN: carry to mech command casket -->
+	<APM_HaulToMechCommandCasket.label>отнести в командный саркофаг</APM_HaulToMechCommandCasket.label>
+	<!--                          EN: fill -->
+	<APM_HaulToMechCommandCasket.verb>заполнить</APM_HaulToMechCommandCasket.verb>
+	<!--                            EN: filling -->
+	<APM_HaulToMechCommandCasket.gerund>заполнение</APM_HaulToMechCommandCasket.gerund>
 
 </LanguageData>

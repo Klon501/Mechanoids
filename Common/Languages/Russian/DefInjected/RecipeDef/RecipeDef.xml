@@ -151,11 +151,11 @@
 
   <!-- APM_Weapon_Skipblade -->
   <!-- EN: make skipblade -->
-  <APM_Weapon_Skipblade.label>сделать скачковый клинок</APM_Weapon_Skipblade.label>
+  <APM_Weapon_Skipblade.label>сделать вспышку меч</APM_Weapon_Skipblade.label>
   <!-- EN: Make a skipblade. -->
-  <APM_Weapon_Skipblade.description>Создать скачковый клинок.</APM_Weapon_Skipblade.description>
+  <APM_Weapon_Skipblade.description>Создать вспышку меч.</APM_Weapon_Skipblade.description>
   <!-- EN: Making skipblade. -->
-  <APM_Weapon_Skipblade.jobString>Создание скачкового клинка.</APM_Weapon_Skipblade.jobString>
+  <APM_Weapon_Skipblade.jobString>Создание вспышки меча.</APM_Weapon_Skipblade.jobString>
 
   <!-- APM_Weapon_PlasmaWhip -->
   <!-- EN: make plasma whip -->
