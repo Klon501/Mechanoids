@@ -162,4 +162,8 @@
   <APM_ToxicPurifier_Mode_WastepacksOverGround>Wastepacks over ground</APM_ToxicPurifier_Mode_WastepacksOverGround>
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Ground over wastepacks</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
+  <!-- Stat factors from health (dynamically generated hediffs) -->
+  <APM.StatFactorFromHealth.Label>{STAT} from low health</APM.StatFactorFromHealth.Label>
+  <APM.StatFactorFromHealth.Description>This mechanoid's {STAT} is affected by its health condition.</APM.StatFactorFromHealth.Description>
+
 </LanguageData>
