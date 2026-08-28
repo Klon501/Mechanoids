@@ -316,4 +316,73 @@
 
   <!-- EN: Repair {0} -->
   <APM.Tinker.Order.Repair>Ремонтировать {0}</APM.Tinker.Order.Repair>
+
+  <!-- EN: Sun Ray -->
+  <APM.GazerEmplacement.SunRay.Label>Солнечный луч</APM.GazerEmplacement.SunRay.Label>
+
+  <!-- EN: Order the emplacement to project a Sun Ray inside its fixed frontal sector. -->
+  <APM.GazerEmplacement.SunRay.Desc>Приказать установке выпустить солнечный луч в её фиксированном фронтальном секторе.</APM.GazerEmplacement.SunRay.Desc>
+
+  <!-- EN: Stop forced target -->
+  <APM.GazerEmplacement.StopForcedTarget.Label>Отменить цель</APM.GazerEmplacement.StopForcedTarget.Label>
+
+  <!-- EN: Clear the current forced target. -->
+  <APM.GazerEmplacement.StopForcedTarget.Desc>Сбросить текущую назначенную цель.</APM.GazerEmplacement.StopForcedTarget.Desc>
+
+  <!-- EN: Status: Firing Sun Ray -->
+  <APM.GazerEmplacement.Status.Firing>Состояние: бьёт солнечным лучом</APM.GazerEmplacement.Status.Firing>
+
+  <!-- EN: Status: Charging -->
+  <APM.GazerEmplacement.Status.Charging>Состояние: заряжается</APM.GazerEmplacement.Status.Charging>
+
+  <!-- EN: Status: Cooling down -->
+  <APM.GazerEmplacement.Status.CoolingDown>Состояние: остывает</APM.GazerEmplacement.Status.CoolingDown>
+
+  <!-- EN: Status: Ready -->
+  <APM.GazerEmplacement.Status.Ready>Состояние: готова</APM.GazerEmplacement.Status.Ready>
+
+  <!-- EN: Forced target: -->
+  <APM.GazerEmplacement.ForcedTarget>Назначенная цель: </APM.GazerEmplacement.ForcedTarget>
+
+  <!-- EN: Auto target: -->
+  <APM.GazerEmplacement.AutoTarget>Автоцель: </APM.GazerEmplacement.AutoTarget>
+
+  <!-- EN: none -->
+  <APM.GazerEmplacement.Target.None>нет</APM.GazerEmplacement.Target.None>
+
+  <!-- EN: Not spawned. -->
+  <APM.GazerEmplacement.Fail.NotSpawned>Не размещена.</APM.GazerEmplacement.Fail.NotSpawned>
+
+  <!-- EN: Sun Ray definition is missing. -->
+  <APM.GazerEmplacement.Fail.MissingDefinition>Отсутствует описание солнечного луча.</APM.GazerEmplacement.Fail.MissingDefinition>
+
+  <!-- EN: Broken down. -->
+  <APM.GazerEmplacement.Fail.BrokenDown>Сломана.</APM.GazerEmplacement.Fail.BrokenDown>
+
+  <!-- EN: Turned off. -->
+  <APM.GazerEmplacement.Fail.TurnedOff>Выключена.</APM.GazerEmplacement.Fail.TurnedOff>
+
+  <!-- EN: No power. -->
+  <APM.GazerEmplacement.Fail.NoPower>Нет энергии.</APM.GazerEmplacement.Fail.NoPower>
+
+  <!-- EN: Needs an operator. -->
+  <APM.GazerEmplacement.Fail.NeedsOperator>Нужен оператор.</APM.GazerEmplacement.Fail.NeedsOperator>
+
+  <!-- EN: Choose a target cell. -->
+  <APM.GazerEmplacement.Fail.NoTargetCell>Выберите клетку цели.</APM.GazerEmplacement.Fail.NoTargetCell>
+
+  <!-- EN: Target is gone. -->
+  <APM.GazerEmplacement.Fail.TargetGone>Цель исчезла.</APM.GazerEmplacement.Fail.TargetGone>
+
+  <!-- EN: Target is out of bounds. -->
+  <APM.GazerEmplacement.Fail.TargetOutOfBounds>Цель за пределами карты.</APM.GazerEmplacement.Fail.TargetOutOfBounds>
+
+  <!-- EN: Target is too close. -->
+  <APM.GazerEmplacement.Fail.TargetTooClose>Цель слишком близко.</APM.GazerEmplacement.Fail.TargetTooClose>
+
+  <!-- EN: Target is out of range. -->
+  <APM.GazerEmplacement.Fail.TargetOutOfRange>Цель вне дальности.</APM.GazerEmplacement.Fail.TargetOutOfRange>
+
+  <!-- EN: Target is outside the firing sector. -->
+  <APM.GazerEmplacement.Fail.TargetOutsideArc>Цель вне сектора обстрела.</APM.GazerEmplacement.Fail.TargetOutsideArc>
 </LanguageData>

@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -337,8 +337,8 @@ namespace ApexMechanoids
             Verb_GazerEmplacementBeam beamVerb = BeamCommandVerb;
             Command_GazerEmplacementVerbTarget command = new Command_GazerEmplacementVerbTarget
             {
-                defaultLabel = beamVerb != null && !beamVerb.ReportLabel.NullOrEmpty() ? beamVerb.ReportLabel.CapitalizeFirst() : "Sun Ray",
-                defaultDesc = "Order the emplacement to project a Sun Ray inside its fixed frontal sector.",
+                defaultLabel = beamVerb != null && !beamVerb.ReportLabel.NullOrEmpty() ? beamVerb.ReportLabel.CapitalizeFirst() : "APM.GazerEmplacement.SunRay.Label".Translate().ToString(),
+                defaultDesc = "APM.GazerEmplacement.SunRay.Desc".Translate(),
                 icon = SunRayCommandIcon,
                 verb = beamVerb,
                 drawRadius = false,
@@ -349,7 +349,7 @@ namespace ApexMechanoids
             string reason;
             if (beamVerb == null)
             {
-                command.Disable("Sun Ray definition is missing.");
+                command.Disable("APM.GazerEmplacement.Fail.MissingDefinition".Translate());
             }
             else if (!CanUseVerb(out reason))
             {
@@ -362,8 +362,8 @@ namespace ApexMechanoids
             {
                 yield return new Command_Action
                 {
-                    defaultLabel = "Stop forced target",
-                    defaultDesc = "Clear the current forced target.",
+                    defaultLabel = "APM.GazerEmplacement.StopForcedTarget.Label".Translate(),
+                    defaultDesc = "APM.GazerEmplacement.StopForcedTarget.Desc".Translate(),
                     icon = CancelCommandIcon,
                     action = delegate
                     {
@@ -402,24 +402,24 @@ namespace ApexMechanoids
 
             if (firing)
             {
-                sb.AppendLine("Status: Firing Sun Ray");
+                sb.AppendLine("APM.GazerEmplacement.Status.Firing".Translate());
             }
             else if (warmupTicksLeft > 0)
             {
-                sb.AppendLine("Status: Charging");
+                sb.AppendLine("APM.GazerEmplacement.Status.Charging".Translate());
             }
             else if (cooldownTicksLeft > 0)
             {
-                sb.AppendLine("Status: Cooling down");
+                sb.AppendLine("APM.GazerEmplacement.Status.CoolingDown".Translate());
             }
             else
             {
-                sb.AppendLine("Status: Ready");
+                sb.AppendLine("APM.GazerEmplacement.Status.Ready".Translate());
             }
 
             if (forcedTarget.IsValid)
             {
-                sb.Append(forcedTargetIsPlayerDesignated ? "Forced target: " : "Auto target: ");
+                sb.Append(forcedTargetIsPlayerDesignated ? "APM.GazerEmplacement.ForcedTarget".Translate().ToString() : "APM.GazerEmplacement.AutoTarget".Translate().ToString());
                 sb.Append(TargetLabel(forcedTarget));
             }
 
@@ -461,37 +461,37 @@ namespace ApexMechanoids
         {
             if (!Spawned)
             {
-                failReason = "Not spawned.";
+                failReason = "APM.GazerEmplacement.Fail.NotSpawned".Translate();
                 return false;
             }
 
             if (BeamProps == null)
             {
-                failReason = "Sun Ray definition is missing.";
+                failReason = "APM.GazerEmplacement.Fail.MissingDefinition".Translate();
                 return false;
             }
 
             if (breakdownableComp != null && breakdownableComp.BrokenDown)
             {
-                failReason = "Broken down.";
+                failReason = "APM.GazerEmplacement.Fail.BrokenDown".Translate();
                 return false;
             }
 
             if (flickableComp != null && !flickableComp.SwitchIsOn)
             {
-                failReason = "Turned off.";
+                failReason = "APM.GazerEmplacement.Fail.TurnedOff".Translate();
                 return false;
             }
 
             if (powerComp != null && !powerComp.PowerOn)
             {
-                failReason = "No power.";
+                failReason = "APM.GazerEmplacement.Fail.NoPower".Translate();
                 return false;
             }
 
             if (mannableComp != null && !mannableComp.MannedNow)
             {
-                failReason = "Needs an operator.";
+                failReason = "APM.GazerEmplacement.Fail.NeedsOperator".Translate();
                 return false;
             }
 
@@ -503,26 +503,26 @@ namespace ApexMechanoids
         {
             if (BeamProps == null)
             {
-                failReason = "Sun Ray definition is missing.";
+                failReason = "APM.GazerEmplacement.Fail.MissingDefinition".Translate();
                 return false;
             }
 
             if (!target.IsValid)
             {
-                failReason = "Choose a target cell.";
+                failReason = "APM.GazerEmplacement.Fail.NoTargetCell".Translate();
                 return false;
             }
 
             if (target.HasThing && IsTargetDestroyed(target))
             {
-                failReason = "Target is gone.";
+                failReason = "APM.GazerEmplacement.Fail.TargetGone".Translate();
                 return false;
             }
 
             IntVec3 cell = target.Cell;
             if (!cell.InBounds(Map))
             {
-                failReason = "Target is out of bounds.";
+                failReason = "APM.GazerEmplacement.Fail.TargetOutOfBounds".Translate();
                 return false;
             }
 
@@ -530,19 +530,19 @@ namespace ApexMechanoids
             float distance = (targetCenter - BeamOriginWorld).MagnitudeHorizontal();
             if (distance < MinRange)
             {
-                failReason = "Target is too close.";
+                failReason = "APM.GazerEmplacement.Fail.TargetTooClose".Translate();
                 return false;
             }
 
             if (distance > Range)
             {
-                failReason = "Target is out of range.";
+                failReason = "APM.GazerEmplacement.Fail.TargetOutOfRange".Translate();
                 return false;
             }
 
             if (!IsInsideFiringArc(targetCenter))
             {
-                failReason = "Target is outside the firing sector.";
+                failReason = "APM.GazerEmplacement.Fail.TargetOutsideArc".Translate();
                 return false;
             }
 
@@ -648,7 +648,7 @@ namespace ApexMechanoids
             {
                 verbClass = typeof(Verb_GazerEmplacementBeam),
                 hasStandardCommand = true,
-                label = "Sun Ray",
+                label = "APM.GazerEmplacement.SunRay.Label".Translate(),
                 range = Range,
                 minRange = MinRange,
                 targetParams = new TargetingParameters
@@ -1428,7 +1428,7 @@ namespace ApexMechanoids
         {
             if (!target.IsValid)
             {
-                return "none";
+                return "APM.GazerEmplacement.Target.None".Translate();
             }
 
             if (target.HasThing && target.Thing != null)
