@@ -326,6 +326,8 @@ namespace ApexMechanoids
 
         #endregion
 
+        #region Boost
+
         public bool IsBoosted
         {
             get
@@ -350,7 +352,7 @@ namespace ApexMechanoids
             }
         }
 
-
+        #endregion
 
         public override void CompTickInterval(int delta)
         {
@@ -426,16 +428,28 @@ namespace ApexMechanoids
             {
                 actionTick += (1 * delta);
 
+                if (!curLocalTargetInfo.IsValid)
+                {
+                    ForceSetTargetThing(curTarget);     // curLocalTargetInfo is not saved, this ensures that we still have it when loading a save while doing an action
+                }
                 if (IsBusy != (int)MechCasketAction.idle)
                 {
                     if (IsBusy == (int)MechCasketAction.connecting)
                     {
-                        if (!curLocalTargetInfo.Pawn.Dead && curLocalTargetInfo.Pawn.Map == parent.Map)
+                        if (!curTargetPawn.Dead && curTargetPawn.Map == parent.Map)
                         {
-                            PawnUtility.ForceWait(curLocalTargetInfo.Pawn, 5, null, maintainPosture: true, maintainSleep: true);
-                            // in tick so that mech can move again if it gets canceled
+                            if(StartedToConnect)
+                            {
+                                curTargetPawn.jobs.StopAll();
+                                PawnUtility.ForceWait(curTargetPawn, ticksToTakeControl, null, maintainPosture: true, maintainSleep: true);
+                                StartedToConnect = false;
+                            }
                         }
-
+                        else
+                        {
+                            EndAction();
+                            return;
+                        }
                         if (connectEffecter == null)
                         {
                             EffecterDef progressBar = EffecterDefOf.ProgressBar;
@@ -443,25 +457,23 @@ namespace ApexMechanoids
                         }
                         if (connectEffecter != null)
                         {
-                            TargetInfo infoMech = new TargetInfo(thing: curLocalTargetInfo.Pawn);
+                            TargetInfo infoMech = new TargetInfo(thing: curTargetPawn);
 
                             connectEffecter.EffectTick(infoMech, TargetInfo.Invalid);
                         }
-
-                        if(connectMote == null)
+                        if (connectMote == null)
                         {
                             connectMote = ((SubEffecter_ProgressBar)connectEffecter.children[0]).mote;
                         }
-                        
                         if (connectMote != null)
                         {
                             connectMote.progress = Mathf.Clamp01(1f / ticksToTakeControl * actionTick) ;
                             connectMote.offsetZ = -0.5f;
                             connectMote.alwaysShow = true;
                         }
-
                         if (actionTick >= ticksToTakeControl)
                         {
+                            
                             Connect(curLocalTargetInfo, User);
                             EndAction();
                         }
@@ -637,7 +649,9 @@ namespace ApexMechanoids
             Scribe_Values.Look(ref ticksToDisconnect, "ticksToDisconnect");
             Scribe_Values.Look(ref actionTick, "actionTick");
             Scribe_Values.Look(ref TicksForShieldcooldown, "TicksForShieldcooldown");
+            Scribe_Values.Look(ref StartedToConnect, "StartedToConnect");
             Scribe_Collections.Look(ref QuedActions, "QuedActions", LookMode.Value);
+
         }
 
         
@@ -688,6 +702,12 @@ namespace ApexMechanoids
         {
             curLocalTargetInfo = target;
             curTarget = curLocalTargetInfo.Pawn;
+        }
+
+        public void ForceSetTargetThing(Thing thing)
+        {
+            curLocalTargetInfo = new LocalTargetInfo(thing);
+            curTarget = curLocalTargetInfo.Thing;
         }
 
         public void ForceSetTargetThing(Thing thing, out LocalTargetInfo target)
@@ -747,11 +767,16 @@ namespace ApexMechanoids
 
         public void EndAction()
         {
+            if (curTarget is Pawn && curTargetPawn?.CurJobDef == JobDefOf.Wait_MaintainPosture || curTargetPawn?.CurJobDef == JobDefOf.Wait)
+            {
+                curTargetPawn.jobs.StopAll();
+            }
             actionTick = 0;
             DestroyMechShield();
             IsBusy = (int)MechCasketAction.idle;
             ResetTarget();
             ResetAllEffecter();
+            StartedToConnect = false;
         }
 
         public void EndActionWithSound()
@@ -804,6 +829,8 @@ namespace ApexMechanoids
             return false;
         }
 
+        private bool StartedToConnect = false;
+
         public void StartToConnect(LocalTargetInfo target)
         {
             UpdateTargetPawn(target);
@@ -812,6 +839,7 @@ namespace ApexMechanoids
             PawnUtility.ForceWait(target.Pawn, ticksToTakeControl, null, maintainPosture: true, maintainSleep: true);
             StartAction();
             IsBusy = (int)MechCasketAction.connecting;
+            StartedToConnect = true;
         }
 
         private void Connect(LocalTargetInfo target, Pawn overseer)
