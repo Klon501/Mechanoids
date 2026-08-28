@@ -98,6 +98,26 @@
 		</subSounds>
 	</SoundDef>
 
+	<!--    CONQUEROR-->
+	<SoundDef>
+		<defName>ConquerorSacr_WarmUp</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>pre_UltSacrWarmUp_01</clipPath>
+					</li>
+				</grains>
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<SoundDef>
 		<defName>APM_UltimateSacrifice</defName>
 		<context>MapOnly</context>
@@ -663,4 +683,60 @@
             </li>
         </subSounds>
     </SoundDef>
+
+	<!--    JAVELIN	-->
+	<SoundDef>
+		<defName>Jvln_Launch</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Jvln_launch</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>60.58823~60.58823</volumeRange>
+				<pitchRange>0.9082352~1.091765</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Jvln_Missile_Ambient</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>JvlnMissile_Ambient</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>13.17392~13.17392</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainAttack>0.1</sustainAttack>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Jvln_Missile_Explode</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>JvlnMissile_Explode</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>80~80</volumeRange>
+				<pitchRange>0.8516304~1.254348</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

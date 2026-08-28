@@ -293,6 +293,7 @@
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
+			<soundAiming>ConquerorSacr_WarmUp</soundAiming>
 		</verbProperties>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_ConquerorSacrificeGiveHediff">
