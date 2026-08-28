@@ -162,8 +162,34 @@
   <APM_ToxicPurifier_Mode_WastepacksOverGround>Wastepacks over ground</APM_ToxicPurifier_Mode_WastepacksOverGround>
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Ground over wastepacks</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
-  <!-- Stat factors from health (dynamically generated hediffs) -->
+  <!-- Tinker -->
+  <APM.Tinker.Order.Repair>Repair {0}</APM.Tinker.Order.Repair>
+
+  <!-- Gazer emplacement -->
+  <APM.GazerEmplacement.SunRay.Label>Sun Ray</APM.GazerEmplacement.SunRay.Label>
+  <APM.GazerEmplacement.SunRay.Desc>Order the emplacement to project a Sun Ray inside its fixed frontal sector.</APM.GazerEmplacement.SunRay.Desc>
+  <APM.GazerEmplacement.StopForcedTarget.Label>Stop forced target</APM.GazerEmplacement.StopForcedTarget.Label>
+  <APM.GazerEmplacement.StopForcedTarget.Desc>Clear the current forced target.</APM.GazerEmplacement.StopForcedTarget.Desc>
+  <APM.GazerEmplacement.Status.Firing>Status: Firing Sun Ray</APM.GazerEmplacement.Status.Firing>
+  <APM.GazerEmplacement.Status.Charging>Status: Charging</APM.GazerEmplacement.Status.Charging>
+  <APM.GazerEmplacement.Status.CoolingDown>Status: Cooling down</APM.GazerEmplacement.Status.CoolingDown>
+  <APM.GazerEmplacement.Status.Ready>Status: Ready</APM.GazerEmplacement.Status.Ready>
+  <APM.GazerEmplacement.ForcedTarget>Forced target: </APM.GazerEmplacement.ForcedTarget>
+  <APM.GazerEmplacement.AutoTarget>Auto target: </APM.GazerEmplacement.AutoTarget>
+  <APM.GazerEmplacement.Target.None>none</APM.GazerEmplacement.Target.None>
+  <APM.GazerEmplacement.Fail.NotSpawned>Not spawned.</APM.GazerEmplacement.Fail.NotSpawned>
+  <APM.GazerEmplacement.Fail.MissingDefinition>Sun Ray definition is missing.</APM.GazerEmplacement.Fail.MissingDefinition>
+  <APM.GazerEmplacement.Fail.BrokenDown>Broken down.</APM.GazerEmplacement.Fail.BrokenDown>
+  <APM.GazerEmplacement.Fail.TurnedOff>Turned off.</APM.GazerEmplacement.Fail.TurnedOff>
+  <APM.GazerEmplacement.Fail.NoPower>No power.</APM.GazerEmplacement.Fail.NoPower>
+  <APM.GazerEmplacement.Fail.NeedsOperator>Needs an operator.</APM.GazerEmplacement.Fail.NeedsOperator>
+  <APM.GazerEmplacement.Fail.NoTargetCell>Choose a target cell.</APM.GazerEmplacement.Fail.NoTargetCell>
+  <APM.GazerEmplacement.Fail.TargetGone>Target is gone.</APM.GazerEmplacement.Fail.TargetGone>
+  <APM.GazerEmplacement.Fail.TargetOutOfBounds>Target is out of bounds.</APM.GazerEmplacement.Fail.TargetOutOfBounds>
+  <APM.GazerEmplacement.Fail.TargetTooClose>Target is too close.</APM.GazerEmplacement.Fail.TargetTooClose>
+  <APM.GazerEmplacement.Fail.TargetOutOfRange>Target is out of range.</APM.GazerEmplacement.Fail.TargetOutOfRange>
+  <APM.GazerEmplacement.Fail.TargetOutsideArc>Target is outside the firing sector.</APM.GazerEmplacement.Fail.TargetOutsideArc>
+
   <APM.StatFactorFromHealth.Label>{STAT} from low health</APM.StatFactorFromHealth.Label>
   <APM.StatFactorFromHealth.Description>This mechanoid's {STAT} is affected by its health condition.</APM.StatFactorFromHealth.Description>
-
 </LanguageData>
