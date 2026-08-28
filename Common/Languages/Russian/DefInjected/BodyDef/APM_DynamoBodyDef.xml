@@ -2,7 +2,7 @@
 <LanguageData>
 
   <!-- EN: central sight sensor -->
-  <APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>центральный зрительный датчик</APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+  <APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>центральный оптический датчик</APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
 
   <!-- EN: left hearing sensor -->
   <APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Dynamo.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>

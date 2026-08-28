@@ -4,6 +4,8 @@
   <APM_Mech_Aegis.label>эгида</APM_Mech_Aegis.label>
   <APM_Mech_Aegis.description>Эгида — мощный механоид, который жертвует наступательными возможностями ради мастерства защиты. Поговорка «Лучшая защита — это нападение» полностью подтверждается двойными щитами эгиды.</APM_Mech_Aegis.description>
   <APM_Mech_Aegis.tools.0.label>левый щит</APM_Mech_Aegis.tools.0.label>
+  	<APM_Mech_Aegis.tools.0.labelNoLocation>щит</APM_Mech_Aegis.tools.0.labelNoLocation>
   <APM_Mech_Aegis.tools.1.label>правый щит</APM_Mech_Aegis.tools.1.label>
+  	<APM_Mech_Aegis.tools.1.labelNoLocation>щит</APM_Mech_Aegis.tools.1.labelNoLocation>
 
 </LanguageData>

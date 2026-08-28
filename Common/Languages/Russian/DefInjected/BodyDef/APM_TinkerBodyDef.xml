@@ -5,13 +5,13 @@
   <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
 
   <!-- APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel -->
-  <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>левый зрительный датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>левый оптический датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
 
   <!-- APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel -->
   <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правый звуковой датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
 
   <!-- APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel -->
-  <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>правый зрительный датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>правый оптический датчик</APM_Tinker.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
 
   <!-- APM_Tinker.corePart.parts.left_leg.customLabel -->
   <APM_Tinker.corePart.parts.left_leg.customLabel>левая нога</APM_Tinker.corePart.parts.left_leg.customLabel>

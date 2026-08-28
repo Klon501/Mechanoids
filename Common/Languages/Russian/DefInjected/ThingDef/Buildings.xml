@@ -27,8 +27,19 @@
   <APM_MechbandAntenna_United.label>Вызыватель мех-связи</APM_MechbandAntenna_United.label>
   <!-- EN: Single-use signaling device unlocked with Apex Mechtech that sends out three simultaneous signals to summon the Three Lords threat. -->
   <APM_MechbandAntenna_United.description>Мощный 3x3 транслятор высокого порядка. Отправляет три одновременных сигнала, призывая угрозу Трех Владык.</APM_MechbandAntenna_United.description>
+	<!--                                EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an 3-fold apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. This particular mechband device sends out 3 simultaneous signals, be warned. -->
 
+	<APM_MechbandAntenna_United.comps.0.useLabel>Призвать Трёх Владык</APM_MechbandAntenna_United.comps.0.useLabel>
+	<!--                                       EN: Three Lords -->
+	<APM_MechbandAntenna_United.comps.1.leaderName>Три Владыки</APM_MechbandAntenna_United.comps.1.leaderName>
 
+	<APM_MechbandAntenna_Gazer.comps.0.useLabel>Призвать созерцателя</APM_MechbandAntenna_Gazer.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Celerus.comps.0.useLabel>Призвать целеруса</APM_MechbandAntenna_Celerus.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Terminus.comps.0.useLabel>Призвать терминуса</APM_MechbandAntenna_Terminus.comps.0.useLabel>
+
+  <APM_MechbandAntenna_Dominus.comps.0.useLabel>Призвать доминуса</APM_MechbandAntenna_Dominus.comps.0.useLabel>
   <!-- ==================== Infrastructure & Power ==================== -->
 
   <!-- EN: Purifier station -->
