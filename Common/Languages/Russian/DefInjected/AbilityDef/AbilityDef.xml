@@ -107,7 +107,7 @@
   <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
 
   <!-- EN: Skipblade Blink -->
-  <APM_SkipbladeBlink.label>Скачок клинка</APM_SkipbladeBlink.label>
+  <APM_SkipbladeBlink.label>клинковый скачок</APM_SkipbladeBlink.label>
   <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
   <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
 

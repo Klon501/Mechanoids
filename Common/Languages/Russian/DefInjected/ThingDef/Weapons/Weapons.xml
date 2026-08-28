@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <APM_Weapon_DominusMechlance.label>меха-копьё «Доминус»</APM_Weapon_DominusMechlance.label>
+  <APM_Weapon_DominusMechlance.label>меха-копьё</APM_Weapon_DominusMechlance.label>
   <APM_Weapon_DominusMechlance.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_DominusMechlance.description>
   <APM_Weapon_DominusMechlance.tools.0.label>рукоять</APM_Weapon_DominusMechlance.tools.0.label>
   <APM_Weapon_DominusMechlance.tools.1.label>остриё</APM_Weapon_DominusMechlance.tools.1.label>
   <APM_Weapon_DominusMechlance.tools.2.label>лезвие</APM_Weapon_DominusMechlance.tools.2.label>
-  <APM_Weapon_DominusApexMechlance.label>высшее меха-копьё «Доминус»</APM_Weapon_DominusApexMechlance.label>
+  <APM_Weapon_DominusApexMechlance.label>высшее меха-копьё</APM_Weapon_DominusApexMechlance.label>
   <APM_Weapon_DominusApexMechlance.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Из-за столь близкого контакта с Доминусом механиты в этом копье подверглись влиянию его пси-присутствия, из-за чего оно излучает красноватое свечение.</APM_Weapon_DominusApexMechlance.description>
-  <APM_Weapon_CelerusVoltana.label>вольтана «Целерус»</APM_Weapon_CelerusVoltana.label>
+  <APM_Weapon_CelerusVoltana.label>вольтана</APM_Weapon_CelerusVoltana.label>
   <APM_Weapon_CelerusVoltana.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_CelerusVoltana.description>
   <APM_Weapon_CelerusVoltana.tools.0.label>рукоять</APM_Weapon_CelerusVoltana.tools.0.label>
   <APM_Weapon_CelerusVoltana.tools.1.label>остриё</APM_Weapon_CelerusVoltana.tools.1.label>
   <APM_Weapon_CelerusVoltana.tools.2.label>лезвие</APM_Weapon_CelerusVoltana.tools.2.label>
-  <APM_Weapon_CelerusApexVoltana.label>высшая вольтана «Целерус»</APM_Weapon_CelerusApexVoltana.label>
+  <APM_Weapon_CelerusApexVoltana.label>высшая вольтана</APM_Weapon_CelerusApexVoltana.label>
   <APM_Weapon_CelerusApexVoltana.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Лезвие трещит от электрических разрядов столь мощных, что оно светится свирепым фиолетовым цветом — этот аномальный оттенок стал результатом каприза самого Целеруса.</APM_Weapon_CelerusApexVoltana.description>
-  <APM_Weapon_TerminusExoblade.label>экзо-клинок «Терминус»</APM_Weapon_TerminusExoblade.label>
+  <APM_Weapon_TerminusExoblade.label>экзо-клинок</APM_Weapon_TerminusExoblade.label>
   <APM_Weapon_TerminusExoblade.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие. Этот экзо-клинок гудит от пси-энергии, будучи перегруженным своим владельцем-Терминусом.</APM_Weapon_TerminusExoblade.description>
   <APM_Weapon_TerminusExoblade.tools.0.label>рукоять</APM_Weapon_TerminusExoblade.tools.0.label>
   <APM_Weapon_TerminusExoblade.tools.1.label>остриё</APM_Weapon_TerminusExoblade.tools.1.label>
   <APM_Weapon_TerminusExoblade.tools.2.label>лезвие</APM_Weapon_TerminusExoblade.tools.2.label>
-  <APM_Weapon_TerminusApexExoblade.label>высший экзо-клинок «Терминус»</APM_Weapon_TerminusApexExoblade.label>
+  <APM_Weapon_TerminusApexExoblade.label>высший экзо-клинок</APM_Weapon_TerminusApexExoblade.label>
   <APM_Weapon_TerminusApexExoblade.description>Это оружие пронизано механитами, поддерживающими остроту, подобно тем, что используются в монотехнологиях Империи. Использование подобной технологии ульем механоидов позволяет применять её на более крупных и сложных объектах, таких как это смертоносное оружие.</APM_Weapon_TerminusApexExoblade.description>
   <APM_Weapon_MechWhip.label>мех хлыст</APM_Weapon_MechWhip.label>
   <APM_Weapon_MechWhip.description>Хлыст механоидов способна наносить тяжёлый урон и оглушать несколько целей в непосредственной близости от владельца. Похоже, улей механоидов относится к разумной органической жизни так же, как люди относятся к скоту, и поступает соотвествующе.</APM_Weapon_MechWhip.description>
@@ -88,7 +88,7 @@
   <APM_Weapon_SeveringBlade.tools.1.label>остриё</APM_Weapon_SeveringBlade.tools.1.label>
   <APM_Weapon_SeveringBlade.tools.2.label>лезвие</APM_Weapon_SeveringBlade.tools.2.label>
   <APM_Weapon_Skipblade.label>вспышка меч</APM_Weapon_Skipblade.label>
-  <APM_Weapon_Skipblade.description>Высокочастотная катана со встроенной технологией перемещения на основе разработок Целеруса. Позволяет владельцу ментально «совершать скачок» на небольшие расстояния при каждом ударе, мгновенно сокращая дистанцию или уклоняясь от контратак.</APM_Weapon_Skipblade.description>
+  <APM_Weapon_Skipblade.description>Высокочастотная катана со встроенной технологией перемещения на основе разработок Целеруса. Позволяет владельцу совершать скачок на небольшие расстояния, мгновенно сокращая дистанцию или уклоняясь от контратак.</APM_Weapon_Skipblade.description>
   <APM_Weapon_Skipblade.tools.0.label>рукоять</APM_Weapon_Skipblade.tools.0.label>
   <APM_Weapon_Skipblade.tools.1.label>остриё</APM_Weapon_Skipblade.tools.1.label>
   <APM_Weapon_Skipblade.tools.2.label>лезвие</APM_Weapon_Skipblade.tools.2.label>

@@ -2,7 +2,7 @@
 <LanguageData>
 
   <!-- EN: central sight sensor -->
-  <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>центральный зрительный датчик</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>
+  <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>центральный оптический датчик</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>
 
   <!-- EN: left acoustic receiver -->
   <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.left_acoustic_receiver.customLabel>левый акустический приёмник</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.left_acoustic_receiver.customLabel>

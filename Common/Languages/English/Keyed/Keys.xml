@@ -190,4 +190,6 @@
   <APM.GazerEmplacement.Fail.TargetOutOfRange>Target is out of range.</APM.GazerEmplacement.Fail.TargetOutOfRange>
   <APM.GazerEmplacement.Fail.TargetOutsideArc>Target is outside the firing sector.</APM.GazerEmplacement.Fail.TargetOutsideArc>
 
+  <APM.StatFactorFromHealth.Label>{STAT} from low health</APM.StatFactorFromHealth.Label>
+  <APM.StatFactorFromHealth.Description>This mechanoid's {STAT} is affected by its health condition.</APM.StatFactorFromHealth.Description>
 </LanguageData>
