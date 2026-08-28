@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_FrostivusFoodPreservation.description>Спасение уязвимой еды из небезопасного хранения или от порчи на улице с последующей разгрузкой в холодильник при наличии возможности.</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>Консервировать</APM_FrostivusFoodPreservation.verb>
+  <APM_IngestorCorpseProcessing.description>Переработка органических трупов в биотопливо.</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>Поглощать</APM_IngestorCorpseProcessing.verb>
+  <APM_LasherHandling.description>Приручение, тренировка, стрижка/дойка и забой животных.</APM_LasherHandling.description>
+  <APM_LasherHandling.verb>Управлять</APM_LasherHandling.verb>
+  <APM_SirenWarden.description>Управление, кормление, общение и вербовка заключенных.</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>Надзирать</APM_SirenWarden.verb>
+  <APM_TinkerRepair.description>Ремонт построек и механоидов своей фракции.</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>Чинить</APM_TinkerRepair.verb>
+</LanguageData>

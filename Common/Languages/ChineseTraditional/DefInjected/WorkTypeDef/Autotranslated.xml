@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_FrostivusFoodPreservation.description>搶救會因溫度而腐壞的食物，並卸到冷藏處。</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>保鮮</APM_FrostivusFoodPreservation.verb>
+  <APM_IngestorCorpseProcessing.description>將有機屍體加工成化學燃料。</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>攝入</APM_IngestorCorpseProcessing.verb>
+  <APM_LasherHandling.description>馴服、訓練、採集資源並屠宰動物。</APM_LasherHandling.description>
+  <APM_LasherHandling.verb>管理</APM_LasherHandling.verb>
+  <APM_SirenWarden.description>管理、餵養、交談並招募囚犯。</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>管理</APM_SirenWarden.verb>
+  <APM_TinkerRepair.description>維修同派系建築與機械體。</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>維修</APM_TinkerRepair.verb>
+</LanguageData>

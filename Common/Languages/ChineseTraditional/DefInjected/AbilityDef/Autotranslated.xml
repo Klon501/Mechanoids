@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.label>回收生物質</APM_Absorb.label>
+  <APM_Absorb.description>磨碎新鮮的有機屍體或可攝入材料，將其緩慢加工為化學燃料。</APM_Absorb.description>
+  <APM_SwitchToPowerPlantMode.label>發電廠模式</APM_SwitchToPowerPlantMode.label>
+  <APM_SwitchToPowerPlantMode.description>切換至發電廠模式，將無法移動。</APM_SwitchToPowerPlantMode.description>
+  <APM_SunRay.label>太陽光線</APM_SunRay.label>
+  <APM_SunRay.description>凝視者從自身射出毀滅性的光束，並原地不動以將光束鎖定在目標身上。光束所及範圍內的一切都會受到重傷。</APM_SunRay.description>
+  <APM_PulseWave.label>脈衝波</APM_PulseWave.label>
+  <APM_PulseWave.description>從機甲向外釋放一圈致盲的聲脈衝，使被波及的活體小人陷入眩暈，並被閃光致盲。</APM_PulseWave.description>
+  <APM_HookPawn.label>抓鉤</APM_HookPawn.label>
+  <APM_HookPawn.description>終焉射出抓鉤，根據目標體型的不同，要麼將敵人拉向自己，要麼將自身拉向敵人。</APM_HookPawn.description>
+  <APM_ShieldCharge.label>盾擊衝鋒</APM_ShieldCharge.label>
+  <APM_ShieldCharge.description>向一個小人發起衝鋒，將沿途撞到的一切都擊暈。</APM_ShieldCharge.description>
+  <APM_Bladehopp.label>刃躍</APM_Bladehopp.label>
+  <APM_Bladehopp.description>螳螂向前突進，對所選目標施以兇狠的斬擊。</APM_Bladehopp.description>
+  <APM_BlindingLaser.label>致盲雷射</APM_BlindingLaser.label>
+  <APM_BlindingLaser.description>向目標發射雷射，使其在短時間內被有效致盲。</APM_BlindingLaser.description>
+  <APM_Starfall.label>星落</APM_Starfall.label>
+  <APM_Starfall.description>蹂躪者超載自己的火炮，發射出一枚重型炮彈，炮彈在飛行途中直接分裂為三道能量爆轟。</APM_Starfall.description>
+  <APM_DefenceMatrix.label>防禦矩陣</APM_DefenceMatrix.label>
+  <APM_DefenceMatrix.description>為同派系殖民者投射個人防禦護盾。護盾阻擋傷害，並阻止目標向外射擊。</APM_DefenceMatrix.description>
+  <APM_Ability_SteelDiscipline.label>鋼鐵紀律</APM_Ability_SteelDiscipline.label>
+  <APM_Ability_SteelDiscipline.description>在附庸周圍的半徑內，其盟友獲得速度加成，若為有機體則精神崩潰機率降低。附庸的統御氣場以全新的目標感與堅韌激勵著身邊的同伴。</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_ToxicMist.label>劇毒迷霧</APM_Ability_ToxicMist.label>
+  <APM_Ability_ToxicMist.description>與毒氣包類似，迷霧向自身周圍釋放毒氣，將周邊籠罩在有毒的雲霧之中。</APM_Ability_ToxicMist.description>
+  <APM_Shockwave.label>衝擊波</APM_Shockwave.label>
+  <APM_Shockwave.description>一道爆炸衝擊波，將半徑內的敵人擊退一段距離。</APM_Shockwave.description>
+  <APM_CelerusBlink.label>閃爍</APM_CelerusBlink.label>
+  <APM_CelerusBlink.description>摺疊施法者周圍的空間，並瞬間將其閃爍到附近所選位置，留下不穩定的暗影碎片。</APM_CelerusBlink.description>
+  <APM_UltimateSacrifice.label>終極犧牲</APM_UltimateSacrifice.label>
+  <APM_UltimateSacrifice.description>透過高速執行複雜的瞄準、移動與邏輯運算，直到處理單元因高熱而熔毀，這台機械體為附近的盟友提供一次臨時屬性加成。</APM_UltimateSacrifice.description>
+  <APM_PressTheAttack.label>乘勝追擊</APM_PressTheAttack.label>
+  <APM_PressTheAttack.description>主宰發出一道靈能脈衝，促使附近的盟友無視疼痛、行動更快並保持高昂士氣。</APM_PressTheAttack.description>
+  <APM_Ability_CryptoSwallow.label>低溫吞噬</APM_Ability_CryptoSwallow.label>
+  <APM_Ability_CryptoSwallow.description>吞沒活體殖民者或屍體，並將其封入內部低溫艙，直到被釋放。</APM_Ability_CryptoSwallow.description>
+  <APM_Ability_SirenSong.label>海妖之歌</APM_Ability_SirenSong.label>
+  <APM_Ability_SirenSong.description>海妖奏響悅耳的旋律，振奮附近有機盟友的精神，並短暫幫助他們恢復娛樂。</APM_Ability_SirenSong.description>
+  <APM_Ability_SirenLure.label>魅惑之歌</APM_Ability_SirenLure.label>
+  <APM_Ability_SirenLure.description>唱出誘人的歌聲，迫使目標小人走向施法者。</APM_Ability_SirenLure.description>
+  <APM_SeveringEdge.description>利用刀刃與生俱來的靈能導引特性，施法者在身前釋放一道橫掃的能量之刃，斬擊區域內的一切。</APM_SeveringEdge.description>
+  <APM_SeveringEdge_Boss.description>利用刀刃與生俱來的靈能導引特性，終焉在身前釋放一道橫掃的能量之刃，斬擊區域內的一切。</APM_SeveringEdge_Boss.description>
+  <APM_SkipbladeBlink.label>傳送</APM_SkipbladeBlink.label>
+  <APM_SkipbladeBlink.description>導引傳送刃內建的位移技術，瞬間跳躍至附近位置。</APM_SkipbladeBlink.description>
+</LanguageData>

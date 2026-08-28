@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Aegis.label>вырастить эгиду</APM_Aegis.label>
+  <APM_Aegis.description>Вырастить механоида эгида.</APM_Aegis.description>
+  <APM_Terminus.label>вырастить терминуса</APM_Terminus.label>
+  <APM_Terminus.description>Вырастить архотек-командира механоидов терминус.</APM_Terminus.description>
+  <APM_Maul.label>вырастить молота</APM_Maul.label>
+  <APM_Maul.description>Вырастить механоида молот.</APM_Maul.description>
+  <APM_Mantis.label>вырастить богомола</APM_Mantis.label>
+  <APM_Mantis.description>Вырастить механоида богомол.</APM_Mantis.description>
+  <APM_Dynamo.label>вырастить динамо</APM_Dynamo.label>
+  <APM_Dynamo.description>Вырастить механоида динамо.</APM_Dynamo.description>
+  <APM_Haze.label>вырастить мглу</APM_Haze.label>
+  <APM_Haze.description>Вырастить механоида мгла.</APM_Haze.description>
+  <APM_Celerus.label>вырастить целеруса</APM_Celerus.label>
+  <APM_Celerus.description>Вырастить архотек-командира механоида целерус.</APM_Celerus.description>
+  <APM_Dominus.label>вырастить доминуса</APM_Dominus.label>
+  <APM_Dominus.description>Вырастить архотек-командира механоида доминус.</APM_Dominus.description>
+  <APM_Conqueror_DMR.label>вырастить завоевателя с карабином</APM_Conqueror_DMR.label>
+  <APM_Conqueror_DMR.description>Вырастить механоида завоеватель, оснащённого бластерным карабином.</APM_Conqueror_DMR.description>
+  <APM_Conqueror_DMR.jobString>Выращивание завоевателя (марксман).</APM_Conqueror_DMR.jobString>
+  <APM_Conqueror_AR.label>вырастить завоевателя с винтовкой</APM_Conqueror_AR.label>
+  <APM_Conqueror_AR.description>Вырастить механоида завоеватель, оснащённого бластерной винтовкой.</APM_Conqueror_AR.description>
+  <APM_Conqueror_AR.jobString>Выращивание завоевателя (винтовка).</APM_Conqueror_AR.jobString>
+  <APM_Conqueror_SMG.label>вырастить завоевателя с плевателем</APM_Conqueror_SMG.label>
+  <APM_Conqueror_SMG.description>Вырастить механоида завоеватель, оснащённого бластерным плевателем.</APM_Conqueror_SMG.description>
+  <APM_Conqueror_SMG.jobString>Выращивание завоевателя (пистолет-пулемёт).</APM_Conqueror_SMG.jobString>
+  <APM_Lasher.label>вырастить плеть</APM_Lasher.label>
+  <APM_Lasher.description>Вырастить механоида плеть.</APM_Lasher.description>
+  <APM_Pulse.label>вырастить импульса</APM_Pulse.label>
+  <APM_Pulse.description>Вырастить механоида импульс.</APM_Pulse.description>
+  <APM_Vassal.label>вырастить вассала</APM_Vassal.label>
+  <APM_Vassal.description>Вырастить механоида вассал.</APM_Vassal.description>
+  <APM_Tinker.label>вырастить тинкера</APM_Tinker.label>
+  <APM_Tinker.description>Вырастить механоида тинкер.</APM_Tinker.description>
+  <APM_Siren.label>вырастить сирену</APM_Siren.label>
+  <APM_Siren.description>Вырастить механоида сирена.</APM_Siren.description>
+  <APM_Frostivus.label>вырастить морозуса</APM_Frostivus.label>
+  <APM_Frostivus.description>Вырастить механоида морозус.</APM_Frostivus.description>
+  <APM_Javelin.label>вырастить джавелина</APM_Javelin.label>
+  <APM_Javelin.description>Вырастить механоида джавелин.</APM_Javelin.description>
+  <APM_Ravager.label>вырастить разорителя</APM_Ravager.label>
+  <APM_Ravager.description>Вырастить механоида разоритель.</APM_Ravager.description>
+  <APM_Ingestor.label>вырастить поглотителя</APM_Ingestor.label>
+  <APM_Ingestor.description>Вырастить механоида поглотитель.</APM_Ingestor.description>
+  <APM_Gazer.label>вырастить созерцателя</APM_Gazer.label>
+  <APM_Gazer.description>Вырастить механоида созерцатель.</APM_Gazer.description>
+  <Make_DuelistPsyspear.label>сделать пси-копьё дуэлянта</Make_DuelistPsyspear.label>
+  <Make_DuelistPsyspear.description>Создать пси-копьё дуэлянта.</Make_DuelistPsyspear.description>
+  <Make_DuelistPsyspear.jobString>Создание пси-копья дуэлянта.</Make_DuelistPsyspear.jobString>
+  <APM_Weapon_SeveringBlade.label>сделать рассекающий клинок</APM_Weapon_SeveringBlade.label>
+  <APM_Weapon_SeveringBlade.description>Создать рассекающий клинок.</APM_Weapon_SeveringBlade.description>
+  <APM_Weapon_SeveringBlade.jobString>Создание рассекающего клинка.</APM_Weapon_SeveringBlade.jobString>
+  <APM_Weapon_Skipblade.label>сделать скачковый клинок</APM_Weapon_Skipblade.label>
+  <APM_Weapon_Skipblade.description>Создать скачковый клинок.</APM_Weapon_Skipblade.description>
+  <APM_Weapon_Skipblade.jobString>Создание скачкового клинка.</APM_Weapon_Skipblade.jobString>
+  <APM_Weapon_PlasmaWhip.label>сделать плазменный кнут</APM_Weapon_PlasmaWhip.label>
+  <APM_Weapon_PlasmaWhip.description>Создать плазменный кнут.</APM_Weapon_PlasmaWhip.description>
+  <APM_Weapon_PlasmaWhip.jobString>Создание плазменного кнута.</APM_Weapon_PlasmaWhip.jobString>
+  <APM_Solus.label>сделать «Солус»</APM_Solus.label>
+  <APM_Solus.description>Создать орудие «Солус».</APM_Solus.description>
+  <APM_Solus.jobString>Создание орудия «Солус».</APM_Solus.jobString>
+  <APM_MechamancerPack.label>сделать ранец мехаманта</APM_MechamancerPack.label>
+  <APM_MechamancerPack.description>Создать ранец мехаманта.</APM_MechamancerPack.description>
+  <APM_MechamancerPack.jobString>Создание ранца мехаманта.</APM_MechamancerPack.jobString>
+  <APM_Apparel_MechamancerSuit.label>сделать костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+  <APM_Apparel_MechamancerSuit.description>Создать костюм мехаманта.</APM_Apparel_MechamancerSuit.description>
+  <APM_Apparel_MechamancerSuit.jobString>Создание костюма мехаманта.</APM_Apparel_MechamancerSuit.jobString>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>сделать шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.description>Создать шлем мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>Создание шлема мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
+</LanguageData>

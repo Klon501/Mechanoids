@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Aegis.label>神盾</APM_Aegis.label>
+  <APM_Celerus.label>疾风</APM_Celerus.label>
+  <APM_Conqueror.label>征服者</APM_Conqueror.label>
+  <APM_Dominus.label>主宰</APM_Dominus.label>
+  <APM_Dynamo.label>迪纳摩</APM_Dynamo.label>
+  <APM_Frostivus.label>霜语者</APM_Frostivus.label>
+  <APM_Gazer.label>凝视者</APM_Gazer.label>
+  <APM_Haze.label>迷雾</APM_Haze.label>
+  <APM_Ingestor.label>吞噬者</APM_Ingestor.label>
+  <APM_Javelin.label>标枪</APM_Javelin.label>
+  <APM_Lasher.label>鞭挞者</APM_Lasher.label>
+  <APM_Mantis.label>螳螂</APM_Mantis.label>
+  <APM_Maul.label>巨锤</APM_Maul.label>
+  <APM_Pulse.label>脉冲</APM_Pulse.label>
+  <APM_Ravager.label>蹂躏者</APM_Ravager.label>
+  <APM_Satellite.label>卫星</APM_Satellite.label>
+  <APM_Siren.label>海妖共鸣机体</APM_Siren.label>
+  <APM_Terminus.label>终焉</APM_Terminus.label>
+  <APM_Tinker.label>修补匠</APM_Tinker.label>
+  <APM_Vassal.label>附庸</APM_Vassal.label>
+</LanguageData>

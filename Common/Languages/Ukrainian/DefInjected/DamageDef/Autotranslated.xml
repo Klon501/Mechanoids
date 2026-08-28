@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_JavelinWarhead.label>бойова частина джавеліна</APM_JavelinWarhead.label>
+  <APM_GazerBeam.label>вогнева позиція Спостерігача</APM_GazerBeam.label>
+  <APM_SunRay.label>сонячний промінь</APM_SunRay.label>
+  <Push.label>поштовх</Push.label>
+  <APM_Shockwave.label>ударна хвиля</APM_Shockwave.label>
+  <MegaBeam.label>мегапромінь</MegaBeam.label>
+  <APM_HazeAcidBeam.label>кислотний промінь завіси</APM_HazeAcidBeam.label>
+  <APM_SonicVibration.label>звукова вібрація</APM_SonicVibration.label>
+</LanguageData>

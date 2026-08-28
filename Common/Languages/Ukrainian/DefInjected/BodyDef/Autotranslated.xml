@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Aegis.label>егіда</APM_Aegis.label>
+  <APM_Celerus.label>целерус</APM_Celerus.label>
+  <APM_Conqueror.label>завойовник</APM_Conqueror.label>
+  <APM_Dominus.label>домінус</APM_Dominus.label>
+  <APM_Dynamo.label>динамо</APM_Dynamo.label>
+  <APM_Frostivus.label>морозус</APM_Frostivus.label>
+  <APM_Gazer.label>спостерігач</APM_Gazer.label>
+  <APM_Haze.label>завіса</APM_Haze.label>
+  <APM_Ingestor.label>поглинач</APM_Ingestor.label>
+  <APM_Javelin.label>джавелін</APM_Javelin.label>
+  <APM_Lasher.label>погонич</APM_Lasher.label>
+  <APM_Mantis.label>богомол</APM_Mantis.label>
+  <APM_Maul.label>кришитель</APM_Maul.label>
+  <APM_Pulse.label>імпульс</APM_Pulse.label>
+  <APM_Ravager.label>спустошувач</APM_Ravager.label>
+  <APM_Satellite.label>супутник</APM_Satellite.label>
+  <APM_Siren.label>резонансна рама сирени</APM_Siren.label>
+  <APM_Terminus.label>термінус</APM_Terminus.label>
+  <APM_Tinker.label>майстер</APM_Tinker.label>
+  <APM_Vassal.label>васал</APM_Vassal.label>
+</LanguageData>

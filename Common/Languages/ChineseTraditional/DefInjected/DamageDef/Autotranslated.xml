@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_JavelinWarhead.label>標槍彈頭</APM_JavelinWarhead.label>
+  <APM_GazerBeam.label>凝視者光束</APM_GazerBeam.label>
+  <APM_SunRay.label>太陽光線</APM_SunRay.label>
+  <Push.label>衝擊傷害</Push.label>
+  <APM_Shockwave.label>衝擊波</APM_Shockwave.label>
+  <MegaBeam.label>巨型光束</MegaBeam.label>
+  <APM_HazeAcidBeam.label>迷霧酸液光束</APM_HazeAcidBeam.label>
+  <APM_SonicVibration.label>聲波震盪</APM_SonicVibration.label>
+</LanguageData>

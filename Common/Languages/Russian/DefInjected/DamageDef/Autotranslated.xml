@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_JavelinWarhead.label>боеголовка «Джавелина»</APM_JavelinWarhead.label>
+  <APM_GazerBeam.label>луч созерцателя</APM_GazerBeam.label>
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+  <Push.label>урон от толчка</Push.label>
+  <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
+  <MegaBeam.label>мега-луч</MegaBeam.label>
+  <APM_HazeAcidBeam.label>кислотный луч мглы</APM_HazeAcidBeam.label>
+  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
+</LanguageData>

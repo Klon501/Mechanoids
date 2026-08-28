@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.label>Переработка биомассы</APM_Absorb.label>
+  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал, постепенно перерабатывая его в химическое топливо.</APM_Absorb.description>
+  <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <APM_SwitchToPowerPlantMode.description>Переключение в режим электростанции, пожертвовав мобильностью и щитом ради питания местной электросети.</APM_SwitchToPowerPlantMode.description>
+  <APM_SunRay.label>Солнечный луч</APM_SunRay.label>
+  <APM_SunRay.description>Созерцатель испускает разрушительный луч, оставаясь неподвижным для удержания цели на мушке. Все, до чего достает луч, получает огромный урон.</APM_SunRay.description>
+  <APM_PulseWave.label>Импульсная волна</APM_PulseWave.label>
+  <APM_PulseWave.description>Высвобождает ослепляющий акустический импульс, расходящийся от меха и оглушающий вместе с ослеплением всех попавших в зону действия существ из крови и плоти.</APM_PulseWave.description>
+  <APM_HookPawn.label>Крюк-кошка</APM_HookPawn.label>
+  <APM_HookPawn.description>«Терминус» выпускает крюк-кошку: в зависимости от размера цели, либо притягивает врага к себе, либо притягивается к врагу сам.</APM_HookPawn.description>
+  <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
+  <APM_ShieldCharge.description>Броситься на пешку, оглушая все на своем пути.</APM_ShieldCharge.description>
+  <APM_Bladehopp.label>Прорыв лезвий</APM_Bladehopp.label>
+  <APM_Bladehopp.description>Совершить рывок к цели с последующей быстрой атакой.</APM_Bladehopp.description>
+  <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, эффективно ослепляя ее на короткое время.</APM_BlindingLaser.description>
+  <APM_Starfall.label>Звездопад</APM_Starfall.label>
+  <APM_Starfall.description>Опустошитель перегружает свою артиллерию и выпускает единый тяжелый снаряд, который прямо в полете разделяется на три энергетических взрыва.</APM_Starfall.description>
+  <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
+  <APM_DefenceMatrix.description>Удаленно проецирует персональный защитный щит на пешку своей фракции. Щит останавливает входящий урон, но также мешает вести стрельбу изнутри. Тинкер будет сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+  <APM_Ability_SteelDiscipline.label>Стальная дисциплина</APM_Ability_SteelDiscipline.label>
+  <APM_Ability_SteelDiscipline.description>В радиусе вокруг Вассала его союзники получают бонус к скорости, а их шанс нервного срыва снижается (если они органические). Командующее присутствие Вассала вдохновляет окружающих новыми силами и стойкостью.</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_ToxicMist.label>Токсичный туман</APM_Ability_ToxicMist.label>
+  <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
+  <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
+  <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
+  <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+  <APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
+  <APM_UltimateSacrifice.label>высшая жертва</APM_UltimateSacrifice.label>
+  <APM_UltimateSacrifice.description>Быстро выполняя сложные расчеты прицеливания, движения и логистики до тех пор, пока их процессорные блоки не расплавятся от жары, этот механоид наделяет ближайших союзников временным усилением характеристик.</APM_UltimateSacrifice.description>
+  <APM_PressTheAttack.label>развитие атаки</APM_PressTheAttack.label>
+  <APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
+  <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
+  <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
+  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+  <APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+  <APM_Ability_SirenLure.label>манящая песнь</APM_Ability_SirenLure.label>
+  <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
+  <APM_SeveringEdge.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge.description>
+  <APM_SeveringEdge_Boss.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge_Boss.description>
+  <APM_SkipbladeBlink.label>Скачок клинка</APM_SkipbladeBlink.label>
+  <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
+</LanguageData>
