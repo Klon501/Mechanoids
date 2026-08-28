@@ -1,0 +1,16 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\MaulHeavySledgeBlaster.xml -->
+	<!--                      EN: heavy charge burst shot -->
+	<APM_Bullet_MaulBlaster.label>heavy charge burst shot</APM_Bullet_MaulBlaster.label>
+	
+	<!--            EN: heavy sledge blaster -->
+	<APM_Gun_Maul.label>heavy sledge blaster</APM_Gun_Maul.label>
+	<!--                  EN: An enhanced pulse-charged rapid-fire heavy machine gun built with an integrated kinetic hammer on its frame for devastating close-quarters bludgeoning. Heavy cooling allows long, deadly bursts, while additional interfacing technology lets certain mechanoid wielders continuously overclock and overheat the weapon's output, leading to potentially disastrous effects for both the user and anything caught in front of the barrel. -->
+	<APM_Gun_Maul.description>An enhanced pulse-charged rapid-fire heavy machine gun built with an integrated kinetic hammer on its frame for devastating close-quarters bludgeoning. Heavy cooling allows long, deadly bursts, while additional interfacing technology lets certain mechanoid wielders continuously overclock and overheat the weapon's output, leading to potentially disastrous effects for both the user and anything caught in front of the barrel.</APM_Gun_Maul.description>
+	<!--                    EN: ㅤ -->
+	<APM_Gun_Maul.verbs.0.label>ㅤ</APM_Gun_Maul.verbs.0.label>
+	<!--                    EN: butt -->
+	<APM_Gun_Maul.tools.0.label>butt</APM_Gun_Maul.tools.0.label>
+	<!--                    EN: sledge hammer -->
+	<APM_Gun_Maul.tools.1.label>sledge hammer</APM_Gun_Maul.tools.1.label>
+</LanguageData>

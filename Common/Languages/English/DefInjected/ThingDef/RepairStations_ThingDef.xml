@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\RepairStations.xml -->
+	<!--                       EN: mech repair station -->
+	<APM_RepairStation_Small.label>mech repair station</APM_RepairStation_Small.label>
+	<!--                             EN: A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs. -->
+	<APM_RepairStation_Small.description>A station that repairs small and medium mechanoids. The mechanoid enters the station to undergo repairs.</APM_RepairStation_Small.description>
+	
+	<!--                          EN: advanced mech repair station -->
+	<APM_RepairStation_Advanced.label>advanced mech repair station</APM_RepairStation_Advanced.label>
+	<!--                                EN: A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs. -->
+	<APM_RepairStation_Advanced.description>A station that repairs large mechanoids. The mechanoid enters the station to undergo repairs.</APM_RepairStation_Advanced.description>
+</LanguageData>

@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Ravager.xml -->
+	<!--                EN: ravager -->
+	<APM_Mech_Ravager.label>ravager</APM_Mech_Ravager.label>
+	<!--                                   EN: Plural ravager -->
+	<APM_Mech_Ravager.lifeStages.1.labelPlural>Plural ravager</APM_Mech_Ravager.lifeStages.1.labelPlural>
+</LanguageData>

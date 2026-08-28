@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\MechCommandCasket.xml -->
+	
+	<!--                          EN: mech command casket boost -->
+	<APM_MechCommandCasketBoost.label>mech command casket boost</APM_MechCommandCasketBoost.label>
+	<!--                                EN: This mechanitors bandwidth is increased while inside the command casket. -->
+	<APM_MechCommandCasketBoost.description>This mechanitors bandwidth is increased while inside the command casket.</APM_MechCommandCasketBoost.description>
+</LanguageData>

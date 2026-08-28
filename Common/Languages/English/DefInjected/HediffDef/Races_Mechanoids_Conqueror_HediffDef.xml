@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Conqueror.xml -->
+	
+	<!--                            EN: ultimate sacrifice -->
+	<APM_Hediff_UltimateSacrifice.label>ultimate sacrifice</APM_Hediff_UltimateSacrifice.label>
+	<!--                                  EN: Ultimate Sacrifice - One conqueror sacrifice himself to give a powerful buff to all allied conquerors in radius. -->
+	<APM_Hediff_UltimateSacrifice.description>Ultimate Sacrifice - One conqueror sacrifice himself to give a powerful buff to all allied conquerors in radius.</APM_Hediff_UltimateSacrifice.description>
+</LanguageData>

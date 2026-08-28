@@ -1,0 +1,47 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Conqueror.xml -->
+	<!--                              EN: левый кулак -->
+	<APM_Mech_Conqueror_DMR.tools.0.label>левый кулак</APM_Mech_Conqueror_DMR.tools.0.label>
+	<!--                                        EN: fist -->
+	<APM_Mech_Conqueror_DMR.tools.0.labelNoLocation>fist</APM_Mech_Conqueror_DMR.tools.0.labelNoLocation>
+	<!--                              EN: правый кулак -->
+	<APM_Mech_Conqueror_DMR.tools.1.label>правый кулак</APM_Mech_Conqueror_DMR.tools.1.label>
+	<!--                                        EN: fist -->
+	<APM_Mech_Conqueror_DMR.tools.1.labelNoLocation>fist</APM_Mech_Conqueror_DMR.tools.1.labelNoLocation>
+	<!--                              EN: голова -->
+	<APM_Mech_Conqueror_DMR.tools.2.label>голова</APM_Mech_Conqueror_DMR.tools.2.label>
+	<!--                      EN: carabine conqueror -->
+	<APM_Mech_Conqueror_DMR.label>carabine conqueror</APM_Mech_Conqueror_DMR.label>
+	<!--                            EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a highly powered Charge Carbine. -->
+	<APM_Mech_Conqueror_DMR.description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a highly powered Charge Carbine.</APM_Mech_Conqueror_DMR.description>
+	
+	<!--                             EN: левый кулак -->
+	<APM_Mech_Conqueror_AR.tools.0.label>левый кулак</APM_Mech_Conqueror_AR.tools.0.label>
+	<!--                                       EN: fist -->
+	<APM_Mech_Conqueror_AR.tools.0.labelNoLocation>fist</APM_Mech_Conqueror_AR.tools.0.labelNoLocation>
+	<!--                             EN: правый кулак -->
+	<APM_Mech_Conqueror_AR.tools.1.label>правый кулак</APM_Mech_Conqueror_AR.tools.1.label>
+	<!--                                       EN: fist -->
+	<APM_Mech_Conqueror_AR.tools.1.labelNoLocation>fist</APM_Mech_Conqueror_AR.tools.1.labelNoLocation>
+	<!--                             EN: голова -->
+	<APM_Mech_Conqueror_AR.tools.2.label>голова</APM_Mech_Conqueror_AR.tools.2.label>
+	<!--                     EN: blaster conqueror -->
+	<APM_Mech_Conqueror_AR.label>blaster conqueror</APM_Mech_Conqueror_AR.label>
+	<!--                           EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Blaster. -->
+	<APM_Mech_Conqueror_AR.description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Blaster.</APM_Mech_Conqueror_AR.description>
+	
+	<!--                              EN: левый кулак -->
+	<APM_Mech_Conqueror_SMG.tools.0.label>левый кулак</APM_Mech_Conqueror_SMG.tools.0.label>
+	<!--                                        EN: fist -->
+	<APM_Mech_Conqueror_SMG.tools.0.labelNoLocation>fist</APM_Mech_Conqueror_SMG.tools.0.labelNoLocation>
+	<!--                              EN: правый кулак -->
+	<APM_Mech_Conqueror_SMG.tools.1.label>правый кулак</APM_Mech_Conqueror_SMG.tools.1.label>
+	<!--                                        EN: fist -->
+	<APM_Mech_Conqueror_SMG.tools.1.labelNoLocation>fist</APM_Mech_Conqueror_SMG.tools.1.labelNoLocation>
+	<!--                              EN: голова -->
+	<APM_Mech_Conqueror_SMG.tools.2.label>голова</APM_Mech_Conqueror_SMG.tools.2.label>
+	<!--                      EN: spitter conqueror -->
+	<APM_Mech_Conqueror_SMG.label>spitter conqueror</APM_Mech_Conqueror_SMG.label>
+	<!--                            EN: The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter. -->
+	<APM_Mech_Conqueror_SMG.description>The conqueror is an all around infantry mechanoid created to balance out the specializations of the existing scyther and lancer type mechanoids. They have additional strength in numbers though, their systems able to link between other allied conquerors in range, increasing their processing power and in turn, their effectiveness together. Additionally, one unit in a group can choose to overclock their shared processing unit, giving nearby conquerors a larger boost, at the cost of entirely frying the overlocked unit’s physical components.\nThis one is armed with a powerful Charge Spitter.</APM_Mech_Conqueror_SMG.description>
+</LanguageData>

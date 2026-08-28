@@ -1,0 +1,62 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Items_ResourceManufactured.xml -->
+	<!--                                    EN: Analyze... -->
+	<APM_OcularChip.comps.1.activateLabelString>Analyze...</APM_OcularChip.comps.1.activateLabelString>
+	<!--                                   EN: Analyze the chip. -->
+	<APM_OcularChip.comps.1.activateDescString>Analyze the chip.</APM_OcularChip.comps.1.activateDescString>
+	<!--                          EN: Analyze chip -->
+	<APM_OcularChip.comps.1.jobString>Analyze chip</APM_OcularChip.comps.1.jobString>
+	<!--                               EN: Choose who should analyze this -->
+	<APM_OcularChip.comps.1.guiLabelString>Choose who should analyze this</APM_OcularChip.comps.1.guiLabelString>
+	<!--                              EN: Can be analyzed by a colonist. -->
+	<APM_OcularChip.comps.1.inspectString>Can be analyzed by a colonist.</APM_OcularChip.comps.1.inspectString>
+	<!--              EN: ocular harmonizer chip -->
+	<APM_OcularChip.label>ocular harmonizer chip</APM_OcularChip.label>
+	<!--                    EN: A stabilization matrix that synchronizes hellsphere turbulence into a coherent firing pattern. Without one, any ocular beam platform would tear itself apart. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+	<APM_OcularChip.description>A stabilization matrix that synchronizes hellsphere turbulence into a coherent firing pattern. Without one, any ocular beam platform would tear itself apart. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</APM_OcularChip.description>
+	
+	<!--                                     EN: Analyze... -->
+	<APM_PsionicChip.comps.1.activateLabelString>Analyze...</APM_PsionicChip.comps.1.activateLabelString>
+	<!--                                    EN: Analyze the chip. -->
+	<APM_PsionicChip.comps.1.activateDescString>Analyze the chip.</APM_PsionicChip.comps.1.activateDescString>
+	<!--                           EN: Analyze chip -->
+	<APM_PsionicChip.comps.1.jobString>Analyze chip</APM_PsionicChip.comps.1.jobString>
+	<!--                                EN: Choose who should analyze this -->
+	<APM_PsionicChip.comps.1.guiLabelString>Choose who should analyze this</APM_PsionicChip.comps.1.guiLabelString>
+	<!--                               EN: Can be analyzed by a colonist. -->
+	<APM_PsionicChip.comps.1.inspectString>Can be analyzed by a colonist.</APM_PsionicChip.comps.1.inspectString>
+	<!--               EN: psionic coordination chip -->
+	<APM_PsionicChip.label>psionic coordination chip</APM_PsionicChip.label>
+	<!--                     EN: A psychic-command mechanoid micro-organ infused with an Archotech echo of martial authority. Generates localized command fields, amplifying allied effectiveness. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+	<APM_PsionicChip.description>A psychic-command mechanoid micro-organ infused with an Archotech echo of martial authority. Generates localized command fields, amplifying allied effectiveness. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</APM_PsionicChip.description>
+	
+	<!--                                   EN: Analyze... -->
+	<APM_ExtraChip.comps.1.activateLabelString>Analyze...</APM_ExtraChip.comps.1.activateLabelString>
+	<!--                                  EN: Analyze the chip. -->
+	<APM_ExtraChip.comps.1.activateDescString>Analyze the chip.</APM_ExtraChip.comps.1.activateDescString>
+	<!--                         EN: Analyze chip -->
+	<APM_ExtraChip.comps.1.jobString>Analyze chip</APM_ExtraChip.comps.1.jobString>
+	<!--                              EN: Choose who should analyze this -->
+	<APM_ExtraChip.comps.1.guiLabelString>Choose who should analyze this</APM_ExtraChip.comps.1.guiLabelString>
+	<!--                             EN: Can be analyzed by a colonist. -->
+	<APM_ExtraChip.comps.1.inspectString>Can be analyzed by a colonist.</APM_ExtraChip.comps.1.inspectString>
+	<!--             EN: extrasensory amplification chip -->
+	<APM_ExtraChip.label>extrasensory amplification chip</APM_ExtraChip.label>
+	<!--                   EN: A emotion weaving mechanoid micro-organ engineered to magnify and regulate extrasensory mental force. It artificially amplifies emotions and the resulting psychic energy while limiting damage to the mind. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+	<APM_ExtraChip.description>A emotion weaving mechanoid micro-organ engineered to magnify and regulate extrasensory mental force. It artificially amplifies emotions and the resulting psychic energy while limiting damage to the mind. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</APM_ExtraChip.description>
+	
+	<!--                                     EN: Analyze... -->
+	<APM_PsyfluxChip.comps.1.activateLabelString>Analyze...</APM_PsyfluxChip.comps.1.activateLabelString>
+	<!--                                    EN: Analyze the chip. -->
+	<APM_PsyfluxChip.comps.1.activateDescString>Analyze the chip.</APM_PsyfluxChip.comps.1.activateDescString>
+	<!--                           EN: Analyze chip -->
+	<APM_PsyfluxChip.comps.1.jobString>Analyze chip</APM_PsyfluxChip.comps.1.jobString>
+	<!--                                EN: Choose who should analyze this -->
+	<APM_PsyfluxChip.comps.1.guiLabelString>Choose who should analyze this</APM_PsyfluxChip.comps.1.guiLabelString>
+	<!--                               EN: Can be analyzed by a colonist. -->
+	<APM_PsyfluxChip.comps.1.inspectString>Can be analyzed by a colonist.</APM_PsyfluxChip.comps.1.inspectString>
+	<!--               EN: psyflux projection chip -->
+	<APM_PsyfluxChip.label>psyflux projection chip</APM_PsyfluxChip.label>
+	<!--                     EN: A perception-warping mechanoid micro-organ that regulates rapid displacement, charged-particle emissions, and brief periods of psychic imperceptibility. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+	<APM_PsyfluxChip.description>A perception-warping mechanoid micro-organ that regulates rapid displacement, charged-particle emissions, and brief periods of psychic imperceptibility. It is necessary to produce certain advanced types of mechanoids and equipment. A mechanitor can study this chip to help unlock higher tiers of mechtech research.</APM_PsyfluxChip.description>
+</LanguageData>

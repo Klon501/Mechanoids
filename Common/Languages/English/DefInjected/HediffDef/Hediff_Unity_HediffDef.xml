@@ -1,0 +1,21 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediff_Unity.xml -->
+	<!--                EN: unity uplink -->
+	<APM_Hediff_Unity.label>unity uplink</APM_Hediff_Unity.label>
+	<!--                      EN: Conquerors are by default installed with processing units that automatically attempt to link with those of allies in the vicinity to assist each other with internal calculations, boosting their efficiency the more nearby. -->
+	<APM_Hediff_Unity.description>Conquerors are by default installed with processing units that automatically attempt to link with those of allies in the vicinity to assist each other with internal calculations, boosting their efficiency the more nearby.</APM_Hediff_Unity.description>
+	<!--                         EN: calculation link (minimal) -->
+	<APM_Hediff_Unity.stages.1.label>calculation link (minimal)</APM_Hediff_Unity.stages.1.label>
+	<!--                         EN: calculation link (low sync) -->
+	<APM_Hediff_Unity.stages.2.label>calculation link (low sync)</APM_Hediff_Unity.stages.2.label>
+	<!--                         EN: calculation link (medium sync) -->
+	<APM_Hediff_Unity.stages.3.label>calculation link (medium sync)</APM_Hediff_Unity.stages.3.label>
+	<!--                         EN: calculation link (distributed) -->
+	<APM_Hediff_Unity.stages.4.label>calculation link (distributed)</APM_Hediff_Unity.stages.4.label>
+	<!--                         EN: calculation link (high sync) -->
+	<APM_Hediff_Unity.stages.5.label>calculation link (high sync)</APM_Hediff_Unity.stages.5.label>
+	<!--                         EN: calculation link (optimized) -->
+	<APM_Hediff_Unity.stages.6.label>calculation link (optimized)</APM_Hediff_Unity.stages.6.label>
+	<!--                         EN: calculation link (peak efficiency) -->
+	<APM_Hediff_Unity.stages.7.label>calculation link (peak efficiency)</APM_Hediff_Unity.stages.7.label>
+</LanguageData>

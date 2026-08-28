@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Gazer.xml -->
+	<!--              EN: gazer -->
+	<APM_Mech_Gazer.label>gazer</APM_Mech_Gazer.label>
+	<!--                                 EN: Plural gazer -->
+	<APM_Mech_Gazer.lifeStages.1.labelPlural>Plural gazer</APM_Mech_Gazer.lifeStages.1.labelPlural>
+</LanguageData>

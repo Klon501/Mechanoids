@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Terminus.xml -->
+	
+	<!--                            EN: overdrive -->
+	<APM_Hediff_TerminusOverdrive.label>overdrive</APM_Hediff_TerminusOverdrive.label>
+	<!--                                  EN: Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression. -->
+	<APM_Hediff_TerminusOverdrive.description>Terminus is diverting a burst of power into direct combat performance, trading away its cape and restraint for a short window of overwhelming aggression.</APM_Hediff_TerminusOverdrive.description>
+</LanguageData>

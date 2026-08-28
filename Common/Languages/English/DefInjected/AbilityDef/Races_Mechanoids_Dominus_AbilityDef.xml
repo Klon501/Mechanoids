@@ -1,0 +1,18 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Dominus.xml -->
+	
+	<!--                  EN: Press The Attack -->
+	<APM_PressTheAttack.label>Press The Attack</APM_PressTheAttack.label>
+	<!--                        EN: The Dominus emits a psychic pulse that influences nearby allies to ignore pain, move faster and stay in high spirits. -->
+	<APM_PressTheAttack.description>The Dominus emits a psychic pulse that influences nearby allies to ignore pain, move faster and stay in high spirits.</APM_PressTheAttack.description>
+	
+	<!--             EN: the duel trial -->
+	<APM_Mech_Duel.label>the duel trial</APM_Mech_Duel.label>
+	<!--                   EN: A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead. -->
+	<APM_Mech_Duel.description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</APM_Mech_Duel.description>
+	
+	<!--                  EN: the duel trial -->
+	<APM_Mech_Duel_Boss.label>the duel trial</APM_Mech_Duel_Boss.label>
+	<!--                        EN: A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead. -->
+	<APM_Mech_Duel_Boss.description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</APM_Mech_Duel_Boss.description>
+</LanguageData>

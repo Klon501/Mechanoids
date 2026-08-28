@@ -1,0 +1,16 @@
+<LanguageData>
+	<!-- 1.6\Defs\ScenarioDefs\Scenarios_BuriedLegacy.xml -->
+	
+	<!--                                           EN: {0} from {1} are attacking your {2}. -->
+	<APM_DomainPlayerFaction.messageDefendersAttacking>{0} from {1} are attacking your {2}.</APM_DomainPlayerFaction.messageDefendersAttacking>
+	<!--                       EN: Mechanitor's Domain -->
+	<APM_DomainPlayerFaction.label>Mechanitor's Domain</APM_DomainPlayerFaction.label>
+	<!--                             EN: An ancient mechanitor's domain hiding a master's treasures. -->
+	<APM_DomainPlayerFaction.description>An ancient mechanitor's domain hiding a master's treasures.</APM_DomainPlayerFaction.description>
+	<!--                              EN: colonist -->
+	<APM_DomainPlayerFaction.pawnSingular>colonist</APM_DomainPlayerFaction.pawnSingular>
+	<!--                             EN: colonists -->
+	<APM_DomainPlayerFaction.pawnsPlural>colonists</APM_DomainPlayerFaction.pawnsPlural>
+	<!--                             EN: лидер -->
+	<APM_DomainPlayerFaction.leaderTitle>лидер</APM_DomainPlayerFaction.leaderTitle>
+</LanguageData>

@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkTypeDefs\WorkTypes_LasherAnimalHandling.xml -->
+	<!--                       EN: handle -->
+	<APM_LasherHandling.labelShort>handle</APM_LasherHandling.labelShort>
+	<!--                      EN: Handler -->
+	<APM_LasherHandling.pawnLabel>Handler</APM_LasherHandling.pawnLabel>
+	<!--                        EN: handling -->
+	<APM_LasherHandling.gerundLabel>handling</APM_LasherHandling.gerundLabel>
+	<!--                        EN: Tame, train, harvest resources from and slaughter animals. -->
+	<APM_LasherHandling.description>Tame, train, harvest resources from and slaughter animals.</APM_LasherHandling.description>
+	<!--                 EN: Handle -->
+	<APM_LasherHandling.verb>Handle</APM_LasherHandling.verb>
+</LanguageData>

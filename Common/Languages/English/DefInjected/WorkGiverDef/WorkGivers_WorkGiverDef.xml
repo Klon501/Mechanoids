@@ -1,0 +1,37 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkGiverDefs\WorkGivers.xml -->
+	<!--                      EN: enter repair station -->
+	<APM_EnterRepairStation.label>enter repair station</APM_EnterRepairStation.label>
+	<!--                     EN: enter -->
+	<APM_EnterRepairStation.verb>enter</APM_EnterRepairStation.verb>
+	<!--                       EN: entering -->
+	<APM_EnterRepairStation.gerund>entering</APM_EnterRepairStation.gerund>
+	
+	<!--                        EN: carry to repair station -->
+	<APM_CarryToRepairStation.label>carry to repair station</APM_CarryToRepairStation.label>
+	<!--                       EN: carry -->
+	<APM_CarryToRepairStation.verb>carry</APM_CarryToRepairStation.verb>
+	<!--                         EN: carrying -->
+	<APM_CarryToRepairStation.gerund>carrying</APM_CarryToRepairStation.gerund>
+	
+	<!--                    EN: repair mech -->
+	<APM_TinkerRepairMech.label>repair mech</APM_TinkerRepairMech.label>
+	<!--                   EN: repair -->
+	<APM_TinkerRepairMech.verb>repair</APM_TinkerRepairMech.verb>
+	<!--                     EN: repairing -->
+	<APM_TinkerRepairMech.gerund>repairing</APM_TinkerRepairMech.gerund>
+	
+	<!--                        EN: repair building -->
+	<APM_TinkerRepairBuilding.label>repair building</APM_TinkerRepairBuilding.label>
+	<!--                       EN: repair -->
+	<APM_TinkerRepairBuilding.verb>repair</APM_TinkerRepairBuilding.verb>
+	<!--                         EN: repairing -->
+	<APM_TinkerRepairBuilding.gerund>repairing</APM_TinkerRepairBuilding.gerund>
+	
+	<!--                      EN: haul to -->
+	<APM_HaulToToxicPurifier.verb>haul to</APM_HaulToToxicPurifier.verb>
+	<!--                        EN: hauling to -->
+	<APM_HaulToToxicPurifier.gerund>hauling to</APM_HaulToToxicPurifier.gerund>
+	<!--                       EN: haul wastepacks to purifier station -->
+	<APM_HaulToToxicPurifier.label>haul wastepacks to purifier station</APM_HaulToToxicPurifier.label>
+</LanguageData>

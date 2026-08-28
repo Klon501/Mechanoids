@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\SeveringBlade.xml -->
+	<!--                        EN: severing blade -->
+	<APM_Weapon_SeveringBlade.label>severing blade</APM_Weapon_SeveringBlade.label>
+	<!--                              EN: A heavy combat blade integrated with Terminus-derived control matrices. Allows the wielder to channel psychic energy into wide sweeping strikes, cleaving through multiple foes at once. -->
+	<APM_Weapon_SeveringBlade.description>A heavy combat blade integrated with Terminus-derived control matrices. Allows the wielder to channel psychic energy into wide sweeping strikes, cleaving through multiple foes at once.</APM_Weapon_SeveringBlade.description>
+	<!--                                EN: рукоять -->
+	<APM_Weapon_SeveringBlade.tools.0.label>рукоять</APM_Weapon_SeveringBlade.tools.0.label>
+	<!--                                EN: острие -->
+	<APM_Weapon_SeveringBlade.tools.1.label>острие</APM_Weapon_SeveringBlade.tools.1.label>
+	<!--                                EN: лезвие -->
+	<APM_Weapon_SeveringBlade.tools.2.label>лезвие</APM_Weapon_SeveringBlade.tools.2.label>
+</LanguageData>

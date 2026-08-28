@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Haze.xml -->
+	<!--             EN: haze -->
+	<APM_Mech_Haze.label>haze</APM_Mech_Haze.label>
+	<!--                                EN: Plural haze -->
+	<APM_Mech_Haze.lifeStages.1.labelPlural>Plural haze</APM_Mech_Haze.lifeStages.1.labelPlural>
+</LanguageData>

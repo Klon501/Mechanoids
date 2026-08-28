@@ -1,0 +1,54 @@
+<LanguageData>
+	<!-- 1.6\Defs\PawnRenderTree\PawnRenderTreeDefs.xml -->
+	<!--                                 EN: Root -->
+	<APM_RenderTree_Terminus.root.debugLabel>Root</APM_RenderTree_Terminus.root.debugLabel>
+	<!--                                            EN: Body -->
+	<APM_RenderTree_Terminus.root.children.0.debugLabel>Body</APM_RenderTree_Terminus.root.children.0.debugLabel>
+	<!--                                                       EN: Cape -->
+	<APM_RenderTree_Terminus.root.children.0.children.0.debugLabel>Cape</APM_RenderTree_Terminus.root.children.0.children.0.debugLabel>
+	<!--                                                       EN: Wounds -->
+	<APM_RenderTree_Terminus.root.children.0.children.1.debugLabel>Wounds</APM_RenderTree_Terminus.root.children.0.children.1.debugLabel>
+	<!--                                                       EN: Firefoam -->
+	<APM_RenderTree_Terminus.root.children.0.children.2.debugLabel>Firefoam</APM_RenderTree_Terminus.root.children.0.children.2.debugLabel>
+	<!--                                            EN: Carried thing -->
+	<APM_RenderTree_Terminus.root.children.1.debugLabel>Carried thing</APM_RenderTree_Terminus.root.children.1.debugLabel>
+	
+	<!--                              EN: Root -->
+	<APM_RenderTree_Aegis.root.debugLabel>Root</APM_RenderTree_Aegis.root.debugLabel>
+	<!--                                         EN: Body -->
+	<APM_RenderTree_Aegis.root.children.0.debugLabel>Body</APM_RenderTree_Aegis.root.children.0.debugLabel>
+	<!--                                                    EN: Left Shield -->
+	<APM_RenderTree_Aegis.root.children.0.children.0.debugLabel>Left Shield</APM_RenderTree_Aegis.root.children.0.children.0.debugLabel>
+	<!--                                                    EN: Right Shield -->
+	<APM_RenderTree_Aegis.root.children.0.children.1.debugLabel>Right Shield</APM_RenderTree_Aegis.root.children.0.children.1.debugLabel>
+	<!--                                                    EN: Wounds -->
+	<APM_RenderTree_Aegis.root.children.0.children.2.debugLabel>Wounds</APM_RenderTree_Aegis.root.children.0.children.2.debugLabel>
+	<!--                                                    EN: Firefoam -->
+	<APM_RenderTree_Aegis.root.children.0.children.3.debugLabel>Firefoam</APM_RenderTree_Aegis.root.children.0.children.3.debugLabel>
+	<!--                                         EN: Carried thing -->
+	<APM_RenderTree_Aegis.root.children.1.debugLabel>Carried thing</APM_RenderTree_Aegis.root.children.1.debugLabel>
+	
+	<!--                                       EN: Root -->
+	<APM_RenderTree_SatelliteHover.root.debugLabel>Root</APM_RenderTree_SatelliteHover.root.debugLabel>
+	<!--                                                  EN: Body -->
+	<APM_RenderTree_SatelliteHover.root.children.0.debugLabel>Body</APM_RenderTree_SatelliteHover.root.children.0.debugLabel>
+	<!--                                                             EN: Wounds -->
+	<APM_RenderTree_SatelliteHover.root.children.0.children.0.debugLabel>Wounds</APM_RenderTree_SatelliteHover.root.children.0.children.0.debugLabel>
+	<!--                                                             EN: Firefoam -->
+	<APM_RenderTree_SatelliteHover.root.children.0.children.1.debugLabel>Firefoam</APM_RenderTree_SatelliteHover.root.children.0.children.1.debugLabel>
+	<!--                                                             EN: Carried thing -->
+	<APM_RenderTree_SatelliteHover.root.children.0.children.2.debugLabel>Carried thing</APM_RenderTree_SatelliteHover.root.children.0.children.2.debugLabel>
+	
+	<!--                                 EN: Root -->
+	<APM_RenderTree_Ingestor.root.debugLabel>Root</APM_RenderTree_Ingestor.root.debugLabel>
+	<!--                                            EN: Body -->
+	<APM_RenderTree_Ingestor.root.children.0.debugLabel>Body</APM_RenderTree_Ingestor.root.children.0.debugLabel>
+	<!--                                                       EN: Mouth -->
+	<APM_RenderTree_Ingestor.root.children.0.children.0.debugLabel>Mouth</APM_RenderTree_Ingestor.root.children.0.children.0.debugLabel>
+	<!--                                                       EN: Wounds -->
+	<APM_RenderTree_Ingestor.root.children.0.children.1.debugLabel>Wounds</APM_RenderTree_Ingestor.root.children.0.children.1.debugLabel>
+	<!--                                                       EN: Firefoam -->
+	<APM_RenderTree_Ingestor.root.children.0.children.2.debugLabel>Firefoam</APM_RenderTree_Ingestor.root.children.0.children.2.debugLabel>
+	<!--                                            EN: Carried thing -->
+	<APM_RenderTree_Ingestor.root.children.1.debugLabel>Carried thing</APM_RenderTree_Ingestor.root.children.1.debugLabel>
+</LanguageData>

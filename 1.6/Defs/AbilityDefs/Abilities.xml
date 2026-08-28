@@ -357,7 +357,7 @@
 	<AbilityDef>
 		<defName>APM_Bladehopp</defName>
 		<label>Bladehopp</label>
-		<description>Dash to a target followed by a quick attack.</description>
+		<description>The mantis lunges forward, executing a brutal slash on a chosen target.</description>
 		<iconPath>UI/Bladehopp</iconPath>
 		<cooldownTicksRange>2500</cooldownTicksRange>
 		<hostile>true</hostile>

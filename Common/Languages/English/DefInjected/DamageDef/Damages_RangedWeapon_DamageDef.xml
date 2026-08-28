@@ -1,0 +1,22 @@
+<LanguageData>
+	<!-- 1.6\Defs\DamageDefs\Damages_RangedWeapon.xml -->
+	<!--             EN: gazer beam -->
+	<APM_GazerBeam.label>gazer beam</APM_GazerBeam.label>
+	<!--                    EN: {0} has been beamed to death. -->
+	<APM_GazerBeam.deathMessage>{0} has been beamed to death.</APM_GazerBeam.deathMessage>
+	
+	<!--          EN: sun ray -->
+	<APM_SunRay.label>sun ray</APM_SunRay.label>
+	<!--                 EN: {0} has been beamed to death. -->
+	<APM_SunRay.deathMessage>{0} has been beamed to death.</APM_SunRay.deathMessage>
+	
+	<!--    EN: push damage -->
+	<Push.label>push damage</Push.label>
+	<!--           EN: {0} has been ... to death. -->
+	<Push.deathMessage>{0} has been ... to death.</Push.deathMessage>
+	
+	<!--        EN: cut -->
+	<APM_Whip.label>cut</APM_Whip.label>
+	<!--               EN: {0} has been cut to death. -->
+	<APM_Whip.deathMessage>{0} has been cut to death.</APM_Whip.deathMessage>
+</LanguageData>

@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\Weapons_Solus.xml -->
+	<!--         EN: solus -->
+	<APM_Solus.label>solus</APM_Solus.label>
+	<!--               EN: A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage. -->
+	<APM_Solus.description>A reinforced gamma-ray emitter capable of producing a dense, concentrated ball of destructive energy. As the ball passes by targets, it discharges into them and ignites its surroundings. It is a particularly devastating weapon against groups of enemies. The massive energy output requires stabilization protocols to prevent self-damage.</APM_Solus.description>
+	<!--                 EN: ㅤ -->
+	<APM_Solus.verbs.0.label>ㅤ</APM_Solus.verbs.0.label>
+	
+	<!--            EN: solus orb -->
+	<APM_SolusOrb.label>solus orb</APM_SolusOrb.label>
+</LanguageData>

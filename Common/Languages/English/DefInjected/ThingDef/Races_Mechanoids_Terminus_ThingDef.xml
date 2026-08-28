@@ -1,0 +1,38 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Terminus.xml -->
+	<!--                 EN: Terminus -->
+	<APM_Mech_Terminus.label>Terminus</APM_Mech_Terminus.label>
+	<!--                       EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control. -->
+	<APM_Mech_Terminus.description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</APM_Mech_Terminus.description>
+	<!--                         EN: левый кулак -->
+	<APM_Mech_Terminus.tools.0.label>левый кулак</APM_Mech_Terminus.tools.0.label>
+	<!--                                   EN: fist -->
+	<APM_Mech_Terminus.tools.0.labelNoLocation>fist</APM_Mech_Terminus.tools.0.labelNoLocation>
+	<!--                         EN: правый кулак -->
+	<APM_Mech_Terminus.tools.1.label>правый кулак</APM_Mech_Terminus.tools.1.label>
+	<!--                                   EN: fist -->
+	<APM_Mech_Terminus.tools.1.labelNoLocation>fist</APM_Mech_Terminus.tools.1.labelNoLocation>
+	<!--                         EN: голова -->
+	<APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+	
+	<!--                  EN: Terminus -->
+	<APM_Mech_TerminusB.label>Terminus</APM_Mech_TerminusB.label>
+	<!--                        EN: Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control. -->
+	<APM_Mech_TerminusB.description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</APM_Mech_TerminusB.description>
+	<!--                          EN: левый кулак -->
+	<APM_Mech_TerminusB.tools.0.label>левый кулак</APM_Mech_TerminusB.tools.0.label>
+	<!--                                    EN: fist -->
+	<APM_Mech_TerminusB.tools.0.labelNoLocation>fist</APM_Mech_TerminusB.tools.0.labelNoLocation>
+	<!--                          EN: правый кулак -->
+	<APM_Mech_TerminusB.tools.1.label>правый кулак</APM_Mech_TerminusB.tools.1.label>
+	<!--                                    EN: fist -->
+	<APM_Mech_TerminusB.tools.1.labelNoLocation>fist</APM_Mech_TerminusB.tools.1.labelNoLocation>
+	<!--                          EN: голова -->
+	<APM_Mech_TerminusB.tools.2.label>голова</APM_Mech_TerminusB.tools.2.label>
+	
+	<!--            EN: bullet -->
+	<SeveringEdge.label>bullet</SeveringEdge.label>
+	
+	<!--                 EN: bullet -->
+	<SeveringEdge_Boss.label>bullet</SeveringEdge_Boss.label>
+</LanguageData>

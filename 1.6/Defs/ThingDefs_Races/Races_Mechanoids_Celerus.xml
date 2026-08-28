@@ -310,7 +310,7 @@
 	<!-- ==================== UTILITY ABILITIES ==================== -->
 	<AbilityDef>
 		<defName>APM_CelerusBlink</defName>
-		<label>"Blink"</label>
+		<label>Blink</label>
 		<description>Active onboard "blink" micro skip drive, skip to target loction.</description>
 		<level>4</level>
 		<iconPath>UI/Blink</iconPath>

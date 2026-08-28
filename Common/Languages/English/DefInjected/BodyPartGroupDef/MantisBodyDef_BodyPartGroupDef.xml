@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\MantisBodyDef.xml -->
+	
+	<!--                   EN: left cutting claw -->
+	<APM_LeftMantisBlade.label>left cutting claw</APM_LeftMantisBlade.label>
+	<!--                        EN: claw -->
+	<APM_LeftMantisBlade.labelShort>claw</APM_LeftMantisBlade.labelShort>
+	
+	<!--                    EN: right cutting claw -->
+	<APM_RightMantisBlade.label>right cutting claw</APM_RightMantisBlade.label>
+	<!--                         EN: claw -->
+	<APM_RightMantisBlade.labelShort>claw</APM_RightMantisBlade.labelShort>
+</LanguageData>

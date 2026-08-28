@@ -1,0 +1,18 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\GazerBodyDef.xml -->
+	
+	<!--             EN: head -->
+	<APM_GazerHead.label>head</APM_GazerHead.label>
+	
+	<!--                      EN: cooling system -->
+	<APM_GazerCoolingSystem.label>cooling system</APM_GazerCoolingSystem.label>
+	
+	<!--                   EN: laser focus -->
+	<APM_GazerLaserFocus.label>laser focus</APM_GazerLaserFocus.label>
+	
+	<!--               EN: thorax -->
+	<APM_GazerThorax.label>thorax</APM_GazerThorax.label>
+	
+	<!--            EN: leg -->
+	<APM_GazerPaw.label>leg</APM_GazerPaw.label>
+</LanguageData>
