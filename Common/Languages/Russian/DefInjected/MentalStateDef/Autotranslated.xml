@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <APM_Duel.label>дуэль</APM_Duel.label>
+  <APM_Duel.baseInspectLine>Психическое состояние: дуэль</APM_Duel.baseInspectLine>
+  <APM_Duel.beginLetter>{INITIATOR} вызывает {TARGET} на дуэль.</APM_Duel.beginLetter>
+  <APM_Duel.recoveryMessage>Дуэль {0} завершилась.</APM_Duel.recoveryMessage>
 </LanguageData>

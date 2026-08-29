@@ -198,4 +198,280 @@
   <SeveringEdge_Boss.label>Рассекающая грань</SeveringEdge_Boss.label>
   <APM_Projectile_CelerusSmokescreen.label>дымовая граната</APM_Projectile_CelerusSmokescreen.label>
   <APM_Projectile_CelerusSmokescreen_Boss.label>дымовая граната</APM_Projectile_CelerusSmokescreen_Boss.label>
+  <APM_Apparel_MechamancerPack.comps.CompApparelReloadable.chargeNoun>спутник</APM_Apparel_MechamancerPack.comps.CompApparelReloadable.chargeNoun>
+  <APM_Apparel_MechamancerPack.comps.CompApparelReloadable.cooldownGerund>перезарядка</APM_Apparel_MechamancerPack.comps.CompApparelReloadable.cooldownGerund>
+  <APM_Apparel_MechamancerPack.verbs.summon_satellite.label>вызвать спутник</APM_Apparel_MechamancerPack.verbs.summon_satellite.label>
+  <APM_DuelDraw.label>частица</APM_DuelDraw.label>
+  <APM_DuelDraw_Boss.label>частица</APM_DuelDraw_Boss.label>
+  <APM_DuelSpot.comps.CompDestroyAfterDelay.countdownLabel>Осталось</APM_DuelSpot.comps.CompDestroyAfterDelay.countdownLabel>
+  <APM_DuelSpot.description>Выбранная цель вызывается на дуэль, и вокруг дуэлянтов генерируется щит. На время дуэли дальние атаки, способности и получаемый урон усиливаются. Кроме того, если дуэль не завершится за отведённое время, дуэлянты получат суровое ослабление. Если же один из бойцов погибнет или будет повержен, победитель вместо этого получит мощное временное усиление.</APM_DuelSpot.description>
+  <APM_DuelSpot.label>место дуэли</APM_DuelSpot.label>
+  <APM_DuelSpot_Boss.comps.CompDestroyAfterDelay.countdownLabel>Осталось</APM_DuelSpot_Boss.comps.CompDestroyAfterDelay.countdownLabel>
+  <APM_DuelSpot_Boss.description>Выбранная цель вызывается на дуэль, и вокруг дуэлянтов генерируется щит. На время дуэли дальние атаки, способности и получаемый урон усиливаются. Кроме того, если дуэль не завершится за отведённое время, дуэлянты получат суровое ослабление. Если же один из бойцов погибнет или будет повержен, победитель вместо этого получит мощное временное усиление.</APM_DuelSpot_Boss.description>
+  <APM_DuelSpot_Boss.label>место дуэли</APM_DuelSpot_Boss.label>
+  <APM_DuelVS.label>частица</APM_DuelVS.label>
+  <APM_DuelVS_Boss.label>частица</APM_DuelVS_Boss.label>
+  <APM_DuelWinner.label>частица</APM_DuelWinner.label>
+  <APM_DuelWinner_Boss.label>частица</APM_DuelWinner_Boss.label>
+  <APM_ElectricArcA.label>частица</APM_ElectricArcA.label>
+  <APM_ExtraChip.comps.CompAnalyzableUnlockResearch.activateDescString>Изучить чип.</APM_ExtraChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <APM_ExtraChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Изучить...</APM_ExtraChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <APM_ExtraChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Выберите, кто должен изучить это</APM_ExtraChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <APM_ExtraChip.comps.CompAnalyzableUnlockResearch.inspectString>Может быть изучено колонистом.</APM_ExtraChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <APM_ExtraChip.comps.CompAnalyzableUnlockResearch.jobString>Изучить чип</APM_ExtraChip.comps.CompAnalyzableUnlockResearch.jobString>
+  <APM_Gazer_Laser.verbs.Verb_ShootBeamFromOffset.label>лазер</APM_Gazer_Laser.verbs.Verb_ShootBeamFromOffset.label>
+  <APM_Gun_Conqueror_AR.tools.barrel.label>ствол</APM_Gun_Conqueror_AR.tools.barrel.label>
+  <APM_Gun_Conqueror_AR.tools.stock.label>приклад</APM_Gun_Conqueror_AR.tools.stock.label>
+  <APM_Gun_Conqueror_AR.verbs.Verb_Shoot.label>импульсная штурмовая винтовка</APM_Gun_Conqueror_AR.verbs.Verb_Shoot.label>
+  <APM_Gun_Conqueror_DMR.tools.barrel.label>ствол</APM_Gun_Conqueror_DMR.tools.barrel.label>
+  <APM_Gun_Conqueror_DMR.verbs.Verb_Shoot.label>импульсный карабин</APM_Gun_Conqueror_DMR.verbs.Verb_Shoot.label>
+  <APM_Gun_Conqueror_SMG.tools.grip.label>рукоять</APM_Gun_Conqueror_SMG.tools.grip.label>
+  <APM_Gun_Conqueror_SMG.verbs.Verb_Shoot.label>зарядный плеватель</APM_Gun_Conqueror_SMG.verbs.Verb_Shoot.label>
+  <APM_Gun_EMP_Impactor.tools.barrel.label>ствол</APM_Gun_EMP_Impactor.tools.barrel.label>
+  <APM_Gun_EMP_Impactor.tools.stock.label>приклад</APM_Gun_EMP_Impactor.tools.stock.label>
+  <APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>ЭМИ-импактор</APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>
+  <APM_Gun_JavelinRocketLauncher.tools.barrel.label>ствол</APM_Gun_JavelinRocketLauncher.tools.barrel.label>
+  <APM_Gun_JavelinRocketLauncher.tools.stock.label>приклад</APM_Gun_JavelinRocketLauncher.tools.stock.label>
+  <APM_Gun_JavelinRocketLauncher.verbs.Verb_ShootJavelin.label>пусковая установка «Джавелин»</APM_Gun_JavelinRocketLauncher.verbs.Verb_ShootJavelin.label>
+  <APM_Gun_Maul.tools.butt.label>торец приклада</APM_Gun_Maul.tools.butt.label>
+  <APM_Gun_Maul.tools.sledge_hammer.label>кувалда</APM_Gun_Maul.tools.sledge_hammer.label>
+  <APM_Gun_Maul.verbs.Verb_ShootMultiple.label>тяжёлый молот-бластер</APM_Gun_Maul.verbs.Verb_ShootMultiple.label>
+  <APM_Gun_Pulse_Shotgun.tools.barrel.label>ствол</APM_Gun_Pulse_Shotgun.tools.barrel.label>
+  <APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>импульсный рассеиватель</APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>
+  <APM_Gun_Satellite.tools.barrel.label>ствол</APM_Gun_Satellite.tools.barrel.label>
+  <APM_Gun_Satellite.verbs.Verb_Shoot.label>лёгкий импульсный подавитель</APM_Gun_Satellite.verbs.Verb_Shoot.label>
+  <APM_Gun_Vassal_SwordRifle.tools.blade.label>лезвие</APM_Gun_Vassal_SwordRifle.tools.blade.label>
+  <APM_Gun_Vassal_SwordRifle.tools.point.label>остриё</APM_Gun_Vassal_SwordRifle.tools.point.label>
+  <APM_Gun_Vassal_SwordRifle.tools.stock.label>приклад</APM_Gun_Vassal_SwordRifle.tools.stock.label>
+  <APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>импульсная винтовка-клинок</APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>
+  <APM_Haze_BeamGun.tools.barrel.label>ствол</APM_Haze_BeamGun.tools.barrel.label>
+  <APM_Haze_BeamGun.verbs.Verb_Shoot.label>лучевой иссушитель</APM_Haze_BeamGun.verbs.Verb_Shoot.label>
+  <APM_Mech_Aegis.tools.left_shield.label>левый щит</APM_Mech_Aegis.tools.left_shield.label>
+  <APM_Mech_Aegis.tools.left_shield.labelNoLocation>щит</APM_Mech_Aegis.tools.left_shield.labelNoLocation>
+  <APM_Mech_Aegis.tools.right_shield.label>правый щит</APM_Mech_Aegis.tools.right_shield.label>
+  <APM_Mech_Aegis.tools.right_shield.labelNoLocation>щит</APM_Mech_Aegis.tools.right_shield.labelNoLocation>
+  <APM_Mech_Celerus.tools.left_fist.labelNoLocation>кулак</APM_Mech_Celerus.tools.left_fist.labelNoLocation>
+  <APM_Mech_Celerus.tools.right_fist.labelNoLocation>кулак</APM_Mech_Celerus.tools.right_fist.labelNoLocation>
+  <APM_Mech_CelerusB.tools.left_fist.labelNoLocation>кулак</APM_Mech_CelerusB.tools.left_fist.labelNoLocation>
+  <APM_Mech_CelerusB.tools.right_fist.labelNoLocation>кулак</APM_Mech_CelerusB.tools.right_fist.labelNoLocation>
+  <APM_Mech_Conqueror_AR.tools.head.label>голова</APM_Mech_Conqueror_AR.tools.head.label>
+  <APM_Mech_Conqueror_AR.tools.left_fist.label>левый кулак</APM_Mech_Conqueror_AR.tools.left_fist.label>
+  <APM_Mech_Conqueror_AR.tools.left_fist.labelNoLocation>кулак</APM_Mech_Conqueror_AR.tools.left_fist.labelNoLocation>
+  <APM_Mech_Conqueror_AR.tools.right_fist.label>правый кулак</APM_Mech_Conqueror_AR.tools.right_fist.label>
+  <APM_Mech_Conqueror_AR.tools.right_fist.labelNoLocation>кулак</APM_Mech_Conqueror_AR.tools.right_fist.labelNoLocation>
+  <APM_Mech_Conqueror_DMR.tools.head.label>голова</APM_Mech_Conqueror_DMR.tools.head.label>
+  <APM_Mech_Conqueror_DMR.tools.left_fist.label>левый кулак</APM_Mech_Conqueror_DMR.tools.left_fist.label>
+  <APM_Mech_Conqueror_DMR.tools.left_fist.labelNoLocation>кулак</APM_Mech_Conqueror_DMR.tools.left_fist.labelNoLocation>
+  <APM_Mech_Conqueror_DMR.tools.right_fist.label>правый кулак</APM_Mech_Conqueror_DMR.tools.right_fist.label>
+  <APM_Mech_Conqueror_DMR.tools.right_fist.labelNoLocation>кулак</APM_Mech_Conqueror_DMR.tools.right_fist.labelNoLocation>
+  <APM_Mech_Conqueror_SMG.tools.head.label>голова</APM_Mech_Conqueror_SMG.tools.head.label>
+  <APM_Mech_Conqueror_SMG.tools.left_fist.label>левый кулак</APM_Mech_Conqueror_SMG.tools.left_fist.label>
+  <APM_Mech_Conqueror_SMG.tools.left_fist.labelNoLocation>кулак</APM_Mech_Conqueror_SMG.tools.left_fist.labelNoLocation>
+  <APM_Mech_Conqueror_SMG.tools.right_fist.label>правый кулак</APM_Mech_Conqueror_SMG.tools.right_fist.label>
+  <APM_Mech_Conqueror_SMG.tools.right_fist.labelNoLocation>кулак</APM_Mech_Conqueror_SMG.tools.right_fist.labelNoLocation>
+  <APM_Mech_Dynamo.tools.head.label>голова</APM_Mech_Dynamo.tools.head.label>
+  <APM_Mech_Frostivus.tools.front_left_leg.label>передняя левая нога</APM_Mech_Frostivus.tools.front_left_leg.label>
+  <APM_Mech_Frostivus.tools.front_left_leg.labelNoLocation>нога</APM_Mech_Frostivus.tools.front_left_leg.labelNoLocation>
+  <APM_Mech_Frostivus.tools.front_right_leg.label>передняя правая нога</APM_Mech_Frostivus.tools.front_right_leg.label>
+  <APM_Mech_Frostivus.tools.front_right_leg.labelNoLocation>нога</APM_Mech_Frostivus.tools.front_right_leg.labelNoLocation>
+  <APM_Mech_Frostivus.tools.head.label>голова</APM_Mech_Frostivus.tools.head.label>
+  <APM_Mech_Gazer.tools.front_left_paw.label>передняя левая лапа</APM_Mech_Gazer.tools.front_left_paw.label>
+  <APM_Mech_Gazer.tools.front_right_paw.label>передняя правая лапа</APM_Mech_Gazer.tools.front_right_paw.label>
+  <APM_Mech_Gazer.tools.head.label>голова</APM_Mech_Gazer.tools.head.label>
+  <APM_Mech_Haze.tools.front_left_paw.label>передняя левая лапа</APM_Mech_Haze.tools.front_left_paw.label>
+  <APM_Mech_Haze.tools.front_right_paw.label>передняя правая лапа</APM_Mech_Haze.tools.front_right_paw.label>
+  <APM_Mech_Haze.tools.head.label>голова</APM_Mech_Haze.tools.head.label>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.0.description>Кумулятивная противотанковая боеголовка. Бесплатная и единственная, чья ГСН запоминает цель: каждая ракета, снова нашедшая ту же цель, кусает глубже предыдущей.</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.0.description>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.0.label>обычная ракета</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.0.label>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.1.description>Разбрызгивает горящее топливо по месту попадания и поджигает всё, что там находится. Слабо против брони.</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.1.description>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.1.label>зажигательная ракета</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.1.label>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.2.description>Осколочная боеголовка с широким радиусом поражения. Разрывает толпу легкобронированных целей, но против одной тяжёлой куда слабее обычной ракеты.</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.2.description>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.2.label>фугасная ракета</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.2.label>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.3.description>Электромагнитный импульс, который выводит машины из строя outright и почти не задевает плоть. При налётах механоидов не применяется.</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.3.description>
+  <APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.3.label>ЭМИ-ракета</APM_Mech_Javelin.comps.CompJavelinRocketRack.rockets.3.label>
+  <APM_Mech_Javelin.comps.CompRefuelable.fuelGizmoLabel>ракетный уран</APM_Mech_Javelin.comps.CompRefuelable.fuelGizmoLabel>
+  <APM_Mech_Javelin.comps.CompRefuelable.fuelLabel>ракетный уран</APM_Mech_Javelin.comps.CompRefuelable.fuelLabel>
+  <APM_Mech_Javelin.tools.head.label>голова</APM_Mech_Javelin.tools.head.label>
+  <APM_Mech_Lasher.tools.head.label>голова</APM_Mech_Lasher.tools.head.label>
+  <APM_Mech_Lasher.tools.left_fist.label>левый кулак</APM_Mech_Lasher.tools.left_fist.label>
+  <APM_Mech_Lasher.tools.left_fist.labelNoLocation>кулак</APM_Mech_Lasher.tools.left_fist.labelNoLocation>
+  <APM_Mech_Lasher.tools.right_fist.label>правый кулак</APM_Mech_Lasher.tools.right_fist.label>
+  <APM_Mech_Lasher.tools.right_fist.labelNoLocation>кулак</APM_Mech_Lasher.tools.right_fist.labelNoLocation>
+  <APM_Mech_Mantis.tools.head.label>голова</APM_Mech_Mantis.tools.head.label>
+  <APM_Mech_Maul.tools.head.label>голова</APM_Mech_Maul.tools.head.label>
+  <APM_Mech_Maul.tools.left_fist.label>левый кулак</APM_Mech_Maul.tools.left_fist.label>
+  <APM_Mech_Maul.tools.left_fist.labelNoLocation>кулак</APM_Mech_Maul.tools.left_fist.labelNoLocation>
+  <APM_Mech_Maul.tools.right_fist.label>правый кулак</APM_Mech_Maul.tools.right_fist.label>
+  <APM_Mech_Maul.tools.right_fist.labelNoLocation>кулак</APM_Mech_Maul.tools.right_fist.labelNoLocation>
+  <APM_Mech_Pulse.tools.head.label>голова</APM_Mech_Pulse.tools.head.label>
+  <APM_Mech_Ravager.tools.head.label>голова</APM_Mech_Ravager.tools.head.label>
+  <APM_Mech_Satellite.tools.head.label>голова</APM_Mech_Satellite.tools.head.label>
+  <APM_Mech_Satellite.tools.left_fist.label>левый кулак</APM_Mech_Satellite.tools.left_fist.label>
+  <APM_Mech_Satellite.tools.left_fist.labelNoLocation>кулак</APM_Mech_Satellite.tools.left_fist.labelNoLocation>
+  <APM_Mech_Satellite.tools.right_fist.label>правый кулак</APM_Mech_Satellite.tools.right_fist.label>
+  <APM_Mech_Satellite.tools.right_fist.labelNoLocation>кулак</APM_Mech_Satellite.tools.right_fist.labelNoLocation>
+  <APM_Mech_Siren.tools.head.label>голова</APM_Mech_Siren.tools.head.label>
+  <APM_Mech_Siren.tools.left_fist.label>левый кулак</APM_Mech_Siren.tools.left_fist.label>
+  <APM_Mech_Siren.tools.left_fist.labelNoLocation>кулак</APM_Mech_Siren.tools.left_fist.labelNoLocation>
+  <APM_Mech_Siren.tools.right_fist.label>правый кулак</APM_Mech_Siren.tools.right_fist.label>
+  <APM_Mech_Siren.tools.right_fist.labelNoLocation>кулак</APM_Mech_Siren.tools.right_fist.labelNoLocation>
+  <APM_Mech_Terminus.tools.left_fist.labelNoLocation>кулак</APM_Mech_Terminus.tools.left_fist.labelNoLocation>
+  <APM_Mech_Terminus.tools.right_fist.labelNoLocation>кулак</APM_Mech_Terminus.tools.right_fist.labelNoLocation>
+  <APM_Mech_TerminusB.tools.left_fist.labelNoLocation>кулак</APM_Mech_TerminusB.tools.left_fist.labelNoLocation>
+  <APM_Mech_TerminusB.tools.right_fist.labelNoLocation>кулак</APM_Mech_TerminusB.tools.right_fist.labelNoLocation>
+  <APM_Mech_Tinker.tools.head.label>голова</APM_Mech_Tinker.tools.head.label>
+  <APM_Mech_Tinker.tools.left_fist.label>левый кулак</APM_Mech_Tinker.tools.left_fist.label>
+  <APM_Mech_Tinker.tools.left_fist.labelNoLocation>кулак</APM_Mech_Tinker.tools.left_fist.labelNoLocation>
+  <APM_Mech_Tinker.tools.right_fist.label>правый кулак</APM_Mech_Tinker.tools.right_fist.label>
+  <APM_Mech_Tinker.tools.right_fist.labelNoLocation>кулак</APM_Mech_Tinker.tools.right_fist.labelNoLocation>
+  <APM_Mech_Vassal.tools.head.label>голова</APM_Mech_Vassal.tools.head.label>
+  <APM_Mech_Vassal.tools.left_fist.label>левый кулак</APM_Mech_Vassal.tools.left_fist.label>
+  <APM_Mech_Vassal.tools.left_fist.labelNoLocation>кулак</APM_Mech_Vassal.tools.left_fist.labelNoLocation>
+  <APM_Mech_Vassal.tools.right_fist.label>правый кулак</APM_Mech_Vassal.tools.right_fist.label>
+  <APM_Mech_Vassal.tools.right_fist.labelNoLocation>кулак</APM_Mech_Vassal.tools.right_fist.labelNoLocation>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>Приказать механоиду войти в стазис.</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>Выбрать механоида</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activateDescString>Взломать контейнер, чтобы перепрограммировать механоида внутри.</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activateDescString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activateLabelString>Взломать</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activateLabelString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activatingString>взлом {0}: {1} с</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activatingString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activatingStringPending>взлом {0}</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.activatingStringPending>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.guiLabelString>Выберите, кто должен взломать это.</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.guiLabelString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.onCooldownString>перекалибровка</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.onCooldownString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activateDescString>Взломать контейнер, чтобы перепрограммировать механоида внутри.</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activateDescString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activateLabelString>Взломать</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activateLabelString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activatingString>взлом {0}: {1} с</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activatingString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activatingStringPending>взлом {0}</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.activatingStringPending>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.guiLabelString>Выберите, кто должен взломать это.</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.guiLabelString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.onCooldownString>перекалибровка</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.onCooldownString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>Приказать механоиду войти в стазис.</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>Выбрать механоида</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activateDescString>Взломать контейнер, чтобы перепрограммировать механоида внутри.</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activateDescString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activateLabelString>Взломать</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activateLabelString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activatingString>взлом {0}: {1} с</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activatingString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activatingStringPending>взлом {0}</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.activatingStringPending>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.guiLabelString>Выберите, кто должен взломать это.</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.guiLabelString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.onCooldownString>перекалибровка</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.onCooldownString>
+  <APM_MechanoidContainer_Legacy_Lasher.description>Один из контейнеров стазиса гарнизона самого домена, всё ещё запечатанный и всё ещё поддерживающий цикл сохранения на последних резервах. Механитор, который наполнил его, давно мёртв, и нейронная связь, на которую он откликался, умерла вместе с ним, так что любой, кто сорвёт печать, сможет заявить права на то, что выйдет наружу.</APM_MechanoidContainer_Legacy_Lasher.description>
+  <APM_MechanoidContainer_Legacy_Lasher.label>запечатанный контейнер стазиса механоида</APM_MechanoidContainer_Legacy_Lasher.label>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>Приказать механоиду войти в стазис.</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>Выбрать механоида</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activateDescString>Взломать контейнер, чтобы перепрограммировать механоида внутри.</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activateDescString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activateLabelString>Взломать</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activateLabelString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activatingString>взлом {0}: {1} с</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activatingString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activatingStringPending>взлом {0}</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.activatingStringPending>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.guiLabelString>Выберите, кто должен взломать это.</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.guiLabelString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.onCooldownString>перекалибровка</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.onCooldownString>
+  <APM_MechanoidContainer_Legacy_Tinker.description>Один из контейнеров стазиса гарнизона самого домена, всё ещё запечатанный и всё ещё поддерживающий цикл сохранения на последних резервах. Механитор, который наполнил его, давно мёртв, и нейронная связь, на которую он откликался, умерла вместе с ним, так что любой, кто сорвёт печать, сможет заявить права на то, что выйдет наружу.</APM_MechanoidContainer_Legacy_Tinker.description>
+  <APM_MechanoidContainer_Legacy_Tinker.label>запечатанный контейнер стазиса механоида</APM_MechanoidContainer_Legacy_Tinker.label>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>Приказать механоиду войти в стазис.</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>Выбрать механоида</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activateDescString>Взломать контейнер, чтобы перепрограммировать механоида внутри.</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activateDescString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activateLabelString>Взломать</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activateLabelString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activatingString>взлом {0}: {1} с</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activatingString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activatingStringPending>взлом {0}</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.activatingStringPending>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.guiLabelString>Выберите, кто должен взломать это.</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.guiLabelString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.onCooldownString>перекалибровка</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.onCooldownString>
+  <APM_MechanoidContainer_Legacy_Vassal.description>Один из контейнеров стазиса гарнизона самого домена, всё ещё запечатанный и всё ещё поддерживающий цикл сохранения на последних резервах. Механитор, который наполнил его, давно мёртв, и нейронная связь, на которую он откликался, умерла вместе с ним, так что любой, кто сорвёт печать, сможет заявить права на то, что выйдет наружу.</APM_MechanoidContainer_Legacy_Vassal.description>
+  <APM_MechanoidContainer_Legacy_Vassal.label>запечатанный контейнер стазиса механоида</APM_MechanoidContainer_Legacy_Vassal.label>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>Приказать механоиду войти в стазис.</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.ChooseMechDesc>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>Выбрать механоида</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.ChooseMechLabel>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activateDescString>Извлечь механоида из контейнера стазиса.</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activateDescString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activateLabelString>Извлечь</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activateLabelString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activatingString>извлечение из {0}: {1} с</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activatingString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activatingStringPending>извлечение из {0}</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.activatingStringPending>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.guiLabelString>Выберите, кто должен открыть это.</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.guiLabelString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.onCooldownString>перекалибровка</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.onCooldownString>
+  <APM_MechbandAntenna_Celerus.comps.CompUsable.useLabel>Призвать угрозу: целерус</APM_MechbandAntenna_Celerus.comps.CompUsable.useLabel>
+  <APM_MechbandAntenna_Dominus.comps.CompUsable.useLabel>Призвать угрозу: доминус</APM_MechbandAntenna_Dominus.comps.CompUsable.useLabel>
+  <APM_MechbandAntenna_Gazer.comps.CompUsable.useLabel>Призвать угрозу: созерцатель</APM_MechbandAntenna_Gazer.comps.CompUsable.useLabel>
+  <APM_MechbandAntenna_Terminus.comps.CompUsable.useLabel>Призвать угрозу: терминус</APM_MechbandAntenna_Terminus.comps.CompUsable.useLabel>
+  <APM_MechbandAntenna_United.comps.CompUsable.useLabel>Призвать угрозу: Три владыки</APM_MechbandAntenna_United.comps.CompUsable.useLabel>
+  <APM_MechbandAntenna_United.comps.CompUseEffect_CallMulBossgroup.leaderName>Три Владыки</APM_MechbandAntenna_United.comps.CompUseEffect_CallMulBossgroup.leaderName>
+  <APM_Mote_BlindingLaser.label>частица</APM_Mote_BlindingLaser.label>
+  <APM_Mote_Blink_DarkFragment_A.label>частица</APM_Mote_Blink_DarkFragment_A.label>
+  <APM_Mote_Blink_DarkFragment_B.label>частица</APM_Mote_Blink_DarkFragment_B.label>
+  <APM_Mote_Blink_DarkFragment_C.label>частица</APM_Mote_Blink_DarkFragment_C.label>
+  <APM_Mote_Blink_DarkFragment_D.label>частица</APM_Mote_Blink_DarkFragment_D.label>
+  <APM_Mote_Blink_Ring.label>частица</APM_Mote_Blink_Ring.label>
+  <APM_Mote_Blink_Sparkle.label>частица</APM_Mote_Blink_Sparkle.label>
+  <APM_Mote_Blink_StarA.label>частица</APM_Mote_Blink_StarA.label>
+  <APM_Mote_Blink_StarB.label>частица</APM_Mote_Blink_StarB.label>
+  <APM_Mote_Blink_WarmupPillar.label>частица</APM_Mote_Blink_WarmupPillar.label>
+  <APM_Mote_Blink_WarmupRay.label>частица</APM_Mote_Blink_WarmupRay.label>
+  <APM_Mote_GazerBeam_Base.label>частица</APM_Mote_GazerBeam_Base.label>
+  <APM_Mote_HazeBeamRepeaterLaser.label>частица</APM_Mote_HazeBeamRepeaterLaser.label>
+  <APM_Mote_HazeBeamRepeater_Charge.label>частица</APM_Mote_HazeBeamRepeater_Charge.label>
+  <APM_Mote_HookRope.label>частица</APM_Mote_HookRope.label>
+  <APM_Mote_PulseWaveEmitter.label>частица</APM_Mote_PulseWaveEmitter.label>
+  <APM_Mote_RavagerStarfall_Target.label>частица</APM_Mote_RavagerStarfall_Target.label>
+  <APM_Mote_ShockwaveBlastWave.label>частица</APM_Mote_ShockwaveBlastWave.label>
+  <APM_Mote_ShockwaveCharge.label>частица</APM_Mote_ShockwaveCharge.label>
+  <APM_Mote_ShockwaveEmitter.label>частица</APM_Mote_ShockwaveEmitter.label>
+  <APM_Mote_SolusLightning_A.label>частица</APM_Mote_SolusLightning_A.label>
+  <APM_Mote_SolusLightning_B.label>частица</APM_Mote_SolusLightning_B.label>
+  <APM_Mote_SolusLightning_C.label>частица</APM_Mote_SolusLightning_C.label>
+  <APM_Mote_SunRay_Aim.label>частица</APM_Mote_SunRay_Aim.label>
+  <APM_Mote_SunRay_Base.label>частица</APM_Mote_SunRay_Base.label>
+  <APM_Mote_SunRay_Charge.label>частица</APM_Mote_SunRay_Charge.label>
+  <APM_Mote_SunRay_Target.label>частица</APM_Mote_SunRay_Target.label>
+  <APM_Mote_TerminusCapeThrown.label>частица</APM_Mote_TerminusCapeThrown.label>
+  <APM_Mote_TerminusOverdrive_BlueSacrificePilar.label>частица</APM_Mote_TerminusOverdrive_BlueSacrificePilar.label>
+  <APM_Mote_TerminusOverdrive_BlueSacrificeWave.label>частица</APM_Mote_TerminusOverdrive_BlueSacrificeWave.label>
+  <APM_Mote_TerminusOverdrive_SacrificePilar.label>частица</APM_Mote_TerminusOverdrive_SacrificePilar.label>
+  <APM_Mote_TerminusOverdrive_SacrificeWave.label>частица</APM_Mote_TerminusOverdrive_SacrificeWave.label>
+  <APM_Mote_UltimateSacrifice_Pilar.label>частица</APM_Mote_UltimateSacrifice_Pilar.label>
+  <APM_Mote_UltimateSacrifice_Wave.label>частица</APM_Mote_UltimateSacrifice_Wave.label>
+  <APM_Mote_Whip.label>частица</APM_Mote_Whip.label>
+  <APM_OcularChip.comps.CompAnalyzableUnlockResearch.activateDescString>Изучить чип.</APM_OcularChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <APM_OcularChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Изучить...</APM_OcularChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <APM_OcularChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Выберите, кто должен изучить это</APM_OcularChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <APM_OcularChip.comps.CompAnalyzableUnlockResearch.inspectString>Может быть изучено колонистом.</APM_OcularChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <APM_OcularChip.comps.CompAnalyzableUnlockResearch.jobString>Изучить чип</APM_OcularChip.comps.CompAnalyzableUnlockResearch.jobString>
+  <APM_PawnFlyer_Hooked.label>в полёте</APM_PawnFlyer_Hooked.label>
+  <APM_PawnFlyer_ShockwaveThrown.label>в полёте</APM_PawnFlyer_ShockwaveThrown.label>
+  <APM_PsionicChip.comps.CompAnalyzableUnlockResearch.activateDescString>Изучить чип.</APM_PsionicChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <APM_PsionicChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Изучить...</APM_PsionicChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <APM_PsionicChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Выберите, кто должен изучить это</APM_PsionicChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <APM_PsionicChip.comps.CompAnalyzableUnlockResearch.inspectString>Может быть изучено колонистом.</APM_PsionicChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <APM_PsionicChip.comps.CompAnalyzableUnlockResearch.jobString>Изучить чип</APM_PsionicChip.comps.CompAnalyzableUnlockResearch.jobString>
+  <APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.activateDescString>Изучить чип.</APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Изучить...</APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Выберите, кто должен изучить это</APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.inspectString>Может быть изучено колонистом.</APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.jobString>Изучить чип</APM_PsyfluxChip.comps.CompAnalyzableUnlockResearch.jobString>
+  <APM_Ravager_Artillery.verbs.launch_plasma_boombardment.label>запуск плазменной бомбардировки</APM_Ravager_Artillery.verbs.launch_plasma_boombardment.label>
+  <APM_Siren_ChargeEmitter.tools.barrel.label>ствол</APM_Siren_ChargeEmitter.tools.barrel.label>
+  <APM_Siren_ChargeEmitter.verbs.Verb_Shoot.label>звуковой излучатель</APM_Siren_ChargeEmitter.verbs.Verb_Shoot.label>
+  <APM_Solus.verbs.Verb_Shoot.label>солус</APM_Solus.verbs.Verb_Shoot.label>
+  <APM_Weapon_CelerusApexVoltana.tools.blade.label>лезвие</APM_Weapon_CelerusApexVoltana.tools.blade.label>
+  <APM_Weapon_CelerusApexVoltana.tools.handle.label>рукоять</APM_Weapon_CelerusApexVoltana.tools.handle.label>
+  <APM_Weapon_CelerusApexVoltana.tools.tip.label>наконечник</APM_Weapon_CelerusApexVoltana.tools.tip.label>
+  <APM_Weapon_CelerusVoltana.tools.blade.label>лезвие</APM_Weapon_CelerusVoltana.tools.blade.label>
+  <APM_Weapon_CelerusVoltana.tools.handle.label>рукоять</APM_Weapon_CelerusVoltana.tools.handle.label>
+  <APM_Weapon_CelerusVoltana.tools.tip.label>наконечник</APM_Weapon_CelerusVoltana.tools.tip.label>
+  <APM_Weapon_DominusApexMechlance.tools.edge.label>кромка</APM_Weapon_DominusApexMechlance.tools.edge.label>
+  <APM_Weapon_DominusApexMechlance.tools.handle.label>рукоять</APM_Weapon_DominusApexMechlance.tools.handle.label>
+  <APM_Weapon_DominusApexMechlance.tools.point.label>остриё</APM_Weapon_DominusApexMechlance.tools.point.label>
+  <APM_Weapon_DominusMechlance.tools.edge.label>кромка</APM_Weapon_DominusMechlance.tools.edge.label>
+  <APM_Weapon_DominusMechlance.tools.handle.label>рукоять</APM_Weapon_DominusMechlance.tools.handle.label>
+  <APM_Weapon_DominusMechlance.tools.point.label>остриё</APM_Weapon_DominusMechlance.tools.point.label>
+  <APM_Weapon_DuelistsPsySpear.tools.edge.label>кромка</APM_Weapon_DuelistsPsySpear.tools.edge.label>
+  <APM_Weapon_DuelistsPsySpear.tools.handle.label>рукоять</APM_Weapon_DuelistsPsySpear.tools.handle.label>
+  <APM_Weapon_DuelistsPsySpear.tools.point.label>остриё</APM_Weapon_DuelistsPsySpear.tools.point.label>
+  <APM_Weapon_MechWhip.tools.edge.label>кромка</APM_Weapon_MechWhip.tools.edge.label>
+  <APM_Weapon_MechWhip.verbs.Verb_Whip.label>мех хлыст</APM_Weapon_MechWhip.verbs.Verb_Whip.label>
+  <APM_Weapon_PlasmaWhip.tools.edge.label>кромка</APM_Weapon_PlasmaWhip.tools.edge.label>
+  <APM_Weapon_PlasmaWhip.verbs.Verb_Whip.label>плазменный хлыст</APM_Weapon_PlasmaWhip.verbs.Verb_Whip.label>
+  <APM_Weapon_SeveringBlade.tools.blade.label>лезвие</APM_Weapon_SeveringBlade.tools.blade.label>
+  <APM_Weapon_SeveringBlade.tools.handle.label>рукоять</APM_Weapon_SeveringBlade.tools.handle.label>
+  <APM_Weapon_SeveringBlade.tools.point.label>остриё</APM_Weapon_SeveringBlade.tools.point.label>
+  <APM_Weapon_Skipblade.tools.blade.label>лезвие</APM_Weapon_Skipblade.tools.blade.label>
+  <APM_Weapon_Skipblade.tools.handle.label>рукоять</APM_Weapon_Skipblade.tools.handle.label>
+  <APM_Weapon_Skipblade.tools.point.label>остриё</APM_Weapon_Skipblade.tools.point.label>
+  <APM_Weapon_TerminusApexExoblade.tools.blade.label>лезвие</APM_Weapon_TerminusApexExoblade.tools.blade.label>
+  <APM_Weapon_TerminusApexExoblade.tools.handle.label>рукоять</APM_Weapon_TerminusApexExoblade.tools.handle.label>
+  <APM_Weapon_TerminusApexExoblade.tools.point.label>остриё</APM_Weapon_TerminusApexExoblade.tools.point.label>
+  <APM_Weapon_TerminusExoblade.tools.blade.label>лезвие</APM_Weapon_TerminusExoblade.tools.blade.label>
+  <APM_Weapon_TerminusExoblade.tools.handle.label>рукоять</APM_Weapon_TerminusExoblade.tools.handle.label>
+  <APM_Weapon_TerminusExoblade.tools.point.label>остриё</APM_Weapon_TerminusExoblade.tools.point.label>
 </LanguageData>

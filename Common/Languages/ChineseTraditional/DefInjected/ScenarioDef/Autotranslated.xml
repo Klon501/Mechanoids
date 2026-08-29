@@ -2,4 +2,9 @@
 <LanguageData>
   <APM_BuriedLegacy.label>塵封遺產</APM_BuriedLegacy.label>
   <APM_BuriedLegacy.description>多年在荒野與廢棄遺跡間流浪，只留下傷疤和對傳說的篤信。但傳說竟是真的。循著一台遠古應答器发出的微弱訊號，你發現了一座失落已久的遠古機械師建築群。建築內部，上一任主人被鎖在自己的指揮艙裡，只剩一具枯骨——數個世紀前，他死於自己的愚蠢。四下寂靜無聲，唯有發電機的嗡鳴與昔日榮光的低迴迴響將它打破。那支曾經傲氣十足的駐軍，其餘部分已化作散落各處的殘垣斷壁，被時光與荒廢侵蝕成廢鐵。唯有封存在靜滯容器中的單位仍完好無損。整座基地與那支舊日軍團的殘部，如今都歸你所有。剩下的，只是登上王座、接受你的命運。</APM_BuriedLegacy.description>
+  <APM_BuriedLegacy.scenario.name>塵封遺產</APM_BuriedLegacy.scenario.name>
+  <APM_BuriedLegacy.scenario.description>多年在荒野與廢棄遺跡間流浪，只留下傷疤和對傳說的篤信。但傳說竟是真的。循著一台遠古應答器發出的微弱信號，你發現了一座失落已久的遠古機械師建築群。建築內部，上一任主人被鎖在自己的指揮艙裡，只剩一具枯骨——數個世紀前，他死於自己的愚蠢。四下寂靜無聲，唯有發電機的嗡鳴與昔日榮光的低迴將其打破。那支曾經傲氣十足的駐軍，其餘部分已化作散落各處的殘垣斷壁，被時光與荒廢侵蝕成廢鐵。唯有封存在停滯容器中的單位仍完好無損。整座基地與那支舊日軍團的殘部，如今都歸你所有。剩下的，只是登上王座、接受你的命運。</APM_BuriedLegacy.scenario.description>
+  <APM_BuriedLegacy.scenario.summary>探索一座被遺忘的機械師建築群，尋獲已故主人的遺產，並將一支被遺棄的軍團據為己有。一場經典的《巔峰機械體》體驗。</APM_BuriedLegacy.scenario.summary>
+  <APM_BuriedLegacy.scenario.parts.GameStartDialog.text>多年的搜尋將你引向一位早已死去的機械師那被掩埋的領地。循著微弱的信號，你踏入一座寂靜無聲的基地，一具枯骨在緊鎖的指揮艙內腐爛，他被自己的錯誤所葬送。基地、機械與沉睡的軍團，如今都歸你所有。剩下的，只有登上王座。</APM_BuriedLegacy.scenario.parts.GameStartDialog.text>
+  <APM_BuriedLegacy.scenario.parts.VFEC_AddStartingStructure.structureLabel>遠古機械師的領地</APM_BuriedLegacy.scenario.parts.VFEC_AddStartingStructure.structureLabel>
 </LanguageData>

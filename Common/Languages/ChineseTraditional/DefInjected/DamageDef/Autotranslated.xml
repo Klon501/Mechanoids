@@ -8,4 +8,12 @@
   <MegaBeam.label>巨型光束</MegaBeam.label>
   <APM_HazeAcidBeam.label>迷霧酸液光束</APM_HazeAcidBeam.label>
   <APM_SonicVibration.label>聲波震盪</APM_SonicVibration.label>
+  <APM_Whip.label>切割</APM_Whip.label>
+  <APM_Whip.deathMessage>{0} 被切割致死。</APM_Whip.deathMessage>
+  <APM_GazerBeam.deathMessage>{0} 被射線射殺。</APM_GazerBeam.deathMessage>
+  <APM_HazeAcidBeam.deathMessage>{0} 被射線射殺。</APM_HazeAcidBeam.deathMessage>
+  <APM_SunRay.deathMessage>{0} 被射線射殺。</APM_SunRay.deathMessage>
+  <APM_JavelinWarhead.deathMessage>{0} 在爆炸中喪生。</APM_JavelinWarhead.deathMessage>
+  <APM_Shockwave.deathMessage>{0} 被衝擊波湮滅。</APM_Shockwave.deathMessage>
+  <APM_SonicVibration.deathMessage>{0} 被聲波振動殺死。</APM_SonicVibration.deathMessage>
 </LanguageData>

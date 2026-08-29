@@ -231,23 +231,23 @@
   <APM_Gun_Conqueror_SMG.verbs.Verb_Shoot.label>电荷喷吐枪</APM_Gun_Conqueror_SMG.verbs.Verb_Shoot.label>
   <APM_Gun_EMP_Impactor.tools.barrel.label>枪管</APM_Gun_EMP_Impactor.tools.barrel.label>
   <APM_Gun_EMP_Impactor.tools.stock.label>枪托</APM_Gun_EMP_Impactor.tools.stock.label>
-  <APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>EMP 冲击器</APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>
+  <APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>电磁脉冲冲击器</APM_Gun_EMP_Impactor.verbs.Verb_Shoot.label>
   <APM_Gun_JavelinRocketLauncher.tools.barrel.label>枪管</APM_Gun_JavelinRocketLauncher.tools.barrel.label>
   <APM_Gun_JavelinRocketLauncher.tools.stock.label>枪托</APM_Gun_JavelinRocketLauncher.tools.stock.label>
   <APM_Gun_JavelinRocketLauncher.verbs.Verb_ShootJavelin.label>标枪火箭发射器</APM_Gun_JavelinRocketLauncher.verbs.Verb_ShootJavelin.label>
   <APM_Gun_Maul.tools.butt.label>枪托末端</APM_Gun_Maul.tools.butt.label>
   <APM_Gun_Maul.tools.sledge_hammer.label>重锤</APM_Gun_Maul.tools.sledge_hammer.label>
-  <APM_Gun_Maul.verbs.Verb_ShootMultiple.label>重型重锤爆破枪</APM_Gun_Maul.verbs.Verb_ShootMultiple.label>
+  <APM_Gun_Maul.verbs.Verb_ShootMultiple.label>重型锤击爆能枪</APM_Gun_Maul.verbs.Verb_ShootMultiple.label>
   <APM_Gun_Pulse_Shotgun.tools.barrel.label>枪管</APM_Gun_Pulse_Shotgun.tools.barrel.label>
-  <APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>电荷散射枪</APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>
+  <APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>脉冲霰弹枪</APM_Gun_Pulse_Shotgun.verbs.Verb_Shoot.label>
   <APM_Gun_Satellite.tools.barrel.label>枪管</APM_Gun_Satellite.tools.barrel.label>
-  <APM_Gun_Satellite.verbs.Verb_Shoot.label>轻型电荷抑制器</APM_Gun_Satellite.verbs.Verb_Shoot.label>
+  <APM_Gun_Satellite.verbs.Verb_Shoot.label>轻型电荷压制枪</APM_Gun_Satellite.verbs.Verb_Shoot.label>
   <APM_Gun_Vassal_SwordRifle.tools.blade.label>刀刃</APM_Gun_Vassal_SwordRifle.tools.blade.label>
   <APM_Gun_Vassal_SwordRifle.tools.point.label>尖端</APM_Gun_Vassal_SwordRifle.tools.point.label>
   <APM_Gun_Vassal_SwordRifle.tools.stock.label>枪托</APM_Gun_Vassal_SwordRifle.tools.stock.label>
-  <APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>电荷剑步枪</APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>
+  <APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>电荷剑刃步枪</APM_Gun_Vassal_SwordRifle.verbs.Verb_Shoot.label>
   <APM_Haze_BeamGun.tools.barrel.label>枪管</APM_Haze_BeamGun.tools.barrel.label>
-  <APM_Haze_BeamGun.verbs.Verb_Shoot.label>凋零光束</APM_Haze_BeamGun.verbs.Verb_Shoot.label>
+  <APM_Haze_BeamGun.verbs.Verb_Shoot.label>迷雾伽马激光炮</APM_Haze_BeamGun.verbs.Verb_Shoot.label>
   <APM_Mech_Aegis.tools.left_shield.label>左盾</APM_Mech_Aegis.tools.left_shield.label>
   <APM_Mech_Aegis.tools.left_shield.labelNoLocation>盾</APM_Mech_Aegis.tools.left_shield.labelNoLocation>
   <APM_Mech_Aegis.tools.right_shield.label>右盾</APM_Mech_Aegis.tools.right_shield.label>
@@ -461,7 +461,7 @@
   <APM_Weapon_DuelistsPsySpear.tools.handle.label>握柄</APM_Weapon_DuelistsPsySpear.tools.handle.label>
   <APM_Weapon_DuelistsPsySpear.tools.point.label>尖端</APM_Weapon_DuelistsPsySpear.tools.point.label>
   <APM_Weapon_MechWhip.tools.edge.label>刃缘</APM_Weapon_MechWhip.tools.edge.label>
-  <APM_Weapon_MechWhip.verbs.Verb_Whip.label>机械体鞭</APM_Weapon_MechWhip.verbs.Verb_Whip.label>
+  <APM_Weapon_MechWhip.verbs.Verb_Whip.label>机械鞭</APM_Weapon_MechWhip.verbs.Verb_Whip.label>
   <APM_Weapon_PlasmaWhip.tools.edge.label>刃缘</APM_Weapon_PlasmaWhip.tools.edge.label>
   <APM_Weapon_PlasmaWhip.verbs.Verb_Whip.label>等离子鞭</APM_Weapon_PlasmaWhip.verbs.Verb_Whip.label>
   <APM_Weapon_SeveringBlade.tools.blade.label>刀刃</APM_Weapon_SeveringBlade.tools.blade.label>

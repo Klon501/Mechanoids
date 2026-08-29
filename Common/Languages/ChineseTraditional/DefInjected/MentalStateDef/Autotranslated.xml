@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <APM_Duel.label>決鬥中</APM_Duel.label>
+  <APM_Duel.baseInspectLine>精神狀態：決鬥</APM_Duel.baseInspectLine>
+  <APM_Duel.beginLetter>{INITIATOR} 正在與 {TARGET} 決鬥。</APM_Duel.beginLetter>
+  <APM_Duel.recoveryMessage>{0} 的決鬥已告結束。</APM_Duel.recoveryMessage>
 </LanguageData>

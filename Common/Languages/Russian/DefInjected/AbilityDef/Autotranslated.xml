@@ -101,4 +101,5 @@
   <APM_Mech_Duel_Boss.label>вызов на дуэль</APM_Mech_Duel_Boss.label>
   <APM_Mech_Duel_Boss.description>Выбранная цель вызывается на дуэль, и вокруг бойцов генерируется защитное поле. На время поединка весь получаемый урон, а также урон от стрелкового оружия и способностей, увеличивается. Если дуэль не завершится за определённое время, дуэлянты получат сильный негативный эффект. Если же один из бойцов погибает или падает без сознания, победитель получает мощное временное усиление.</APM_Mech_Duel_Boss.description>
 
+  <APM_PulseLongjump.verbProperties.label>прыжок</APM_PulseLongjump.verbProperties.label>
 </LanguageData>

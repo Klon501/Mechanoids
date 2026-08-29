@@ -2,4 +2,8 @@
 <LanguageData>
   <APM_DomainPlayerFaction.label>機械師領域</APM_DomainPlayerFaction.label>
   <APM_DomainPlayerFaction.description>一位遠古機械師的領地，藏有主人的珍寶。</APM_DomainPlayerFaction.description>
+  <APM_DomainPlayerFaction.leaderTitle>領袖</APM_DomainPlayerFaction.leaderTitle>
+  <APM_DomainPlayerFaction.pawnSingular>殖民者</APM_DomainPlayerFaction.pawnSingular>
+  <APM_DomainPlayerFaction.pawnsPlural>殖民者</APM_DomainPlayerFaction.pawnsPlural>
+  <APM_DomainPlayerFaction.messageDefendersAttacking>來自 {1} 的 {0} 正在攻擊你的 {2}。</APM_DomainPlayerFaction.messageDefendersAttacking>
 </LanguageData>

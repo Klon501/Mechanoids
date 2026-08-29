@@ -69,4 +69,22 @@
   <APM_Apparel_ArmorHelmetMechamancerHelmet.label>製作機械法師頭盔</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
   <APM_Apparel_ArmorHelmetMechamancerHelmet.description>製作一頂機械法師頭盔。</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
   <APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>正在製作機械法師頭盔。</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
+  <APM_Aegis.jobString>孵化機械體中。</APM_Aegis.jobString>
+  <APM_Celerus.jobString>孵化機械體中。</APM_Celerus.jobString>
+  <APM_Dominus.jobString>孵化機械體中。</APM_Dominus.jobString>
+  <APM_Dynamo.jobString>孵化機械體中。</APM_Dynamo.jobString>
+  <APM_Frostivus.jobString>孵化機械體中。</APM_Frostivus.jobString>
+  <APM_Gazer.jobString>孵化機械體中。</APM_Gazer.jobString>
+  <APM_Haze.jobString>孵化機械體中。</APM_Haze.jobString>
+  <APM_Ingestor.jobString>孵化機械體中。</APM_Ingestor.jobString>
+  <APM_Javelin.jobString>孵化機械體中。</APM_Javelin.jobString>
+  <APM_Lasher.jobString>孵化機械體中。</APM_Lasher.jobString>
+  <APM_Mantis.jobString>孵化機械體中。</APM_Mantis.jobString>
+  <APM_Maul.jobString>孵化機械體中。</APM_Maul.jobString>
+  <APM_Pulse.jobString>孵化機械體中。</APM_Pulse.jobString>
+  <APM_Ravager.jobString>孵化機械體中。</APM_Ravager.jobString>
+  <APM_Siren.jobString>孵化機械體中。</APM_Siren.jobString>
+  <APM_Terminus.jobString>孵化機械體中。</APM_Terminus.jobString>
+  <APM_Tinker.jobString>孵化機械體中。</APM_Tinker.jobString>
+  <APM_Vassal.jobString>孵化機械體中。</APM_Vassal.jobString>
 </LanguageData>

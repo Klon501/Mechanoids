@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <APM_IncidentDef_TrioBoss.label>三領主</APM_IncidentDef_TrioBoss.label>
+  <APM_IncidentDef_TrioBoss.letterLabel>三領主降臨</APM_IncidentDef_TrioBoss.letterLabel>
+  <APM_IncidentDef_TrioBoss.letterText>一支來自 {0} 的超重型機械體部隊前來將你徹底抹除，隨行的還有護衛。\n\n級外智能創造的三位機械君主，意在打造統率所有機械體部隊的強力指揮官。\n\n這支突擊部隊由以下 {1} 組成：\n\n{2}\n\n它們會先準備一段時間，然後才發起攻擊。</APM_IncidentDef_TrioBoss.letterText>
 </LanguageData>

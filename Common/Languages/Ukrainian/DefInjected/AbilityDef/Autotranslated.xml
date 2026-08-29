@@ -56,4 +56,7 @@
   <APM_Ability_SmokeScreen.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen.description>
   <APM_Ability_SmokeScreen_Boss.label>димова завіса</APM_Ability_SmokeScreen_Boss.label>
   <APM_Ability_SmokeScreen_Boss.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen_Boss.description>
+  <APM_PulseLongjump.label>Стрибок механоїда</APM_PulseLongjump.label>
+  <APM_PulseLongjump.description>Стрибок на далеку відстань за допомогою спеціальних надшвидких м’язів механоїда.</APM_PulseLongjump.description>
+  <APM_PulseLongjump.verbProperties.label>стрибок</APM_PulseLongjump.verbProperties.label>
 </LanguageData>

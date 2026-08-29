@@ -10,4 +10,19 @@
   <APM_SirenWarden.verb>管理</APM_SirenWarden.verb>
   <APM_TinkerRepair.description>維修同派系建築與機械體。</APM_TinkerRepair.description>
   <APM_TinkerRepair.verb>維修</APM_TinkerRepair.verb>
+  <APM_FrostivusFoodPreservation.gerundLabel>保存食物</APM_FrostivusFoodPreservation.gerundLabel>
+  <APM_FrostivusFoodPreservation.labelShort>保存</APM_FrostivusFoodPreservation.labelShort>
+  <APM_FrostivusFoodPreservation.pawnLabel>保存者</APM_FrostivusFoodPreservation.pawnLabel>
+  <APM_IngestorCorpseProcessing.gerundLabel>吞噬屍體</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.labelShort>吞噬</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>吞噬者</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_LasherHandling.gerundLabel>馴獸</APM_LasherHandling.gerundLabel>
+  <APM_LasherHandling.labelShort>馴獸</APM_LasherHandling.labelShort>
+  <APM_LasherHandling.pawnLabel>馴獸師</APM_LasherHandling.pawnLabel>
+  <APM_SirenWarden.gerundLabel>監管</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.labelShort>獄卒</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>獄卒</APM_SirenWarden.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>維修建築與機械體</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.labelShort>維修</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>修補匠</APM_TinkerRepair.pawnLabel>
 </LanguageData>

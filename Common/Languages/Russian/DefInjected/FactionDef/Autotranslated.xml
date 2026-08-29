@@ -2,4 +2,8 @@
 <LanguageData>
   <APM_DomainPlayerFaction.label>Владения механитора</APM_DomainPlayerFaction.label>
   <APM_DomainPlayerFaction.description>Владения древнего механитора, скрывающие сокровища мастера.</APM_DomainPlayerFaction.description>
+  <APM_DomainPlayerFaction.leaderTitle>лидер</APM_DomainPlayerFaction.leaderTitle>
+  <APM_DomainPlayerFaction.pawnSingular>колонист</APM_DomainPlayerFaction.pawnSingular>
+  <APM_DomainPlayerFaction.pawnsPlural>колонисты</APM_DomainPlayerFaction.pawnsPlural>
+  <APM_DomainPlayerFaction.messageDefendersAttacking>{0} из {1} атакуют ваш {2}.</APM_DomainPlayerFaction.messageDefendersAttacking>
 </LanguageData>

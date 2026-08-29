@@ -56,4 +56,7 @@
   <APM_Ability_SmokeScreen.description>釋放濃密的煙幕，將疾風與附近的友軍籠罩在遮蔽氣體中，干擾敵人的感知，並在疾風處於隱蔽狀態時為其提供戰鬥加成。</APM_Ability_SmokeScreen.description>
   <APM_Ability_SmokeScreen_Boss.label>煙幕</APM_Ability_SmokeScreen_Boss.label>
   <APM_Ability_SmokeScreen_Boss.description>釋放濃密的煙幕，將疾風與附近的友軍籠罩在遮蔽氣體中，干擾敵人的感知，並在疾風處於隱蔽狀態時為其提供戰鬥加成。</APM_Ability_SmokeScreen_Boss.description>
+  <APM_PulseLongjump.label>機械體遠躍</APM_PulseLongjump.label>
+  <APM_PulseLongjump.description>借助機械體特有的超高速驅動肌，跳躍至遠處位置。</APM_PulseLongjump.description>
+  <APM_PulseLongjump.verbProperties.label>跳躍</APM_PulseLongjump.verbProperties.label>
 </LanguageData>

@@ -4,4 +4,8 @@
   <APM_RightAegisShield.label>правий щит</APM_RightAegisShield.label>
   <APM_LeftMantisBlade.label>лівий ріжучий кіготь</APM_LeftMantisBlade.label>
   <APM_RightMantisBlade.label>правий ріжучий кіготь</APM_RightMantisBlade.label>
+  <APM_LeftAegisShield.labelShort>щит</APM_LeftAegisShield.labelShort>
+  <APM_RightAegisShield.labelShort>щит</APM_RightAegisShield.labelShort>
+  <APM_LeftMantisBlade.labelShort>клешня</APM_LeftMantisBlade.labelShort>
+  <APM_RightMantisBlade.labelShort>клешня</APM_RightMantisBlade.labelShort>
 </LanguageData>

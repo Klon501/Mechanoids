@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <APM_IncidentDef_TrioBoss.label>Три Володарі</APM_IncidentDef_TrioBoss.label>
+  <APM_IncidentDef_TrioBoss.letterLabel>Прибули Три Володарі</APM_IncidentDef_TrioBoss.letterLabel>
+  <APM_IncidentDef_TrioBoss.letterText>Надважкі механоїди з {0} прийшли, щоб стерти вас з лиця землі, і не самі.\n\nТри володарі механоїдів були створені розумом Архотеха у спробі створити потужного командира всіх механоїдів.\n\nШтурмова група складається з таких {1}:\n\n{2}\n\nВони підготуються і лише потім перейдуть в атаку.</APM_IncidentDef_TrioBoss.letterText>
 </LanguageData>

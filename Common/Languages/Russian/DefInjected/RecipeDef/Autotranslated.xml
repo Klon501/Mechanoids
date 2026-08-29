@@ -101,4 +101,22 @@
   <APM_Apparel_ArmorHelmetMechamancerHelmet.label>сделать шлем мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
   <APM_Apparel_ArmorHelmetMechamancerHelmet.description>Создать шлем мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
   <APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>Создание шлема мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
+  <APM_Aegis.jobString>Вынашивание механоида.</APM_Aegis.jobString>
+  <APM_Celerus.jobString>Вынашивание механоида.</APM_Celerus.jobString>
+  <APM_Dominus.jobString>Вынашивание механоида.</APM_Dominus.jobString>
+  <APM_Dynamo.jobString>Вынашивание механоида.</APM_Dynamo.jobString>
+  <APM_Frostivus.jobString>Вынашивание механоида.</APM_Frostivus.jobString>
+  <APM_Gazer.jobString>Вынашивание механоида.</APM_Gazer.jobString>
+  <APM_Haze.jobString>Вынашивание механоида.</APM_Haze.jobString>
+  <APM_Ingestor.jobString>Вынашивание механоида.</APM_Ingestor.jobString>
+  <APM_Javelin.jobString>Вынашивание механоида.</APM_Javelin.jobString>
+  <APM_Lasher.jobString>Вынашивание механоида.</APM_Lasher.jobString>
+  <APM_Mantis.jobString>Вынашивание механоида.</APM_Mantis.jobString>
+  <APM_Maul.jobString>Вынашивание механоида.</APM_Maul.jobString>
+  <APM_Pulse.jobString>Вынашивание механоида.</APM_Pulse.jobString>
+  <APM_Ravager.jobString>Вынашивание механоида.</APM_Ravager.jobString>
+  <APM_Siren.jobString>Вынашивание механоида.</APM_Siren.jobString>
+  <APM_Terminus.jobString>Вынашивание механоида.</APM_Terminus.jobString>
+  <APM_Tinker.jobString>Вынашивание механоида.</APM_Tinker.jobString>
+  <APM_Vassal.jobString>Вынашивание механоида.</APM_Vassal.jobString>
 </LanguageData>
