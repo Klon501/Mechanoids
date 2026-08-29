@@ -385,4 +385,8 @@
 
   <!-- EN: Target is outside the firing sector. -->
   <APM.GazerEmplacement.Fail.TargetOutsideArc>Цель вне сектора обстрела.</APM.GazerEmplacement.Fail.TargetOutsideArc>
+
+  
+  <APM.StatFactorFromHealth.Label>{STAT} от низкого здоровья</APM.StatFactorFromHealth.Label>
+  <APM.StatFactorFromHealth.Description>У этого механойда {STAT} зависит от состояния его здоровья.</APM.StatFactorFromHealth.Description>
 </LanguageData>

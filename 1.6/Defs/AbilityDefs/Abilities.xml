@@ -498,6 +498,7 @@
 		<aiCanUse>true</aiCanUse>
 		<targetRequired>true</targetRequired>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupStartSound>APM_GazerEMP_Warmup</warmupStartSound>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<showPsycastEffects>false</showPsycastEffects>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
