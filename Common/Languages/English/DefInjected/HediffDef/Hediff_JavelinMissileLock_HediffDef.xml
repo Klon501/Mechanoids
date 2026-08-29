@@ -1,9 +1,9 @@
 <LanguageData>
 	<!-- 1.6\Defs\HediffDefs\Hediff_JavelinMissileLock.xml -->
 	<!--                             EN: missile lock -->
-	<APM_Hediff_JavelinMissileLock.label>missile lock</APM_Hediff_JavelinMissileLock.label>
+	<APM_Hediff_JavelinMissileLock.label>Smart missile lock</APM_Hediff_JavelinMissileLock.label>
 	<!--                                   EN: Seeker heads from a javelin missile rack have logged this target's hull profile. Every rocket that finds it again is fused to bite deeper than the last, until the lock fades. -->
-	<APM_Hediff_JavelinMissileLock.description>Seeker heads from a javelin missile rack have logged this target's hull profile. Every rocket that finds it again is fused to bite deeper than the last, until the lock fades.</APM_Hediff_JavelinMissileLock.description>
+	<APM_Hediff_JavelinMissileLock.description> </APM_Hediff_JavelinMissileLock.description>
 	<!--                                      EN: missile lock -->
-	<APM_Hediff_JavelinMissileLock.stages.0.label>missile lock</APM_Hediff_JavelinMissileLock.stages.0.label>
+	<APM_Hediff_JavelinMissileLock.stages.0.label>weakness exposed</APM_Hediff_JavelinMissileLock.stages.0.label>
 </LanguageData>
