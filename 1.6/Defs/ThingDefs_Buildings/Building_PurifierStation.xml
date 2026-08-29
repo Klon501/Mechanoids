@@ -74,6 +74,10 @@
 		<researchPrerequisites>
 			<li>AdvancedMechtech</li>
 		</researchPrerequisites>
+		<placeWorkers>
+		<li>PlaceWorker_NotUnderRoof</li>
+		<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 	</ThingDef>
 
 	<GameConditionDef>

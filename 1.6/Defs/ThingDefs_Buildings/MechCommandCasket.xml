@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- MechCommandCasket Parent -->
-	<ThingDef Name="APM_MechCommandCasket_Base"
-	          ParentName="BuildingBase"
-	          Abstract="True">
+	<ThingDef Name="APM_MechCommandCasket_Base" ParentName="BuildingBase" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<thingClass>ApexMechanoids.Building_MechCommandCasket</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>

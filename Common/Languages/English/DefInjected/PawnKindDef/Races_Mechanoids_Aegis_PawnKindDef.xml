@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Aegis.xml -->
+	<!--              EN: Aegis -->
+	<APM_Mech_Aegis.label>Aegis</APM_Mech_Aegis.label>
+	<!--                                 EN: Plural Aegis -->
+	<APM_Mech_Aegis.lifeStages.1.labelPlural>Plural Aegis</APM_Mech_Aegis.lifeStages.1.labelPlural>
+</LanguageData>

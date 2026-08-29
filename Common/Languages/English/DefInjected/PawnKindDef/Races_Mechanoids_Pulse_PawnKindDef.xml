@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Pulse.xml -->
+	<!--              EN: pulse -->
+	<APM_Mech_Pulse.label>pulse</APM_Mech_Pulse.label>
+	<!--                                 EN: Plural pulse -->
+	<APM_Mech_Pulse.lifeStages.1.labelPlural>Plural pulse</APM_Mech_Pulse.lifeStages.1.labelPlural>
+</LanguageData>

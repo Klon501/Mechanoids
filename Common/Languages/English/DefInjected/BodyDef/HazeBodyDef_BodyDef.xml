@@ -1,0 +1,31 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\HazeBodyDef.xml -->
+	<!--        EN: haze -->
+	<APM_Haze.label>haze</APM_Haze.label>
+	<!--                                                                                            EN: central sight sensor -->
+	<APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>central sight sensor</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+	<!--                                                                                           EN: left hearing sensor -->
+	<APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+	<!--                                                                                            EN: right hearing sensor -->
+	<APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</APM_Haze.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+	<!--                                           EN: left gas vent -->
+	<APM_Haze.corePart.parts.left_gas_vent.customLabel>left gas vent</APM_Haze.corePart.parts.left_gas_vent.customLabel>
+	<!--                                            EN: right gas vent -->
+	<APM_Haze.corePart.parts.right_gas_vent.customLabel>right gas vent</APM_Haze.corePart.parts.right_gas_vent.customLabel>
+	<!--                                            EN: front left leg -->
+	<APM_Haze.corePart.parts.front_left_leg.customLabel>front left leg</APM_Haze.corePart.parts.front_left_leg.customLabel>
+	<!--                                                                  EN: front left foot -->
+	<APM_Haze.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>front left foot</APM_Haze.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>
+	<!--                                             EN: front right leg -->
+	<APM_Haze.corePart.parts.front_right_leg.customLabel>front right leg</APM_Haze.corePart.parts.front_right_leg.customLabel>
+	<!--                                                                    EN: front right foot -->
+	<APM_Haze.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>front right foot</APM_Haze.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>
+	<!--                                           EN: rear left leg -->
+	<APM_Haze.corePart.parts.rear_left_leg.customLabel>rear left leg</APM_Haze.corePart.parts.rear_left_leg.customLabel>
+	<!--                                                                EN: rear left foot -->
+	<APM_Haze.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>rear left foot</APM_Haze.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>
+	<!--                                            EN: rear right leg -->
+	<APM_Haze.corePart.parts.rear_right_leg.customLabel>rear right leg</APM_Haze.corePart.parts.rear_right_leg.customLabel>
+	<!--                                                                  EN: rear right foot -->
+	<APM_Haze.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>rear right foot</APM_Haze.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>
+</LanguageData>

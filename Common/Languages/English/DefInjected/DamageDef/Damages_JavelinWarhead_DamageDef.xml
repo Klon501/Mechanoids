@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\DamageDefs\Damages_JavelinWarhead.xml -->
+	<!--                  EN: javelin warhead -->
+	<APM_JavelinWarhead.label>javelin warhead</APM_JavelinWarhead.label>
+	<!--                         EN: {0} has died in an explosion. -->
+	<APM_JavelinWarhead.deathMessage>{0} has died in an explosion.</APM_JavelinWarhead.deathMessage>
+</LanguageData>

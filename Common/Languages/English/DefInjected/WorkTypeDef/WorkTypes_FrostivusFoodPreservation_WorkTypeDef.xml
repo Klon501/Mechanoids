@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkTypeDefs\WorkTypes_FrostivusFoodPreservation.xml -->
+	<!--                                  EN: preserve -->
+	<APM_FrostivusFoodPreservation.labelShort>preserve</APM_FrostivusFoodPreservation.labelShort>
+	<!--                                 EN: Preserver -->
+	<APM_FrostivusFoodPreservation.pawnLabel>Preserver</APM_FrostivusFoodPreservation.pawnLabel>
+	<!--                                   EN: preserving food -->
+	<APM_FrostivusFoodPreservation.gerundLabel>preserving food</APM_FrostivusFoodPreservation.gerundLabel>
+	<!--                                   EN: Rescue vulnerable food from unsafe storage or outdoor deterioration and unload it to cold storage when available. -->
+	<APM_FrostivusFoodPreservation.description>Rescue vulnerable food from unsafe storage or outdoor deterioration and unload it to cold storage when available.</APM_FrostivusFoodPreservation.description>
+	<!--                            EN: Preserve -->
+	<APM_FrostivusFoodPreservation.verb>Preserve</APM_FrostivusFoodPreservation.verb>
+</LanguageData>

@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\GazerLasers.xml -->
+	
+	<!--        EN: mega beam -->
+	<MegaBeam.label>mega beam</MegaBeam.label>
+	<!--               EN: {0} has been beamed to death. -->
+	<MegaBeam.deathMessage>{0} has been beamed to death.</MegaBeam.deathMessage>
+</LanguageData>

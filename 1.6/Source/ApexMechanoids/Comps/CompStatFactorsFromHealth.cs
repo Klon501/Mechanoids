@@ -88,8 +88,8 @@ namespace ApexMechanoids
 			var hediffDef = new HediffDef
 			{
 				defName = defName,
-				label = $"{statDef.label} from health",
-				description = $"This mechanoid's {statDef.label} is affected by its health condition.",
+				label = "APM.StatFactorFromHealth.Label".Translate(statDef.LabelCap.Named("STAT")),
+				description = "APM.StatFactorFromHealth.Description".Translate(statDef.LabelCap.Named("STAT")),
 				hediffClass = typeof(Hediff_StatFactorFromHealth),
 				defaultLabelColor = UnityEngine.Color.cyan,
 				isBad = false,

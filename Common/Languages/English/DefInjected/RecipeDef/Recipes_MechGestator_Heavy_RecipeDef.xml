@@ -1,0 +1,37 @@
+<LanguageData>
+	<!-- 1.6\Defs\RecipeDefs\Recipes_MechGestator_Heavy.xml -->
+	<!--             EN: Gestating mech. -->
+	<APM_Aegis.jobString>Gestating mech.</APM_Aegis.jobString>
+	<!--         EN: gestate aegis -->
+	<APM_Aegis.label>gestate aegis</APM_Aegis.label>
+	<!--               EN: Gestate an aegis mechanoid. -->
+	<APM_Aegis.description>Gestate an aegis mechanoid.</APM_Aegis.description>
+	
+	<!--                EN: Gestating mech. -->
+	<APM_Terminus.jobString>Gestating mech.</APM_Terminus.jobString>
+	<!--            EN: gestate terminus -->
+	<APM_Terminus.label>gestate terminus</APM_Terminus.label>
+	<!--                  EN: Gestate a terminus archotech-commander mechanoid. -->
+	<APM_Terminus.description>Gestate a terminus archotech-commander mechanoid.</APM_Terminus.description>
+	
+	<!--            EN: Gestating mech. -->
+	<APM_Maul.jobString>Gestating mech.</APM_Maul.jobString>
+	<!--        EN: gestate maul -->
+	<APM_Maul.label>gestate maul</APM_Maul.label>
+	<!--              EN: Gestate a maul mechanoid. -->
+	<APM_Maul.description>Gestate a maul mechanoid.</APM_Maul.description>
+	
+	<!--              EN: Gestating mech. -->
+	<APM_Mantis.jobString>Gestating mech.</APM_Mantis.jobString>
+	<!--          EN: gestate mantis -->
+	<APM_Mantis.label>gestate mantis</APM_Mantis.label>
+	<!--                EN: Gestate a mantis mechanoid. -->
+	<APM_Mantis.description>Gestate a mantis mechanoid.</APM_Mantis.description>
+	
+	<!--              EN: Gestating mech. -->
+	<APM_Dynamo.jobString>Gestating mech.</APM_Dynamo.jobString>
+	<!--          EN: gestate dynamo -->
+	<APM_Dynamo.label>gestate dynamo</APM_Dynamo.label>
+	<!--                EN: Gestate a dynamo mechanoid. -->
+	<APM_Dynamo.description>Gestate a dynamo mechanoid.</APM_Dynamo.description>
+</LanguageData>

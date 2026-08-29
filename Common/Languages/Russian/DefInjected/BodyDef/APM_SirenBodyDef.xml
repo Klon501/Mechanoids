@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: central sight sensor -->
+  <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>центральный оптический датчик</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.central_sight_sensor.customLabel>
+
+  <!-- EN: left acoustic receiver -->
+  <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.left_acoustic_receiver.customLabel>левый акустический приёмник</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.left_acoustic_receiver.customLabel>
+
+  <!-- EN: right acoustic receiver -->
+  <APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.right_acoustic_receiver.customLabel>правый акустический приёмник</APM_Siren.corePart.parts.MechanicalNeck.parts.APM_SirenHead.parts.right_acoustic_receiver.customLabel>
+
+  <!-- EN: left resonant shoulder -->
+  <APM_Siren.corePart.parts.left_resonant_shoulder.customLabel>левое резонансное плечо</APM_Siren.corePart.parts.left_resonant_shoulder.customLabel>
+
+  <!-- EN: left manipulator arm -->
+  <APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.customLabel>левая манипуляторная рука</APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.customLabel>
+
+  <!-- EN: left manipulator hand -->
+  <APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.customLabel>левая манипуляторная кисть</APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.customLabel>
+
+  <!-- EN: left outer digit -->
+  <APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.parts.left_outer_digit.customLabel>левый внешний палец</APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.parts.left_outer_digit.customLabel>
+
+  <!-- EN: left inner digit -->
+  <APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.parts.left_inner_digit.customLabel>левый внутренний палец</APM_Siren.corePart.parts.left_resonant_shoulder.parts.left_manipulator_arm.parts.left_manipulator_hand.parts.left_inner_digit.customLabel>
+
+  <!-- EN: right resonant shoulder -->
+  <APM_Siren.corePart.parts.right_resonant_shoulder.customLabel>правое резонансное плечо</APM_Siren.corePart.parts.right_resonant_shoulder.customLabel>
+
+  <!-- EN: right manipulator arm -->
+  <APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.customLabel>правая манипуляторная рука</APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.customLabel>
+
+  <!-- EN: right manipulator hand -->
+  <APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.customLabel>правая манипуляторная кисть</APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.customLabel>
+
+  <!-- EN: right outer digit -->
+  <APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.parts.right_outer_digit.customLabel>правый внешний палец</APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.parts.right_outer_digit.customLabel>
+
+  <!-- EN: right inner digit -->
+  <APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.parts.right_inner_digit.customLabel>правый внутренний палец</APM_Siren.corePart.parts.right_resonant_shoulder.parts.right_manipulator_arm.parts.right_manipulator_hand.parts.right_inner_digit.customLabel>
+
+  <!-- EN: left stabilizer leg -->
+  <APM_Siren.corePart.parts.left_stabilizer_leg.customLabel>левая стабилизирующая нога</APM_Siren.corePart.parts.left_stabilizer_leg.customLabel>
+
+  <!-- EN: left stabilizer foot -->
+  <APM_Siren.corePart.parts.left_stabilizer_leg.parts.left_stabilizer_foot.customLabel>левая стабилизирующая стопа</APM_Siren.corePart.parts.left_stabilizer_leg.parts.left_stabilizer_foot.customLabel>
+
+  <!-- EN: right stabilizer leg -->
+  <APM_Siren.corePart.parts.right_stabilizer_leg.customLabel>правая стабилизирующая нога</APM_Siren.corePart.parts.right_stabilizer_leg.customLabel>
+
+  <!-- EN: right stabilizer foot -->
+  <APM_Siren.corePart.parts.right_stabilizer_leg.parts.right_stabilizer_foot.customLabel>правая стабилизирующая стопа</APM_Siren.corePart.parts.right_stabilizer_leg.parts.right_stabilizer_foot.customLabel>
+
+</LanguageData>

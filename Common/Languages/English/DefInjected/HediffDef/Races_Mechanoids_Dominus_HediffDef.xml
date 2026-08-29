@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Dominus.xml -->
+	
+	<!--                         EN: Psionic rush -->
+	<APM_Hediff_PressTheAttack.label>Psionic rush</APM_Hediff_PressTheAttack.label>
+	<!--                               EN: A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived. -->
+	<APM_Hediff_PressTheAttack.description>A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived.</APM_Hediff_PressTheAttack.description>
+	
+	<!--                              EN: Psionic rush -->
+	<APM_Hediff_PressTheAttack_Boss.label>Psionic rush</APM_Hediff_PressTheAttack_Boss.label>
+	<!--                                    EN: A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived. -->
+	<APM_Hediff_PressTheAttack_Boss.description>A psionic wave directly stimulating the brain's neural pathways. It temporarily numbs pain receptors and forces an intense surge of adrenaline, allowing the subject to move significantly faster and disregard physical trauma. The effect is highly potent but short-lived.</APM_Hediff_PressTheAttack_Boss.description>
+</LanguageData>

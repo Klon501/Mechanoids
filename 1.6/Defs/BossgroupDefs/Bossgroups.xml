@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+					<!-- Raid ones -->
+	<BossDef>
+		<defName>APM_Boss_DominusRaid</defName>
+		<kindDef>APM_Mech_Dominus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+	<BossDef>
+		<defName>APM_Boss_TerminusRaid</defName>
+		<kindDef>APM_Mech_Terminus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+	<BossDef>
+		<defName>APM_Boss_CelerusRaid</defName>
+		<kindDef>APM_Mech_Celerus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+
+					<!-- Regular ones -->
 	<!-- Dominus -->
 
 	<BossDef>
@@ -34,7 +55,7 @@
 					<APM_Mech_Satellite>3</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>2</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>1</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Siren>1</APM_Mech_Siren>
 				</escorts>
 				<bossApparel>
@@ -49,7 +70,7 @@
 					<APM_Mech_Satellite>2</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>2</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>2</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>2</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 					<APM_Mech_Siren>1</APM_Mech_Siren>
 				</escorts>
@@ -59,7 +80,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>4</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 					<APM_Mech_Siren>2</APM_Mech_Siren>
 				</escorts>
@@ -69,7 +90,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>5</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>4</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>4</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>4</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 					<APM_Mech_Siren>3</APM_Mech_Siren>
 				</escorts>
@@ -84,7 +105,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>6</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>5</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>5</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>5</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 					<APM_Mech_Siren>3</APM_Mech_Siren>
 				</escorts>
@@ -99,7 +120,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>6</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>6</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 					<APM_Mech_Siren>4</APM_Mech_Siren>
 				</escorts>
@@ -148,7 +169,7 @@
 					<APM_Mech_Satellite>3</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>2</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>1</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>1</APM_Mech_Maul>
 				</escorts>
 				<bossApparel>
@@ -163,7 +184,7 @@
 					<APM_Mech_Satellite>2</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>2</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>2</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>2</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>1</APM_Mech_Maul>
 					<APM_Mech_Tinker>1</APM_Mech_Tinker>
 				</escorts>
@@ -173,7 +194,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>4</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>1</APM_Mech_Maul>
 					<APM_Mech_Ingestor>1</APM_Mech_Ingestor>
 					<APM_Mech_Tinker>1</APM_Mech_Tinker>
@@ -184,7 +205,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>5</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>4</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>4</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>4</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>2</APM_Mech_Maul>
 					<APM_Mech_Ingestor>1</APM_Mech_Ingestor>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>
@@ -200,7 +221,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>6</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>5</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>5</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>5</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>2</APM_Mech_Maul>
 					<APM_Mech_Ingestor>2</APM_Mech_Ingestor>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>
@@ -216,7 +237,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>6</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>6</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Maul>3</APM_Mech_Maul>
 					<APM_Mech_Ingestor>2</APM_Mech_Ingestor>
 					<APM_Mech_Tinker>3</APM_Mech_Tinker>
@@ -249,14 +270,14 @@
 				<bossCount>1</bossCount>
 				<escorts>
 					<APM_Mech_Satellite>3</APM_Mech_Satellite>
-					<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 				</escorts>
 			</li>
 			<li> <!-- Wave 1 -->
 				<bossCount>1</bossCount>
 				<escorts>
 					<APM_Mech_Satellite>4</APM_Mech_Satellite>
-					<APM_Mech_Conqueror_LMG>2</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>2</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>1</APM_Mech_Pulse>
 				</escorts>
 			</li>
@@ -266,7 +287,7 @@
 					<APM_Mech_Satellite>3</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>2</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>1</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>1</APM_Mech_Pulse>
 				</escorts>
 				<bossApparel>
@@ -281,7 +302,7 @@
 					<APM_Mech_Satellite>2</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>2</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>2</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>2</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>1</APM_Mech_Pulse>
 					<APM_Mech_Mantis>1</APM_Mech_Mantis>
 				</escorts>
@@ -291,7 +312,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>4</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>2</APM_Mech_Pulse>
 					<APM_Mech_Mantis>1</APM_Mech_Mantis>
 				</escorts>
@@ -301,7 +322,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>5</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>4</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>4</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>4</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>2</APM_Mech_Pulse>
 					<APM_Mech_Mantis>2</APM_Mech_Mantis>
 				</escorts>
@@ -316,7 +337,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>6</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>5</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>5</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>5</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>3</APM_Mech_Pulse>
 					<APM_Mech_Mantis>2</APM_Mech_Mantis>
 				</escorts>
@@ -331,7 +352,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>6</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>6</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Pulse>3</APM_Mech_Pulse>
 					<APM_Mech_Mantis>3</APM_Mech_Mantis>
 				</escorts>
@@ -380,7 +401,7 @@
 					<APM_Mech_Satellite>3</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>2</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>1</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>1</APM_Mech_Dynamo>
 				</escorts>
 				<bossApparel>
@@ -395,7 +416,7 @@
 					<APM_Mech_Satellite>2</APM_Mech_Satellite>
 					<APM_Mech_Conqueror_AR>3</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>2</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>2</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>2</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>1</APM_Mech_Dynamo>
 					<APM_Mech_Tinker>1</APM_Mech_Tinker>
 				</escorts>
@@ -405,7 +426,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>4</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>3</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>3</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>3</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>1</APM_Mech_Dynamo>
 					<APM_Mech_Aegis>1</APM_Mech_Aegis>
 					<APM_Mech_Tinker>1</APM_Mech_Tinker>
@@ -416,7 +437,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>5</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>4</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>4</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>4</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
 					<APM_Mech_Aegis>1</APM_Mech_Aegis>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>
@@ -432,7 +453,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>6</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>5</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>5</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>5</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
 					<APM_Mech_Aegis>2</APM_Mech_Aegis>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>
@@ -448,7 +469,7 @@
 				<escorts>
 					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
-					<APM_Mech_Conqueror_LMG>6</APM_Mech_Conqueror_LMG>
+					<APM_Mech_Conqueror_SMG>6</APM_Mech_Conqueror_SMG>
 					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
 					<APM_Mech_Aegis>3</APM_Mech_Aegis>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>

@@ -1,0 +1,15 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Apparel_MechamancerPack.xml -->
+	<!--                                                            EN: satellite -->
+	<APM_Apparel_MechamancerPack.comps.CompApparelReloadable.chargeNoun>satellite</APM_Apparel_MechamancerPack.comps.CompApparelReloadable.chargeNoun>
+	<!--                                                                EN: на перезарядке -->
+	<APM_Apparel_MechamancerPack.comps.CompApparelReloadable.cooldownGerund>на перезарядке</APM_Apparel_MechamancerPack.comps.CompApparelReloadable.cooldownGerund>
+	<!--                           EN: Mechamancer Pack -->
+	<APM_Apparel_MechamancerPack.label>Mechamancer Pack</APM_Apparel_MechamancerPack.label>
+	<!--                                 EN: A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously. -->
+	<APM_Apparel_MechamancerPack.description>A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously.</APM_Apparel_MechamancerPack.description>
+	<!--                                   EN: summon satellite -->
+	<APM_Apparel_MechamancerPack.verbs.0.label>summon satellite</APM_Apparel_MechamancerPack.verbs.0.label>
+	<!--                                                               EN: ㅤ -->
+	<APM_Apparel_MechamancerPack.verbs.ApexMechanoids.Verb_SpawnMech.label>ㅤ</APM_Apparel_MechamancerPack.verbs.ApexMechanoids.Verb_SpawnMech.label>
+</LanguageData>

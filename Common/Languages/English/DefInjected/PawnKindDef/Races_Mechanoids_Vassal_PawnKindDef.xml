@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Vassal.xml -->
+	<!--               EN: vassal -->
+	<APM_Mech_Vassal.label>vassal</APM_Mech_Vassal.label>
+	<!--                                  EN: Plural vassal -->
+	<APM_Mech_Vassal.lifeStages.1.labelPlural>Plural vassal</APM_Mech_Vassal.lifeStages.1.labelPlural>
+</LanguageData>

@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Apparel_Mechamancer.xml -->
+	<!--                           EN: mechamancer suit -->
+	<APM_Apparel_MechamancerSuit.label>mechamancer suit</APM_Apparel_MechamancerSuit.label>
+	<!--                                 EN: A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor. -->
+	<APM_Apparel_MechamancerSuit.description>A power-assisted armor suit packed with mechanitor-assistance gear. The mechmancer suit dramatically amplifies a mechanitor's bandwidth, providing a personal energy shield and damage resistance comparable to dedicated power armor.</APM_Apparel_MechamancerSuit.description>
+	
+	<!--                                        EN: mechamancer helmet -->
+	<APM_Apparel_ArmorHelmetMechamancerHelmet.label>mechamancer helmet</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+	<!--                                              EN: A heavy plasteel-weave helmet integrated with mechanoid-coordination systems. Enhances the wearer’s general control over of allied mechanoids, increasing mechanitor bandwidth and command groups while providing moderate protection. -->
+	<APM_Apparel_ArmorHelmetMechamancerHelmet.description>A heavy plasteel-weave helmet integrated with mechanoid-coordination systems. Enhances the wearer’s general control over of allied mechanoids, increasing mechanitor bandwidth and command groups while providing moderate protection.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+</LanguageData>

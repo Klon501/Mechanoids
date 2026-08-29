@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<APM.CallMulBossgroupBossgroupWarningDialog>Вызов угрозы «{LEADER}» призовёт следующих враждебных механоидов:\n\n{BOSS}\n\nВместе с ними может прибыть сопровождение, состоящее из:\n\n{ESCORT}\n\nМеханоиды прибудут в течение нескольких часов или дней. Вы готовы к бою?</APM.CallMulBossgroupBossgroupWarningDialog>
+  
+</LanguageData>

@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Lasher.xml -->
+	<!--               EN: lasher -->
+	<APM_Mech_Lasher.label>lasher</APM_Mech_Lasher.label>
+	<!--                                  EN: Plural lasher -->
+	<APM_Mech_Lasher.lifeStages.1.labelPlural>Plural lasher</APM_Mech_Lasher.lifeStages.1.labelPlural>
+</LanguageData>

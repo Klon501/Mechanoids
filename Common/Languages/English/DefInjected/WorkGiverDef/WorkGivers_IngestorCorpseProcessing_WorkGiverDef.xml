@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkGiverDefs\WorkGivers_IngestorCorpseProcessing.xml -->
+	<!--                          EN: process corpses -->
+	<APM_IngestorProcessCorpses.label>process corpses</APM_IngestorProcessCorpses.label>
+	<!--                         EN: process -->
+	<APM_IngestorProcessCorpses.verb>process</APM_IngestorProcessCorpses.verb>
+	<!--                           EN: processing -->
+	<APM_IngestorProcessCorpses.gerund>processing</APM_IngestorProcessCorpses.gerund>
+</LanguageData>

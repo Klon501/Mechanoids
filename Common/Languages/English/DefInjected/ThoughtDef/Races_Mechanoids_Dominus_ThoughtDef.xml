@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Dominus.xml -->
+	
+	<!--                                   EN: Rush -->
+	<APM_Thought_PressTheAttack.stages.0.label>Rush</APM_Thought_PressTheAttack.stages.0.label>
+	<!--                                         EN: I'm ready to Fight. -->
+	<APM_Thought_PressTheAttack.stages.0.description>I'm ready to Fight.</APM_Thought_PressTheAttack.stages.0.description>
+	
+	<!--                                        EN: Rush -->
+	<APM_Thought_PressTheAttack_Boss.stages.0.label>Rush</APM_Thought_PressTheAttack_Boss.stages.0.label>
+	<!--                                              EN: I'm ready to Fight. -->
+	<APM_Thought_PressTheAttack_Boss.stages.0.description>I'm ready to Fight.</APM_Thought_PressTheAttack_Boss.stages.0.description>
+</LanguageData>

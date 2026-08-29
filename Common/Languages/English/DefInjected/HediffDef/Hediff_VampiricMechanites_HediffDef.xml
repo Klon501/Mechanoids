@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediff_VampiricMechanites.xml -->
+	<!--                             EN: Vampiric Mechanites -->
+	<APM_ApexMechanoid_HealOnKills.label>Vampiric Mechanites</APM_ApexMechanoid_HealOnKills.label>
+	<!--                                 EN: Vampiric -->
+	<APM_ApexMechanoid_HealOnKills.labelNoun>Vampiric</APM_ApexMechanoid_HealOnKills.labelNoun>
+	<!--                                   EN: These mechanites bank charges whenever their host downs or kills a target, then spend those charges to self-repair when the host is damaged. -->
+	<APM_ApexMechanoid_HealOnKills.description>These mechanites bank charges whenever their host downs or kills a target, then spend those charges to self-repair when the host is damaged.</APM_ApexMechanoid_HealOnKills.description>
+</LanguageData>

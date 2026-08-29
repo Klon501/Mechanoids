@@ -1,0 +1,31 @@
+<LanguageData>
+	<!-- 1.6\Defs\BodyDef\AegisBodyDef.xml -->
+	<!--         EN: Aegis -->
+	<APM_Aegis.label>Aegis</APM_Aegis.label>
+	<!--                                                                                             EN: central sight sensor -->
+	<APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>central sight sensor</APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.central_sight_sensor.customLabel>
+	<!--                                                                                            EN: left hearing sensor -->
+	<APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+	<!--                                                                                             EN: right hearing sensor -->
+	<APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</APM_Aegis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+	<!--                                            EN: left shoulder -->
+	<APM_Aegis.corePart.parts.left_shoulder.customLabel>left shoulder</APM_Aegis.corePart.parts.left_shoulder.customLabel>
+	<!--                                                           EN: left arm -->
+	<APM_Aegis.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</APM_Aegis.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+	<!--                                                                             EN: left shield -->
+	<APM_Aegis.corePart.parts.left_shoulder.parts.left_arm.parts.left_shield.customLabel>left shield</APM_Aegis.corePart.parts.left_shoulder.parts.left_arm.parts.left_shield.customLabel>
+	<!--                                             EN: right shoulder -->
+	<APM_Aegis.corePart.parts.right_shoulder.customLabel>right shoulder</APM_Aegis.corePart.parts.right_shoulder.customLabel>
+	<!--                                                             EN: right arm -->
+	<APM_Aegis.corePart.parts.right_shoulder.parts.right_arm.customLabel>right arm</APM_Aegis.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+	<!--                                                                                EN: right shield -->
+	<APM_Aegis.corePart.parts.right_shoulder.parts.right_arm.parts.right_shield.customLabel>right shield</APM_Aegis.corePart.parts.right_shoulder.parts.right_arm.parts.right_shield.customLabel>
+	<!--                                       EN: left leg -->
+	<APM_Aegis.corePart.parts.left_leg.customLabel>left leg</APM_Aegis.corePart.parts.left_leg.customLabel>
+	<!--                                                       EN: left foot -->
+	<APM_Aegis.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</APM_Aegis.corePart.parts.left_leg.parts.left_foot.customLabel>
+	<!--                                        EN: right leg -->
+	<APM_Aegis.corePart.parts.right_leg.customLabel>right leg</APM_Aegis.corePart.parts.right_leg.customLabel>
+	<!--                                                         EN: right foot -->
+	<APM_Aegis.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</APM_Aegis.corePart.parts.right_leg.parts.right_foot.customLabel>
+</LanguageData>

@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\MechGestatorAmplifier.xml -->
+	<!--                     EN: mech gestator amplifier -->
+	<APM_GestatorAmplifier.label>mech gestator amplifier</APM_GestatorAmplifier.label>
+	<!--                           EN: Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to. -->
+	<APM_GestatorAmplifier.description>Stolen wartime technology from the mechhive led this gestation amplifier’s technology to fall into organic hands. It increases the mech gestation speed of any mech gestators it is placed adjacent to.</APM_GestatorAmplifier.description>
+</LanguageData>

@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\Skipblade.xml -->
+	
+	<!--                  EN: skip -->
+	<APM_SkipbladeBlink.label>skip</APM_SkipbladeBlink.label>
+	<!--                        EN: Channel the displacement technology embedded in the skipblade to instantly skip to a nearby location. -->
+	<APM_SkipbladeBlink.description>Channel the displacement technology embedded in the skipblade to instantly skip to a nearby location.</APM_SkipbladeBlink.description>
+</LanguageData>

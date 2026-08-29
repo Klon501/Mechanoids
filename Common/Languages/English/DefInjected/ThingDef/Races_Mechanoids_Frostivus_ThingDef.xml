@@ -1,0 +1,17 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Frostivus.xml -->
+	<!--                  EN: Frostivus -->
+	<APM_Mech_Frostivus.label>Frostivus</APM_Mech_Frostivus.label>
+	<!--                        EN: A very unique mechanoid, the frostivus is a mobile cryogenic chamber. It consumes organic material such as foodstuffs to store, freeze and dispense at request. It can be commanded to seal a targeted pawn inside of itself to store for the mechhive to later utilize for its twisted machinations. -->
+	<APM_Mech_Frostivus.description>A very unique mechanoid, the frostivus is a mobile cryogenic chamber. It consumes organic material such as foodstuffs to store, freeze and dispense at request. It can be commanded to seal a targeted pawn inside of itself to store for the mechhive to later utilize for its twisted machinations.</APM_Mech_Frostivus.description>
+	<!--                          EN: передняя левая нога -->
+	<APM_Mech_Frostivus.tools.0.label>передняя левая нога</APM_Mech_Frostivus.tools.0.label>
+	<!--                                    EN: leg -->
+	<APM_Mech_Frostivus.tools.0.labelNoLocation>leg</APM_Mech_Frostivus.tools.0.labelNoLocation>
+	<!--                          EN: передняя правая нога -->
+	<APM_Mech_Frostivus.tools.1.label>передняя правая нога</APM_Mech_Frostivus.tools.1.label>
+	<!--                                    EN: leg -->
+	<APM_Mech_Frostivus.tools.1.labelNoLocation>leg</APM_Mech_Frostivus.tools.1.labelNoLocation>
+	<!--                          EN: голова -->
+	<APM_Mech_Frostivus.tools.2.label>голова</APM_Mech_Frostivus.tools.2.label>
+</LanguageData>

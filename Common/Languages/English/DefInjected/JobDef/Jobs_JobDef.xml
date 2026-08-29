@@ -1,0 +1,17 @@
+<LanguageData>
+	<!-- 1.6\Defs\JobDefs\Jobs.xml -->
+	<!--                     EN: Bashing into TargetA. -->
+	<APM_BashDamage.reportString>Bashing into TargetA.</APM_BashDamage.reportString>
+	<!--                   EN: retracting grappling hook towards TargetA. -->
+	<APM_HookPawn.reportString>retracting grappling hook towards TargetA.</APM_HookPawn.reportString>
+	<!--                              EN: hauling wastepacks to TargetA. -->
+	<APM_HaulToToxicPurifier.reportString>hauling wastepacks to TargetA.</APM_HaulToToxicPurifier.reportString>
+	<!--                        EN: jumping to TargetA. -->
+	<APM_CastPulseJump.reportString>jumping to TargetA.</APM_CastPulseJump.reportString>
+	<!--                           EN: singing. -->
+	<APM_SirenLureChannel.reportString>singing.</APM_SirenLureChannel.reportString>
+	<!--                                 EN: firing artillery at TargetA. -->
+	<APM_RavagerArtilleryAttack.reportString>firing artillery at TargetA.</APM_RavagerArtilleryAttack.reportString>
+	<!--                       EN: repairing TargetA. -->
+	<APM_RepairMech.reportString>repairing TargetA.</APM_RepairMech.reportString>
+</LanguageData>

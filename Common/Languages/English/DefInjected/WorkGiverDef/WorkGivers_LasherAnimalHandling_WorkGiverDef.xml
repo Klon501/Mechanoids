@@ -1,0 +1,72 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkGiverDefs\WorkGivers_LasherAnimalHandling.xml -->
+	<!--                                 EN: rope roaming animals -->
+	<APM_LasherTakeRoamingAnimalsToPen.label>rope roaming animals</APM_LasherTakeRoamingAnimalsToPen.label>
+	<!--                                EN: rope -->
+	<APM_LasherTakeRoamingAnimalsToPen.verb>rope</APM_LasherTakeRoamingAnimalsToPen.verb>
+	<!--                                  EN: roping -->
+	<APM_LasherTakeRoamingAnimalsToPen.gerund>roping</APM_LasherTakeRoamingAnimalsToPen.gerund>
+	
+	<!--                            EN: feed animals -->
+	<APM_LasherFeedPatientAnimals.label>feed animals</APM_LasherFeedPatientAnimals.label>
+	<!--                           EN: feed -->
+	<APM_LasherFeedPatientAnimals.verb>feed</APM_LasherFeedPatientAnimals.verb>
+	<!--                             EN: feeding -->
+	<APM_LasherFeedPatientAnimals.gerund>feeding</APM_LasherFeedPatientAnimals.gerund>
+	
+	<!--                   EN: rope animals -->
+	<APM_LasherTakeToPen.label>rope animals</APM_LasherTakeToPen.label>
+	<!--                  EN: rope -->
+	<APM_LasherTakeToPen.verb>rope</APM_LasherTakeToPen.verb>
+	<!--                    EN: roping -->
+	<APM_LasherTakeToPen.gerund>roping</APM_LasherTakeToPen.gerund>
+	
+	<!--                   EN: slaughter animals -->
+	<APM_LasherSlaughter.label>slaughter animals</APM_LasherSlaughter.label>
+	<!--                  EN: slaughter -->
+	<APM_LasherSlaughter.verb>slaughter</APM_LasherSlaughter.verb>
+	<!--                    EN: slaughtering -->
+	<APM_LasherSlaughter.gerund>slaughtering</APM_LasherSlaughter.gerund>
+	
+	<!--                       EN: release to wild -->
+	<APM_LasherReleaseToWild.label>release to wild</APM_LasherReleaseToWild.label>
+	<!--                      EN: release -->
+	<APM_LasherReleaseToWild.verb>release</APM_LasherReleaseToWild.verb>
+	<!--                        EN: releasing -->
+	<APM_LasherReleaseToWild.gerund>releasing</APM_LasherReleaseToWild.gerund>
+	
+	<!--              EN: milk animals -->
+	<APM_LasherMilk.label>milk animals</APM_LasherMilk.label>
+	<!--             EN: milk -->
+	<APM_LasherMilk.verb>milk</APM_LasherMilk.verb>
+	<!--               EN: milking -->
+	<APM_LasherMilk.gerund>milking</APM_LasherMilk.gerund>
+	
+	<!--               EN: shear animals -->
+	<APM_LasherShear.label>shear animals</APM_LasherShear.label>
+	<!--              EN: shear -->
+	<APM_LasherShear.verb>shear</APM_LasherShear.verb>
+	<!--                EN: shearing -->
+	<APM_LasherShear.gerund>shearing</APM_LasherShear.gerund>
+	
+	<!--              EN: tame animals -->
+	<APM_LasherTame.label>tame animals</APM_LasherTame.label>
+	<!--             EN: tame -->
+	<APM_LasherTame.verb>tame</APM_LasherTame.verb>
+	<!--               EN: taming -->
+	<APM_LasherTame.gerund>taming</APM_LasherTame.gerund>
+	
+	<!--               EN: train animals -->
+	<APM_LasherTrain.label>train animals</APM_LasherTrain.label>
+	<!--              EN: train -->
+	<APM_LasherTrain.verb>train</APM_LasherTrain.verb>
+	<!--                EN: training -->
+	<APM_LasherTrain.gerund>training</APM_LasherTrain.gerund>
+	
+	<!--                                EN: rebalance penned animals -->
+	<APM_LasherRebalanceAnimalsInPens.label>rebalance penned animals</APM_LasherRebalanceAnimalsInPens.label>
+	<!--                               EN: rope -->
+	<APM_LasherRebalanceAnimalsInPens.verb>rope</APM_LasherRebalanceAnimalsInPens.verb>
+	<!--                                 EN: roping -->
+	<APM_LasherRebalanceAnimalsInPens.gerund>roping</APM_LasherRebalanceAnimalsInPens.gerund>
+</LanguageData>

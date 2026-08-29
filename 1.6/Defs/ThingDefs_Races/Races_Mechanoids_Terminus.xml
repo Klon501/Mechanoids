@@ -166,7 +166,7 @@
 			<li>APM_WeaponTerminusExoblade</li>
 		</weaponTags>
 		<abilities>
-			<li>SeveringEdge</li>
+			<li>APM_SeveringEdge</li>
 			<li>APM_TerminusOverdrive</li>
 			<li>APM_HookPawn</li>
 		</abilities>
@@ -207,7 +207,7 @@
 			<li>APM_WeaponTerminusApexExoblade</li>
 		</weaponTags>
 		<abilities>
-			<li>SeveringEdge_Boss</li>
+			<li>APM_SeveringEdge_Boss</li>
 			<li>APM_TerminusOverdrive_Boss</li>
 			<li>APM_HookPawn</li>
 		</abilities>
@@ -350,7 +350,7 @@
 	</AbilityDef>
 
 	<AbilityDef ParentName="SeveringEdge_Base">
-		<defName>SeveringEdge</defName>
+		<defName>APM_SeveringEdge</defName>
 		<description>Utilizing the innate psychic channeling qualities of its blade, the caster releases a sweeping blade of energy in front of itself, cutting anything in the area.</description>
 		<cooldownTicksRange>800</cooldownTicksRange>
 		<warmupMote>Mote_SeveringEdge_Intro</warmupMote>
@@ -368,7 +368,7 @@
 	</AbilityDef>
 
 	<AbilityDef ParentName="SeveringEdge_Base">
-		<defName>SeveringEdge_Boss</defName>
+		<defName>APM_SeveringEdge_Boss</defName>
 		<description>Utilizing the innate psychic channeling qualities of its blade, the Terminus releases a sweeping blade of energy in front of itself, cutting anything in the area.</description>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<warmupMote>Mote_SeveringEdge_Intro_Boss</warmupMote>

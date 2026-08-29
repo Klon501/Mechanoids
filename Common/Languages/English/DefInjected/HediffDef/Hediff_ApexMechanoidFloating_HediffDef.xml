@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediff_ApexMechanoidFloating.xml -->
+	<!--                          EN: Floating -->
+	<APM_ApexMechanoid_Floating.label>Floating</APM_ApexMechanoid_Floating.label>
+	<!--                              EN: Floating -->
+	<APM_ApexMechanoid_Floating.labelNoun>Floating</APM_ApexMechanoid_Floating.labelNoun>
+	<!--                                EN: This mechanoid hovers above the ground, ignoring all terrain movement penalties. -->
+	<APM_ApexMechanoid_Floating.description>This mechanoid hovers above the ground, ignoring all terrain movement penalties.</APM_ApexMechanoid_Floating.description>
+</LanguageData>

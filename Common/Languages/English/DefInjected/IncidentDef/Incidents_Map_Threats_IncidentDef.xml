@@ -1,0 +1,9 @@
+<LanguageData>
+	<!-- 1.6\Defs\Storyteller\Incidents_Map_Threats.xml -->
+	<!--                        EN: Three Lords -->
+	<APM_IncidentDef_TrioBoss.label>Three Lords</APM_IncidentDef_TrioBoss.label>
+	<!--                              EN: Three Lords arrived -->
+	<APM_IncidentDef_TrioBoss.letterLabel>Three Lords arrived</APM_IncidentDef_TrioBoss.letterLabel>
+	<!--                             EN: An ultra-heavy mechs from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking. -->
+	<APM_IncidentDef_TrioBoss.letterText>An ultra-heavy mechs from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking.</APM_IncidentDef_TrioBoss.letterText>
+</LanguageData>

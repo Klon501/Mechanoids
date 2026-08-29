@@ -181,14 +181,14 @@
 
 	<RecipeDef ParentName="APM_ConquerorBase">
     <label>gestate spitter conqueror</label>
-		<defName>APM_Conqueror_LMG</defName>
+		<defName>APM_Conqueror_SMG</defName>
 		<description>Gestate a Charge Spitter-equipped conqueror mechanoid.</description>
-		<jobString>Gestating conqueror (LMG).</jobString>
+		<jobString>Gestating conqueror (SMG).</jobString>
 		<products>
-			<APM_Mech_Conqueror_LMG>1</APM_Mech_Conqueror_LMG>
+			<APM_Mech_Conqueror_SMG>1</APM_Mech_Conqueror_SMG>
 		</products>
     <descriptionHyperlinks>
-      <ThingDef>APM_Mech_Conqueror_LMG</ThingDef>
+      <ThingDef>APM_Mech_Conqueror_SMG</ThingDef>
     </descriptionHyperlinks>
 	</RecipeDef>
 

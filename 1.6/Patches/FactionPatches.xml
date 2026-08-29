@@ -7,7 +7,7 @@
         <!-- Common -->
       <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
       <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
-      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Conqueror_SMG>10</APM_Mech_Conqueror_SMG>
       <APM_Mech_Lasher>10</APM_Mech_Lasher>
       <APM_Mech_Pulse>10</APM_Mech_Pulse>
       <APM_Mech_Aegis>10</APM_Mech_Aegis>
@@ -35,7 +35,7 @@
         <!-- Common -->
       <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
       <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
-      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Conqueror_SMG>10</APM_Mech_Conqueror_SMG>
       <APM_Mech_Pulse>10</APM_Mech_Pulse>
       <APM_Mech_Maul>10</APM_Mech_Maul>
 
@@ -78,7 +78,7 @@
                 <!-- Infantry -->
       <APM_Mech_Conqueror_AR>10</APM_Mech_Conqueror_AR>
       <APM_Mech_Conqueror_DMR>10</APM_Mech_Conqueror_DMR>
-      <APM_Mech_Conqueror_LMG>10</APM_Mech_Conqueror_LMG>
+      <APM_Mech_Conqueror_SMG>10</APM_Mech_Conqueror_SMG>
       <APM_Mech_Pulse>10</APM_Mech_Pulse>
       <APM_Mech_Maul>10</APM_Mech_Maul>
       <APM_Mech_Vassal>2</APM_Mech_Vassal>

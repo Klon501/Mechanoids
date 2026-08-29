@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\DamageDefs\Damages_Shockwave.xml -->
+	<!--             EN: shockwave -->
+	<APM_Shockwave.label>shockwave</APM_Shockwave.label>
+	<!--                    EN: {0} was annihilated by a shockwave. -->
+	<APM_Shockwave.deathMessage>{0} was annihilated by a shockwave.</APM_Shockwave.deathMessage>
+</LanguageData>

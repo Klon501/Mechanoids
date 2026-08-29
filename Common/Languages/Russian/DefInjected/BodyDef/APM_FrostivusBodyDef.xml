@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel -->
+  <APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel -->
+  <APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>левый оптический датчик</APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel -->
+  <APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правый звуковой датчик</APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel -->
+  <APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>правый оптический датчик</APM_Frostivus.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.cryo_chamber.customLabel -->
+  <APM_Frostivus.corePart.parts.cryo_chamber.customLabel>криокамера</APM_Frostivus.corePart.parts.cryo_chamber.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.front_left_leg.customLabel -->
+  <APM_Frostivus.corePart.parts.front_left_leg.customLabel>левая передняя нога</APM_Frostivus.corePart.parts.front_left_leg.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.front_left_leg.parts.front_left_foot.customLabel -->
+  <APM_Frostivus.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>левая передняя стопа</APM_Frostivus.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.front_right_leg.customLabel -->
+  <APM_Frostivus.corePart.parts.front_right_leg.customLabel>правая передняя нога</APM_Frostivus.corePart.parts.front_right_leg.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.front_right_leg.parts.front_right_foot.customLabel -->
+  <APM_Frostivus.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>правая передняя стопа</APM_Frostivus.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.rear_left_leg.customLabel -->
+  <APM_Frostivus.corePart.parts.rear_left_leg.customLabel>левая задняя нога</APM_Frostivus.corePart.parts.rear_left_leg.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel -->
+  <APM_Frostivus.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>левая задняя стопа</APM_Frostivus.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.rear_right_leg.customLabel -->
+  <APM_Frostivus.corePart.parts.rear_right_leg.customLabel>правая задняя нога</APM_Frostivus.corePart.parts.rear_right_leg.customLabel>
+
+  <!-- APM_Frostivus.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel -->
+  <APM_Frostivus.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>правая задняя стопа</APM_Frostivus.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Haze.xml -->
+	<!--             EN: Haze -->
+	<APM_Mech_Haze.label>Haze</APM_Mech_Haze.label>
+	<!--                   EN: A mechanoid experiment into organic area denial, the haze can pump tox gas into the area around it. Its melee attacks are especially lethal, inflicting toxic buildup upon hit. The intellect of the mechhive knows no bounds, even repurposing its waste products to further its goals. -->
+	<APM_Mech_Haze.description>A mechanoid experiment into organic area denial, the haze can pump tox gas into the area around it. Its melee attacks are especially lethal, inflicting toxic buildup upon hit. The intellect of the mechhive knows no bounds, even repurposing its waste products to further its goals.</APM_Mech_Haze.description>
+	<!--                     EN: голова -->
+	<APM_Mech_Haze.tools.0.label>голова</APM_Mech_Haze.tools.0.label>
+	<!--                     EN: front left paw -->
+	<APM_Mech_Haze.tools.1.label>front left paw</APM_Mech_Haze.tools.1.label>
+	<!--                     EN: front right paw -->
+	<APM_Mech_Haze.tools.2.label>front right paw</APM_Mech_Haze.tools.2.label>
+</LanguageData>

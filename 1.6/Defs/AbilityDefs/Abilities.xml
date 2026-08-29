@@ -323,8 +323,8 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>5.9</range>
-			<warmupTime>0.5</warmupTime>
+			<range>6.9</range>
+			<warmupTime>0.4</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_ShieldCharge</soundCast>
 			<targetParams>
@@ -357,7 +357,7 @@
 	<AbilityDef>
 		<defName>APM_Bladehopp</defName>
 		<label>Bladehopp</label>
-		<description>Dash to a target followed by a quick attack.</description>
+		<description>The mantis lunges forward, executing a brutal slash on a chosen target.</description>
 		<iconPath>UI/Bladehopp</iconPath>
 		<cooldownTicksRange>2500</cooldownTicksRange>
 		<hostile>true</hostile>
@@ -365,8 +365,8 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>5.9</range>
-			<warmupTime>0.5</warmupTime>
+			<range>6.9</range>
+			<warmupTime>0.4</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_Bladehopp</soundCast>
 			<targetParams>
@@ -498,6 +498,7 @@
 		<aiCanUse>true</aiCanUse>
 		<targetRequired>true</targetRequired>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupStartSound>APM_GazerEMP_Warmup</warmupStartSound>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<showPsycastEffects>false</showPsycastEffects>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>

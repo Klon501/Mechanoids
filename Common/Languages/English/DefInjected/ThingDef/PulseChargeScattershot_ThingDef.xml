@@ -1,0 +1,14 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\PulseChargeScattershot.xml -->
+	<!--                     EN: Charge Scattershot -->
+	<APM_Gun_Pulse_Shotgun.label>Charge Scattershot</APM_Gun_Pulse_Shotgun.label>
+	<!--                           EN: Close quarters combat with mechanized foes is never a good idea, and the introduction of the charge scattershot turns that idea into a death wish. This shotgun uses pulse munitions and the result is a prime emplacement breaching tool. Enemy forces are typically less armored than defense emplacements and even a militor could determine the results of that matchup. -->
+	<APM_Gun_Pulse_Shotgun.description>Close quarters combat with mechanized foes is never a good idea, and the introduction of the charge scattershot turns that idea into a death wish. This shotgun uses pulse munitions and the result is a prime emplacement breaching tool. Enemy forces are typically less armored than defense emplacements and even a militor could determine the results of that matchup.</APM_Gun_Pulse_Shotgun.description>
+	<!--                             EN: ㅤ -->
+	<APM_Gun_Pulse_Shotgun.verbs.0.label>ㅤ</APM_Gun_Pulse_Shotgun.verbs.0.label>
+	<!--                             EN: ствол -->
+	<APM_Gun_Pulse_Shotgun.tools.0.label>ствол</APM_Gun_Pulse_Shotgun.tools.0.label>
+	
+	<!--              EN: pulse bullet -->
+	<APM_Pulse_Proj.label>pulse bullet</APM_Pulse_Proj.label>
+</LanguageData>

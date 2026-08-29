@@ -1,0 +1,86 @@
+<LanguageData>
+	<!-- 1.6\Defs\RecipeDefs\Recipes_MechGestator_Medium.xml -->
+	<!--               EN: Gestating mech. -->
+	<APM_Celerus.jobString>Gestating mech.</APM_Celerus.jobString>
+	<!--           EN: gestate celerus -->
+	<APM_Celerus.label>gestate celerus</APM_Celerus.label>
+	<!--                 EN: Gestate a celerus archotech-commander mechanoid. -->
+	<APM_Celerus.description>Gestate a celerus archotech-commander mechanoid.</APM_Celerus.description>
+	
+	<!--               EN: Gestating mech. -->
+	<APM_Dominus.jobString>Gestating mech.</APM_Dominus.jobString>
+	<!--           EN: gestate dominus -->
+	<APM_Dominus.label>gestate dominus</APM_Dominus.label>
+	<!--                 EN: Gestate a dominus archotech-commander mechanoid. -->
+	<APM_Dominus.description>Gestate a dominus archotech-commander mechanoid.</APM_Dominus.description>
+	
+	<!--                     EN: Gestating conqueror (DMR). -->
+	<APM_Conqueror_DMR.jobString>Gestating conqueror (DMR).</APM_Conqueror_DMR.jobString>
+	<!--                 EN: gestate carabine conqueror -->
+	<APM_Conqueror_DMR.label>gestate carabine conqueror</APM_Conqueror_DMR.label>
+	<!--                       EN: Gestate a Charge Carbine-equipped conqueror mechanoid. -->
+	<APM_Conqueror_DMR.description>Gestate a Charge Carbine-equipped conqueror mechanoid.</APM_Conqueror_DMR.description>
+	
+	<!--                    EN: Gestating conqueror (AR). -->
+	<APM_Conqueror_AR.jobString>Gestating conqueror (AR).</APM_Conqueror_AR.jobString>
+	<!--                EN: gestate blaster conqueror -->
+	<APM_Conqueror_AR.label>gestate blaster conqueror</APM_Conqueror_AR.label>
+	<!--                      EN: Gestate a Blaster rifle-equipped conqueror mechanoid. -->
+	<APM_Conqueror_AR.description>Gestate a Blaster rifle-equipped conqueror mechanoid.</APM_Conqueror_AR.description>
+	
+	<!--                     EN: Gestating conqueror (SMG). -->
+	<APM_Conqueror_SMG.jobString>Gestating conqueror (SMG).</APM_Conqueror_SMG.jobString>
+	<!--                 EN: gestate spitter conqueror -->
+	<APM_Conqueror_SMG.label>gestate spitter conqueror</APM_Conqueror_SMG.label>
+	<!--                       EN: Gestate a Charge Spitter-equipped conqueror mechanoid. -->
+	<APM_Conqueror_SMG.description>Gestate a Charge Spitter-equipped conqueror mechanoid.</APM_Conqueror_SMG.description>
+	
+	<!--              EN: Gestating mech. -->
+	<APM_Lasher.jobString>Gestating mech.</APM_Lasher.jobString>
+	<!--          EN: gestate lasher -->
+	<APM_Lasher.label>gestate lasher</APM_Lasher.label>
+	<!--                EN: Gestate a lasher mechanoid. -->
+	<APM_Lasher.description>Gestate a lasher mechanoid.</APM_Lasher.description>
+	
+	<!--             EN: Gestating mech. -->
+	<APM_Pulse.jobString>Gestating mech.</APM_Pulse.jobString>
+	<!--         EN: gestate pulse -->
+	<APM_Pulse.label>gestate pulse</APM_Pulse.label>
+	<!--               EN: Gestate a pulse mechanoid. -->
+	<APM_Pulse.description>Gestate a pulse mechanoid.</APM_Pulse.description>
+	
+	<!--              EN: Gestating mech. -->
+	<APM_Vassal.jobString>Gestating mech.</APM_Vassal.jobString>
+	<!--          EN: gestate vassal -->
+	<APM_Vassal.label>gestate vassal</APM_Vassal.label>
+	<!--                EN: Gestate a vassal mechanoid. -->
+	<APM_Vassal.description>Gestate a vassal mechanoid.</APM_Vassal.description>
+	
+	<!--              EN: Gestating mech. -->
+	<APM_Tinker.jobString>Gestating mech.</APM_Tinker.jobString>
+	<!--          EN: gestate tinker -->
+	<APM_Tinker.label>gestate tinker</APM_Tinker.label>
+	<!--                EN: Gestate a tinker mechanoid. -->
+	<APM_Tinker.description>Gestate a tinker mechanoid.</APM_Tinker.description>
+	
+	<!--             EN: Gestating mech. -->
+	<APM_Siren.jobString>Gestating mech.</APM_Siren.jobString>
+	<!--         EN: gestate siren -->
+	<APM_Siren.label>gestate siren</APM_Siren.label>
+	<!--               EN: Gestate a siren mechanoid. -->
+	<APM_Siren.description>Gestate a siren mechanoid.</APM_Siren.description>
+	
+	<!--                 EN: Gestating mech. -->
+	<APM_Frostivus.jobString>Gestating mech.</APM_Frostivus.jobString>
+	<!--             EN: gestate frostivus -->
+	<APM_Frostivus.label>gestate frostivus</APM_Frostivus.label>
+	<!--                   EN: Gestate a frostivus mechanoid. -->
+	<APM_Frostivus.description>Gestate a frostivus mechanoid.</APM_Frostivus.description>
+	
+	<!--               EN: Gestating mech. -->
+	<APM_Javelin.jobString>Gestating mech.</APM_Javelin.jobString>
+	<!--           EN: gestate javelin -->
+	<APM_Javelin.label>gestate javelin</APM_Javelin.label>
+	<!--                 EN: Gestate a javelin mechanoid. -->
+	<APM_Javelin.description>Gestate a javelin mechanoid.</APM_Javelin.description>
+</LanguageData>

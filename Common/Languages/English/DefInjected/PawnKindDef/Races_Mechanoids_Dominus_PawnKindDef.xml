@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Dominus.xml -->
+	<!--                EN: dominus -->
+	<APM_Mech_Dominus.label>dominus</APM_Mech_Dominus.label>
+	<!--                                   EN: Plural dominus -->
+	<APM_Mech_Dominus.lifeStages.1.labelPlural>Plural dominus</APM_Mech_Dominus.lifeStages.1.labelPlural>
+	
+	<!--                     EN: dominus -->
+	<APM_Mech_Dominus_Boss.label>dominus</APM_Mech_Dominus_Boss.label>
+	<!--                                        EN: Plural dominus -->
+	<APM_Mech_Dominus_Boss.lifeStages.1.labelPlural>Plural dominus</APM_Mech_Dominus_Boss.lifeStages.1.labelPlural>
+</LanguageData>

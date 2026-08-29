@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Frostivus.xml -->
+	<!--                  EN: frostivus -->
+	<APM_Mech_Frostivus.label>frostivus</APM_Mech_Frostivus.label>
+	<!--                                     EN: Plural frostivus -->
+	<APM_Mech_Frostivus.lifeStages.1.labelPlural>Plural frostivus</APM_Mech_Frostivus.lifeStages.1.labelPlural>
+</LanguageData>

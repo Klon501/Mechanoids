@@ -22,9 +22,17 @@
   <APM_Conqueror_AR.label>вырастить завоевателя с винтовкой</APM_Conqueror_AR.label>
   <APM_Conqueror_AR.description>Вырастить механоида завоеватель, оснащённого бластерной винтовкой.</APM_Conqueror_AR.description>
   <APM_Conqueror_AR.jobString>Выращивание завоевателя (винтовка).</APM_Conqueror_AR.jobString>
+
+  <!-- APM_Conqueror_SMG -->
+  <!-- EN: gestate spitter conqueror -->
   <APM_Conqueror_SMG.label>вырастить завоевателя с плевателем</APM_Conqueror_SMG.label>
+  <!-- EN: Gestate a Charge Spitter-equipped conqueror mechanoid. -->
   <APM_Conqueror_SMG.description>Вырастить механоида завоеватель, оснащённого бластерным плевателем.</APM_Conqueror_SMG.description>
+  <!-- EN: Gestating conqueror (SMG). -->
   <APM_Conqueror_SMG.jobString>Выращивание завоевателя (пистолет-пулемёт).</APM_Conqueror_SMG.jobString>
+
+  <!-- APM_Lasher -->
+  <!-- EN: gestate lasher -->
   <APM_Lasher.label>вырастить плеть</APM_Lasher.label>
   <APM_Lasher.description>Вырастить механоида плеть.</APM_Lasher.description>
   <APM_Pulse.label>вырастить импульса</APM_Pulse.label>
@@ -45,21 +53,45 @@
   <APM_Ingestor.description>Вырастить механоида поглотитель.</APM_Ingestor.description>
   <APM_Gazer.label>вырастить созерцателя</APM_Gazer.label>
   <APM_Gazer.description>Вырастить механоида созерцатель.</APM_Gazer.description>
-  <Make_DuelistPsyspear.label>сделать пси-копьё дуэлянта</Make_DuelistPsyspear.label>
-  <Make_DuelistPsyspear.description>Создать пси-копьё дуэлянта.</Make_DuelistPsyspear.description>
-  <Make_DuelistPsyspear.jobString>Создание пси-копья дуэлянта.</Make_DuelistPsyspear.jobString>
+
+  <!-- Make_DuelistPsyspear -->
+  <!-- EN: make duelist psyspear -->
+  <Make_DuelistPsyspear.label>сделать пси-копьё владычества</Make_DuelistPsyspear.label>
+  <!-- EN: Make a duelist psyspear. -->
+  <Make_DuelistPsyspear.description>Создать пси-копьё владычества.</Make_DuelistPsyspear.description>
+  <!-- EN: Making duelist psyspear. -->
+  <Make_DuelistPsyspear.jobString>Создание пси-копья владычества.</Make_DuelistPsyspear.jobString>
+
+  <!-- APM_Weapon_SeveringBlade -->
+  <!-- EN: make severing blade -->
   <APM_Weapon_SeveringBlade.label>сделать рассекающий клинок</APM_Weapon_SeveringBlade.label>
   <APM_Weapon_SeveringBlade.description>Создать рассекающий клинок.</APM_Weapon_SeveringBlade.description>
   <APM_Weapon_SeveringBlade.jobString>Создание рассекающего клинка.</APM_Weapon_SeveringBlade.jobString>
-  <APM_Weapon_Skipblade.label>сделать скачковый клинок</APM_Weapon_Skipblade.label>
-  <APM_Weapon_Skipblade.description>Создать скачковый клинок.</APM_Weapon_Skipblade.description>
-  <APM_Weapon_Skipblade.jobString>Создание скачкового клинка.</APM_Weapon_Skipblade.jobString>
+
+  <!-- APM_Weapon_Skipblade -->
+  <!-- EN: make skipblade -->
+  <APM_Weapon_Skipblade.label>сделать вспышку меч</APM_Weapon_Skipblade.label>
+  <!-- EN: Make a skipblade. -->
+  <APM_Weapon_Skipblade.description>Создать вспышку меч.</APM_Weapon_Skipblade.description>
+  <!-- EN: Making skipblade. -->
+  <APM_Weapon_Skipblade.jobString>Создание вспышки меча.</APM_Weapon_Skipblade.jobString>
+
+  <!-- APM_Weapon_PlasmaWhip -->
+  <!-- EN: make plasma whip -->
   <APM_Weapon_PlasmaWhip.label>сделать плазменный кнут</APM_Weapon_PlasmaWhip.label>
   <APM_Weapon_PlasmaWhip.description>Создать плазменный кнут.</APM_Weapon_PlasmaWhip.description>
   <APM_Weapon_PlasmaWhip.jobString>Создание плазменного кнута.</APM_Weapon_PlasmaWhip.jobString>
-  <APM_Solus.label>сделать «Солус»</APM_Solus.label>
-  <APM_Solus.description>Создать орудие «Солус».</APM_Solus.description>
-  <APM_Solus.jobString>Создание орудия «Солус».</APM_Solus.jobString>
+
+  <!-- APM_Solus -->
+  <!-- EN: make solus -->
+  <APM_Solus.label>сделать Солус</APM_Solus.label>
+  <!-- EN: Make a solus. -->
+  <APM_Solus.description>Создать орудие Солус.</APM_Solus.description>
+  <!-- EN: Making solus. -->
+  <APM_Solus.jobString>Создание орудия Солус.</APM_Solus.jobString>
+
+  <!-- APM_MechamancerPack -->
+  <!-- EN: make mechamancer pack -->
   <APM_MechamancerPack.label>сделать ранец мехаманта</APM_MechamancerPack.label>
   <APM_MechamancerPack.description>Создать ранец мехаманта.</APM_MechamancerPack.description>
   <APM_MechamancerPack.jobString>Создание ранца мехаманта.</APM_MechamancerPack.jobString>

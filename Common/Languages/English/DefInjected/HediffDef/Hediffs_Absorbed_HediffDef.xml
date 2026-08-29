@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediffs_Absorbed.xml -->
+	<!--                 EN: recycling biomass -->
+	<APM_AbsorbedThing.label>recycling biomass</APM_AbsorbedThing.label>
+	<!--                       EN: Processing absorbed biomass into chemfuel. -->
+	<APM_AbsorbedThing.description>Processing absorbed biomass into chemfuel.</APM_AbsorbedThing.description>
+</LanguageData>

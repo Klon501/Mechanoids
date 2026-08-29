@@ -1,0 +1,11 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\LasherWhip.xml -->
+	<!--                   EN: mech whip -->
+	<APM_Weapon_MechWhip.label>mech whip</APM_Weapon_MechWhip.label>
+	<!--                         EN: The mech whip can deal heavy damage and stun multiple targets in close proximity to the user. It appears the mechhive views sentient organic life akin to how we view cattle, and treats us as such. -->
+	<APM_Weapon_MechWhip.description>The mech whip can deal heavy damage and stun multiple targets in close proximity to the user. It appears the mechhive views sentient organic life akin to how we view cattle, and treats us as such.</APM_Weapon_MechWhip.description>
+	<!--                           EN: ㅤ -->
+	<APM_Weapon_MechWhip.verbs.0.label>ㅤ</APM_Weapon_MechWhip.verbs.0.label>
+	<!--                           EN: кромка -->
+	<APM_Weapon_MechWhip.tools.0.label>кромка</APM_Weapon_MechWhip.tools.0.label>
+</LanguageData>

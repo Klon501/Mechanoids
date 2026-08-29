@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\AbilityDefs\Abilities.xml -->
+	
+	<!--              EN: blinded by laser -->
+	<APM_LaserBlind.label>blinded by laser</APM_LaserBlind.label>
+	<!--                    EN: Vastly reduced sight capacity due to been blinded by laser. -->
+	<APM_LaserBlind.description>Vastly reduced sight capacity due to been blinded by laser.</APM_LaserBlind.description>
+</LanguageData>

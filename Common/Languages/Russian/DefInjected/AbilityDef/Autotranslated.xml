@@ -26,20 +26,79 @@
   <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
   <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
   <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen.label>дымовая завеса</APM_Ability_SmokeScreen.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen_Boss.label>дымовая завеса</APM_Ability_SmokeScreen_Boss.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen_Boss.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen_Boss.description>
+
+  <!-- EN: Celerus Blink -->
   <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+  <!-- EN: Celerus instantly teleports to a target, leaving a smokescreen behind. -->
   <APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Ultimate Sacrifice -->
   <APM_UltimateSacrifice.label>высшая жертва</APM_UltimateSacrifice.label>
+  <!-- EN: The Conqueror gives its life to unleash a devastating barrage from all weapons at once. -->
   <APM_UltimateSacrifice.description>Быстро выполняя сложные расчеты прицеливания, движения и логистики до тех пор, пока их процессорные блоки не расплавятся от жары, этот механоид наделяет ближайших союзников временным усилением характеристик.</APM_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
   <APM_PressTheAttack.label>развитие атаки</APM_PressTheAttack.label>
+  <!-- EN: Dominus urges its allies to press the attack, boosting their speed and damage. -->
   <APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
   <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
   <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
   <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
   <APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+
+  <!-- EN: Siren Lure -->
   <APM_Ability_SirenLure.label>манящая песнь</APM_Ability_SirenLure.label>
+  <!-- EN: The Siren creates a lure mimicking her song. -->
   <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
-  <APM_SeveringEdge.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge.description>
-  <APM_SeveringEdge_Boss.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge_Boss.description>
-  <APM_SkipbladeBlink.label>Скачок клинка</APM_SkipbladeBlink.label>
+
+  <!-- EN: Skipblade Blink -->
+  <APM_SkipbladeBlink.label>клинковый скачок</APM_SkipbladeBlink.label>
+  <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
   <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
+
+  <!-- EN: mech longjump -->
+  <APM_PulseLongjump.label>дальний прыжок меха</APM_PulseLongjump.label>
+
+  <!-- EN: Jump to a distant location using special ultrafast mechanoid muscles. -->
+  <APM_PulseLongjump.description>Прыжок на дальнее расстояние с использованием особых сверхбыстрых мышц механоида.</APM_PulseLongjump.description>
+
+    <!-- From Race Files -->
+
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive.label>Перегрузка</APM_TerminusOverdrive.label>
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive.description>Терминус перенаправляет энергию внутрь и ненадолго переходит в усиленное боевое состояние. Пока навык активен, он сбрасывает плащ, бьет сильнее, быстрее восстанавливается между ударами и его становится сложнее пошатнуть.</APM_TerminusOverdrive.description>
+  
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive_Boss.label>Перегрузка</APM_TerminusOverdrive_Boss.label>
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive_Boss.description>Терминус перенаправляет энергию внутрь и ненадолго переходит в усиленное боевое состояние. Пока навык активен, он сбрасывает плащ, бьет сильнее, быстрее восстанавливается между ударами и его становится сложнее пошатнуть.</APM_TerminusOverdrive_Boss.description>
+
+  <!-- EN: severing edge -->
+  <APM_SeveringEdge.label>Рассекающая грань</APM_SeveringEdge.label>
+  <!-- EN: Utilizing the innate psychic channeling qualities of its blade, the caster releases a sweeping blade of energy in front of itself, cutting anything in the area. -->
+  <APM_SeveringEdge.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge.description>
+
+    <APM_SeveringEdge_Boss.label>Рассекающая грань</APM_SeveringEdge_Boss.label>
+  <!-- EN: Utilizing the innate psychic channeling qualities of its blade, the caster releases a sweeping blade of energy in front of itself, cutting anything in the area. -->
+  <APM_SeveringEdge_Boss.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge_Boss.description>
+
+  <!-- Стандартная дуэль -->
+  <APM_Mech_Duel.label>вызов на дуэль</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>Выбранная цель вызывается на дуэль, и вокруг бойцов генерируется защитное поле. На время поединка весь получаемый урон, а также урон от стрелкового оружия и способностей, увеличивается. Если дуэль не завершится за определённое время, дуэлянты получат сильный негативный эффект. Если же один из бойцов погибает или падает без сознания, победитель получает мощное временное усиление.</APM_Mech_Duel.description>
+
+  <!-- Дуэль с боссом -->
+  <APM_Mech_Duel_Boss.label>вызов на дуэль</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>Выбранная цель вызывается на дуэль, и вокруг бойцов генерируется защитное поле. На время поединка весь получаемый урон, а также урон от стрелкового оружия и способностей, увеличивается. Если дуэль не завершится за определённое время, дуэлянты получат сильный негативный эффект. Если же один из бойцов погибает или падает без сознания, победитель получает мощное временное усиление.</APM_Mech_Duel_Boss.description>
+
 </LanguageData>

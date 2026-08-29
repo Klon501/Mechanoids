@@ -1,0 +1,8 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\Building_PurifierStation.xml -->
+	
+	<!--            EN: toxicity level -->
+	<APM_Toxicity.label>toxicity level</APM_Toxicity.label>
+	<!--                  EN: toxic level in local atmosphere. -->
+	<APM_Toxicity.description>toxic level in local atmosphere.</APM_Toxicity.description>
+</LanguageData>

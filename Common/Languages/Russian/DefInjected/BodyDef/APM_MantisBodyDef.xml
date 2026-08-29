@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: left sight sensor -->
+  <APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>левый оптический датчик</APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+
+  <!-- EN: right sight sensor -->
+  <APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>правый оптический датчик</APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+
+  <!-- EN: left hearing sensor -->
+  <APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>левый звуковой датчик</APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+
+  <!-- EN: right hearing sensor -->
+  <APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правый звуковой датчик</APM_Mantis.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+
+  <!-- EN: left blade mount -->
+  <APM_Mantis.corePart.parts.left_blade_mount.customLabel>левое крепление клинка</APM_Mantis.corePart.parts.left_blade_mount.customLabel>
+
+  <!-- EN: left blade arm -->
+  <APM_Mantis.corePart.parts.left_blade_mount.parts.left_blade_arm.customLabel>левая рука-клинок</APM_Mantis.corePart.parts.left_blade_mount.parts.left_blade_arm.customLabel>
+
+  <!-- EN: left cutting claw -->
+  <APM_Mantis.corePart.parts.left_blade_mount.parts.left_blade_arm.parts.left_cutting_claw.customLabel>левая режущая клешня</APM_Mantis.corePart.parts.left_blade_mount.parts.left_blade_arm.parts.left_cutting_claw.customLabel>
+
+  <!-- EN: right blade mount -->
+  <APM_Mantis.corePart.parts.right_blade_mount.customLabel>правое крепление клинка</APM_Mantis.corePart.parts.right_blade_mount.customLabel>
+
+  <!-- EN: right blade arm -->
+  <APM_Mantis.corePart.parts.right_blade_mount.parts.right_blade_arm.customLabel>правая рука-клинок</APM_Mantis.corePart.parts.right_blade_mount.parts.right_blade_arm.customLabel>
+
+  <!-- EN: right cutting claw -->
+  <APM_Mantis.corePart.parts.right_blade_mount.parts.right_blade_arm.parts.right_cutting_claw.customLabel>правая режущая клешня</APM_Mantis.corePart.parts.right_blade_mount.parts.right_blade_arm.parts.right_cutting_claw.customLabel>
+
+  <!-- EN: front left leg -->
+  <APM_Mantis.corePart.parts.front_left_leg.customLabel>левая передняя нога</APM_Mantis.corePart.parts.front_left_leg.customLabel>
+
+  <!-- EN: front left foot -->
+  <APM_Mantis.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>левая передняя стопа</APM_Mantis.corePart.parts.front_left_leg.parts.front_left_foot.customLabel>
+
+  <!-- EN: front right leg -->
+  <APM_Mantis.corePart.parts.front_right_leg.customLabel>правая передняя нога</APM_Mantis.corePart.parts.front_right_leg.customLabel>
+
+  <!-- EN: front right foot -->
+  <APM_Mantis.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>правая передняя стопа</APM_Mantis.corePart.parts.front_right_leg.parts.front_right_foot.customLabel>
+
+  <!-- EN: rear left leg -->
+  <APM_Mantis.corePart.parts.rear_left_leg.customLabel>левая задняя нога</APM_Mantis.corePart.parts.rear_left_leg.customLabel>
+
+  <!-- EN: rear left foot -->
+  <APM_Mantis.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>левая задняя стопа</APM_Mantis.corePart.parts.rear_left_leg.parts.rear_left_foot.customLabel>
+
+  <!-- EN: rear right leg -->
+  <APM_Mantis.corePart.parts.rear_right_leg.customLabel>правая задняя нога</APM_Mantis.corePart.parts.rear_right_leg.customLabel>
+
+  <!-- EN: rear right foot -->
+  <APM_Mantis.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>правая задняя стопа</APM_Mantis.corePart.parts.rear_right_leg.parts.rear_right_foot.customLabel>
+
+</LanguageData>

@@ -1,57 +1,175 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
-  <APM_LaserBlind.description>Зрение резко ухудшается после воздействия ослепляющего лазера.</APM_LaserBlind.description>
-  <APM_ApexMechanoid_Floating.label>парение</APM_ApexMechanoid_Floating.label>
-  <APM_ApexMechanoid_Floating.labelNoun>парение</APM_ApexMechanoid_Floating.labelNoun>
-  <APM_ApexMechanoid_Floating.description>Этот механоид парит над землей, игнорируя любые штрафы к скорости от ландшафта.</APM_ApexMechanoid_Floating.description>
-  <APM_Hediff_Devoured.label>поглощён(а)</APM_Hediff_Devoured.label>
-  <APM_Hediff_Devoured.description>Запечатан(а) внутри криокамеры Фростивуса. Все биологические процессы приостановлены — нет кровотечения, развития болезней и потребностей.</APM_Hediff_Devoured.description>
-  <APM_Hediff_JavelinMissileLock.label>захват цели</APM_Hediff_JavelinMissileLock.label>
-  <APM_Hediff_JavelinMissileLock.description>Головки самонаведения ракетной установки «Джавелина» зафиксировали профиль корпуса этой цели. Каждая следующая попавшая ракета проникает глубже предыдущей, пока захват не спадёт.</APM_Hediff_JavelinMissileLock.description>
-  <APM_Hediff_JavelinMissileLock.stages.0.label>захват цели</APM_Hediff_JavelinMissileLock.stages.0.label>
-  <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
-  <APM_Hediff_SteelDiscipline.description>Вдохновленная присутствием Вассала, эта единица двигается с новой целеустремленностью и стойкостью духа.</APM_Hediff_SteelDiscipline.description>
-  <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>
-  <APM_Hediff_Unity.description>Завоеватели по умолчанию оснащены вычислительными блоками, которые автоматически пытаются связываться с блоками находящихся поблизости союзников для совместных внутренних вычислений, повышая свою эффективность с каждым соседним соратником.</APM_Hediff_Unity.description>
-  <APM_Hediff_Unity.stages.1.label>вычислительная связь (минимальная)</APM_Hediff_Unity.stages.1.label>
-  <APM_Hediff_Unity.stages.2.label>вычислительная связь (слабая синхронизация)</APM_Hediff_Unity.stages.2.label>
-  <APM_Hediff_Unity.stages.3.label>вычислительная связь (средняя синхронизация)</APM_Hediff_Unity.stages.3.label>
-  <APM_Hediff_Unity.stages.4.label>вычислительная связь (распределенная)</APM_Hediff_Unity.stages.4.label>
-  <APM_Hediff_Unity.stages.5.label>вычислительная связь (высокая синхронизация)</APM_Hediff_Unity.stages.5.label>
-  <APM_Hediff_Unity.stages.6.label>вычислительная связь (оптимизированная)</APM_Hediff_Unity.stages.6.label>
-  <APM_Hediff_Unity.stages.7.label>вычислительная связь (пиковая эффективность)</APM_Hediff_Unity.stages.7.label>
-  <APM_ApexMechanoid_HealOnKills.label>вампирические механиты</APM_ApexMechanoid_HealOnKills.label>
-  <APM_ApexMechanoid_HealOnKills.labelNoun>вампиризм</APM_ApexMechanoid_HealOnKills.labelNoun>
-  <APM_ApexMechanoid_HealOnKills.description>Эти механиты накапливают заряды каждый раз, когда их носитель низвергает или убивает цель, а затем расходуют их на саморемонт при получении урона.</APM_ApexMechanoid_HealOnKills.description>
-  <APM_AbsorbedThing.label>переработка биомассы</APM_AbsorbedThing.label>
+
+  <APM_Hediff_JavelinMissileLock.label>захват умной ракетой</APM_Hediff_JavelinMissileLock.label>
+	<APM_Hediff_JavelinMissileLock.stages.0.label>уязвимость раскрыта</APM_Hediff_JavelinMissileLock.stages.0.label>
+
+  <!-- APM_AbsorbedThing.description -->
   <APM_AbsorbedThing.description>Переработка поглощённой биомассы в химтопливо.</APM_AbsorbedThing.description>
-  <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
+
+  <!-- APM_AbsorbedThing.label -->
+  <APM_AbsorbedThing.label>переработка биомассы</APM_AbsorbedThing.label>
+
+  <!-- APM_ApexMechanoid_Floating.description -->
+  <APM_ApexMechanoid_Floating.description>Этот механоид парит над землей, игнорируя любые штрафы к скорости от ландшафта.</APM_ApexMechanoid_Floating.description>
+
+  <!-- APM_ApexMechanoid_Floating.label -->
+  <APM_ApexMechanoid_Floating.label>парение</APM_ApexMechanoid_Floating.label>
+
+  <!-- APM_ApexMechanoid_Floating.labelNoun -->
+  <APM_ApexMechanoid_Floating.labelNoun>парение</APM_ApexMechanoid_Floating.labelNoun>
+
+  <!-- APM_ApexMechanoid_HealOnKills.description -->
+  <APM_ApexMechanoid_HealOnKills.description>Эти механиты накапливают заряды каждый раз, когда их носитель низвергает или убивает цель, а затем расходуют их на саморемонт при получении урона.</APM_ApexMechanoid_HealOnKills.description>
+
+  <!-- APM_ApexMechanoid_HealOnKills.label -->
+  <APM_ApexMechanoid_HealOnKills.label>вампирические механиты</APM_ApexMechanoid_HealOnKills.label>
+
+  <!-- APM_ApexMechanoid_HealOnKills.labelNoun -->
+  <APM_ApexMechanoid_HealOnKills.labelNoun>вампиризм</APM_ApexMechanoid_HealOnKills.labelNoun>
+
+  <!-- APM_CelerusSmokescreenBuff.description -->
   <APM_CelerusSmokescreenBuff.description>Целерус скрывается в дыму.</APM_CelerusSmokescreenBuff.description>
-  <APM_InDuel.label>в дуэли</APM_InDuel.label>
-  <APM_InDuel.description>Учавствует(а) в дуэли. Вокруг обоих бойцов сотворен защитный купол, блокирующий все дальние атаки и способности на время поединка. Входящий урон значительно увеличен, чтобы принудить к решительным действиям — дуэль должна завершиться быстро и жестоко. Любое лечение внутри арены подавлено, за исключением того малого количества, что высасывается при ударах по врагу. Если один из участников повержен или убит, выживший побеждает. Если время истечет, а оба всё еще стоят на ногах, дуэль закончится ничьей — и оба заплатят свою цену.</APM_InDuel.description>
-  <APM_DuelWinner.label>победитель дуэли</APM_DuelWinner.label>
-  <APM_DuelWinner.description>Этот боец вышел победителем из арены. Каждая выигранная дуэль оттачивает его мастерство — рефлексы ускоряются, удары становятся сильнее, а вражеские выпады отражаются всё проще. Чем длиннее неразрывная серия побед, тем опаснее становится этот воин. Слава со временем угасает, но память о победе остается.</APM_DuelWinner.description>
-  <APM_DuelWinner.stages.0.label>похищенная нить (1 победа)</APM_DuelWinner.stages.0.label>
-  <APM_DuelWinner.stages.1.label>расширение матрицы (2 победы)</APM_DuelWinner.stages.1.label>
-  <APM_DuelWinner.stages.2.label>доминирование в сети (3 победы)</APM_DuelWinner.stages.2.label>
-  <APM_DuelWinner.stages.3.label>кинетический разгон (4 победы)</APM_DuelWinner.stages.3.label>
-  <APM_DuelWinner.stages.4.label>ассимиляция ядра (5 побед)</APM_DuelWinner.stages.4.label>
-  <APM_DuelWinner.stages.5.label>нейронное насыщение (6 побед)</APM_DuelWinner.stages.5.label>
-  <APM_DuelWinner.stages.6.label>алгоритмическое возвышение (7 побед)</APM_DuelWinner.stages.6.label>
-  <APM_DuelWinner.stages.7.label>вектор сингулярности (8 побед)</APM_DuelWinner.stages.7.label>
-  <APM_DuelWinner.stages.8.label>повелитель сети (9 побед)</APM_DuelWinner.stages.8.label>
-  <APM_DuelWinner.stages.9.label>абсолютное превосходство (10 побед)</APM_DuelWinner.stages.9.label>
-  <APM_DuelDraw.label>ничья в дуэли</APM_DuelDraw.label>
+
+  <!-- APM_CelerusSmokescreenBuff.label -->
+  <APM_CelerusSmokescreenBuff.label>дымовая завеса</APM_CelerusSmokescreenBuff.label>
+
+  <!-- APM_DuelDraw.description -->
   <APM_DuelDraw.description>Дуэль закончилась без победителя. Оба бойца остались на ногах когда пал барьер — позор, от которого не так просто избавиться. Движения скованы, словно тяжесть незавершенного поединка давит на тело. Штраф со временем спадет, но клеймо ничьей забудется не сразу.</APM_DuelDraw.description>
-  <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
-  <APM_PulseWaveBlind.description>Интенсивная вспышка и скачок давления перегрузили сенсоры, резко снизив зрение на короткое время.</APM_PulseWaveBlind.description>
-  <APM_MechCommandCasketBoost.label>усиление командного капсулой</APM_MechCommandCasketBoost.label>
-  <APM_MechCommandCasketBoost.description>Пропускная способность этого механитора увеличена, пока он находится внутри командного саркофага.</APM_MechCommandCasketBoost.description>
-  <APM_Hediff_UltimateSacrifice.label>абсолютная жертва</APM_Hediff_UltimateSacrifice.label>
-  <APM_Hediff_UltimateSacrifice.description>Абсолютная жертва — один из завоевателей жертвует собой, чтобы дать мощное усиление всем союзным завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
-  <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
+
+  <!-- APM_DuelDraw.label -->
+  <APM_DuelDraw.label>ничья в дуэли</APM_DuelDraw.label>
+
+  <!-- APM_DuelWinner.description -->
+  <APM_DuelWinner.description>Этот боец вышел победителем из арены. Каждая выигранная дуэль оттачивает его мастерство — рефлексы ускоряются, удары становятся сильнее, а вражеские выпады отражаются всё проще. Чем длиннее неразрывная серия побед, тем опаснее становится этот воин. Слава со временем угасает, но память о победе остается.</APM_DuelWinner.description>
+
+  <!-- APM_DuelWinner.label -->
+  <APM_DuelWinner.label>победитель дуэли</APM_DuelWinner.label>
+
+  <!-- APM_DuelWinner.stages.0.label -->
+  <APM_DuelWinner.stages.0.label>похищенная нить (1 победа)</APM_DuelWinner.stages.0.label>
+
+  <!-- APM_DuelWinner.stages.1.label -->
+  <APM_DuelWinner.stages.1.label>расширение матрицы (2 победы)</APM_DuelWinner.stages.1.label>
+
+  <!-- APM_DuelWinner.stages.2.label -->
+  <APM_DuelWinner.stages.2.label>доминирование в сети (3 победы)</APM_DuelWinner.stages.2.label>
+
+  <!-- APM_DuelWinner.stages.3.label -->
+  <APM_DuelWinner.stages.3.label>кинетический разгон (4 победы)</APM_DuelWinner.stages.3.label>
+
+  <!-- APM_DuelWinner.stages.4.label -->
+  <APM_DuelWinner.stages.4.label>ассимиляция ядра (5 побед)</APM_DuelWinner.stages.4.label>
+
+  <!-- APM_DuelWinner.stages.5.label -->
+  <APM_DuelWinner.stages.5.label>нейронное насыщение (6 побед)</APM_DuelWinner.stages.5.label>
+
+  <!-- APM_DuelWinner.stages.6.label -->
+  <APM_DuelWinner.stages.6.label>алгоритмическое возвышение (7 побед)</APM_DuelWinner.stages.6.label>
+
+  <!-- APM_DuelWinner.stages.7.label -->
+  <APM_DuelWinner.stages.7.label>вектор сингулярности (8 побед)</APM_DuelWinner.stages.7.label>
+
+  <!-- APM_DuelWinner.stages.8.label -->
+  <APM_DuelWinner.stages.8.label>повелитель сети (9 побед)</APM_DuelWinner.stages.8.label>
+
+  <!-- APM_DuelWinner.stages.9.label -->
+  <APM_DuelWinner.stages.9.label>абсолютное превосходство (10 побед)</APM_DuelWinner.stages.9.label>
+
+  <!-- APM_Hediff_Devoured.description -->
+  <APM_Hediff_Devoured.description>Запечатан(а) внутри криокамеры Фростивуса. Все биологические процессы приостановлены — нет кровотечения, развития болезней и потребностей.</APM_Hediff_Devoured.description>
+
+  <!-- APM_Hediff_Devoured.label -->
+  <APM_Hediff_Devoured.label>поглощён(а)</APM_Hediff_Devoured.label>
+
+  <!-- APM_Hediff_JavelinMissileLock.description -->
+  <APM_Hediff_JavelinMissileLock.description>Головки самонаведения ракетной установки «Джавелина» зафиксировали профиль корпуса этой цели. Каждая следующая попавшая ракета проникает глубже предыдущей, пока захват не спадёт.</APM_Hediff_JavelinMissileLock.description>
+
+  <!-- APM_Hediff_JavelinMissileLock.label -->
+  <APM_Hediff_JavelinMissileLock.label>захват цели</APM_Hediff_JavelinMissileLock.label>
+
+  <!-- APM_Hediff_JavelinMissileLock.stages.0.label -->
+  <APM_Hediff_JavelinMissileLock.stages.0.label>захват цели</APM_Hediff_JavelinMissileLock.stages.0.label>
+
+  <!-- APM_Hediff_PressTheAttack.description -->
+  <APM_Hediff_PressTheAttack.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack.description>
+
+  <!-- APM_Hediff_PressTheAttack.label -->
+  <APM_Hediff_PressTheAttack.label>псионный прилив</APM_Hediff_PressTheAttack.label>
+
+  <!-- APM_Hediff_SirenSong.description -->
   <APM_Hediff_SirenSong.description>Этот пешка находится под воздействием успокаивающего механического хора, чувствуя себя легче и полнее сил.</APM_Hediff_SirenSong.description>
-  <APM_Hediff_TerminusOverdrive.label>форсаж</APM_Hediff_TerminusOverdrive.label>
+
+  <!-- APM_Hediff_SirenSong.label -->
+  <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
+
+  <!-- APM_Hediff_SteelDiscipline.description -->
+  <APM_Hediff_SteelDiscipline.description>Вдохновленная присутствием Вассала, эта единица двигается с новой целеустремленностью и стойкостью духа.</APM_Hediff_SteelDiscipline.description>
+
+  <!-- APM_Hediff_SteelDiscipline.label -->
+  <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
+
+  <!-- APM_Hediff_TerminusOverdrive.description -->
   <APM_Hediff_TerminusOverdrive.description>Terminus направляет всплеск энергии в боевую мощь, жертвуя плащом и сдержанностью ради короткого периода подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
+
+  <!-- APM_Hediff_TerminusOverdrive.label -->
+  <APM_Hediff_TerminusOverdrive.label>форсаж</APM_Hediff_TerminusOverdrive.label>
+
+  <!-- APM_Hediff_UltimateSacrifice.description -->
+  <APM_Hediff_UltimateSacrifice.description>Абсолютная жертва — один из завоевателей жертвует собой, чтобы дать мощное усиление всем союзным завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
+
+  <!-- APM_Hediff_UltimateSacrifice.label -->
+  <APM_Hediff_UltimateSacrifice.label>абсолютная жертва</APM_Hediff_UltimateSacrifice.label>
+
+  <!-- APM_Hediff_Unity.description -->
+  <APM_Hediff_Unity.description>Завоеватели по умолчанию оснащены вычислительными блоками, которые автоматически пытаются связываться с блоками находящихся поблизости союзников для совместных внутренних вычислений, повышая свою эффективность с каждым соседним соратником.</APM_Hediff_Unity.description>
+
+  <!-- APM_Hediff_Unity.label -->
+  <APM_Hediff_Unity.label>канал единства</APM_Hediff_Unity.label>
+
+  <!-- APM_Hediff_Unity.stages.1.label -->
+  <APM_Hediff_Unity.stages.1.label>вычислительная связь (минимальная)</APM_Hediff_Unity.stages.1.label>
+
+  <!-- APM_Hediff_Unity.stages.2.label -->
+  <APM_Hediff_Unity.stages.2.label>вычислительная связь (слабая синхронизация)</APM_Hediff_Unity.stages.2.label>
+
+  <!-- APM_Hediff_Unity.stages.3.label -->
+  <APM_Hediff_Unity.stages.3.label>вычислительная связь (средняя синхронизация)</APM_Hediff_Unity.stages.3.label>
+
+  <!-- APM_Hediff_Unity.stages.4.label -->
+  <APM_Hediff_Unity.stages.4.label>вычислительная связь (распределенная)</APM_Hediff_Unity.stages.4.label>
+
+  <!-- APM_Hediff_Unity.stages.5.label -->
+  <APM_Hediff_Unity.stages.5.label>вычислительная связь (высокая синхронизация)</APM_Hediff_Unity.stages.5.label>
+
+  <!-- APM_Hediff_Unity.stages.6.label -->
+  <APM_Hediff_Unity.stages.6.label>вычислительная связь (оптимизированная)</APM_Hediff_Unity.stages.6.label>
+
+  <!-- APM_Hediff_Unity.stages.7.label -->
+  <APM_Hediff_Unity.stages.7.label>вычислительная связь (пиковая эффективность)</APM_Hediff_Unity.stages.7.label>
+
+  <!-- APM_InDuel.description -->
+  <APM_InDuel.description>Учавствует(а) в дуэли. Вокруг обоих бойцов сотворен защитный купол, блокирующий все дальние атаки и способности на время поединка. Входящий урон значительно увеличен, чтобы принудить к решительным действиям — дуэль должна завершиться быстро и жестоко. Любое лечение внутри арены подавлено, за исключением того малого количества, что высасывается при ударах по врагу. Если один из участников повержен или убит, выживший побеждает. Если время истечет, а оба всё еще стоят на ногах, дуэль закончится ничьей — и оба заплатят свою цену.</APM_InDuel.description>
+
+  <!-- APM_InDuel.label -->
+  <APM_InDuel.label>в дуэли</APM_InDuel.label>
+
+  <!-- APM_LaserBlind.description -->
+  <APM_LaserBlind.description>Зрение резко ухудшается после воздействия ослепляющего лазера.</APM_LaserBlind.description>
+
+  <!-- APM_LaserBlind.label -->
+  <APM_LaserBlind.label>ослеплён лазером</APM_LaserBlind.label>
+
+  <!-- APM_MechCommandCasketBoost.description -->
+  <APM_MechCommandCasketBoost.description>Пропускная способность этого механитора увеличена, пока он находится внутри командного саркофага.</APM_MechCommandCasketBoost.description>
+
+  <!-- APM_MechCommandCasketBoost.label -->
+  <APM_MechCommandCasketBoost.label>усиление командного капсулой</APM_MechCommandCasketBoost.label>
+
+  <!-- APM_PulseWaveBlind.description -->
+  <APM_PulseWaveBlind.description>Интенсивная вспышка и скачок давления перегрузили сенсоры, резко снизив зрение на короткое время.</APM_PulseWaveBlind.description>
+
+  <!-- APM_PulseWaveBlind.label -->
+  <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
+
 </LanguageData>

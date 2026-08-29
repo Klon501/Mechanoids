@@ -1,0 +1,58 @@
+<LanguageData>
+	<!-- 1.6\Defs\RecipeDefs\Recipes_Production.xml -->
+	<!--                    EN: make duelist psyspear -->
+	<Make_DuelistPsyspear.label>make duelist psyspear</Make_DuelistPsyspear.label>
+	<!--                          EN: Make a duelist psyspear. -->
+	<Make_DuelistPsyspear.description>Make a duelist psyspear.</Make_DuelistPsyspear.description>
+	<!--                        EN: Making duelist psyspear. -->
+	<Make_DuelistPsyspear.jobString>Making duelist psyspear.</Make_DuelistPsyspear.jobString>
+	
+	<!--                        EN: make severing blade -->
+	<APM_Weapon_SeveringBlade.label>make severing blade</APM_Weapon_SeveringBlade.label>
+	<!--                              EN: Make a severing blade. -->
+	<APM_Weapon_SeveringBlade.description>Make a severing blade.</APM_Weapon_SeveringBlade.description>
+	<!--                            EN: Making severing blade. -->
+	<APM_Weapon_SeveringBlade.jobString>Making severing blade.</APM_Weapon_SeveringBlade.jobString>
+	
+	<!--                    EN: make skipblade -->
+	<APM_Weapon_Skipblade.label>make skipblade</APM_Weapon_Skipblade.label>
+	<!--                          EN: Make a skipblade. -->
+	<APM_Weapon_Skipblade.description>Make a skipblade.</APM_Weapon_Skipblade.description>
+	<!--                        EN: Making skipblade. -->
+	<APM_Weapon_Skipblade.jobString>Making skipblade.</APM_Weapon_Skipblade.jobString>
+	
+	<!--                     EN: make plasma whip -->
+	<APM_Weapon_PlasmaWhip.label>make plasma whip</APM_Weapon_PlasmaWhip.label>
+	<!--                           EN: Make a plasma whip. -->
+	<APM_Weapon_PlasmaWhip.description>Make a plasma whip.</APM_Weapon_PlasmaWhip.description>
+	<!--                         EN: Making plasma whip. -->
+	<APM_Weapon_PlasmaWhip.jobString>Making plasma whip.</APM_Weapon_PlasmaWhip.jobString>
+	
+	<!--         EN: make solus -->
+	<APM_Solus.label>make solus</APM_Solus.label>
+	<!--               EN: Make a solus. -->
+	<APM_Solus.description>Make a solus.</APM_Solus.description>
+	<!--             EN: Making solus. -->
+	<APM_Solus.jobString>Making solus.</APM_Solus.jobString>
+	
+	<!--                   EN: make mechamancer pack -->
+	<APM_MechamancerPack.label>make mechamancer pack</APM_MechamancerPack.label>
+	<!--                         EN: Make a mechamancer pack. -->
+	<APM_MechamancerPack.description>Make a mechamancer pack.</APM_MechamancerPack.description>
+	<!--                       EN: Making mechamancer pack. -->
+	<APM_MechamancerPack.jobString>Making mechamancer pack.</APM_MechamancerPack.jobString>
+	
+	<!--                           EN: make mechamancer suit -->
+	<APM_Apparel_MechamancerSuit.label>make mechamancer suit</APM_Apparel_MechamancerSuit.label>
+	<!--                                 EN: Make a mechamancer suit. -->
+	<APM_Apparel_MechamancerSuit.description>Make a mechamancer suit.</APM_Apparel_MechamancerSuit.description>
+	<!--                               EN: Making mechamancer suit. -->
+	<APM_Apparel_MechamancerSuit.jobString>Making mechamancer suit.</APM_Apparel_MechamancerSuit.jobString>
+	
+	<!--                                        EN: make mechamancer helmet -->
+	<APM_Apparel_ArmorHelmetMechamancerHelmet.label>make mechamancer helmet</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+	<!--                                              EN: Make a mechamancer helmet. -->
+	<APM_Apparel_ArmorHelmetMechamancerHelmet.description>Make a mechamancer helmet.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+	<!--                                            EN: Making mechamancer helmet. -->
+	<APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>Making mechamancer helmet.</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
+</LanguageData>

@@ -1,0 +1,7 @@
+<LanguageData>
+	<!-- 1.6\Defs\ThingDefs_Buildings\Buildings_Power.xml -->
+	<!--                          EN: Dynamo powered generator -->
+	<APM_DynamoPoweredGenerator.label>Dynamo powered generator</APM_DynamoPoweredGenerator.label>
+	<!--                                EN: Produces power by consuming uranium. Must be periodically refueled by hand. -->
+	<APM_DynamoPoweredGenerator.description>Produces power by consuming uranium. Must be periodically refueled by hand.</APM_DynamoPoweredGenerator.description>
+</LanguageData>
