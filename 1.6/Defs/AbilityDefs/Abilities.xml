@@ -323,8 +323,8 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>5.9</range>
-			<warmupTime>0.5</warmupTime>
+			<range>6.9</range>
+			<warmupTime>0.4</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_ShieldCharge</soundCast>
 			<targetParams>
@@ -365,8 +365,8 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>5.9</range>
-			<warmupTime>0.5</warmupTime>
+			<range>6.9</range>
+			<warmupTime>0.4</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>APM_Bladehopp</soundCast>
 			<targetParams>

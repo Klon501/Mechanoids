@@ -44,7 +44,7 @@ namespace ApexMechanoids
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return JobMaker.MakeJob(JobDefOf.RepairMech, t);
+            return JobMaker.MakeJob(ApexDefsOf.APM_RepairMech, t);
         }
     }
 }

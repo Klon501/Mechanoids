@@ -14,6 +14,8 @@ namespace ApexMechanoids
         public static ThingDef APM_Building_ToxicPurifier;
 		public static AbilityDef APM_DefenceMatrix;
         public static AbilityDef APM_BlindingLaser;
+        public static AbilityDef APM_ShieldCharge;
+        public static AbilityDef APM_Bladehopp;
         public static ThingDef APM_Mech_Celerus;
         public static ThingDef APM_Mech_CelerusB;
         public static ThingDef APM_Smokescreen;
@@ -79,6 +81,7 @@ namespace ApexMechanoids
         public static JobDef APM_RavagerArtilleryAttack;
         public static JobDef APM_CastPulseJump;
         public static JobDef APM_HaulToToxicPurifier;
+        public static JobDef APM_RepairMech;
 
 	}
     [DefOf]

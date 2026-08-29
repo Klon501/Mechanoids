@@ -20,7 +20,7 @@ namespace ApexMechanoids
 			Thing thing2 = TinkerRepairUtility.FindRepairableMech(pawn);
 			if (thing2 != null)
 			{
-				return JobMaker.MakeJob(JobDefOf.RepairMech, thing2);
+				return JobMaker.MakeJob(ApexDefsOf.APM_RepairMech, thing2);
 			}
 			return null;
 		}

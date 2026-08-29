@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
@@ -8,6 +9,13 @@ namespace ApexMechanoids
 {
     public class JobGiver_AITinkerCombat : ThinkNode_JobGiver
     {
+        private const float ShieldDistanceFactor = 0.35f;
+        private const float RepairDistanceFactor = 1f;
+        private const float RepairSafetyFactor = 0.25f;
+        private const float AttackingScore = 150f;
+        private const float NearEnemyScore = 150f;
+        private const float NearEnemyRadius = 15f;
+
         public float targetAcquireRadius = 30f;
         public float targetKeepRadius = 35f;
         public float fleeEnemyDistance = 7.9f;
@@ -17,6 +25,8 @@ namespace ApexMechanoids
         public float repairTargetMinEnemyDistance = 8f;
         public float maxRepositionDistance = 12f;
         public bool requireLineOfSightToTargets = true;
+        public bool allowPlayerControlled = false;
+        public bool useCombatWaitFallback = true;
         public int abilityJobExpiryInterval = 120;
         public int moveJobExpiryInterval = 120;
         public int repairJobExpiryInterval = 120;
@@ -26,8 +36,24 @@ namespace ApexMechanoids
         public int shieldTargetLockTicks = 500;
         public float shieldSelfMeleeThreatRadius = 2.9f;
 
+        public float shieldAimedAtScore = 2500f;
+        public float shieldRecentlyAttackedScore = 1500f;
+        public float shieldRecentHarmScore = 1000f;
+        public float shieldMissingHealthScore = 900f;
+        public float shieldMeleeAllyScore = 1000f;
+        public float shieldLockScore = 400f;
+        public float shieldNoThreatFactor = 0.35f;
+        public float shieldWeight = 1f;
+        public float repairMissingHealthScore = 1200f;
+        public float repairDownedScore = 900f;
+        public float repairValueFactor = 0.5f;
+        public float repairMaxSafetyScore = 300f;
+        public float repairMinScore = 200f;
+        public float repairWeight = 1f;
+
         private static readonly Dictionary<int, ShieldTargetMemory> shieldTargetMemory = new Dictionary<int, ShieldTargetMemory>();
         private static readonly List<int> tmpShieldTargetMemoryKeysToRemove = new List<int>();
+        private static readonly List<ThreatInfo> tmpThreats = new List<ThreatInfo>();
         private static int lastShieldTargetMemoryCleanupTick = -99999;
 
         public override ThinkNode DeepCopy(bool resolve = true)
@@ -42,6 +68,8 @@ namespace ApexMechanoids
             obj.repairTargetMinEnemyDistance = repairTargetMinEnemyDistance;
             obj.maxRepositionDistance = maxRepositionDistance;
             obj.requireLineOfSightToTargets = requireLineOfSightToTargets;
+            obj.allowPlayerControlled = allowPlayerControlled;
+            obj.useCombatWaitFallback = useCombatWaitFallback;
             obj.abilityJobExpiryInterval = abilityJobExpiryInterval;
             obj.moveJobExpiryInterval = moveJobExpiryInterval;
             obj.repairJobExpiryInterval = repairJobExpiryInterval;
@@ -50,6 +78,20 @@ namespace ApexMechanoids
             obj.shieldRecentRangedHarmTicks = shieldRecentRangedHarmTicks;
             obj.shieldTargetLockTicks = shieldTargetLockTicks;
             obj.shieldSelfMeleeThreatRadius = shieldSelfMeleeThreatRadius;
+            obj.shieldAimedAtScore = shieldAimedAtScore;
+            obj.shieldRecentlyAttackedScore = shieldRecentlyAttackedScore;
+            obj.shieldRecentHarmScore = shieldRecentHarmScore;
+            obj.shieldMissingHealthScore = shieldMissingHealthScore;
+            obj.shieldMeleeAllyScore = shieldMeleeAllyScore;
+            obj.shieldLockScore = shieldLockScore;
+            obj.shieldNoThreatFactor = shieldNoThreatFactor;
+            obj.shieldWeight = shieldWeight;
+            obj.repairMissingHealthScore = repairMissingHealthScore;
+            obj.repairDownedScore = repairDownedScore;
+            obj.repairValueFactor = repairValueFactor;
+            obj.repairMaxSafetyScore = repairMaxSafetyScore;
+            obj.repairMinScore = repairMinScore;
+            obj.repairWeight = repairWeight;
             return obj;
         }
 
@@ -67,30 +109,27 @@ namespace ApexMechanoids
             }
 
             Thing enemyTarget = GetEnemyTarget(pawn);
-            if (enemyTarget == null)
-            {
-                return null;
-            }
-
             Ability blindingLaser = pawn.abilities.GetAbility(ApexDefsOf.APM_BlindingLaser);
             Ability defenceMatrix = pawn.abilities.GetAbility(ApexDefsOf.APM_DefenceMatrix);
 
-            Job blindJob = TryGetBlindingJob(pawn, blindingLaser, enemyTarget);
-            if (blindJob != null)
+            if (enemyTarget != null)
             {
-                return blindJob;
+                Job blindJob = TryGetBlindingJob(pawn, blindingLaser, enemyTarget);
+                if (blindJob != null)
+                {
+                    return blindJob;
+                }
             }
 
-            Job shieldJob = TryGetShieldJob(pawn, defenceMatrix, enemyTarget);
-            if (shieldJob != null)
+            Job supportJob = TryGetSupportJob(pawn, defenceMatrix, enemyTarget);
+            if (supportJob != null)
             {
-                return shieldJob;
+                return supportJob;
             }
 
-            Job repairJob = TryGetCombatRepairJob(pawn, enemyTarget);
-            if (repairJob != null)
+            if (enemyTarget == null)
             {
-                return repairJob;
+                return null;
             }
 
             Job positionJob = TryGetBlindingPositionJob(pawn, blindingLaser, enemyTarget);
@@ -99,10 +138,10 @@ namespace ApexMechanoids
                 return positionJob;
             }
 
-            return MakeWaitCombatJob(pawn);
+            return useCombatWaitFallback ? MakeWaitCombatJob(pawn) : null;
         }
 
-        private static bool CanRunFor(Pawn pawn)
+        private bool CanRunFor(Pawn pawn)
         {
             return pawn != null
                 && pawn.def == ApexDefsOf.APM_Mech_Tinker
@@ -113,7 +152,7 @@ namespace ApexMechanoids
                 && !pawn.Dead
                 && !pawn.Downed
                 && Utils.IsAwakeAndNotDormant(pawn)
-                && !pawn.IsPlayerControlled
+                && (!pawn.IsPlayerControlled || allowPlayerControlled)
                 && pawn.abilities != null
                 && pawn.health?.capacities != null
                 && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Moving)
@@ -274,113 +313,238 @@ namespace ApexMechanoids
             return true;
         }
 
-        private Job TryGetShieldJob(Pawn pawn, Ability ability, Thing enemyTarget)
+        private Job TryGetSupportJob(Pawn pawn, Ability shieldAbility, Thing enemyTarget)
         {
-            if (ability == null || !ability.CanCast)
-            {
-                return null;
-            }
-            if (HasCloseMeleeThreat(pawn))
-            {
-                return null;
-            }
+            bool canShield = enemyTarget != null
+                && shieldAbility != null
+                && shieldAbility.CanCast
+                && !HasCloseMeleeThreat(pawn);
 
-            Pawn target = FindShieldTarget(pawn, ability, enemyTarget);
-            if (target == null)
-            {
-                return null;
-            }
+            int ticksGame = Find.TickManager.TicksGame;
+            BuildThreatCache(pawn);
+            Pawn lockedShieldTarget = canShield ? CurrentLockedShieldTarget(pawn, ticksGame) : null;
 
-            LocalTargetInfo targetInfo = target;
-            RememberShieldTarget(pawn, target);
-            return ability.GetJob(targetInfo, targetInfo);
-        }
+            Pawn bestShieldTarget = null;
+            float bestShieldScore = float.MinValue;
+            Pawn bestShieldTinker = null;
+            float bestShieldTinkerScore = float.MinValue;
+            Pawn bestRepairTarget = null;
+            float bestRepairScore = float.MinValue;
 
-        private Pawn FindShieldTarget(Pawn pawn, Ability ability, Thing enemyTarget)
-        {
-            Pawn lockedTarget = CurrentLockedShieldTarget(pawn, ability);
-            if (lockedTarget != null)
-            {
-                return lockedTarget;
-            }
-
-            Pawn bestTarget = null;
-            float bestScore = float.MinValue;
-            Pawn bestTinkerTarget = null;
-            float bestTinkerScore = float.MinValue;
-            float maxDistanceSq = shieldSearchRadius * shieldSearchRadius;
-            List<IAttackTarget> potentialThreats = pawn.Map.attackTargetsCache.GetPotentialTargetsFor(pawn);
+            float shieldMaxDistanceSq = shieldSearchRadius * shieldSearchRadius;
+            float repairMaxDistanceSq = repairSearchRadius * repairSearchRadius;
             List<Pawn> factionPawns = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
             for (int i = 0; i < factionPawns.Count; i++)
             {
                 Pawn candidate = factionPawns[i];
-                if (!CanShieldTarget(pawn, candidate, ability))
+                if (candidate == null || candidate == pawn || candidate.Destroyed || candidate.Dead || !candidate.Spawned || candidate.Map != pawn.Map)
                 {
                     continue;
                 }
 
                 float distanceSq = pawn.Position.DistanceToSquared(candidate.Position);
-                if (distanceSq > maxDistanceSq)
-                {
-                    continue;
-                }
 
-                float score = ShieldTargetScore(pawn, candidate, enemyTarget, distanceSq, potentialThreats);
-                if (candidate.def == ApexDefsOf.APM_Mech_Tinker)
+                if (canShield && distanceSq <= shieldMaxDistanceSq && CanShieldTarget(pawn, candidate, shieldAbility))
                 {
-                    if (bestTinkerTarget == null || score > bestTinkerScore)
+                    float score = ShieldTargetScore(candidate, enemyTarget, distanceSq, ticksGame);
+                    if (candidate == lockedShieldTarget)
                     {
-                        bestTinkerTarget = candidate;
-                        bestTinkerScore = score;
+                        score += shieldLockScore;
                     }
-                    continue;
+
+                    if (candidate.def == ApexDefsOf.APM_Mech_Tinker)
+                    {
+                        if (bestShieldTinker == null || score > bestShieldTinkerScore)
+                        {
+                            bestShieldTinker = candidate;
+                            bestShieldTinkerScore = score;
+                        }
+                    }
+                    else if (bestShieldTarget == null || score > bestShieldScore)
+                    {
+                        bestShieldTarget = candidate;
+                        bestShieldScore = score;
+                    }
                 }
 
-                if (bestTarget == null || score > bestScore)
+                if (distanceSq <= repairMaxDistanceSq && CanRepairCombatMechNow(pawn, candidate, enemyTarget))
                 {
-                    bestTarget = candidate;
-                    bestScore = score;
+                    float score = RepairTargetScore(candidate, enemyTarget, distanceSq);
+                    if (bestRepairTarget == null || score > bestRepairScore)
+                    {
+                        bestRepairTarget = candidate;
+                        bestRepairScore = score;
+                    }
                 }
             }
 
-            return bestTarget ?? bestTinkerTarget;
+            Pawn shieldTarget = bestShieldTarget ?? bestShieldTinker;
+            float shieldScore = bestShieldTarget != null ? bestShieldScore : bestShieldTinkerScore;
+
+            if (bestRepairTarget != null
+                && bestRepairScore >= repairMinScore
+                && (shieldTarget == null || bestRepairScore * repairWeight > shieldScore * shieldWeight))
+            {
+                return MakeRepairJob(bestRepairTarget, enemyTarget != null);
+            }
+
+            if (shieldTarget != null)
+            {
+                return MakeShieldJob(pawn, shieldAbility, shieldTarget, ticksGame);
+            }
+
+            return null;
         }
 
-        private Pawn CurrentLockedShieldTarget(Pawn pawn, Ability ability)
+        private float ShieldTargetScore(Pawn target, Thing enemyTarget, float distanceSq, int ticksGame)
+        {
+            float threatScore = IncomingRangedThreatScore(target, ticksGame);
+            if (WasRecentlyHitByRanged(target, ticksGame))
+            {
+                threatScore += shieldRecentHarmScore;
+            }
+
+            float score = threatScore;
+            score += MissingHealthOf(target) * shieldMissingHealthScore;
+            score += SupportTargetValueScore(target);
+            score -= distanceSq * ShieldDistanceFactor;
+
+            if (IsMeleeAlly(target))
+            {
+                score += shieldMeleeAllyScore;
+            }
+            if (target.IsAttacking())
+            {
+                score += AttackingScore;
+            }
+            if (enemyTarget != null && target.Position.InHorDistOf(enemyTarget.Position, NearEnemyRadius))
+            {
+                score += NearEnemyScore;
+            }
+
+            if (threatScore <= 0f && score > 0f)
+            {
+                score *= shieldNoThreatFactor;
+            }
+
+            return score;
+        }
+
+        private float RepairTargetScore(Pawn target, Thing enemyTarget, float distanceSq)
+        {
+            float score = MissingHealthOf(target) * repairMissingHealthScore;
+            score += SupportTargetValueScore(target) * repairValueFactor;
+            score -= distanceSq * RepairDistanceFactor;
+
+            if (target.Downed)
+            {
+                score += repairDownedScore;
+            }
+
+            if (enemyTarget != null)
+            {
+                float enemyDistanceSq = target.Position.DistanceToSquared(enemyTarget.Position);
+                score += Mathf.Min(enemyDistanceSq * RepairSafetyFactor, repairMaxSafetyScore);
+            }
+            else
+            {
+                score += repairMaxSafetyScore;
+            }
+
+            return score;
+        }
+
+        private float IncomingRangedThreatScore(Pawn target, int ticksGame)
+        {
+            float score = 0f;
+            for (int i = 0; i < tmpThreats.Count; i++)
+            {
+                ThreatInfo threat = tmpThreats[i];
+                if (!threat.ranged)
+                {
+                    continue;
+                }
+
+                if (threat.aimingAt == target)
+                {
+                    score += shieldAimedAtScore;
+                }
+                if (threat.lastAttacked == target && ticksGame - threat.lastAttackTick <= shieldRecentAttackTargetTicks)
+                {
+                    score += shieldRecentlyAttackedScore;
+                }
+            }
+
+            return score;
+        }
+
+        private void BuildThreatCache(Pawn pawn)
+        {
+            tmpThreats.Clear();
+            List<IAttackTarget> potentialTargets = pawn.Map.attackTargetsCache.GetPotentialTargetsFor(pawn);
+            for (int i = 0; i < potentialTargets.Count; i++)
+            {
+                IAttackTarget threat = potentialTargets[i];
+                Thing threatThing = threat.Thing;
+                if (!IsValidEnemyTarget(pawn, threatThing) || threat.ThreatDisabled(pawn))
+                {
+                    continue;
+                }
+
+                IAttackTargetSearcher searcher = threat as IAttackTargetSearcher;
+                tmpThreats.Add(new ThreatInfo
+                {
+                    thing = threatThing,
+                    ranged = HasRangedThreatVerb(searcher),
+                    aimingAt = threat.TargetCurrentlyAimingAt.Thing,
+                    lastAttacked = searcher != null ? searcher.LastAttackedTarget.Thing : null,
+                    lastAttackTick = searcher != null ? searcher.LastAttackTargetTick : -99999
+                });
+            }
+        }
+
+        private bool EnemyIsNearRepairTarget(Pawn target)
+        {
+            float radiusSq = repairTargetMinEnemyDistance * repairTargetMinEnemyDistance;
+            for (int i = 0; i < tmpThreats.Count; i++)
+            {
+                Thing threatThing = tmpThreats[i].thing;
+                if (target.Position.DistanceToSquared(threatThing.Position) > radiusSq)
+                {
+                    continue;
+                }
+
+                if (GenSight.LineOfSightToThing(target.Position, threatThing, target.Map))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private Pawn CurrentLockedShieldTarget(Pawn pawn, int ticksGame)
         {
             if (shieldTargetLockTicks <= 0 || pawn == null)
             {
                 return null;
             }
 
-            int ticksGame = Find.TickManager.TicksGame;
             if (!shieldTargetMemory.TryGetValue(pawn.thingIDNumber, out ShieldTargetMemory memory))
             {
                 return null;
             }
 
-            if (ticksGame - memory.startTick >= shieldTargetLockTicks)
-            {
-                return null;
-            }
-
-            Pawn target = memory.target;
-            if (!CanShieldTarget(pawn, target, ability))
-            {
-                return null;
-            }
-
-            return pawn.Position.DistanceToSquared(target.Position) <= shieldSearchRadius * shieldSearchRadius ? target : null;
+            return ticksGame - memory.startTick < shieldTargetLockTicks ? memory.target : null;
         }
 
-        private void RememberShieldTarget(Pawn pawn, Pawn target)
+        private void RememberShieldTarget(Pawn pawn, Pawn target, int ticksGame)
         {
             if (shieldTargetLockTicks <= 0 || pawn == null || target == null)
             {
                 return;
             }
 
-            int ticksGame = Find.TickManager.TicksGame;
             shieldTargetMemory[pawn.thingIDNumber] = new ShieldTargetMemory(target, ticksGame);
             CleanupShieldTargetMemory(ticksGame);
         }
@@ -426,69 +590,20 @@ namespace ApexMechanoids
             }
         }
 
-        private float ShieldTargetScore(Pawn pawn, Pawn target, Thing enemyTarget, float distanceSq, List<IAttackTarget> potentialThreats)
+        private struct ThreatInfo
         {
-            float score = -distanceSq * 0.35f;
-            score += IncomingRangedThreatScore(pawn, target, potentialThreats);
-
-            if (WasRecentlyHitByRanged(target))
-            {
-                score += 1000f;
-            }
-
-            float missingHealth = 1f - target.health.summaryHealth.SummaryHealthPercent;
-            score += missingHealth * 900f;
-            score += ShieldTargetValueScore(target);
-
-            if (target.IsAttacking())
-            {
-                score += 150f;
-            }
-            if (enemyTarget != null && target.Position.InHorDistOf(enemyTarget.Position, 15f))
-            {
-                score += 150f;
-            }
-
-            return score;
+            public Thing thing;
+            public bool ranged;
+            public Thing aimingAt;
+            public Thing lastAttacked;
+            public int lastAttackTick;
         }
 
-        private float IncomingRangedThreatScore(Pawn pawn, Pawn target, List<IAttackTarget> potentialThreats)
-        {
-            float score = 0f;
-            int ticksGame = Find.TickManager.TicksGame;
-            for (int i = 0; i < potentialThreats.Count; i++)
-            {
-                IAttackTarget threat = potentialThreats[i];
-                Thing threatThing = threat.Thing;
-                if (!IsValidEnemyTarget(pawn, threatThing) || threat.ThreatDisabled(pawn))
-                {
-                    continue;
-                }
-
-                IAttackTargetSearcher searcher = threat as IAttackTargetSearcher;
-                if (!HasRangedThreatVerb(searcher))
-                {
-                    continue;
-                }
-
-                if (threat.TargetCurrentlyAimingAt == target)
-                {
-                    score += 2500f;
-                }
-                if (searcher.LastAttackedTarget == target && ticksGame - searcher.LastAttackTargetTick <= shieldRecentAttackTargetTicks)
-                {
-                    score += 1500f;
-                }
-            }
-
-            return score;
-        }
-
-        private bool WasRecentlyHitByRanged(Pawn target)
+        private bool WasRecentlyHitByRanged(Pawn target, int ticksGame)
         {
             return target.mindState != null
                 && target.mindState.lastRangedHarmTick > 0
-                && Find.TickManager.TicksGame - target.mindState.lastRangedHarmTick <= shieldRecentRangedHarmTicks;
+                && ticksGame - target.mindState.lastRangedHarmTick <= shieldRecentRangedHarmTicks;
         }
 
         private static bool HasRangedThreatVerb(IAttackTargetSearcher searcher)
@@ -497,7 +612,18 @@ namespace ApexMechanoids
             return verb != null && verb.verbProps != null && verb.verbProps.Ranged;
         }
 
-        private static float ShieldTargetValueScore(Pawn target)
+        private static bool IsMeleeAlly(Pawn target)
+        {
+            Verb verb = target.CurrentEffectiveVerb;
+            return verb == null || verb.verbProps == null || !verb.verbProps.Ranged;
+        }
+
+        private static float MissingHealthOf(Pawn target)
+        {
+            return 1f - target.health.summaryHealth.SummaryHealthPercent;
+        }
+
+        private static float SupportTargetValueScore(Pawn target)
         {
             float score = target.kindDef != null ? target.kindDef.combatPower * 0.6f : 0f;
             if (target.RaceProps != null)
@@ -509,12 +635,7 @@ namespace ApexMechanoids
 
         private static bool CanShieldTarget(Pawn pawn, Pawn target, Ability ability)
         {
-            if (target == null || target == pawn || target.Destroyed || target.Dead || target.Downed || !target.Spawned || target.Map != pawn.Map)
-            {
-                return false;
-            }
-
-            if (target.def == ApexDefsOf.APM_Mech_Dynamo)
+            if (target.Downed || target.def == ApexDefsOf.APM_Mech_Dynamo)
             {
                 return false;
             }
@@ -536,62 +657,9 @@ namespace ApexMechanoids
                 && ability.verb.CanHitTarget(targetInfo);
         }
 
-        private Job TryGetCombatRepairJob(Pawn pawn, Thing enemyTarget)
-        {
-            Pawn target = FindCombatRepairTarget(pawn, enemyTarget);
-            if (target == null)
-            {
-                return null;
-            }
-
-            Job job = JobMaker.MakeJob(JobDefOf.RepairMech, target);
-            job.expiryInterval = repairJobExpiryInterval;
-            job.checkOverrideOnExpire = true;
-            job.expireRequiresEnemiesNearby = true;
-            return job;
-        }
-
-        private Pawn FindCombatRepairTarget(Pawn pawn, Thing enemyTarget)
-        {
-            Pawn bestTarget = null;
-            float bestScore = float.MinValue;
-            float maxDistanceSq = repairSearchRadius * repairSearchRadius;
-            List<Pawn> factionPawns = pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction);
-            for (int i = 0; i < factionPawns.Count; i++)
-            {
-                Pawn candidate = factionPawns[i];
-                if (!CanRepairCombatMechNow(pawn, candidate, enemyTarget))
-                {
-                    continue;
-                }
-
-                float distanceToTinkerSq = pawn.Position.DistanceToSquared(candidate.Position);
-                if (distanceToTinkerSq > maxDistanceSq)
-                {
-                    continue;
-                }
-
-                float missingHealth = 1f - candidate.health.summaryHealth.SummaryHealthPercent;
-                float distanceFromEnemySq = enemyTarget != null ? candidate.Position.DistanceToSquared(enemyTarget.Position) : 0f;
-                float score = missingHealth * 1200f - distanceToTinkerSq + distanceFromEnemySq * 0.25f;
-                if (candidate.Downed)
-                {
-                    score += 150f;
-                }
-
-                if (bestTarget == null || score > bestScore)
-                {
-                    bestTarget = candidate;
-                    bestScore = score;
-                }
-            }
-
-            return bestTarget;
-        }
-
         private bool CanRepairCombatMechNow(Pawn pawn, Pawn target, Thing enemyTarget)
         {
-            if (!ModsConfig.BiotechActive || target == null || target == pawn || target.Destroyed || target.Dead || !target.Spawned || target.Map != pawn.Map)
+            if (!ModsConfig.BiotechActive || target.RaceProps == null || !target.RaceProps.IsMechanoid)
             {
                 return false;
             }
@@ -601,22 +669,7 @@ namespace ApexMechanoids
                 return false;
             }
 
-            if (target.RaceProps == null || !target.RaceProps.IsMechanoid || target.TryGetComp<CompMechRepairable>() == null)
-            {
-                return false;
-            }
-
-            if (target.needs?.energy == null || !MechRepairUtility.CanRepair(target))
-            {
-                return false;
-            }
-
-            if (enemyTarget != null && target.Position.InHorDistOf(enemyTarget.Position, repairTargetMinEnemyDistance))
-            {
-                return false;
-            }
-
-            if (GenAI.EnemyIsNear(target, repairTargetMinEnemyDistance, out _, meleeOnly: false, requireLos: true))
+            if (target.TryGetComp<CompMechRepairable>() == null || !MechRepairUtility.CanRepair(target))
             {
                 return false;
             }
@@ -626,7 +679,33 @@ namespace ApexMechanoids
                 return false;
             }
 
+            if (enemyTarget != null && target.Position.InHorDistOf(enemyTarget.Position, repairTargetMinEnemyDistance))
+            {
+                return false;
+            }
+
+            if (EnemyIsNearRepairTarget(target))
+            {
+                return false;
+            }
+
             return pawn.CanReserveAndReach(target, PathEndMode.Touch, Danger.Deadly);
+        }
+
+        private Job MakeRepairJob(Pawn target, bool inCombat)
+        {
+            Job job = JobMaker.MakeJob(ApexDefsOf.APM_RepairMech, target);
+            job.expiryInterval = repairJobExpiryInterval;
+            job.checkOverrideOnExpire = true;
+            job.expireRequiresEnemiesNearby = inCombat;
+            return job;
+        }
+
+        private Job MakeShieldJob(Pawn pawn, Ability ability, Pawn target, int ticksGame)
+        {
+            LocalTargetInfo targetInfo = target;
+            RememberShieldTarget(pawn, target, ticksGame);
+            return ability.GetJob(targetInfo, targetInfo);
         }
 
         private Job TryGetBlindingPositionJob(Pawn pawn, Ability ability, Thing enemyTarget)

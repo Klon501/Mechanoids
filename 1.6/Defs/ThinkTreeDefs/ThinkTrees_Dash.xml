@@ -2,34 +2,29 @@
 <Defs>
 
 	<ThinkTreeDef>
-		<defName>APM_TinkerMechanoid</defName>
+		<defName>APM_DashMechanoid</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
-				<!-- Despawned -->
 				<li Class="ThinkNode_Subtree">
 					<treeDef>Despawned</treeDef>
 				</li>
 
-				<!-- Deactivated -->
 				<li Class="ThinkNode_ConditionalDeactivated" MayRequire="Ludeon.RimWorld.Odyssey">
 					<subNodes>
 						<li Class="JobGiver_Deactivated" />
 					</subNodes>
 				</li>
 
-				<!-- Downed -->
 				<li Class="ThinkNode_Subtree">
 					<treeDef>Downed</treeDef>
 				</li>
 
-				<!-- Self-Shutdown -->
 				<li Class="ThinkNode_ConditionalLowEnergy" MayRequire="Ludeon.RimWorld.Biotech">
 					<subNodes>
 						<li Class="JobGiver_SelfShutdown" />
 					</subNodes>
 				</li>
 
-				<!-- Mental state -->
 				<li Class="ThinkNode_ConditionalMentalState">
 					<state>BerserkMechanoid</state>
 					<subNodes>
@@ -44,10 +39,8 @@
 					</subNodes>
 				</li>
 
-				<!-- Do a queued job -->
 				<li Class="ThinkNode_QueuedJob" />
 
-				<!-- Wait if drafted -->
 				<li Class="ThinkNode_ConditionalOfPlayerFaction">
 					<subNodes>
 						<li Class="ThinkNode_Tagger">
@@ -60,56 +53,36 @@
 					</subNodes>
 				</li>
 
-				<!-- Non-player Tinkers use support combat before generic lord orders -->
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<invert>true</invert>
 					<subNodes>
-						<li Class="ApexMechanoids.JobGiver_AITinkerCombat">
-							<targetAcquireRadius>30</targetAcquireRadius>
-							<targetKeepRadius>35</targetKeepRadius>
-							<fleeEnemyDistance>7.9</fleeEnemyDistance>
-							<fleeDistance>16</fleeDistance>
-							<shieldSearchRadius>11</shieldSearchRadius>
-							<repairSearchRadius>18</repairSearchRadius>
-							<repairTargetMinEnemyDistance>8</repairTargetMinEnemyDistance>
-							<maxRepositionDistance>12</maxRepositionDistance>
-							<shieldAimedAtScore>2500</shieldAimedAtScore>
-							<shieldRecentlyAttackedScore>1500</shieldRecentlyAttackedScore>
-							<shieldRecentHarmScore>1000</shieldRecentHarmScore>
-							<shieldMissingHealthScore>900</shieldMissingHealthScore>
-							<shieldMeleeAllyScore>1000</shieldMeleeAllyScore>
-							<shieldLockScore>400</shieldLockScore>
-							<shieldNoThreatFactor>0.35</shieldNoThreatFactor>
-							<shieldWeight>1</shieldWeight>
-							<repairMissingHealthScore>1200</repairMissingHealthScore>
-							<repairDownedScore>900</repairDownedScore>
-							<repairValueFactor>0.5</repairValueFactor>
-							<repairMaxSafetyScore>300</repairMaxSafetyScore>
-							<repairMinScore>200</repairMinScore>
-							<repairWeight>1</repairWeight>
+						<li Class="ApexMechanoids.JobGiver_AIDashAbilityFight">
+							<abilities>
+								<li>APM_ShieldCharge</li>
+								<li>APM_Bladehopp</li>
+							</abilities>
+							<targetAcquireRadius>65</targetAcquireRadius>
+							<targetKeepRadius>72</targetKeepRadius>
+							<approachJobExpiryInterval>30</approachJobExpiryInterval>
 						</li>
 					</subNodes>
 				</li>
 
-				<!-- Lord -->
 				<li Class="ThinkNode_Subtree">
 					<treeDef>LordDuty</treeDef>
 				</li>
 
-				<!-- Player mechs -->
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<subNodes>
 						<li Class="ThinkNode_ConditionalNotFormingCaravan">
 							<subNodes>
 
-								<!-- Keep charging if we're already charging -->
 								<li Class="ThinkNode_ConditionalRecharging">
 									<subNodes>
 										<li Class="JobGiver_GetEnergy_Charger" />
 									</subNodes>
 								</li>
 
-								<!-- Work modes -->
 								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
 									<workMode>Work</workMode>
 									<subNodes>
@@ -122,6 +95,20 @@
 										<li Class="ThinkNode_ConditionalWorkMech">
 											<invert>true</invert>
 											<subNodes>
+												<li Class="ApexMechanoids.JobGiver_AIDashAbilityFight">
+													<abilities>
+														<li>APM_ShieldCharge</li>
+														<li>APM_Bladehopp</li>
+													</abilities>
+													<allowPlayerControlled>true</allowPlayerControlled>
+													<targetAcquireRadius>65</targetAcquireRadius>
+													<targetKeepRadius>72</targetKeepRadius>
+													<approachJobExpiryInterval>30</approachJobExpiryInterval>
+												</li>
+												<li Class="JobGiver_AIFightEnemies">
+													<targetAcquireRadius>65</targetAcquireRadius>
+													<targetKeepRadius>72</targetKeepRadius>
+												</li>
 												<li Class="ThinkNode_Tagger">
 													<tagToGive>MiscWork</tagToGive>
 													<subNodes>
@@ -168,15 +155,6 @@
 					</subNodes>
 				</li>
 
-				<!-- Non-player fallback -->
-				<li Class="ThinkNode_ConditionalPlayerControlledMech">
-					<invert>true</invert>
-					<subNodes>
-						<li Class="ApexMechanoids.JobGiver_Tinker" />
-					</subNodes>
-				</li>
-
-				<!-- Idle player mech -->
 				<li Class="ThinkNode_ConditionalPlayerControlledMech">
 					<subNodes>
 						<li Class="ThinkNode_Tagger">
@@ -190,7 +168,6 @@
 					</subNodes>
 				</li>
 
-				<!-- Idle -->
 				<li Class="ThinkNode_Tagger">
 					<tagToGive>Idle</tagToGive>
 					<subNodes>
@@ -200,7 +177,6 @@
 					</subNodes>
 				</li>
 
-				<!-- Idle error -->
 				<li Class="JobGiver_IdleError" />
 			</subNodes>
 		</thinkRoot>

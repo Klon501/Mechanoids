@@ -17,7 +17,7 @@
 		<race>
 			<body>APM_Aegis</body>
 			<baseBodySize>3.5</baseBodySize>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeMain>APM_DashMechanoid</thinkTreeMain>
 			<baseHealthScale>3.82</baseHealthScale>
 			<mechWeightClass>Heavy</mechWeightClass>
 			<renderTree>APM_RenderTree_Aegis</renderTree>

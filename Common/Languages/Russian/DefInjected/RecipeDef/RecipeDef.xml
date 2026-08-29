@@ -135,11 +135,11 @@
 
   <!-- Make_DuelistPsyspear -->
   <!-- EN: make duelist psyspear -->
-  <Make_DuelistPsyspear.label>сделать пси-копьё дуэлянта</Make_DuelistPsyspear.label>
+  <Make_DuelistPsyspear.label>сделать пси-копьё владычества</Make_DuelistPsyspear.label>
   <!-- EN: Make a duelist psyspear. -->
-  <Make_DuelistPsyspear.description>Создать пси-копьё дуэлянта.</Make_DuelistPsyspear.description>
+  <Make_DuelistPsyspear.description>Создать пси-копьё владычества.</Make_DuelistPsyspear.description>
   <!-- EN: Making duelist psyspear. -->
-  <Make_DuelistPsyspear.jobString>Создание пси-копья дуэлянта.</Make_DuelistPsyspear.jobString>
+  <Make_DuelistPsyspear.jobString>Создание пси-копья владычества.</Make_DuelistPsyspear.jobString>
 
   <!-- APM_Weapon_SeveringBlade -->
   <!-- EN: make severing blade -->
@@ -167,11 +167,11 @@
 
   <!-- APM_Solus -->
   <!-- EN: make solus -->
-  <APM_Solus.label>сделать «Солус»</APM_Solus.label>
+  <APM_Solus.label>сделать Солус</APM_Solus.label>
   <!-- EN: Make a solus. -->
-  <APM_Solus.description>Создать орудие «Солус».</APM_Solus.description>
+  <APM_Solus.description>Создать орудие Солус.</APM_Solus.description>
   <!-- EN: Making solus. -->
-  <APM_Solus.jobString>Создание орудия «Солус».</APM_Solus.jobString>
+  <APM_Solus.jobString>Создание орудия Солус.</APM_Solus.jobString>
 
   <!-- APM_MechamancerPack -->
   <!-- EN: make mechamancer pack -->

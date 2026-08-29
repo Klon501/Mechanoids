@@ -167,12 +167,12 @@ namespace ApexMechanoids
                 return false;
             }
 
-            if (target.needs?.energy == null || !MechRepairUtility.CanRepair(target))
+            if (!MechRepairUtility.CanRepair(target))
             {
                 return false;
             }
 
-            return forced || repairable.autoRepair;
+            return forced || repairable.autoRepair || pawn.Faction != Faction.OfPlayer;
         }
     }
 }

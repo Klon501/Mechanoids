@@ -12,4 +12,6 @@
 	<APM_SirenLureChannel.reportString>singing.</APM_SirenLureChannel.reportString>
 	<!--                                 EN: firing artillery at TargetA. -->
 	<APM_RavagerArtilleryAttack.reportString>firing artillery at TargetA.</APM_RavagerArtilleryAttack.reportString>
+	<!--                       EN: repairing TargetA. -->
+	<APM_RepairMech.reportString>repairing TargetA.</APM_RepairMech.reportString>
 </LanguageData>
