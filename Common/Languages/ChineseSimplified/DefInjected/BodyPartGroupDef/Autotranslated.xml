@@ -4,4 +4,8 @@
   <APM_RightAegisShield.label>右盾牌</APM_RightAegisShield.label>
   <APM_LeftMantisBlade.label>左切割爪</APM_LeftMantisBlade.label>
   <APM_RightMantisBlade.label>右切割爪</APM_RightMantisBlade.label>
+  <APM_LeftAegisShield.labelShort>盾</APM_LeftAegisShield.labelShort>
+  <APM_RightAegisShield.labelShort>盾</APM_RightAegisShield.labelShort>
+  <APM_LeftMantisBlade.labelShort>切割爪</APM_LeftMantisBlade.labelShort>
+  <APM_RightMantisBlade.labelShort>切割爪</APM_RightMantisBlade.labelShort>
 </LanguageData>

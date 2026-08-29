@@ -4,10 +4,10 @@
 	<APM_Weapon_DuelistsPsySpear.label>dominion psy-spear</APM_Weapon_DuelistsPsySpear.label>
 	<!--                                 EN: A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius. -->
 	<APM_Weapon_DuelistsPsySpear.description>A reinforced spear imbued with Dominus-derived psychic circuitry. Allows the wielder to challenge a single opponent into a psychic duel, creating a focused maelstrom that amplifies attacks within. The spear channels the wielder’s will, projecting a shield around the duel and enhancing damage output within the duel’s radius.</APM_Weapon_DuelistsPsySpear.description>
-	<!--                                   EN: рукоять -->
-	<APM_Weapon_DuelistsPsySpear.tools.0.label>рукоять</APM_Weapon_DuelistsPsySpear.tools.0.label>
-	<!--                                   EN: острие -->
-	<APM_Weapon_DuelistsPsySpear.tools.1.label>острие</APM_Weapon_DuelistsPsySpear.tools.1.label>
-	<!--                                   EN: кромка -->
-	<APM_Weapon_DuelistsPsySpear.tools.2.label>кромка</APM_Weapon_DuelistsPsySpear.tools.2.label>
+	<!--                                   EN: handle -->
+	<APM_Weapon_DuelistsPsySpear.tools.0.label>handle</APM_Weapon_DuelistsPsySpear.tools.0.label>
+	<!--                                   EN: blade -->
+	<APM_Weapon_DuelistsPsySpear.tools.1.label>blade</APM_Weapon_DuelistsPsySpear.tools.1.label>
+	<!--                                   EN: edge -->
+	<APM_Weapon_DuelistsPsySpear.tools.2.label>edge</APM_Weapon_DuelistsPsySpear.tools.2.label>
 </LanguageData>

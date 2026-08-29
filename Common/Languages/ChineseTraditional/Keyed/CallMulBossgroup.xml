@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM.CallMulBossgroupBossgroupWarningDialog>召喚「{LEADER}」威脅將會召來以下敵對機械體：\n\n{BOSS}\n\n它們可能還會帶來由以下內容組成的護衛：\n\n{ESCORT}\n\n這些機械體將在接下來的幾小時或幾天內抵達。你準備好迎戰了嗎？</APM.CallMulBossgroupBossgroupWarningDialog>
+
+</LanguageData>

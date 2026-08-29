@@ -21,4 +21,10 @@
   <APM_Mech_Siren.label>海妖</APM_Mech_Siren.label>
   <APM_Mech_Tinker.label>修补匠</APM_Mech_Tinker.label>
   <APM_Mech_Vassal.label>附庸</APM_Mech_Vassal.label>
+  <APM_Mech_Dominus.label>主宰</APM_Mech_Dominus.label>
+  <APM_Mech_Dominus_Boss.label>主宰</APM_Mech_Dominus_Boss.label>
+  <APM_Mech_Terminus.label>终焉</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus_Boss.label>终焉</APM_Mech_Terminus_Boss.label>
+  <APM_Mech_Celerus.label>疾风</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus_Boss.label>疾风</APM_Mech_Celerus_Boss.label>
 </LanguageData>

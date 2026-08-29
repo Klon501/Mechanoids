@@ -8,8 +8,8 @@
   <APM_Hediff_Devoured.label>被吞噬</APM_Hediff_Devoured.label>
   <APM_Hediff_Devoured.description>被封入霜语者低温舱内。生物进程暂停，直到被释放。</APM_Hediff_Devoured.description>
   <APM_Hediff_JavelinMissileLock.label>导弹锁定</APM_Hediff_JavelinMissileLock.label>
-  <APM_Hediff_JavelinMissileLock.description>标枪导弹发射架的导引头已记录下该目标的装甲轮廓。此后每一枚再次命中它的火箭，引信都会咬得比上一枚更深，直到锁定消退。</APM_Hediff_JavelinMissileLock.description>
-  <APM_Hediff_JavelinMissileLock.stages.0.label>导弹锁定</APM_Hediff_JavelinMissileLock.stages.0.label>
+  <APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
+  <APM_Hediff_JavelinMissileLock.stages.0.label>弱点暴露</APM_Hediff_JavelinMissileLock.stages.0.label>
   <APM_Hediff_SteelDiscipline.label>钢铁纪律</APM_Hediff_SteelDiscipline.label>
   <APM_Hediff_SteelDiscipline.description>受到附庸统御气场的激励，这个单位重新带着目标感与精神韧性投入行动。</APM_Hediff_SteelDiscipline.description>
   <APM_Hediff_Unity.label>统合连接</APM_Hediff_Unity.label>
@@ -54,4 +54,8 @@
   <APM_Hediff_SirenSong.description>这名小人被抚慰的机械和声所托起，感觉更加轻盈、更有活力。</APM_Hediff_SirenSong.description>
   <APM_Hediff_TerminusOverdrive.label>超载</APM_Hediff_TerminusOverdrive.label>
   <APM_Hediff_TerminusOverdrive.description>终焉正将一股能量爆发直接导入战斗表现，以披风与克制为代价，换取一小段压倒性的狂暴期。</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_PressTheAttack.label>灵能涌流</APM_Hediff_PressTheAttack.label>
+  <APM_Hediff_PressTheAttack.description>一道直接刺激大脑神经通路的灵能波。它会暂时麻痹痛觉感受器，并迫使体内涌现强烈的肾上腺素，使对象移动得显著更快，并忽略身体创伤。效果极为强效，但持续时间很短。</APM_Hediff_PressTheAttack.description>
+  <APM_Hediff_PressTheAttack_Boss.label>灵能涌流</APM_Hediff_PressTheAttack_Boss.label>
+  <APM_Hediff_PressTheAttack_Boss.description>一道直接刺激大脑神经通路的灵能波。它会暂时麻痹痛觉感受器，并迫使体内涌现强烈的肾上腺素，使对象移动得显著更快，并忽略身体创伤。效果极为强效，但持续时间很短。</APM_Hediff_PressTheAttack_Boss.description>
 </LanguageData>

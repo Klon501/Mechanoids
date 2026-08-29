@@ -2,4 +2,8 @@
 <LanguageData>
   <APM_DomainPlayerFaction.label>机械师领域</APM_DomainPlayerFaction.label>
   <APM_DomainPlayerFaction.description>一位远古机械师的领地，藏有主人的珍宝。</APM_DomainPlayerFaction.description>
+  <APM_DomainPlayerFaction.leaderTitle>领袖</APM_DomainPlayerFaction.leaderTitle>
+  <APM_DomainPlayerFaction.pawnSingular>殖民者</APM_DomainPlayerFaction.pawnSingular>
+  <APM_DomainPlayerFaction.pawnsPlural>殖民者</APM_DomainPlayerFaction.pawnsPlural>
+  <APM_DomainPlayerFaction.messageDefendersAttacking>来自 {1} 的 {0} 正在攻击你的 {2}。</APM_DomainPlayerFaction.messageDefendersAttacking>
 </LanguageData>

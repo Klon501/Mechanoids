@@ -8,8 +8,8 @@
   <APM_Hediff_Devoured.label>被吞噬</APM_Hediff_Devoured.label>
   <APM_Hediff_Devoured.description>被封入霜語者低溫艙內。生物程序暫停，直到被釋放。</APM_Hediff_Devoured.description>
   <APM_Hediff_JavelinMissileLock.label>飛彈鎖定</APM_Hediff_JavelinMissileLock.label>
-  <APM_Hediff_JavelinMissileLock.description>標槍飛彈發射架的導引頭已記錄下該目標的裝甲輪廓。此後每一枚再次命中它的火箭，引信都會咬得比上一枚更深，直到鎖定消退。</APM_Hediff_JavelinMissileLock.description>
-  <APM_Hediff_JavelinMissileLock.stages.0.label>飛彈鎖定</APM_Hediff_JavelinMissileLock.stages.0.label>
+  <APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
+  <APM_Hediff_JavelinMissileLock.stages.0.label>弱點暴露</APM_Hediff_JavelinMissileLock.stages.0.label>
   <APM_Hediff_SteelDiscipline.label>鋼鐵紀律</APM_Hediff_SteelDiscipline.label>
   <APM_Hediff_SteelDiscipline.description>受到附庸統御氣場的激勵，這個單位重新帶著目標感與精神韌性投入行動。</APM_Hediff_SteelDiscipline.description>
   <APM_Hediff_Unity.label>統合連接</APM_Hediff_Unity.label>
@@ -54,4 +54,8 @@
   <APM_Hediff_SirenSong.description>這名小人被撫慰的機械和聲所托起，感覺更加輕盈、更有活力。</APM_Hediff_SirenSong.description>
   <APM_Hediff_TerminusOverdrive.label>超載</APM_Hediff_TerminusOverdrive.label>
   <APM_Hediff_TerminusOverdrive.description>終焉正將一股能量爆發直接導入戰鬥表現，以披風與克制為代價，換取一小段壓倒性的狂暴期。</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_PressTheAttack.label>靈能湧流</APM_Hediff_PressTheAttack.label>
+  <APM_Hediff_PressTheAttack.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack.description>
+  <APM_Hediff_PressTheAttack_Boss.label>靈能湧流</APM_Hediff_PressTheAttack_Boss.label>
+  <APM_Hediff_PressTheAttack_Boss.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack_Boss.description>
 </LanguageData>

@@ -42,4 +42,18 @@
   <APM_SeveringEdge_Boss.description>利用刀刃與生俱來的靈能導引特性，終焉在身前釋放一道橫掃的能量之刃，斬擊區域內的一切。</APM_SeveringEdge_Boss.description>
   <APM_SkipbladeBlink.label>傳送</APM_SkipbladeBlink.label>
   <APM_SkipbladeBlink.description>導引傳送刃內建的位移技術，瞬間跳躍至附近位置。</APM_SkipbladeBlink.description>
+  <APM_Mech_Duel.label>決鬥試煉</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>選定一名目標發起決鬥，並在決鬥者周圍產生護盾。在決鬥持續期間，遠程攻擊、能力與所受傷害都會提高。此外，若決鬥在一定時間內未能結束，決鬥者會獲得一個嚴苛的減益。若任何一方死亡或被擊倒，勝者則會獲得一個強力的臨時增益。</APM_Mech_Duel.description>
+  <APM_Mech_Duel_Boss.label>決鬥試煉</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>選定一名目標發起決鬥，並在決鬥者周圍產生護盾。在決鬥持續期間，遠程攻擊、能力與所受傷害都會提高。此外，若決鬥在一定時間內未能結束，決鬥者會獲得一個嚴苛的減益。若任何一方死亡或被擊倒，勝者則會獲得一個強力的臨時增益。</APM_Mech_Duel_Boss.description>
+  <APM_TerminusOverdrive.label>超載</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>終焉將能量向內轉移，短暫進入超載戰鬥狀態。在此期間，它會卸下披風，打擊更重，揮擊之間的恢復更快，也更難被擊退踉蹌。</APM_TerminusOverdrive.description>
+  <APM_TerminusOverdrive_Boss.label>超載</APM_TerminusOverdrive_Boss.label>
+  <APM_TerminusOverdrive_Boss.description>終焉將能量向內轉移，短暫進入超載戰鬥狀態。在此期間，它會卸下披風，打擊更重，揮擊之間的恢復更快，也更難被擊退踉蹌。</APM_TerminusOverdrive_Boss.description>
+  <APM_SeveringEdge.label>裂空斬</APM_SeveringEdge.label>
+  <APM_SeveringEdge_Boss.label>裂空斬</APM_SeveringEdge_Boss.label>
+  <APM_Ability_SmokeScreen.label>煙幕</APM_Ability_SmokeScreen.label>
+  <APM_Ability_SmokeScreen.description>釋放濃密的煙幕，將疾風與附近的友軍籠罩在遮蔽氣體中，干擾敵人的感知，並在疾風處於隱蔽狀態時為其提供戰鬥加成。</APM_Ability_SmokeScreen.description>
+  <APM_Ability_SmokeScreen_Boss.label>煙幕</APM_Ability_SmokeScreen_Boss.label>
+  <APM_Ability_SmokeScreen_Boss.description>釋放濃密的煙幕，將疾風與附近的友軍籠罩在遮蔽氣體中，干擾敵人的感知，並在疾風處於隱蔽狀態時為其提供戰鬥加成。</APM_Ability_SmokeScreen_Boss.description>
 </LanguageData>

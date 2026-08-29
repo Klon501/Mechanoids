@@ -54,16 +54,12 @@
   <APM_Smokescreen_Boss.label>газ димової завіси</APM_Smokescreen_Boss.label>
   <APM_OcularChip.label>чип гармонізації зору</APM_OcularChip.label>
   <APM_OcularChip.description>Матриця стабілізації, що синхронізує турбулентність дезінтегратора в узгоджений візерунок стрільби. Без неї будь-яка платформа очного променя розірвала б себе на шматки. Вона необхідна для виробництва певних просунутих типів механоїдів і спорядження. Механітор може дослідити цей чип, щоб розблокувати вищі рівні досліджень мехтехнологій.</APM_OcularChip.description>
-  <APM_OcularChip.comps.0.jobString>Дослідити чип</APM_OcularChip.comps.0.jobString>
   <APM_PsionicChip.label>чип псі-координації</APM_PsionicChip.label>
   <APM_PsionicChip.description>Психокомандний мікроорган механоїдів, просякнутий архотековим відлунням військової влади. Генерує локалізовані командні поля, підсилюючи ефективність союзників. Необхідний для виробництва певних просунутих типів механоїдів і спорядження. Механітор може дослідити цей чип, щоб розблокувати вищі рівні досліджень мехтехнологій.</APM_PsionicChip.description>
-  <APM_PsionicChip.comps.0.jobString>Дослідити чип</APM_PsionicChip.comps.0.jobString>
   <APM_ExtraChip.label>чип екстрасенсорного підсилення</APM_ExtraChip.label>
   <APM_ExtraChip.description>Мікроорган механоїдів, що плете емоції: його створено для підсилення та регулювання екстрасенсорної ментальної сили. Він штучно підсилює емоції й похідну психічну енергію, обмежуючи при цьому шкоду для розуму. Необхідний для виробництва певних просунутих типів механоїдів і спорядження. Механітор може дослідити цей чип, щоб розблокувати вищі рівні досліджень мехтехнологій.</APM_ExtraChip.description>
-  <APM_ExtraChip.comps.0.jobString>Дослідити чип</APM_ExtraChip.comps.0.jobString>
   <APM_PsyfluxChip.label>чип проекції псифлюксу</APM_PsyfluxChip.label>
   <APM_PsyfluxChip.description>Мікроорган механоїдів, що викривлює сприйняття: він регулює швидке переміщення, випромінювання заряджених частинок і короткі періоди психічної невловимості. Необхідний для виробництва певних просунутих типів механоїдів і спорядження. Механітор може дослідити цей чип, щоб розблокувати вищі рівні досліджень мехтехнологій.</APM_PsyfluxChip.description>
-  <APM_PsyfluxChip.comps.0.jobString>Дослідити чип</APM_PsyfluxChip.comps.0.jobString>
   <APM_Mech_Aegis.label>егіда</APM_Mech_Aegis.label>
   <APM_Mech_Aegis.description>Егіда — могутній механоїд, що жертвує наступальними можливостями заради майстерності оборони. Прислів'я «Найкращий захист — це напад» якнайкраще підтверджується парними щитами егіди.</APM_Mech_Aegis.description>
   <APM_Mech_Conqueror_DMR.label>завойовник (карабін)</APM_Mech_Conqueror_DMR.label>
@@ -160,9 +156,9 @@
   <APM_Pulse_Proj.label>імпульсний снаряд</APM_Pulse_Proj.label>
   <APM_Ravager_Artillery.label>артилерія Спустошувача</APM_Ravager_Artillery.label>
   <APM_Ravager_Artillery.description>Мобільний автоміномет з інтегрованою технологією на основі дезінтегратора. Цю облогову зброю механоїдів призначалося встановлювати на більші механоїдні шасі. У кожному залпі цієї гармати буквально відчувається ненависть мехрою.</APM_Ravager_Artillery.description>
-  <APM_ArtilleryProjectile.label>артилерійський снаряд</APM_ArtilleryProjectile.label>
-  <APM_StarfallCarrier.label>носій «Зорепаду»</APM_StarfallCarrier.label>
-  <APM_StarfallSplitProjectile.label>уламок «Зорепаду»</APM_StarfallSplitProjectile.label>
+  <APM_ArtilleryProjectile.label>плазмовий артилерійський снаряд</APM_ArtilleryProjectile.label>
+  <APM_StarfallCarrier.label>снаряд «Зорепаду»</APM_StarfallCarrier.label>
+  <APM_StarfallSplitProjectile.label>суббоєприпас «Зорепаду»</APM_StarfallSplitProjectile.label>
   <APM_Bullet_SatelliteBlaster.label>постріл легкого енергозалпу</APM_Bullet_SatelliteBlaster.label>
   <APM_Gun_Satellite.label>легкий енергоподавлювач</APM_Gun_Satellite.label>
   <APM_Gun_Satellite.description>Компактний імпульсний швидкострільний бластер для придушення вогнем у тісних просторах. Він ще краще стримує територію, ніж його більший і поширеніший побратим — важкий зарядовий бластер, — ціною дальності та урону.</APM_Gun_Satellite.description>
@@ -179,4 +175,29 @@
   <APM_Solus.label>солус</APM_Solus.label>
   <APM_Solus.description>Посилений випромінювач гамма-променів, здатний генерувати щільну, сфокусовану кулю руйнівної енергії. Пролітаючи повз цілей, куля розряджається в них і підпалює довкілля. Це особливо руйнівна зброя проти груп ворогів. Величезна вихідна потужність вимагає протоколів стабілізації, щоб запобігти самопошкодженню.</APM_Solus.description>
   <APM_SolusOrb.label>сфера солуса</APM_SolusOrb.label>
+  <APM_Mech_TerminusB.label>термінус</APM_Mech_TerminusB.label>
+  <APM_Mech_CelerusB.label>целерус</APM_Mech_CelerusB.label>
+  <APM_Mech_Terminus.label>термінус</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний середньовічною Європою Старої Землі, Термінус прорубує лави ворогів, і навіть відстань не може пом'якшити його лють. Його зброя здатна розітнути велику площу перед ним. Термінус також може спрямувати свій психічний вплив усередину, підсилюючи шкоду та опір хитанню. Для ворогів, що вирвалися з його хватки, передбачено гак-кішку, який притягує противника з відстані, щоб добити.Крім того, якщо цей механоїд перебуває під керуванням механітора, той може розширити свій командний радіус на зону навколо нього.</APM_Mech_Terminus.description>
+  <APM_Mech_Terminus.tools.0.label>лівий кулак</APM_Mech_Terminus.tools.0.label>
+  <APM_Mech_Terminus.tools.1.label>правий кулак</APM_Mech_Terminus.tools.1.label>
+  <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+  <APM_Mech_TerminusB.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний середньовічною Європою Старої Землі, Термінус прорубує лави ворогів, і навіть відстань не може пом'якшити його лють. Його зброя здатна розітнути велику площу перед ним. Термінус також може спрямувати свій психічний вплив усередину, підсилюючи шкоду та опір хитанню. Для ворогів, що вирвалися з його хватки, передбачено гак-кішку, який притягує противника з відстані, щоб добити.Крім того, якщо цей механоїд перебуває під керуванням механітора, той може розширити свій командний радіус на зону навколо нього.</APM_Mech_TerminusB.description>
+  <APM_Mech_TerminusB.tools.0.label>лівий кулак</APM_Mech_TerminusB.tools.0.label>
+  <APM_Mech_TerminusB.tools.1.label>правий кулак</APM_Mech_TerminusB.tools.1.label>
+  <APM_Mech_TerminusB.tools.2.label>голова</APM_Mech_TerminusB.tools.2.label>
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний Японією періоду Сенґоку Старої Землі, стрімкий і прихований Целерус анітрохи не слабший через свою швидкість. Він здатний здійснювати короткі стрибки навколо себе, а також створювати димову завісу, що заважає ворогам сприймати його та все навколо, до того ж стаючи психічно невідчутним у цій зоні. На додачу до цих ефектів вороги отримуватимуть періодичні.</APM_Mech_Celerus.description>
+  <APM_Mech_Celerus.tools.0.label>лівий кулак</APM_Mech_Celerus.tools.0.label>
+  <APM_Mech_Celerus.tools.1.label>правий кулак</APM_Mech_Celerus.tools.1.label>
+  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+  <APM_Mech_CelerusB.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний Японією періоду Сенґоку Старої Землі, стрімкий і прихований Целерус анітрохи не слабший через свою швидкість. Він здатний здійснювати короткі стрибки навколо себе, а також створювати димову завісу, що заважає ворогам сприймати його та все навколо, до того ж стаючи психічно невідчутним у цій зоні. На додачу до цих ефектів вороги отримуватимуть періодичні.</APM_Mech_CelerusB.description>
+  <APM_Mech_CelerusB.tools.0.label>лівий кулак</APM_Mech_CelerusB.tools.0.label>
+  <APM_Mech_CelerusB.tools.1.label>правий кулак</APM_Mech_CelerusB.tools.1.label>
+  <APM_Mech_CelerusB.tools.2.label>голова</APM_Mech_CelerusB.tools.2.label>
+  <APM_Mech_Dominus.tools.0.label>голова</APM_Mech_Dominus.tools.0.label>
+  <SeveringEdge.label>розсікаюча грань</SeveringEdge.label>
+  <SeveringEdge_Boss.label>розсікаюча грань</SeveringEdge_Boss.label>
+  <APM_Projectile_CelerusSmokescreen.label>димова граната</APM_Projectile_CelerusSmokescreen.label>
+  <APM_Projectile_CelerusSmokescreen_Boss.label>димова граната</APM_Projectile_CelerusSmokescreen_Boss.label>
 </LanguageData>

@@ -11,8 +11,6 @@
 	<APM_Haze_BeamGun.label>Beam Witherer</APM_Haze_BeamGun.label>
 	<!--                      EN: A tesseron's beam grazer twisted into a machine that spews toxic waste in addition to plasma, the products of this cannon are monstrously hazardous to organic life. Fear is only another foothold of the mechanoid superintelligence. -->
 	<APM_Haze_BeamGun.description>A tesseron's beam grazer twisted into a machine that spews toxic waste in addition to plasma, the products of this cannon are monstrously hazardous to organic life. Fear is only another foothold of the mechanoid superintelligence.</APM_Haze_BeamGun.description>
-	<!--                        EN: ㅤ -->
-	<APM_Haze_BeamGun.verbs.0.label>ㅤ</APM_Haze_BeamGun.verbs.0.label>
-	<!--                        EN: ствол -->
-	<APM_Haze_BeamGun.tools.0.label>ствол</APM_Haze_BeamGun.tools.0.label>
+	<!--                        EN: barrel -->
+	<APM_Haze_BeamGun.tools.0.label>barrel</APM_Haze_BeamGun.tools.0.label>
 </LanguageData>

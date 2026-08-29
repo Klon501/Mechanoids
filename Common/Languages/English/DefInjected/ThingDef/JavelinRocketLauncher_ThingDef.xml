@@ -4,12 +4,10 @@
 	<APM_Gun_JavelinRocketLauncher.label>javelin rocket launcher</APM_Gun_JavelinRocketLauncher.label>
 	<!--                                   EN: A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs the damage profile of every creature and machine it opens up, and each rocket that finds the same one again is fused to bite deeper than the last. Structures give it nothing to read, and are hit at a flat rate. -->
 	<APM_Gun_JavelinRocketLauncher.description>A mechanoid guided missile rack. Each rocket clears the tube on a fixed heading before its seeker takes over, so the launcher cannot engage anything standing close enough to be overflown before the missile has turned. The seeker logs the damage profile of every creature and machine it opens up, and each rocket that finds the same one again is fused to bite deeper than the last. Structures give it nothing to read, and are hit at a flat rate.</APM_Gun_JavelinRocketLauncher.description>
-	<!--                                     EN: ㅤ -->
-	<APM_Gun_JavelinRocketLauncher.verbs.0.label>ㅤ</APM_Gun_JavelinRocketLauncher.verbs.0.label>
-	<!--                                     EN: приклад -->
-	<APM_Gun_JavelinRocketLauncher.tools.0.label>приклад</APM_Gun_JavelinRocketLauncher.tools.0.label>
-	<!--                                     EN: ствол -->
-	<APM_Gun_JavelinRocketLauncher.tools.1.label>ствол</APM_Gun_JavelinRocketLauncher.tools.1.label>
+	<!--                                     EN: stock -->
+	<APM_Gun_JavelinRocketLauncher.tools.0.label>stock</APM_Gun_JavelinRocketLauncher.tools.0.label>
+	<!--                                     EN: barrel -->
+	<APM_Gun_JavelinRocketLauncher.tools.1.label>barrel</APM_Gun_JavelinRocketLauncher.tools.1.label>
 	
 	<!--                       EN: javelin missile -->
 	<APM_Proj_JavelinMissile.label>javelin missile</APM_Proj_JavelinMissile.label>

@@ -21,4 +21,10 @@
   <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
   <APM_Mech_Tinker.label>майстер</APM_Mech_Tinker.label>
   <APM_Mech_Vassal.label>васал</APM_Mech_Vassal.label>
+  <APM_Mech_Dominus.label>домінус</APM_Mech_Dominus.label>
+  <APM_Mech_Dominus_Boss.label>домінус</APM_Mech_Dominus_Boss.label>
+  <APM_Mech_Terminus.label>термінус</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus_Boss.label>термінус</APM_Mech_Terminus_Boss.label>
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
 </LanguageData>

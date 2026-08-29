@@ -83,13 +83,7 @@
   <APM_Hediff_Devoured.label>поглощён(а)</APM_Hediff_Devoured.label>
 
   <!-- APM_Hediff_JavelinMissileLock.description -->
-  <APM_Hediff_JavelinMissileLock.description>Головки самонаведения ракетной установки «Джавелина» зафиксировали профиль корпуса этой цели. Каждая следующая попавшая ракета проникает глубже предыдущей, пока захват не спадёт.</APM_Hediff_JavelinMissileLock.description>
-
-  <!-- APM_Hediff_JavelinMissileLock.label -->
-  <APM_Hediff_JavelinMissileLock.label>захват цели</APM_Hediff_JavelinMissileLock.label>
-
-  <!-- APM_Hediff_JavelinMissileLock.stages.0.label -->
-  <APM_Hediff_JavelinMissileLock.stages.0.label>захват цели</APM_Hediff_JavelinMissileLock.stages.0.label>
+  <APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
 
   <!-- APM_Hediff_PressTheAttack.description -->
   <APM_Hediff_PressTheAttack.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack.description>
@@ -172,4 +166,6 @@
   <!-- APM_PulseWaveBlind.label -->
   <APM_PulseWaveBlind.label>ослепление вспышкой</APM_PulseWaveBlind.label>
 
+  <APM_Hediff_PressTheAttack_Boss.label>псионный прилив</APM_Hediff_PressTheAttack_Boss.label>
+  <APM_Hediff_PressTheAttack_Boss.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack_Boss.description>
 </LanguageData>

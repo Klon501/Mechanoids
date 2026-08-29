@@ -42,4 +42,18 @@
   <APM_SeveringEdge_Boss.description>Використовуючи вроджені властивості свого клинка проводити психічну енергію, Термінус вивільняє перед собою розмашистий енергетичний клинок, розсікаючи все в цій зоні.</APM_SeveringEdge_Boss.description>
   <APM_SkipbladeBlink.label>телепорт</APM_SkipbladeBlink.label>
   <APM_SkipbladeBlink.description>Спрямувати вбудовану в стрибковий клинок технологію переміщення, щоб миттєво перестрибнути в сусідню точку.</APM_SkipbladeBlink.description>
+  <APM_Mech_Duel.label>Випробування дуеллю</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>Обрана ціль викликається на дуель, і навколо дуелянтів генерується щит. На час дуелі дистанційні атаки, здібності та отримувана шкода посилюються. Крім того, якщо дуель не завершиться за відведений час, дуелянти отримають суворе ослаблення. Якщо ж один із бійців загине або буде повалений, переможець натомість отримає потужне тимчасове посилення.</APM_Mech_Duel.description>
+  <APM_Mech_Duel_Boss.label>Випробування дуеллю</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>Обрана ціль викликається на дуель, і навколо дуелянтів генерується щит. На час дуелі дистанційні атаки, здібності та отримувана шкода посилюються. Крім того, якщо дуель не завершиться за відведений час, дуелянти отримають суворе ослаблення. Якщо ж один із бійців загине або буде повалений, переможець натомість отримає потужне тимчасове посилення.</APM_Mech_Duel_Boss.description>
+  <APM_TerminusOverdrive.label>перевантаження</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>Термінус спрямовує енергію всередину й ненадовго переходить у підсилений бойовий стан. Поки це активно, він скидає плащ, б'є сильніше, швидше відновлюється між ударами, і його важче похитнути.</APM_TerminusOverdrive.description>
+  <APM_TerminusOverdrive_Boss.label>перевантаження</APM_TerminusOverdrive_Boss.label>
+  <APM_TerminusOverdrive_Boss.description>Термінус спрямовує енергію всередину й ненадовго переходить у підсилений бойовий стан. Поки це активно, він скидає плащ, б'є сильніше, швидше відновлюється між ударами, і його важче похитнути.</APM_TerminusOverdrive_Boss.description>
+  <APM_SeveringEdge.label>розсікаюча грань</APM_SeveringEdge.label>
+  <APM_SeveringEdge_Boss.label>розсікаюча грань</APM_SeveringEdge_Boss.label>
+  <APM_Ability_SmokeScreen.label>димова завіса</APM_Ability_SmokeScreen.label>
+  <APM_Ability_SmokeScreen.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen.description>
+  <APM_Ability_SmokeScreen_Boss.label>димова завіса</APM_Ability_SmokeScreen_Boss.label>
+  <APM_Ability_SmokeScreen_Boss.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen_Boss.description>
 </LanguageData>

@@ -42,4 +42,21 @@
   <APM_SeveringEdge_Boss.description>利用刀刃与生俱来的灵能导引特性，终焉在身前释放一道横扫的能量之刃，斩击区域内的一切。</APM_SeveringEdge_Boss.description>
   <APM_SkipbladeBlink.label>传送</APM_SkipbladeBlink.label>
   <APM_SkipbladeBlink.description>导引传送刃内置的位移技术，瞬间跳跃至附近位置。</APM_SkipbladeBlink.description>
+  <APM_Mech_Duel.label>决斗试炼</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>选定一名目标发起决斗，并在决斗者周围生成护盾。在决斗持续期间，远程攻击、能力与所受伤害都会提高。此外，若决斗在一定时间内未能结束，决斗者会获得一个严苛的减益。若任何一方死亡或被击倒，胜者则会获得一个强力的临时增益。</APM_Mech_Duel.description>
+  <APM_Mech_Duel_Boss.label>决斗试炼</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>选定一名目标发起决斗，并在决斗者周围生成护盾。在决斗持续期间，远程攻击、能力与所受伤害都会提高。此外，若决斗在一定时间内未能结束，决斗者会获得一个严苛的减益。若任何一方死亡或被击倒，胜者则会获得一个强力的临时增益。</APM_Mech_Duel_Boss.description>
+  <APM_TerminusOverdrive.label>超载</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>终焉将能量向内转移，短暂进入超载战斗状态。在此期间，它会卸下披风，打击更重，挥击之间的恢复更快，也更难被击退踉跄。</APM_TerminusOverdrive.description>
+  <APM_TerminusOverdrive_Boss.label>超载</APM_TerminusOverdrive_Boss.label>
+  <APM_TerminusOverdrive_Boss.description>终焉将能量向内转移，短暂进入超载战斗状态。在此期间，它会卸下披风，打击更重，挥击之间的恢复更快，也更难被击退踉跄。</APM_TerminusOverdrive_Boss.description>
+  <APM_SeveringEdge.label>裂空斩</APM_SeveringEdge.label>
+  <APM_SeveringEdge_Boss.label>裂空斩</APM_SeveringEdge_Boss.label>
+  <APM_Ability_SmokeScreen.label>烟幕</APM_Ability_SmokeScreen.label>
+  <APM_Ability_SmokeScreen.description>释放浓密的烟幕，将疾风与附近的友军笼罩在遮蔽气体中，干扰敌人的感知，并在疾风处于隐蔽状态时为其提供战斗加成。</APM_Ability_SmokeScreen.description>
+  <APM_Ability_SmokeScreen_Boss.label>烟幕</APM_Ability_SmokeScreen_Boss.label>
+  <APM_Ability_SmokeScreen_Boss.description>释放浓密的烟幕，将疾风与附近的友军笼罩在遮蔽气体中，干扰敌人的感知，并在疾风处于隐蔽状态时为其提供战斗加成。</APM_Ability_SmokeScreen_Boss.description>
+  <APM_PulseLongjump.label>机械体远跃</APM_PulseLongjump.label>
+  <APM_PulseLongjump.description>借助机械体特有的超高速驱动肌，跳跃至远处位置。</APM_PulseLongjump.description>
+  <APM_PulseLongjump.verbProperties.label>跳跃</APM_PulseLongjump.verbProperties.label>
 </LanguageData>

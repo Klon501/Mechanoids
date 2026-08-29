@@ -56,13 +56,4 @@
   <APM_TinkerRepairModule.label>repair module</APM_TinkerRepairModule.label>
 
   <APM_VocalSynthesizer.label>vocal synthesizer</APM_VocalSynthesizer.label>
-
-  <APM_LeftAegisShield.label>left shield</APM_LeftAegisShield.label>
-
-  <APM_LeftMantisBlade.label>left cutting claw</APM_LeftMantisBlade.label>
-
-  <APM_RightAegisShield.label>right shield</APM_RightAegisShield.label>
-
-  <APM_RightMantisBlade.label>right cutting claw</APM_RightMantisBlade.label>
-
 </LanguageData>

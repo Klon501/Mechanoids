@@ -54,16 +54,12 @@
   <APM_Smokescreen_Boss.label>煙幕氣體</APM_Smokescreen_Boss.label>
   <APM_OcularChip.label>眼部協調晶片</APM_OcularChip.label>
   <APM_OcularChip.description>一塊穩定矩陣，能將地獄球的湍流同步為連貫的射擊模式。沒有它，任何眼部光束平台都會把自己撕成碎片。它是生產某些高階機械體與裝備的必需品。機械師可以研究這塊晶片，以協助解鎖更高層級的機械科技研究。</APM_OcularChip.description>
-  <APM_OcularChip.comps.0.jobString>分析晶片</APM_OcularChip.comps.0.jobString>
   <APM_PsionicChip.label>靈能協調晶片</APM_PsionicChip.label>
   <APM_PsionicChip.description>一枚被注入了級外智能所留軍事權威迴響的靈能指揮機械體微器官。它能生成局部指揮場，放大友軍的作戰效能。它是生產某些高階機械體與裝備的必需品。機械師可以研究這塊晶片，以協助解鎖更高層級的機械科技研究。</APM_PsionicChip.description>
-  <APM_PsionicChip.comps.0.jobString>分析晶片</APM_PsionicChip.comps.0.jobString>
   <APM_ExtraChip.label>超感官增幅晶片</APM_ExtraChip.label>
   <APM_ExtraChip.description>一種編織情感的機械體微器官，經設計用於放大並調節超感官的精神力量。它能人為強化情感以及由此產生的靈能，同時限制對心智造成的損傷。它是生產某些高階機械體與裝備的必需品。機械師可以研究這塊晶片，以協助解鎖更高層級的機械科技研究。</APM_ExtraChip.description>
-  <APM_ExtraChip.comps.0.jobString>分析晶片</APM_ExtraChip.comps.0.jobString>
   <APM_PsyfluxChip.label>靈能通量投射晶片</APM_PsyfluxChip.label>
   <APM_PsyfluxChip.description>一枚扭曲感知的機械體微器官，負責調控快速位移、帶電粒子發射，以及短暫的靈能不可感知狀態。它是生產某些高階機械體與裝備的必需品。機械師可以研究這塊晶片，以協助解鎖更高層級的機械科技研究。</APM_PsyfluxChip.description>
-  <APM_PsyfluxChip.comps.0.jobString>分析晶片</APM_PsyfluxChip.comps.0.jobString>
   <APM_Mech_Aegis.label>神盾</APM_Mech_Aegis.label>
   <APM_Mech_Aegis.description>神盾是一台強大的機械體，它以犧牲進攻能力為代價，換取防守上的極致造詣。「最好的防守就是進攻」這句老話，在神盾的雙盾上得到了印證。</APM_Mech_Aegis.description>
   <APM_Mech_Conqueror_DMR.label>卡賓征服者</APM_Mech_Conqueror_DMR.label>
@@ -160,9 +156,9 @@
   <APM_Pulse_Proj.label>脈衝子彈</APM_Pulse_Proj.label>
   <APM_Ravager_Artillery.label>蹂躪者火砲</APM_Ravager_Artillery.label>
   <APM_Ravager_Artillery.description>一台可移動的自動迫擊炮，整合了源自地獄球的相鄰技術。這台機械體攻城武器原本是要架設在更大型的機械體機架上的。這門火炮每一次轟鳴，都幾乎能讓人真切地感受到機械巢群的恨意。</APM_Ravager_Artillery.description>
-  <APM_ArtilleryProjectile.label>火砲砲彈</APM_ArtilleryProjectile.label>
-  <APM_StarfallCarrier.label>星隕運載彈</APM_StarfallCarrier.label>
-  <APM_StarfallSplitProjectile.label>星隕分裂彈</APM_StarfallSplitProjectile.label>
+  <APM_ArtilleryProjectile.label>電漿火砲砲彈</APM_ArtilleryProjectile.label>
+  <APM_StarfallCarrier.label>星隕砲彈</APM_StarfallCarrier.label>
+  <APM_StarfallSplitProjectile.label>星隕子彈藥</APM_StarfallSplitProjectile.label>
   <APM_Bullet_SatelliteBlaster.label>輕型電荷連射彈</APM_Bullet_SatelliteBlaster.label>
   <APM_Gun_Satellite.label>輕型電荷壓制槍</APM_Gun_Satellite.label>
   <APM_Gun_Satellite.description>一款緊湊的電荷速射爆破槍，用於在狹窄空間內進行壓制射擊。它比體型更大、也更為常見的兄弟——重型電荷爆破槍——更擅長區域封鎖，代價是射程與傷害。</APM_Gun_Satellite.description>
@@ -179,4 +175,29 @@
   <APM_Solus.label>索拉斯</APM_Solus.label>
   <APM_Solus.description>一台經過強化的伽馬射線發射器，能夠產生緻密且高度集中的毀滅性能量球。能量球掠過目標時會向其放電並點燃周圍環境。它是對付成群敵人的極具毀滅性的武器。巨大的能量輸出需要穩定協議來防止自傷。</APM_Solus.description>
   <APM_SolusOrb.label>索拉斯寶珠</APM_SolusOrb.label>
+  <APM_Mech_TerminusB.label>終焉</APM_Mech_TerminusB.label>
+  <APM_Mech_CelerusB.label>疾風</APM_Mech_CelerusB.label>
+  <APM_Mech_Terminus.label>終焉</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus.description>三款強大的機械體型號由某個級外智能創造而成，試圖以此打造統率所有機械體部隊的核心指揮官。受中世紀古地球歐洲的啟發，終焉能劈開成群的敵人，即便是距離也無法消解它的怒火。它的武器能夠橫掃身前的大片區域。終焉還可以將靈能影響向內集中，強化自身的傷害與抗踉蹌能力。對於逃出它掌控的敵人，它還配備了一具抓鉤，可以從遠處將敵人拉到面前了結。另外，若這台機甲受機械師控制，機械師可以將指揮範圍延伸到它周圍的半徑內。</APM_Mech_Terminus.description>
+  <APM_Mech_Terminus.tools.0.label>左拳</APM_Mech_Terminus.tools.0.label>
+  <APM_Mech_Terminus.tools.1.label>右拳</APM_Mech_Terminus.tools.1.label>
+  <APM_Mech_Terminus.tools.2.label>頭</APM_Mech_Terminus.tools.2.label>
+  <APM_Mech_TerminusB.description>三款強大的機械體型號由某個級外智能創造而成，試圖以此打造統率所有機械體部隊的核心指揮官。受中世紀古地球歐洲的啟發，終焉能劈開成群的敵人，即便是距離也無法消解它的怒火。它的武器能夠橫掃身前的大片區域。終焉還可以將靈能影響向內集中，強化自身的傷害與抗踉蹌能力。對於逃出它掌控的敵人，它還配備了一具抓鉤，可以從遠處將敵人拉到面前了結。另外，若這台機甲受機械師控制，機械師可以將指揮範圍延伸到它周圍的半徑內。</APM_Mech_TerminusB.description>
+  <APM_Mech_TerminusB.tools.0.label>左拳</APM_Mech_TerminusB.tools.0.label>
+  <APM_Mech_TerminusB.tools.1.label>右拳</APM_Mech_TerminusB.tools.1.label>
+  <APM_Mech_TerminusB.tools.2.label>頭</APM_Mech_TerminusB.tools.2.label>
+  <APM_Mech_Celerus.label>疾風</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus.description>三款強大的機械體型號由某個級外智能創造而成，試圖以此打造統率所有機械體部隊的核心指揮官。受古地球日本戰國時代的啟發，迅捷而隱密的疾風並未因追求速度而有絲毫遜色。它能夠向周圍進行短距離瞬移，也能製造煙幕來干擾敵人對它與周邊一切的感知，同時在這一區域內變得靈能不可探測。除此之外，敵人還會受到週期性的。</APM_Mech_Celerus.description>
+  <APM_Mech_Celerus.tools.0.label>左拳</APM_Mech_Celerus.tools.0.label>
+  <APM_Mech_Celerus.tools.1.label>右拳</APM_Mech_Celerus.tools.1.label>
+  <APM_Mech_Celerus.tools.2.label>頭</APM_Mech_Celerus.tools.2.label>
+  <APM_Mech_CelerusB.description>三款強大的機械體型號由某個級外智能創造而成，試圖以此打造統率所有機械體部隊的核心指揮官。受古地球日本戰國時代的啟發，迅捷而隱密的疾風並未因追求速度而有絲毫遜色。它能夠向周圍進行短距離瞬移，也能製造煙幕來干擾敵人對它與周邊一切的感知，同時在這一區域內變得靈能不可探測。除此之外，敵人還會受到週期性的。</APM_Mech_CelerusB.description>
+  <APM_Mech_CelerusB.tools.0.label>左拳</APM_Mech_CelerusB.tools.0.label>
+  <APM_Mech_CelerusB.tools.1.label>右拳</APM_Mech_CelerusB.tools.1.label>
+  <APM_Mech_CelerusB.tools.2.label>頭</APM_Mech_CelerusB.tools.2.label>
+  <APM_Mech_Dominus.tools.0.label>頭</APM_Mech_Dominus.tools.0.label>
+  <SeveringEdge.label>裂空斬</SeveringEdge.label>
+  <SeveringEdge_Boss.label>裂空斬</SeveringEdge_Boss.label>
+  <APM_Projectile_CelerusSmokescreen.label>煙幕彈</APM_Projectile_CelerusSmokescreen.label>
+  <APM_Projectile_CelerusSmokescreen_Boss.label>煙幕彈</APM_Projectile_CelerusSmokescreen_Boss.label>
 </LanguageData>
