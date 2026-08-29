@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+					<!-- Raid ones -->
+	<BossDef>
+		<defName>APM_Boss_DominusRaid</defName>
+		<kindDef>APM_Mech_Dominus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+	<BossDef>
+		<defName>APM_Boss_TerminusRaid</defName>
+		<kindDef>APM_Mech_Terminus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+	<BossDef>
+		<defName>APM_Boss_CelerusRaid</defName>
+		<kindDef>APM_Mech_Celerus</kindDef>
+		<appearAfterTicks>14400000</appearAfterTicks><!-- 4 years -->
+	</BossDef>
+
+
+					<!-- Regular ones -->
 	<!-- Dominus -->
 
 	<BossDef>

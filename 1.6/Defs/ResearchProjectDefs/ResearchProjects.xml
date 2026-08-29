@@ -12,7 +12,7 @@
 		<researchViewY>4.50</researchViewY>
 		<prerequisites>
 			<li>AdvancedMechtech</li>
-			<li>HighMechtech</li>
+			<li>UltraMechtech</li>
 		</prerequisites>
 		<requiredAnalyzed>
 			<li>APM_PsionicChip</li>
@@ -31,7 +31,7 @@
 		<researchViewX>14.0</researchViewX>
 		<researchViewY>5.15</researchViewY>
 		<prerequisites>
-			<li>StandardMechtech</li>
+			<li>HighMechtech</li>
 		</prerequisites>
 		<requiredAnalyzed>
 			<li>APM_OcularChip</li>
