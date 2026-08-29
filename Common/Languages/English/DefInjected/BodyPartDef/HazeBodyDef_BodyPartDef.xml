@@ -1,9 +1,0 @@
-<LanguageData>
-	<!-- 1.6\Defs\BodyDef\HazeBodyDef.xml -->
-	
-	<!--            EN: body -->
-	<APM_HazeBody.label>body</APM_HazeBody.label>
-	
-	<!--               EN: gas vent -->
-	<APM_HazeGasVent.label>gas vent</APM_HazeGasVent.label>
-</LanguageData>

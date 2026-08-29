@@ -4,10 +4,10 @@
 	<APM_Weapon_Skipblade.label>skipblade</APM_Weapon_Skipblade.label>
 	<!--                          EN: A high-frequency katana integrated with Celerus-derived displacement technology. Enables the wielder to psychically “skip” short distances with each strike, closing gaps instantly or evading counterattacks. -->
 	<APM_Weapon_Skipblade.description>A high-frequency katana integrated with Celerus-derived displacement technology. Enables the wielder to psychically “skip” short distances with each strike, closing gaps instantly or evading counterattacks.</APM_Weapon_Skipblade.description>
-	<!--                            EN: рукоять -->
-	<APM_Weapon_Skipblade.tools.0.label>рукоять</APM_Weapon_Skipblade.tools.0.label>
-	<!--                            EN: острие -->
-	<APM_Weapon_Skipblade.tools.1.label>острие</APM_Weapon_Skipblade.tools.1.label>
-	<!--                            EN: лезвие -->
-	<APM_Weapon_Skipblade.tools.2.label>лезвие</APM_Weapon_Skipblade.tools.2.label>
+	<!--                            EN: handle -->
+	<APM_Weapon_Skipblade.tools.0.label>handle</APM_Weapon_Skipblade.tools.0.label>
+	<!--                            EN: blade -->
+	<APM_Weapon_Skipblade.tools.1.label>blade</APM_Weapon_Skipblade.tools.1.label>
+	<!--                            EN: edge -->
+	<APM_Weapon_Skipblade.tools.2.label>edge</APM_Weapon_Skipblade.tools.2.label>
 </LanguageData>

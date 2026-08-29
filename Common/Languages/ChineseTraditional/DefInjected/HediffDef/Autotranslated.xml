@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_LaserBlind.label>被雷射致盲</APM_LaserBlind.label>
+  <APM_LaserBlind.description>暴露於致盲雷射後，視野大幅減弱。</APM_LaserBlind.description>
+  <APM_ApexMechanoid_Floating.label>懸浮</APM_ApexMechanoid_Floating.label>
+  <APM_ApexMechanoid_Floating.labelNoun>懸浮</APM_ApexMechanoid_Floating.labelNoun>
+  <APM_ApexMechanoid_Floating.description>這台機械體懸浮於地面之上，無視所有地形帶來的移動懲罰。</APM_ApexMechanoid_Floating.description>
+  <APM_Hediff_Devoured.label>被吞噬</APM_Hediff_Devoured.label>
+  <APM_Hediff_Devoured.description>被封入霜語者低溫艙內。生物程序暫停，直到被釋放。</APM_Hediff_Devoured.description>
+  <APM_Hediff_JavelinMissileLock.label>飛彈鎖定</APM_Hediff_JavelinMissileLock.label>
+  <APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
+  <APM_Hediff_JavelinMissileLock.stages.0.label>弱點暴露</APM_Hediff_JavelinMissileLock.stages.0.label>
+  <APM_Hediff_SteelDiscipline.label>鋼鐵紀律</APM_Hediff_SteelDiscipline.label>
+  <APM_Hediff_SteelDiscipline.description>受到附庸統御氣場的激勵，這個單位重新帶著目標感與精神韌性投入行動。</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_Unity.label>統合連接</APM_Hediff_Unity.label>
+  <APM_Hediff_Unity.description>征服者預設配備運算單元，會自動嘗試與附近友軍的運算單元建立連接，互相協助進行內部運算；周圍友軍越多，效率提升越明顯。</APM_Hediff_Unity.description>
+  <APM_Hediff_Unity.stages.1.label>運算連接（最低）</APM_Hediff_Unity.stages.1.label>
+  <APM_Hediff_Unity.stages.2.label>運算連接（低同步）</APM_Hediff_Unity.stages.2.label>
+  <APM_Hediff_Unity.stages.3.label>運算連接（中同步）</APM_Hediff_Unity.stages.3.label>
+  <APM_Hediff_Unity.stages.4.label>運算連接（分散式）</APM_Hediff_Unity.stages.4.label>
+  <APM_Hediff_Unity.stages.5.label>運算連接（高同步）</APM_Hediff_Unity.stages.5.label>
+  <APM_Hediff_Unity.stages.6.label>運算連接（已最佳化）</APM_Hediff_Unity.stages.6.label>
+  <APM_Hediff_Unity.stages.7.label>運算連接（峰值效率）</APM_Hediff_Unity.stages.7.label>
+  <APM_ApexMechanoid_HealOnKills.label>嗜血機械微粒</APM_ApexMechanoid_HealOnKills.label>
+  <APM_ApexMechanoid_HealOnKills.labelNoun>吸血</APM_ApexMechanoid_HealOnKills.labelNoun>
+  <APM_ApexMechanoid_HealOnKills.description>每當宿主擊倒或擊殺一個目標，這些奈米機械體就會積攢充能，並在宿主受傷時消耗充能進行自我修復。</APM_ApexMechanoid_HealOnKills.description>
+  <APM_AbsorbedThing.label>回收生物質中</APM_AbsorbedThing.label>
+  <APM_AbsorbedThing.description>將吸收的生物質加工成化學燃料。</APM_AbsorbedThing.description>
+  <APM_CelerusSmokescreenBuff.label>煙幕</APM_CelerusSmokescreenBuff.label>
+  <APM_CelerusSmokescreenBuff.description>疾風藏身於煙幕之中。</APM_CelerusSmokescreenBuff.description>
+  <APM_InDuel.label>決鬥中</APM_InDuel.label>
+  <APM_InDuel.description>已鎖定於決鬥之中。雙方鬥士周圍已生成一座護盾競技場，期間所有遠程攻擊與能力都被封鎖。所受傷害大幅提高，以迫使雙方做出決斷——決鬥本就該迅速而殘酷地結束。競技場內的一切治療都被壓制，唯有從打擊敵人中汲取的少量回復除外。若任何一方被擊倒或殺死，倖存者即宣告勝利；若時間耗盡時雙方仍屹立不倒，則決鬥以平局收場——雙方都將為此付出代價。</APM_InDuel.description>
+  <APM_DuelWinner.label>決鬥勝利者</APM_DuelWinner.label>
+  <APM_DuelWinner.description>這名鬥士已在競技場中勝出。每贏下一場決鬥都會讓他的鋒芒更加銳利——反應更快、打擊更重，敵人的攻擊也愈發容易被擋開。連勝的場次越長，這名戰士就越發可畏。榮光會隨時間褪去，但勝利的餘韻仍在。</APM_DuelWinner.description>
+  <APM_DuelWinner.stages.0.label>竊線（1 勝）</APM_DuelWinner.stages.0.label>
+  <APM_DuelWinner.stages.1.label>陣列擴張（2 勝）</APM_DuelWinner.stages.1.label>
+  <APM_DuelWinner.stages.2.label>網路支配（3 勝）</APM_DuelWinner.stages.2.label>
+  <APM_DuelWinner.stages.3.label>動能超頻（4 勝）</APM_DuelWinner.stages.3.label>
+  <APM_DuelWinner.stages.4.label>核心同化（5 勝）</APM_DuelWinner.stages.4.label>
+  <APM_DuelWinner.stages.5.label>神經飽和（6 勝）</APM_DuelWinner.stages.5.label>
+  <APM_DuelWinner.stages.6.label>演算法巔峰（7 勝）</APM_DuelWinner.stages.6.label>
+  <APM_DuelWinner.stages.7.label>奇異點向量（8 勝）</APM_DuelWinner.stages.7.label>
+  <APM_DuelWinner.stages.8.label>網路君主（9 勝）</APM_DuelWinner.stages.8.label>
+  <APM_DuelWinner.stages.9.label>絕對優勢（10 勝）</APM_DuelWinner.stages.9.label>
+  <APM_DuelDraw.label>決鬥平局</APM_DuelDraw.label>
+  <APM_DuelDraw.description>這場決鬥以無人勝出告終。競技場消散時兩名鬥士仍屹立不倒——這是雙方都難以洗刷的恥辱。行動變得遲緩，彷彿這場未分勝負的較量所帶來的恥辱正沉重地壓在身上。減益會隨時間消退，但平局的污名不會很快被遺忘。</APM_DuelDraw.description>
+  <APM_PulseWaveBlind.label>閃光致盲</APM_PulseWaveBlind.label>
+  <APM_PulseWaveBlind.description>強烈的閃光與驟增的壓力壓垮了該小人的感測器，短時間內視力大幅下降。</APM_PulseWaveBlind.description>
+  <APM_MechCommandCasketBoost.label>機械指揮艙強化</APM_MechCommandCasketBoost.label>
+  <APM_MechCommandCasketBoost.description>當這名機械師身處機械指揮艙內時，其頻寬會得到提升。</APM_MechCommandCasketBoost.description>
+  <APM_Hediff_UltimateSacrifice.label>終極犧牲</APM_Hediff_UltimateSacrifice.label>
+  <APM_Hediff_UltimateSacrifice.description>終極犧牲——一名征服者犧牲自己，為半徑內所有友方征服者提供強力增益。</APM_Hediff_UltimateSacrifice.description>
+  <APM_Hediff_SirenSong.label>海妖之歌</APM_Hediff_SirenSong.label>
+  <APM_Hediff_SirenSong.description>這名小人被撫慰的機械和聲所托起，感覺更加輕盈、更有活力。</APM_Hediff_SirenSong.description>
+  <APM_Hediff_TerminusOverdrive.label>超載</APM_Hediff_TerminusOverdrive.label>
+  <APM_Hediff_TerminusOverdrive.description>終焉正將一股能量爆發直接導入戰鬥表現，以披風與克制為代價，換取一小段壓倒性的狂暴期。</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_PressTheAttack.label>靈能湧流</APM_Hediff_PressTheAttack.label>
+  <APM_Hediff_PressTheAttack.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack.description>
+  <APM_Hediff_PressTheAttack_Boss.label>靈能湧流</APM_Hediff_PressTheAttack_Boss.label>
+  <APM_Hediff_PressTheAttack_Boss.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack_Boss.description>
+</LanguageData>

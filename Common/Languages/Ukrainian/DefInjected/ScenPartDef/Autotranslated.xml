@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_SpawnScenarioCorpses.label>стародавні трупи</APM_SpawnScenarioCorpses.label>
+  <APM_PrepareStructureSite.label>твердий ґрунт під володінням</APM_PrepareStructureSite.label>
+  <APM_LimitStructureLoot.label>перебрані припаси</APM_LimitStructureLoot.label>
+  <APM_CameraOnPlayerStart.label>почати з ваших персонажів</APM_CameraOnPlayerStart.label>
+  <APM_StartingMech.label>почати з механоїдом</APM_StartingMech.label>
+</LanguageData>

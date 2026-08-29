@@ -33,7 +33,7 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<label>launch frag grenade</label>
+				<label>launch plasma boombardment</label>
 				<verbClass>ApexMechanoids.Verb_RavagerArtillery</verbClass>
 				<defaultProjectile>APM_ArtilleryProjectile</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>

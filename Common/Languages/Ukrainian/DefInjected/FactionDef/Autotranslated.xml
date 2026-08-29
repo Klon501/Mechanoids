@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_DomainPlayerFaction.label>Володіння механітора</APM_DomainPlayerFaction.label>
+  <APM_DomainPlayerFaction.description>Володіння давнього механітора, що приховують скарби майстра.</APM_DomainPlayerFaction.description>
+  <APM_DomainPlayerFaction.leaderTitle>лідер</APM_DomainPlayerFaction.leaderTitle>
+  <APM_DomainPlayerFaction.pawnSingular>колоніст</APM_DomainPlayerFaction.pawnSingular>
+  <APM_DomainPlayerFaction.pawnsPlural>колоністи</APM_DomainPlayerFaction.pawnsPlural>
+  <APM_DomainPlayerFaction.messageDefendersAttacking>{0} з {1} атакують ваш {2}.</APM_DomainPlayerFaction.messageDefendersAttacking>
+</LanguageData>

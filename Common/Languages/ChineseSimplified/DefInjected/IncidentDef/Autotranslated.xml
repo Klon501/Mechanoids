@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_IncidentDef_TrioBoss.label>三领主</APM_IncidentDef_TrioBoss.label>
+  <APM_IncidentDef_TrioBoss.letterLabel>三领主降临</APM_IncidentDef_TrioBoss.letterLabel>
+  <APM_IncidentDef_TrioBoss.letterText>一支来自 {0} 的超重型机械体部队前来将你彻底抹除，随行的还有护卫。\n\n级外智能创造的三位机械君主，意在打造统率所有机械体部队的强力指挥官。\n\n这支突击部队由以下 {1} 组成：\n\n{2}\n\n它们会先准备一段时间，然后才发起攻击。</APM_IncidentDef_TrioBoss.letterText>
+</LanguageData>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Mechanitor_Ancient.label>давній механітор</APM_Mechanitor_Ancient.label>
+  <APM_Mechanitor_Nomad.label>кочовий механітор</APM_Mechanitor_Nomad.label>
+  <APM_Mech_Aegis.label>егіда</APM_Mech_Aegis.label>
+  <APM_Mech_Conqueror_DMR.label>завойовник (карабін)</APM_Mech_Conqueror_DMR.label>
+  <APM_Mech_Conqueror_AR.label>завойовник (гвинтівка)</APM_Mech_Conqueror_AR.label>
+  <APM_Mech_Conqueror_SMG.label>завойовник (кулемет)</APM_Mech_Conqueror_SMG.label>
+  <APM_Mech_Dynamo.label>динамо</APM_Mech_Dynamo.label>
+  <APM_Mech_Frostivus.label>морозус</APM_Mech_Frostivus.label>
+  <APM_Mech_Gazer.label>спостерігач</APM_Mech_Gazer.label>
+  <APM_Mech_Haze.label>завіса</APM_Mech_Haze.label>
+  <APM_Mech_Ingestor.label>поглинач</APM_Mech_Ingestor.label>
+  <APM_Mech_Javelin.label>джавелін</APM_Mech_Javelin.label>
+  <APM_Mech_Lasher.label>погонич</APM_Mech_Lasher.label>
+  <APM_Mech_Mantis.label>богомол</APM_Mech_Mantis.label>
+  <APM_Mech_Maul.label>кришитель</APM_Mech_Maul.label>
+  <APM_Mech_Pulse.label>імпульс</APM_Mech_Pulse.label>
+  <APM_Mech_Ravager.label>спустошувач</APM_Mech_Ravager.label>
+  <APM_Mech_Satellite.label>супутник</APM_Mech_Satellite.label>
+  <APM_Mech_Siren.label>сирена</APM_Mech_Siren.label>
+  <APM_Mech_Tinker.label>майстер</APM_Mech_Tinker.label>
+  <APM_Mech_Vassal.label>васал</APM_Mech_Vassal.label>
+  <APM_Mech_Dominus.label>домінус</APM_Mech_Dominus.label>
+  <APM_Mech_Dominus_Boss.label>домінус</APM_Mech_Dominus_Boss.label>
+  <APM_Mech_Terminus.label>термінус</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus_Boss.label>термінус</APM_Mech_Terminus_Boss.label>
+  <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus_Boss.label>целерус</APM_Mech_Celerus_Boss.label>
+</LanguageData>

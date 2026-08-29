@@ -97,6 +97,7 @@
 	<!-- Player -->
 	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
 		<defName>APM_Mech_Dominus</defName>
+		<label>dominus</label>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -137,6 +138,7 @@
 	<!-- Boss -->
 	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
 		<defName>APM_Mech_Dominus_Boss</defName>
+		<label>dominus</label>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_LaserBlind.label>осліплений лазером</APM_LaserBlind.label>
+  <APM_LaserBlind.description>Здатність бачити сильно знижена через осліплення лазерним променем.</APM_LaserBlind.description>
+  <APM_ApexMechanoid_Floating.label>левітація</APM_ApexMechanoid_Floating.label>
+  <APM_ApexMechanoid_Floating.labelNoun>ширяння</APM_ApexMechanoid_Floating.labelNoun>
+  <APM_ApexMechanoid_Floating.description>Цей механоїд ширяє над землею, ігноруючи будь-які штрафи до швидкості пересування від ландшафту.</APM_ApexMechanoid_Floating.description>
+  <APM_Hediff_Devoured.label>поглинання</APM_Hediff_Devoured.label>
+  <APM_Hediff_Devoured.description>Запечатаний усередині кріокамери Frostivus. Біологічні процеси призупинені до випуску.</APM_Hediff_Devoured.description>
+  <APM_Hediff_JavelinMissileLock.label>ракетний захват цілі</APM_Hediff_JavelinMissileLock.label>
+  <APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
+  <APM_Hediff_JavelinMissileLock.stages.0.label>вразливість розкрита</APM_Hediff_JavelinMissileLock.stages.0.label>
+  <APM_Hediff_SteelDiscipline.label>сталева дисципліна</APM_Hediff_SteelDiscipline.label>
+  <APM_Hediff_SteelDiscipline.description>Натхнений командною присутністю Васала, цей підрозділ рухається з новою цілеспрямованістю та стійкістю духу.</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_Unity.label>канал єдності</APM_Hediff_Unity.label>
+  <APM_Hediff_Unity.description>Завойовники штатно оснащені обчислювальними блоками, які автоматично намагаються з'єднатися з блоками союзників поблизу, щоб допомагати одне одному з внутрішніми обчисленнями, підвищуючи ефективність щоразу, як поруч опиняється ще один союзник.</APM_Hediff_Unity.description>
+  <APM_Hediff_Unity.stages.1.label>обчислювальний зв'язок (мінімальний)</APM_Hediff_Unity.stages.1.label>
+  <APM_Hediff_Unity.stages.2.label>обчислювальний зв'язок (слабка синхронізація)</APM_Hediff_Unity.stages.2.label>
+  <APM_Hediff_Unity.stages.3.label>обчислювальний зв'язок (середня синхронізація)</APM_Hediff_Unity.stages.3.label>
+  <APM_Hediff_Unity.stages.4.label>обчислювальний зв'язок (розподілений)</APM_Hediff_Unity.stages.4.label>
+  <APM_Hediff_Unity.stages.5.label>обчислювальний зв'язок (висока синхронізація)</APM_Hediff_Unity.stages.5.label>
+  <APM_Hediff_Unity.stages.6.label>обчислювальний зв'язок (оптимізований)</APM_Hediff_Unity.stages.6.label>
+  <APM_Hediff_Unity.stages.7.label>обчислювальний зв'язок (пікова ефективність)</APM_Hediff_Unity.stages.7.label>
+  <APM_ApexMechanoid_HealOnKills.label>вампіричні механіти</APM_ApexMechanoid_HealOnKills.label>
+  <APM_ApexMechanoid_HealOnKills.labelNoun>вампіризм</APM_ApexMechanoid_HealOnKills.labelNoun>
+  <APM_ApexMechanoid_HealOnKills.description>Ці механіти накопичують заряди щоразу, коли їхній носій звалює або вбиває ціль, а потім витрачають їх на саморемонт, коли носій зазнає пошкоджень.</APM_ApexMechanoid_HealOnKills.description>
+  <APM_AbsorbedThing.label>переробка біомаси</APM_AbsorbedThing.label>
+  <APM_AbsorbedThing.description>Переробка поглинутої біомаси на хімпаливо.</APM_AbsorbedThing.description>
+  <APM_CelerusSmokescreenBuff.label>димова завіса</APM_CelerusSmokescreenBuff.label>
+  <APM_CelerusSmokescreenBuff.description>Целерус ховається в диму.</APM_CelerusSmokescreenBuff.description>
+  <APM_InDuel.label>у поєдинку</APM_InDuel.label>
+  <APM_InDuel.description>«Випробування поєдинком» кидає виклик вибраному ворожому персонажу, змушуючи опонентів на короткий час вступити в ближній бій. Здібності та далекі атаки вимикаються. Навколо учасників поєдинку на час дії здібності автоматично створюється візуальна «арена». Інші персонажі не можуть обирати учасників поєдинку своєю ціллю. Якщо один із опонентів гине в поєдинку, переможець отримує потужний тимчасовий бонус. Якщо поєдинок не завершується смертю (час вийшов), обидва учасники отримують значний штраф. Учасники поєдинку отримують періодичний урон кожну секунду поєдинку. Це заохочує агресію й гарантує, що поєдинок рідко закінчується «нічиєю» за часом. Будь-яке відновлення здоров'я учасників під час поєдинку заблоковано (за винятком можливого вампіризму від атак).</APM_InDuel.description>
+  <APM_DuelWinner.label>переможець поєдинку</APM_DuelWinner.label>
+  <APM_DuelWinner.description>Цей боєць вийшов переможцем з арени. Кожен виграний поєдинок відточує його майстерність: рефлекси пришвидшуються, удари стають сильнішими, а ворожі випади дедалі легше відбивати. Що довша безперервна серія перемог цього воїна, то грізнішим він стає. Слава з часом згасає, але пам'ять про перемогу лишається.</APM_DuelWinner.description>
+  <APM_DuelWinner.stages.0.label>перемог: 1</APM_DuelWinner.stages.0.label>
+  <APM_DuelWinner.stages.1.label>перемог: 2</APM_DuelWinner.stages.1.label>
+  <APM_DuelWinner.stages.2.label>перемог: 3</APM_DuelWinner.stages.2.label>
+  <APM_DuelWinner.stages.3.label>перемог: 4</APM_DuelWinner.stages.3.label>
+  <APM_DuelWinner.stages.4.label>перемог: 5</APM_DuelWinner.stages.4.label>
+  <APM_DuelWinner.stages.5.label>перемог: 6</APM_DuelWinner.stages.5.label>
+  <APM_DuelWinner.stages.6.label>перемог: 7</APM_DuelWinner.stages.6.label>
+  <APM_DuelWinner.stages.7.label>вектор сингулярності (8 перемог)</APM_DuelWinner.stages.7.label>
+  <APM_DuelWinner.stages.8.label>володар мережі (9 перемог)</APM_DuelWinner.stages.8.label>
+  <APM_DuelWinner.stages.9.label>абсолютна перевага (10 перемог)</APM_DuelWinner.stages.9.label>
+  <APM_DuelDraw.label>нічия в поєдинку</APM_DuelDraw.label>
+  <APM_DuelDraw.description>Поєдинок завершився без переможця. Обидва бійці лишилися на ногах, коли впала арена, — ганьба, від якої не так просто відбутися. Рухи скуті, наче тягар незавершеного двобою тисне на тіло. Штраф згодом спаде, але тавро нічиєї забувається не скоро.</APM_DuelDraw.description>
+  <APM_PulseWaveBlind.label>осліплення спалахом</APM_PulseWaveBlind.label>
+  <APM_PulseWaveBlind.description>Яскравий спалах і різкий стрибок тиску перевантажили датчики цього персонажа, різко знизивши його зір на короткий час.</APM_PulseWaveBlind.description>
+  <APM_MechCommandCasketBoost.label>посилення командної капсули</APM_MechCommandCasketBoost.label>
+  <APM_MechCommandCasketBoost.description>Пропускна здатність цього механітора збільшена, доки він перебуває всередині командної капсули.</APM_MechCommandCasketBoost.description>
+  <APM_Hediff_UltimateSacrifice.label>вища жертва</APM_Hediff_UltimateSacrifice.label>
+  <APM_Hediff_UltimateSacrifice.description>Один із Завойовників може пожертвувати собою, щоб дати потужне підсилення всім союзним Завойовникам у радіусі дії.</APM_Hediff_UltimateSacrifice.description>
+  <APM_Hediff_SirenSong.label>пісня сирени</APM_Hediff_SirenSong.label>
+  <APM_Hediff_SirenSong.description>Цього персонажа огортає заспокійливий механічний хор, відчуває себе легшим і бадьорішим.</APM_Hediff_SirenSong.description>
+  <APM_Hediff_TerminusOverdrive.label>перевантаження</APM_Hediff_TerminusOverdrive.label>
+  <APM_Hediff_TerminusOverdrive.description>Термінус спрямовує потужний потік енергії на підвищення бойових характеристик, скидаючи плащ і стриманість заради короткого спалаху нестримної агресії.</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_PressTheAttack.label>псіонний приплив</APM_Hediff_PressTheAttack.label>
+  <APM_Hediff_PressTheAttack.description>Псіонна хвиля, що безпосередньо стимулює нервові шляхи мозку. Вона тимчасово приглушує больові рецептори й викликає потужний викид адреналіну, дозволяючи суб'єкту рухатися значно швидше й ігнорувати фізичні травми. Ефект дуже потужний, але короткочасний.</APM_Hediff_PressTheAttack.description>
+  <APM_Hediff_PressTheAttack_Boss.label>псіонний приплив</APM_Hediff_PressTheAttack_Boss.label>
+  <APM_Hediff_PressTheAttack_Boss.description>Псіонна хвиля, що безпосередньо стимулює нервові шляхи мозку. Вона тимчасово приглушує больові рецептори й викликає потужний викид адреналіну, дозволяючи суб'єкту рухатися значно швидше й ігнорувати фізичні травми. Ефект дуже потужний, але короткочасний.</APM_Hediff_PressTheAttack_Boss.description>
+</LanguageData>

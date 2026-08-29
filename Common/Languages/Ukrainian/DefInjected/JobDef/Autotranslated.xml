@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.reportString>щось робить.</APM_Absorb.reportString>
+  <APM_CryptoSwallow.reportString>щось робить.</APM_CryptoSwallow.reportString>
+  <APM_BashDamage.reportString>врізається в TargetA.</APM_BashDamage.reportString>
+  <APM_BashStun.reportString>врізається в TargetA.</APM_BashStun.reportString>
+  <APM_CastPulseJump.reportString>стрибає до TargetA.</APM_CastPulseJump.reportString>
+  <APM_EnterMechanoidContainer.reportString>входить у TargetA.</APM_EnterMechanoidContainer.reportString>
+  <APM_FrostivusManualUnloadFood.reportString>вивантажує збережену їжу.</APM_FrostivusManualUnloadFood.reportString>
+  <APM_FrostivusReleaseDevouredContents.reportString>випускає збережену істоту.</APM_FrostivusReleaseDevouredContents.reportString>
+  <APM_FrostivusTakeFoodToInventory.reportString>зберігає TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+  <APM_FrostivusUnloadFoodToStorage.reportString>вивантажує TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+  <APM_HaulToToxicPurifier.reportString>відносить відходи до TargetA.</APM_HaulToToxicPurifier.reportString>
+  <APM_HookPawn.reportString>тягне гак-кішку до TargetA.</APM_HookPawn.reportString>
+  <APM_LasherMilk.reportString>доїть TargetA.</APM_LasherMilk.reportString>
+  <APM_LasherReleaseToWild.reportString>відпускає TargetA.</APM_LasherReleaseToWild.reportString>
+  <APM_LasherShear.reportString>стриже TargetA.</APM_LasherShear.reportString>
+  <APM_LasherSlaughter.reportString>забиває TargetA.</APM_LasherSlaughter.reportString>
+  <APM_LasherTame.reportString>приручає TargetA.</APM_LasherTame.reportString>
+  <APM_LasherTrain.reportString>дресирує TargetA.</APM_LasherTrain.reportString>
+  <APM_RavagerArtilleryAttack.reportString>веде артилерійський вогонь по TargetA.</APM_RavagerArtilleryAttack.reportString>
+  <APM_RepairMech.reportString>ремонтує TargetA.</APM_RepairMech.reportString>
+  <APM_SirenChatWithPrisoner.reportString>співає перед TargetA.</APM_SirenChatWithPrisoner.reportString>
+  <APM_SirenLureChannel.reportString>співає.</APM_SirenLureChannel.reportString>
+
+</LanguageData>

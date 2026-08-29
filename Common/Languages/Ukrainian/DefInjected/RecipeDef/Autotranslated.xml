@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Aegis.label>виростити егіду</APM_Aegis.label>
+  <APM_Aegis.description>Виростити механоїда егіда.</APM_Aegis.description>
+  <APM_Terminus.label>термінус</APM_Terminus.label>
+  <APM_Terminus.description>Виростити архотек-командира механоїда термінус.</APM_Terminus.description>
+  <APM_Maul.label>кришитель</APM_Maul.label>
+  <APM_Maul.description>Виростити механоїда кришитель.</APM_Maul.description>
+  <APM_Mantis.label>богомол</APM_Mantis.label>
+  <APM_Mantis.description>Виростити механоїда богомол.</APM_Mantis.description>
+  <APM_Dynamo.label>динамо</APM_Dynamo.label>
+  <APM_Dynamo.description>Виростити механоїда динамо.</APM_Dynamo.description>
+  <APM_Haze.label>завіса</APM_Haze.label>
+  <APM_Haze.description>Виростити механоїда завіса для стримування території.</APM_Haze.description>
+  <APM_Celerus.label>целерус</APM_Celerus.label>
+  <APM_Celerus.description>Виростити архотек-командира механоїда целерус.</APM_Celerus.description>
+  <APM_Dominus.label>домінус</APM_Dominus.label>
+  <APM_Dominus.description>Виростити архотек-командира механоїда домінус.</APM_Dominus.description>
+  <APM_Conqueror_DMR.label>завойовник-карабін</APM_Conqueror_DMR.label>
+  <APM_Conqueror_DMR.description>Виростити механоїда завойовник, озброєного енергокарабіном.</APM_Conqueror_DMR.description>
+  <APM_Conqueror_DMR.jobString>Вирощування завойовника (карабін).</APM_Conqueror_DMR.jobString>
+  <APM_Conqueror_AR.label>завойовник-бластер</APM_Conqueror_AR.label>
+  <APM_Conqueror_AR.description>Виростити механоїда завойовник, озброєного бластерною гвинтівкою.</APM_Conqueror_AR.description>
+  <APM_Conqueror_AR.jobString>Вирощування завойовника (гвинтівка).</APM_Conqueror_AR.jobString>
+  <APM_Conqueror_SMG.label>завойовник-спітер</APM_Conqueror_SMG.label>
+  <APM_Conqueror_SMG.description>Виростити механоїда завойовник, озброєного енергокулеметом.</APM_Conqueror_SMG.description>
+  <APM_Conqueror_SMG.jobString>Вирощування завойовника (кулемет).</APM_Conqueror_SMG.jobString>
+  <APM_Lasher.label>погонич</APM_Lasher.label>
+  <APM_Lasher.description>Виростити механоїда погонич.</APM_Lasher.description>
+  <APM_Pulse.label>імпульс</APM_Pulse.label>
+  <APM_Pulse.description>Виростити механоїда імпульс.</APM_Pulse.description>
+  <APM_Vassal.label>васал</APM_Vassal.label>
+  <APM_Vassal.description>Виростити механоїда васал.</APM_Vassal.description>
+  <APM_Tinker.label>механік</APM_Tinker.label>
+  <APM_Tinker.description>Виростити механоїда майстер.</APM_Tinker.description>
+  <APM_Siren.label>виростити сирену</APM_Siren.label>
+  <APM_Siren.description>Виростити механоїда сирена.</APM_Siren.description>
+  <APM_Frostivus.label>морозус</APM_Frostivus.label>
+  <APM_Frostivus.description>Вирощує механоїда-морозуса.</APM_Frostivus.description>
+  <APM_Javelin.label>джавелін</APM_Javelin.label>
+  <APM_Javelin.description>Виростити механоїда джавелін.</APM_Javelin.description>
+  <APM_Ravager.label>спустошувач</APM_Ravager.label>
+  <APM_Ravager.description>Виростити механоїда спустошувач.</APM_Ravager.description>
+  <APM_Ingestor.label>поглинач</APM_Ingestor.label>
+  <APM_Ingestor.description>Виростити механоїда поглинач.</APM_Ingestor.description>
+  <APM_Gazer.label>спостерігач</APM_Gazer.label>
+  <APM_Gazer.description>Виростити механоїда спостерігач.</APM_Gazer.description>
+  <Make_DuelistPsyspear.label>виготовити пси-спис дуелянта</Make_DuelistPsyspear.label>
+  <Make_DuelistPsyspear.description>Створити псі-спис владарювання.</Make_DuelistPsyspear.description>
+  <Make_DuelistPsyspear.jobString>Створення псі-списа владарювання.</Make_DuelistPsyspear.jobString>
+  <APM_Weapon_SeveringBlade.label>створити розсікаюче лезо</APM_Weapon_SeveringBlade.label>
+  <APM_Weapon_SeveringBlade.description>Створити розсікаюче лезо.</APM_Weapon_SeveringBlade.description>
+  <APM_Weapon_SeveringBlade.jobString>Створення розсікаючого леза.</APM_Weapon_SeveringBlade.jobString>
+  <APM_Weapon_Skipblade.label>створити телепорт-клинок</APM_Weapon_Skipblade.label>
+  <APM_Weapon_Skipblade.description>Створити телепорт-клинок.</APM_Weapon_Skipblade.description>
+  <APM_Weapon_Skipblade.jobString>Створення телепорт-клинка.</APM_Weapon_Skipblade.jobString>
+  <APM_Weapon_PlasmaWhip.label>створити плазмовий батіг</APM_Weapon_PlasmaWhip.label>
+  <APM_Weapon_PlasmaWhip.description>Створити плазмовий батіг.</APM_Weapon_PlasmaWhip.description>
+  <APM_Weapon_PlasmaWhip.jobString>Створення плазмового батога.</APM_Weapon_PlasmaWhip.jobString>
+  <APM_Solus.label>створити солус</APM_Solus.label>
+  <APM_Solus.description>Створити солус.</APM_Solus.description>
+  <APM_Solus.jobString>Створення солуса.</APM_Solus.jobString>
+  <APM_MechamancerPack.label>виготовити ранець мехаманта</APM_MechamancerPack.label>
+  <APM_MechamancerPack.description>Створити ранець мехаманта.</APM_MechamancerPack.description>
+  <APM_MechamancerPack.jobString>Створення ранця мехаманта.</APM_MechamancerPack.jobString>
+  <APM_Apparel_MechamancerSuit.label>створити костюм мехаманта</APM_Apparel_MechamancerSuit.label>
+  <APM_Apparel_MechamancerSuit.description>Створити костюм мехаманта.</APM_Apparel_MechamancerSuit.description>
+  <APM_Apparel_MechamancerSuit.jobString>Створення костюма мехаманта.</APM_Apparel_MechamancerSuit.jobString>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.label>створити шолом мехаманта</APM_Apparel_ArmorHelmetMechamancerHelmet.label>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.description>Створити шолом мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.description>
+  <APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>Створення шолома мехаманта.</APM_Apparel_ArmorHelmetMechamancerHelmet.jobString>
+  <APM_Aegis.jobString>Виношування механоїда.</APM_Aegis.jobString>
+  <APM_Celerus.jobString>Виношування механоїда.</APM_Celerus.jobString>
+  <APM_Dominus.jobString>Виношування механоїда.</APM_Dominus.jobString>
+  <APM_Dynamo.jobString>Виношування механоїда.</APM_Dynamo.jobString>
+  <APM_Frostivus.jobString>Виношування механоїда.</APM_Frostivus.jobString>
+  <APM_Gazer.jobString>Виношування механоїда.</APM_Gazer.jobString>
+  <APM_Haze.jobString>Виношування механоїда.</APM_Haze.jobString>
+  <APM_Ingestor.jobString>Виношування механоїда.</APM_Ingestor.jobString>
+  <APM_Javelin.jobString>Виношування механоїда.</APM_Javelin.jobString>
+  <APM_Lasher.jobString>Виношування механоїда.</APM_Lasher.jobString>
+  <APM_Mantis.jobString>Виношування механоїда.</APM_Mantis.jobString>
+  <APM_Maul.jobString>Виношування механоїда.</APM_Maul.jobString>
+  <APM_Pulse.jobString>Виношування механоїда.</APM_Pulse.jobString>
+  <APM_Ravager.jobString>Виношування механоїда.</APM_Ravager.jobString>
+  <APM_Siren.jobString>Виношування механоїда.</APM_Siren.jobString>
+  <APM_Terminus.jobString>Виношування механоїда.</APM_Terminus.jobString>
+  <APM_Tinker.jobString>Виношування механоїда.</APM_Tinker.jobString>
+  <APM_Vassal.jobString>Виношування механоїда.</APM_Vassal.jobString>
+</LanguageData>

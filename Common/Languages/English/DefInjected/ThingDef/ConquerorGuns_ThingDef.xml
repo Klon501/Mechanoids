@@ -4,12 +4,10 @@
 	<APM_Gun_Conqueror_AR.label>charge blaster rifle</APM_Gun_Conqueror_AR.label>
 	<!--                          EN: A general-purpose pulse-charged assault rifle designed for mid-range engagements. Highly reliable in all combat scenarios with a balanced rate of fire and precision. -->
 	<APM_Gun_Conqueror_AR.description>A general-purpose pulse-charged assault rifle designed for mid-range engagements. Highly reliable in all combat scenarios with a balanced rate of fire and precision.</APM_Gun_Conqueror_AR.description>
-	<!--                            EN: ㅤ -->
-	<APM_Gun_Conqueror_AR.verbs.0.label>ㅤ</APM_Gun_Conqueror_AR.verbs.0.label>
 	<!--                            EN: приклад -->
-	<APM_Gun_Conqueror_AR.tools.0.label>приклад</APM_Gun_Conqueror_AR.tools.0.label>
+	<APM_Gun_Conqueror_AR.tools.0.label>Barrel</APM_Gun_Conqueror_AR.tools.0.label>
 	<!--                            EN: ствол -->
-	<APM_Gun_Conqueror_AR.tools.1.label>ствол</APM_Gun_Conqueror_AR.tools.1.label>
+	<APM_Gun_Conqueror_AR.tools.1.label>Muzzle</APM_Gun_Conqueror_AR.tools.1.label>
 	
 	<!--                        EN: charge carbine shot -->
 	<APM_Bullet_ChargeCarbine.label>charge carbine shot</APM_Bullet_ChargeCarbine.label>
@@ -18,10 +16,8 @@
 	<APM_Gun_Conqueror_DMR.label>charge carbine</APM_Gun_Conqueror_DMR.label>
 	<!--                           EN: A designated marksman rifle utilizing pulse-charge technology. Deals less structural damage per shot than a full Charge Lance, but fires significantly faster and excels at medium-to-long range. -->
 	<APM_Gun_Conqueror_DMR.description>A designated marksman rifle utilizing pulse-charge technology. Deals less structural damage per shot than a full Charge Lance, but fires significantly faster and excels at medium-to-long range.</APM_Gun_Conqueror_DMR.description>
-	<!--                             EN: ㅤ -->
-	<APM_Gun_Conqueror_DMR.verbs.0.label>ㅤ</APM_Gun_Conqueror_DMR.verbs.0.label>
 	<!--                             EN: ствол -->
-	<APM_Gun_Conqueror_DMR.tools.0.label>ствол</APM_Gun_Conqueror_DMR.tools.0.label>
+	<APM_Gun_Conqueror_DMR.tools.0.label>Muzzle</APM_Gun_Conqueror_DMR.tools.0.label>
 	
 	<!--                    EN: charge spitter shot -->
 	<Bullet_ChargeSpitter.label>charge spitter shot</Bullet_ChargeSpitter.label>
@@ -30,8 +26,6 @@
 	<APM_Gun_Conqueror_SMG.label>charge spitter</APM_Gun_Conqueror_SMG.label>
 	<!--                           EN: A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance. -->
 	<APM_Gun_Conqueror_SMG.description>A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance.</APM_Gun_Conqueror_SMG.description>
-	<!--                             EN: ㅤ -->
-	<APM_Gun_Conqueror_SMG.verbs.0.label>ㅤ</APM_Gun_Conqueror_SMG.verbs.0.label>
 	<!--                             EN: рукоятка -->
-	<APM_Gun_Conqueror_SMG.tools.0.label>рукоятка</APM_Gun_Conqueror_SMG.tools.0.label>
+	<APM_Gun_Conqueror_SMG.tools.0.label>Muzzle</APM_Gun_Conqueror_SMG.tools.0.label>
 </LanguageData>
