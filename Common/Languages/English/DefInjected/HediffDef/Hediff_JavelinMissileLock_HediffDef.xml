@@ -2,7 +2,7 @@
 	<!-- 1.6\Defs\HediffDefs\Hediff_JavelinMissileLock.xml -->
 	<!--                             EN: missile lock -->
 	<APM_Hediff_JavelinMissileLock.label>Smart missile lock</APM_Hediff_JavelinMissileLock.label>
-	<APM_Hediff_JavelinMissileLock.description>\n</APM_Hediff_JavelinMissileLock.description>
+	<APM_Hediff_JavelinMissileLock.description>&#x200B;</APM_Hediff_JavelinMissileLock.description>
 	<!--                                      EN: missile lock -->
 	<APM_Hediff_JavelinMissileLock.stages.0.label>weakness exposed</APM_Hediff_JavelinMissileLock.stages.0.label>
 </LanguageData>
