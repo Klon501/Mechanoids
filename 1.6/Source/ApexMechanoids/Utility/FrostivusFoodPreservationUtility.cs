@@ -15,6 +15,7 @@ namespace ApexMechanoids
         private const int WarmStorageRescueScore = 100000;
         private const int RotUrgencyScoreTicks = 600000;
 
+        private static readonly Dictionary<ThingDef, bool> PreservableFoodDefCache = new Dictionary<ThingDef, bool>();
         private static readonly List<Thing> TmpInventoryFood = new List<Thing>();
         private static readonly List<Thing> TmpDevouredContents = new List<Thing>();
         private static Caravan cachedCaravan;
@@ -170,10 +171,10 @@ namespace ApexMechanoids
         {
             return CanDoFoodPreservation(pawn)
                 && IsPreservableFoodOnMap(thing)
-                && (forced || ShouldAutoRescueFoodFromCurrentStorage(pawn, thing))
                 && (forced || !thing.IsForbidden(pawn))
                 && !thing.IsBurning()
                 && CountToPickUp(pawn, thing) > 0
+                && (forced || ShouldAutoRescueFoodFromCurrentStorage(pawn, thing))
                 && pawn.CanReserveAndReach(thing, PathEndMode.ClosestTouch, Danger.Deadly, 1, -1, null, forced);
         }
 
@@ -211,13 +212,13 @@ namespace ApexMechanoids
             for (int i = 0; i < things.Count; i++)
             {
                 Thing thing = things[i];
-                if (!CanRescueFoodNow(pawn, thing))
+                int distance = pawn.Position.DistanceToSquared(thing.Position);
+                if (distance > maxDistanceSquared)
                 {
                     continue;
                 }
 
-                int distance = pawn.Position.DistanceToSquared(thing.Position);
-                if (distance > maxDistanceSquared)
+                if (!CanRescueFoodNow(pawn, thing))
                 {
                     continue;
                 }
@@ -568,23 +569,38 @@ namespace ApexMechanoids
 
         private static bool IsPreservableFoodThing(Thing thing)
         {
-            if (thing == null
-                || thing.Destroyed
-                || thing.def == null
-                || !thing.def.EverHaulable
-                || thing.def.ingestible == null
-                || !thing.def.IsNutritionGivingIngestible
-                || thing.def.IsCorpse
-                || thing.def.IsDrug
-                || thing.TryGetComp<CompRottable>() == null)
+            if (thing == null || thing.Destroyed || thing.def == null)
             {
                 return false;
             }
 
-            return thing.def.ingestible.preferability >= FoodPreferability.RawBad
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.Foods)
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.PlantFoodRaw)
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.MeatRaw);
+            if (!IsPreservableFoodDef(thing.def))
+            {
+                return false;
+            }
+
+            return thing.TryGetComp<CompRottable>() != null;
+        }
+
+        private static bool IsPreservableFoodDef(ThingDef def)
+        {
+            if (PreservableFoodDefCache.TryGetValue(def, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = def.EverHaulable
+                && def.ingestible != null
+                && def.IsNutritionGivingIngestible
+                && !def.IsCorpse
+                && !def.IsDrug
+                && (def.ingestible.preferability >= FoodPreferability.RawBad
+                    || def.IsWithinCategory(ThingCategoryDefOf.Foods)
+                    || def.IsWithinCategory(ThingCategoryDefOf.PlantFoodRaw)
+                    || def.IsWithinCategory(ThingCategoryDefOf.MeatRaw));
+
+            PreservableFoodDefCache[def] = result;
+            return result;
         }
 
         private static bool ShouldAutoRescueFoodFromCurrentStorage(Pawn pawn, Thing thing)

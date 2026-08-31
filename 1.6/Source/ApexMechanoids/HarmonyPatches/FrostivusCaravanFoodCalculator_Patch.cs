@@ -122,6 +122,11 @@ namespace ApexMechanoids
 
         public static bool IsFoodPreservedInTransferableRotContext(Thing thing)
         {
+            if (!activeRotContextPreserveAnyCaravanFood && activeRotContextTransferables == null)
+            {
+                return false;
+            }
+
             if (!FrostivusFoodPreservationUtility.IsCaravanPreservableFood(thing))
             {
                 return false;
@@ -132,7 +137,7 @@ namespace ApexMechanoids
                 return true;
             }
 
-            return activeRotContextTransferables != null && ThingIsSelectedInActiveRotContext(thing);
+            return ThingIsSelectedInActiveRotContext(thing);
         }
 
         public static void BeginTradeableRotPreservationContext(List<Thing> allCurrentThings, List<Tradeable> tradeables)

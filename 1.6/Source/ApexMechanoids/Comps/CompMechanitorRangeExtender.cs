@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace ApexMechanoids
@@ -41,16 +43,35 @@ namespace ApexMechanoids
             return currentRange;
         }
 
-        public override void PostDrawExtraSelectionOverlays()
+        public override void PostDraw()
         {
-            base.PostDrawExtraSelectionOverlays();
+            base.PostDraw();
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Drafted) return;
+            if (pawn == null || !pawn.Spawned) return;
+            if (!AnySelectedDraftedMechOfSameOverseer(pawn)) return;
             float range = GetEffectiveRange();
             if (range > 0f)
             {
                 GenDraw.DrawRadiusRing(parent.Position, range, Color.cyan);
             }
+        }
+
+        private static bool AnySelectedDraftedMechOfSameOverseer(Pawn pawn)
+        {
+            List<Pawn> selectedPawns = Find.Selector.SelectedPawns;
+            if (selectedPawns.Count == 0) return false;
+            Pawn overseer = pawn.GetOverseer();
+            if (overseer == null) return false;
+            for (int i = 0; i < selectedPawns.Count; i++)
+            {
+                Pawn selected = selectedPawns[i];
+                if (selected.Drafted && selected.GetOverseer() == overseer)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

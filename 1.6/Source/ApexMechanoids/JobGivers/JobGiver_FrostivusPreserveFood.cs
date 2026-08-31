@@ -193,12 +193,14 @@ namespace ApexMechanoids
     {
         public float maxDistance = 9999f;
         public int expiryInterval = 500;
+        public int emptyScanCooldownTicks = 300;
 
         public override ThinkNode DeepCopy(bool resolve = true)
         {
             JobGiver_FrostivusPreserveFood obj = (JobGiver_FrostivusPreserveFood)base.DeepCopy(resolve);
             obj.maxDistance = maxDistance;
             obj.expiryInterval = expiryInterval;
+            obj.emptyScanCooldownTicks = emptyScanCooldownTicks;
             return obj;
         }
 
@@ -214,12 +216,43 @@ namespace ApexMechanoids
                 return null;
             }
 
-            if (!FrostivusFoodPreservationUtility.TryFindBestRescuableFood(pawn, out Thing food, maxDistance))
+            int ticksGame = Find.TickManager.TicksGame;
+            if (ticksGame < GetNextScanTick(pawn))
             {
                 return null;
             }
 
-            return FrostivusFoodPreservationUtility.MakeTakeFoodJob(pawn, food, expiryInterval);
+            if (!FrostivusFoodPreservationUtility.TryFindBestRescuableFood(pawn, out Thing food, maxDistance))
+            {
+                SetNextScanTick(pawn, ticksGame + emptyScanCooldownTicks);
+                return null;
+            }
+
+            Job job = FrostivusFoodPreservationUtility.MakeTakeFoodJob(pawn, food, expiryInterval);
+            if (job == null)
+            {
+                SetNextScanTick(pawn, ticksGame + emptyScanCooldownTicks);
+            }
+
+            return job;
+        }
+
+        private int GetNextScanTick(Pawn pawn)
+        {
+            if (pawn.mindState?.thinkData != null && pawn.mindState.thinkData.TryGetValue(UniqueSaveKey, out int value))
+            {
+                return value;
+            }
+
+            return -99999;
+        }
+
+        private void SetNextScanTick(Pawn pawn, int value)
+        {
+            if (pawn.mindState?.thinkData != null)
+            {
+                pawn.mindState.thinkData[UniqueSaveKey] = value;
+            }
         }
     }
 
