@@ -1,7 +1,0 @@
-<LanguageData>
-	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Satellite.xml -->
-	<!--                  EN: satellite -->
-	<APM_Mech_Satellite.label>satellite</APM_Mech_Satellite.label>
-	<!--                                     EN: Plural satellite -->
-	<APM_Mech_Satellite.lifeStages.1.labelPlural>Plural satellite</APM_Mech_Satellite.lifeStages.1.labelPlural>
-</LanguageData>

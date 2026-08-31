@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <APM.Dynamo.Command.SwithcToMobileMode.Label>Мобільний режим</APM.Dynamo.Command.SwithcToMobileMode.Label>
@@ -299,4 +299,35 @@
 
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>Земля над відходами</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
+  <APM_UnityTooltip_Current>Поточні характеристики (з каналом єдності):</APM_UnityTooltip_Current>
+  <APM.CommandCasket.Gizmo.OpenStasisContainer.Label>Відкрити дистанційно</APM.CommandCasket.Gizmo.OpenStasisContainer.Label>
+  <APM.CommandCasket.Gizmo.HackStasisContainer.Label>Зламати дистанційно</APM.CommandCasket.Gizmo.HackStasisContainer.Label>
+  <APM.CommandCasket.Inspect.CurrentAction.StasisContainer>відкриває контейнер стазису</APM.CommandCasket.Inspect.CurrentAction.StasisContainer>
+  <APM.MechanoidContainer.ForcedOpen>{0} насильно відкрив {1}, не маючи пропускної здатності, щоб утримати те, що було всередині. {2} вирвався на волю і не підкоряється нікому, доки механітор не візьме його під контроль.</APM.MechanoidContainer.ForcedOpen>
+  <APM.Tinker.Order.Repair>Ремонтувати {0}</APM.Tinker.Order.Repair>
+  <APM.GazerEmplacement.SunRay.Label>Сонячний промінь</APM.GazerEmplacement.SunRay.Label>
+  <APM.GazerEmplacement.SunRay.Desc>Наказати установці випустити сонячний промінь у її фіксованому фронтальному секторі.</APM.GazerEmplacement.SunRay.Desc>
+  <APM.GazerEmplacement.StopForcedTarget.Label>Скасувати призначену ціль</APM.GazerEmplacement.StopForcedTarget.Label>
+  <APM.GazerEmplacement.StopForcedTarget.Desc>Скинути поточну призначену ціль.</APM.GazerEmplacement.StopForcedTarget.Desc>
+  <APM.GazerEmplacement.Status.Firing>Стан: б’є сонячним променем</APM.GazerEmplacement.Status.Firing>
+  <APM.GazerEmplacement.Status.Charging>Стан: заряджається</APM.GazerEmplacement.Status.Charging>
+  <APM.GazerEmplacement.Status.CoolingDown>Стан: остигає</APM.GazerEmplacement.Status.CoolingDown>
+  <APM.GazerEmplacement.Status.Ready>Стан: готова</APM.GazerEmplacement.Status.Ready>
+  <APM.GazerEmplacement.ForcedTarget>Призначена ціль: </APM.GazerEmplacement.ForcedTarget>
+  <APM.GazerEmplacement.AutoTarget>Автоціль: </APM.GazerEmplacement.AutoTarget>
+  <APM.GazerEmplacement.Target.None>немає</APM.GazerEmplacement.Target.None>
+  <APM.GazerEmplacement.Fail.NotSpawned>Не розміщено.</APM.GazerEmplacement.Fail.NotSpawned>
+  <APM.GazerEmplacement.Fail.MissingDefinition>Відсутнє визначення сонячного променя.</APM.GazerEmplacement.Fail.MissingDefinition>
+  <APM.GazerEmplacement.Fail.BrokenDown>Зламано.</APM.GazerEmplacement.Fail.BrokenDown>
+  <APM.GazerEmplacement.Fail.TurnedOff>Вимкнено.</APM.GazerEmplacement.Fail.TurnedOff>
+  <APM.GazerEmplacement.Fail.NoPower>Немає енергії.</APM.GazerEmplacement.Fail.NoPower>
+  <APM.GazerEmplacement.Fail.NeedsOperator>Потрібен оператор.</APM.GazerEmplacement.Fail.NeedsOperator>
+  <APM.GazerEmplacement.Fail.NoTargetCell>Виберіть клітинку цілі.</APM.GazerEmplacement.Fail.NoTargetCell>
+  <APM.GazerEmplacement.Fail.TargetGone>Ціль зникла.</APM.GazerEmplacement.Fail.TargetGone>
+  <APM.GazerEmplacement.Fail.TargetOutOfBounds>Ціль за межами карти.</APM.GazerEmplacement.Fail.TargetOutOfBounds>
+  <APM.GazerEmplacement.Fail.TargetTooClose>Ціль надто близько.</APM.GazerEmplacement.Fail.TargetTooClose>
+  <APM.GazerEmplacement.Fail.TargetOutOfRange>Ціль поза дальністю.</APM.GazerEmplacement.Fail.TargetOutOfRange>
+  <APM.GazerEmplacement.Fail.TargetOutsideArc>Ціль поза сектором обстрілу.</APM.GazerEmplacement.Fail.TargetOutsideArc>
+  <APM.StatFactorFromHealth.Label>{STAT} від низького здоров’я</APM.StatFactorFromHealth.Label>
+  <APM.StatFactorFromHealth.Description>У цього механоїда {STAT} залежить від стану його здоров’я.</APM.StatFactorFromHealth.Description>
 </LanguageData>

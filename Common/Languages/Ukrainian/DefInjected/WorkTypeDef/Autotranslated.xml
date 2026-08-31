@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_FrostivusFoodPreservation.description>Рятує їжу з небезпечного зберігання чи з вулиці й вивантажує її до холодного сховища, якщо таке доступне.</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>Зберігати</APM_FrostivusFoodPreservation.verb>
+  <APM_IngestorCorpseProcessing.description>Переробляє органічні трупи на хімотопливо.</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>Поглинути</APM_IngestorCorpseProcessing.verb>
+  <APM_LasherHandling.description>Приручати, тренувати, збирати ресурси з тварин і забивати їх.</APM_LasherHandling.description>
+  <APM_LasherHandling.verb>Поводитися</APM_LasherHandling.verb>
+  <APM_SirenWarden.description>Керувати в'язнями, годувати їх, розмовляти з ними та вербувати.</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>Поводитися</APM_SirenWarden.verb>
+  <APM_TinkerRepair.description>Ремонт будівель і механоїдів своєї фракції.</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>Ремонтувати</APM_TinkerRepair.verb>
+  <APM_FrostivusFoodPreservation.gerundLabel>збереження їжі</APM_FrostivusFoodPreservation.gerundLabel>
+  <APM_FrostivusFoodPreservation.labelShort>зберегти</APM_FrostivusFoodPreservation.labelShort>
+  <APM_FrostivusFoodPreservation.pawnLabel>Зберігач</APM_FrostivusFoodPreservation.pawnLabel>
+  <APM_IngestorCorpseProcessing.gerundLabel>поглинання трупів</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.labelShort>поглинути</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>Поглинач</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_LasherHandling.gerundLabel>дресирування</APM_LasherHandling.gerundLabel>
+  <APM_LasherHandling.labelShort>дресирувати</APM_LasherHandling.labelShort>
+  <APM_LasherHandling.pawnLabel>Дресирувальник</APM_LasherHandling.pawnLabel>
+  <APM_SirenWarden.gerundLabel>нагляд</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.labelShort>наглядати</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>Наглядач</APM_SirenWarden.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>ремонт будівель і механоїдів</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>Майстер</APM_TinkerRepair.pawnLabel>
+</LanguageData>

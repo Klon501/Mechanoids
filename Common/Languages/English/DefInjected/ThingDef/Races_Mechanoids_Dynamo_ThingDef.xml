@@ -1,9 +1,0 @@
-<LanguageData>
-	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Dynamo.xml -->
-	<!--               EN: dynamo -->
-	<APM_Mech_Dynamo.label>dynamo</APM_Mech_Dynamo.label>
-	<!--                     EN: An hybrid of mechanoid and and mechhive infrastructure, the dynamo is outfitted with an oversized internal reactor. The drawbacks of its increased power output means that vanometric means are not enough to fuel this reactor, requiring uranium to stay active. It has the ability to anchor itself in the ground and attach itself to an existing power grid as well as use its energy to act as a mobile shield generator, able to process excess uranium to regenerate the durability of its shield. -->
-	<APM_Mech_Dynamo.description>An hybrid of mechanoid and and mechhive infrastructure, the dynamo is outfitted with an oversized internal reactor. The drawbacks of its increased power output means that vanometric means are not enough to fuel this reactor, requiring uranium to stay active. It has the ability to anchor itself in the ground and attach itself to an existing power grid as well as use its energy to act as a mobile shield generator, able to process excess uranium to regenerate the durability of its shield.</APM_Mech_Dynamo.description>
-	<!--                       EN: голова -->
-	<APM_Mech_Dynamo.tools.0.label>голова</APM_Mech_Dynamo.tools.0.label>
-</LanguageData>

@@ -1,29 +1,29 @@
 <LanguageData>
 	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\BossesWeapons.xml -->
-	<!--                                   EN: рукоять -->
-	<APM_Weapon_DominusMechlance.tools.0.label>рукоять</APM_Weapon_DominusMechlance.tools.0.label>
-	<!--                                   EN: острие -->
-	<APM_Weapon_DominusMechlance.tools.1.label>острие</APM_Weapon_DominusMechlance.tools.1.label>
-	<!--                                   EN: кромка -->
-	<APM_Weapon_DominusMechlance.tools.2.label>кромка</APM_Weapon_DominusMechlance.tools.2.label>
+	<!--                                   EN: handle -->
+	<APM_Weapon_DominusMechlance.tools.0.label>handle</APM_Weapon_DominusMechlance.tools.0.label>
+	<!--                                   EN: blade -->
+	<APM_Weapon_DominusMechlance.tools.1.label>blade</APM_Weapon_DominusMechlance.tools.1.label>
+	<!--                                   EN: edge -->
+	<APM_Weapon_DominusMechlance.tools.2.label>edge</APM_Weapon_DominusMechlance.tools.2.label>
 	<!--                           EN: Dominus mechlance -->
 	<APM_Weapon_DominusMechlance.label>Dominus mechlance</APM_Weapon_DominusMechlance.label>
 	<!--                                 EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
 	<APM_Weapon_DominusMechlance.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</APM_Weapon_DominusMechlance.description>
 	
-	<!--                                       EN: рукоять -->
-	<APM_Weapon_DominusApexMechlance.tools.0.label>рукоять</APM_Weapon_DominusApexMechlance.tools.0.label>
-	<!--                                       EN: острие -->
-	<APM_Weapon_DominusApexMechlance.tools.1.label>острие</APM_Weapon_DominusApexMechlance.tools.1.label>
-	<!--                                       EN: кромка -->
-	<APM_Weapon_DominusApexMechlance.tools.2.label>кромка</APM_Weapon_DominusApexMechlance.tools.2.label>
+	<!--                                       EN: handle -->
+	<APM_Weapon_DominusApexMechlance.tools.0.label>handle</APM_Weapon_DominusApexMechlance.tools.0.label>
+	<!--                                       EN: blade -->
+	<APM_Weapon_DominusApexMechlance.tools.1.label>blade</APM_Weapon_DominusApexMechlance.tools.1.label>
+	<!--                                       EN: edge -->
+	<APM_Weapon_DominusApexMechlance.tools.2.label>edge</APM_Weapon_DominusApexMechlance.tools.2.label>
 	<!--                               EN: Dominus apex mechlance -->
 	<APM_Weapon_DominusApexMechlance.label>Dominus apex mechlance</APM_Weapon_DominusApexMechlance.label>
 	<!--                                     EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue. -->
 	<APM_Weapon_DominusApexMechlance.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue.</APM_Weapon_DominusApexMechlance.description>
 	
-	<!--                                 EN: рукоять -->
-	<APM_Weapon_CelerusVoltana.tools.0.label>рукоять</APM_Weapon_CelerusVoltana.tools.0.label>
+	<!--                                 EN: handle -->
+	<APM_Weapon_CelerusVoltana.tools.0.label>handle</APM_Weapon_CelerusVoltana.tools.0.label>
 	<!--                                 EN: tip -->
 	<APM_Weapon_CelerusVoltana.tools.1.label>tip</APM_Weapon_CelerusVoltana.tools.1.label>
 	<!--                                 EN: лезвие -->
@@ -33,8 +33,8 @@
 	<!--                               EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
 	<APM_Weapon_CelerusVoltana.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</APM_Weapon_CelerusVoltana.description>
 	
-	<!--                                     EN: рукоять -->
-	<APM_Weapon_CelerusApexVoltana.tools.0.label>рукоять</APM_Weapon_CelerusApexVoltana.tools.0.label>
+	<!--                                     EN: handle -->
+	<APM_Weapon_CelerusApexVoltana.tools.0.label>handle</APM_Weapon_CelerusApexVoltana.tools.0.label>
 	<!--                                     EN: tip -->
 	<APM_Weapon_CelerusApexVoltana.tools.1.label>tip</APM_Weapon_CelerusApexVoltana.tools.1.label>
 	<!--                                     EN: лезвие -->
@@ -44,10 +44,10 @@
 	<!--                                   EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus. -->
 	<APM_Weapon_CelerusApexVoltana.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus.</APM_Weapon_CelerusApexVoltana.description>
 	
-	<!--                                   EN: рукоять -->
-	<APM_Weapon_TerminusExoblade.tools.0.label>рукоять</APM_Weapon_TerminusExoblade.tools.0.label>
-	<!--                                   EN: острие -->
-	<APM_Weapon_TerminusExoblade.tools.1.label>острие</APM_Weapon_TerminusExoblade.tools.1.label>
+	<!--                                   EN: handle -->
+	<APM_Weapon_TerminusExoblade.tools.0.label>handle</APM_Weapon_TerminusExoblade.tools.0.label>
+	<!--                                   EN: blade -->
+	<APM_Weapon_TerminusExoblade.tools.1.label>blade</APM_Weapon_TerminusExoblade.tools.1.label>
 	<!--                                   EN: лезвие -->
 	<APM_Weapon_TerminusExoblade.tools.2.label>лезвие</APM_Weapon_TerminusExoblade.tools.2.label>
 	<!--                           EN: terminus exoblade -->
@@ -55,10 +55,10 @@
 	<!--                                 EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it. -->
 	<APM_Weapon_TerminusExoblade.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it.</APM_Weapon_TerminusExoblade.description>
 	
-	<!--                                       EN: рукоять -->
-	<APM_Weapon_TerminusApexExoblade.tools.0.label>рукоять</APM_Weapon_TerminusApexExoblade.tools.0.label>
-	<!--                                       EN: острие -->
-	<APM_Weapon_TerminusApexExoblade.tools.1.label>острие</APM_Weapon_TerminusApexExoblade.tools.1.label>
+	<!--                                       EN: handle -->
+	<APM_Weapon_TerminusApexExoblade.tools.0.label>handle</APM_Weapon_TerminusApexExoblade.tools.0.label>
+	<!--                                       EN: blade -->
+	<APM_Weapon_TerminusApexExoblade.tools.1.label>blade</APM_Weapon_TerminusApexExoblade.tools.1.label>
 	<!--                                       EN: лезвие -->
 	<APM_Weapon_TerminusApexExoblade.tools.2.label>лезвие</APM_Weapon_TerminusApexExoblade.tools.2.label>
 	<!--                               EN: terminus apex exoblade -->

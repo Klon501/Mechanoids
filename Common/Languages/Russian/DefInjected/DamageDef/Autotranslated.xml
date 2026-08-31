@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_JavelinWarhead.label>боеголовка «Джавелина»</APM_JavelinWarhead.label>
+  <APM_GazerBeam.label>луч созерцателя</APM_GazerBeam.label>
+  <APM_SunRay.label>солнечный луч</APM_SunRay.label>
+  <Push.label>урон от толчка</Push.label>
+  <APM_Shockwave.label>ударная волна</APM_Shockwave.label>
+  <MegaBeam.label>мега-луч</MegaBeam.label>
+  <APM_HazeAcidBeam.label>кислотный луч мглы</APM_HazeAcidBeam.label>
+  <APM_SonicVibration.label>звуковая вибрация</APM_SonicVibration.label>
+  <APM_Whip.label>хлыст</APM_Whip.label>
+  <APM_Whip.deathMessage>{0} был зарублен насмерть.</APM_Whip.deathMessage>
+  <APM_GazerBeam.deathMessage>{0} был убит лучом.</APM_GazerBeam.deathMessage>
+  <APM_HazeAcidBeam.deathMessage>{0} был убит лучом.</APM_HazeAcidBeam.deathMessage>
+  <APM_SunRay.deathMessage>{0} был убит лучом.</APM_SunRay.deathMessage>
+  <APM_JavelinWarhead.deathMessage>{0} погиб при взрыве.</APM_JavelinWarhead.deathMessage>
+  <APM_Shockwave.deathMessage>{0} был уничтожен ударной волной.</APM_Shockwave.deathMessage>
+  <APM_SonicVibration.deathMessage>{0} был убит звуковой вибрацией.</APM_SonicVibration.deathMessage>
+</LanguageData>

@@ -1,9 +1,0 @@
-<LanguageData>
-	<!-- 1.6\Defs\BodyDef\DynamoBodyDef.xml -->
-	
-	<!--              EN: body -->
-	<APM_DynamoBody.label>body</APM_DynamoBody.label>
-	
-	<!--                 EN: power core -->
-	<APM_DynamoReactor.label>power core</APM_DynamoReactor.label>
-</LanguageData>

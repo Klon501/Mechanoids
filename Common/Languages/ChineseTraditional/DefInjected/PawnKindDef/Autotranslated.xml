@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Mechanitor_Ancient.label>古代機械師</APM_Mechanitor_Ancient.label>
+  <APM_Mechanitor_Nomad.label>遊牧機械師</APM_Mechanitor_Nomad.label>
+  <APM_Mech_Aegis.label>神盾</APM_Mech_Aegis.label>
+  <APM_Mech_Conqueror_DMR.label>卡賓征服者</APM_Mech_Conqueror_DMR.label>
+  <APM_Mech_Conqueror_AR.label>爆破征服者</APM_Mech_Conqueror_AR.label>
+  <APM_Mech_Conqueror_SMG.label>噴吐征服者</APM_Mech_Conqueror_SMG.label>
+  <APM_Mech_Dynamo.label>迪納摩</APM_Mech_Dynamo.label>
+  <APM_Mech_Frostivus.label>霜語者</APM_Mech_Frostivus.label>
+  <APM_Mech_Gazer.label>凝視者</APM_Mech_Gazer.label>
+  <APM_Mech_Haze.label>迷霧</APM_Mech_Haze.label>
+  <APM_Mech_Ingestor.label>吞噬者</APM_Mech_Ingestor.label>
+  <APM_Mech_Javelin.label>標槍</APM_Mech_Javelin.label>
+  <APM_Mech_Lasher.label>鞭撻者</APM_Mech_Lasher.label>
+  <APM_Mech_Mantis.label>螳螂</APM_Mech_Mantis.label>
+  <APM_Mech_Maul.label>巨錘</APM_Mech_Maul.label>
+  <APM_Mech_Pulse.label>脈衝</APM_Mech_Pulse.label>
+  <APM_Mech_Ravager.label>蹂躪者</APM_Mech_Ravager.label>
+  <APM_Mech_Satellite.label>衛星</APM_Mech_Satellite.label>
+  <APM_Mech_Siren.label>海妖</APM_Mech_Siren.label>
+  <APM_Mech_Tinker.label>修補匠</APM_Mech_Tinker.label>
+  <APM_Mech_Vassal.label>附庸</APM_Mech_Vassal.label>
+  <APM_Mech_Dominus.label>主宰</APM_Mech_Dominus.label>
+  <APM_Mech_Dominus_Boss.label>主宰</APM_Mech_Dominus_Boss.label>
+  <APM_Mech_Terminus.label>終焉</APM_Mech_Terminus.label>
+  <APM_Mech_Terminus_Boss.label>終焉</APM_Mech_Terminus_Boss.label>
+  <APM_Mech_Celerus.label>疾風</APM_Mech_Celerus.label>
+  <APM_Mech_Celerus_Boss.label>疾風</APM_Mech_Celerus_Boss.label>
+</LanguageData>

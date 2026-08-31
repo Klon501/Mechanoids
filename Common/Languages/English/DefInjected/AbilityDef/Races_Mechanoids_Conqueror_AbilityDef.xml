@@ -1,8 +1,0 @@
-<LanguageData>
-	<!-- 1.6\Defs\ThingDefs_Races\Races_Mechanoids_Conqueror.xml -->
-	
-	<!--                     EN: ultimate sacrifice -->
-	<APM_UltimateSacrifice.label>ultimate sacrifice</APM_UltimateSacrifice.label>
-	<!--                           EN: By rapidly performing complex aiming, movement and logic calculations until its processing units liquify from the heat, this mechanoid grants its nearby allies a temporary stat buff -->
-	<APM_UltimateSacrifice.description>By rapidly performing complex aiming, movement and logic calculations until its processing units liquify from the heat, this mechanoid grants its nearby allies a temporary stat buff</APM_UltimateSacrifice.description>
-</LanguageData>

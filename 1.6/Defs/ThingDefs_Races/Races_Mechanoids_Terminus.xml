@@ -111,10 +111,14 @@
 
 	<ThingDef ParentName="APM_Mech_Terminus_Base">
 		<defName>APM_Mech_Terminus</defName>
+		<label>Terminus</label>
+		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
 	</ThingDef>
 
 	<ThingDef ParentName="APM_Mech_Terminus_Base">
 		<defName>APM_Mech_TerminusB</defName>
+		<label>Terminus</label>
+		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth region of Europe in medieval times, the Terminus cleaves through waves of foes and not even distance can mitigate its wrath. Its weapon has the ability to sweep through a large area in front of itself. The Terminus can also focus its psychic influence inward, enhancing its damage and stagger resistance. For foes who escape its grasp, it is also equipped with a grappling hook to draw in enemies from a distance to finish off. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
 	</ThingDef>
 
 	<!-- ==================== PAWN KINDS ==================== -->

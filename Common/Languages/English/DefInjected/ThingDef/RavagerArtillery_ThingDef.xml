@@ -4,17 +4,13 @@
 	<APM_Ravager_Artillery.label>Starspewer</APM_Ravager_Artillery.label>
 	<!--                           EN: A moveable auto-mortar with integrated hellsphere adjacent technology, this mechanoid siege weapon was intended to be emplaced on larger mechanoid frames. One can almost feel the mechhive’s hate in every blast of the cannon. -->
 	<APM_Ravager_Artillery.description>A moveable auto-mortar with integrated hellsphere adjacent technology, this mechanoid siege weapon was intended to be emplaced on larger mechanoid frames. One can almost feel the mechhive’s hate in every blast of the cannon.</APM_Ravager_Artillery.description>
-	<!--                             EN: launch frag grenade -->
-	<APM_Ravager_Artillery.verbs.0.label>launch frag grenade</APM_Ravager_Artillery.verbs.0.label>
-	<!--                                                                EN: ㅤ -->
-	<APM_Ravager_Artillery.verbs.ApexMechanoids.Verb_RavagerArtillery.label>ㅤ</APM_Ravager_Artillery.verbs.ApexMechanoids.Verb_RavagerArtillery.label>
 	
 	<!--                       EN: artillery projectile -->
-	<APM_ArtilleryProjectile.label>artillery projectile</APM_ArtilleryProjectile.label>
+	<APM_ArtilleryProjectile.label>plasma artillery shot</APM_ArtilleryProjectile.label>
 	
 	<!--                   EN: starfall carrier -->
-	<APM_StarfallCarrier.label>starfall carrier</APM_StarfallCarrier.label>
+	<APM_StarfallCarrier.label>starfall shot</APM_StarfallCarrier.label>
 	
 	<!--                           EN: starfall split projectile -->
-	<APM_StarfallSplitProjectile.label>starfall split projectile</APM_StarfallSplitProjectile.label>
+	<APM_StarfallSplitProjectile.label>starfall sub munition</APM_StarfallSplitProjectile.label>
 </LanguageData>

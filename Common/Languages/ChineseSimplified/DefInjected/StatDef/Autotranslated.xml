@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_GestationFactor.label>机械体培育速度系数</APM_GestationFactor.label>
+  <APM_GestationFactor.description>机甲孵化速度按此数值相乘。</APM_GestationFactor.description>
+  <APM_CasketBandwidth.label>机械指挥舱带宽</APM_CasketBandwidth.label>
+  <APM_CasketBandwidth.description>当机械师身处机械指挥舱内时，其带宽按此数值提升。</APM_CasketBandwidth.description>
+</LanguageData>

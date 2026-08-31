@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.label>Переработка биомассы</APM_Absorb.label>
+  <APM_Absorb.description>Перемалывает свежий органический труп или съедобный материал, постепенно перерабатывая его в химическое топливо.</APM_Absorb.description>
+  <APM_SwitchToPowerPlantMode.label>Режим электростанции</APM_SwitchToPowerPlantMode.label>
+  <APM_SwitchToPowerPlantMode.description>Переключение в режим электростанции, пожертвовав мобильностью и щитом ради питания местной электросети.</APM_SwitchToPowerPlantMode.description>
+  <APM_SunRay.label>Солнечный луч</APM_SunRay.label>
+  <APM_SunRay.description>Созерцатель испускает разрушительный луч, оставаясь неподвижным для удержания цели на мушке. Все, до чего достает луч, получает огромный урон.</APM_SunRay.description>
+  <APM_PulseWave.label>Импульсная волна</APM_PulseWave.label>
+  <APM_PulseWave.description>Высвобождает ослепляющий акустический импульс, расходящийся от меха и оглушающий вместе с ослеплением всех попавших в зону действия существ из крови и плоти.</APM_PulseWave.description>
+  <APM_HookPawn.label>Крюк-кошка</APM_HookPawn.label>
+  <APM_HookPawn.description>«Терминус» выпускает крюк-кошку: в зависимости от размера цели, либо притягивает врага к себе, либо притягивается к врагу сам.</APM_HookPawn.description>
+  <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
+  <APM_ShieldCharge.description>Броситься на пешку, оглушая все на своем пути.</APM_ShieldCharge.description>
+  <APM_Bladehopp.label>Прорыв лезвий</APM_Bladehopp.label>
+  <APM_Bladehopp.description>Совершить рывок к цели с последующей быстрой атакой.</APM_Bladehopp.description>
+  <APM_BlindingLaser.label>Ослепляющий лазер</APM_BlindingLaser.label>
+  <APM_BlindingLaser.description>Выстрелить лазером по цели, эффективно ослепляя ее на короткое время.</APM_BlindingLaser.description>
+  <APM_Starfall.label>Звездопад</APM_Starfall.label>
+  <APM_Starfall.description>Опустошитель перегружает свою артиллерию и выпускает единый тяжелый снаряд, который прямо в полете разделяется на три энергетических взрыва.</APM_Starfall.description>
+  <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
+  <APM_DefenceMatrix.description>Удаленно проецирует персональный защитный щит на пешку своей фракции. Щит останавливает входящий урон, но также мешает вести стрельбу изнутри. Тинкер будет сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
+  <APM_Ability_SteelDiscipline.label>Стальная дисциплина</APM_Ability_SteelDiscipline.label>
+  <APM_Ability_SteelDiscipline.description>В радиусе вокруг Вассала его союзники получают бонус к скорости, а их шанс нервного срыва снижается (если они органические). Командующее присутствие Вассала вдохновляет окружающих новыми силами и стойкостью.</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_ToxicMist.label>Токсичный туман</APM_Ability_ToxicMist.label>
+  <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
+  <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>
+  <APM_Shockwave.description>Взрывная волна, отбрасывающая врагов в пределах определенного радиуса на некоторое расстояние.</APM_Shockwave.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen.label>дымовая завеса</APM_Ability_SmokeScreen.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen.description>
+
+  <!-- EN: Smokescreen -->
+  <APM_Ability_SmokeScreen_Boss.label>дымовая завеса</APM_Ability_SmokeScreen_Boss.label>
+  <!-- EN: Celerus emits a cloud of smoke, obscuring itself from enemy fire and scanners. -->
+  <APM_Ability_SmokeScreen_Boss.description>Выпуск плотной дымовой завесы, укутывающей целеруса и ближайших союзников скрывающим газом, который затрудняет восприятие противника и дает целерусу боевые бонусы в скрытности.</APM_Ability_SmokeScreen_Boss.description>
+
+  <!-- EN: Celerus Blink -->
+  <APM_CelerusBlink.label>скачок</APM_CelerusBlink.label>
+  <!-- EN: Celerus instantly teleports to a target, leaving a smokescreen behind. -->
+  <APM_CelerusBlink.description>Активация бортового микропривода скачка для мгновенного перемещения в указанную точку.</APM_CelerusBlink.description>
+
+  <!-- EN: Ultimate Sacrifice -->
+  <APM_UltimateSacrifice.label>высшая жертва</APM_UltimateSacrifice.label>
+  <!-- EN: The Conqueror gives its life to unleash a devastating barrage from all weapons at once. -->
+  <APM_UltimateSacrifice.description>Быстро выполняя сложные расчеты прицеливания, движения и логистики до тех пор, пока их процессорные блоки не расплавятся от жары, этот механоид наделяет ближайших союзников временным усилением характеристик.</APM_UltimateSacrifice.description>
+
+  <!-- EN: Press The Attack -->
+  <APM_PressTheAttack.label>развитие атаки</APM_PressTheAttack.label>
+  <!-- EN: Dominus urges its allies to press the attack, boosting their speed and damage. -->
+  <APM_PressTheAttack.description>Доминус испускает психический импульс, побуждающий ближайших союзников игнорировать боль, двигаться быстрее и сохранять бодрость духа.</APM_PressTheAttack.description>
+  <APM_Ability_CryptoSwallow.label>Криопоглощение</APM_Ability_CryptoSwallow.label>
+  <APM_Ability_CryptoSwallow.description>Поглощает гуманоида или труп, запечатывая его во внутренней криокамере. Удерживает цель в состоянии анабиоза до момента извлечения.</APM_Ability_CryptoSwallow.description>
+  <APM_Ability_SirenSong.label>песнь сирены</APM_Ability_SirenSong.label>
+  <APM_Ability_SirenSong.description>Сирена издает приятную мелодию, которая поднимает боевой дух близлежащих органических союзников и помогает им быстрее восстанавливать радость.</APM_Ability_SirenSong.description>
+
+  <!-- EN: Siren Lure -->
+  <APM_Ability_SirenLure.label>манящая песнь</APM_Ability_SirenLure.label>
+  <!-- EN: The Siren creates a lure mimicking her song. -->
+  <APM_Ability_SirenLure.description>Исполнить манящую песню, заставляющую целевого пешку идти в сторону заклинателя.</APM_Ability_SirenLure.description>
+
+  <!-- EN: Skipblade Blink -->
+  <APM_SkipbladeBlink.label>клинковый скачок</APM_SkipbladeBlink.label>
+  <!-- EN: The blade performs a spatial blink, teleporting its wielder to a foe. -->
+  <APM_SkipbladeBlink.description>Клинок совершает рывок сквозь пространство, перемещая владельца к врагу.</APM_SkipbladeBlink.description>
+
+  <!-- EN: mech longjump -->
+  <APM_PulseLongjump.label>дальний прыжок меха</APM_PulseLongjump.label>
+
+  <!-- EN: Jump to a distant location using special ultrafast mechanoid muscles. -->
+  <APM_PulseLongjump.description>Прыжок на дальнее расстояние с использованием особых сверхбыстрых мышц механоида.</APM_PulseLongjump.description>
+
+    <!-- From Race Files -->
+
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive.label>Перегрузка</APM_TerminusOverdrive.label>
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive.description>Терминус перенаправляет энергию внутрь и ненадолго переходит в усиленное боевое состояние. Пока навык активен, он сбрасывает плащ, бьет сильнее, быстрее восстанавливается между ударами и его становится сложнее пошатнуть.</APM_TerminusOverdrive.description>
+  
+  <!-- EN: overdrive -->
+  <APM_TerminusOverdrive_Boss.label>Перегрузка</APM_TerminusOverdrive_Boss.label>
+  <!-- EN: Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger. -->
+  <APM_TerminusOverdrive_Boss.description>Терминус перенаправляет энергию внутрь и ненадолго переходит в усиленное боевое состояние. Пока навык активен, он сбрасывает плащ, бьет сильнее, быстрее восстанавливается между ударами и его становится сложнее пошатнуть.</APM_TerminusOverdrive_Boss.description>
+
+  <!-- EN: severing edge -->
+  <APM_SeveringEdge.label>Рассекающая грань</APM_SeveringEdge.label>
+  <!-- EN: Utilizing the innate psychic channeling qualities of its blade, the caster releases a sweeping blade of energy in front of itself, cutting anything in the area. -->
+  <APM_SeveringEdge.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge.description>
+
+    <APM_SeveringEdge_Boss.label>Рассекающая грань</APM_SeveringEdge_Boss.label>
+  <!-- EN: Utilizing the innate psychic channeling qualities of its blade, the caster releases a sweeping blade of energy in front of itself, cutting anything in the area. -->
+  <APM_SeveringEdge_Boss.description>Используя врождённые свойства своего клинка по проведению психической энергии, заклинатель выпускает перед собой размашистый энергетический клинок, рассекающий всё в этой зоне.</APM_SeveringEdge_Boss.description>
+
+  <!-- Стандартная дуэль -->
+  <APM_Mech_Duel.label>вызов на дуэль</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>Выбранная цель вызывается на дуэль, и вокруг бойцов генерируется защитное поле. На время поединка весь получаемый урон, а также урон от стрелкового оружия и способностей, увеличивается. Если дуэль не завершится за определённое время, дуэлянты получат сильный негативный эффект. Если же один из бойцов погибает или падает без сознания, победитель получает мощное временное усиление.</APM_Mech_Duel.description>
+
+  <!-- Дуэль с боссом -->
+  <APM_Mech_Duel_Boss.label>вызов на дуэль</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>Выбранная цель вызывается на дуэль, и вокруг бойцов генерируется защитное поле. На время поединка весь получаемый урон, а также урон от стрелкового оружия и способностей, увеличивается. Если дуэль не завершится за определённое время, дуэлянты получат сильный негативный эффект. Если же один из бойцов погибает или падает без сознания, победитель получает мощное временное усиление.</APM_Mech_Duel_Boss.description>
+
+  <APM_PulseLongjump.verbProperties.label>прыжок</APM_PulseLongjump.verbProperties.label>
+</LanguageData>

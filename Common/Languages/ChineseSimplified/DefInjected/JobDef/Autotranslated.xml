@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.reportString>正在做某件事。</APM_Absorb.reportString>
+  <APM_CryptoSwallow.reportString>正在做某件事。</APM_CryptoSwallow.reportString>
+  <APM_BashDamage.reportString>正在冲撞 TargetA。</APM_BashDamage.reportString>
+  <APM_BashStun.reportString>正在冲撞 TargetA。</APM_BashStun.reportString>
+  <APM_CastPulseJump.reportString>正在跳跃至 TargetA。</APM_CastPulseJump.reportString>
+  <APM_EnterMechanoidContainer.reportString>正在进入 TargetA。</APM_EnterMechanoidContainer.reportString>
+  <APM_FrostivusManualUnloadFood.reportString>正在卸下保存的食物。</APM_FrostivusManualUnloadFood.reportString>
+  <APM_FrostivusReleaseDevouredContents.reportString>正在释放被保存的生物。</APM_FrostivusReleaseDevouredContents.reportString>
+  <APM_FrostivusTakeFoodToInventory.reportString>正在保存 TargetA。</APM_FrostivusTakeFoodToInventory.reportString>
+  <APM_FrostivusUnloadFoodToStorage.reportString>正在卸载 TargetA。</APM_FrostivusUnloadFoodToStorage.reportString>
+  <APM_HaulToToxicPurifier.reportString>正将废物包搬运至 TargetA。</APM_HaulToToxicPurifier.reportString>
+  <APM_HookPawn.reportString>正朝 TargetA 收回抓钩。</APM_HookPawn.reportString>
+  <APM_LasherMilk.reportString>正在挤 TargetA 的奶。</APM_LasherMilk.reportString>
+  <APM_LasherReleaseToWild.reportString>正在放归 TargetA。</APM_LasherReleaseToWild.reportString>
+  <APM_LasherShear.reportString>正在剪 TargetA 的毛。</APM_LasherShear.reportString>
+  <APM_LasherSlaughter.reportString>正在屠宰 TargetA。</APM_LasherSlaughter.reportString>
+  <APM_LasherTame.reportString>正在驯服 TargetA。</APM_LasherTame.reportString>
+  <APM_LasherTrain.reportString>正在训练 TargetA。</APM_LasherTrain.reportString>
+  <APM_RavagerArtilleryAttack.reportString>正向 TargetA 开炮。</APM_RavagerArtilleryAttack.reportString>
+  <APM_RepairMech.reportString>正在维修 TargetA。</APM_RepairMech.reportString>
+  <APM_SirenChatWithPrisoner.reportString>正在对 TargetA 歌唱。</APM_SirenChatWithPrisoner.reportString>
+  <APM_SirenLureChannel.reportString>正在歌唱。</APM_SirenLureChannel.reportString>
+
+</LanguageData>

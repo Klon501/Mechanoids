@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- EN: Mobile Mode -->
@@ -388,4 +388,35 @@
   <!-- EN: Ground over wastepacks -->
   <APM_ToxicPurifier_Mode_GroundOverWastepacks>地面优先于废包</APM_ToxicPurifier_Mode_GroundOverWastepacks>
 
+  <APM_UnityTooltip_Current>当前属性（含统合连接）：</APM_UnityTooltip_Current>
+  <APM.CommandCasket.Gizmo.OpenStasisContainer.Label>远程开启</APM.CommandCasket.Gizmo.OpenStasisContainer.Label>
+  <APM.CommandCasket.Gizmo.HackStasisContainer.Label>远程破解</APM.CommandCasket.Gizmo.HackStasisContainer.Label>
+  <APM.CommandCasket.Inspect.CurrentAction.StasisContainer>开启停滞容器</APM.CommandCasket.Inspect.CurrentAction.StasisContainer>
+  <APM.MechanoidContainer.ForcedOpen>{0} 强行开启了 {1}，却没有足够的带宽来容纳里面的东西。{2} 已脱出，在机械师接管它之前不受任何人控制。</APM.MechanoidContainer.ForcedOpen>
+  <APM.Tinker.Order.Repair>修复 {0}</APM.Tinker.Order.Repair>
+  <APM.GazerEmplacement.SunRay.Label>日光射线</APM.GazerEmplacement.SunRay.Label>
+  <APM.GazerEmplacement.SunRay.Desc>命令该炮台在其固定的正面扇区内投射日光射线。</APM.GazerEmplacement.SunRay.Desc>
+  <APM.GazerEmplacement.StopForcedTarget.Label>停止强制目标</APM.GazerEmplacement.StopForcedTarget.Label>
+  <APM.GazerEmplacement.StopForcedTarget.Desc>清除当前的强制目标。</APM.GazerEmplacement.StopForcedTarget.Desc>
+  <APM.GazerEmplacement.Status.Firing>状态：正在发射日光射线</APM.GazerEmplacement.Status.Firing>
+  <APM.GazerEmplacement.Status.Charging>状态：充能中</APM.GazerEmplacement.Status.Charging>
+  <APM.GazerEmplacement.Status.CoolingDown>状态：冷却中</APM.GazerEmplacement.Status.CoolingDown>
+  <APM.GazerEmplacement.Status.Ready>状态：就绪</APM.GazerEmplacement.Status.Ready>
+  <APM.GazerEmplacement.ForcedTarget>强制目标：</APM.GazerEmplacement.ForcedTarget>
+  <APM.GazerEmplacement.AutoTarget>自动目标：</APM.GazerEmplacement.AutoTarget>
+  <APM.GazerEmplacement.Target.None>无</APM.GazerEmplacement.Target.None>
+  <APM.GazerEmplacement.Fail.NotSpawned>未生成。</APM.GazerEmplacement.Fail.NotSpawned>
+  <APM.GazerEmplacement.Fail.MissingDefinition>缺少日光射线的定义。</APM.GazerEmplacement.Fail.MissingDefinition>
+  <APM.GazerEmplacement.Fail.BrokenDown>已损坏。</APM.GazerEmplacement.Fail.BrokenDown>
+  <APM.GazerEmplacement.Fail.TurnedOff>已关闭。</APM.GazerEmplacement.Fail.TurnedOff>
+  <APM.GazerEmplacement.Fail.NoPower>没有电力。</APM.GazerEmplacement.Fail.NoPower>
+  <APM.GazerEmplacement.Fail.NeedsOperator>需要操作员。</APM.GazerEmplacement.Fail.NeedsOperator>
+  <APM.GazerEmplacement.Fail.NoTargetCell>请选择一个目标格。</APM.GazerEmplacement.Fail.NoTargetCell>
+  <APM.GazerEmplacement.Fail.TargetGone>目标已消失。</APM.GazerEmplacement.Fail.TargetGone>
+  <APM.GazerEmplacement.Fail.TargetOutOfBounds>目标超出边界。</APM.GazerEmplacement.Fail.TargetOutOfBounds>
+  <APM.GazerEmplacement.Fail.TargetTooClose>目标过近。</APM.GazerEmplacement.Fail.TargetTooClose>
+  <APM.GazerEmplacement.Fail.TargetOutOfRange>目标超出射程。</APM.GazerEmplacement.Fail.TargetOutOfRange>
+  <APM.GazerEmplacement.Fail.TargetOutsideArc>目标位于射击扇区之外。</APM.GazerEmplacement.Fail.TargetOutsideArc>
+  <APM.StatFactorFromHealth.Label>低健康度带来的{STAT}</APM.StatFactorFromHealth.Label>
+  <APM.StatFactorFromHealth.Description>这台机械体的{STAT}会受其健康状况影响。</APM.StatFactorFromHealth.Description>
 </LanguageData>
