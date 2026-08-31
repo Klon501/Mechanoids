@@ -1,0 +1,20 @@
+{
+  "TextureModID": "mortis.apexmechanoids",
+  "ItemDefName": "APM_Weapon_TerminusApexExoblade",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.69582504,
+  "Rotation": 51.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 2,
+  "BladeStart": 0.206759438,
+  "BladeEnd": 1.61829031,
+  "MeleeWeaponType": 2,
+  "TrailTint": {
+    "r": 0.8980392,
+    "g": 0.827451,
+    "b": 0.498039216,
+    "a": 1.0
+  }
+}

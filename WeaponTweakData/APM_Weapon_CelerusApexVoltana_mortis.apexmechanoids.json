@@ -1,0 +1,21 @@
+{
+  "TextureModID": "mortis.apexmechanoids",
+  "ItemDefName": "APM_Weapon_CelerusApexVoltana",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.6401591,
+  "OffY": 0.07952286,
+  "Rotation": 50.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 2,
+  "BladeStart": 0.17097415,
+  "BladeEnd": 1.51491058,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.627451,
+    "g": 0.235294119,
+    "b": 0.9019608,
+    "a": 1.0
+  }
+}

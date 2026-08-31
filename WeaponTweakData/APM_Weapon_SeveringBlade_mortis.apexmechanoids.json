@@ -1,0 +1,13 @@
+{
+  "TextureModID": "mortis.apexmechanoids",
+  "ItemDefName": "APM_Weapon_SeveringBlade",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.4811133,
+  "Rotation": 90.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "BladeStart": 0.278330028,
+  "BladeEnd": 1.21272361,
+  "MeleeWeaponType": 2
+}
