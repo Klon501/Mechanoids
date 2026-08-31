@@ -6,7 +6,7 @@
     <labelShort>warden</labelShort>
     <pawnLabel>Warden</pawnLabel>
     <gerundLabel>wardening</gerundLabel>
-    <description>Manage, feed, chat with, and recruit prisoners.</description>
+    <description>Manage, feed and sing to prisoners and slaves: recruit, enslave, convert, suppress, release and execute.</description>
     <verb>Handle</verb>
     <visible>false</visible>
     <naturalPriority>1100</naturalPriority>

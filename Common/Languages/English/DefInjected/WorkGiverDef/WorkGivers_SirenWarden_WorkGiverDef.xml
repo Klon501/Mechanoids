@@ -1,12 +1,40 @@
 <LanguageData>
 	<!-- 1.6\Defs\WorkGiverDefs\WorkGivers_SirenWarden.xml -->
+	<!--                     EN: execute prisoners -->
+	<APM_SirenDoExecution.label>execute prisoners</APM_SirenDoExecution.label>
+	<!--                    EN: execute -->
+	<APM_SirenDoExecution.verb>execute</APM_SirenDoExecution.verb>
+	<!--                      EN: executing -->
+	<APM_SirenDoExecution.gerund>executing</APM_SirenDoExecution.gerund>
+
+	<!--                      EN: execute slaves -->
+	<APM_SirenExecuteSlave.label>execute slaves</APM_SirenExecuteSlave.label>
+	<!--                     EN: execute -->
+	<APM_SirenExecuteSlave.verb>execute</APM_SirenExecuteSlave.verb>
+	<!--                       EN: executing -->
+	<APM_SirenExecuteSlave.gerund>executing</APM_SirenExecuteSlave.gerund>
+
+	<!--                         EN: emancipate slaves -->
+	<APM_SirenEmancipateSlave.label>emancipate slaves</APM_SirenEmancipateSlave.label>
+	<!--                        EN: emancipate -->
+	<APM_SirenEmancipateSlave.verb>emancipate</APM_SirenEmancipateSlave.verb>
+	<!--                          EN: emancipating -->
+	<APM_SirenEmancipateSlave.gerund>emancipating</APM_SirenEmancipateSlave.gerund>
+
 	<!--                        EN: release prisoners -->
 	<APM_SirenReleasePrisoner.label>release prisoners</APM_SirenReleasePrisoner.label>
 	<!--                       EN: release -->
 	<APM_SirenReleasePrisoner.verb>release</APM_SirenReleasePrisoner.verb>
 	<!--                         EN: releasing -->
 	<APM_SirenReleasePrisoner.gerund>releasing</APM_SirenReleasePrisoner.gerund>
-	
+
+	<!--                        EN: enslave prisoners -->
+	<APM_SirenEnslavePrisoner.label>enslave prisoners</APM_SirenEnslavePrisoner.label>
+	<!--                       EN: enslave -->
+	<APM_SirenEnslavePrisoner.verb>enslave</APM_SirenEnslavePrisoner.verb>
+	<!--                         EN: enslaving -->
+	<APM_SirenEnslavePrisoner.gerund>enslaving</APM_SirenEnslavePrisoner.gerund>
+
 	<!--                          EN: take prisoners to bed -->
 	<APM_SirenTakePrisonerToBed.label>take prisoners to bed</APM_SirenTakePrisonerToBed.label>
 	<!--                         EN: take to bed -->
@@ -20,14 +48,35 @@
 	<APM_SirenFeedPrisoner.verb>feed</APM_SirenFeedPrisoner.verb>
 	<!--                      EN: feeding -->
 	<APM_SirenFeedPrisoner.gerund>feeding</APM_SirenFeedPrisoner.gerund>
-	
+
+	<!--                       EN: imprison slaves -->
+	<APM_SirenImprisonSlave.label>imprison slaves</APM_SirenImprisonSlave.label>
+	<!--                      EN: imprison -->
+	<APM_SirenImprisonSlave.verb>imprison</APM_SirenImprisonSlave.verb>
+	<!--                        EN: imprisoning -->
+	<APM_SirenImprisonSlave.gerund>imprisoning</APM_SirenImprisonSlave.gerund>
+
+	<!--                        EN: convert prisoners -->
+	<APM_SirenConvertPrisoner.label>convert prisoners</APM_SirenConvertPrisoner.label>
+	<!--                       EN: convert -->
+	<APM_SirenConvertPrisoner.verb>convert</APM_SirenConvertPrisoner.verb>
+	<!--                         EN: converting -->
+	<APM_SirenConvertPrisoner.gerund>converting</APM_SirenConvertPrisoner.gerund>
+
 	<!--                              EN: deliver food to prisoners -->
 	<APM_SirenDeliverFoodToPrisoner.label>deliver food to prisoners</APM_SirenDeliverFoodToPrisoner.label>
 	<!--                             EN: deliver food for -->
 	<APM_SirenDeliverFoodToPrisoner.verb>deliver food for</APM_SirenDeliverFoodToPrisoner.verb>
 	<!--                               EN: delivering food for -->
 	<APM_SirenDeliverFoodToPrisoner.gerund>delivering food for</APM_SirenDeliverFoodToPrisoner.gerund>
-	
+
+	<!--                       EN: suppress slaves -->
+	<APM_SirenSuppressSlave.label>suppress slaves</APM_SirenSuppressSlave.label>
+	<!--                      EN: suppress -->
+	<APM_SirenSuppressSlave.verb>suppress</APM_SirenSuppressSlave.verb>
+	<!--                        EN: suppressing -->
+	<APM_SirenSuppressSlave.gerund>suppressing</APM_SirenSuppressSlave.gerund>
+
 	<!--                         EN: chat with prisoners -->
 	<APM_SirenChatWithPrisoner.label>chat with prisoners</APM_SirenChatWithPrisoner.label>
 	<!--                        EN: chat with -->

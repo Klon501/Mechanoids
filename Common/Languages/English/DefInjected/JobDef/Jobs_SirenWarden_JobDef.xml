@@ -2,4 +2,12 @@
 	<!-- 1.6\Defs\JobDefs\Jobs_SirenWarden.xml -->
 	<!--                                EN: singing to TargetA. -->
 	<APM_SirenChatWithPrisoner.reportString>singing to TargetA.</APM_SirenChatWithPrisoner.reportString>
+	<!--                                 EN: singing to enslave TargetA. -->
+	<APM_SirenEnslavePrisoner.reportString>singing to enslave TargetA.</APM_SirenEnslavePrisoner.reportString>
+	<!--                                    EN: singing to break the will of TargetA. -->
+	<APM_SirenReduceWillPrisoner.reportString>singing to break the will of TargetA.</APM_SirenReduceWillPrisoner.reportString>
+	<!--                                 EN: singing to convert TargetA. -->
+	<APM_SirenConvertPrisoner.reportString>singing to convert TargetA.</APM_SirenConvertPrisoner.reportString>
+	<!--                              EN: singing to suppress TargetA. -->
+	<APM_SirenSuppressSlave.reportString>singing to suppress TargetA.</APM_SirenSuppressSlave.reportString>
 </LanguageData>
