@@ -144,8 +144,8 @@
 			     made the mech better against light targets than armoured ones. See the def comment on
 			     APM_JavelinWarhead. -->
 			<damageDef>APM_JavelinWarhead</damageDef>
-			<damageAmountBase>35</damageAmountBase>
-			<armorPenetrationBase>1.35</armorPenetrationBase>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
 			<speed>15</speed>
 			<flyOverhead>false</flyOverhead>
