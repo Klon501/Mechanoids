@@ -15,6 +15,8 @@ namespace ApexMechanoids
 
     public class CompFrostivusFoodPreservation : ThingComp
     {
+        public int nextRescueScanTick = int.MinValue;
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (Gizmo gizmo in base.CompGetGizmosExtra())

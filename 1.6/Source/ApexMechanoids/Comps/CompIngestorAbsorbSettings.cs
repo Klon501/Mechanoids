@@ -15,7 +15,10 @@ namespace ApexMechanoids
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            EnsureCorpseProcessingWorkEnabled();
+            if (!respawningAfterLoad)
+            {
+                EnsureCorpseProcessingWorkEnabled();
+            }
         }
 
         public override void PostExposeData()
@@ -36,8 +39,6 @@ namespace ApexMechanoids
             {
                 yield break;
             }
-
-            EnsureCorpseProcessingWorkEnabled();
 
             yield return new Command_Toggle
             {

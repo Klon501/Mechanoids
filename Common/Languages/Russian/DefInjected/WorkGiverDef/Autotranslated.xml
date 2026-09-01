@@ -85,4 +85,10 @@
   <APM_SirenChatWithPrisoner.label>поговорить с заключенными</APM_SirenChatWithPrisoner.label>
   <APM_SirenChatWithPrisoner.verb>поговорить с</APM_SirenChatWithPrisoner.verb>
   <APM_SirenChatWithPrisoner.gerund>беседа с</APM_SirenChatWithPrisoner.gerund>
+  <APM_FrostivusRescueFood.label>собирать уязвимую еду</APM_FrostivusRescueFood.label>
+  <APM_FrostivusRescueFood.verb>собрать</APM_FrostivusRescueFood.verb>
+  <APM_FrostivusRescueFood.gerund>сбор еды</APM_FrostivusRescueFood.gerund>
+  <APM_FrostivusUnloadFood.label>разгрузить еду в холодильник</APM_FrostivusUnloadFood.label>
+  <APM_FrostivusUnloadFood.verb>разгрузить</APM_FrostivusUnloadFood.verb>
+  <APM_FrostivusUnloadFood.gerund>разгрузка еды</APM_FrostivusUnloadFood.gerund>
 </LanguageData>
