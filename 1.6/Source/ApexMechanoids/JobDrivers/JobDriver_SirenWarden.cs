@@ -5,44 +5,46 @@ using Verse.AI;
 
 namespace ApexMechanoids
 {
-    public class JobDriver_SirenChatWithPrisoner : JobDriver
+    public abstract class JobDriver_SirenSongInteraction : JobDriver
     {
-        private const TargetIndex PrisonerInd = TargetIndex.A;
+        protected const TargetIndex TargetInd = TargetIndex.A;
         private const int VerseDuration = 350;
 
-        private Pawn Prisoner => job.GetTarget(PrisonerInd).Thing as Pawn;
+        protected Pawn Target => job.GetTarget(TargetInd).Thing as Pawn;
+
+        protected virtual int VerseCount => 2;
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return Prisoner != null && pawn.Reserve(Prisoner, job, 1, -1, null, errorOnFailed);
+            return Target != null && pawn.Reserve(Target, job, 1, -1, null, errorOnFailed);
         }
 
         public override IEnumerable<Toil> MakeNewToils()
         {
-            this.FailOnDespawnedOrNull(PrisonerInd);
-            this.FailOnMentalState(PrisonerInd);
-            this.FailOnNotAwake(PrisonerInd);
+            this.FailOnDespawnedOrNull(TargetInd);
+            this.FailOnMentalState(TargetInd);
+            this.FailOnNotAwake(TargetInd);
+            this.FailOnForbidden(TargetInd);
             this.FailOn(() => !SirenWardenUtility.CanSirenWork(pawn));
-            this.FailOn(() => !SirenWardenUtility.CanContinueChatWithPrisoner(pawn, Prisoner));
-            this.FailOn(() => !SirenWardenUtility.HasReachableInteractablePosition(pawn, Prisoner));
+            this.FailOn(() => !CanContinueInteraction());
+            this.FailOn(() => !SirenWardenUtility.HasReachableInteractablePosition(pawn, Target));
 
-            yield return GotoPrisoner();
-            yield return WaitToBeAbleToSing();
-            yield return Toils_Interpersonal.GotoInteractablePosition(PrisonerInd);
-            yield return SingVerse();
-            yield return GotoPrisoner();
-            yield return WaitToBeAbleToSing();
-            yield return Toils_Interpersonal.GotoInteractablePosition(PrisonerInd);
-            yield return SingVerse();
-            yield return ResolveRecruitment();
+            for (int i = 0; i < VerseCount; i++)
+            {
+                yield return GotoTarget();
+                yield return WaitToBeAbleToSing();
+                yield return Toils_Interpersonal.GotoInteractablePosition(TargetInd);
+                yield return SingVerse();
+            }
+
+            yield return ResolveOutcome();
         }
 
-        private Toil GotoPrisoner()
-        {
-            Pawn prisoner = Prisoner;
-            PrisonerInteractionModeDef mode = prisoner?.guest?.ExclusiveInteractionMode ?? PrisonerInteractionModeDefOf.AttemptRecruit;
-            return Toils_Interpersonal.GotoPrisoner(pawn, prisoner, mode);
-        }
+        protected abstract bool CanContinueInteraction();
+
+        protected abstract Toil GotoTarget();
+
+        protected abstract void ResolveInteraction();
 
         private Toil WaitToBeAbleToSing()
         {
@@ -73,13 +75,13 @@ namespace ApexMechanoids
 
         private Toil SingVerse()
         {
-            Toil toil = ToilMaker.MakeToil("SirenSingToPrisoner");
+            Toil toil = ToilMaker.MakeToil("SirenSingVerse");
             toil.initAction = delegate
             {
-                Pawn prisoner = Prisoner;
-                if (prisoner != null)
+                Pawn target = Target;
+                if (target != null)
                 {
-                    PawnUtility.ForceWait(prisoner, VerseDuration, toil.actor);
+                    PawnUtility.ForceWait(target, VerseDuration, toil.actor);
                 }
             };
             toil.defaultCompleteMode = ToilCompleteMode.Delay;
@@ -88,16 +90,89 @@ namespace ApexMechanoids
             return toil;
         }
 
-        private Toil ResolveRecruitment()
+        private Toil ResolveOutcome()
         {
-            Toil toil = ToilMaker.MakeToil("SirenResolveRecruitment");
+            Toil toil = ToilMaker.MakeToil("SirenResolveSongInteraction");
             toil.initAction = delegate
             {
-                SirenWardenUtility.DoRecruitInteraction(toil.actor, Prisoner);
+                ResolveInteraction();
             };
             toil.defaultCompleteMode = ToilCompleteMode.Instant;
             toil.socialMode = RandomSocialMode.Off;
             return toil;
+        }
+    }
+
+    public abstract class JobDriver_SirenPrisonerSong : JobDriver_SirenSongInteraction
+    {
+        protected override Toil GotoTarget()
+        {
+            Pawn prisoner = Target;
+            PrisonerInteractionModeDef mode = prisoner?.guest?.ExclusiveInteractionMode ?? PrisonerInteractionModeDefOf.AttemptRecruit;
+            return Toils_Interpersonal.GotoPrisoner(pawn, prisoner, mode);
+        }
+    }
+
+    public class JobDriver_SirenChatWithPrisoner : JobDriver_SirenPrisonerSong
+    {
+        protected override bool CanContinueInteraction()
+        {
+            return SirenWardenUtility.CanContinueChatWithPrisoner(pawn, Target);
+        }
+
+        protected override void ResolveInteraction()
+        {
+            SirenWardenUtility.DoRecruitInteraction(pawn, Target);
+        }
+    }
+
+    public class JobDriver_SirenEnslavePrisoner : JobDriver_SirenPrisonerSong
+    {
+        protected override bool CanContinueInteraction()
+        {
+            return SirenWardenUtility.CanContinueEnslavePrisoner(pawn, Target);
+        }
+
+        protected override void ResolveInteraction()
+        {
+            SirenWardenUtility.DoEnslaveInteraction(pawn, Target);
+        }
+    }
+
+    public class JobDriver_SirenConvertPrisoner : JobDriver_SirenPrisonerSong
+    {
+        protected override bool CanContinueInteraction()
+        {
+            return SirenWardenUtility.CanContinueConvertPrisoner(pawn, Target);
+        }
+
+        protected override void ResolveInteraction()
+        {
+            SirenWardenUtility.DoConvertInteraction(pawn, Target);
+        }
+    }
+
+    public class JobDriver_SirenSuppressSlave : JobDriver_SirenSongInteraction
+    {
+        protected override int VerseCount => 1;
+
+        protected override Toil GotoTarget()
+        {
+            return Toils_Interpersonal.GotoSlave(pawn, Target);
+        }
+
+        protected override bool CanContinueInteraction()
+        {
+            return SirenWardenUtility.CanContinueSuppressSlave(pawn, Target);
+        }
+
+        protected override void ResolveInteraction()
+        {
+            Pawn slave = Target;
+            if (SirenWardenUtility.DoSuppressInteraction(pawn, slave))
+            {
+                SirenWardenUtility.SetLastSuppressionTime(slave);
+            }
         }
     }
 }

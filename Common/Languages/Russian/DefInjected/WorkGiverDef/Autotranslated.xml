@@ -49,6 +49,27 @@
   <APM_LasherRebalanceAnimalsInPens.label>перераспределить животных по загонам</APM_LasherRebalanceAnimalsInPens.label>
   <APM_LasherRebalanceAnimalsInPens.verb>привязать</APM_LasherRebalanceAnimalsInPens.verb>
   <APM_LasherRebalanceAnimalsInPens.gerund>привязка</APM_LasherRebalanceAnimalsInPens.gerund>
+  <APM_SirenDoExecution.label>казнить заключенных</APM_SirenDoExecution.label>
+  <APM_SirenDoExecution.verb>казнить</APM_SirenDoExecution.verb>
+  <APM_SirenDoExecution.gerund>казнь</APM_SirenDoExecution.gerund>
+  <APM_SirenExecuteSlave.label>казнить рабов</APM_SirenExecuteSlave.label>
+  <APM_SirenExecuteSlave.verb>казнить</APM_SirenExecuteSlave.verb>
+  <APM_SirenExecuteSlave.gerund>казнь</APM_SirenExecuteSlave.gerund>
+  <APM_SirenEmancipateSlave.label>освободить рабов</APM_SirenEmancipateSlave.label>
+  <APM_SirenEmancipateSlave.verb>освободить</APM_SirenEmancipateSlave.verb>
+  <APM_SirenEmancipateSlave.gerund>освобождение</APM_SirenEmancipateSlave.gerund>
+  <APM_SirenEnslavePrisoner.label>поработить заключенных</APM_SirenEnslavePrisoner.label>
+  <APM_SirenEnslavePrisoner.verb>поработить</APM_SirenEnslavePrisoner.verb>
+  <APM_SirenEnslavePrisoner.gerund>порабощение</APM_SirenEnslavePrisoner.gerund>
+  <APM_SirenImprisonSlave.label>заключить рабов под стражу</APM_SirenImprisonSlave.label>
+  <APM_SirenImprisonSlave.verb>заключить под стражу</APM_SirenImprisonSlave.verb>
+  <APM_SirenImprisonSlave.gerund>заключение под стражу</APM_SirenImprisonSlave.gerund>
+  <APM_SirenConvertPrisoner.label>обратить заключенных</APM_SirenConvertPrisoner.label>
+  <APM_SirenConvertPrisoner.verb>обратить</APM_SirenConvertPrisoner.verb>
+  <APM_SirenConvertPrisoner.gerund>обращение</APM_SirenConvertPrisoner.gerund>
+  <APM_SirenSuppressSlave.label>подавить рабов</APM_SirenSuppressSlave.label>
+  <APM_SirenSuppressSlave.verb>подавить</APM_SirenSuppressSlave.verb>
+  <APM_SirenSuppressSlave.gerund>подавление</APM_SirenSuppressSlave.gerund>
   <APM_SirenReleasePrisoner.label>освободить заключенных</APM_SirenReleasePrisoner.label>
   <APM_SirenReleasePrisoner.verb>освободить</APM_SirenReleasePrisoner.verb>
   <APM_SirenReleasePrisoner.gerund>освобождение</APM_SirenReleasePrisoner.gerund>
@@ -64,4 +85,10 @@
   <APM_SirenChatWithPrisoner.label>поговорить с заключенными</APM_SirenChatWithPrisoner.label>
   <APM_SirenChatWithPrisoner.verb>поговорить с</APM_SirenChatWithPrisoner.verb>
   <APM_SirenChatWithPrisoner.gerund>беседа с</APM_SirenChatWithPrisoner.gerund>
+  <APM_FrostivusRescueFood.label>собирать уязвимую еду</APM_FrostivusRescueFood.label>
+  <APM_FrostivusRescueFood.verb>собрать</APM_FrostivusRescueFood.verb>
+  <APM_FrostivusRescueFood.gerund>сбор еды</APM_FrostivusRescueFood.gerund>
+  <APM_FrostivusUnloadFood.label>разгрузить еду в холодильник</APM_FrostivusUnloadFood.label>
+  <APM_FrostivusUnloadFood.verb>разгрузить</APM_FrostivusUnloadFood.verb>
+  <APM_FrostivusUnloadFood.gerund>разгрузка еды</APM_FrostivusUnloadFood.gerund>
 </LanguageData>

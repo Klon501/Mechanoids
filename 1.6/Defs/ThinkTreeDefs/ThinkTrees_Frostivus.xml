@@ -73,8 +73,7 @@
 										<li Class="JobGiver_SeekAllowedArea" />
 										<li Class="JobGiver_GetEnergy_Charger" />
 										<li Class="ApexMechanoids.JobGiver_FrostivusRescuePawn" />
-										<li Class="ApexMechanoids.JobGiver_FrostivusPreserveFood" />
-										<li Class="ApexMechanoids.JobGiver_FrostivusUnloadFoodToStorage" />
+										<li Class="JobGiver_Work" />
 										<li Class="ThinkNode_ConditionalWorkMech">
 											<invert>true</invert>
 											<subNodes>
@@ -119,8 +118,7 @@
 									<workMode>Escort</workMode>
 									<subNodes>
 										<li Class="ApexMechanoids.JobGiver_FrostivusRescuePawn" />
-										<li Class="ApexMechanoids.JobGiver_FrostivusPreserveFood" />
-										<li Class="ApexMechanoids.JobGiver_FrostivusUnloadFoodToStorage" />
+										<li Class="JobGiver_Work" />
 										<li Class="JobGiver_ExitMapFollowOverseer" />
 										<li Class="JobGiver_AIDefendOverseer" />
 										<li Class="JobGiver_AIFollowOverseer" />

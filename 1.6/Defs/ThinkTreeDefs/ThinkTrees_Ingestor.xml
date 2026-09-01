@@ -84,7 +84,6 @@
 									<subNodes>
 										<li Class="JobGiver_SeekAllowedArea" />
 										<li Class="JobGiver_GetEnergy_Charger" />
-										<li Class="ApexMechanoids.JobGiver_IngestorRecycleBiomass" />
 										<li Class="JobGiver_Work">
 											<emergency>true</emergency>
 										</li>
@@ -129,7 +128,7 @@
 								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
 									<workMode>Escort</workMode>
 									<subNodes>
-										<li Class="ApexMechanoids.JobGiver_IngestorRecycleBiomass" />
+										<li Class="JobGiver_Work" />
 										<li Class="JobGiver_ExitMapFollowOverseer" />
 										<li Class="JobGiver_AIDefendOverseer" />
 										<li Class="JobGiver_AIFollowOverseer" />

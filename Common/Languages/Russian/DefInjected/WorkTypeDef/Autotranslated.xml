@@ -6,7 +6,7 @@
   <APM_IngestorCorpseProcessing.verb>Поглощать</APM_IngestorCorpseProcessing.verb>
   <APM_LasherHandling.description>Приручение, тренировка, стрижка/дойка и забой животных.</APM_LasherHandling.description>
   <APM_LasherHandling.verb>Управлять</APM_LasherHandling.verb>
-  <APM_SirenWarden.description>Управление, кормление, общение и вербовка заключенных.</APM_SirenWarden.description>
+  <APM_SirenWarden.description>Уход за заключенными и рабами и пение для них: вербовка, порабощение, обращение, подавление, освобождение и казнь.</APM_SirenWarden.description>
   <APM_SirenWarden.verb>Надзирать</APM_SirenWarden.verb>
   <APM_TinkerRepair.description>Ремонт построек и механоидов своей фракции.</APM_TinkerRepair.description>
   <APM_TinkerRepair.verb>Чинить</APM_TinkerRepair.verb>

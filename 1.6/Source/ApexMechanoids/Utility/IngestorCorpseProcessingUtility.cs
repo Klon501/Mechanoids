@@ -1,4 +1,4 @@
-﻿using RimWorld;
+using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -140,18 +140,6 @@ namespace ApexMechanoids
                 && absorb.verb.ValidateTarget(target, false);
         }
 
-        public static Corpse FindBestAutoAbsorbCorpse(Pawn pawn, float maxDistance = 9999f)
-        {
-            if (!CanDoCorpseProcessing(pawn))
-            {
-                return null;
-            }
-
-            return RequiresMarkedCorpses(pawn)
-                ? FindBestMarkedAbsorbCorpse(pawn, maxDistance)
-                : FindClosestAbsorbCorpse(pawn, maxDistance);
-        }
-
         public static Job MakeAbsorbCorpseJob(Pawn pawn, Corpse corpse, Ability absorb = null, int expiryInterval = 500)
         {
             if (absorb == null)
@@ -185,78 +173,6 @@ namespace ApexMechanoids
             }
 
             return hediff.TryGetComp<HediffComp_IngestorBiomassProcessor>();
-        }
-
-        private static Corpse FindBestMarkedAbsorbCorpse(Pawn pawn, float maxDistance)
-        {
-            if (pawn?.Map == null)
-            {
-                return null;
-            }
-
-            Corpse bestCorpse = null;
-            Designation staleDesignation = null;
-            int bestDistance = int.MaxValue;
-            int maxDistanceSquared = maxDistance >= 9999f ? int.MaxValue : Mathf.CeilToInt(maxDistance * maxDistance);
-
-            foreach (Designation designation in pawn.Map.designationManager.SpawnedDesignationsOfDef(ApexDefsOf.APM_IngestorAbsorbCorpse))
-            {
-                if (!(designation.target.Thing is Corpse corpse))
-                {
-                    if (staleDesignation == null)
-                    {
-                        staleDesignation = designation;
-                    }
-                    continue;
-                }
-
-                int distance = pawn.Position.DistanceToSquared(corpse.Position);
-                if (distance > maxDistanceSquared || distance >= bestDistance)
-                {
-                    continue;
-                }
-
-                if (!CanUseAbsorbOnCorpse(pawn, corpse))
-                {
-                    if (ShouldClearAbsorbDesignation(corpse))
-                    {
-                        if (staleDesignation == null)
-                        {
-                            staleDesignation = designation;
-                        }
-                    }
-
-                    continue;
-                }
-
-                bestCorpse = corpse;
-                bestDistance = distance;
-            }
-
-            if (staleDesignation != null)
-            {
-                UnregisterAbsorbDesignation(staleDesignation.target.Thing as Corpse);
-                pawn.Map.designationManager.RemoveDesignation(staleDesignation);
-            }
-
-            return bestCorpse;
-        }
-
-        private static Corpse FindClosestAbsorbCorpse(Pawn pawn, float maxDistance)
-        {
-            if (pawn?.Map == null)
-            {
-                return null;
-            }
-
-            return GenClosest.ClosestThingReachable(
-                pawn.Position,
-                pawn.Map,
-                ThingRequest.ForGroup(ThingRequestGroup.Corpse),
-                PathEndMode.Touch,
-                TraverseParms.For(pawn, Danger.Deadly),
-                maxDistance,
-                thing => thing is Corpse corpse && CanUseAbsorbOnCorpse(pawn, corpse)) as Corpse;
         }
 
         public static CompIngestorAbsorbSettings GetAbsorbSettings(Pawn pawn)
@@ -347,16 +263,6 @@ namespace ApexMechanoids
             }
 
             return System.Math.Max(1, Mathf.FloorToInt(thing.def.ingestible.CachedNutrition * thing.stackCount * chemfuelPerNutrition));
-        }
-
-        public static void SpawnChemfuelNear(IntVec3 center, Map map, int count)
-        {
-            TrySpawnThingNear(center, map, ThingDefOf.Chemfuel, count);
-        }
-
-        public static void SpawnThingNear(IntVec3 center, Map map, ThingDef thingDef, int count)
-        {
-            TrySpawnThingNear(center, map, thingDef, count);
         }
 
         public static bool TrySpawnThingNear(IntVec3 center, Map map, ThingDef thingDef, int count)

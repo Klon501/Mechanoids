@@ -6,8 +6,8 @@
 	<APM_SirenWarden.pawnLabel>Warden</APM_SirenWarden.pawnLabel>
 	<!--                     EN: wardening -->
 	<APM_SirenWarden.gerundLabel>wardening</APM_SirenWarden.gerundLabel>
-	<!--                     EN: Manage, feed, chat with, and recruit prisoners. -->
-	<APM_SirenWarden.description>Manage, feed, chat with, and recruit prisoners.</APM_SirenWarden.description>
+	<!--                     EN: Manage, feed and sing to prisoners and slaves: recruit, enslave, convert, suppress, release and execute. -->
+	<APM_SirenWarden.description>Manage, feed and sing to prisoners and slaves: recruit, enslave, convert, suppress, release and execute.</APM_SirenWarden.description>
 	<!--              EN: Handle -->
 	<APM_SirenWarden.verb>Handle</APM_SirenWarden.verb>
 </LanguageData>

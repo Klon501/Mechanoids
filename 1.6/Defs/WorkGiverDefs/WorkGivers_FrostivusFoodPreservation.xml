@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>APM_FrostivusRescueFood</defName>
+    <label>collect vulnerable food</label>
+    <giverClass>ApexMechanoids.WorkGiver_FrostivusRescueFood</giverClass>
+    <workType>APM_FrostivusFoodPreservation</workType>
+    <verb>collect</verb>
+    <gerund>collecting</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>APM_FrostivusUnloadFood</defName>
+    <label>unload food to cold storage</label>
+    <giverClass>ApexMechanoids.WorkGiver_FrostivusUnloadFood</giverClass>
+    <workType>APM_FrostivusFoodPreservation</workType>
+    <verb>unload</verb>
+    <gerund>unloading</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+</Defs>
