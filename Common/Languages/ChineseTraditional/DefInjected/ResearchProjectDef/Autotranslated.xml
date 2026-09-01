@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ApexMechtech.label>巔峰機械科技</ApexMechtech.label>
+  <ApexMechtech.description>你的機械師建立並控制巔峰機械體所需的技術。可以指使機械師召喚三君主威脅來取得晶片，也可以分別召喚他們。</ApexMechtech.description>
+  <AdvancedMechtech.label>高級機械科技</AdvancedMechtech.label>
+  <AdvancedMechtech.description>你的機械師建立並控制高階機械體所需的技術。可以指使機械師召喚凝視者威脅來取得晶片。</AdvancedMechtech.description>
+</LanguageData>

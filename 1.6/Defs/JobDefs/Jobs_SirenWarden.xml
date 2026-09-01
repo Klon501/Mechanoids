@@ -8,4 +8,32 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
+  <JobDef>
+    <defName>APM_SirenEnslavePrisoner</defName>
+    <driverClass>ApexMechanoids.JobDriver_SirenEnslavePrisoner</driverClass>
+    <reportString>singing to enslave TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_SirenReduceWillPrisoner</defName>
+    <driverClass>ApexMechanoids.JobDriver_SirenEnslavePrisoner</driverClass>
+    <reportString>singing to break the will of TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_SirenConvertPrisoner</defName>
+    <driverClass>ApexMechanoids.JobDriver_SirenConvertPrisoner</driverClass>
+    <reportString>singing to convert TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>APM_SirenSuppressSlave</defName>
+    <driverClass>ApexMechanoids.JobDriver_SirenSuppressSlave</driverClass>
+    <reportString>singing to suppress TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
 </Defs>

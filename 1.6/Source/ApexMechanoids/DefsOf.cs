@@ -74,6 +74,10 @@ namespace ApexMechanoids
         public static JobDef APM_LasherSlaughter;
         public static JobDef APM_LasherReleaseToWild;
         public static JobDef APM_SirenChatWithPrisoner;
+        public static JobDef APM_SirenEnslavePrisoner;
+        public static JobDef APM_SirenReduceWillPrisoner;
+        public static JobDef APM_SirenConvertPrisoner;
+        public static JobDef APM_SirenSuppressSlave;
         public static JobDef APM_FrostivusTakeFoodToInventory;
         public static JobDef APM_FrostivusUnloadFoodToStorage;
         public static JobDef APM_FrostivusManualUnloadFood;

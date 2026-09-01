@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Group_Dominus.leaderDescription>{LEADERKIND_label} 是单挑的大师。它会以灵能锁定目标，将其拖入一对一的决斗；在此阶段，切勿让你最宝贵的殖民者与之交战，因为落败者会被大幅削弱。让其他战士保持距离，以免被它的能量波波及；只在它意志耗尽时集中火力攻击，以利用其虚弱状态。</APM_Group_Dominus.leaderDescription>
+  <APM_Group_Terminus.leaderDescription>{LEADERKIND_label} 是一台无情的战争机器，专治那些试图拉开距离的人。它的近战横扫能重创聚集成群的敌人，而抓钩会把你的远程单位强行拖进它的攻击范围。分散你的部队以减少横扫伤害，并准备高耐久的近战阻挡者，在它将你的射手拽入手中之前将其拦截。</APM_Group_Terminus.leaderDescription>
+  <APM_Group_Celerus.leaderDescription>{LEADERKIND_label} 精通规避与扰乱。它利用短距离瞬移与烟幕让自己无法被察觉，同时持续释放电击。当它隐匿于烟幕中时，不要依赖精确瞄准；改用范围杀伤武器把它从烟雾里逼出来，并在两次瞬移之间抓住它。</APM_Group_Celerus.leaderDescription>
+  <APM_Group_Gazer.leaderDescription>{LEADERKIND_label} 是一处静止不动、却具有毁灭性潜力的威胁。它的光束发射器需要较长时间稳定，这给了你一个窗口，得以在它摧毁路径上的一切之前挪出火力线。如果它陷入沉寂，很可能正在蓄力一记自杀式的灭世轰击——一旦它开始这最后一段蓄能，你必须立刻摧毁它，或撤离该区域。</APM_Group_Gazer.leaderDescription>
+
+</LanguageData>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_FrostivusFoodPreservation.description>抢救会因温度而腐坏的食物，并卸到冷藏处。</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>保鲜</APM_FrostivusFoodPreservation.verb>
+  <APM_IngestorCorpseProcessing.description>将有机尸体加工成化学燃料。</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>摄入</APM_IngestorCorpseProcessing.verb>
+  <APM_LasherHandling.description>驯服、训练、采集资源并屠宰动物。</APM_LasherHandling.description>
+  <APM_LasherHandling.verb>管理</APM_LasherHandling.verb>
+  <APM_SirenWarden.description>管理、喂养、交谈并招募囚犯。</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>管理</APM_SirenWarden.verb>
+  <APM_TinkerRepair.description>维修同派系建筑与机械体。</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>维修</APM_TinkerRepair.verb>
+  <APM_FrostivusFoodPreservation.gerundLabel>保存食物</APM_FrostivusFoodPreservation.gerundLabel>
+  <APM_FrostivusFoodPreservation.labelShort>保存</APM_FrostivusFoodPreservation.labelShort>
+  <APM_FrostivusFoodPreservation.pawnLabel>保存者</APM_FrostivusFoodPreservation.pawnLabel>
+  <APM_IngestorCorpseProcessing.gerundLabel>吞噬尸体</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.labelShort>吞噬</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>吞噬者</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_LasherHandling.gerundLabel>驯兽</APM_LasherHandling.gerundLabel>
+  <APM_LasherHandling.labelShort>驯兽</APM_LasherHandling.labelShort>
+  <APM_LasherHandling.pawnLabel>驯兽师</APM_LasherHandling.pawnLabel>
+  <APM_SirenWarden.gerundLabel>监管</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.labelShort>狱卒</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>狱卒</APM_SirenWarden.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>维修建筑与机械体</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.labelShort>维修</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>修补匠</APM_TinkerRepair.pawnLabel>
+</LanguageData>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.label>Переробка біомаси</APM_Absorb.label>
+  <APM_Absorb.description>Перемелює свіжий органічний труп або їстівний матеріал, поступово переробляючи його на хімічне паливо.</APM_Absorb.description>
+  <APM_SwitchToPowerPlantMode.label>режим електростанції</APM_SwitchToPowerPlantMode.label>
+  <APM_SwitchToPowerPlantMode.description>Перемкнутися в режим електростанції, пожертвувавши рухливістю й щитом заради живлення місцевої енергомережі.</APM_SwitchToPowerPlantMode.description>
+  <APM_SunRay.label>сонячний промінь</APM_SunRay.label>
+  <APM_SunRay.description>Спостерігач випускає з себе спустошливий промінь, залишаючись нерухомим, щоб утримувати промінь на цілі. Все, до чого дістає промінь, зазнає величезного урону.</APM_SunRay.description>
+  <APM_PulseWave.label>імпульсна хвиля</APM_PulseWave.label>
+  <APM_PulseWave.description>Вивільняє засліплюючий акустичний імпульс, що розходиться від механоїда, оглушуючи та засліплюючи спалахом живих пішаків у зоні дії хвилі.</APM_PulseWave.description>
+  <APM_HookPawn.label>Гак-кішка</APM_HookPawn.label>
+  <APM_HookPawn.description>Термінус випускає свій гак-кішку: залежно від розміру цілі він або притягує ворога до себе, або сам притягується до ворога.</APM_HookPawn.description>
+  <APM_ShieldCharge.label>Таран щитом</APM_ShieldCharge.label>
+  <APM_ShieldCharge.description>Ринутися на пішку, оглушуючи все на своєму шляху.</APM_ShieldCharge.description>
+  <APM_Bladehopp.label>Стрибок лез</APM_Bladehopp.label>
+  <APM_Bladehopp.description>Богомол рветься вперед, завдаючи жорстокого розмашистого удару по вибраній цілі.</APM_Bladehopp.description>
+  <APM_BlindingLaser.label>Засліплюючий лазер</APM_BlindingLaser.label>
+  <APM_BlindingLaser.description>Вистрілити лазером по цілі, фактично засліплюючи її на короткий час.</APM_BlindingLaser.description>
+  <APM_Starfall.label>Зорепад</APM_Starfall.label>
+  <APM_Starfall.description>Спустошувач перевантажує свою артилерію і випускає єдиний важкий снаряд, який просто в польоті розділяється на три енергетичні вибухи.</APM_Starfall.description>
+  <APM_DefenceMatrix.label>захисна матриця</APM_DefenceMatrix.label>
+  <APM_DefenceMatrix.description>Віддалено спроєктувати персональний захисний щит на дружнього персонажа. Щит зупиняє вхідний урон, але при цьому не дозволяє вести вогонь назовні. Це може бути корисним, навіть якщо щит накладено на ворога. При цьому Майстер буде повністю зосереджений на підтримці щита.</APM_DefenceMatrix.description>
+  <APM_Ability_SteelDiscipline.label>сталева дисципліна</APM_Ability_SteelDiscipline.label>
+  <APM_Ability_SteelDiscipline.description>У радіусі навколо Васала його союзники отримують бонус до швидкості, а в органічних знижується шанс нервового зриву. Командна присутність Васала надихає всіх поруч новою цілеспрямованістю та стійкістю.</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_ToxicMist.label>токсичний туман</APM_Ability_ToxicMist.label>
+  <APM_Ability_ToxicMist.description>Подібно до токс-пакета, завіса вивільняє навколо себе токсичний газ, огортаючи околиці отруйною хмарою.</APM_Ability_ToxicMist.description>
+  <APM_Shockwave.label>ударна хвиля</APM_Shockwave.label>
+  <APM_Shockwave.description>Вибухова хвиля, що відкидає ворогів у межах певного радіуса на деяку відстань.</APM_Shockwave.description>
+  <APM_CelerusBlink.label>стрибок</APM_CelerusBlink.label>
+  <APM_CelerusBlink.description>Активувати бортовий мініатюрний стрибковий двигун і миттєво переміститися у вибрану точку.</APM_CelerusBlink.description>
+  <APM_UltimateSacrifice.label>остання жертва</APM_UltimateSacrifice.label>
+  <APM_UltimateSacrifice.description>Один із Завойовників може пожертвувати собою, щоб дати потужне підсилення всім союзним Завойовникам у радіусі дії.</APM_UltimateSacrifice.description>
+  <APM_PressTheAttack.label>натиск</APM_PressTheAttack.label>
+  <APM_PressTheAttack.description>Домінус випромінює психічний імпульс, що спонукає ближніх союзників ігнорувати біль, рухатися швидше й зберігати бадьорість духу.</APM_PressTheAttack.description>
+  <APM_Ability_CryptoSwallow.label>кріопоглинання</APM_Ability_CryptoSwallow.label>
+  <APM_Ability_CryptoSwallow.description>Поглинути живу пішку або тіло й запечатати всередині внутрішньої кріокамери до випуску.</APM_Ability_CryptoSwallow.description>
+  <APM_Ability_SirenSong.label>пісня сирени</APM_Ability_SirenSong.label>
+  <APM_Ability_SirenSong.description>Сирена видає приємну мелодію, яка підіймає бойовий дух ближніх органічних союзників і допомагає їм швидше відновлювати розваги.</APM_Ability_SirenSong.description>
+  <APM_Ability_SirenLure.label>спокуслива пісня</APM_Ability_SirenLure.label>
+  <APM_Ability_SirenLure.description>Заспівати принадну пісню, змушуючи цільову пішку йти до виконавця.</APM_Ability_SirenLure.description>
+  <APM_SeveringEdge.description>Використовуючи вроджені властивості свого клинка проводити психічну енергію, виконавець вивільняє перед собою розмашистий енергетичний клинок, розсікаючи все в цій зоні.</APM_SeveringEdge.description>
+  <APM_SeveringEdge_Boss.description>Використовуючи вроджені властивості свого клинка проводити психічну енергію, Термінус вивільняє перед собою розмашистий енергетичний клинок, розсікаючи все в цій зоні.</APM_SeveringEdge_Boss.description>
+  <APM_SkipbladeBlink.label>телепорт</APM_SkipbladeBlink.label>
+  <APM_SkipbladeBlink.description>Спрямувати вбудовану в стрибковий клинок технологію переміщення, щоб миттєво перестрибнути в сусідню точку.</APM_SkipbladeBlink.description>
+  <APM_Mech_Duel.label>Випробування дуеллю</APM_Mech_Duel.label>
+  <APM_Mech_Duel.description>Обрана ціль викликається на дуель, і навколо дуелянтів генерується щит. На час дуелі дистанційні атаки, здібності та отримувана шкода посилюються. Крім того, якщо дуель не завершиться за відведений час, дуелянти отримають суворе ослаблення. Якщо ж один із бійців загине або буде повалений, переможець натомість отримає потужне тимчасове посилення.</APM_Mech_Duel.description>
+  <APM_Mech_Duel_Boss.label>Випробування дуеллю</APM_Mech_Duel_Boss.label>
+  <APM_Mech_Duel_Boss.description>Обрана ціль викликається на дуель, і навколо дуелянтів генерується щит. На час дуелі дистанційні атаки, здібності та отримувана шкода посилюються. Крім того, якщо дуель не завершиться за відведений час, дуелянти отримають суворе ослаблення. Якщо ж один із бійців загине або буде повалений, переможець натомість отримає потужне тимчасове посилення.</APM_Mech_Duel_Boss.description>
+  <APM_TerminusOverdrive.label>перевантаження</APM_TerminusOverdrive.label>
+  <APM_TerminusOverdrive.description>Термінус спрямовує енергію всередину й ненадовго переходить у підсилений бойовий стан. Поки це активно, він скидає плащ, б'є сильніше, швидше відновлюється між ударами, і його важче похитнути.</APM_TerminusOverdrive.description>
+  <APM_TerminusOverdrive_Boss.label>перевантаження</APM_TerminusOverdrive_Boss.label>
+  <APM_TerminusOverdrive_Boss.description>Термінус спрямовує енергію всередину й ненадовго переходить у підсилений бойовий стан. Поки це активно, він скидає плащ, б'є сильніше, швидше відновлюється між ударами, і його важче похитнути.</APM_TerminusOverdrive_Boss.description>
+  <APM_SeveringEdge.label>розсікаюча грань</APM_SeveringEdge.label>
+  <APM_SeveringEdge_Boss.label>розсікаюча грань</APM_SeveringEdge_Boss.label>
+  <APM_Ability_SmokeScreen.label>димова завіса</APM_Ability_SmokeScreen.label>
+  <APM_Ability_SmokeScreen.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen.description>
+  <APM_Ability_SmokeScreen_Boss.label>димова завіса</APM_Ability_SmokeScreen_Boss.label>
+  <APM_Ability_SmokeScreen_Boss.description>Випуск щільної димової завіси, що огортає Целеруса та союзників поруч приховувальним газом, який ускладнює сприйняття ворога й дає Целерусу бойові бонуси, поки він прихований.</APM_Ability_SmokeScreen_Boss.description>
+  <APM_PulseLongjump.label>Стрибок механоїда</APM_PulseLongjump.label>
+  <APM_PulseLongjump.description>Стрибок на далеку відстань за допомогою спеціальних надшвидких м’язів механоїда.</APM_PulseLongjump.description>
+  <APM_PulseLongjump.verbProperties.label>стрибок</APM_PulseLongjump.verbProperties.label>
+</LanguageData>

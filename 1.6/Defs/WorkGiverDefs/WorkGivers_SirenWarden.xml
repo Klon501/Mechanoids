@@ -2,6 +2,51 @@
 <Defs>
 
   <WorkGiverDef>
+    <defName>APM_SirenDoExecution</defName>
+    <label>execute prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenDoExecution</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>execute</verb>
+    <gerund>executing</gerund>
+    <priorityInType>110</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenExecuteSlave</defName>
+    <label>execute slaves</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenExecuteSlave</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>execute</verb>
+    <gerund>executing</gerund>
+    <priorityInType>109</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenEmancipateSlave</defName>
+    <label>emancipate slaves</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenEmancipateSlave</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>emancipate</verb>
+    <gerund>emancipating</gerund>
+    <priorityInType>105</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
     <defName>APM_SirenReleasePrisoner</defName>
     <label>release prisoners</label>
     <giverClass>ApexMechanoids.WorkGiver_SirenWardenReleasePrisoner</giverClass>
@@ -13,6 +58,21 @@
       <li>Manipulation</li>
     </requiredCapacities>
     <equivalenceGroup>ReleasePrisoner</equivalenceGroup>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenEnslavePrisoner</defName>
+    <label>enslave prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenEnslave</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>enslave</verb>
+    <gerund>enslaving</gerund>
+    <priorityInType>95</priorityInType>
+    <requiredCapacities>
+      <li>Talking</li>
+    </requiredCapacities>
     <canBeDoneByMechs>true</canBeDoneByMechs>
     <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
   </WorkGiverDef>
@@ -47,6 +107,36 @@
     <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
   </WorkGiverDef>
 
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenImprisonSlave</defName>
+    <label>imprison slaves</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenImprisonSlave</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>imprison</verb>
+    <gerund>imprisoning</gerund>
+    <priorityInType>75</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenConvertPrisoner</defName>
+    <label>convert prisoners</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenConvert</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>convert</verb>
+    <gerund>converting</gerund>
+    <priorityInType>72</priorityInType>
+    <requiredCapacities>
+      <li>Talking</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
   <WorkGiverDef>
     <defName>APM_SirenDeliverFoodToPrisoner</defName>
     <label>deliver food to prisoners</label>
@@ -57,6 +147,21 @@
     <priorityInType>70</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+    <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>
+  </WorkGiverDef>
+
+  <WorkGiverDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>APM_SirenSuppressSlave</defName>
+    <label>suppress slaves</label>
+    <giverClass>ApexMechanoids.WorkGiver_SirenWardenSuppressSlave</giverClass>
+    <workType>APM_SirenWarden</workType>
+    <verb>suppress</verb>
+    <gerund>suppressing</gerund>
+    <priorityInType>65</priorityInType>
+    <requiredCapacities>
+      <li>Talking</li>
     </requiredCapacities>
     <canBeDoneByMechs>true</canBeDoneByMechs>
     <canBeDoneWhileDrafted>false</canBeDoneWhileDrafted>

@@ -1,0 +1,20 @@
+{
+  "TextureModID": "mortis.apexmechanoids",
+  "ItemDefName": "APM_Weapon_DominusApexMechlance",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.401590466,
+  "Rotation": 50.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 2,
+  "BladeStart": 0.3220676,
+  "BladeEnd": 1.252485,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.9019608,
+    "g": 0.509803951,
+    "b": 0.156862751,
+    "a": 1.0
+  }
+}

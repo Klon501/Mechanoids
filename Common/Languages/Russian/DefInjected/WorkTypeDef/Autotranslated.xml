@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_FrostivusFoodPreservation.description>Спасение уязвимой еды из небезопасного хранения или от порчи на улице с последующей разгрузкой в холодильник при наличии возможности.</APM_FrostivusFoodPreservation.description>
+  <APM_FrostivusFoodPreservation.verb>Консервировать</APM_FrostivusFoodPreservation.verb>
+  <APM_IngestorCorpseProcessing.description>Переработка органических трупов в биотопливо.</APM_IngestorCorpseProcessing.description>
+  <APM_IngestorCorpseProcessing.verb>Поглощать</APM_IngestorCorpseProcessing.verb>
+  <APM_LasherHandling.description>Приручение, тренировка, стрижка/дойка и забой животных.</APM_LasherHandling.description>
+  <APM_LasherHandling.verb>Управлять</APM_LasherHandling.verb>
+  <APM_SirenWarden.description>Уход за заключенными и рабами и пение для них: вербовка, порабощение, обращение, подавление, освобождение и казнь.</APM_SirenWarden.description>
+  <APM_SirenWarden.verb>Надзирать</APM_SirenWarden.verb>
+  <APM_TinkerRepair.description>Ремонт построек и механоидов своей фракции.</APM_TinkerRepair.description>
+  <APM_TinkerRepair.verb>Чинить</APM_TinkerRepair.verb>
+  <APM_FrostivusFoodPreservation.gerundLabel>сохранение еды</APM_FrostivusFoodPreservation.gerundLabel>
+  <APM_FrostivusFoodPreservation.labelShort>сохранить</APM_FrostivusFoodPreservation.labelShort>
+  <APM_FrostivusFoodPreservation.pawnLabel>Хранитель</APM_FrostivusFoodPreservation.pawnLabel>
+  <APM_IngestorCorpseProcessing.gerundLabel>поглощение трупов</APM_IngestorCorpseProcessing.gerundLabel>
+  <APM_IngestorCorpseProcessing.labelShort>поглотить</APM_IngestorCorpseProcessing.labelShort>
+  <APM_IngestorCorpseProcessing.pawnLabel>Поглотитель</APM_IngestorCorpseProcessing.pawnLabel>
+  <APM_LasherHandling.gerundLabel>дрессировка</APM_LasherHandling.gerundLabel>
+  <APM_LasherHandling.labelShort>дрессировать</APM_LasherHandling.labelShort>
+  <APM_LasherHandling.pawnLabel>Дрессировщик</APM_LasherHandling.pawnLabel>
+  <APM_SirenWarden.gerundLabel>надзор</APM_SirenWarden.gerundLabel>
+  <APM_SirenWarden.labelShort>надзирать</APM_SirenWarden.labelShort>
+  <APM_SirenWarden.pawnLabel>Надзиратель</APM_SirenWarden.pawnLabel>
+  <APM_TinkerRepair.gerundLabel>ремонт зданий и механоидов</APM_TinkerRepair.gerundLabel>
+  <APM_TinkerRepair.labelShort>ремонт</APM_TinkerRepair.labelShort>
+  <APM_TinkerRepair.pawnLabel>Мастер</APM_TinkerRepair.pawnLabel>
+</LanguageData>

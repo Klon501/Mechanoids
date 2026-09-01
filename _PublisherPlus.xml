@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.git</exclude>
+    <exclude>.github</exclude>
+    <exclude>.idea</exclude>
+    <exclude>.gitattributes</exclude>
+    <exclude>.gitignore</exclude>
+    <exclude>ModInfographic</exclude>
+    <exclude>out.tsv</exclude>
+    <exclude>1.6\Source</exclude>
+  </Excluded>
+</Configuration>

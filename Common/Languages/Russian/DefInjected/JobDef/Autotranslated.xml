@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_Absorb.reportString>что-то делает.</APM_Absorb.reportString>
+  <APM_CryptoSwallow.reportString>что-то делает.</APM_CryptoSwallow.reportString>
+  <APM_BashDamage.reportString>врезается в TargetA.</APM_BashDamage.reportString>
+  <APM_BashStun.reportString>врезается в TargetA.</APM_BashStun.reportString>
+  <APM_CastPulseJump.reportString>прыгает к TargetA.</APM_CastPulseJump.reportString>
+  <APM_EnterMechanoidContainer.reportString>входит в TargetA.</APM_EnterMechanoidContainer.reportString>
+  <APM_FrostivusManualUnloadFood.reportString>выгружает сохраненную еду.</APM_FrostivusManualUnloadFood.reportString>
+  <APM_FrostivusReleaseDevouredContents.reportString>выпускает сохраненное существо.</APM_FrostivusReleaseDevouredContents.reportString>
+  <APM_FrostivusTakeFoodToInventory.reportString>сохраняет TargetA.</APM_FrostivusTakeFoodToInventory.reportString>
+  <APM_FrostivusUnloadFoodToStorage.reportString>выгружает TargetA.</APM_FrostivusUnloadFoodToStorage.reportString>
+  <APM_HaulToToxicPurifier.reportString>относит отходы к TargetA.</APM_HaulToToxicPurifier.reportString>
+  <APM_HookPawn.reportString>тянет крюк-кошку к TargetA.</APM_HookPawn.reportString>
+  <APM_LasherMilk.reportString>доит TargetA.</APM_LasherMilk.reportString>
+  <APM_LasherReleaseToWild.reportString>отпускает TargetA.</APM_LasherReleaseToWild.reportString>
+  <APM_LasherShear.reportString>стрижет TargetA.</APM_LasherShear.reportString>
+  <APM_LasherSlaughter.reportString>забивает TargetA.</APM_LasherSlaughter.reportString>
+  <APM_LasherTame.reportString>приручает TargetA.</APM_LasherTame.reportString>
+  <APM_LasherTrain.reportString>дрессирует TargetA.</APM_LasherTrain.reportString>
+  <APM_RavagerArtilleryAttack.reportString>ведет артиллерийский огонь по TargetA.</APM_RavagerArtilleryAttack.reportString>
+  <APM_RepairMech.reportString>ремонтирует TargetA.</APM_RepairMech.reportString>
+  <APM_SirenChatWithPrisoner.reportString>поет перед TargetA.</APM_SirenChatWithPrisoner.reportString>
+  <APM_SirenEnslavePrisoner.reportString>поет, порабощая TargetA.</APM_SirenEnslavePrisoner.reportString>
+  <APM_SirenReduceWillPrisoner.reportString>поет, ломая волю TargetA.</APM_SirenReduceWillPrisoner.reportString>
+  <APM_SirenConvertPrisoner.reportString>поет, обращая TargetA.</APM_SirenConvertPrisoner.reportString>
+  <APM_SirenSuppressSlave.reportString>поет, подавляя TargetA.</APM_SirenSuppressSlave.reportString>
+  <APM_SirenLureChannel.reportString>поет.</APM_SirenLureChannel.reportString>
+
+</LanguageData>

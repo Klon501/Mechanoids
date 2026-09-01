@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_JavelinWarhead.label>标枪弹头</APM_JavelinWarhead.label>
+  <APM_GazerBeam.label>凝视者光束</APM_GazerBeam.label>
+  <APM_SunRay.label>太阳光线</APM_SunRay.label>
+  <Push.label>冲击伤害</Push.label>
+  <APM_Shockwave.label>冲击波</APM_Shockwave.label>
+  <MegaBeam.label>巨型光束</MegaBeam.label>
+  <APM_HazeAcidBeam.label>迷雾酸液光束</APM_HazeAcidBeam.label>
+  <APM_SonicVibration.label>声波震荡</APM_SonicVibration.label>
+  <APM_Whip.label>切割</APM_Whip.label>
+  <APM_Whip.deathMessage>{0} 被切割致死。</APM_Whip.deathMessage>
+  <APM_GazerBeam.deathMessage>{0} 被射线射杀。</APM_GazerBeam.deathMessage>
+  <APM_HazeAcidBeam.deathMessage>{0} 被射线射杀。</APM_HazeAcidBeam.deathMessage>
+  <APM_SunRay.deathMessage>{0} 被射线射杀。</APM_SunRay.deathMessage>
+  <APM_JavelinWarhead.deathMessage>{0} 在爆炸中丧生。</APM_JavelinWarhead.deathMessage>
+  <APM_Shockwave.deathMessage>{0} 被冲击波湮灭。</APM_Shockwave.deathMessage>
+  <APM_SonicVibration.deathMessage>{0} 被声波振动杀死。</APM_SonicVibration.deathMessage>
+</LanguageData>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ApexMechtech.label>вершинна мехтехнологія</ApexMechtech.label>
+  <ApexMechtech.description>Технології, потрібні вашому механіторові, щоб створювати механоїдів вершинного рівня та керувати ними. Чіпи можна отримати, прикликавши механітором загрозу Трьох Владик. Їх також можна прикликати окремо.</ApexMechtech.description>
+  <AdvancedMechtech.label>просунута мехтехнологія</AdvancedMechtech.label>
+  <AdvancedMechtech.description>Технології, потрібні вашому механіторові, щоб створювати механоїдів просунутого рівня та керувати ними. Чіпи можна отримати, прикликавши механітором загрозу «Спостерігач».</AdvancedMechtech.description>
+</LanguageData>

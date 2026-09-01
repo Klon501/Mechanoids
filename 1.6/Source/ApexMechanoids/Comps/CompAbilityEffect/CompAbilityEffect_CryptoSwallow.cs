@@ -55,6 +55,7 @@ namespace ApexMechanoids
             thing.DeSpawnOrDeselect();
             if (caster.inventory.innerContainer.TryAdd(thing, canMergeWithExistingStacks: false))
             {
+                // Puts the pawn into stasis until it leaves the inventory.
                 FrostivusUtility.ApplyDevouredHediff(thing);
                 return;
             }

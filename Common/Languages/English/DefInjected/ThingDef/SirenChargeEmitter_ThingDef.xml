@@ -5,11 +5,6 @@
 	<APM_Siren_ChargeEmitter.label>charge emitter</APM_Siren_ChargeEmitter.label>
 	<!--                             EN: A wave emitting device that fires focused blasts of high frequency vibration at targets. It is capable of bypassing armor as with intense enough emissions, anything in this weapon's way inevitably becomes another medium of transmission. -->
 	<APM_Siren_ChargeEmitter.description>A wave emitting device that fires focused blasts of high frequency vibration at targets. It is capable of bypassing armor as with intense enough emissions, anything in this weapon's way inevitably becomes another medium of transmission.</APM_Siren_ChargeEmitter.description>
-	<!--                               EN: ㅤ -->
-	<APM_Siren_ChargeEmitter.verbs.0.label>ㅤ</APM_Siren_ChargeEmitter.verbs.0.label>
-	<!--                               EN: ствол -->
-	<APM_Siren_ChargeEmitter.tools.0.label>ствол</APM_Siren_ChargeEmitter.tools.0.label>
-	
 	<!--                           EN: sonic pulse -->
 	<APM_Proj_SirenChargeEmitter.label>sonic pulse</APM_Proj_SirenChargeEmitter.label>
 </LanguageData>

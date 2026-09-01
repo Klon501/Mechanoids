@@ -31,6 +31,18 @@ namespace ApexMechanoids
             return HasDevouredHediff(ContainedPawn(thing));
         }
 
+        public static bool IsInCryoStasis(Thing thing)
+        {
+            Pawn pawn = ContainedPawn(thing);
+            if (pawn == null || !HasDevouredHediff(pawn))
+            {
+                return false;
+            }
+
+            // Belt and braces: a leftover tag shouldn't freeze a pawn that's out in the open.
+            return FrostivusFoodPreservationUtility.IsFrostivusInventoryHolder(thing.ParentHolder);
+        }
+
         public static void ApplyDevouredHediff(Pawn pawn)
         {
             if (pawn == null || pawn.health == null)

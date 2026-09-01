@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<!-- Tinker -->
-	<APM_Mech_Tinker.label>Тинкер</APM_Mech_Tinker.label>
-	<APM_Mech_Tinker.description>Тинкер — это вспомогательный механоид, созданный для ремонта зданий и механоидов своей фракции. Он не может строить новые сооружения, но способен проецировать защитную матрицу на союзников и ослеплять врагов направленным лазером.</APM_Mech_Tinker.description>
-
-</LanguageData>

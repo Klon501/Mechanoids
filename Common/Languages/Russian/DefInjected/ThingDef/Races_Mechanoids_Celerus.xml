@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-	<APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
-	<APM_Mech_CelerusB.label>целерус</APM_Mech_CelerusB.label>
-	<APM_Mech_Celerus.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов. Надохновленный регионом Японии эпохи Сэнгоку Старой Земли, стремительный и скрытный целерус ничуть не слабеет от своей скорости. Он обладает способностью совершать короткие скрытые скачки вокруг себя, а также создавать дымовую завесу, затрудняющую врагам восприятие его самого и всего вокруг, дополнительно становясь невосприимчивым к псионическому сканированию в этой области.</APM_Mech_Celerus.description>
-	<APM_Projectile_CelerusSmokescreen.label>дымовая граната</APM_Projectile_CelerusSmokescreen.label>
-	<APM_Projectile_CelerusSmokescreen_Boss.label>дымовая граната</APM_Projectile_CelerusSmokescreen_Boss.label>
-</LanguageData>

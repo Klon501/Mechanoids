@@ -1,0 +1,13 @@
+{
+  "TextureModID": "mortis.apexmechanoids",
+  "ItemDefName": "APM_Weapon_DuelistsPsySpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.218687877,
+  "Rotation": 90.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "BladeStart": 0.429423451,
+  "BladeEnd": 0.9502982,
+  "MeleeWeaponType": 4
+}

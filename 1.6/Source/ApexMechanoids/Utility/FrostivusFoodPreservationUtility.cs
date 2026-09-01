@@ -10,11 +10,13 @@ namespace ApexMechanoids
     {
         public const float ColdStorageMaxTemperature = 0f;
         public const int PickupDelayTicks = 120;
+        public const int EmptyRescueScanCooldownTicks = 300;
 
         private const int OutsideStorageRescueScore = 1000000;
         private const int WarmStorageRescueScore = 100000;
         private const int RotUrgencyScoreTicks = 600000;
 
+        private static readonly Dictionary<ThingDef, bool> PreservableFoodDefCache = new Dictionary<ThingDef, bool>();
         private static readonly List<Thing> TmpInventoryFood = new List<Thing>();
         private static readonly List<Thing> TmpDevouredContents = new List<Thing>();
         private static Caravan cachedCaravan;
@@ -166,72 +168,60 @@ namespace ApexMechanoids
             return System.Math.Min(thing.stackCount, MassUtility.CountToPickUpUntilOverEncumbered(pawn, thing));
         }
 
-        public static bool CanRescueFoodNow(Pawn pawn, Thing thing, bool forced = false)
+        public static bool IsRescueFoodCandidate(Pawn pawn, Thing thing, bool forced = false)
         {
-            return CanDoFoodPreservation(pawn)
-                && IsPreservableFoodOnMap(thing)
-                && (forced || ShouldAutoRescueFoodFromCurrentStorage(pawn, thing))
+            return IsPreservableFoodOnMap(thing)
                 && (forced || !thing.IsForbidden(pawn))
                 && !thing.IsBurning()
                 && CountToPickUp(pawn, thing) > 0
+                && (forced || ShouldAutoRescueFoodFromCurrentStorage(pawn, thing));
+        }
+
+        public static bool CanRescueFoodNow(Pawn pawn, Thing thing, bool forced = false)
+        {
+            return CanDoFoodPreservation(pawn)
+                && IsRescueFoodCandidate(pawn, thing, forced)
                 && pawn.CanReserveAndReach(thing, PathEndMode.ClosestTouch, Danger.Deadly, 1, -1, null, forced);
         }
 
-        public static bool HasRescuableFoodAvailable(Pawn pawn)
+        public static List<Thing> RescuableFoodCandidates(Pawn pawn)
         {
+            List<Thing> result = new List<Thing>();
             if (!CanDoFoodPreservation(pawn))
             {
-                return false;
+                return result;
             }
 
             List<Thing> things = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver);
             for (int i = 0; i < things.Count; i++)
             {
-                if (CanRescueFoodNow(pawn, things[i]))
+                if (IsRescueFoodCandidate(pawn, things[i]))
                 {
-                    return true;
+                    result.Add(things[i]);
                 }
             }
 
-            return false;
+            if (result.Count == 0)
+            {
+                SetNextRescueScanTick(pawn, Find.TickManager.TicksGame + EmptyRescueScanCooldownTicks);
+            }
+
+            return result;
         }
 
-        public static bool TryFindBestRescuableFood(Pawn pawn, out Thing bestFood, float maxDistance = 9999f)
+        public static int GetNextRescueScanTick(Pawn pawn)
         {
-            bestFood = null;
-            if (!CanDoFoodPreservation(pawn))
+            CompFrostivusFoodPreservation comp = pawn.TryGetComp<CompFrostivusFoodPreservation>();
+            return comp != null ? comp.nextRescueScanTick : int.MinValue;
+        }
+
+        private static void SetNextRescueScanTick(Pawn pawn, int tick)
+        {
+            CompFrostivusFoodPreservation comp = pawn.TryGetComp<CompFrostivusFoodPreservation>();
+            if (comp != null)
             {
-                return false;
+                comp.nextRescueScanTick = tick;
             }
-
-            int bestScore = int.MinValue;
-            int bestDistance = int.MaxValue;
-            int maxDistanceSquared = maxDistance >= 9999f ? int.MaxValue : (int)System.Math.Ceiling(maxDistance * maxDistance);
-            List<Thing> things = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver);
-            for (int i = 0; i < things.Count; i++)
-            {
-                Thing thing = things[i];
-                if (!CanRescueFoodNow(pawn, thing))
-                {
-                    continue;
-                }
-
-                int distance = pawn.Position.DistanceToSquared(thing.Position);
-                if (distance > maxDistanceSquared)
-                {
-                    continue;
-                }
-
-                int score = FoodRescuePriorityScore(thing);
-                if (bestFood == null || score > bestScore || (score == bestScore && distance < bestDistance))
-                {
-                    bestFood = thing;
-                    bestScore = score;
-                    bestDistance = distance;
-                }
-            }
-
-            return bestFood != null;
         }
 
         public static Job MakeTakeFoodJob(Pawn pawn, Thing food, int expiryInterval = 500, bool forced = false, int requestedCount = -1)
@@ -568,23 +558,38 @@ namespace ApexMechanoids
 
         private static bool IsPreservableFoodThing(Thing thing)
         {
-            if (thing == null
-                || thing.Destroyed
-                || thing.def == null
-                || !thing.def.EverHaulable
-                || thing.def.ingestible == null
-                || !thing.def.IsNutritionGivingIngestible
-                || thing.def.IsCorpse
-                || thing.def.IsDrug
-                || thing.TryGetComp<CompRottable>() == null)
+            if (thing == null || thing.Destroyed || thing.def == null)
             {
                 return false;
             }
 
-            return thing.def.ingestible.preferability >= FoodPreferability.RawBad
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.Foods)
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.PlantFoodRaw)
-                || thing.def.IsWithinCategory(ThingCategoryDefOf.MeatRaw);
+            if (!IsPreservableFoodDef(thing.def))
+            {
+                return false;
+            }
+
+            return thing.TryGetComp<CompRottable>() != null;
+        }
+
+        private static bool IsPreservableFoodDef(ThingDef def)
+        {
+            if (PreservableFoodDefCache.TryGetValue(def, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = def.EverHaulable
+                && def.ingestible != null
+                && def.IsNutritionGivingIngestible
+                && !def.IsCorpse
+                && !def.IsDrug
+                && (def.ingestible.preferability >= FoodPreferability.RawBad
+                    || def.IsWithinCategory(ThingCategoryDefOf.Foods)
+                    || def.IsWithinCategory(ThingCategoryDefOf.PlantFoodRaw)
+                    || def.IsWithinCategory(ThingCategoryDefOf.MeatRaw));
+
+            PreservableFoodDefCache[def] = result;
+            return result;
         }
 
         private static bool ShouldAutoRescueFoodFromCurrentStorage(Pawn pawn, Thing thing)
@@ -609,7 +614,7 @@ namespace ApexMechanoids
             return TryFindColdStorageCellAtLeastPriority(pawn, thing, currentPriority, out IntVec3 _);
         }
 
-        private static int FoodRescuePriorityScore(Thing thing)
+        public static int FoodRescuePriorityScore(Thing thing)
         {
             int score = 0;
             if (!IsInValidStorage(thing))

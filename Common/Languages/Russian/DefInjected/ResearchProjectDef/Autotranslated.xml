@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ApexMechtech.label>высшие технологии механоидов</ApexMechtech.label>
+  <ApexMechtech.description>Технологии, необходимые вашему механитору для создания механоидов высшего уровня и управления ими. Чипы можно получить, призвав с помощью механитора угрозу Трёх Владык. Их также можно призвать по отдельности.</ApexMechtech.description>
+  <AdvancedMechtech.label>особые технологии механоидов</AdvancedMechtech.label>
+  <AdvancedMechtech.description>Технологии, необходимые вашему механитору для создания механоидов особого уровня и управления ими. Чипы можно получить, призвав с помощью механитора угрозу «Созерцатель».</AdvancedMechtech.description>
+</LanguageData>

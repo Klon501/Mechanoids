@@ -399,8 +399,8 @@
 		<showWhenDrafted>true</showWhenDrafted>
 		<hostile>true</hostile>
 		<statBases>
-			<Ability_Duration>500</Ability_Duration>
-			<Ability_EffectRadius>3.9</Ability_EffectRadius>
+			<Ability_Duration>50</Ability_Duration>
+			<Ability_EffectRadius>2.9</Ability_EffectRadius>
 		</statBases>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_BlindingLaser">

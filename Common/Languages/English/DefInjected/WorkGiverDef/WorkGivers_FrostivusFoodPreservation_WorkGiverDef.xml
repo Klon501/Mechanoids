@@ -1,0 +1,15 @@
+<LanguageData>
+	<!-- 1.6\Defs\WorkGiverDefs\WorkGivers_FrostivusFoodPreservation.xml -->
+	<!--                     EN: collect vulnerable food -->
+	<APM_FrostivusRescueFood.label>collect vulnerable food</APM_FrostivusRescueFood.label>
+	<!--                    EN: collect -->
+	<APM_FrostivusRescueFood.verb>collect</APM_FrostivusRescueFood.verb>
+	<!--                      EN: collecting -->
+	<APM_FrostivusRescueFood.gerund>collecting</APM_FrostivusRescueFood.gerund>
+	<!--                     EN: unload food to cold storage -->
+	<APM_FrostivusUnloadFood.label>unload food to cold storage</APM_FrostivusUnloadFood.label>
+	<!--                    EN: unload -->
+	<APM_FrostivusUnloadFood.verb>unload</APM_FrostivusUnloadFood.verb>
+	<!--                      EN: unloading -->
+	<APM_FrostivusUnloadFood.gerund>unloading</APM_FrostivusUnloadFood.gerund>
+</LanguageData>

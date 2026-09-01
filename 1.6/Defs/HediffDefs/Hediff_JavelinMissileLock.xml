@@ -3,6 +3,7 @@
 	<HediffDef>
 		<defName>APM_Hediff_JavelinMissileLock</defName>
 		<label>Smart missile lock</label>
+		<description>&#x200B;</description>
 		<hediffClass>ApexMechanoids.Hediff_JavelinMissileLock</hediffClass>
 		<isBad>true</isBad>
 		<defaultLabelColor>(0.95, 0.55, 0.25)</defaultLabelColor>

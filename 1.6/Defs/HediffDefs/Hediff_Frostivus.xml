@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!--
-        Applied to pawns devoured and stored inside a Frostivus.
-        Purely cosmetic/informational — the actual suspension is handled by
-        ContentsInCryptosleep_Patch. This hediff just signals the state visually.
-        It does NOT disappear on its own; it is added/removed by code.
+        Applied to pawns swallowed by a Frostivus. Doubles as the stasis tag: while it's on the pawn,
+        FrostivusCryoStasis_Patch reports Suspended/InCryptosleep and the pawn stops ticking.
+        Added on swallow, removed on release. Never expires on its own.
     -->
 	<HediffDef>
 		<defName>APM_Hediff_Devoured</defName>

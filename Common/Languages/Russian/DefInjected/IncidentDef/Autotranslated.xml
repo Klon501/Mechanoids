@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <APM_IncidentDef_TrioBoss.label>Три Владыки</APM_IncidentDef_TrioBoss.label>
+  <APM_IncidentDef_TrioBoss.letterLabel>Прибыли Три Владыки</APM_IncidentDef_TrioBoss.letterLabel>
+  <APM_IncidentDef_TrioBoss.letterText>Сверхтяжёлые механоиды из {0} пришли, чтобы стереть вас с лица земли, и не в одиночку.\n\nТри владыки механоидов были созданы разумом архотеки в попытке создать могущественного командира всех механоидов.\n\nШтурмовая группа состоит из следующих {1}:\n\n{2}\n\nОни подготовятся и только затем перейдут в атаку.</APM_IncidentDef_TrioBoss.letterText>
+</LanguageData>
