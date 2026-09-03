@@ -30,16 +30,16 @@
   <APM_GestatorAmplifier.description>Украденные у улья механоидов военные технологии позволили этому усилителю инкубации попасть в руки органиков. Он увеличивает скорость создания механоидов в любых инкубаторах, установленных рядом с ним.</APM_GestatorAmplifier.description>
   <APM_MechanoidContainer_Cluster.label>Древний контейнер стазиса мехов</APM_MechanoidContainer_Cluster.label>
   <APM_MechanoidContainer_Cluster.description>Появляется в кластерах механоидов и содержит спящего механоида, которого поселенцы могут взломать и перепрограммировать.</APM_MechanoidContainer_Cluster.description>
-  <APM_MechanoidContainer_Cluster.comps.0.jobString>взломать контейнер</APM_MechanoidContainer_Cluster.comps.0.jobString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>взломать контейнер</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>
   <APM_MechanoidContainer_Player.label>Контейнер стазиса мехов</APM_MechanoidContainer_Player.label>
   <APM_MechanoidContainer_Player.description>Контейнер стазиса механиторов. Позволяет хранить механоида без расхода пропускной способности и дополнительной энергии во время нахождения внутри.</APM_MechanoidContainer_Player.description>
-  <APM_MechanoidContainer_Player.comps.2.jobString>извлечь</APM_MechanoidContainer_Player.comps.2.jobString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>извлечь</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_MechanoidContainer_Ancient.label>Покинутый контейнер стазиса мехов</APM_MechanoidContainer_Ancient.label>
   <APM_MechanoidContainer_Ancient.description>Контейнер стазиса человеческого производства, который работал так долго, что тот, кто его построил, уже не сможет сказать, что находится внутри. Отсек хранения значится как занятый, а цикл консервации всё ещё работает на последних резервах. Взлом печати разбудит то, что там находится, а нейронная связь, которой оно некогда подчинялось, давно мертва, так что механитор сможет забрать его себе.</APM_MechanoidContainer_Ancient.description>
-  <APM_MechanoidContainer_Ancient.comps.2.jobString>взломать контейнер</APM_MechanoidContainer_Ancient.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>взломать контейнер</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>взломать контейнер</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_RepairStation_Small.label>Станция ремонта механоидов</APM_RepairStation_Small.label>
   <APM_RepairStation_Small.description>Автоматическая станция для мелких и средних механоидов, постепенно ремонтирующая их со временем.</APM_RepairStation_Small.description>
   <APM_RepairStation_Advanced.label>Продвинутая станция ремонта механойдов</APM_RepairStation_Advanced.label>
@@ -177,23 +177,23 @@
   <APM_Mech_CelerusB.label>целерус</APM_Mech_CelerusB.label>
   <APM_Mech_Terminus.label>терминус</APM_Mech_Terminus.label>
   <APM_Mech_Terminus.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов.Вдохновленный средневековой Европой Старой Земли, терминус прорубается сквозь волны врагов, и даже расстояние не может смягчить его ярость. Его оружие способно прорезать обширную область перед ним. Терминус также может направить своё психическое влияние внутрь, усиливая урон и сопротивление шатанию. Для врагов, сумевших вырваться из его хватки, предусмотрен крюк-кошка, который притягивает противника с расстояния, чтобы добить.Кроме того, под управлением механитора этот мех расширяет радиус его командной зоны.</APM_Mech_Terminus.description>
-  <APM_Mech_Terminus.tools.0.label>левый кулак</APM_Mech_Terminus.tools.0.label>
-  <APM_Mech_Terminus.tools.1.label>правый кулак</APM_Mech_Terminus.tools.1.label>
-  <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+  <APM_Mech_Terminus.tools.left_fist.label>левый кулак</APM_Mech_Terminus.tools.left_fist.label>
+  <APM_Mech_Terminus.tools.right_fist.label>правый кулак</APM_Mech_Terminus.tools.right_fist.label>
+  <APM_Mech_Terminus.tools.head.label>голова</APM_Mech_Terminus.tools.head.label>
   <APM_Mech_TerminusB.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов.Вдохновленный средневековой Европой Старой Земли, терминус прорубается сквозь волны врагов, и даже расстояние не может смягчить его ярость. Его оружие способно прорезать обширную область перед ним. Терминус также может направить своё психическое влияние внутрь, усиливая урон и сопротивление шатанию. Для врагов, сумевших вырваться из его хватки, предусмотрен крюк-кошка, который притягивает противника с расстояния, чтобы добить.Кроме того, под управлением механитора этот мех расширяет радиус его командной зоны.</APM_Mech_TerminusB.description>
-  <APM_Mech_TerminusB.tools.0.label>левый кулак</APM_Mech_TerminusB.tools.0.label>
-  <APM_Mech_TerminusB.tools.1.label>правый кулак</APM_Mech_TerminusB.tools.1.label>
-  <APM_Mech_TerminusB.tools.2.label>голова</APM_Mech_TerminusB.tools.2.label>
+  <APM_Mech_TerminusB.tools.left_fist.label>левый кулак</APM_Mech_TerminusB.tools.left_fist.label>
+  <APM_Mech_TerminusB.tools.right_fist.label>правый кулак</APM_Mech_TerminusB.tools.right_fist.label>
+  <APM_Mech_TerminusB.tools.head.label>голова</APM_Mech_TerminusB.tools.head.label>
   <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
   <APM_Mech_Celerus.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов.Вдохновленный Японией эпохи Сэнгоку Старой Земли, стремительный и скрытный целерус ничуть не слабее из-за своей скорости. Он способен совершать короткие скачки вокруг себя, а также создавать дымовую завесу, мешающую врагам воспринимать его и всё вокруг, дополнительно становясь психически неощутимым в этой зоне. В дополнение к этим эффектам враги будут получать периодические.</APM_Mech_Celerus.description>
-  <APM_Mech_Celerus.tools.0.label>левый кулак</APM_Mech_Celerus.tools.0.label>
-  <APM_Mech_Celerus.tools.1.label>правый кулак</APM_Mech_Celerus.tools.1.label>
-  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+  <APM_Mech_Celerus.tools.left_fist.label>левый кулак</APM_Mech_Celerus.tools.left_fist.label>
+  <APM_Mech_Celerus.tools.right_fist.label>правый кулак</APM_Mech_Celerus.tools.right_fist.label>
+  <APM_Mech_Celerus.tools.head.label>голова</APM_Mech_Celerus.tools.head.label>
   <APM_Mech_CelerusB.description>Три мощных типа механоидов были созданы разумом архотеки в попытке сформировать центрального командира всех сил механоидов.Вдохновленный Японией эпохи Сэнгоку Старой Земли, стремительный и скрытный целерус ничуть не слабее из-за своей скорости. Он способен совершать короткие скачки вокруг себя, а также создавать дымовую завесу, мешающую врагам воспринимать его и всё вокруг, дополнительно становясь психически неощутимым в этой зоне. В дополнение к этим эффектам враги будут получать периодические.</APM_Mech_CelerusB.description>
-  <APM_Mech_CelerusB.tools.0.label>левый кулак</APM_Mech_CelerusB.tools.0.label>
-  <APM_Mech_CelerusB.tools.1.label>правый кулак</APM_Mech_CelerusB.tools.1.label>
-  <APM_Mech_CelerusB.tools.2.label>голова</APM_Mech_CelerusB.tools.2.label>
-  <APM_Mech_Dominus.tools.0.label>голова</APM_Mech_Dominus.tools.0.label>
+  <APM_Mech_CelerusB.tools.left_fist.label>левый кулак</APM_Mech_CelerusB.tools.left_fist.label>
+  <APM_Mech_CelerusB.tools.right_fist.label>правый кулак</APM_Mech_CelerusB.tools.right_fist.label>
+  <APM_Mech_CelerusB.tools.head.label>голова</APM_Mech_CelerusB.tools.head.label>
+  <APM_Mech_Dominus.tools.head.label>голова</APM_Mech_Dominus.tools.head.label>
   <SeveringEdge.label>Рассекающая грань</SeveringEdge.label>
   <SeveringEdge_Boss.label>Рассекающая грань</SeveringEdge_Boss.label>
   <APM_Projectile_CelerusSmokescreen.label>дымовая граната</APM_Projectile_CelerusSmokescreen.label>

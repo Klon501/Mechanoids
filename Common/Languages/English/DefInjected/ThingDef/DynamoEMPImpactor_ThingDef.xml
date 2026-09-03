@@ -5,9 +5,9 @@
 	<!--                          EN: A mechanoid grade electromagnetic grenade launcher, featuring better accuracy, a larger range and a bigger blast than more common variants of the same type. Organic life has many clear weaknesses, yet militaries still use said threats in their arsenals all the same. The mechhive is no different. -->
 	<APM_Gun_EMP_Impactor.description>A mechanoid grade electromagnetic grenade launcher, featuring better accuracy, a larger range and a bigger blast than more common variants of the same type. Organic life has many clear weaknesses, yet militaries still use said threats in their arsenals all the same. The mechhive is no different.</APM_Gun_EMP_Impactor.description>
 	<!--                            EN: приклад -->
-	<APM_Gun_EMP_Impactor.tools.0.label>stock</APM_Gun_EMP_Impactor.tools.0.label>
+	<APM_Gun_EMP_Impactor.tools.stock.label>stock</APM_Gun_EMP_Impactor.tools.stock.label>
 	<!--                            EN: ствол -->
-	<APM_Gun_EMP_Impactor.tools.1.label>coil</APM_Gun_EMP_Impactor.tools.1.label>
+	<APM_Gun_EMP_Impactor.tools.barrel.label>coil</APM_Gun_EMP_Impactor.tools.barrel.label>
 	
 	<!--                     EN: EMP impactor projectile -->
 	<APM_Proj_EMP_Impactor.label>EMP impactor projectile</APM_Proj_EMP_Impactor.label>

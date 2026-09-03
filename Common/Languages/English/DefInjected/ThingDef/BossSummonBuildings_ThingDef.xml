@@ -5,43 +5,43 @@
 	<!--                                 EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
 	<APM_MechbandAntenna_Dominus.description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Dominus.description>
 	<!--                                      EN: Summon dominus threat -->
-	<APM_MechbandAntenna_Dominus.comps.0.useLabel>Summon dominus threat</APM_MechbandAntenna_Dominus.comps.0.useLabel>
+	<APM_MechbandAntenna_Dominus.comps.CompUsable.useLabel>Summon dominus threat</APM_MechbandAntenna_Dominus.comps.CompUsable.useLabel>
 	<!--                                                   EN: LetterBossgroupCallerUnlocked -->
-	<APM_MechbandAntenna_Dominus.comps.1.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Dominus.comps.1.unlockedLetterTextKey>
+	<APM_MechbandAntenna_Dominus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Dominus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>
 	
 	<!--                            EN: Mechband Conduit -->
 	<APM_MechbandAntenna_Terminus.label>Mechband Conduit</APM_MechbandAntenna_Terminus.label>
 	<!--                                  EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
 	<APM_MechbandAntenna_Terminus.description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Terminus.description>
 	<!--                                       EN: Summon terminus threat -->
-	<APM_MechbandAntenna_Terminus.comps.0.useLabel>Summon terminus threat</APM_MechbandAntenna_Terminus.comps.0.useLabel>
+	<APM_MechbandAntenna_Terminus.comps.CompUsable.useLabel>Summon terminus threat</APM_MechbandAntenna_Terminus.comps.CompUsable.useLabel>
 	<!--                                                    EN: LetterBossgroupCallerUnlocked -->
-	<APM_MechbandAntenna_Terminus.comps.1.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Terminus.comps.1.unlockedLetterTextKey>
+	<APM_MechbandAntenna_Terminus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Terminus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>
 	
 	<!--                           EN: Mechband Pylon -->
 	<APM_MechbandAntenna_Celerus.label>Mechband Pylon</APM_MechbandAntenna_Celerus.label>
 	<!--                                 EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
 	<APM_MechbandAntenna_Celerus.description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Celerus.description>
 	<!--                                      EN: Summon celerus threat -->
-	<APM_MechbandAntenna_Celerus.comps.0.useLabel>Summon celerus threat</APM_MechbandAntenna_Celerus.comps.0.useLabel>
+	<APM_MechbandAntenna_Celerus.comps.CompUsable.useLabel>Summon celerus threat</APM_MechbandAntenna_Celerus.comps.CompUsable.useLabel>
 	<!--                                                   EN: LetterBossgroupCallerUnlocked -->
-	<APM_MechbandAntenna_Celerus.comps.1.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Celerus.comps.1.unlockedLetterTextKey>
+	<APM_MechbandAntenna_Celerus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Celerus.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>
 	
 	<!--                         EN: Mechband Array -->
 	<APM_MechbandAntenna_Gazer.label>Mechband Array</APM_MechbandAntenna_Gazer.label>
 	<!--                               EN: A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. -->
 	<APM_MechbandAntenna_Gazer.description>A mech-band signaling device more powerful than the mechband node. When activated, it puts out an apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once.</APM_MechbandAntenna_Gazer.description>
 	<!--                                    EN: Summon gazer threat -->
-	<APM_MechbandAntenna_Gazer.comps.0.useLabel>Summon gazer threat</APM_MechbandAntenna_Gazer.comps.0.useLabel>
+	<APM_MechbandAntenna_Gazer.comps.CompUsable.useLabel>Summon gazer threat</APM_MechbandAntenna_Gazer.comps.CompUsable.useLabel>
 	<!--                                                 EN: LetterBossgroupCallerUnlocked -->
-	<APM_MechbandAntenna_Gazer.comps.1.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Gazer.comps.1.unlockedLetterTextKey>
+	<APM_MechbandAntenna_Gazer.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>LetterBossgroupCallerUnlocked</APM_MechbandAntenna_Gazer.comps.CompUseEffect_CallBossgroup.unlockedLetterTextKey>
 	
 	<!--                          EN: Mechband Invoker -->
 	<APM_MechbandAntenna_United.label>Mechband Invoker</APM_MechbandAntenna_United.label>
 	<!--                                EN: A mech-band signaling device more powerful than the mechband array. When activated, it puts out an 3-fold apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. This particular mechband device sends out 3 simultaneous signals, be warned. -->
 	<APM_MechbandAntenna_United.description>A mech-band signaling device more powerful than the mechband array. When activated, it puts out an 3-fold apex level mech signal pulse, which will attract a mechanoid commander to attack with its escorts. If you defeat it, you can collect special technology from its corpse. The signal pulse burns out the dish, so this building can only be used once. This particular mechband device sends out 3 simultaneous signals, be warned.</APM_MechbandAntenna_United.description>
 	<!--                                     EN: Summon Three Lords threat -->
-	<APM_MechbandAntenna_United.comps.0.useLabel>Summon Three Lords threat</APM_MechbandAntenna_United.comps.0.useLabel>
+	<APM_MechbandAntenna_United.comps.CompUsable.useLabel>Summon Three Lords threat</APM_MechbandAntenna_United.comps.CompUsable.useLabel>
 	<!--                                       EN: Three Lords -->
-	<APM_MechbandAntenna_United.comps.1.leaderName>Three Lords</APM_MechbandAntenna_United.comps.1.leaderName>
+	<APM_MechbandAntenna_United.comps.CompUseEffect_CallMulBossgroup.leaderName>Three Lords</APM_MechbandAntenna_United.comps.CompUseEffect_CallMulBossgroup.leaderName>
 </LanguageData>

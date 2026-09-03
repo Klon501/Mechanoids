@@ -30,16 +30,16 @@
   <APM_GestatorAmplifier.description>从机械巢群窃取的战时技术，使这种孵化加速器的技术落入了有机体之手。将其放置在任意机甲孵化器的相邻位置，即可提升该孵化器的机甲孵化速度。</APM_GestatorAmplifier.description>
   <APM_MechanoidContainer_Cluster.label>古代机械体停滞容器</APM_MechanoidContainer_Cluster.label>
   <APM_MechanoidContainer_Cluster.description>一台重型容器，配备自主的活动维持系统与古旧的遥测屏幕。从内部传感器判断，封存其中的机械体在诞生之后便立即被从巢群意识中隔离。该装置处于深度保存模式，其机械结构不响应任何外部访问代码，但正是这种隔离使这台机器免于被强制停机。撬开这台容器，便可尝试夺取其中被遗忘的机械体的控制权。</APM_MechanoidContainer_Cluster.description>
-  <APM_MechanoidContainer_Cluster.comps.0.jobString>破解容器</APM_MechanoidContainer_Cluster.comps.0.jobString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>破解容器</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>
   <APM_MechanoidContainer_Player.label>机械体停滞容器</APM_MechanoidContainer_Player.label>
   <APM_MechanoidContainer_Player.description>一台专门用于安全存放机械体的静滞容器。将机械体放入其中，会彻底切断它与机械师之间的活动神经连接，并让其系统进入深度休眠状态。在此状态下，这台机器不消耗电力，也不占用机械师的带宽，从而释放宝贵的网络资源。有了这个容器，你可以把一支突击或作业小队留在备用状态，随时准备投入部署，而无需担心网络过载。</APM_MechanoidContainer_Player.description>
-  <APM_MechanoidContainer_Player.comps.2.jobString>取出</APM_MechanoidContainer_Player.comps.2.jobString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>取出</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_MechanoidContainer_Ancient.label>被遗弃的机械体停滞容器</APM_MechanoidContainer_Ancient.label>
   <APM_MechanoidContainer_Ancient.description>一台人类制造的静滞容器，运行得太久，久到建造它的人早已不在，无从说明里面装的是什么。存储舱显示为已被占用，而保存循环仍靠着最后的储备运转着。破开封印会唤醒里面的东西，而它曾经服从的那条神经连接早已死去，因此机械师应当能够认领它。</APM_MechanoidContainer_Ancient.description>
-  <APM_MechanoidContainer_Ancient.comps.2.jobString>破解容器</APM_MechanoidContainer_Ancient.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>破解容器</APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>破解容器</APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>破解容器</APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>破解容器</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>破解容器</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>破解容器</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>破解容器</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_RepairStation_Small.label>机械修复工作站</APM_RepairStation_Small.label>
   <APM_RepairStation_Small.description>一座用于修理小型与中型机械体的工作站。机械体需要进入站内接受修理。</APM_RepairStation_Small.description>
   <APM_RepairStation_Advanced.label>高级机械修复工作站</APM_RepairStation_Advanced.label>
@@ -179,23 +179,23 @@
   <APM_Mech_CelerusB.label>疾风</APM_Mech_CelerusB.label>
   <APM_Mech_Terminus.label>终焉</APM_Mech_Terminus.label>
   <APM_Mech_Terminus.description>三款强大的机械体型号由某个级外智能创造而成，试图以此打造统率所有机械体部队的核心指挥官。受中世纪古地球欧洲的启发，终焉能劈开成群的敌人，即便是距离也无法消解它的怒火。它的武器能够横扫身前的大片区域。终焉还可以将灵能影响向内集中，强化自身的伤害与抗踉跄能力。对于逃出它掌控的敌人，它还配备了一具抓钩，可以从远处将敌人拉到面前了结。另外，若这台机甲受机械师控制，机械师可以将指挥范围延伸到它周围的半径内。</APM_Mech_Terminus.description>
-  <APM_Mech_Terminus.tools.0.label>左拳</APM_Mech_Terminus.tools.0.label>
-  <APM_Mech_Terminus.tools.1.label>右拳</APM_Mech_Terminus.tools.1.label>
-  <APM_Mech_Terminus.tools.2.label>头</APM_Mech_Terminus.tools.2.label>
+  <APM_Mech_Terminus.tools.left_fist.label>左拳</APM_Mech_Terminus.tools.left_fist.label>
+  <APM_Mech_Terminus.tools.right_fist.label>右拳</APM_Mech_Terminus.tools.right_fist.label>
+  <APM_Mech_Terminus.tools.head.label>头</APM_Mech_Terminus.tools.head.label>
   <APM_Mech_TerminusB.description>三款强大的机械体型号由某个级外智能创造而成，试图以此打造统率所有机械体部队的核心指挥官。受中世纪古地球欧洲的启发，终焉能劈开成群的敌人，即便是距离也无法消解它的怒火。它的武器能够横扫身前的大片区域。终焉还可以将灵能影响向内集中，强化自身的伤害与抗踉跄能力。对于逃出它掌控的敌人，它还配备了一具抓钩，可以从远处将敌人拉到面前了结。另外，若这台机甲受机械师控制，机械师可以将指挥范围延伸到它周围的半径内。</APM_Mech_TerminusB.description>
-  <APM_Mech_TerminusB.tools.0.label>左拳</APM_Mech_TerminusB.tools.0.label>
-  <APM_Mech_TerminusB.tools.1.label>右拳</APM_Mech_TerminusB.tools.1.label>
-  <APM_Mech_TerminusB.tools.2.label>头</APM_Mech_TerminusB.tools.2.label>
+  <APM_Mech_TerminusB.tools.left_fist.label>左拳</APM_Mech_TerminusB.tools.left_fist.label>
+  <APM_Mech_TerminusB.tools.right_fist.label>右拳</APM_Mech_TerminusB.tools.right_fist.label>
+  <APM_Mech_TerminusB.tools.head.label>头</APM_Mech_TerminusB.tools.head.label>
   <APM_Mech_Celerus.label>疾风</APM_Mech_Celerus.label>
   <APM_Mech_Celerus.description>三款强大的机械体型号由某个级外智能创造而成，试图以此打造统率所有机械体部队的核心指挥官。受古地球日本战国时代的启发，迅捷而隐秘的疾风并未因追求速度而有丝毫逊色。它能够向周围进行短距离瞬移，也能制造烟幕来干扰敌人对它与周边一切的感知，同时在这一区域内变得灵能不可探测。除此之外，敌人还会受到周期性的。</APM_Mech_Celerus.description>
-  <APM_Mech_Celerus.tools.0.label>左拳</APM_Mech_Celerus.tools.0.label>
-  <APM_Mech_Celerus.tools.1.label>右拳</APM_Mech_Celerus.tools.1.label>
-  <APM_Mech_Celerus.tools.2.label>头</APM_Mech_Celerus.tools.2.label>
+  <APM_Mech_Celerus.tools.left_fist.label>左拳</APM_Mech_Celerus.tools.left_fist.label>
+  <APM_Mech_Celerus.tools.right_fist.label>右拳</APM_Mech_Celerus.tools.right_fist.label>
+  <APM_Mech_Celerus.tools.head.label>头</APM_Mech_Celerus.tools.head.label>
   <APM_Mech_CelerusB.description>三款强大的机械体型号由某个级外智能创造而成，试图以此打造统率所有机械体部队的核心指挥官。受古地球日本战国时代的启发，迅捷而隐秘的疾风并未因追求速度而有丝毫逊色。它能够向周围进行短距离瞬移，也能制造烟幕来干扰敌人对它与周边一切的感知，同时在这一区域内变得灵能不可探测。除此之外，敌人还会受到周期性的。</APM_Mech_CelerusB.description>
-  <APM_Mech_CelerusB.tools.0.label>左拳</APM_Mech_CelerusB.tools.0.label>
-  <APM_Mech_CelerusB.tools.1.label>右拳</APM_Mech_CelerusB.tools.1.label>
-  <APM_Mech_CelerusB.tools.2.label>头</APM_Mech_CelerusB.tools.2.label>
-  <APM_Mech_Dominus.tools.0.label>头</APM_Mech_Dominus.tools.0.label>
+  <APM_Mech_CelerusB.tools.left_fist.label>左拳</APM_Mech_CelerusB.tools.left_fist.label>
+  <APM_Mech_CelerusB.tools.right_fist.label>右拳</APM_Mech_CelerusB.tools.right_fist.label>
+  <APM_Mech_CelerusB.tools.head.label>头</APM_Mech_CelerusB.tools.head.label>
+  <APM_Mech_Dominus.tools.head.label>头</APM_Mech_Dominus.tools.head.label>
   <SeveringEdge.label>裂空斩</SeveringEdge.label>
   <SeveringEdge_Boss.label>裂空斩</SeveringEdge_Boss.label>
   <APM_Projectile_CelerusSmokescreen.label>烟幕弹</APM_Projectile_CelerusSmokescreen.label>

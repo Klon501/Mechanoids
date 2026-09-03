@@ -5,12 +5,12 @@
 	<!--                  EN: A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead. -->
 	<APM_DuelSpot.description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</APM_DuelSpot.description>
 	<!--                             EN: Finish in -->
-	<APM_DuelSpot.comps.1.countdownLabel>Finish in</APM_DuelSpot.comps.1.countdownLabel>
+	<APM_DuelSpot.comps.CompDestroyAfterDelay.countdownLabel>Finish in</APM_DuelSpot.comps.CompDestroyAfterDelay.countdownLabel>
 	
 	<!--                 EN: duel spot -->
 	<APM_DuelSpot_Boss.label>duel spot</APM_DuelSpot_Boss.label>
 	<!--                       EN: A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead. -->
 	<APM_DuelSpot_Boss.description>A selected target is chosen for a duel and a shield is generated around the duelists. For the duration of the duel, ranged attacks, abilities and Incoming damage increased.  Additionally, if the duel does not end within a certain time frame, the duelists gain a harsh debuff. If either combatant dies or is downed, the victor gains a powerful temporary buff instead.</APM_DuelSpot_Boss.description>
 	<!--                                  EN: Finish in -->
-	<APM_DuelSpot_Boss.comps.1.countdownLabel>Finish in</APM_DuelSpot_Boss.comps.1.countdownLabel>
+	<APM_DuelSpot_Boss.comps.CompDestroyAfterDelay.countdownLabel>Finish in</APM_DuelSpot_Boss.comps.CompDestroyAfterDelay.countdownLabel>
 </LanguageData>

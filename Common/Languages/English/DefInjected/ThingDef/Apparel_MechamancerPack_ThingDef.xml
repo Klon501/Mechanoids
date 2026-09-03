@@ -9,6 +9,6 @@
 	<!--                                 EN: A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously. -->
 	<APM_Apparel_MechamancerPack.description>A backpack containing an advanced bandwidth-expansion computer andl antenna. Increases a mechanitor’s maximum total bandwidth and control groups. When fueled with steel, it can construct small mechanoids that operate independently without consuming bandwidth. Each mechanitor can deploy up to two satellite mechanoids simultaneously.</APM_Apparel_MechamancerPack.description>
 	<!--                                   EN: summon satellite -->
-	<APM_Apparel_MechamancerPack.verbs.0.label>summon satellite</APM_Apparel_MechamancerPack.verbs.0.label>
+	<APM_Apparel_MechamancerPack.verbs.summon_satellite.label>summon satellite</APM_Apparel_MechamancerPack.verbs.summon_satellite.label>
 	<!--                                                               EN: ㅤ -->
 </LanguageData>
