@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM.CallMulBossgroupBossgroupWarningDialog>召喚「{LEADER}」威脅將會召來以下敵對機械體：\n\n{BOSS}\n\n它們可能還會帶來由以下內容組成的護衛：\n\n{ESCORT}\n\n這些機械體將在接下來的幾小時或幾天內抵達。你準備好迎戰了嗎？</APM.CallMulBossgroupBossgroupWarningDialog>
+  <APM.CallMulBossgroupBossgroupWarningDialog>召喚「{LEADER}」威脅將會召來以下敵對機械體：\n\n{BOSS}\n\n它們可能還會帶來由以下內容組成的護衛：\n\n{ESCORT}\n\n這些機械體將在兩天後抵達。你準備好迎戰了嗎？</APM.CallMulBossgroupBossgroupWarningDialog>
+
+  <APM.AlertCallMulBossgroupIncoming>{LEADER} 正在逼近</APM.AlertCallMulBossgroupIncoming>
+  <APM.AlertCallMulBossgroupIncomingDesc>在你的機械師發出訊號後，敵對的{LEADER}正帶著戰鬥護衛一同逼近。做好準備，這將是一場艱苦的戰鬥。這些敵對機械體將在兩天後抵達。</APM.AlertCallMulBossgroupIncomingDesc>
 
 </LanguageData>

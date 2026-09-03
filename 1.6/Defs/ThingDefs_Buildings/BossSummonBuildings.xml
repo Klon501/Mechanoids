@@ -319,6 +319,8 @@
 				<leaderName>Three Lords</leaderName>
 				<effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
 				<prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
+				<spawnLetterLabelKey>LetterLabelBossgroupCallerUnlocked</spawnLetterLabelKey>
+				<spawnLetterTextKey>LetterBossgroupCallerUnlocked</spawnLetterTextKey>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf">
 				<delayTicks>120</delayTicks>

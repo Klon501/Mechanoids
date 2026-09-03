@@ -35,6 +35,8 @@ namespace ApexMechanoids
             }
         }
 
+        public PawnKindDef LeaderKind => Ext?.bosses?.FirstOrDefault();
+
         public string LeaderName
         {
             get
@@ -154,13 +156,13 @@ namespace ApexMechanoids
         }
         public string FormatLetterLabel(string label)
         {
-            return label.Translate(LeaderName.Named("LEADER"));
+            return label.Translate(NamedArgumentUtility.Named(LeaderKind, "LEADER"));
         }
 
         public string FormatLetterText(string text, ThingDef parent)
         {
             string arg = Ext.bosses.SelectMany(pkd => pkd.race.killedLeavingsPlayerHostile.Select((ThingDefCountClass r) => r.Label + " x" + r.count)).ToLineList("- ");
-            return text.Translate(NamedArgumentUtility.Named(parent.label, "PARENT"), LeaderName.Named("LEADER"), arg.Named("REWARDSLIST"));
+            return text.Translate(NamedArgumentUtility.Named(parent, "PARENT"), NamedArgumentUtility.Named(LeaderKind, "LEADER"), arg.Named("REWARDSLIST"));
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
