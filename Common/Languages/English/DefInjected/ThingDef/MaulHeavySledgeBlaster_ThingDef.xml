@@ -8,7 +8,7 @@
 	<!--                  EN: An enhanced pulse-charged rapid-fire heavy machine gun built with an integrated kinetic hammer on its frame for devastating close-quarters bludgeoning. Heavy cooling allows long, deadly bursts, while additional interfacing technology lets certain mechanoid wielders continuously overclock and overheat the weapon's output, leading to potentially disastrous effects for both the user and anything caught in front of the barrel. -->
 	<APM_Gun_Maul.description>An enhanced pulse-charged rapid-fire heavy machine gun built with an integrated kinetic hammer on its frame for devastating close-quarters bludgeoning. Heavy cooling allows long, deadly bursts, while additional interfacing technology lets certain mechanoid wielders continuously overclock and overheat the weapon's output, leading to potentially disastrous effects for both the user and anything caught in front of the barrel.</APM_Gun_Maul.description>
 	<!--                    EN: butt -->
-	<APM_Gun_Maul.tools.0.label>butt</APM_Gun_Maul.tools.0.label>
+	<APM_Gun_Maul.tools.butt.label>butt</APM_Gun_Maul.tools.butt.label>
 	<!--                    EN: sledge hammer -->
-	<APM_Gun_Maul.tools.1.label>sledge hammer</APM_Gun_Maul.tools.1.label>
+	<APM_Gun_Maul.tools.sledge_hammer.label>sledge hammer</APM_Gun_Maul.tools.sledge_hammer.label>
 </LanguageData>

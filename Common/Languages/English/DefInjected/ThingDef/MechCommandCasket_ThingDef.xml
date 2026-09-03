@@ -1,7 +1,7 @@
 <LanguageData>
 	<!-- 1.6\Defs\ThingDefs_Buildings\MechCommandCasket.xml -->
 	<!--                                  EN: Casket -->
-	<APM_MechCommandCasket.comps.1.labelShort>Casket</APM_MechCommandCasket.comps.1.labelShort>
+	<APM_MechCommandCasket.comps.CompRemoteMechCasketAbilities.labelShort>Casket</APM_MechCommandCasket.comps.CompRemoteMechCasketAbilities.labelShort>
 	<!--                     EN: command casket -->
 	<APM_MechCommandCasket.label>command casket</APM_MechCommandCasket.label>
 	<!--                           EN: The pinnacle of mechanitor engineering, a monumental sarcophagus that embodies absolute power and technological majesty. Fusing mechlink and biosculpter technologies, it allows the enclosed user to command their legions from absolute safety. However, its true power lies within: a highly complex replica of a 'Cerebrex' brain is integrated into its core. This allows the casket to pierce atmospheric interference and connect directly to the global mechanoid network in orbit. By hijacking the processing power of these orbital systems, the mechanitor can broadcast their commands over colossal distances, controlling their mechs even when world tiles away. -->

@@ -8,5 +8,5 @@
 	<!--                       EN: A compact pulse-charged rapid-fire blaster for area suppressive fire in tight spaces. Even better at area denial than its larger, more common sibling, the heavy charge blaster, at the cost of range and damage. -->
 	<APM_Gun_Satellite.description>A compact pulse-charged rapid-fire blaster for area suppressive fire in tight spaces. Even better at area denial than its larger, more common sibling, the heavy charge blaster, at the cost of range and damage.</APM_Gun_Satellite.description>
 	<!--                         EN: ствол -->
-	<APM_Gun_Satellite.tools.0.label>barrel</APM_Gun_Satellite.tools.0.label>
+	<APM_Gun_Satellite.tools.barrel.label>barrel</APM_Gun_Satellite.tools.barrel.label>
 </LanguageData>

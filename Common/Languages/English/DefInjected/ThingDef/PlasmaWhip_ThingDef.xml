@@ -5,5 +5,5 @@
 	<!--                           EN: Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range. -->
 	<APM_Weapon_PlasmaWhip.description>Inspired by the whip wielded by the Lasher mechanoid, the plasma whip can deal damage and stun multiple targets at once, making it a good tool for holding back groups of foes in close range.</APM_Weapon_PlasmaWhip.description>
 	<!--                             EN: кромка -->
-	<APM_Weapon_PlasmaWhip.tools.0.label>whip</APM_Weapon_PlasmaWhip.tools.0.label>
+	<APM_Weapon_PlasmaWhip.tools.edge.label>whip</APM_Weapon_PlasmaWhip.tools.edge.label>
 </LanguageData>

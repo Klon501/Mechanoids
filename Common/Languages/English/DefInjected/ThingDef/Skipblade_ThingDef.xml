@@ -5,9 +5,9 @@
 	<!--                          EN: A high-frequency katana integrated with Celerus-derived displacement technology. Enables the wielder to psychically “skip” short distances with each strike, closing gaps instantly or evading counterattacks. -->
 	<APM_Weapon_Skipblade.description>A high-frequency katana integrated with Celerus-derived displacement technology. Enables the wielder to psychically “skip” short distances with each strike, closing gaps instantly or evading counterattacks.</APM_Weapon_Skipblade.description>
 	<!--                            EN: handle -->
-	<APM_Weapon_Skipblade.tools.0.label>handle</APM_Weapon_Skipblade.tools.0.label>
+	<APM_Weapon_Skipblade.tools.handle.label>handle</APM_Weapon_Skipblade.tools.handle.label>
 	<!--                            EN: blade -->
-	<APM_Weapon_Skipblade.tools.1.label>blade</APM_Weapon_Skipblade.tools.1.label>
+	<APM_Weapon_Skipblade.tools.point.label>blade</APM_Weapon_Skipblade.tools.point.label>
 	<!--                            EN: edge -->
-	<APM_Weapon_Skipblade.tools.2.label>edge</APM_Weapon_Skipblade.tools.2.label>
+	<APM_Weapon_Skipblade.tools.blade.label>edge</APM_Weapon_Skipblade.tools.blade.label>
 </LanguageData>
