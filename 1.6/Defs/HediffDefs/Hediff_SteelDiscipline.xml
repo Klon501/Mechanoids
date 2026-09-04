@@ -9,7 +9,7 @@
 	<HediffDef>
 		<defName>APM_Hediff_SteelDiscipline</defName>
 		<label>steel discipline</label>
-		<description>Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude.</description>
+		<description>Inspired by the Vassal's commanding presence, this unit moves and works with renewed purpose and mental fortitude. When the push ends, the strain catches up.</description>
 		<isBad>false</isBad>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 0.75, 0.3)</defaultLabelColor>
@@ -17,18 +17,21 @@
 		<maxSeverity>1</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>3600</disappearsAfterTicks><!-- 1 minute -->
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
 				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="ApexMechanoids.HediffCompProperties_ApplyHediffOnRemove">
+				<hediffDef>APM_Hediff_DisciplineBurnout</hediffDef>
+				<mechHediffDef>APM_Hediff_DisciplineBurnout_Mech</mechHediffDef>
+				<thoughtDef>APM_Thought_DisciplineBurnout</thoughtDef>
 			</li>
 		</comps>
 		<stages>
 			<li>
 				<statOffsets>
-					<MoveSpeed>0.4</MoveSpeed>
-					<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
-					<MeleeHitChance>1</MeleeHitChance>
-					<!-- Reduce mental break threshold by 25% -->
-					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+					<MoveSpeed>0.3</MoveSpeed>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+					<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 				</statOffsets>
 			</li>
 		</stages>
@@ -70,6 +73,73 @@
 				<label>inspired by discipline</label>
 				<description>The commanding presence of our mechanical ally fills me with discipline and purpose.</description>
 				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<HediffDef>
+		<defName>APM_Hediff_DisciplineBurnout</defName>
+		<label>discipline burnout</label>
+		<description>Driven past a comfortable pace by the Vassal's discipline. Movement and work are sluggish until the strain wears off.</description>
+		<isBad>true</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.55, 0.5, 0.45)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>20000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-0.15</MoveSpeed>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+					<MentalBreakThreshold>0.05</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>APM_Hediff_DisciplineBurnout_Mech</defName>
+		<label>overdriven core</label>
+		<description>Held at forced discipline for too long. The core runs hot: the mechanoid moves slower and drains its energy reserves faster until it settles.</description>
+		<isBad>true</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.55, 0.5, 0.45)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>20000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-0.1</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MechEnergyUsageFactor>1.35</MechEnergyUsageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>APM_Thought_DisciplineBurnout</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>0.75</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>worked to the bone</label>
+				<description>That machine pushed us like tools until there was nothing left in me.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

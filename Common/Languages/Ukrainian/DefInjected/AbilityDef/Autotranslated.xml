@@ -21,7 +21,7 @@
   <APM_DefenceMatrix.label>захисна матриця</APM_DefenceMatrix.label>
   <APM_DefenceMatrix.description>Віддалено спроєктувати персональний захисний щит на дружнього персонажа. Щит зупиняє вхідний урон, але при цьому не дозволяє вести вогонь назовні. Це може бути корисним, навіть якщо щит накладено на ворога. При цьому Майстер буде повністю зосереджений на підтримці щита.</APM_DefenceMatrix.description>
   <APM_Ability_SteelDiscipline.label>сталева дисципліна</APM_Ability_SteelDiscipline.label>
-  <APM_Ability_SteelDiscipline.description>У радіусі навколо Васала його союзники отримують бонус до швидкості, а в органічних знижується шанс нервового зриву. Командна присутність Васала надихає всіх поруч новою цілеспрямованістю та стійкістю.</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_SteelDiscipline.description>Підганяє всіх колоністів і колоніальних мехів у радіусі навколо Васала: вони швидше рухаються і швидше працюють, а органіки стійкіші до нервових зривів. Коли дисципліна спадає, настає розплата: органіки вигорають і втрачають настрій, а мехи перегріваються та швидше витрачають енергію.</APM_Ability_SteelDiscipline.description>
   <APM_Ability_ToxicMist.label>токсичний туман</APM_Ability_ToxicMist.label>
   <APM_Ability_ToxicMist.description>Подібно до токс-пакета, завіса вивільняє навколо себе токсичний газ, огортаючи околиці отруйною хмарою.</APM_Ability_ToxicMist.description>
   <APM_Shockwave.label>ударна хвиля</APM_Shockwave.label>

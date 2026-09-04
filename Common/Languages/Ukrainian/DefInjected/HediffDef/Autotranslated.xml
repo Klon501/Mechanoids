@@ -11,7 +11,7 @@
   <APM_Hediff_JavelinMissileLock.description>&#x200B;</APM_Hediff_JavelinMissileLock.description>
   <APM_Hediff_JavelinMissileLock.stages.0.label>вразливість розкрита</APM_Hediff_JavelinMissileLock.stages.0.label>
   <APM_Hediff_SteelDiscipline.label>сталева дисципліна</APM_Hediff_SteelDiscipline.label>
-  <APM_Hediff_SteelDiscipline.description>Натхнений командною присутністю Васала, цей підрозділ рухається з новою цілеспрямованістю та стійкістю духу.</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_SteelDiscipline.description>Натхнений командною присутністю Васала, цей підрозділ рухається і працює з новою цілеспрямованістю та стійкістю духу. Коли підйом минає, втома бере своє.</APM_Hediff_SteelDiscipline.description>
   <APM_Hediff_Unity.label>канал єдності</APM_Hediff_Unity.label>
   <APM_Hediff_Unity.description>Завойовники штатно оснащені обчислювальними блоками, які автоматично намагаються з'єднатися з блоками союзників поблизу, щоб допомагати одне одному з внутрішніми обчисленнями, підвищуючи ефективність щоразу, як поруч опиняється ще один союзник.</APM_Hediff_Unity.description>
   <APM_Hediff_Unity.stages.1.label>обчислювальний зв'язок (мінімальний)</APM_Hediff_Unity.stages.1.label>
@@ -58,4 +58,8 @@
   <APM_Hediff_PressTheAttack.description>Псіонна хвиля, що безпосередньо стимулює нервові шляхи мозку. Вона тимчасово приглушує больові рецептори й викликає потужний викид адреналіну, дозволяючи суб'єкту рухатися значно швидше й ігнорувати фізичні травми. Ефект дуже потужний, але короткочасний.</APM_Hediff_PressTheAttack.description>
   <APM_Hediff_PressTheAttack_Boss.label>псіонний приплив</APM_Hediff_PressTheAttack_Boss.label>
   <APM_Hediff_PressTheAttack_Boss.description>Псіонна хвиля, що безпосередньо стимулює нервові шляхи мозку. Вона тимчасово приглушує больові рецептори й викликає потужний викид адреналіну, дозволяючи суб'єкту рухатися значно швидше й ігнорувати фізичні травми. Ефект дуже потужний, але короткочасний.</APM_Hediff_PressTheAttack_Boss.description>
+  <APM_Hediff_DisciplineBurnout.label>вигорання</APM_Hediff_DisciplineBurnout.label>
+  <APM_Hediff_DisciplineBurnout.description>Довелося працювати швидше, ніж варто було, під дисципліною Васала. Рух і робота даються важко, доки втома не мине.</APM_Hediff_DisciplineBurnout.description>
+  <APM_Hediff_DisciplineBurnout_Mech.label>перегріте ядро</APM_Hediff_DisciplineBurnout_Mech.label>
+  <APM_Hediff_DisciplineBurnout_Mech.description>Задовго на форсованій дисципліні. Ядро розжарене: мех рухається повільніше і швидше витрачає запас енергії, доки не охолоне.</APM_Hediff_DisciplineBurnout_Mech.description>
 </LanguageData>

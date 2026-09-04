@@ -2,6 +2,14 @@
 	<!-- 1.6\Defs\HediffDefs\Hediff_SteelDiscipline.xml -->
 	<!--                          EN: steel discipline -->
 	<APM_Hediff_SteelDiscipline.label>steel discipline</APM_Hediff_SteelDiscipline.label>
-	<!--                                EN: Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude. -->
-	<APM_Hediff_SteelDiscipline.description>Inspired by the Vassal's commanding presence, this unit moves with renewed purpose and mental fortitude.</APM_Hediff_SteelDiscipline.description>
+	<!--                                EN: Inspired by the Vassal's commanding presence, this unit moves and works with renewed purpose and mental fortitude. When the push ends, the strain catches up. -->
+	<APM_Hediff_SteelDiscipline.description>Inspired by the Vassal's commanding presence, this unit moves and works with renewed purpose and mental fortitude. When the push ends, the strain catches up.</APM_Hediff_SteelDiscipline.description>
+	<!--                             EN: discipline burnout -->
+	<APM_Hediff_DisciplineBurnout.label>discipline burnout</APM_Hediff_DisciplineBurnout.label>
+	<!--                                   EN: Driven past a comfortable pace by the Vassal's discipline. Movement and work are sluggish until the strain wears off. -->
+	<APM_Hediff_DisciplineBurnout.description>Driven past a comfortable pace by the Vassal's discipline. Movement and work are sluggish until the strain wears off.</APM_Hediff_DisciplineBurnout.description>
+	<!--                                  EN: overdriven core -->
+	<APM_Hediff_DisciplineBurnout_Mech.label>overdriven core</APM_Hediff_DisciplineBurnout_Mech.label>
+	<!--                                        EN: Held at forced discipline for too long. The core runs hot: the mechanoid moves slower and drains its energy reserves faster until it settles. -->
+	<APM_Hediff_DisciplineBurnout_Mech.description>Held at forced discipline for too long. The core runs hot: the mechanoid moves slower and drains its energy reserves faster until it settles.</APM_Hediff_DisciplineBurnout_Mech.description>
 </LanguageData>

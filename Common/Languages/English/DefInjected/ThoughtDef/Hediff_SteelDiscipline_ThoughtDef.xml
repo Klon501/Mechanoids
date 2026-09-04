@@ -5,4 +5,8 @@
 	<APM_Thought_InspiredByDiscipline.stages.0.label>inspired by discipline</APM_Thought_InspiredByDiscipline.stages.0.label>
 	<!--                                               EN: The commanding presence of our mechanical ally fills me with discipline and purpose. -->
 	<APM_Thought_InspiredByDiscipline.stages.0.description>The commanding presence of our mechanical ally fills me with discipline and purpose.</APM_Thought_InspiredByDiscipline.stages.0.description>
+	<!--                                      EN: worked to the bone -->
+	<APM_Thought_DisciplineBurnout.stages.0.label>worked to the bone</APM_Thought_DisciplineBurnout.stages.0.label>
+	<!--                                            EN: That machine pushed us like tools until there was nothing left in me. -->
+	<APM_Thought_DisciplineBurnout.stages.0.description>That machine pushed us like tools until there was nothing left in me.</APM_Thought_DisciplineBurnout.stages.0.description>
 </LanguageData>
