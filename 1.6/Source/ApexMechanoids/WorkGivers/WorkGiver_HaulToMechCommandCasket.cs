@@ -2,16 +2,14 @@
 using UnityEngine;
 using Verse.AI;
 using Verse;
-using Verse.Noise;
-using System.Collections.Generic;
 
 namespace ApexMechanoids
 {
     public class WorkGiver_HaulToMechCommandCasket : WorkGiver_Scanner
     {
-        private const float NutritionBuffer = 1.0f;
+        private const float NutritionBuffer = 2.5f;
 
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(ApexDefsOf.APM_MechCommandCasket);
 
         public override PathEndMode PathEndMode => PathEndMode.Touch;
 
