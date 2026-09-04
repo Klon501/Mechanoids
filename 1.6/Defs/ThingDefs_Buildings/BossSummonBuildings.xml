@@ -237,7 +237,7 @@
 			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</killedLeavings>
 		<researchPrerequisites>
-			<li>StandardMechtech</li>
+			<li>HighMechtech</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Usable">
