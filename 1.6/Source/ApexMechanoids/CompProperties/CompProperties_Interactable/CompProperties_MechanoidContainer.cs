@@ -54,6 +54,20 @@ namespace ApexMechanoids
 
         public GraphicData emptyGraphic;
 
+        /// <summary>
+        /// What this container becomes once there is nothing left in it.
+        ///
+        /// A container placed with something already sealed inside is named and described by that,
+        /// and none of it is true any more once the mech has been taken out. Naming a plain container
+        /// here swaps the emptied one for it in place, so what the player is left standing in front
+        /// of is the crate rather than the story of the crate.
+        ///
+        /// Leave it out and the container stays what it was, which is what the player's own container
+        /// and the mech cluster one want: the first is already plain, and the second is wreckage of a
+        /// different shape that was never meant to be claimed.
+        /// </summary>
+        public ThingDef emptiedDef;
+
         public CompProperties_MechanoidContainer()
         {
             compClass = typeof(Comp_MechanoidContainer);
