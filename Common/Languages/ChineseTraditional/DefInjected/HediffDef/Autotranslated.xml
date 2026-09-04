@@ -11,7 +11,7 @@
   <APM_Hediff_JavelinMissileLock.description>&#x200B;</APM_Hediff_JavelinMissileLock.description>
   <APM_Hediff_JavelinMissileLock.stages.0.label>弱點暴露</APM_Hediff_JavelinMissileLock.stages.0.label>
   <APM_Hediff_SteelDiscipline.label>鋼鐵紀律</APM_Hediff_SteelDiscipline.label>
-  <APM_Hediff_SteelDiscipline.description>受到附庸統御氣場的激勵，這個單位重新帶著目標感與精神韌性投入行動。</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_SteelDiscipline.description>受到附庸統御氣場的激勵，這個單位帶著全新的目標感與精神韌性行動與工作。當這股勁頭過去後，積累的疲憊便會顯現。</APM_Hediff_SteelDiscipline.description>
   <APM_Hediff_Unity.label>統合連接</APM_Hediff_Unity.label>
   <APM_Hediff_Unity.description>征服者預設配備運算單元，會自動嘗試與附近友軍的運算單元建立連接，互相協助進行內部運算；周圍友軍越多，效率提升越明顯。</APM_Hediff_Unity.description>
   <APM_Hediff_Unity.stages.1.label>運算連接（最低）</APM_Hediff_Unity.stages.1.label>
@@ -58,4 +58,8 @@
   <APM_Hediff_PressTheAttack.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack.description>
   <APM_Hediff_PressTheAttack_Boss.label>靈能湧流</APM_Hediff_PressTheAttack_Boss.label>
   <APM_Hediff_PressTheAttack_Boss.description>一道直接刺激大腦神經通路的靈能波。它會暫時麻痺痛覺感受器，並迫使體內湧現強烈的腎上腺素，使對象移動得顯著更快，並忽略身體創傷。效果極為強效，但持續時間很短。</APM_Hediff_PressTheAttack_Boss.description>
+  <APM_Hediff_DisciplineBurnout.label>紀律倦怠</APM_Hediff_DisciplineBurnout.label>
+  <APM_Hediff_DisciplineBurnout.description>在附庸的紀律下被逼著超出了舒適的節奏。在疲憊消退之前，行動與工作都變得遲緩。</APM_Hediff_DisciplineBurnout.description>
+  <APM_Hediff_DisciplineBurnout_Mech.label>核心過載</APM_Hediff_DisciplineBurnout_Mech.label>
+  <APM_Hediff_DisciplineBurnout_Mech.description>在強制紀律下運轉過久。核心過熱：機械體移動變慢，並且更快地消耗能量儲備，直到恢復穩定。</APM_Hediff_DisciplineBurnout_Mech.description>
 </LanguageData>

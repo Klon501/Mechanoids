@@ -570,15 +570,18 @@
 	<AbilityDef>
 		<defName>APM_Ability_SteelDiscipline</defName>
 		<label>Steel Discipline</label>
-		<description>In a radius around the Vassal, its allies gain a speed boost and their mental break chance is reduced if organic. The Vassal's commanding presence inspires those nearby with renewed purpose and fortitude.</description>
+		<description>Drives every colonist and colony mechanoid in a radius around the Vassal: they move faster, work faster, and organics hold together better against mental breaks. When the discipline fades the strain comes due - organics burn out and lose mood, mechanoids run hot and spend energy faster.</description>
 		<iconPath>UI/SteelDiscipline</iconPath>
-		<cooldownTicksRange>9000</cooldownTicksRange><!-- 2.5 hours -->
+		<cooldownTicksRange>60000</cooldownTicksRange>
 		<hostile>false</hostile>
 		<targetRequired>false</targetRequired>
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>250</Ability_Duration>
+		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<soundCast>APM_SteelDiscipline_Cast</soundCast>
@@ -597,6 +600,7 @@
 				<radius>12</radius>
 				<buffHediff>APM_Hediff_SteelDiscipline</buffHediff>
 				<inspiredThought>APM_Thought_InspiredByDiscipline</inspiredThought>
+				<apexMechsOnly>false</apexMechsOnly>
 			</li>
 		</comps>
 	</AbilityDef>

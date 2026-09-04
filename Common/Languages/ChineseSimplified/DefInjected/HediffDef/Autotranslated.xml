@@ -11,7 +11,7 @@
   <APM_Hediff_JavelinMissileLock.description>&#x200B;</APM_Hediff_JavelinMissileLock.description>
   <APM_Hediff_JavelinMissileLock.stages.0.label>弱点暴露</APM_Hediff_JavelinMissileLock.stages.0.label>
   <APM_Hediff_SteelDiscipline.label>钢铁纪律</APM_Hediff_SteelDiscipline.label>
-  <APM_Hediff_SteelDiscipline.description>受到附庸统御气场的激励，这个单位重新带着目标感与精神韧性投入行动。</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_SteelDiscipline.description>受到附庸统御气场的激励，这个单位带着全新的目标感与精神韧性行动与工作。当这股劲头过去后，积累的疲惫便会显现。</APM_Hediff_SteelDiscipline.description>
   <APM_Hediff_Unity.label>统合连接</APM_Hediff_Unity.label>
   <APM_Hediff_Unity.description>征服者默认配备运算单元，会自动尝试与附近友军的运算单元建立连接，互相协助进行内部运算；周围友军越多，效率提升越明显。</APM_Hediff_Unity.description>
   <APM_Hediff_Unity.stages.1.label>运算连接（最低）</APM_Hediff_Unity.stages.1.label>
@@ -58,4 +58,8 @@
   <APM_Hediff_PressTheAttack.description>一道直接刺激大脑神经通路的灵能波。它会暂时麻痹痛觉感受器，并迫使体内涌现强烈的肾上腺素，使对象移动得显著更快，并忽略身体创伤。效果极为强效，但持续时间很短。</APM_Hediff_PressTheAttack.description>
   <APM_Hediff_PressTheAttack_Boss.label>灵能涌流</APM_Hediff_PressTheAttack_Boss.label>
   <APM_Hediff_PressTheAttack_Boss.description>一道直接刺激大脑神经通路的灵能波。它会暂时麻痹痛觉感受器，并迫使体内涌现强烈的肾上腺素，使对象移动得显著更快，并忽略身体创伤。效果极为强效，但持续时间很短。</APM_Hediff_PressTheAttack_Boss.description>
+  <APM_Hediff_DisciplineBurnout.label>纪律倦怠</APM_Hediff_DisciplineBurnout.label>
+  <APM_Hediff_DisciplineBurnout.description>在附庸的纪律下被逼着超出了舒适的节奏。在疲惫消退之前，行动与工作都变得迟缓。</APM_Hediff_DisciplineBurnout.description>
+  <APM_Hediff_DisciplineBurnout_Mech.label>核心过载</APM_Hediff_DisciplineBurnout_Mech.label>
+  <APM_Hediff_DisciplineBurnout_Mech.description>在强制纪律下运转过久。核心过热：机械体移动变慢，并且更快地消耗能量储备，直到恢复稳定。</APM_Hediff_DisciplineBurnout_Mech.description>
 </LanguageData>

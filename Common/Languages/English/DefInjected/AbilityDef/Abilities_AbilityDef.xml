@@ -57,8 +57,8 @@
 	
 	<!--                           EN: Steel Discipline -->
 	<APM_Ability_SteelDiscipline.label>Steel Discipline</APM_Ability_SteelDiscipline.label>
-	<!--                                 EN: In a radius around the Vassal, its allies gain a speed boost and their mental break chance is reduced if organic. The Vassal's commanding presence inspires those nearby with renewed purpose and fortitude. -->
-	<APM_Ability_SteelDiscipline.description>In a radius around the Vassal, its allies gain a speed boost and their mental break chance is reduced if organic. The Vassal's commanding presence inspires those nearby with renewed purpose and fortitude.</APM_Ability_SteelDiscipline.description>
+	<!--                                 EN: Drives every colonist and colony mechanoid in a radius around the Vassal: they move faster, work faster, and organics hold together better against mental breaks. When the discipline fades the strain comes due - organics burn out and lose mood, mechanoids run hot and spend energy faster. -->
+	<APM_Ability_SteelDiscipline.description>Drives every colonist and colony mechanoid in a radius around the Vassal: they move faster, work faster, and organics hold together better against mental breaks. When the discipline fades the strain comes due - organics burn out and lose mood, mechanoids run hot and spend energy faster.</APM_Ability_SteelDiscipline.description>
 	
 	<!--                     EN: Toxic Mist -->
 	<APM_Ability_ToxicMist.label>Toxic Mist</APM_Ability_ToxicMist.label>
