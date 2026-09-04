@@ -8,7 +8,6 @@ using Verse.AI;
 using Verse.Sound;
 using PipeSystem;
 using static ApexMechanoids.CompRemoteMechCasketAbilities;
-using Unity.Burst.Intrinsics;
 
 namespace ApexMechanoids
 {
@@ -546,6 +545,8 @@ namespace ApexMechanoids
                     defaultLabel = "DEV: Empty ALL",
                     action = delegate
                     {
+                        CompAbilities.EndActionWithSound();
+                        Finish();
                         innerContainer.TryDropAll(InteractionCell, base.Map, ThingPlaceMode.Near);
                     }
                 };
