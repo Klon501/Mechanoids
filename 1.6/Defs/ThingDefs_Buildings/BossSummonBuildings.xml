@@ -14,6 +14,7 @@
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.3</fillPercent>
 		<building>
@@ -80,6 +81,7 @@
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.3</fillPercent>
 		<building>
@@ -147,6 +149,7 @@
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
 		<fillPercent>0.3</fillPercent>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -279,6 +282,7 @@
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.3</fillPercent>
 		<building>

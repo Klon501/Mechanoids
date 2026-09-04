@@ -481,7 +481,7 @@
 				</bossApparel>
 			</li>
 		</waves>
-		<leaderDescription>The {LEADERKIND_label} is a stationary threat of catastrophic potential. Its beam emitter requires a long stabilization time, providing a window to move out of its line of fire before it obliterates everything in its path. If it remains silent, it is likely charging a suicidal, world-ending blast—if it begins this final buildup, you must destroy it or retreat from the area immediately.</leaderDescription>
+		<leaderDescription>The {LEADERKIND_label} is a stationary threat of catastrophic potential. Its beam emitter requires a long stabilization time, providing a window to move out of its line of fire before it obliterates everything in its path. If enemies get too close, it can release a surge of stored energy as an explosive shockwave, violently throwing back and stunning anyone caught within its radius.</leaderDescription>
 		<rewardDef>APM_OcularChip</rewardDef>
 	</BossgroupDef>
 	

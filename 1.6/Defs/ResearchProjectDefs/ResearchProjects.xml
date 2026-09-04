@@ -4,12 +4,11 @@
 		<defName>ApexMechtech</defName>
 		<label>Apex Mechtech</label>
 		<description>The technology needed for your mechanitor to create and control Apex-tier mechanoids. You can get chips by using a mechanitor to summon a Three Lords threat. They can also be summoned separately.</description>
-		<!--TODO: Adjust base cost-->
 		<baseCost>4000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<tab>Main</tab>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>4.20</researchViewY>
 		<prerequisites>
 			<li>AdvancedMechtech</li>
 			<li>UltraMechtech</li>
@@ -24,12 +23,11 @@
 		<defName>AdvancedMechtech</defName>
 		<label>Advanced Mechtech</label>
 		<description>The technology needed for your mechanitor to create and control Advanced-tier mechanoids. You can get chips by using a mechanitor to summon a Gazer threat.</description>
-		<!--TODO: Adjust base cost-->
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<tab>Main</tab>
-		<researchViewX>14.0</researchViewX>
-		<researchViewY>5.15</researchViewY>
+		<researchViewX>15.50</researchViewX>
+		<researchViewY>4.70</researchViewY>
 		<prerequisites>
 			<li>HighMechtech</li>
 		</prerequisites>
@@ -37,4 +35,6 @@
 			<li>APM_OcularChip</li>
 		</requiredAnalyzed>
 	</ResearchProjectDef>
+
 </Defs>
+

@@ -10,11 +10,11 @@ namespace ApexMechanoids
         // Radius in which allies are buffed.
         public float radius = 12f;
 
-        // HediffDef applied to APM allies (speed boost + mental break reduction).
         public HediffDef buffHediff;
 
-        // Boss variant HediffDef (red halo) applied when the caster is a boss.
         public HediffDef buffHediffBoss;
+
+        public bool apexMechsOnly = true;
 
         // Thought given to organic same-faction pawns that have a mood need.
         public ThoughtDef inspiredThought = null;
@@ -35,9 +35,22 @@ namespace ApexMechanoids
 
             Pawn caster = parent.pawn;
             Map map = caster.Map;
+            if (map == null || Props.buffHediff == null)
+            {
+                return;
+            }
 
-            List<Pawn> affected = new List<Pawn>();
+            bool casterIsBoss = caster.kindDef != null && caster.kindDef.defName.EndsWith("_Boss");
+            HediffDef activeHediff = (casterIsBoss && Props.buffHediffBoss != null) ? Props.buffHediffBoss : Props.buffHediff;
+
             float radiusSq = Props.radius * Props.radius;
+            int durationTicks = 0;
+            float duration = GetAbilityDuration();
+            if (duration > 0f)
+            {
+                durationTicks = duration.SecondsToTicks();
+            }
+
             IReadOnlyList<Pawn> allPawns = map.mapPawns.AllPawnsSpawned;
             for (int i = 0; i < allPawns.Count; i++)
             {
@@ -45,49 +58,56 @@ namespace ApexMechanoids
                 if (p.Dead || !p.Spawned) continue;
                 if (p.Faction == null || p.Faction != caster.Faction) continue;
                 if (p.Position.DistanceToSquared(caster.Position) > radiusSq) continue;
-                affected.Add(p);
-            }
 
-            bool casterIsBoss = caster.kindDef != null && caster.kindDef.defName.EndsWith("_Boss");
-            HediffDef activeHediff = (casterIsBoss && Props.buffHediffBoss != null) ? Props.buffHediffBoss : Props.buffHediff;
-
-            for (int i = 0; i < affected.Count; i++)
-            {
-                Pawn p = affected[i];
-
-                // Hediff (speed + discipline) only for APM mechanoids.
-                if (activeHediff != null && IsApexMechanoid(p))
+                if (IsBuffTarget(p))
                 {
-                    if (Props.buffHediff != null)
-                    {
-                        Hediff existing = p.health.hediffSet.GetFirstHediffOfDef(Props.buffHediff);
-                        if (existing != null) p.health.RemoveHediff(existing);
-                    }
-                    if (Props.buffHediffBoss != null)
-                    {
-                        Hediff existing = p.health.hediffSet.GetFirstHediffOfDef(Props.buffHediffBoss);
-                        if (existing != null) p.health.RemoveHediff(existing);
-                    }
-                    Hediff newHediff = HediffMaker.MakeHediff(activeHediff, p);
-                    float duration = GetAbilityDuration();
-                    if (duration > 0f)
-                    {
-                        HediffComp_Disappears disappears = newHediff.TryGetComp<HediffComp_Disappears>();
-                        if (disappears != null)
-                            disappears.ticksToDisappear = duration.SecondsToTicks();
-                    }
-                    p.health.AddHediff(newHediff);
+                    ApplyBuff(p, activeHediff, durationTicks);
                 }
 
-                // Thought only for organic pawns with a mood need.
                 if (Props.inspiredThought != null && p.RaceProps.IsFlesh && p.needs?.mood != null)
                     p.needs.mood.thoughts.memories.TryGainMemory(Props.inspiredThought);
             }
         }
 
-        private static bool IsApexMechanoid(Pawn p)
+        private void ApplyBuff(Pawn p, HediffDef activeHediff, int durationTicks)
         {
-            return p.kindDef != null && p.kindDef.defName.StartsWith("APM_Mech_");
+            HediffDef other = (activeHediff == Props.buffHediff) ? Props.buffHediffBoss : Props.buffHediff;
+            if (other != null && other != activeHediff)
+            {
+                Hediff stale = p.health.hediffSet.GetFirstHediffOfDef(other);
+                if (stale != null) p.health.RemoveHediff(stale);
+            }
+
+            Hediff existing = p.health.hediffSet.GetFirstHediffOfDef(activeHediff);
+            if (existing != null)
+            {
+                if (durationTicks > 0)
+                {
+                    HediffComp_Disappears running = existing.TryGetComp<HediffComp_Disappears>();
+                    if (running != null)
+                        running.ticksToDisappear = durationTicks;
+                }
+                return;
+            }
+
+            Hediff newHediff = HediffMaker.MakeHediff(activeHediff, p);
+            if (durationTicks > 0)
+            {
+                HediffComp_Disappears disappears = newHediff.TryGetComp<HediffComp_Disappears>();
+                if (disappears != null)
+                    disappears.ticksToDisappear = durationTicks;
+            }
+            p.health.AddHediff(newHediff);
+        }
+
+        private bool IsBuffTarget(Pawn p)
+        {
+            if (Props.apexMechsOnly)
+            {
+                return p.kindDef != null && p.kindDef.defName.StartsWith("APM_Mech_");
+            }
+
+            return p.RaceProps != null && (p.RaceProps.Humanlike || p.RaceProps.IsMechanoid);
         }
 
         private float GetAbilityDuration()

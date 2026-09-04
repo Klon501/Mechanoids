@@ -21,7 +21,7 @@
   <APM_DefenceMatrix.label>Защитная матрица</APM_DefenceMatrix.label>
   <APM_DefenceMatrix.description>Удаленно проецирует персональный защитный щит на пешку своей фракции. Щит останавливает входящий урон, но также мешает вести стрельбу изнутри. Тинкер будет сосредоточен на поддержании щита.</APM_DefenceMatrix.description>
   <APM_Ability_SteelDiscipline.label>Стальная дисциплина</APM_Ability_SteelDiscipline.label>
-  <APM_Ability_SteelDiscipline.description>В радиусе вокруг Вассала его союзники получают бонус к скорости, а их шанс нервного срыва снижается (если они органические). Командующее присутствие Вассала вдохновляет окружающих новыми силами и стойкостью.</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_SteelDiscipline.description>Подстёгивает всех колонистов и колониальных мехов в радиусе вокруг Вассала: они быстрее двигаются и быстрее работают, а органики устойчивее к нервным срывам. Когда дисциплина спадает, приходит расплата: органики выгорают и теряют настроение, а мехи перегреваются и быстрее тратят энергию.</APM_Ability_SteelDiscipline.description>
   <APM_Ability_ToxicMist.label>Токсичный туман</APM_Ability_ToxicMist.label>
   <APM_Ability_ToxicMist.description>Подобно токсичному пакету, мгла выпускает вокруг себя токсичный газ, окутывая окрестности ядовитым облаком.</APM_Ability_ToxicMist.description>
   <APM_Shockwave.label>Ударная волна</APM_Shockwave.label>

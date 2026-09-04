@@ -21,7 +21,7 @@
   <APM_DefenceMatrix.label>防御矩阵</APM_DefenceMatrix.label>
   <APM_DefenceMatrix.description>为同派系殖民者投射个人防御护盾。护盾阻挡外来伤害，并阻止目标向外射击。</APM_DefenceMatrix.description>
   <APM_Ability_SteelDiscipline.label>钢铁纪律</APM_Ability_SteelDiscipline.label>
-  <APM_Ability_SteelDiscipline.description>在附庸周围的半径内，其盟友获得速度加成，若为有机体则精神崩溃几率降低。附庸的统御气场以全新的目标感与坚韧激励着身边的同伴。</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_SteelDiscipline.description>驱使附庸周围半径内的所有殖民者与殖民地机械体：移动更快、工作更快，有机生命也更不容易精神崩溃。当纪律消退时代价随之而来：有机生命陷入倦怠并损失心情，机械体则核心过热、能量消耗加快。</APM_Ability_SteelDiscipline.description>
   <APM_Ability_ToxicMist.label>剧毒迷雾</APM_Ability_ToxicMist.label>
   <APM_Ability_ToxicMist.description>与毒气包类似，迷雾向自身周围释放毒气，将周边笼罩在有毒的云雾之中。</APM_Ability_ToxicMist.description>
   <APM_Shockwave.label>冲击波</APM_Shockwave.label>

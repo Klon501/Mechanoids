@@ -21,7 +21,7 @@
   <APM_DefenceMatrix.label>防禦矩陣</APM_DefenceMatrix.label>
   <APM_DefenceMatrix.description>為同派系殖民者投射個人防禦護盾。護盾阻擋傷害，並阻止目標向外射擊。</APM_DefenceMatrix.description>
   <APM_Ability_SteelDiscipline.label>鋼鐵紀律</APM_Ability_SteelDiscipline.label>
-  <APM_Ability_SteelDiscipline.description>在附庸周圍的半徑內，其盟友獲得速度加成，若為有機體則精神崩潰機率降低。附庸的統御氣場以全新的目標感與堅韌激勵著身邊的同伴。</APM_Ability_SteelDiscipline.description>
+  <APM_Ability_SteelDiscipline.description>驅使附庸周圍半徑內的所有殖民者與殖民地機械體：移動更快、工作更快，有機生命也更不容易精神崩潰。當紀律消退時代價隨之而來：有機生命陷入倦怠並損失心情，機械體則核心過熱、能量消耗加快。</APM_Ability_SteelDiscipline.description>
   <APM_Ability_ToxicMist.label>劇毒迷霧</APM_Ability_ToxicMist.label>
   <APM_Ability_ToxicMist.description>與毒氣包類似，迷霧向自身周圍釋放毒氣，將周邊籠罩在有毒的雲霧之中。</APM_Ability_ToxicMist.description>
   <APM_Shockwave.label>衝擊波</APM_Shockwave.label>

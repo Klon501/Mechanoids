@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>APM_Mech_Haze</defName>
 		<label>Haze</label>
-		<description>A mechanoid experiment into organic area denial, the haze can pump tox gas into the area around it. Its melee attacks are especially lethal, inflicting toxic buildup upon hit. The intellect of the mechhive knows no bounds, even repurposing its waste products to further its goals.</description>
+		<description>A mechanoid experiment into organic area denial, the haze can pump tox gas into the area around it. Its shots are especially lethal, inflicting toxic buildup upon hit. The intellect of the mechhive knows no bounds, even repurposing its waste products to further its goals.</description>
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MoveSpeed>4.3</MoveSpeed>

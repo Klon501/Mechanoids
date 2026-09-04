@@ -8,7 +8,7 @@
 		<baseChance>0</baseChance>
 		<minRefireDays>10</minRefireDays>
 		<letterLabel>Three Lords arrived</letterLabel>
-		<letterText>An ultra-heavy mechs from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking.</letterText>
+		<letterText>A mecha-lords from {0} has come to eradicate you, along with escorts.\n\nThree mechanoid lords created by the Archotech as an attempt to create a Powerful commander of all mechanoids.\n\nThe assault group is composed of the following {1}:\n\n{2}\n\nThey will prepare for a while before attacking.</letterText>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>

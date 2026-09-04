@@ -98,19 +98,19 @@
   <APM_Hediff_SirenSong.label>песнь сирены</APM_Hediff_SirenSong.label>
 
   <!-- APM_Hediff_SteelDiscipline.description -->
-  <APM_Hediff_SteelDiscipline.description>Вдохновленная присутствием Вассала, эта единица двигается с новой целеустремленностью и стойкостью духа.</APM_Hediff_SteelDiscipline.description>
+  <APM_Hediff_SteelDiscipline.description>Вдохновлённая присутствием Вассала, эта единица двигается и работает с новой целеустремлённостью и стойкостью духа. Когда подъём заканчивается, накопленная усталость берёт своё.</APM_Hediff_SteelDiscipline.description>
 
   <!-- APM_Hediff_SteelDiscipline.label -->
   <APM_Hediff_SteelDiscipline.label>стальная дисциплина</APM_Hediff_SteelDiscipline.label>
 
   <!-- APM_Hediff_TerminusOverdrive.description -->
-  <APM_Hediff_TerminusOverdrive.description>Terminus направляет всплеск энергии в боевую мощь, жертвуя плащом и сдержанностью ради короткого периода подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
+  <APM_Hediff_TerminusOverdrive.description>Терминус направляет всплеск энергии в боевую мощь, жертвуя плащом и сдержанностью ради короткого периода подавляющей агрессии.</APM_Hediff_TerminusOverdrive.description>
 
   <!-- APM_Hediff_TerminusOverdrive.label -->
   <APM_Hediff_TerminusOverdrive.label>форсаж</APM_Hediff_TerminusOverdrive.label>
 
   <!-- APM_Hediff_UltimateSacrifice.description -->
-  <APM_Hediff_UltimateSacrifice.description>Абсолютная жертва — один из завоевателей жертвует собой, чтобы дать мощное усиление всем союзным завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
+  <APM_Hediff_UltimateSacrifice.description>Один из завоевателей жертвует собой, чтобы дать мощное усиление всем союзным завоевателям в радиусе действия.</APM_Hediff_UltimateSacrifice.description>
 
   <!-- APM_Hediff_UltimateSacrifice.label -->
   <APM_Hediff_UltimateSacrifice.label>абсолютная жертва</APM_Hediff_UltimateSacrifice.label>
@@ -168,4 +168,8 @@
 
   <APM_Hediff_PressTheAttack_Boss.label>псионный прилив</APM_Hediff_PressTheAttack_Boss.label>
   <APM_Hediff_PressTheAttack_Boss.description>Псионная волна, напрямую стимулирующая нервные пути мозга. Она временно притупляет болевые рецепторы и вызывает мощный выброс адреналина, позволяя субъекту двигаться значительно быстрее и игнорировать физические травмы. Эффект очень мощный, но кратковременный.</APM_Hediff_PressTheAttack_Boss.description>
+  <APM_Hediff_DisciplineBurnout.label>выгорание</APM_Hediff_DisciplineBurnout.label>
+  <APM_Hediff_DisciplineBurnout.description>Пришлось работать быстрее, чем следовало, под дисциплиной Вассала. Движение и работа даются тяжело, пока усталость не пройдёт.</APM_Hediff_DisciplineBurnout.description>
+  <APM_Hediff_DisciplineBurnout_Mech.label>перегретое ядро</APM_Hediff_DisciplineBurnout_Mech.label>
+  <APM_Hediff_DisciplineBurnout_Mech.description>Слишком долго на форсированной дисциплине. Ядро раскалено: мех двигается медленнее и быстрее расходует запас энергии, пока не остынет.</APM_Hediff_DisciplineBurnout_Mech.description>
 </LanguageData>
