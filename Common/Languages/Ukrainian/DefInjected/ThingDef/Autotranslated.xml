@@ -30,16 +30,16 @@
   <APM_GestatorAmplifier.description>Військові технології рою механоїдів було викрадено, і вони потрапили до рук органіків. Це призвело до появи цього підсилювача гестації. Він збільшує швидкість роботи будь-яких гестаторів механоїдів, розташованих поруч.</APM_GestatorAmplifier.description>
   <APM_MechanoidContainer_Cluster.label>давній контейнер стазису механоїда</APM_MechanoidContainer_Cluster.label>
   <APM_MechanoidContainer_Cluster.description>Важкий контейнер, оснащений автономними системами підтримки діяльності та архаїчними телеметричними екранами. Судячи з внутрішніх датчиків, запечатаного всередині механоїда було ізольовано від роювого розуму одразу після створення. Пристрій перебуває в режимі глибокої консервації. Його механізми не реагують на зовнішні коди доступу, але ізоляція врятувала машину від примусового вимкнення. Розбивши цей контейнер, можна спробувати перехопити керування забутим механоїдом усередині.</APM_MechanoidContainer_Cluster.description>
-  <APM_MechanoidContainer_Cluster.comps.0.jobString>зламати контейнер</APM_MechanoidContainer_Cluster.comps.0.jobString>
+  <APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>зламати контейнер</APM_MechanoidContainer_Cluster.comps.Comp_MechanoidContainer.jobString>
   <APM_MechanoidContainer_Player.label>контейнер стазису механоїда</APM_MechanoidContainer_Player.label>
   <APM_MechanoidContainer_Player.description>Спеціалізований контейнер стазису, призначений для безпечного зберігання механоїдів. Поміщений усередину механоїд повністю втрачає активний нейронний зв'язок із механітором, а його системи переходять у режим глибокої консервації. У цьому стані машина не споживає енергії й не займає пропускну здатність механітора, вивільняючи цінні мережеві ресурси. Контейнер дозволяє тримати штурмову або робочу групу в резерві, готову до розгортання будь-якої миті, без ризику перевантаження мережі.</APM_MechanoidContainer_Player.description>
-  <APM_MechanoidContainer_Player.comps.2.jobString>витягти</APM_MechanoidContainer_Player.comps.2.jobString>
+  <APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>витягти</APM_MechanoidContainer_Player.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_MechanoidContainer_Ancient.label>закинутий контейнер стазису механоїда</APM_MechanoidContainer_Ancient.label>
   <APM_MechanoidContainer_Ancient.description>Контейнер стазису людського виробництва, що пропрацював так довго, що той, хто його збудував, уже не може сказати, що всередині. Відсік зберігання показує «зайнято», а цикл консервації досі прокручується на рештках резервів. Злам печаті розбудить те, що там є, а нейронний зв'язок, якому воно колись підкорювалося, давно мертвий, тож механітор зможе забрати його собі.</APM_MechanoidContainer_Ancient.description>
-  <APM_MechanoidContainer_Ancient.comps.2.jobString>зламати контейнер</APM_MechanoidContainer_Ancient.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Lasher.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Vassal.comps.2.jobString>
-  <APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Tinker.comps.2.jobString>
+  <APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>зламати контейнер</APM_MechanoidContainer_Ancient.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Lasher.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Vassal.comps.Comp_MechanoidContainerControlled.jobString>
+  <APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>зламати контейнер</APM_MechanoidContainer_Legacy_Tinker.comps.Comp_MechanoidContainerControlled.jobString>
   <APM_RepairStation_Small.label>ремонтна станція</APM_RepairStation_Small.label>
   <APM_RepairStation_Small.description>Станція, яка автоматично ремонтує малих і середніх механоїдів. Механоїд має зайти всередину станції, щоб пройти ремонт.</APM_RepairStation_Small.description>
   <APM_RepairStation_Advanced.label>удосконалена ремонтна станція</APM_RepairStation_Advanced.label>
@@ -179,23 +179,23 @@
   <APM_Mech_CelerusB.label>целерус</APM_Mech_CelerusB.label>
   <APM_Mech_Terminus.label>термінус</APM_Mech_Terminus.label>
   <APM_Mech_Terminus.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний середньовічною Європою Старої Землі, Термінус прорубує лави ворогів, і навіть відстань не може пом'якшити його лють. Його зброя здатна розітнути велику площу перед ним. Термінус також може спрямувати свій психічний вплив усередину, підсилюючи шкоду та опір хитанню. Для ворогів, що вирвалися з його хватки, передбачено гак-кішку, який притягує противника з відстані, щоб добити.Крім того, якщо цей механоїд перебуває під керуванням механітора, той може розширити свій командний радіус на зону навколо нього.</APM_Mech_Terminus.description>
-  <APM_Mech_Terminus.tools.0.label>лівий кулак</APM_Mech_Terminus.tools.0.label>
-  <APM_Mech_Terminus.tools.1.label>правий кулак</APM_Mech_Terminus.tools.1.label>
-  <APM_Mech_Terminus.tools.2.label>голова</APM_Mech_Terminus.tools.2.label>
+  <APM_Mech_Terminus.tools.left_fist.label>лівий кулак</APM_Mech_Terminus.tools.left_fist.label>
+  <APM_Mech_Terminus.tools.right_fist.label>правий кулак</APM_Mech_Terminus.tools.right_fist.label>
+  <APM_Mech_Terminus.tools.head.label>голова</APM_Mech_Terminus.tools.head.label>
   <APM_Mech_TerminusB.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний середньовічною Європою Старої Землі, Термінус прорубує лави ворогів, і навіть відстань не може пом'якшити його лють. Його зброя здатна розітнути велику площу перед ним. Термінус також може спрямувати свій психічний вплив усередину, підсилюючи шкоду та опір хитанню. Для ворогів, що вирвалися з його хватки, передбачено гак-кішку, який притягує противника з відстані, щоб добити.Крім того, якщо цей механоїд перебуває під керуванням механітора, той може розширити свій командний радіус на зону навколо нього.</APM_Mech_TerminusB.description>
-  <APM_Mech_TerminusB.tools.0.label>лівий кулак</APM_Mech_TerminusB.tools.0.label>
-  <APM_Mech_TerminusB.tools.1.label>правий кулак</APM_Mech_TerminusB.tools.1.label>
-  <APM_Mech_TerminusB.tools.2.label>голова</APM_Mech_TerminusB.tools.2.label>
+  <APM_Mech_TerminusB.tools.left_fist.label>лівий кулак</APM_Mech_TerminusB.tools.left_fist.label>
+  <APM_Mech_TerminusB.tools.right_fist.label>правий кулак</APM_Mech_TerminusB.tools.right_fist.label>
+  <APM_Mech_TerminusB.tools.head.label>голова</APM_Mech_TerminusB.tools.head.label>
   <APM_Mech_Celerus.label>целерус</APM_Mech_Celerus.label>
   <APM_Mech_Celerus.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний Японією періоду Сенґоку Старої Землі, стрімкий і прихований Целерус анітрохи не слабший через свою швидкість. Він здатний здійснювати короткі стрибки навколо себе, а також створювати димову завісу, що заважає ворогам сприймати його та все навколо, до того ж стаючи психічно невідчутним у цій зоні. На додачу до цих ефектів вороги отримуватимуть періодичні.</APM_Mech_Celerus.description>
-  <APM_Mech_Celerus.tools.0.label>лівий кулак</APM_Mech_Celerus.tools.0.label>
-  <APM_Mech_Celerus.tools.1.label>правий кулак</APM_Mech_Celerus.tools.1.label>
-  <APM_Mech_Celerus.tools.2.label>голова</APM_Mech_Celerus.tools.2.label>
+  <APM_Mech_Celerus.tools.left_fist.label>лівий кулак</APM_Mech_Celerus.tools.left_fist.label>
+  <APM_Mech_Celerus.tools.right_fist.label>правий кулак</APM_Mech_Celerus.tools.right_fist.label>
+  <APM_Mech_Celerus.tools.head.label>голова</APM_Mech_Celerus.tools.head.label>
   <APM_Mech_CelerusB.description>Три могутні моделі механоїдів були створені розумом Архотеха у спробі створити єдиного головнокомандувача всіх сил механоїдів.Натхненний Японією періоду Сенґоку Старої Землі, стрімкий і прихований Целерус анітрохи не слабший через свою швидкість. Він здатний здійснювати короткі стрибки навколо себе, а також створювати димову завісу, що заважає ворогам сприймати його та все навколо, до того ж стаючи психічно невідчутним у цій зоні. На додачу до цих ефектів вороги отримуватимуть періодичні.</APM_Mech_CelerusB.description>
-  <APM_Mech_CelerusB.tools.0.label>лівий кулак</APM_Mech_CelerusB.tools.0.label>
-  <APM_Mech_CelerusB.tools.1.label>правий кулак</APM_Mech_CelerusB.tools.1.label>
-  <APM_Mech_CelerusB.tools.2.label>голова</APM_Mech_CelerusB.tools.2.label>
-  <APM_Mech_Dominus.tools.0.label>голова</APM_Mech_Dominus.tools.0.label>
+  <APM_Mech_CelerusB.tools.left_fist.label>лівий кулак</APM_Mech_CelerusB.tools.left_fist.label>
+  <APM_Mech_CelerusB.tools.right_fist.label>правий кулак</APM_Mech_CelerusB.tools.right_fist.label>
+  <APM_Mech_CelerusB.tools.head.label>голова</APM_Mech_CelerusB.tools.head.label>
+  <APM_Mech_Dominus.tools.head.label>голова</APM_Mech_Dominus.tools.head.label>
   <SeveringEdge.label>розсікаюча грань</SeveringEdge.label>
   <SeveringEdge_Boss.label>розсікаюча грань</SeveringEdge_Boss.label>
   <APM_Projectile_CelerusSmokescreen.label>димова граната</APM_Projectile_CelerusSmokescreen.label>

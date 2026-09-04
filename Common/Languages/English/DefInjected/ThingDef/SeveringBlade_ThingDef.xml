@@ -5,9 +5,9 @@
 	<!--                              EN: A heavy combat blade integrated with Terminus-derived control matrices. Allows the wielder to channel psychic energy into wide sweeping strikes, cleaving through multiple foes at once. -->
 	<APM_Weapon_SeveringBlade.description>A heavy combat blade integrated with Terminus-derived control matrices. Allows the wielder to channel psychic energy into wide sweeping strikes, cleaving through multiple foes at once.</APM_Weapon_SeveringBlade.description>
 	<!--                                EN: handle -->
-	<APM_Weapon_SeveringBlade.tools.0.label>handle</APM_Weapon_SeveringBlade.tools.0.label>
+	<APM_Weapon_SeveringBlade.tools.handle.label>handle</APM_Weapon_SeveringBlade.tools.handle.label>
 	<!--                                EN: blade -->
-	<APM_Weapon_SeveringBlade.tools.1.label>blade</APM_Weapon_SeveringBlade.tools.1.label>
+	<APM_Weapon_SeveringBlade.tools.point.label>blade</APM_Weapon_SeveringBlade.tools.point.label>
 	<!--                                EN: edge -->
-	<APM_Weapon_SeveringBlade.tools.2.label>edge</APM_Weapon_SeveringBlade.tools.2.label>
+	<APM_Weapon_SeveringBlade.tools.blade.label>edge</APM_Weapon_SeveringBlade.tools.blade.label>
 </LanguageData>

@@ -5,9 +5,9 @@
 	<!--                          EN: A general-purpose pulse-charged assault rifle designed for mid-range engagements. Highly reliable in all combat scenarios with a balanced rate of fire and precision. -->
 	<APM_Gun_Conqueror_AR.description>A general-purpose pulse-charged assault rifle designed for mid-range engagements. Highly reliable in all combat scenarios with a balanced rate of fire and precision.</APM_Gun_Conqueror_AR.description>
 	<!--                            EN: приклад -->
-	<APM_Gun_Conqueror_AR.tools.0.label>Barrel</APM_Gun_Conqueror_AR.tools.0.label>
+	<APM_Gun_Conqueror_AR.tools.stock.label>Barrel</APM_Gun_Conqueror_AR.tools.stock.label>
 	<!--                            EN: ствол -->
-	<APM_Gun_Conqueror_AR.tools.1.label>Muzzle</APM_Gun_Conqueror_AR.tools.1.label>
+	<APM_Gun_Conqueror_AR.tools.barrel.label>Muzzle</APM_Gun_Conqueror_AR.tools.barrel.label>
 	
 	<!--                        EN: charge carbine shot -->
 	<APM_Bullet_ChargeCarbine.label>charge carbine shot</APM_Bullet_ChargeCarbine.label>
@@ -17,7 +17,7 @@
 	<!--                           EN: A designated marksman rifle utilizing pulse-charge technology. Deals less structural damage per shot than a full Charge Lance, but fires significantly faster and excels at medium-to-long range. -->
 	<APM_Gun_Conqueror_DMR.description>A designated marksman rifle utilizing pulse-charge technology. Deals less structural damage per shot than a full Charge Lance, but fires significantly faster and excels at medium-to-long range.</APM_Gun_Conqueror_DMR.description>
 	<!--                             EN: ствол -->
-	<APM_Gun_Conqueror_DMR.tools.0.label>Muzzle</APM_Gun_Conqueror_DMR.tools.0.label>
+	<APM_Gun_Conqueror_DMR.tools.barrel.label>Muzzle</APM_Gun_Conqueror_DMR.tools.barrel.label>
 	
 	<!--                    EN: charge spitter shot -->
 	<Bullet_ChargeSpitter.label>charge spitter shot</Bullet_ChargeSpitter.label>
@@ -27,5 +27,5 @@
 	<!--                           EN: A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance. -->
 	<APM_Gun_Conqueror_SMG.description>A compact high-rate-of-fire submachine gun. Extremely deadly at close quarters, but suffers severe accuracy falloff over distance.</APM_Gun_Conqueror_SMG.description>
 	<!--                             EN: рукоятка -->
-	<APM_Gun_Conqueror_SMG.tools.0.label>Muzzle</APM_Gun_Conqueror_SMG.tools.0.label>
+	<APM_Gun_Conqueror_SMG.tools.grip.label>Muzzle</APM_Gun_Conqueror_SMG.tools.grip.label>
 </LanguageData>

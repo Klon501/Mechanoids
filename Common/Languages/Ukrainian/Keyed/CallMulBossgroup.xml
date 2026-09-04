@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <APM.CallMulBossgroupBossgroupWarningDialog>Виклик загрози «{LEADER}» прикличе таких ворожих механоїдів:\n\n{BOSS}\n\nРазом з ними може прибути супровід, що складається з:\n\n{ESCORT}\n\nМеханоїди прибудуть протягом кількох годин або днів. Ви готові до бою?</APM.CallMulBossgroupBossgroupWarningDialog>
+  <APM.CallMulBossgroupBossgroupWarningDialog>Виклик загрози «{LEADER}» прикличе таких ворожих механоїдів:\n\n{BOSS}\n\nРазом з ними може прибути супровід, що складається з:\n\n{ESCORT}\n\nМеханоїди прибудуть через два дні. Ви готові до бою?</APM.CallMulBossgroupBossgroupWarningDialog>
+
+  <APM.AlertCallMulBossgroupIncoming>Наближаються {LEADER}</APM.AlertCallMulBossgroupIncoming>
+  <APM.AlertCallMulBossgroupIncomingDesc>За сигналом вашого механізатора ворожі {LEADER} наближаються разом зі своїм бойовим супроводом. Приготуйтеся — це буде нелегкий бій. Ворожі механоїди прибудуть через два дні.</APM.AlertCallMulBossgroupIncomingDesc>
 
 </LanguageData>

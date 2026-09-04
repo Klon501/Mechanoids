@@ -5,5 +5,5 @@
 	<!--                         EN: The mech whip can deal heavy damage and stun multiple targets in close proximity to the user. It appears the mechhive views sentient organic life akin to how we view cattle, and treats us as such. -->
 	<APM_Weapon_MechWhip.description>The mech whip can deal heavy damage and stun multiple targets in close proximity to the user. It appears the mechhive views sentient organic life akin to how we view cattle, and treats us as such.</APM_Weapon_MechWhip.description>
 	<!--                           EN: кромка -->
-	<APM_Weapon_MechWhip.tools.0.label>whip</APM_Weapon_MechWhip.tools.0.label>
+	<APM_Weapon_MechWhip.tools.edge.label>whip</APM_Weapon_MechWhip.tools.edge.label>
 </LanguageData>

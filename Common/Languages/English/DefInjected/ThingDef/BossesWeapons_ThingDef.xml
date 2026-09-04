@@ -1,66 +1,66 @@
 <LanguageData>
 	<!-- 1.6\Defs\ThingDefs_Misc\Weapons\BossesWeapons.xml -->
 	<!--                                   EN: handle -->
-	<APM_Weapon_DominusMechlance.tools.0.label>handle</APM_Weapon_DominusMechlance.tools.0.label>
+	<APM_Weapon_DominusMechlance.tools.handle.label>handle</APM_Weapon_DominusMechlance.tools.handle.label>
 	<!--                                   EN: blade -->
-	<APM_Weapon_DominusMechlance.tools.1.label>blade</APM_Weapon_DominusMechlance.tools.1.label>
+	<APM_Weapon_DominusMechlance.tools.point.label>blade</APM_Weapon_DominusMechlance.tools.point.label>
 	<!--                                   EN: edge -->
-	<APM_Weapon_DominusMechlance.tools.2.label>edge</APM_Weapon_DominusMechlance.tools.2.label>
+	<APM_Weapon_DominusMechlance.tools.edge.label>edge</APM_Weapon_DominusMechlance.tools.edge.label>
 	<!--                           EN: Dominus mechlance -->
 	<APM_Weapon_DominusMechlance.label>Dominus mechlance</APM_Weapon_DominusMechlance.label>
 	<!--                                 EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
 	<APM_Weapon_DominusMechlance.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</APM_Weapon_DominusMechlance.description>
 	
 	<!--                                       EN: handle -->
-	<APM_Weapon_DominusApexMechlance.tools.0.label>handle</APM_Weapon_DominusApexMechlance.tools.0.label>
+	<APM_Weapon_DominusApexMechlance.tools.handle.label>handle</APM_Weapon_DominusApexMechlance.tools.handle.label>
 	<!--                                       EN: blade -->
-	<APM_Weapon_DominusApexMechlance.tools.1.label>blade</APM_Weapon_DominusApexMechlance.tools.1.label>
+	<APM_Weapon_DominusApexMechlance.tools.point.label>blade</APM_Weapon_DominusApexMechlance.tools.point.label>
 	<!--                                       EN: edge -->
-	<APM_Weapon_DominusApexMechlance.tools.2.label>edge</APM_Weapon_DominusApexMechlance.tools.2.label>
+	<APM_Weapon_DominusApexMechlance.tools.edge.label>edge</APM_Weapon_DominusApexMechlance.tools.edge.label>
 	<!--                               EN: Dominus apex mechlance -->
 	<APM_Weapon_DominusApexMechlance.label>Dominus apex mechlance</APM_Weapon_DominusApexMechlance.label>
 	<!--                                     EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue. -->
 	<APM_Weapon_DominusApexMechlance.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. In such close proximity to the Dominus, the mechanites in this mechlance have been influenced by its psychic presence, so much so that it bleeds out in a reddish hue.</APM_Weapon_DominusApexMechlance.description>
 	
 	<!--                                 EN: handle -->
-	<APM_Weapon_CelerusVoltana.tools.0.label>handle</APM_Weapon_CelerusVoltana.tools.0.label>
+	<APM_Weapon_CelerusVoltana.tools.handle.label>handle</APM_Weapon_CelerusVoltana.tools.handle.label>
 	<!--                                 EN: tip -->
-	<APM_Weapon_CelerusVoltana.tools.1.label>tip</APM_Weapon_CelerusVoltana.tools.1.label>
-	<!--                                 EN: лезвие -->
-	<APM_Weapon_CelerusVoltana.tools.2.label>лезвие</APM_Weapon_CelerusVoltana.tools.2.label>
+	<APM_Weapon_CelerusVoltana.tools.tip.label>tip</APM_Weapon_CelerusVoltana.tools.tip.label>
+	<!--                                 EN: blade -->
+	<APM_Weapon_CelerusVoltana.tools.blade.label>blade</APM_Weapon_CelerusVoltana.tools.blade.label>
 	<!--                         EN: celerus voltana -->
 	<APM_Weapon_CelerusVoltana.label>celerus voltana</APM_Weapon_CelerusVoltana.label>
 	<!--                               EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
 	<APM_Weapon_CelerusVoltana.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon.</APM_Weapon_CelerusVoltana.description>
 	
 	<!--                                     EN: handle -->
-	<APM_Weapon_CelerusApexVoltana.tools.0.label>handle</APM_Weapon_CelerusApexVoltana.tools.0.label>
+	<APM_Weapon_CelerusApexVoltana.tools.handle.label>handle</APM_Weapon_CelerusApexVoltana.tools.handle.label>
 	<!--                                     EN: tip -->
-	<APM_Weapon_CelerusApexVoltana.tools.1.label>tip</APM_Weapon_CelerusApexVoltana.tools.1.label>
-	<!--                                     EN: лезвие -->
-	<APM_Weapon_CelerusApexVoltana.tools.2.label>лезвие</APM_Weapon_CelerusApexVoltana.tools.2.label>
+	<APM_Weapon_CelerusApexVoltana.tools.tip.label>tip</APM_Weapon_CelerusApexVoltana.tools.tip.label>
+	<!--                                     EN: blade -->
+	<APM_Weapon_CelerusApexVoltana.tools.blade.label>blade</APM_Weapon_CelerusApexVoltana.tools.blade.label>
 	<!--                             EN: celerus apex voltana -->
 	<APM_Weapon_CelerusApexVoltana.label>celerus apex voltana</APM_Weapon_CelerusApexVoltana.label>
 	<!--                                   EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus. -->
 	<APM_Weapon_CelerusApexVoltana.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. The blade crackles with a form of electricity so intense that it glows a savage purple, the impossible color a result of the whims of the Celerus.</APM_Weapon_CelerusApexVoltana.description>
 	
 	<!--                                   EN: handle -->
-	<APM_Weapon_TerminusExoblade.tools.0.label>handle</APM_Weapon_TerminusExoblade.tools.0.label>
+	<APM_Weapon_TerminusExoblade.tools.handle.label>handle</APM_Weapon_TerminusExoblade.tools.handle.label>
+	<!--                                   EN: point -->
+	<APM_Weapon_TerminusExoblade.tools.point.label>point</APM_Weapon_TerminusExoblade.tools.point.label>
 	<!--                                   EN: blade -->
-	<APM_Weapon_TerminusExoblade.tools.1.label>blade</APM_Weapon_TerminusExoblade.tools.1.label>
-	<!--                                   EN: лезвие -->
-	<APM_Weapon_TerminusExoblade.tools.2.label>лезвие</APM_Weapon_TerminusExoblade.tools.2.label>
+	<APM_Weapon_TerminusExoblade.tools.blade.label>blade</APM_Weapon_TerminusExoblade.tools.blade.label>
 	<!--                           EN: terminus exoblade -->
 	<APM_Weapon_TerminusExoblade.label>terminus exoblade</APM_Weapon_TerminusExoblade.label>
 	<!--                                 EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it. -->
 	<APM_Weapon_TerminusExoblade.description>This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. This particular exoblade hums with psychic energy, overcharged by the Terminus wielding it.</APM_Weapon_TerminusExoblade.description>
 	
 	<!--                                       EN: handle -->
-	<APM_Weapon_TerminusApexExoblade.tools.0.label>handle</APM_Weapon_TerminusApexExoblade.tools.0.label>
+	<APM_Weapon_TerminusApexExoblade.tools.handle.label>handle</APM_Weapon_TerminusApexExoblade.tools.handle.label>
+	<!--                                       EN: point -->
+	<APM_Weapon_TerminusApexExoblade.tools.point.label>point</APM_Weapon_TerminusApexExoblade.tools.point.label>
 	<!--                                       EN: blade -->
-	<APM_Weapon_TerminusApexExoblade.tools.1.label>blade</APM_Weapon_TerminusApexExoblade.tools.1.label>
-	<!--                                       EN: лезвие -->
-	<APM_Weapon_TerminusApexExoblade.tools.2.label>лезвие</APM_Weapon_TerminusApexExoblade.tools.2.label>
+	<APM_Weapon_TerminusApexExoblade.tools.blade.label>blade</APM_Weapon_TerminusApexExoblade.tools.blade.label>
 	<!--                               EN: terminus apex exoblade -->
 	<APM_Weapon_TerminusApexExoblade.label>terminus apex exoblade</APM_Weapon_TerminusApexExoblade.label>
 	<!--                                     EN: This weapon is imbued with sharpness maintaining mechanites similar to those seen in imperial monotech. Such a technology being utilized by the mechhive allows the hive to apply it on larger and more complex applications, such as this deadly weapon. -->
