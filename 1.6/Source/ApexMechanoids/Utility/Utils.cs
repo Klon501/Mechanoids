@@ -28,6 +28,48 @@ namespace ApexMechanoids
         }
     }
 
+    /// <summary>
+    /// Remembers one value per pawn until the tick changes. Work givers re-run the same
+    /// "can this pawn work" checks for every candidate thing, and a pawn's state cannot change
+    /// in the middle of a tick, so the first answer of a tick is reused.
+    /// </summary>
+    public sealed class PawnTickCache<T>
+    {
+        private Pawn cachedPawn;
+        private int cachedTick = -1;
+        private T cachedValue;
+
+        public bool TryGetValue(Pawn pawn, out T value)
+        {
+            if (pawn != null && cachedPawn == pawn && cachedTick == CurrentTick())
+            {
+                value = cachedValue;
+                return true;
+            }
+
+            value = default(T);
+            return false;
+        }
+
+        public void Set(Pawn pawn, T value)
+        {
+            int tick = CurrentTick();
+            if (tick < 0)
+            {
+                return;
+            }
+
+            cachedPawn = pawn;
+            cachedTick = tick;
+            cachedValue = value;
+        }
+
+        private static int CurrentTick()
+        {
+            return Find.TickManager?.TicksGame ?? -1;
+        }
+    }
+
     public static class Utils
     {
         public static bool IsAwakeAndNotDormant(Pawn pawn)

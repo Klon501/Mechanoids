@@ -28,9 +28,24 @@ namespace ApexMechanoids
             return pawn != null && pawn.def == ApexDefsOf.APM_Mech_Frostivus;
         }
 
+        private static readonly PawnTickCache<bool> CanDoFoodPreservationCache = new PawnTickCache<bool>();
+
+        // Called once per candidate food thing while scanning, so it is memoized for the rest of the tick.
         public static bool CanDoFoodPreservation(Pawn pawn)
         {
-            return CanUseFrostivusMapCommand(pawn);
+            if (pawn == null)
+            {
+                return false;
+            }
+
+            if (CanDoFoodPreservationCache.TryGetValue(pawn, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = CanUseFrostivusMapCommand(pawn);
+            CanDoFoodPreservationCache.Set(pawn, result);
+            return result;
         }
 
         public static bool CanUseFrostivusMapCommand(Pawn pawn)

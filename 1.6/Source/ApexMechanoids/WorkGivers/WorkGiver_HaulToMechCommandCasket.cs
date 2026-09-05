@@ -63,7 +63,34 @@ namespace ApexMechanoids
             return null;
         }
 
+        private Pawn cachedPawn;
+        private Building_MechCommandCasket cachedCasket;
+        private ThingCount cachedNutrition;
+        private int cachedTick = -1;
+
+        // Scanning asks for food once in HasJobOnThing and again in JobOnThing for the same pair,
+        // and the search walks every food source on the map, so the answer is held for one tick.
         private ThingCount FindNutrition(Pawn pawn, Building_MechCommandCasket casket)
+        {
+            int tick = Find.TickManager?.TicksGame ?? -1;
+            if (tick >= 0 && cachedTick == tick && cachedPawn == pawn && cachedCasket == casket)
+            {
+                return cachedNutrition;
+            }
+
+            ThingCount result = FindNutritionInternal(pawn, casket);
+            if (tick >= 0)
+            {
+                cachedTick = tick;
+                cachedPawn = pawn;
+                cachedCasket = casket;
+                cachedNutrition = result;
+            }
+
+            return result;
+        }
+
+        private ThingCount FindNutritionInternal(Pawn pawn, Building_MechCommandCasket casket)
         {
             Thing thing = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.FoodSourceNotPlantOrTree), PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f, Validator);
             if (thing == null)

@@ -27,6 +27,31 @@ namespace ApexMechanoids
             return !LasherAnimalHandlingUtility.CanLasherWork(pawn) || !pawn.Map.designationManager.AnySpawnedDesignationOfDef(DesignationDefOf.Tame);
         }
 
+        // Cheap gate: the map-wide food search below is far too expensive to run for every
+        // candidate during scanning, so it is deferred to JobOnThing.
+        public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
+        {
+            Pawn animal = t as Pawn;
+            if (animal == null || !TameUtility.CanTame(animal))
+            {
+                return false;
+            }
+
+            if (pawn.Map.designationManager.DesignationOn(t, DesignationDefOf.Tame) == null
+                || !LasherAnimalHandlingUtility.CanInteractWithAnimal(pawn, animal, forced))
+            {
+                return false;
+            }
+
+            if (TameUtility.TriedToTameTooRecently(animal))
+            {
+                JobFailReason.Is("AnimalInteractedTooRecently".Translate());
+                return false;
+            }
+
+            return true;
+        }
+
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             Pawn animal = t as Pawn;
@@ -89,6 +114,36 @@ namespace ApexMechanoids
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
             return !LasherAnimalHandlingUtility.CanLasherWork(pawn);
+        }
+
+        // Cheap gate: the map-wide food search below is far too expensive to run for every
+        // candidate during scanning, so it is deferred to JobOnThing. Fetching food still takes
+        // priority over the "trained too recently" check, matching the vanilla work giver.
+        public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
+        {
+            Pawn animal = t as Pawn;
+            if (animal == null || !animal.IsAnimal || animal.RaceProps.animalType == AnimalType.Dryad || animal.Faction != pawn.Faction || animal.training == null)
+            {
+                return false;
+            }
+
+            if (animal.training.NextTrainableToTrain() == null
+                || !LasherAnimalHandlingUtility.CanInteractWithAnimal(pawn, animal, forced))
+            {
+                return false;
+            }
+
+            bool needsFood = animal.RaceProps.EatsFood
+                && animal.needs?.food != null
+                && !LasherAnimalHandlingUtility.HasFoodToInteractAnimal(pawn, animal);
+
+            if (!needsFood && TrainableUtility.TrainedTooRecently(animal))
+            {
+                JobFailReason.Is("AnimalInteractedTooRecently".Translate());
+                return false;
+            }
+
+            return true;
         }
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)

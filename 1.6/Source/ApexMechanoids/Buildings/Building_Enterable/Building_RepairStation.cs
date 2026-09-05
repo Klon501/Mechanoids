@@ -36,6 +36,11 @@ namespace ApexMechanoids
         private static readonly Texture2D CancelIcon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel");
         public static readonly CachedTexture InsertPawnIcon = new CachedTexture("UI/Gizmos/APM_Repairstation_InsertMech");
 
+        // Every spawned repair station. Claim checks run once per mech per work scan (and on every
+        // MechRepairUtility.CanRepair call through the Harmony patch), so scanning the whole building
+        // list each time is far too expensive. Claims are still read live off each station.
+        private static readonly List<Building_RepairStation> SpawnedStations = new List<Building_RepairStation>();
+
         public CompRepairStation Config
         {
             get
@@ -110,6 +115,10 @@ namespace ApexMechanoids
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            if (!SpawnedStations.Contains(this))
+            {
+                SpawnedStations.Add(this);
+            }
             LongEventHandler.ExecuteWhenFinished(delegate
             {
                 if (Config.ArmsAnimation != null) armsAnim = new ArmsAnimation(Config.ArmsAnimation);
@@ -264,10 +273,22 @@ namespace ApexMechanoids
                 return false;
             }
 
-            List<Thing> buildings = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial);
-            for (int i = 0; i < buildings.Count; i++)
+            Map map = pawn.Map;
+            for (int i = SpawnedStations.Count - 1; i >= 0; i--)
             {
-                if (buildings[i] is Building_RepairStation station && station != ignoredStation && station.SelectedPawn == pawn)
+                Building_RepairStation station = SpawnedStations[i];
+                if (station == null || station.Destroyed)
+                {
+                    SpawnedStations.RemoveAt(i);
+                    continue;
+                }
+
+                if (station == ignoredStation || station.Map != map)
+                {
+                    continue;
+                }
+
+                if (station.SelectedPawn == pawn)
                 {
                     return true;
                 }
@@ -689,6 +710,7 @@ namespace ApexMechanoids
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
+            SpawnedStations.Remove(this);
             if (mechRepairEffecter != null)
             {
                 mechRepairEffecter.Cleanup();
@@ -703,6 +725,12 @@ namespace ApexMechanoids
             selectedPawnClaimTick = -1;
             inactiveRepairTicks = 0;
             base.DeSpawn(mode);
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+            SpawnedStations.Remove(this);
+            base.Destroy(mode);
         }
 
         private List<SectionData> BuildDialogData()

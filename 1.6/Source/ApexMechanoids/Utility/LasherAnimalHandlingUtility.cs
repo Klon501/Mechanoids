@@ -17,14 +17,29 @@ namespace ApexMechanoids
             new CurvePoint(0f, 2f)
         };
 
+        private static readonly PawnTickCache<bool> CanLasherWorkCache = new PawnTickCache<bool>();
+
         public static bool IsLasher(Pawn pawn)
         {
-            return pawn?.def?.defName == LasherDefName;
+            return pawn != null && pawn.def == ApexDefsOf.APM_Mech_Lasher;
         }
 
+        // Called once per candidate animal while scanning, so it is memoized for the rest of the tick.
         public static bool CanLasherWork(Pawn pawn)
         {
-            return IsLasher(pawn) && Utils.CanRunAutonomousPawn(pawn) && pawn.Faction != null;
+            if (pawn == null)
+            {
+                return false;
+            }
+
+            if (CanLasherWorkCache.TryGetValue(pawn, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = IsLasher(pawn) && Utils.CanRunAutonomousPawn(pawn) && pawn.Faction != null;
+            CanLasherWorkCache.Set(pawn, result);
+            return result;
         }
 
         public static bool CanInteractWithAnimal(Pawn pawn, Pawn animal, bool forced)

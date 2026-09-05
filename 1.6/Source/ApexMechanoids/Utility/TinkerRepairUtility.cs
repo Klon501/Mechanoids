@@ -14,7 +14,27 @@ namespace ApexMechanoids
             return pawn != null && pawn.def == ApexDefsOf.APM_Mech_Tinker;
         }
 
+        private static readonly PawnTickCache<bool> CanDoTinkerRepairCache = new PawnTickCache<bool>();
+
+        // Called once per candidate thing while scanning, so it is memoized for the rest of the tick.
         public static bool CanDoTinkerRepair(Pawn pawn)
+        {
+            if (pawn == null)
+            {
+                return false;
+            }
+
+            if (CanDoTinkerRepairCache.TryGetValue(pawn, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = CanDoTinkerRepairInternal(pawn);
+            CanDoTinkerRepairCache.Set(pawn, result);
+            return result;
+        }
+
+        private static bool CanDoTinkerRepairInternal(Pawn pawn)
         {
             return IsTinker(pawn)
                 && !pawn.Destroyed

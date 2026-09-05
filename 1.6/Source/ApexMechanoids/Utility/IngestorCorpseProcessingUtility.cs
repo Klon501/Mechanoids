@@ -14,7 +14,27 @@ namespace ApexMechanoids
             return pawn != null && pawn.def == ApexDefsOf.APM_Mech_Ingestor;
         }
 
+        private static readonly PawnTickCache<bool> CanDoCorpseProcessingCache = new PawnTickCache<bool>();
+
+        // Called once per corpse while scanning, so it is memoized for the rest of the tick.
         public static bool CanDoCorpseProcessing(Pawn pawn)
+        {
+            if (pawn == null)
+            {
+                return false;
+            }
+
+            if (CanDoCorpseProcessingCache.TryGetValue(pawn, out bool cached))
+            {
+                return cached;
+            }
+
+            bool result = CanDoCorpseProcessingInternal(pawn);
+            CanDoCorpseProcessingCache.Set(pawn, result);
+            return result;
+        }
+
+        private static bool CanDoCorpseProcessingInternal(Pawn pawn)
         {
             return IsIngestor(pawn)
                 && pawn.Faction == Faction.OfPlayer
