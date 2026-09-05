@@ -95,6 +95,12 @@ namespace ApexMechanoids
 
         public int wastepacksCount;
 
+        private const int CellToUnpolluteCacheInterval = 300;
+
+        private IntVec3 cellToUnpolluteCached = IntVec3.Invalid;
+
+        private int cellToUnpolluteCacheTick = -1;
+
         private bool Active
         {
             get
@@ -225,6 +231,24 @@ namespace ApexMechanoids
             effecter.Cleanup();
         }
 
+		public bool HasCellToUnpolluteCached()
+		{
+			int ticksGame = Find.TickManager.TicksGame;
+			if (ticksGame < cellToUnpolluteCacheTick)
+			{
+				return cellToUnpolluteCached.IsValid;
+			}
+			cellToUnpolluteCached = GetCellToUnpollute();
+			cellToUnpolluteCacheTick = ticksGame + CellToUnpolluteCacheInterval;
+			return cellToUnpolluteCached.IsValid;
+		}
+
+		public void InvalidateCellToUnpolluteCache()
+		{
+			cellToUnpolluteCached = IntVec3.Invalid;
+			cellToUnpolluteCacheTick = -1;
+		}
+
 		public IntVec3 GetCellToUnpollute()
 		{
 			Map map = parent.Map;
@@ -278,6 +302,7 @@ namespace ApexMechanoids
 					list.Add(new FloatMenuOption(localMode.GetLabel(), delegate
 					{
                         mode = localMode;
+                        InvalidateCellToUnpolluteCache();
 					}, localMode.GetIcon(), Color.white));
 				}
 				Find.WindowStack.Add(new FloatMenu(list));

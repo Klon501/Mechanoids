@@ -36,7 +36,7 @@ namespace ApexMechanoids
 			{
 				return false;
 			}
-			if (!forced && comp.mode == PurifierMode.GroundOverWastepacks && comp.GetCellToUnpollute().IsValid)
+			if (!forced && comp.mode == PurifierMode.GroundOverWastepacks && comp.HasCellToUnpolluteCached())
 			{
 				return false;
 			}
