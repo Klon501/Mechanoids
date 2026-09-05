@@ -975,7 +975,12 @@ namespace ApexMechanoids
                 {
                     mech.needs.energy.CurLevel -= mech.GetStatValue(StatDefOf.MechEnergyLossPerHP) * (float)delta;
                 }
+                // The obsolete overload is kept on purpose: it is the only one that heals `delta`
+                // HP, which is what makes repairing once per tick interval heal as much as
+                // repairing every tick. The replacement heals a flat 1 HP per call.
+#pragma warning disable CS0612
                 MechRepairUtility.RepairTick(mech, delta);
+#pragma warning restore CS0612
                 ticksToNextRepair = TicksPerHeal;
 
                 if (CanRemoteRepair(curLocalTargetInfo))

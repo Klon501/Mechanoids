@@ -11,6 +11,7 @@ namespace ApexMechanoids
 		public static ThingDef APM_Mech_Frostivus;
         public static ThingDef APM_Mech_Dominus;
         public static ThingDef APM_Mech_Ingestor;
+        public static ThingDef APM_Mech_Lasher;
         public static ThingDef APM_Building_ToxicPurifier;
 		public static AbilityDef APM_DefenceMatrix;
         public static AbilityDef APM_BlindingLaser;

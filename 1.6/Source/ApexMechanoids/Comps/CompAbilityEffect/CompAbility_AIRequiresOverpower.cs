@@ -10,7 +10,7 @@ namespace ApexMechanoids
 {
     public class CompAbility_AIRequiresOverpower : CompAbilityEffect
     {
-        public CompProperties_AbilityAIRequiresOverpower Props => (CompProperties_AbilityAIRequiresOverpower)props;
+        public new CompProperties_AbilityAIRequiresOverpower Props => (CompProperties_AbilityAIRequiresOverpower)props;
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
             var targetPawn = target.Pawn;

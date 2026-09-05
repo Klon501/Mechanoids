@@ -10,7 +10,7 @@ namespace ApexMechanoids
 {
     public class CompAbility_AIIngores : CompAbilityEffect
     {
-        public CompProperties_AbilityAIIngores Props => (CompProperties_AbilityAIIngores)props;
+        public new CompProperties_AbilityAIIngores Props => (CompProperties_AbilityAIIngores)props;
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
             if (target.HasThing && Props.ignoredTargets.Contains(target.Thing.def))

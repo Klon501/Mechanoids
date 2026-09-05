@@ -12,7 +12,7 @@ namespace ApexMechanoids
     public class CompAbilityEffect_WarmupMote : CompAbilityEffect
     {
         private Mote mote;
-        public CompProperties_AbilityWarmupMote Props => (CompProperties_AbilityWarmupMote)props;
+        public new CompProperties_AbilityWarmupMote Props => (CompProperties_AbilityWarmupMote)props;
         public override void CompTick()
         {
             base.CompTick();

@@ -337,11 +337,11 @@ namespace ApexMechanoids
 				
 				if (flag)
 				{
-					flyer.target = hitThing;
+					flyer.hookTarget = hitThing;
 				}
 				else
 				{
-					flyer.target = caster;
+					flyer.hookTarget = caster;
 				}
 				if (!flag && caster.jobs?.curDriver is JobDriver_HookPawn driver)
 				{
@@ -363,7 +363,9 @@ namespace ApexMechanoids
 
 	public class PawnFlyer_Hooked : PawnFlyer
 	{
-		public Thing target;
+		// Named hookTarget rather than target: PawnFlyer has its own (private) target, which the
+		// publicized reference assembly exposes and which this used to shadow with a different type.
+		public Thing hookTarget;
 
 		public MoteDualAttached mote;
 
@@ -376,13 +378,13 @@ namespace ApexMechanoids
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			Scribe_References.Look(ref target, "target");
+			Scribe_References.Look(ref hookTarget, "target");
 		}
 
 		public override void Tick()
 		{
 			base.Tick();
-			TargetInfo other = (target == null || !target.Spawned) ? new TargetInfo(DestinationPos.ToIntVec3(), this.Map) : new TargetInfo(target);
+			TargetInfo other = (hookTarget == null || !hookTarget.Spawned) ? new TargetInfo(DestinationPos.ToIntVec3(), this.Map) : new TargetInfo(hookTarget);
 			if (mote == null)
 			{
 				mote = MoteMaker.MakeInteractionOverlay(ApexDefsOf.APM_Mote_HookRope, this, other);
@@ -399,7 +401,7 @@ namespace ApexMechanoids
 
 		public void Clear()
 		{
-			if (target is Pawn p)
+			if (hookTarget is Pawn p)
 			{
 				if(p.pather != null)
 				{
