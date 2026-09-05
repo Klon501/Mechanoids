@@ -66,9 +66,60 @@ namespace ApexMechanoids
             ChangeMechKindToSpawn();
         }
 
+        public override void CompTick()
+        {
+            base.CompTick();
+            TryBecomeEmptiedDef();
+        }
+
         public override bool DontDrawParent()
         {
             return true;
+        }
+
+        /// <summary>
+        /// Swaps an emptied container for the plain one it names, on the tick after it is emptied.
+        ///
+        /// A tick later rather than inside the opening itself: the interaction, the job that drove it
+        /// and the comps that tick after this one all still expect the container to be there, and the
+        /// game already allows a thing to replace itself from its own tick. Reading the state rather
+        /// than the act of opening also catches the containers in saves that were emptied before this
+        /// existed, which is where the report came from.
+        /// </summary>
+        private void TryBecomeEmptiedDef()
+        {
+            if (!MechContainerResetRules.ShouldBecomeEmptiedDef(
+                namesAReplacement: Props.emptiedDef != null,
+                alreadyTheReplacement: parent.def == Props.emptiedDef,
+                spawned: parent.Spawned,
+                empty: IsEmpty))
+            {
+                return;
+            }
+
+            Map map = parent.Map;
+            IntVec3 position = parent.Position;
+            Rot4 rotation = parent.Rotation;
+            Faction faction = parent.Faction;
+            float healthPct = parent.MaxHitPoints > 0 ? (float)parent.HitPoints / parent.MaxHitPoints : 1f;
+            // Find.Selector casts the UI root rather than testing it, so it throws rather than
+            // answering while a map is still being generated.
+            bool selected = Find.UIRoot is UIRoot_Play && Find.Selector.IsSelected(parent);
+
+            // Whatever the container had been through is what the plain one starts with. Everything
+            // else about the two is the same building, so nothing else needs carrying over.
+            parent.Destroy(DestroyMode.WillReplace);
+
+            Thing replacement = ThingMaker.MakeThing(Props.emptiedDef);
+            replacement.SetFaction(faction);
+            replacement.HitPoints = Mathf.Max(1, Mathf.RoundToInt(replacement.MaxHitPoints * healthPct));
+            GenSpawn.Spawn(replacement, position, map, rotation);
+
+            // The player is usually looking straight at it, having just opened it.
+            if (selected)
+            {
+                Find.Selector.Select(replacement, playSound: false, forceDesignatorDeselect: false);
+            }
         }
 
         public override void PostPrintOnto(SectionLayer layer)

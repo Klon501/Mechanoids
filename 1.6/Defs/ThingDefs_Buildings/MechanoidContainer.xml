@@ -296,6 +296,9 @@
 		The occupant is generated on opening rather than stored, which matters here: this thing runs
 		on 150W and drops whatever it is holding the moment the power does, and nothing in a ruin has
 		power.
+
+		Once it is empty it becomes the plain container, because every word of the label and the
+		description above is about what is sealed inside it.
 	-->
 	<ThingDef ParentName="APM_MechanoidContainerBase">
 		<defName>APM_MechanoidContainer_Ancient</defName>
@@ -358,6 +361,8 @@
 				<enterJobDef>APM_EnterMechanoidContainer</enterJobDef>
 				<ChooseMechLabel>Choose mechanoid</ChooseMechLabel>
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
+
+				<emptiedDef>APM_MechanoidContainer_Player</emptiedDef>
 
 				<!-- The same band and the same roll as the cluster kind. -->
 				<mechKindOptions>
@@ -448,6 +453,9 @@
 
 		The occupant is not named on the container. The client asked for that on 2026-08-12 and it
 		holds here too, even though these are the same three every run.
+
+		And once one is empty it becomes the plain container, for the same reason: a crate that still
+		calls itself sealed after the mech has walked out of it is describing a moment that has passed.
 	-->
 	<ThingDef Abstract="True" Name="APM_MechanoidContainer_LegacyBase" ParentName="APM_MechanoidContainerBase">
 		<label>sealed mechanoid stasis container</label>
@@ -514,6 +522,7 @@
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
 
 				<fixedMechKind>APM_Mech_Lasher</fixedMechKind>
+				<emptiedDef>APM_MechanoidContainer_Player</emptiedDef>
 
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
@@ -569,6 +578,7 @@
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
 
 				<fixedMechKind>APM_Mech_Vassal</fixedMechKind>
+				<emptiedDef>APM_MechanoidContainer_Player</emptiedDef>
 
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
@@ -624,6 +634,7 @@
 				<ChooseMechDesc>Instruct mechanoid to enter stasis.</ChooseMechDesc>
 
 				<fixedMechKind>APM_Mech_Tinker</fixedMechKind>
+				<emptiedDef>APM_MechanoidContainer_Player</emptiedDef>
 
 				<emptyGraphic>
 					<texPath>Things/Building/MechanoidContainer/MechanoidContainer_Empty</texPath>
