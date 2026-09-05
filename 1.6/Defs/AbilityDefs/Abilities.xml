@@ -391,7 +391,7 @@
 		<description>Fire a laser at target, effectively blinding them for a short time.</description>
 		<iconPath>UI/Laser</iconPath>
 		<showPsycastEffects>false</showPsycastEffects>
-		<cooldownTicksRange>850</cooldownTicksRange>
+		<cooldownTicksRange>1050</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<aiCanUse>true</aiCanUse>
@@ -400,7 +400,7 @@
 		<hostile>true</hostile>
 		<statBases>
 			<Ability_Duration>50</Ability_Duration>
-			<Ability_EffectRadius>2.9</Ability_EffectRadius>
+			<Ability_EffectRadius>2.4</Ability_EffectRadius>
 		</statBases>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_BlindingLaser">

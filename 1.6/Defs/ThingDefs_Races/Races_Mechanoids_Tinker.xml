@@ -13,7 +13,9 @@
 			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
 			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
 			<MechRemoteShieldDistance>9.9</MechRemoteShieldDistance>
-			<MechRemoteShieldEnergy>100</MechRemoteShieldEnergy>
+			<MechRemoteShieldEnergy>200</MechRemoteShieldEnergy>
+			<MechRepairSpeed>1.8</MechRepairSpeed>
+			<ConstructionSpeed>1.8</ConstructionSpeed>
 		</statBases>
 		<tools>
 			<li>
