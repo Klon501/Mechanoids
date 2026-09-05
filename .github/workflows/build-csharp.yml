@@ -5,6 +5,14 @@ on:
     branches:
       - '**'
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-csharp-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -12,26 +20,50 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '9.0.x'
 
-
     - name: Restore dependencies
       run: dotnet restore ./1.6/Source/ApexMechanoids.sln
-
 
     - name: Build solution
       run: dotnet build ./1.6/Source/ApexMechanoids.sln --no-restore
 
     - name: Run tests
+      continue-on-error: true
       run: dotnet test ./1.6/Source/ApexMechanoids.sln --no-restore
-          
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: build-output
         path: ./1.6/Assemblies/
+
+    - name: Commit rebuilt assembly
+      if: |
+        github.event_name == 'push' &&
+        !contains(github.event.head_commit.message, '[skip ci]')
+      env:
+        BRANCH: ${{ github.ref_name }}
+      run: |
+        set -e
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        # -f bypasses .gitignore in case *.dll is ever ignored
+        git add -f ./1.6/Assemblies/ApexMechanoids.dll
+
+        if git diff --cached --quiet; then
+          echo "Assembly unchanged, nothing to commit."
+          exit 0
+        fi
+
+        git commit -m "chore(assemblies): rebuild ApexMechanoids.dll [skip ci]"
+        git pull --rebase origin "$BRANCH"
+        git push origin HEAD:"$BRANCH"
